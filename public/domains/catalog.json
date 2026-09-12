@@ -200,9 +200,239 @@
     ],
     "default_level": "college",
     "has_navigator": true,
-    "has_book": false,
-    "books": [],
-    "generated_concepts": []
+    "has_book": true,
+    "books": [
+      {
+        "target": "mass_spectrometry",
+        "file": "output/college.en/sonnet/html/book_mass_spectrometry.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "chemical_nomenclature",
+        "file": "output/college.en/sonnet/html/book_chemical_nomenclature.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "predicting_ion_formation",
+        "file": "output/college.en/sonnet/html/book_predicting_ion_formation.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ],
+    "generated_concepts": [
+      {
+        "name": "anion",
+        "label": "Anion",
+        "file": "output/college.en/sonnet/html/concept_anion.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "atom",
+        "label": "Atom",
+        "file": "output/college.en/sonnet/html/concept_atom.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "atomic_mass_unit",
+        "label": "Atomic Mass Unit",
+        "file": "output/college.en/sonnet/html/concept_atomic_mass_unit.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "atomic_number",
+        "label": "Atomic Number",
+        "file": "output/college.en/sonnet/html/concept_atomic_number.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "average_atomic_mass",
+        "label": "Average Atomic Mass",
+        "file": "output/college.en/sonnet/html/concept_average_atomic_mass.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "cation",
+        "label": "Cation",
+        "file": "output/college.en/sonnet/html/concept_cation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "chemical_nomenclature",
+        "label": "Chemical Nomenclature",
+        "file": "output/college.en/sonnet/html/concept_chemical_nomenclature.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "chemical_symbol",
+        "label": "Chemical Symbol",
+        "file": "output/college.en/sonnet/html/concept_chemical_symbol.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "covalent_bond",
+        "label": "Covalent Bond",
+        "file": "output/college.en/sonnet/html/concept_covalent_bond.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "daltons_atomic_theory",
+        "label": "Daltons Atomic Theory",
+        "file": "output/college.en/sonnet/html/concept_daltons_atomic_theory.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "electric_charge",
+        "label": "Electric Charge",
+        "file": "output/college.en/sonnet/html/concept_electric_charge.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "electron",
+        "label": "Electron",
+        "file": "output/college.en/sonnet/html/concept_electron.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "element",
+        "label": "Element",
+        "file": "output/college.en/sonnet/html/concept_element.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "element_families",
+        "label": "Element Families",
+        "file": "output/college.en/sonnet/html/concept_element_families.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "ion",
+        "label": "Ion",
+        "file": "output/college.en/sonnet/html/concept_ion.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "ionic_bond",
+        "label": "Ionic Bond",
+        "file": "output/college.en/sonnet/html/concept_ionic_bond.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "ionic_compound",
+        "label": "Ionic Compound",
+        "file": "output/college.en/sonnet/html/concept_ionic_compound.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "isotope",
+        "label": "Isotope",
+        "file": "output/college.en/sonnet/html/concept_isotope.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "mass",
+        "label": "Mass",
+        "file": "output/college.en/sonnet/html/concept_mass.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "mass_spectrometry",
+        "label": "Mass Spectrometry",
+        "file": "output/college.en/sonnet/html/concept_mass_spectrometry.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "matter",
+        "label": "Matter",
+        "file": "output/college.en/sonnet/html/concept_matter.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "molecular_compound",
+        "label": "Molecular Compound",
+        "file": "output/college.en/sonnet/html/concept_molecular_compound.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "molecular_formula",
+        "label": "Molecular Formula",
+        "file": "output/college.en/sonnet/html/concept_molecular_formula.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "neutron",
+        "label": "Neutron",
+        "file": "output/college.en/sonnet/html/concept_neutron.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "nucleus",
+        "label": "Nucleus",
+        "file": "output/college.en/sonnet/html/concept_nucleus.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "periodic_law",
+        "label": "Periodic Law",
+        "file": "output/college.en/sonnet/html/concept_periodic_law.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "periodic_table",
+        "label": "Periodic Table",
+        "file": "output/college.en/sonnet/html/concept_periodic_table.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "polyatomic_ion",
+        "label": "Polyatomic Ion",
+        "file": "output/college.en/sonnet/html/concept_polyatomic_ion.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "predicting_ion_formation",
+        "label": "Predicting Ion Formation",
+        "file": "output/college.en/sonnet/html/concept_predicting_ion_formation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "proton",
+        "label": "Proton",
+        "file": "output/college.en/sonnet/html/concept_proton.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ]
   },
   {
     "id": "chemistry_ch03",
@@ -219,9 +449,107 @@
     ],
     "default_level": "college",
     "has_navigator": true,
-    "has_book": false,
-    "books": [],
-    "generated_concepts": []
+    "has_book": true,
+    "books": [
+      {
+        "target": "mass_mole_conversion",
+        "file": "output/college.en/sonnet/html/book_mass_mole_conversion.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "dilution_equation",
+        "file": "output/college.en/sonnet/html/book_dilution_equation.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ],
+    "generated_concepts": [
+      {
+        "name": "atomic_mass",
+        "label": "Atomic Mass",
+        "file": "output/college.en/sonnet/html/concept_atomic_mass.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "concentration",
+        "label": "Concentration",
+        "file": "output/college.en/sonnet/html/concept_concentration.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "dilution",
+        "label": "Dilution",
+        "file": "output/college.en/sonnet/html/concept_dilution.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "dilution_equation",
+        "label": "Dilution Equation",
+        "file": "output/college.en/sonnet/html/concept_dilution_equation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "formula_mass",
+        "label": "Formula Mass",
+        "file": "output/college.en/sonnet/html/concept_formula_mass.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "mass_mole_conversion",
+        "label": "Mass Mole Conversion",
+        "file": "output/college.en/sonnet/html/concept_mass_mole_conversion.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "molar_mass",
+        "label": "Molar Mass",
+        "file": "output/college.en/sonnet/html/concept_molar_mass.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "molarity",
+        "label": "Molarity",
+        "file": "output/college.en/sonnet/html/concept_molarity.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "mole",
+        "label": "Mole",
+        "file": "output/college.en/sonnet/html/concept_mole.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "solute",
+        "label": "Solute",
+        "file": "output/college.en/sonnet/html/concept_solute.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "solution",
+        "label": "Solution",
+        "file": "output/college.en/sonnet/html/concept_solution.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "solvent",
+        "label": "Solvent",
+        "file": "output/college.en/sonnet/html/concept_solvent.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ]
   },
   {
     "id": "chemistry_ch04",
@@ -238,9 +566,181 @@
     ],
     "default_level": "college",
     "has_navigator": true,
-    "has_book": false,
-    "books": [],
-    "generated_concepts": []
+    "has_book": true,
+    "books": [
+      {
+        "target": "gravimetric_analysis",
+        "file": "output/college.en/sonnet/html/book_gravimetric_analysis.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "titration_analysis",
+        "file": "output/college.en/sonnet/html/book_titration_analysis.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "combustion_reaction",
+        "file": "output/college.en/sonnet/html/book_combustion_reaction.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "atom_economy",
+        "file": "output/college.en/sonnet/html/book_atom_economy.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "combustion_analysis",
+        "file": "output/college.en/sonnet/html/book_combustion_analysis.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ],
+    "generated_concepts": [
+      {
+        "name": "atom_economy",
+        "label": "Atom Economy",
+        "file": "output/college.en/sonnet/html/concept_atom_economy.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "balanced_equation",
+        "label": "Balanced Equation",
+        "file": "output/college.en/sonnet/html/concept_balanced_equation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "chemical_equation",
+        "label": "Chemical Equation",
+        "file": "output/college.en/sonnet/html/concept_chemical_equation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "coefficient",
+        "label": "Coefficient",
+        "file": "output/college.en/sonnet/html/concept_coefficient.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "combustion_analysis",
+        "label": "Combustion Analysis",
+        "file": "output/college.en/sonnet/html/concept_combustion_analysis.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "combustion_reaction",
+        "label": "Combustion Reaction",
+        "file": "output/college.en/sonnet/html/concept_combustion_reaction.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "equivalence_point",
+        "label": "Equivalence Point",
+        "file": "output/college.en/sonnet/html/concept_equivalence_point.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "gravimetric_analysis",
+        "label": "Gravimetric Analysis",
+        "file": "output/college.en/sonnet/html/concept_gravimetric_analysis.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "law_of_conservation_of_matter",
+        "label": "Law Of Conservation Of Matter",
+        "file": "output/college.en/sonnet/html/concept_law_of_conservation_of_matter.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "limiting_reactant",
+        "label": "Limiting Reactant",
+        "file": "output/college.en/sonnet/html/concept_limiting_reactant.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "molar_mass",
+        "label": "Molar Mass",
+        "file": "output/college.en/sonnet/html/concept_molar_mass.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "molarity",
+        "label": "Molarity",
+        "file": "output/college.en/sonnet/html/concept_molarity.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "mole",
+        "label": "Mole",
+        "file": "output/college.en/sonnet/html/concept_mole.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "oxidation",
+        "label": "Oxidation",
+        "file": "output/college.en/sonnet/html/concept_oxidation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "oxidation_number",
+        "label": "Oxidation Number",
+        "file": "output/college.en/sonnet/html/concept_oxidation_number.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "redox_reaction",
+        "label": "Redox Reaction",
+        "file": "output/college.en/sonnet/html/concept_redox_reaction.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "reduction",
+        "label": "Reduction",
+        "file": "output/college.en/sonnet/html/concept_reduction.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "stoichiometry",
+        "label": "Stoichiometry",
+        "file": "output/college.en/sonnet/html/concept_stoichiometry.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "theoretical_yield",
+        "label": "Theoretical Yield",
+        "file": "output/college.en/sonnet/html/concept_theoretical_yield.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "titration_analysis",
+        "label": "Titration Analysis",
+        "file": "output/college.en/sonnet/html/concept_titration_analysis.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ]
   },
   {
     "id": "chemistry_ch05",
@@ -257,9 +757,210 @@
     ],
     "default_level": "college",
     "has_navigator": true,
-    "has_book": false,
-    "books": [],
-    "generated_concepts": []
+    "has_book": true,
+    "books": [
+      {
+        "target": "solar_thermal_energy_storage",
+        "file": "output/college.en/sonnet/html/book_solar_thermal_energy_storage.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "metal_identification_by_specific_heat",
+        "file": "output/college.en/sonnet/html/book_metal_identification_by_specific_heat.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "nutritional_calorie",
+        "file": "output/college.en/sonnet/html/book_nutritional_calorie.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "reaction_enthalpy_from_formation_data",
+        "file": "output/college.en/sonnet/html/book_reaction_enthalpy_from_formation_data.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ],
+    "generated_concepts": [
+      {
+        "name": "bomb_calorimeter",
+        "label": "Bomb Calorimeter",
+        "file": "output/college.en/sonnet/html/concept_bomb_calorimeter.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "calorimetry",
+        "label": "Calorimetry",
+        "file": "output/college.en/sonnet/html/concept_calorimetry.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "energy",
+        "label": "Energy",
+        "file": "output/college.en/sonnet/html/concept_energy.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "enthalpy",
+        "label": "Enthalpy",
+        "file": "output/college.en/sonnet/html/concept_enthalpy.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "enthalpy_change",
+        "label": "Enthalpy Change",
+        "file": "output/college.en/sonnet/html/concept_enthalpy_change.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "expansion_work",
+        "label": "Expansion Work",
+        "file": "output/college.en/sonnet/html/concept_expansion_work.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "heat",
+        "label": "Heat",
+        "file": "output/college.en/sonnet/html/concept_heat.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "heat_capacity",
+        "label": "Heat Capacity",
+        "file": "output/college.en/sonnet/html/concept_heat_capacity.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "hess_law",
+        "label": "Hess Law",
+        "file": "output/college.en/sonnet/html/concept_hess_law.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "internal_energy",
+        "label": "Internal Energy",
+        "file": "output/college.en/sonnet/html/concept_internal_energy.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "kinetic_energy",
+        "label": "Kinetic Energy",
+        "file": "output/college.en/sonnet/html/concept_kinetic_energy.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "metal_identification_by_specific_heat",
+        "label": "Metal Identification By Specific Heat",
+        "file": "output/college.en/sonnet/html/concept_metal_identification_by_specific_heat.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "nutritional_calorie",
+        "label": "Nutritional Calorie",
+        "file": "output/college.en/sonnet/html/concept_nutritional_calorie.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "reaction_enthalpy_from_formation_data",
+        "label": "Reaction Enthalpy From Formation Data",
+        "file": "output/college.en/sonnet/html/concept_reaction_enthalpy_from_formation_data.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "solar_thermal_energy_storage",
+        "label": "Solar Thermal Energy Storage",
+        "file": "output/college.en/sonnet/html/concept_solar_thermal_energy_storage.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "specific_heat_capacity",
+        "label": "Specific Heat Capacity",
+        "file": "output/college.en/sonnet/html/concept_specific_heat_capacity.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "standard_enthalpy_of_formation",
+        "label": "Standard Enthalpy Of Formation",
+        "file": "output/college.en/sonnet/html/concept_standard_enthalpy_of_formation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "standard_state",
+        "label": "Standard State",
+        "file": "output/college.en/sonnet/html/concept_standard_state.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "state_function",
+        "label": "State Function",
+        "file": "output/college.en/sonnet/html/concept_state_function.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "system_and_surroundings",
+        "label": "System And Surroundings",
+        "file": "output/college.en/sonnet/html/concept_system_and_surroundings.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "temperature",
+        "label": "Temperature",
+        "file": "output/college.en/sonnet/html/concept_temperature.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "thermal_energy",
+        "label": "Thermal Energy",
+        "file": "output/college.en/sonnet/html/concept_thermal_energy.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "thermal_equilibrium",
+        "label": "Thermal Equilibrium",
+        "file": "output/college.en/sonnet/html/concept_thermal_equilibrium.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "thermochemical_equation",
+        "label": "Thermochemical Equation",
+        "file": "output/college.en/sonnet/html/concept_thermochemical_equation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "work",
+        "label": "Work",
+        "file": "output/college.en/sonnet/html/concept_work.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ]
   },
   {
     "id": "chemistry_ch06",
@@ -276,9 +977,350 @@
     ],
     "default_level": "college",
     "has_navigator": true,
-    "has_book": false,
-    "books": [],
-    "generated_concepts": []
+    "has_book": true,
+    "books": [
+      {
+        "target": "periodic_table_blocks",
+        "file": "output/college.en/sonnet/html/book_periodic_table_blocks.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "ion_electron_configuration",
+        "file": "output/college.en/sonnet/html/book_ion_electron_configuration.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "isoelectronic_species",
+        "file": "output/college.en/sonnet/html/book_isoelectronic_species.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "periodic_trends",
+        "file": "output/college.en/sonnet/html/book_periodic_trends.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ],
+    "generated_concepts": [
+      {
+        "name": "amplitude",
+        "label": "Amplitude",
+        "file": "output/college.en/sonnet/html/concept_amplitude.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "angular_momentum_quantum_number",
+        "label": "Angular Momentum Quantum Number",
+        "file": "output/college.en/sonnet/html/concept_angular_momentum_quantum_number.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "atomic_orbital",
+        "label": "Atomic Orbital",
+        "file": "output/college.en/sonnet/html/concept_atomic_orbital.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "aufbau_principle",
+        "label": "Aufbau Principle",
+        "file": "output/college.en/sonnet/html/concept_aufbau_principle.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "bohr_model",
+        "label": "Bohr Model",
+        "file": "output/college.en/sonnet/html/concept_bohr_model.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "core_electrons",
+        "label": "Core Electrons",
+        "file": "output/college.en/sonnet/html/concept_core_electrons.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "covalent_radius",
+        "label": "Covalent Radius",
+        "file": "output/college.en/sonnet/html/concept_covalent_radius.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "de_broglie_wavelength",
+        "label": "De Broglie Wavelength",
+        "file": "output/college.en/sonnet/html/concept_de_broglie_wavelength.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "degenerate_orbitals",
+        "label": "Degenerate Orbitals",
+        "file": "output/college.en/sonnet/html/concept_degenerate_orbitals.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "effective_nuclear_charge",
+        "label": "Effective Nuclear Charge",
+        "file": "output/college.en/sonnet/html/concept_effective_nuclear_charge.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "electromagnetic_radiation",
+        "label": "Electromagnetic Radiation",
+        "file": "output/college.en/sonnet/html/concept_electromagnetic_radiation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "electromagnetic_spectrum",
+        "label": "Electromagnetic Spectrum",
+        "file": "output/college.en/sonnet/html/concept_electromagnetic_spectrum.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "electron_affinity",
+        "label": "Electron Affinity",
+        "file": "output/college.en/sonnet/html/concept_electron_affinity.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "electron_configuration",
+        "label": "Electron Configuration",
+        "file": "output/college.en/sonnet/html/concept_electron_configuration.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "electron_shielding",
+        "label": "Electron Shielding",
+        "file": "output/college.en/sonnet/html/concept_electron_shielding.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "energy_level",
+        "label": "Energy Level",
+        "file": "output/college.en/sonnet/html/concept_energy_level.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "frequency",
+        "label": "Frequency",
+        "file": "output/college.en/sonnet/html/concept_frequency.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "heisenberg_uncertainty_principle",
+        "label": "Heisenberg Uncertainty Principle",
+        "file": "output/college.en/sonnet/html/concept_heisenberg_uncertainty_principle.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "hunds_rule",
+        "label": "Hunds Rule",
+        "file": "output/college.en/sonnet/html/concept_hunds_rule.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "interference",
+        "label": "Interference",
+        "file": "output/college.en/sonnet/html/concept_interference.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "ion_electron_configuration",
+        "label": "Ion Electron Configuration",
+        "file": "output/college.en/sonnet/html/concept_ion_electron_configuration.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "ionic_radius",
+        "label": "Ionic Radius",
+        "file": "output/college.en/sonnet/html/concept_ionic_radius.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "ionization_energy",
+        "label": "Ionization Energy",
+        "file": "output/college.en/sonnet/html/concept_ionization_energy.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "isoelectronic_species",
+        "label": "Isoelectronic Species",
+        "file": "output/college.en/sonnet/html/concept_isoelectronic_species.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "line_spectrum",
+        "label": "Line Spectrum",
+        "file": "output/college.en/sonnet/html/concept_line_spectrum.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "magnetic_quantum_number",
+        "label": "Magnetic Quantum Number",
+        "file": "output/college.en/sonnet/html/concept_magnetic_quantum_number.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "pauli_exclusion_principle",
+        "label": "Pauli Exclusion Principle",
+        "file": "output/college.en/sonnet/html/concept_pauli_exclusion_principle.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "periodic_table_blocks",
+        "label": "Periodic Table Blocks",
+        "file": "output/college.en/sonnet/html/concept_periodic_table_blocks.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "periodic_trends",
+        "label": "Periodic Trends",
+        "file": "output/college.en/sonnet/html/concept_periodic_trends.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "photoelectric_effect",
+        "label": "Photoelectric Effect",
+        "file": "output/college.en/sonnet/html/concept_photoelectric_effect.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "photon",
+        "label": "Photon",
+        "file": "output/college.en/sonnet/html/concept_photon.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "photon_energy",
+        "label": "Photon Energy",
+        "file": "output/college.en/sonnet/html/concept_photon_energy.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "planck_constant",
+        "label": "Planck Constant",
+        "file": "output/college.en/sonnet/html/concept_planck_constant.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "principal_quantum_number",
+        "label": "Principal Quantum Number",
+        "file": "output/college.en/sonnet/html/concept_principal_quantum_number.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "quantization",
+        "label": "Quantization",
+        "file": "output/college.en/sonnet/html/concept_quantization.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "rydberg_formula",
+        "label": "Rydberg Formula",
+        "file": "output/college.en/sonnet/html/concept_rydberg_formula.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "speed_of_light",
+        "label": "Speed Of Light",
+        "file": "output/college.en/sonnet/html/concept_speed_of_light.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "spin_quantum_number",
+        "label": "Spin Quantum Number",
+        "file": "output/college.en/sonnet/html/concept_spin_quantum_number.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "standing_wave",
+        "label": "Standing Wave",
+        "file": "output/college.en/sonnet/html/concept_standing_wave.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "valence_electrons",
+        "label": "Valence Electrons",
+        "file": "output/college.en/sonnet/html/concept_valence_electrons.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "wave",
+        "label": "Wave",
+        "file": "output/college.en/sonnet/html/concept_wave.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "wave_particle_duality",
+        "label": "Wave Particle Duality",
+        "file": "output/college.en/sonnet/html/concept_wave_particle_duality.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "wave_speed_equation",
+        "label": "Wave Speed Equation",
+        "file": "output/college.en/sonnet/html/concept_wave_speed_equation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "wavefunction",
+        "label": "Wavefunction",
+        "file": "output/college.en/sonnet/html/concept_wavefunction.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "wavelength",
+        "label": "Wavelength",
+        "file": "output/college.en/sonnet/html/concept_wavelength.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ]
   },
   {
     "id": "chemistry_ch07",
@@ -295,9 +1337,218 @@
     ],
     "default_level": "college",
     "has_navigator": true,
-    "has_book": false,
-    "books": [],
-    "generated_concepts": []
+    "has_book": true,
+    "books": [
+      {
+        "target": "enthalpy_estimation_bond_energies",
+        "file": "output/college.en/sonnet/html/book_enthalpy_estimation_bond_energies.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "born_haber_cycle",
+        "file": "output/college.en/sonnet/html/book_born_haber_cycle.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "polar_molecule",
+        "file": "output/college.en/sonnet/html/book_polar_molecule.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ],
+    "generated_concepts": [
+      {
+        "name": "bond_dipole_moment",
+        "label": "Bond Dipole Moment",
+        "file": "output/college.en/sonnet/html/concept_bond_dipole_moment.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "bond_energy",
+        "label": "Bond Energy",
+        "file": "output/college.en/sonnet/html/concept_bond_energy.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "bond_length",
+        "label": "Bond Length",
+        "file": "output/college.en/sonnet/html/concept_bond_length.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "bond_polarity",
+        "label": "Bond Polarity",
+        "file": "output/college.en/sonnet/html/concept_bond_polarity.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "born_haber_cycle",
+        "label": "Born Haber Cycle",
+        "file": "output/college.en/sonnet/html/concept_born_haber_cycle.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "covalent_bond",
+        "label": "Covalent Bond",
+        "file": "output/college.en/sonnet/html/concept_covalent_bond.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "electron_affinity",
+        "label": "Electron Affinity",
+        "file": "output/college.en/sonnet/html/concept_electron_affinity.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "electron_configuration",
+        "label": "Electron Configuration",
+        "file": "output/college.en/sonnet/html/concept_electron_configuration.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "electron_pair_geometry",
+        "label": "Electron Pair Geometry",
+        "file": "output/college.en/sonnet/html/concept_electron_pair_geometry.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "electronegativity",
+        "label": "Electronegativity",
+        "file": "output/college.en/sonnet/html/concept_electronegativity.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "electrostatic_force",
+        "label": "Electrostatic Force",
+        "file": "output/college.en/sonnet/html/concept_electrostatic_force.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "enthalpy_estimation_bond_energies",
+        "label": "Enthalpy Estimation Bond Energies",
+        "file": "output/college.en/sonnet/html/concept_enthalpy_estimation_bond_energies.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "ion",
+        "label": "Ion",
+        "file": "output/college.en/sonnet/html/concept_ion.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "ionic_bond",
+        "label": "Ionic Bond",
+        "file": "output/college.en/sonnet/html/concept_ionic_bond.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "ionic_compound",
+        "label": "Ionic Compound",
+        "file": "output/college.en/sonnet/html/concept_ionic_compound.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "ionization_energy",
+        "label": "Ionization Energy",
+        "file": "output/college.en/sonnet/html/concept_ionization_energy.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "lattice_energy",
+        "label": "Lattice Energy",
+        "file": "output/college.en/sonnet/html/concept_lattice_energy.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "lewis_structure",
+        "label": "Lewis Structure",
+        "file": "output/college.en/sonnet/html/concept_lewis_structure.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "lewis_symbol",
+        "label": "Lewis Symbol",
+        "file": "output/college.en/sonnet/html/concept_lewis_symbol.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "lone_pair",
+        "label": "Lone Pair",
+        "file": "output/college.en/sonnet/html/concept_lone_pair.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "molecular_dipole_moment",
+        "label": "Molecular Dipole Moment",
+        "file": "output/college.en/sonnet/html/concept_molecular_dipole_moment.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "molecular_structure",
+        "label": "Molecular Structure",
+        "file": "output/college.en/sonnet/html/concept_molecular_structure.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "periodic_table_trends",
+        "label": "Periodic Table Trends",
+        "file": "output/college.en/sonnet/html/concept_periodic_table_trends.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "polar_covalent_bond",
+        "label": "Polar Covalent Bond",
+        "file": "output/college.en/sonnet/html/concept_polar_covalent_bond.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "polar_molecule",
+        "label": "Polar Molecule",
+        "file": "output/college.en/sonnet/html/concept_polar_molecule.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "valence_electrons",
+        "label": "Valence Electrons",
+        "file": "output/college.en/sonnet/html/concept_valence_electrons.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "vsepr_theory",
+        "label": "Vsepr Theory",
+        "file": "output/college.en/sonnet/html/concept_vsepr_theory.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ]
   },
   {
     "id": "chemistry_ch08",
@@ -314,9 +1565,134 @@
     ],
     "default_level": "college",
     "has_navigator": true,
-    "has_book": false,
-    "books": [],
-    "generated_concepts": []
+    "has_book": true,
+    "books": [
+      {
+        "target": "homonuclear_diatomic_mo_configurations",
+        "file": "output/college.en/sonnet/html/book_homonuclear_diatomic_mo_configurations.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "band_theory",
+        "file": "output/college.en/sonnet/html/book_band_theory.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "computational_chemistry_drug_design",
+        "file": "output/college.en/sonnet/html/book_computational_chemistry_drug_design.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ],
+    "generated_concepts": [
+      {
+        "name": "antibonding_molecular_orbital",
+        "label": "Antibonding Molecular Orbital",
+        "file": "output/college.en/sonnet/html/concept_antibonding_molecular_orbital.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "atomic_orbitals",
+        "label": "Atomic Orbitals",
+        "file": "output/college.en/sonnet/html/concept_atomic_orbitals.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "band_theory",
+        "label": "Band Theory",
+        "file": "output/college.en/sonnet/html/concept_band_theory.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "bond_order",
+        "label": "Bond Order",
+        "file": "output/college.en/sonnet/html/concept_bond_order.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "bonding_molecular_orbital",
+        "label": "Bonding Molecular Orbital",
+        "file": "output/college.en/sonnet/html/concept_bonding_molecular_orbital.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "computational_chemistry_drug_design",
+        "label": "Computational Chemistry Drug Design",
+        "file": "output/college.en/sonnet/html/concept_computational_chemistry_drug_design.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "diamagnetism",
+        "label": "Diamagnetism",
+        "file": "output/college.en/sonnet/html/concept_diamagnetism.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "electron_configuration",
+        "label": "Electron Configuration",
+        "file": "output/college.en/sonnet/html/concept_electron_configuration.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "homonuclear_diatomic_mo_configurations",
+        "label": "Homonuclear Diatomic Mo Configurations",
+        "file": "output/college.en/sonnet/html/concept_homonuclear_diatomic_mo_configurations.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "lcao",
+        "label": "Lcao",
+        "file": "output/college.en/sonnet/html/concept_lcao.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "molecular_orbital",
+        "label": "Molecular Orbital",
+        "file": "output/college.en/sonnet/html/concept_molecular_orbital.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "molecular_orbital_theory",
+        "label": "Molecular Orbital Theory",
+        "file": "output/college.en/sonnet/html/concept_molecular_orbital_theory.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "paramagnetism",
+        "label": "Paramagnetism",
+        "file": "output/college.en/sonnet/html/concept_paramagnetism.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "sp_mixing",
+        "label": "Sp Mixing",
+        "file": "output/college.en/sonnet/html/concept_sp_mixing.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "wave_function",
+        "label": "Wave Function",
+        "file": "output/college.en/sonnet/html/concept_wave_function.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ]
   },
   {
     "id": "chemistry_ch09",
@@ -333,9 +1709,243 @@
     ],
     "default_level": "college",
     "has_navigator": true,
-    "has_book": false,
-    "books": [],
-    "generated_concepts": []
+    "has_book": true,
+    "books": [
+      {
+        "target": "barometer",
+        "file": "output/college.en/sonnet/html/book_barometer.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "manometer",
+        "file": "output/college.en/sonnet/html/book_manometer.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "molar_mass_determination",
+        "file": "output/college.en/sonnet/html/book_molar_mass_determination.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "gas_stoichiometry",
+        "file": "output/college.en/sonnet/html/book_gas_stoichiometry.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "uranium_enrichment_by_diffusion",
+        "file": "output/college.en/sonnet/html/book_uranium_enrichment_by_diffusion.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "gas_collection_over_water",
+        "file": "output/college.en/sonnet/html/book_gas_collection_over_water.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ],
+    "generated_concepts": [
+      {
+        "name": "amontons_law",
+        "label": "Amontons Law",
+        "file": "output/college.en/sonnet/html/concept_amontons_law.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "amount_of_substance",
+        "label": "Amount Of Substance",
+        "file": "output/college.en/sonnet/html/concept_amount_of_substance.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "area",
+        "label": "Area",
+        "file": "output/college.en/sonnet/html/concept_area.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "atmospheric_pressure",
+        "label": "Atmospheric Pressure",
+        "file": "output/college.en/sonnet/html/concept_atmospheric_pressure.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "avogadros_law",
+        "label": "Avogadros Law",
+        "file": "output/college.en/sonnet/html/concept_avogadros_law.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "barometer",
+        "label": "Barometer",
+        "file": "output/college.en/sonnet/html/concept_barometer.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "boyle_law",
+        "label": "Boyle Law",
+        "file": "output/college.en/sonnet/html/concept_boyle_law.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "charles_law",
+        "label": "Charles Law",
+        "file": "output/college.en/sonnet/html/concept_charles_law.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "daltons_law",
+        "label": "Daltons Law",
+        "file": "output/college.en/sonnet/html/concept_daltons_law.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "density",
+        "label": "Density",
+        "file": "output/college.en/sonnet/html/concept_density.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "effusion",
+        "label": "Effusion",
+        "file": "output/college.en/sonnet/html/concept_effusion.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "force",
+        "label": "Force",
+        "file": "output/college.en/sonnet/html/concept_force.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "gas_collection_over_water",
+        "label": "Gas Collection Over Water",
+        "file": "output/college.en/sonnet/html/concept_gas_collection_over_water.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "gas_stoichiometry",
+        "label": "Gas Stoichiometry",
+        "file": "output/college.en/sonnet/html/concept_gas_stoichiometry.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "grahams_law",
+        "label": "Grahams Law",
+        "file": "output/college.en/sonnet/html/concept_grahams_law.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "hydrostatic_pressure",
+        "label": "Hydrostatic Pressure",
+        "file": "output/college.en/sonnet/html/concept_hydrostatic_pressure.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "ideal_gas",
+        "label": "Ideal Gas",
+        "file": "output/college.en/sonnet/html/concept_ideal_gas.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "ideal_gas_law",
+        "label": "Ideal Gas Law",
+        "file": "output/college.en/sonnet/html/concept_ideal_gas_law.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "manometer",
+        "label": "Manometer",
+        "file": "output/college.en/sonnet/html/concept_manometer.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "molar_mass",
+        "label": "Molar Mass",
+        "file": "output/college.en/sonnet/html/concept_molar_mass.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "molar_mass_determination",
+        "label": "Molar Mass Determination",
+        "file": "output/college.en/sonnet/html/concept_molar_mass_determination.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "mole_fraction",
+        "label": "Mole Fraction",
+        "file": "output/college.en/sonnet/html/concept_mole_fraction.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "partial_pressure",
+        "label": "Partial Pressure",
+        "file": "output/college.en/sonnet/html/concept_partial_pressure.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "pressure",
+        "label": "Pressure",
+        "file": "output/college.en/sonnet/html/concept_pressure.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "temperature_kelvin",
+        "label": "Temperature Kelvin",
+        "file": "output/college.en/sonnet/html/concept_temperature_kelvin.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "uranium_enrichment_by_diffusion",
+        "label": "Uranium Enrichment By Diffusion",
+        "file": "output/college.en/sonnet/html/concept_uranium_enrichment_by_diffusion.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "vapor_pressure_of_water",
+        "label": "Vapor Pressure Of Water",
+        "file": "output/college.en/sonnet/html/concept_vapor_pressure_of_water.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "volume",
+        "label": "Volume",
+        "file": "output/college.en/sonnet/html/concept_volume.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ]
   },
   {
     "id": "chemistry_ch10",
@@ -352,9 +1962,216 @@
     ],
     "default_level": "college",
     "has_navigator": true,
-    "has_book": false,
-    "books": [],
-    "generated_concepts": []
+    "has_book": true,
+    "books": [
+      {
+        "target": "capillary_rise_equation",
+        "file": "output/college.en/sonnet/html/book_capillary_rise_equation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "dna_hydrogen_bonding",
+        "file": "output/college.en/sonnet/html/book_dna_hydrogen_bonding.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "freeze_drying",
+        "file": "output/college.en/sonnet/html/book_freeze_drying.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "semiconductor_doping",
+        "file": "output/college.en/sonnet/html/book_semiconductor_doping.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "supercritical_co2_extraction",
+        "file": "output/college.en/sonnet/html/book_supercritical_co2_extraction.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ],
+    "generated_concepts": [
+      {
+        "name": "adhesive_forces",
+        "label": "Adhesive Forces",
+        "file": "output/college.en/sonnet/html/concept_adhesive_forces.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "capillary_action",
+        "label": "Capillary Action",
+        "file": "output/college.en/sonnet/html/concept_capillary_action.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "capillary_rise_equation",
+        "label": "Capillary Rise Equation",
+        "file": "output/college.en/sonnet/html/concept_capillary_rise_equation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "cohesive_forces",
+        "label": "Cohesive Forces",
+        "file": "output/college.en/sonnet/html/concept_cohesive_forces.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "critical_point",
+        "label": "Critical Point",
+        "file": "output/college.en/sonnet/html/concept_critical_point.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "crystal_defects",
+        "label": "Crystal Defects",
+        "file": "output/college.en/sonnet/html/concept_crystal_defects.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "crystalline_solid",
+        "label": "Crystalline Solid",
+        "file": "output/college.en/sonnet/html/concept_crystalline_solid.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "dipole_dipole_attraction",
+        "label": "Dipole Dipole Attraction",
+        "file": "output/college.en/sonnet/html/concept_dipole_dipole_attraction.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "dna_hydrogen_bonding",
+        "label": "Dna Hydrogen Bonding",
+        "file": "output/college.en/sonnet/html/concept_dna_hydrogen_bonding.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "dynamic_equilibrium",
+        "label": "Dynamic Equilibrium",
+        "file": "output/college.en/sonnet/html/concept_dynamic_equilibrium.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "electronegativity",
+        "label": "Electronegativity",
+        "file": "output/college.en/sonnet/html/concept_electronegativity.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "electrostatic_force",
+        "label": "Electrostatic Force",
+        "file": "output/college.en/sonnet/html/concept_electrostatic_force.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "freeze_drying",
+        "label": "Freeze Drying",
+        "file": "output/college.en/sonnet/html/concept_freeze_drying.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "hydrogen_bonding",
+        "label": "Hydrogen Bonding",
+        "file": "output/college.en/sonnet/html/concept_hydrogen_bonding.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "intermolecular_forces",
+        "label": "Intermolecular Forces",
+        "file": "output/college.en/sonnet/html/concept_intermolecular_forces.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "kinetic_molecular_theory",
+        "label": "Kinetic Molecular Theory",
+        "file": "output/college.en/sonnet/html/concept_kinetic_molecular_theory.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "melting_and_freezing",
+        "label": "Melting And Freezing",
+        "file": "output/college.en/sonnet/html/concept_melting_and_freezing.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "polarity_and_dipole_moment",
+        "label": "Polarity And Dipole Moment",
+        "file": "output/college.en/sonnet/html/concept_polarity_and_dipole_moment.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "semiconductor_doping",
+        "label": "Semiconductor Doping",
+        "file": "output/college.en/sonnet/html/concept_semiconductor_doping.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "sublimation_and_deposition",
+        "label": "Sublimation And Deposition",
+        "file": "output/college.en/sonnet/html/concept_sublimation_and_deposition.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "supercritical_co2_extraction",
+        "label": "Supercritical Co2 Extraction",
+        "file": "output/college.en/sonnet/html/concept_supercritical_co2_extraction.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "supercritical_fluid",
+        "label": "Supercritical Fluid",
+        "file": "output/college.en/sonnet/html/concept_supercritical_fluid.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "surface_tension",
+        "label": "Surface Tension",
+        "file": "output/college.en/sonnet/html/concept_surface_tension.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "triple_point",
+        "label": "Triple Point",
+        "file": "output/college.en/sonnet/html/concept_triple_point.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "vapor_pressure",
+        "label": "Vapor Pressure",
+        "file": "output/college.en/sonnet/html/concept_vapor_pressure.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ]
   },
   {
     "id": "chemistry_ch11",
@@ -371,9 +2188,299 @@
     ],
     "default_level": "college",
     "has_navigator": true,
-    "has_book": false,
-    "books": [],
-    "generated_concepts": []
+    "has_book": true,
+    "books": [
+      {
+        "target": "reverse_osmosis",
+        "file": "output/college.en/sonnet/html/book_reverse_osmosis.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "distillation",
+        "file": "output/college.en/sonnet/html/book_distillation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "decompression_sickness",
+        "file": "output/college.en/sonnet/html/book_decompression_sickness.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "molar_mass_determination",
+        "file": "output/college.en/sonnet/html/book_molar_mass_determination.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "deicing",
+        "file": "output/college.en/sonnet/html/book_deicing.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "soap_detergent_action",
+        "file": "output/college.en/sonnet/html/book_soap_detergent_action.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ],
+    "generated_concepts": [
+      {
+        "name": "amphiphilic_molecule",
+        "label": "Amphiphilic Molecule",
+        "file": "output/college.en/sonnet/html/concept_amphiphilic_molecule.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "boiling_point_elevation",
+        "label": "Boiling Point Elevation",
+        "file": "output/college.en/sonnet/html/concept_boiling_point_elevation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "colligative_property",
+        "label": "Colligative Property",
+        "file": "output/college.en/sonnet/html/concept_colligative_property.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "colloid",
+        "label": "Colloid",
+        "file": "output/college.en/sonnet/html/concept_colloid.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "decompression_sickness",
+        "label": "Decompression Sickness",
+        "file": "output/college.en/sonnet/html/concept_decompression_sickness.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "deicing",
+        "label": "Deicing",
+        "file": "output/college.en/sonnet/html/concept_deicing.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "dissociation",
+        "label": "Dissociation",
+        "file": "output/college.en/sonnet/html/concept_dissociation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "dissolution_process",
+        "label": "Dissolution Process",
+        "file": "output/college.en/sonnet/html/concept_dissolution_process.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "distillation",
+        "label": "Distillation",
+        "file": "output/college.en/sonnet/html/concept_distillation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "electrolyte",
+        "label": "Electrolyte",
+        "file": "output/college.en/sonnet/html/concept_electrolyte.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "emulsion",
+        "label": "Emulsion",
+        "file": "output/college.en/sonnet/html/concept_emulsion.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "freezing_point_depression",
+        "label": "Freezing Point Depression",
+        "file": "output/college.en/sonnet/html/concept_freezing_point_depression.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "henrys_law",
+        "label": "Henrys Law",
+        "file": "output/college.en/sonnet/html/concept_henrys_law.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "ideal_solution",
+        "label": "Ideal Solution",
+        "file": "output/college.en/sonnet/html/concept_ideal_solution.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "intermolecular_forces",
+        "label": "Intermolecular Forces",
+        "file": "output/college.en/sonnet/html/concept_intermolecular_forces.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "ion_dipole_attraction",
+        "label": "Ion Dipole Attraction",
+        "file": "output/college.en/sonnet/html/concept_ion_dipole_attraction.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "ions",
+        "label": "Ions",
+        "file": "output/college.en/sonnet/html/concept_ions.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "like_dissolves_like",
+        "label": "Like Dissolves Like",
+        "file": "output/college.en/sonnet/html/concept_like_dissolves_like.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "miscibility",
+        "label": "Miscibility",
+        "file": "output/college.en/sonnet/html/concept_miscibility.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "molality",
+        "label": "Molality",
+        "file": "output/college.en/sonnet/html/concept_molality.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "molar_mass_determination",
+        "label": "Molar Mass Determination",
+        "file": "output/college.en/sonnet/html/concept_molar_mass_determination.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "molarity",
+        "label": "Molarity",
+        "file": "output/college.en/sonnet/html/concept_molarity.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "mole_fraction",
+        "label": "Mole Fraction",
+        "file": "output/college.en/sonnet/html/concept_mole_fraction.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "osmosis",
+        "label": "Osmosis",
+        "file": "output/college.en/sonnet/html/concept_osmosis.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "osmotic_pressure",
+        "label": "Osmotic Pressure",
+        "file": "output/college.en/sonnet/html/concept_osmotic_pressure.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "partial_pressure",
+        "label": "Partial Pressure",
+        "file": "output/college.en/sonnet/html/concept_partial_pressure.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "polarity",
+        "label": "Polarity",
+        "file": "output/college.en/sonnet/html/concept_polarity.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "raoults_law",
+        "label": "Raoults Law",
+        "file": "output/college.en/sonnet/html/concept_raoults_law.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "reverse_osmosis",
+        "label": "Reverse Osmosis",
+        "file": "output/college.en/sonnet/html/concept_reverse_osmosis.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "soap_detergent_action",
+        "label": "Soap Detergent Action",
+        "file": "output/college.en/sonnet/html/concept_soap_detergent_action.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "solubility",
+        "label": "Solubility",
+        "file": "output/college.en/sonnet/html/concept_solubility.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "solution",
+        "label": "Solution",
+        "file": "output/college.en/sonnet/html/concept_solution.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "solvation",
+        "label": "Solvation",
+        "file": "output/college.en/sonnet/html/concept_solvation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "solvent_and_solute",
+        "label": "Solvent And Solute",
+        "file": "output/college.en/sonnet/html/concept_solvent_and_solute.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "vapor_pressure",
+        "label": "Vapor Pressure",
+        "file": "output/college.en/sonnet/html/concept_vapor_pressure.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "vapor_pressure_lowering",
+        "label": "Vapor Pressure Lowering",
+        "file": "output/college.en/sonnet/html/concept_vapor_pressure_lowering.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ]
   },
   {
     "id": "chemistry_ch12",
@@ -390,9 +2497,142 @@
     ],
     "default_level": "college",
     "has_navigator": true,
-    "has_book": false,
-    "books": [],
-    "generated_concepts": []
+    "has_book": true,
+    "books": [
+      {
+        "target": "enzyme_catalysis",
+        "file": "output/college.en/sonnet/html/book_enzyme_catalysis.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "radioactive_decay_kinetics",
+        "file": "output/college.en/sonnet/html/book_radioactive_decay_kinetics.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ],
+    "generated_concepts": [
+      {
+        "name": "activation_energy",
+        "label": "Activation Energy",
+        "file": "output/college.en/sonnet/html/concept_activation_energy.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "catalyst",
+        "label": "Catalyst",
+        "file": "output/college.en/sonnet/html/concept_catalyst.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "collision_theory",
+        "label": "Collision Theory",
+        "file": "output/college.en/sonnet/html/concept_collision_theory.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "elementary_reaction",
+        "label": "Elementary Reaction",
+        "file": "output/college.en/sonnet/html/concept_elementary_reaction.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "enzyme_catalysis",
+        "label": "Enzyme Catalysis",
+        "file": "output/college.en/sonnet/html/concept_enzyme_catalysis.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "first_order_kinetics",
+        "label": "First Order Kinetics",
+        "file": "output/college.en/sonnet/html/concept_first_order_kinetics.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "half_life",
+        "label": "Half Life",
+        "file": "output/college.en/sonnet/html/concept_half_life.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "integrated_rate_law",
+        "label": "Integrated Rate Law",
+        "file": "output/college.en/sonnet/html/concept_integrated_rate_law.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "molar_concentration",
+        "label": "Molar Concentration",
+        "file": "output/college.en/sonnet/html/concept_molar_concentration.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "radioactive_decay_kinetics",
+        "label": "Radioactive Decay Kinetics",
+        "file": "output/college.en/sonnet/html/concept_radioactive_decay_kinetics.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "rate_law",
+        "label": "Rate Law",
+        "file": "output/college.en/sonnet/html/concept_rate_law.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "reaction_mechanism",
+        "label": "Reaction Mechanism",
+        "file": "output/college.en/sonnet/html/concept_reaction_mechanism.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "reaction_rate",
+        "label": "Reaction Rate",
+        "file": "output/college.en/sonnet/html/concept_reaction_rate.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "second_order_kinetics",
+        "label": "Second Order Kinetics",
+        "file": "output/college.en/sonnet/html/concept_second_order_kinetics.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "stoichiometry",
+        "label": "Stoichiometry",
+        "file": "output/college.en/sonnet/html/concept_stoichiometry.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "temperature",
+        "label": "Temperature",
+        "file": "output/college.en/sonnet/html/concept_temperature.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "zero_order_kinetics",
+        "label": "Zero Order Kinetics",
+        "file": "output/college.en/sonnet/html/concept_zero_order_kinetics.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ]
   },
   {
     "id": "chemistry_ch13",
@@ -409,9 +2649,183 @@
     ],
     "default_level": "college",
     "has_navigator": true,
-    "has_book": false,
-    "books": [],
-    "generated_concepts": []
+    "has_book": true,
+    "books": [
+      {
+        "target": "haber_bosch_process",
+        "file": "output/college.en/sonnet/html/book_haber_bosch_process.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "carbonated_beverage_equilibrium",
+        "file": "output/college.en/sonnet/html/book_carbonated_beverage_equilibrium.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "pharmaceutical_equilibrium",
+        "file": "output/college.en/sonnet/html/book_pharmaceutical_equilibrium.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ],
+    "generated_concepts": [
+      {
+        "name": "activation_energy",
+        "label": "Activation Energy",
+        "file": "output/college.en/sonnet/html/concept_activation_energy.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "carbonated_beverage_equilibrium",
+        "label": "Carbonated Beverage Equilibrium",
+        "file": "output/college.en/sonnet/html/concept_carbonated_beverage_equilibrium.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "catalyst_effect_on_equilibrium",
+        "label": "Catalyst Effect On Equilibrium",
+        "file": "output/college.en/sonnet/html/concept_catalyst_effect_on_equilibrium.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "concentration",
+        "label": "Concentration",
+        "file": "output/college.en/sonnet/html/concept_concentration.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "concentration_stress",
+        "label": "Concentration Stress",
+        "file": "output/college.en/sonnet/html/concept_concentration_stress.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "coupled_equilibria",
+        "label": "Coupled Equilibria",
+        "file": "output/college.en/sonnet/html/concept_coupled_equilibria.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "dynamic_equilibrium",
+        "label": "Dynamic Equilibrium",
+        "file": "output/college.en/sonnet/html/concept_dynamic_equilibrium.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "enthalpy_change",
+        "label": "Enthalpy Change",
+        "file": "output/college.en/sonnet/html/concept_enthalpy_change.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "equilibrium_constant",
+        "label": "Equilibrium Constant",
+        "file": "output/college.en/sonnet/html/concept_equilibrium_constant.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "haber_bosch_process",
+        "label": "Haber Bosch Process",
+        "file": "output/college.en/sonnet/html/concept_haber_bosch_process.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "ice_table_method",
+        "label": "Ice Table Method",
+        "file": "output/college.en/sonnet/html/concept_ice_table_method.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "law_of_mass_action",
+        "label": "Law Of Mass Action",
+        "file": "output/college.en/sonnet/html/concept_law_of_mass_action.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "le_chatelier_principle",
+        "label": "Le Chatelier Principle",
+        "file": "output/college.en/sonnet/html/concept_le_chatelier_principle.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "partial_pressure",
+        "label": "Partial Pressure",
+        "file": "output/college.en/sonnet/html/concept_partial_pressure.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "pharmaceutical_equilibrium",
+        "label": "Pharmaceutical Equilibrium",
+        "file": "output/college.en/sonnet/html/concept_pharmaceutical_equilibrium.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "pressure_volume_stress",
+        "label": "Pressure Volume Stress",
+        "file": "output/college.en/sonnet/html/concept_pressure_volume_stress.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "q_vs_k_comparison",
+        "label": "Q Vs K Comparison",
+        "file": "output/college.en/sonnet/html/concept_q_vs_k_comparison.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "reaction_quotient",
+        "label": "Reaction Quotient",
+        "file": "output/college.en/sonnet/html/concept_reaction_quotient.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "reaction_rate",
+        "label": "Reaction Rate",
+        "file": "output/college.en/sonnet/html/concept_reaction_rate.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "reversible_reaction",
+        "label": "Reversible Reaction",
+        "file": "output/college.en/sonnet/html/concept_reversible_reaction.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "stoichiometry",
+        "label": "Stoichiometry",
+        "file": "output/college.en/sonnet/html/concept_stoichiometry.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "temperature_stress",
+        "label": "Temperature Stress",
+        "file": "output/college.en/sonnet/html/concept_temperature_stress.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ]
   },
   {
     "id": "chemistry_ch14",
@@ -428,9 +2842,162 @@
     ],
     "default_level": "college",
     "has_navigator": true,
-    "has_book": false,
-    "books": [],
-    "generated_concepts": []
+    "has_book": true,
+    "books": [
+      {
+        "target": "ph_measurement_tools",
+        "file": "output/college.en/sonnet/html/book_ph_measurement_tools.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "acid_rain",
+        "file": "output/college.en/sonnet/html/book_acid_rain.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "blood_buffer_system",
+        "file": "output/college.en/sonnet/html/book_blood_buffer_system.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ],
+    "generated_concepts": [
+      {
+        "name": "acid_ionization",
+        "label": "Acid Ionization",
+        "file": "output/college.en/sonnet/html/concept_acid_ionization.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "acid_ionization_constant_ka",
+        "label": "Acid Ionization Constant Ka",
+        "file": "output/college.en/sonnet/html/concept_acid_ionization_constant_ka.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "acid_rain",
+        "label": "Acid Rain",
+        "file": "output/college.en/sonnet/html/concept_acid_rain.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "acidic_basic_neutral_classification",
+        "label": "Acidic Basic Neutral Classification",
+        "file": "output/college.en/sonnet/html/concept_acidic_basic_neutral_classification.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "blood_buffer_system",
+        "label": "Blood Buffer System",
+        "file": "output/college.en/sonnet/html/concept_blood_buffer_system.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "bronsted_lowry_acid",
+        "label": "Bronsted Lowry Acid",
+        "file": "output/college.en/sonnet/html/concept_bronsted_lowry_acid.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "bronsted_lowry_base",
+        "label": "Bronsted Lowry Base",
+        "file": "output/college.en/sonnet/html/concept_bronsted_lowry_base.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "buffer_solution",
+        "label": "Buffer Solution",
+        "file": "output/college.en/sonnet/html/concept_buffer_solution.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "chemical_equilibrium",
+        "label": "Chemical Equilibrium",
+        "file": "output/college.en/sonnet/html/concept_chemical_equilibrium.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "conjugate_acid_base_pair",
+        "label": "Conjugate Acid Base Pair",
+        "file": "output/college.en/sonnet/html/concept_conjugate_acid_base_pair.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "henderson_hasselbalch_equation",
+        "label": "Henderson Hasselbalch Equation",
+        "file": "output/college.en/sonnet/html/concept_henderson_hasselbalch_equation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "hydronium_ion",
+        "label": "Hydronium Ion",
+        "file": "output/college.en/sonnet/html/concept_hydronium_ion.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "hydroxide_ion",
+        "label": "Hydroxide Ion",
+        "file": "output/college.en/sonnet/html/concept_hydroxide_ion.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "ion_product_constant_kw",
+        "label": "Ion Product Constant Kw",
+        "file": "output/college.en/sonnet/html/concept_ion_product_constant_kw.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "le_chateliers_principle",
+        "label": "Le Chateliers Principle",
+        "file": "output/college.en/sonnet/html/concept_le_chateliers_principle.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "ph_measurement_tools",
+        "label": "Ph Measurement Tools",
+        "file": "output/college.en/sonnet/html/concept_ph_measurement_tools.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "ph_scale",
+        "label": "Ph Scale",
+        "file": "output/college.en/sonnet/html/concept_ph_scale.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "proton_transfer",
+        "label": "Proton Transfer",
+        "file": "output/college.en/sonnet/html/concept_proton_transfer.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "water_autoionization",
+        "label": "Water Autoionization",
+        "file": "output/college.en/sonnet/html/concept_water_autoionization.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ]
   },
   {
     "id": "chemistry_ch15",
@@ -447,9 +3014,155 @@
     ],
     "default_level": "college",
     "has_navigator": true,
-    "has_book": false,
-    "books": [],
-    "generated_concepts": []
+    "has_book": true,
+    "books": [
+      {
+        "target": "acid_enhanced_dissolution",
+        "file": "output/college.en/sonnet/html/book_acid_enhanced_dissolution.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "selective_precipitation",
+        "file": "output/college.en/sonnet/html/book_selective_precipitation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "complex_ion_enhanced_dissolution",
+        "file": "output/college.en/sonnet/html/book_complex_ion_enhanced_dissolution.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ],
+    "generated_concepts": [
+      {
+        "name": "acid_enhanced_dissolution",
+        "label": "Acid Enhanced Dissolution",
+        "file": "output/college.en/sonnet/html/concept_acid_enhanced_dissolution.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "chemical_equilibrium",
+        "label": "Chemical Equilibrium",
+        "file": "output/college.en/sonnet/html/concept_chemical_equilibrium.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "complex_ion",
+        "label": "Complex Ion",
+        "file": "output/college.en/sonnet/html/concept_complex_ion.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "complex_ion_enhanced_dissolution",
+        "label": "Complex Ion Enhanced Dissolution",
+        "file": "output/college.en/sonnet/html/concept_complex_ion_enhanced_dissolution.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "coordinate_covalent_bond",
+        "label": "Coordinate Covalent Bond",
+        "file": "output/college.en/sonnet/html/concept_coordinate_covalent_bond.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "coupled_equilibria",
+        "label": "Coupled Equilibria",
+        "file": "output/college.en/sonnet/html/concept_coupled_equilibria.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "ion_concentration",
+        "label": "Ion Concentration",
+        "file": "output/college.en/sonnet/html/concept_ion_concentration.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "ionic_dissolution",
+        "label": "Ionic Dissolution",
+        "file": "output/college.en/sonnet/html/concept_ionic_dissolution.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "le_chateliers_principle",
+        "label": "Le Chateliers Principle",
+        "file": "output/college.en/sonnet/html/concept_le_chateliers_principle.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "lewis_acid",
+        "label": "Lewis Acid",
+        "file": "output/college.en/sonnet/html/concept_lewis_acid.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "lewis_acid_base_adduct",
+        "label": "Lewis Acid Base Adduct",
+        "file": "output/college.en/sonnet/html/concept_lewis_acid_base_adduct.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "lewis_base",
+        "label": "Lewis Base",
+        "file": "output/college.en/sonnet/html/concept_lewis_base.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "ligand",
+        "label": "Ligand",
+        "file": "output/college.en/sonnet/html/concept_ligand.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "precipitation_prediction",
+        "label": "Precipitation Prediction",
+        "file": "output/college.en/sonnet/html/concept_precipitation_prediction.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "reaction_quotient",
+        "label": "Reaction Quotient",
+        "file": "output/college.en/sonnet/html/concept_reaction_quotient.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "selective_precipitation",
+        "label": "Selective Precipitation",
+        "file": "output/college.en/sonnet/html/concept_selective_precipitation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "solubility_equilibrium",
+        "label": "Solubility Equilibrium",
+        "file": "output/college.en/sonnet/html/concept_solubility_equilibrium.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "solubility_product_constant",
+        "label": "Solubility Product Constant",
+        "file": "output/college.en/sonnet/html/concept_solubility_product_constant.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ]
   },
   {
     "id": "chemistry_ch16",
@@ -466,9 +3179,202 @@
     ],
     "default_level": "college",
     "has_navigator": true,
-    "has_book": false,
-    "books": [],
-    "generated_concepts": []
+    "has_book": true,
+    "books": [
+      {
+        "target": "predicting_entropy_sign",
+        "file": "output/college.en/sonnet/html/book_predicting_entropy_sign.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "calculating_delta_s_standard",
+        "file": "output/college.en/sonnet/html/book_calculating_delta_s_standard.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "boiling_point_estimation",
+        "file": "output/college.en/sonnet/html/book_boiling_point_estimation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "coupled_reactions",
+        "file": "output/college.en/sonnet/html/book_coupled_reactions.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "equilibrium_constant_from_free_energy",
+        "file": "output/college.en/sonnet/html/book_equilibrium_constant_from_free_energy.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ],
+    "generated_concepts": [
+      {
+        "name": "boiling_point_estimation",
+        "label": "Boiling Point Estimation",
+        "file": "output/college.en/sonnet/html/concept_boiling_point_estimation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "calculating_delta_s_standard",
+        "label": "Calculating Delta S Standard",
+        "file": "output/college.en/sonnet/html/concept_calculating_delta_s_standard.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "coupled_reactions",
+        "label": "Coupled Reactions",
+        "file": "output/college.en/sonnet/html/concept_coupled_reactions.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "enthalpy",
+        "label": "Enthalpy",
+        "file": "output/college.en/sonnet/html/concept_enthalpy.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "entropy",
+        "label": "Entropy",
+        "file": "output/college.en/sonnet/html/concept_entropy.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "entropy_phase_dependence",
+        "label": "Entropy Phase Dependence",
+        "file": "output/college.en/sonnet/html/concept_entropy_phase_dependence.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "entropy_temperature_dependence",
+        "label": "Entropy Temperature Dependence",
+        "file": "output/college.en/sonnet/html/concept_entropy_temperature_dependence.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "equilibrium",
+        "label": "Equilibrium",
+        "file": "output/college.en/sonnet/html/concept_equilibrium.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "equilibrium_constant_from_free_energy",
+        "label": "Equilibrium Constant From Free Energy",
+        "file": "output/college.en/sonnet/html/concept_equilibrium_constant_from_free_energy.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "free_energy_equilibrium_relationship",
+        "label": "Free Energy Equilibrium Relationship",
+        "file": "output/college.en/sonnet/html/concept_free_energy_equilibrium_relationship.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "gibbs_free_energy",
+        "label": "Gibbs Free Energy",
+        "file": "output/college.en/sonnet/html/concept_gibbs_free_energy.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "heat_flow",
+        "label": "Heat Flow",
+        "file": "output/college.en/sonnet/html/concept_heat_flow.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "microstate",
+        "label": "Microstate",
+        "file": "output/college.en/sonnet/html/concept_microstate.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "nonspontaneous_process",
+        "label": "Nonspontaneous Process",
+        "file": "output/college.en/sonnet/html/concept_nonspontaneous_process.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "predicting_entropy_sign",
+        "label": "Predicting Entropy Sign",
+        "file": "output/college.en/sonnet/html/concept_predicting_entropy_sign.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "reaction_quotient",
+        "label": "Reaction Quotient",
+        "file": "output/college.en/sonnet/html/concept_reaction_quotient.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "spontaneous_process",
+        "label": "Spontaneous Process",
+        "file": "output/college.en/sonnet/html/concept_spontaneous_process.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "standard_entropy",
+        "label": "Standard Entropy",
+        "file": "output/college.en/sonnet/html/concept_standard_entropy.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "standard_entropy_change",
+        "label": "Standard Entropy Change",
+        "file": "output/college.en/sonnet/html/concept_standard_entropy_change.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "standard_free_energy_change",
+        "label": "Standard Free Energy Change",
+        "file": "output/college.en/sonnet/html/concept_standard_free_energy_change.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "state_function",
+        "label": "State Function",
+        "file": "output/college.en/sonnet/html/concept_state_function.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "temperature",
+        "label": "Temperature",
+        "file": "output/college.en/sonnet/html/concept_temperature.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "third_law_of_thermodynamics",
+        "label": "Third Law Of Thermodynamics",
+        "file": "output/college.en/sonnet/html/concept_third_law_of_thermodynamics.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ]
   },
   {
     "id": "chemistry_ch17",
@@ -485,9 +3391,166 @@
     ],
     "default_level": "college",
     "has_navigator": true,
-    "has_book": false,
-    "books": [],
-    "generated_concepts": []
+    "has_book": true,
+    "books": [
+      {
+        "target": "battery",
+        "file": "output/college.en/sonnet/html/book_battery.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "fuel_cell",
+        "file": "output/college.en/sonnet/html/book_fuel_cell.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "corrosion",
+        "file": "output/college.en/sonnet/html/book_corrosion.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "galvanization",
+        "file": "output/college.en/sonnet/html/book_galvanization.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "cathodic_protection",
+        "file": "output/college.en/sonnet/html/book_cathodic_protection.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "electroplating",
+        "file": "output/college.en/sonnet/html/book_electroplating.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ],
+    "generated_concepts": [
+      {
+        "name": "anode",
+        "label": "Anode",
+        "file": "output/college.en/sonnet/html/concept_anode.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "battery",
+        "label": "Battery",
+        "file": "output/college.en/sonnet/html/concept_battery.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "cathode",
+        "label": "Cathode",
+        "file": "output/college.en/sonnet/html/concept_cathode.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "cathodic_protection",
+        "label": "Cathodic Protection",
+        "file": "output/college.en/sonnet/html/concept_cathodic_protection.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "corrosion",
+        "label": "Corrosion",
+        "file": "output/college.en/sonnet/html/concept_corrosion.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "electric_charge",
+        "label": "Electric Charge",
+        "file": "output/college.en/sonnet/html/concept_electric_charge.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "electrochemical_cell",
+        "label": "Electrochemical Cell",
+        "file": "output/college.en/sonnet/html/concept_electrochemical_cell.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "electrolysis",
+        "label": "Electrolysis",
+        "file": "output/college.en/sonnet/html/concept_electrolysis.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "electrolytic_cell",
+        "label": "Electrolytic Cell",
+        "file": "output/college.en/sonnet/html/concept_electrolytic_cell.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "electroplating",
+        "label": "Electroplating",
+        "file": "output/college.en/sonnet/html/concept_electroplating.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "fuel_cell",
+        "label": "Fuel Cell",
+        "file": "output/college.en/sonnet/html/concept_fuel_cell.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "galvanic_cell",
+        "label": "Galvanic Cell",
+        "file": "output/college.en/sonnet/html/concept_galvanic_cell.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "galvanization",
+        "label": "Galvanization",
+        "file": "output/college.en/sonnet/html/concept_galvanization.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "oxidation",
+        "label": "Oxidation",
+        "file": "output/college.en/sonnet/html/concept_oxidation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "oxidation_number",
+        "label": "Oxidation Number",
+        "file": "output/college.en/sonnet/html/concept_oxidation_number.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "redox_reaction",
+        "label": "Redox Reaction",
+        "file": "output/college.en/sonnet/html/concept_redox_reaction.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "reduction",
+        "label": "Reduction",
+        "file": "output/college.en/sonnet/html/concept_reduction.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ]
   },
   {
     "id": "chemistry_ch18",
@@ -504,9 +3567,248 @@
     ],
     "default_level": "college",
     "has_navigator": true,
-    "has_book": false,
-    "books": [],
-    "generated_concepts": []
+    "has_book": true,
+    "books": [
+      {
+        "target": "sacrificial_anode",
+        "file": "output/college.en/sonnet/html/book_sacrificial_anode.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "hall_heroult_cell",
+        "file": "output/college.en/sonnet/html/book_hall_heroult_cell.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "haber_process",
+        "file": "output/college.en/sonnet/html/book_haber_process.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "frasch_process",
+        "file": "output/college.en/sonnet/html/book_frasch_process.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "downs_cell",
+        "file": "output/college.en/sonnet/html/book_downs_cell.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "pidgeon_process",
+        "file": "output/college.en/sonnet/html/book_pidgeon_process.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "chlor_alkali_process",
+        "file": "output/college.en/sonnet/html/book_chlor_alkali_process.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "ostwald_process",
+        "file": "output/college.en/sonnet/html/book_ostwald_process.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ],
+    "generated_concepts": [
+      {
+        "name": "acid_anhydride",
+        "label": "Acid Anhydride",
+        "file": "output/college.en/sonnet/html/concept_acid_anhydride.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "alkali_metals",
+        "label": "Alkali Metals",
+        "file": "output/college.en/sonnet/html/concept_alkali_metals.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "alkaline_earth_metals",
+        "label": "Alkaline Earth Metals",
+        "file": "output/college.en/sonnet/html/concept_alkaline_earth_metals.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "allotropes",
+        "label": "Allotropes",
+        "file": "output/college.en/sonnet/html/concept_allotropes.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "chemical_reduction_metals",
+        "label": "Chemical Reduction Metals",
+        "file": "output/college.en/sonnet/html/concept_chemical_reduction_metals.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "chlor_alkali_process",
+        "label": "Chlor Alkali Process",
+        "file": "output/college.en/sonnet/html/concept_chlor_alkali_process.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "covalent_bonding",
+        "label": "Covalent Bonding",
+        "file": "output/college.en/sonnet/html/concept_covalent_bonding.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "downs_cell",
+        "label": "Downs Cell",
+        "file": "output/college.en/sonnet/html/concept_downs_cell.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "electrolysis",
+        "label": "Electrolysis",
+        "file": "output/college.en/sonnet/html/concept_electrolysis.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "electron_configuration",
+        "label": "Electron Configuration",
+        "file": "output/college.en/sonnet/html/concept_electron_configuration.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "electronegativity",
+        "label": "Electronegativity",
+        "file": "output/college.en/sonnet/html/concept_electronegativity.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "frasch_process",
+        "label": "Frasch Process",
+        "file": "output/college.en/sonnet/html/concept_frasch_process.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "haber_process",
+        "label": "Haber Process",
+        "file": "output/college.en/sonnet/html/concept_haber_process.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "hall_heroult_cell",
+        "label": "Hall Heroult Cell",
+        "file": "output/college.en/sonnet/html/concept_hall_heroult_cell.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "halogens",
+        "label": "Halogens",
+        "file": "output/college.en/sonnet/html/concept_halogens.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "ionization_energy",
+        "label": "Ionization Energy",
+        "file": "output/college.en/sonnet/html/concept_ionization_energy.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "metallic_character",
+        "label": "Metallic Character",
+        "file": "output/college.en/sonnet/html/concept_metallic_character.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "nitrogen_fixation",
+        "label": "Nitrogen Fixation",
+        "file": "output/college.en/sonnet/html/concept_nitrogen_fixation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "nonmetals",
+        "label": "Nonmetals",
+        "file": "output/college.en/sonnet/html/concept_nonmetals.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "ostwald_process",
+        "label": "Ostwald Process",
+        "file": "output/college.en/sonnet/html/concept_ostwald_process.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "oxidation_state",
+        "label": "Oxidation State",
+        "file": "output/college.en/sonnet/html/concept_oxidation_state.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "oxyacids",
+        "label": "Oxyacids",
+        "file": "output/college.en/sonnet/html/concept_oxyacids.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "periodic_table_groups",
+        "label": "Periodic Table Groups",
+        "file": "output/college.en/sonnet/html/concept_periodic_table_groups.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "pidgeon_process",
+        "label": "Pidgeon Process",
+        "file": "output/college.en/sonnet/html/concept_pidgeon_process.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "reduction_potential",
+        "label": "Reduction Potential",
+        "file": "output/college.en/sonnet/html/concept_reduction_potential.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "representative_elements",
+        "label": "Representative Elements",
+        "file": "output/college.en/sonnet/html/concept_representative_elements.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "sacrificial_anode",
+        "label": "Sacrificial Anode",
+        "file": "output/college.en/sonnet/html/concept_sacrificial_anode.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ]
   },
   {
     "id": "chemistry_ch19",
@@ -523,9 +3825,188 @@
     ],
     "default_level": "college",
     "has_navigator": true,
-    "has_book": false,
-    "books": [],
-    "generated_concepts": []
+    "has_book": true,
+    "books": [
+      {
+        "target": "transition_metal_catalysts",
+        "file": "output/college.en/sonnet/html/book_transition_metal_catalysts.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "high_temperature_superconductors",
+        "file": "output/college.en/sonnet/html/book_high_temperature_superconductors.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "hemoglobin_oxygen_transport",
+        "file": "output/college.en/sonnet/html/book_hemoglobin_oxygen_transport.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "chelation_therapy",
+        "file": "output/college.en/sonnet/html/book_chelation_therapy.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "cisplatin_anticancer",
+        "file": "output/college.en/sonnet/html/book_cisplatin_anticancer.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ],
+    "generated_concepts": [
+      {
+        "name": "central_metal_ion",
+        "label": "Central Metal Ion",
+        "file": "output/college.en/sonnet/html/concept_central_metal_ion.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "chelate",
+        "label": "Chelate",
+        "file": "output/college.en/sonnet/html/concept_chelate.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "chelation_therapy",
+        "label": "Chelation Therapy",
+        "file": "output/college.en/sonnet/html/concept_chelation_therapy.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "cisplatin_anticancer",
+        "label": "Cisplatin Anticancer",
+        "file": "output/college.en/sonnet/html/concept_cisplatin_anticancer.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "complex_geometry",
+        "label": "Complex Geometry",
+        "file": "output/college.en/sonnet/html/concept_complex_geometry.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "coordinate_covalent_bond",
+        "label": "Coordinate Covalent Bond",
+        "file": "output/college.en/sonnet/html/concept_coordinate_covalent_bond.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "coordination_compound",
+        "label": "Coordination Compound",
+        "file": "output/college.en/sonnet/html/concept_coordination_compound.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "coordination_number",
+        "label": "Coordination Number",
+        "file": "output/college.en/sonnet/html/concept_coordination_number.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "crystal_field_theory",
+        "label": "Crystal Field Theory",
+        "file": "output/college.en/sonnet/html/concept_crystal_field_theory.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "electron_configuration",
+        "label": "Electron Configuration",
+        "file": "output/college.en/sonnet/html/concept_electron_configuration.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "geometric_isomers",
+        "label": "Geometric Isomers",
+        "file": "output/college.en/sonnet/html/concept_geometric_isomers.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "hemoglobin_oxygen_transport",
+        "label": "Hemoglobin Oxygen Transport",
+        "file": "output/college.en/sonnet/html/concept_hemoglobin_oxygen_transport.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "high_temperature_superconductors",
+        "label": "High Temperature Superconductors",
+        "file": "output/college.en/sonnet/html/concept_high_temperature_superconductors.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "lewis_acid_base_interaction",
+        "label": "Lewis Acid Base Interaction",
+        "file": "output/college.en/sonnet/html/concept_lewis_acid_base_interaction.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "ligand",
+        "label": "Ligand",
+        "file": "output/college.en/sonnet/html/concept_ligand.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "oxidation_state",
+        "label": "Oxidation State",
+        "file": "output/college.en/sonnet/html/concept_oxidation_state.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "polydentate_ligand",
+        "label": "Polydentate Ligand",
+        "file": "output/college.en/sonnet/html/concept_polydentate_ligand.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "transition_metal_catalysts",
+        "label": "Transition Metal Catalysts",
+        "file": "output/college.en/sonnet/html/concept_transition_metal_catalysts.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "transition_metal_compounds",
+        "label": "Transition Metal Compounds",
+        "file": "output/college.en/sonnet/html/concept_transition_metal_compounds.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "transition_metal_oxidation_states",
+        "label": "Transition Metal Oxidation States",
+        "file": "output/college.en/sonnet/html/concept_transition_metal_oxidation_states.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "transition_metals",
+        "label": "Transition Metals",
+        "file": "output/college.en/sonnet/html/concept_transition_metals.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ]
   },
   {
     "id": "chemistry_ch20",
@@ -542,9 +4023,202 @@
     ],
     "default_level": "college",
     "has_navigator": true,
-    "has_book": false,
-    "books": [],
-    "generated_concepts": []
+    "has_book": true,
+    "books": [
+      {
+        "target": "combustion_of_alkanes",
+        "file": "output/college.en/sonnet/html/book_combustion_of_alkanes.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "fractional_distillation",
+        "file": "output/college.en/sonnet/html/book_fractional_distillation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "polymerization",
+        "file": "output/college.en/sonnet/html/book_polymerization.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "esterification",
+        "file": "output/college.en/sonnet/html/book_esterification.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "amidation",
+        "file": "output/college.en/sonnet/html/book_amidation.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ],
+    "generated_concepts": [
+      {
+        "name": "addition_reaction",
+        "label": "Addition Reaction",
+        "file": "output/college.en/sonnet/html/concept_addition_reaction.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "alcohol",
+        "label": "Alcohol",
+        "file": "output/college.en/sonnet/html/concept_alcohol.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "aldehyde",
+        "label": "Aldehyde",
+        "file": "output/college.en/sonnet/html/concept_aldehyde.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "alkane",
+        "label": "Alkane",
+        "file": "output/college.en/sonnet/html/concept_alkane.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "alkene",
+        "label": "Alkene",
+        "file": "output/college.en/sonnet/html/concept_alkene.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "alkyne",
+        "label": "Alkyne",
+        "file": "output/college.en/sonnet/html/concept_alkyne.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "amidation",
+        "label": "Amidation",
+        "file": "output/college.en/sonnet/html/concept_amidation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "amide",
+        "label": "Amide",
+        "file": "output/college.en/sonnet/html/concept_amide.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "amine",
+        "label": "Amine",
+        "file": "output/college.en/sonnet/html/concept_amine.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "carbon_tetravalence",
+        "label": "Carbon Tetravalence",
+        "file": "output/college.en/sonnet/html/concept_carbon_tetravalence.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "carbonyl_group",
+        "label": "Carbonyl Group",
+        "file": "output/college.en/sonnet/html/concept_carbonyl_group.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "carboxylic_acid",
+        "label": "Carboxylic Acid",
+        "file": "output/college.en/sonnet/html/concept_carboxylic_acid.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "combustion_of_alkanes",
+        "label": "Combustion Of Alkanes",
+        "file": "output/college.en/sonnet/html/concept_combustion_of_alkanes.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "ester",
+        "label": "Ester",
+        "file": "output/college.en/sonnet/html/concept_ester.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "esterification",
+        "label": "Esterification",
+        "file": "output/college.en/sonnet/html/concept_esterification.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "fractional_distillation",
+        "label": "Fractional Distillation",
+        "file": "output/college.en/sonnet/html/concept_fractional_distillation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "functional_group",
+        "label": "Functional Group",
+        "file": "output/college.en/sonnet/html/concept_functional_group.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "hybridization",
+        "label": "Hybridization",
+        "file": "output/college.en/sonnet/html/concept_hybridization.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "hydrocarbon",
+        "label": "Hydrocarbon",
+        "file": "output/college.en/sonnet/html/concept_hydrocarbon.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "organic_compound",
+        "label": "Organic Compound",
+        "file": "output/college.en/sonnet/html/concept_organic_compound.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "oxidation_number",
+        "label": "Oxidation Number",
+        "file": "output/college.en/sonnet/html/concept_oxidation_number.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "oxidation_reduction_organic",
+        "label": "Oxidation Reduction Organic",
+        "file": "output/college.en/sonnet/html/concept_oxidation_reduction_organic.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "polymerization",
+        "label": "Polymerization",
+        "file": "output/college.en/sonnet/html/concept_polymerization.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ]
   },
   {
     "id": "chemistry_ch21",
@@ -561,8 +4235,347 @@
     ],
     "default_level": "college",
     "has_navigator": true,
-    "has_book": false,
-    "books": [],
-    "generated_concepts": []
+    "has_book": true,
+    "books": [
+      {
+        "target": "radioactive_tracer",
+        "file": "output/college.en/sonnet/html/book_radioactive_tracer.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "radiation_therapy",
+        "file": "output/college.en/sonnet/html/book_radiation_therapy.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "pet_scan",
+        "file": "output/college.en/sonnet/html/book_pet_scan.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "fission_power_generation",
+        "file": "output/college.en/sonnet/html/book_fission_power_generation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "radiation_detection",
+        "file": "output/college.en/sonnet/html/book_radiation_detection.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "uranium_lead_dating",
+        "file": "output/college.en/sonnet/html/book_uranium_lead_dating.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ],
+    "generated_concepts": [
+      {
+        "name": "alpha_particle",
+        "label": "Alpha Particle",
+        "file": "output/college.en/sonnet/html/concept_alpha_particle.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "atomic_number",
+        "label": "Atomic Number",
+        "file": "output/college.en/sonnet/html/concept_atomic_number.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "beta_particle",
+        "label": "Beta Particle",
+        "file": "output/college.en/sonnet/html/concept_beta_particle.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "binding_energy_per_nucleon",
+        "label": "Binding Energy Per Nucleon",
+        "file": "output/college.en/sonnet/html/concept_binding_energy_per_nucleon.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "chain_reaction",
+        "label": "Chain Reaction",
+        "file": "output/college.en/sonnet/html/concept_chain_reaction.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "critical_mass",
+        "label": "Critical Mass",
+        "file": "output/college.en/sonnet/html/concept_critical_mass.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "decay_constant",
+        "label": "Decay Constant",
+        "file": "output/college.en/sonnet/html/concept_decay_constant.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "electromagnetic_radiation",
+        "label": "Electromagnetic Radiation",
+        "file": "output/college.en/sonnet/html/concept_electromagnetic_radiation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "electron",
+        "label": "Electron",
+        "file": "output/college.en/sonnet/html/concept_electron.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "first_order_kinetics",
+        "label": "First Order Kinetics",
+        "file": "output/college.en/sonnet/html/concept_first_order_kinetics.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "fission_power_generation",
+        "label": "Fission Power Generation",
+        "file": "output/college.en/sonnet/html/concept_fission_power_generation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "gamma_ray",
+        "label": "Gamma Ray",
+        "file": "output/college.en/sonnet/html/concept_gamma_ray.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "half_life",
+        "label": "Half Life",
+        "file": "output/college.en/sonnet/html/concept_half_life.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "ionizing_radiation",
+        "label": "Ionizing Radiation",
+        "file": "output/college.en/sonnet/html/concept_ionizing_radiation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "isotope",
+        "label": "Isotope",
+        "file": "output/college.en/sonnet/html/concept_isotope.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "magic_numbers",
+        "label": "Magic Numbers",
+        "file": "output/college.en/sonnet/html/concept_magic_numbers.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "mass_defect",
+        "label": "Mass Defect",
+        "file": "output/college.en/sonnet/html/concept_mass_defect.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "mass_energy_equivalence",
+        "label": "Mass Energy Equivalence",
+        "file": "output/college.en/sonnet/html/concept_mass_energy_equivalence.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "mass_number",
+        "label": "Mass Number",
+        "file": "output/college.en/sonnet/html/concept_mass_number.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "neutron",
+        "label": "Neutron",
+        "file": "output/college.en/sonnet/html/concept_neutron.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "np_ratio",
+        "label": "Np Ratio",
+        "file": "output/college.en/sonnet/html/concept_np_ratio.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "nuclear_binding_energy",
+        "label": "Nuclear Binding Energy",
+        "file": "output/college.en/sonnet/html/concept_nuclear_binding_energy.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "nuclear_fission",
+        "label": "Nuclear Fission",
+        "file": "output/college.en/sonnet/html/concept_nuclear_fission.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "nuclear_reaction",
+        "label": "Nuclear Reaction",
+        "file": "output/college.en/sonnet/html/concept_nuclear_reaction.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "nuclear_reactor",
+        "label": "Nuclear Reactor",
+        "file": "output/college.en/sonnet/html/concept_nuclear_reactor.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "nuclear_stability",
+        "label": "Nuclear Stability",
+        "file": "output/college.en/sonnet/html/concept_nuclear_stability.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "nucleon",
+        "label": "Nucleon",
+        "file": "output/college.en/sonnet/html/concept_nucleon.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "nuclide",
+        "label": "Nuclide",
+        "file": "output/college.en/sonnet/html/concept_nuclide.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "parent_daughter_nuclide",
+        "label": "Parent Daughter Nuclide",
+        "file": "output/college.en/sonnet/html/concept_parent_daughter_nuclide.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "pet_scan",
+        "label": "Pet Scan",
+        "file": "output/college.en/sonnet/html/concept_pet_scan.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "positron",
+        "label": "Positron",
+        "file": "output/college.en/sonnet/html/concept_positron.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "positron_emission",
+        "label": "Positron Emission",
+        "file": "output/college.en/sonnet/html/concept_positron_emission.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "proton",
+        "label": "Proton",
+        "file": "output/college.en/sonnet/html/concept_proton.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "radiation_biological_effects",
+        "label": "Radiation Biological Effects",
+        "file": "output/college.en/sonnet/html/concept_radiation_biological_effects.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "radiation_detection",
+        "label": "Radiation Detection",
+        "file": "output/college.en/sonnet/html/concept_radiation_detection.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "radiation_therapy",
+        "label": "Radiation Therapy",
+        "file": "output/college.en/sonnet/html/concept_radiation_therapy.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "radiation_units",
+        "label": "Radiation Units",
+        "file": "output/college.en/sonnet/html/concept_radiation_units.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "radioactive_decay",
+        "label": "Radioactive Decay",
+        "file": "output/college.en/sonnet/html/concept_radioactive_decay.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "radioactive_decay_kinetics",
+        "label": "Radioactive Decay Kinetics",
+        "file": "output/college.en/sonnet/html/concept_radioactive_decay_kinetics.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "radioactive_tracer",
+        "label": "Radioactive Tracer",
+        "file": "output/college.en/sonnet/html/concept_radioactive_tracer.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "radiometric_dating",
+        "label": "Radiometric Dating",
+        "file": "output/college.en/sonnet/html/concept_radiometric_dating.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "relative_biological_effectiveness",
+        "label": "Relative Biological Effectiveness",
+        "file": "output/college.en/sonnet/html/concept_relative_biological_effectiveness.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "uranium_lead_dating",
+        "label": "Uranium Lead Dating",
+        "file": "output/college.en/sonnet/html/concept_uranium_lead_dating.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ]
   }
 ]
