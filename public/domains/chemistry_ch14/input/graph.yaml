@@ -1,0 +1,247 @@
+domain: chemistry_2e_ch14
+primitives:
+  proton_transfer:
+    defines: Movement of H+ from a donor to an acceptor species; mechanistic basis of Brønsted-Lowry acid-base
+      reactions.
+    tier: 0
+  hydronium_ion:
+    defines: The H3O+ cation formed when water accepts a proton; characteristic acid species in aqueous
+      solution.
+    tier: 0
+  hydroxide_ion:
+    defines: The OH− anion formed when water donates a proton; characteristic base species in aqueous
+      solution.
+    tier: 0
+  chemical_equilibrium:
+    defines: Dynamic state where forward and reverse reaction rates are equal, characterized by an equilibrium
+      constant expression.
+    tier: 0
+  le_chateliers_principle:
+    defines: A system at equilibrium shifts to oppose any imposed stress; used to explain perturbation
+      of aqueous equilibria by added acids or bases.
+    tier: 0
+concepts:
+  bronsted_lowry_acid:
+    defines: A substance that donates a proton (H+) to another species in a chemical reaction.
+    composed_of:
+    - proton_transfer
+    tier: 1
+  bronsted_lowry_base:
+    defines: A substance that accepts a proton (H+) from another species in a chemical reaction.
+    composed_of:
+    - proton_transfer
+    tier: 1
+  water_autoionization:
+    defines: Reaction in which two water molecules transfer a proton between each other to produce H3O+
+      and OH−.
+    composed_of:
+    - proton_transfer
+    - hydronium_ion
+    - hydroxide_ion
+    tier: 1
+  ph_scale:
+    defines: Logarithmic scale pH = −log[H3O+] that compresses the wide range of hydronium ion concentrations
+      into a convenient numerical range.
+    composed_of:
+    - hydronium_ion
+    tier: 1
+  conjugate_acid_base_pair:
+    defines: Two species related by the gain or loss of exactly one proton; the acid's conjugate base
+      and the base's conjugate acid.
+    composed_of:
+    - bronsted_lowry_acid
+    - bronsted_lowry_base
+    tier: 2
+  amphiprotic_species:
+    defines: A substance capable of both donating and accepting protons, acting as either a Brønsted-Lowry
+      acid or base depending on the reaction partner.
+    composed_of:
+    - bronsted_lowry_acid
+    - bronsted_lowry_base
+    tier: 2
+  ion_product_constant_kw:
+    defines: Equilibrium constant for water autoionization, [H3O+][OH−] = 1.0 × 10−14 at 25 °C, establishing
+      an inverse relationship between hydronium and hydroxide concentrations.
+    composed_of:
+    - water_autoionization
+    - chemical_equilibrium
+    tier: 2
+  acid_ionization:
+    defines: Reaction in which an acid transfers a proton to water, yielding hydronium ions and the conjugate
+      base of the acid.
+    composed_of:
+    - bronsted_lowry_acid
+    - conjugate_acid_base_pair
+    tier: 3
+  base_ionization:
+    defines: Reaction in which a base accepts a proton from water, yielding hydroxide ions and the conjugate
+      acid of the base.
+    composed_of:
+    - bronsted_lowry_base
+    - conjugate_acid_base_pair
+    tier: 3
+  poh_scale:
+    defines: Logarithmic scale pOH = −log[OH−]; at 25 °C related to pH by pH + pOH = 14.
+    composed_of:
+    - hydroxide_ion
+    - ion_product_constant_kw
+    tier: 3
+  acidic_basic_neutral_classification:
+    defines: 'Classification of aqueous solutions by comparing [H3O+] and [OH−]: acidic (pH < 7), basic
+      (pH > 7), or neutral (pH = 7) at 25 °C.'
+    composed_of:
+    - ion_product_constant_kw
+    - ph_scale
+    tier: 3
+  acid_ionization_constant_ka:
+    defines: Equilibrium constant for weak acid ionization in water; larger Ka indicates stronger acid
+      with greater ionization at equilibrium.
+    composed_of:
+    - acid_ionization
+    - chemical_equilibrium
+    tier: 4
+  base_ionization_constant_kb:
+    defines: Equilibrium constant for weak base ionization in water; larger Kb indicates stronger base
+      producing higher hydroxide concentrations at equilibrium.
+    composed_of:
+    - base_ionization
+    - chemical_equilibrium
+    tier: 4
+  equivalence_point:
+    defines: Point in a titration where stoichiometrically equivalent amounts of acid and base have reacted;
+      solution pH equals 7 for strong/strong titrations and deviates when weak species are involved.
+    composed_of:
+    - acid_ionization
+    - base_ionization
+    - ph_scale
+    tier: 4
+  strong_weak_acid_base:
+    defines: Classification by degree of ionization; strong acids/bases ionize completely while weak acids/bases
+      ionize partially with measurable ionization constants.
+    composed_of:
+    - acid_ionization_constant_ka
+    - base_ionization_constant_kb
+    tier: 5
+  percent_ionization:
+    defines: Percentage of an acid or base that ionizes in solution; equilibrium concentration of ionized
+      form divided by initial concentration times 100; varies with initial concentration for weak species.
+    composed_of:
+    - acid_ionization_constant_ka
+    - base_ionization_constant_kb
+    tier: 5
+  conjugate_pair_strength_relation:
+    defines: Inverse relationship between strengths of a conjugate pair expressed as Ka × Kb = Kw; stronger
+      acid yields weaker conjugate base, and vice versa.
+    composed_of:
+    - conjugate_acid_base_pair
+    - acid_ionization_constant_ka
+    - base_ionization_constant_kb
+    - ion_product_constant_kw
+    tier: 5
+  structure_acidity_relationship:
+    defines: Trends in acid strength based on molecular structure, including binary acid strength down
+      a group or across a period, and oxyacid strength with central-atom oxidation state or electronegativity.
+    composed_of:
+    - bronsted_lowry_acid
+    - acid_ionization_constant_ka
+    tier: 5
+  ice_table_method:
+    defines: Tabular technique using Initial, Change, and Equilibrium concentration rows to set up and
+      solve weak acid or base equilibrium calculations.
+    composed_of:
+    - acid_ionization_constant_ka
+    - base_ionization_constant_kb
+    tier: 5
+  hydrated_metal_ion_acidity:
+    defines: Weak-acid behavior of dissolved metal ions that coordinate water molecules, polarizing the
+      O-H bond and enabling proton donation to surrounding water.
+    composed_of:
+    - acid_ionization
+    - acid_ionization_constant_ka
+    tier: 5
+  polyprotic_acid:
+    defines: An acid containing more than one ionizable proton per molecule; each successive ionization
+      has a smaller ionization constant.
+    composed_of:
+    - acid_ionization
+    - acid_ionization_constant_ka
+    tier: 5
+  buffer_solution:
+    defines: Solution containing a weak conjugate acid-base pair that resists pH changes by converting
+      added strong acid or base into the weak conjugate partner.
+    composed_of:
+    - conjugate_acid_base_pair
+    - acid_ionization_constant_ka
+    - le_chateliers_principle
+    tier: 5
+  henderson_hasselbalch_equation:
+    defines: Logarithmic form of Ka expression, pH = pKa + log([A−]/[HA]), used to calculate buffer pH
+      from the ratio of conjugate base to weak acid concentrations.
+    composed_of:
+    - acid_ionization_constant_ka
+    - ph_scale
+    - conjugate_acid_base_pair
+    tier: 5
+  acid_base_indicator:
+    defines: A weak acid or base whose protonated and deprotonated forms have distinct colors, changing
+      color over a pH interval of approximately pKa ± 1 to signal the endpoint of a titration.
+    composed_of:
+    - conjugate_acid_base_pair
+    - ph_scale
+    - acid_ionization_constant_ka
+    tier: 5
+  leveling_effect:
+    defines: Water limits effective dissolved acid/base strength to H3O+ and OH− respectively; any stronger
+      acid or base reacts completely with water and is leveled to those species.
+    composed_of:
+    - strong_weak_acid_base
+    tier: 6
+  salt_hydrolysis:
+    defines: Acid or base ionization of salt ions in water, making the solution acidic, basic, or neutral
+      depending on whether constituent ions are conjugates of weak or strong acids and bases.
+    composed_of:
+    - conjugate_acid_base_pair
+    - strong_weak_acid_base
+    tier: 6
+  stepwise_ionization:
+    defines: Sequential, one-proton-at-a-time ionization of a polyprotic acid or base; successive ionization
+      constants decrease by large factors, allowing each step to be treated as an independent equilibrium.
+    composed_of:
+    - polyprotic_acid
+    - acid_ionization_constant_ka
+    tier: 6
+  buffer_capacity:
+    defines: Quantity of strong acid or base a buffer can absorb before its pH changes by approximately
+      one unit; determined by absolute concentrations of the conjugate pair, not just their ratio.
+    composed_of:
+    - buffer_solution
+    tier: 6
+  titration_curve:
+    defines: Plot of solution pH versus volume of added titrant revealing the four stages of a titration
+      and guiding selection of an appropriate indicator.
+    composed_of:
+    - ph_scale
+    - equivalence_point
+    - acid_base_indicator
+    tier: 6
+applications:
+  ph_measurement_tools:
+    defines: Instruments and materials for experimentally determining solution pH, including electronic
+      pH meters and colorimetric pH paper or universal indicator solutions.
+    needs:
+    - ph_scale
+    tier: 2
+  acid_rain:
+    defines: Precipitation with pH below 5 from dissolution of atmospheric SO2, SO3, and NOx to form sulfuric
+      and nitric acids; illustrates environmental consequences of acid-base chemistry.
+    needs:
+    - ph_scale
+    - acidic_basic_neutral_classification
+    tier: 4
+  blood_buffer_system:
+    defines: The carbonic acid/bicarbonate conjugate pair that buffers human blood near pH 7.4, supplemented
+      by respiratory regulation of dissolved CO2 to maintain acid-base balance.
+    needs:
+    - buffer_solution
+    - henderson_hasselbalch_equation
+    tier: 6

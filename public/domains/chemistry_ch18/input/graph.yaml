@@ -1,0 +1,251 @@
+domain: chemistry_2e_ch18
+primitives:
+  periodic_table_groups:
+    defines: Elements are classified by which orbitals are filling (s, p, d, f), placing them in representative,
+      transition metal, or inner transition metal categories.
+    tier: 0
+  electron_configuration:
+    defines: The arrangement of electrons in orbitals (s, p, d, f) that determines an element's chemical
+      behavior and position in the periodic table.
+    tier: 0
+  electronegativity:
+    defines: A measure of an atom's tendency to attract electrons in a bond, increasing across a period
+      and decreasing down a group.
+    tier: 0
+  ionization_energy:
+    defines: The energy required to remove the outermost electron from an atom, decreasing down a group
+      and increasing across a period.
+    tier: 0
+  oxidation_state:
+    defines: A bookkeeping number assigned to an atom representing the number of electrons lost, gained,
+      or shared unequally in a compound.
+    tier: 0
+  ionic_bonding:
+    defines: A chemical bond formed by electrostatic attraction between oppositely charged ions, typically
+      between metals and nonmetals.
+    tier: 0
+  covalent_bonding:
+    defines: A chemical bond formed by sharing of electron pairs between atoms, typical of nonmetal-nonmetal
+      combinations.
+    tier: 0
+  lewis_acid_base:
+    defines: A Lewis acid is an electron-pair acceptor and a Lewis base is an electron-pair donor; extends
+      acid-base behavior beyond proton transfer.
+    tier: 0
+  electrolysis:
+    defines: The use of electrical energy to drive a thermodynamically unfavorable redox reaction, used
+      to isolate highly reactive metals from their compounds.
+    tier: 0
+  reduction_potential:
+    defines: A measure of the tendency of a species to be reduced; elements with lower reduction potentials
+      than hydrogen are oxidized by acids to release H2 gas.
+    tier: 0
+concepts:
+  metallic_character:
+    defines: The tendency of an element to lose valence electrons, producing high electrical and thermal
+      conductivity, malleability, and the ability to form cations.
+    composed_of:
+    - electron_configuration
+    - ionization_energy
+    tier: 1
+  representative_elements:
+    defines: Elements in which the outermost s and p orbitals are being filled, occurring in groups 1,
+      2, and 12–18 of the periodic table.
+    composed_of:
+    - periodic_table_groups
+    - electron_configuration
+    tier: 1
+  nonmetals:
+    defines: Elements in the upper right of the periodic table with high electronegativities that form
+      anions or covalent molecular compounds and whose oxides are typically acid anhydrides.
+    composed_of:
+    - electronegativity
+    - covalent_bonding
+    - periodic_table_groups
+    tier: 1
+  inert_pair_effect:
+    defines: The tendency of heavier p-block elements to form stable ions with an oxidation state two
+      lower than the group maximum, because the ns2 electron pair resists ionization.
+    composed_of:
+    - electron_configuration
+    - ionization_energy
+    - oxidation_state
+    tier: 1
+  allotropes:
+    defines: Two or more forms of the same element in the same physical state that differ in atomic arrangement
+      and therefore in chemical and physical properties.
+    composed_of:
+    - covalent_bonding
+    tier: 1
+  noble_gases:
+    defines: Chemically inert elements with filled valence shells that exist as monatomic gases; the heaviest
+      members (Kr, Xe) can form compounds with highly electronegative fluorine.
+    composed_of:
+    - electron_configuration
+    - electronegativity
+    tier: 1
+  disproportionation_reaction:
+    defines: A redox reaction in which a single element in one compound is simultaneously oxidized and
+      reduced, acting as both the oxidizing and reducing agent.
+    composed_of:
+    - oxidation_state
+    tier: 1
+  silicates:
+    defines: A large class of compounds containing silicon-oxygen tetrahedra (SiO4) linked by shared oxygen
+      atoms in chains, sheets, or three-dimensional networks, forming the basis of most minerals, rocks,
+      and ceramics.
+    composed_of:
+    - covalent_bonding
+    tier: 1
+  nitrogen_fixation:
+    defines: The conversion of atmospheric N2 into biologically or industrially useful nitrogen compounds,
+      accomplished biologically by nitrogenase enzymes or industrially by the Haber process.
+    composed_of:
+    - covalent_bonding
+    - oxidation_state
+    tier: 1
+  alkali_metals:
+    defines: Highly reactive metals with one valence electron that readily form 1+ cations, react vigorously
+      with water, and have the largest atomic radii and lowest ionization energies in their periods.
+    composed_of:
+    - representative_elements
+    - metallic_character
+    - ionization_energy
+    tier: 2
+  alkaline_earth_metals:
+    defines: Reactive metals with two valence electrons that form 2+ cations, are less reactive than alkali
+      metals due to higher ionization energies, and whose oxides react with water to form alkaline solutions.
+    composed_of:
+    - representative_elements
+    - metallic_character
+    - ionization_energy
+    tier: 2
+  passivation:
+    defines: The formation of a thin, adherent film of oxide or other compound on a metal surface that
+      acts as a barrier, slowing further chemical reaction with air or water.
+    composed_of:
+    - metallic_character
+    - oxidation_state
+    tier: 2
+  metalloids:
+    defines: Elements (B, Si, Ge, As, Sb, Te) with properties intermediate between metals and nonmetals
+      that form covalent crystals and act as electrical semiconductors.
+    composed_of:
+    - metallic_character
+    - nonmetals
+    tier: 2
+  acid_anhydride:
+    defines: A compound (typically a nonmetal oxide) that reacts with water to form an acid without a
+      change in oxidation state of the central element.
+    composed_of:
+    - nonmetals
+    - oxidation_state
+    tier: 2
+  halogens:
+    defines: Highly electronegative, reactive nonmetals that exist as diatomic molecules, form halide
+      ions with an oxidation state of 1−, and are strong oxidizing agents whose reactivity decreases from
+      F2 to I2.
+    composed_of:
+    - nonmetals
+    - electronegativity
+    - oxidation_state
+    tier: 2
+  ozone:
+    defines: An allotrope of oxygen (O3) formed endothermically from O2 that acts as a strong oxidizing
+      agent and shields Earth's surface from ultraviolet radiation in the stratosphere.
+    composed_of:
+    - allotropes
+    - reduction_potential
+    tier: 2
+  chemical_reduction_metals:
+    defines: The isolation of a metal from its ore by reacting the ore with a more active reducing agent
+      (e.g., carbon, sodium, silicon) at high temperature, generally less expensive than electrolysis.
+    composed_of:
+    - metallic_character
+    - reduction_potential
+    - oxidation_state
+    tier: 2
+  amphoteric_behavior:
+    defines: The ability of a substance (such as aluminum hydroxide or hydrogen carbonate) to react with
+      both acids and bases, reflecting intermediate metallic-nonmetallic character.
+    composed_of:
+    - lewis_acid_base
+    - metallic_character
+    - nonmetals
+    tier: 2
+  semiconductor_behavior:
+    defines: The ability of metalloids to conduct electricity partially, arising because their electrons
+      are more tightly bound to nuclei than in metals but less tightly than in insulators.
+    composed_of:
+    - metalloids
+    tier: 3
+  oxyacids:
+    defines: Acids containing hydrogen, oxygen, and a nonmetal element; their strength generally increases
+      with the electronegativity and oxidation state of the central atom.
+    composed_of:
+    - acid_anhydride
+    - electronegativity
+    - oxidation_state
+    tier: 3
+  interhalogens:
+    defines: Compounds formed between two or more different halogen elements, consisting of one atom of
+      the heavier halogen bonded to an odd number of atoms of a lighter halogen.
+    composed_of:
+    - halogens
+    - covalent_bonding
+    tier: 3
+applications:
+  sacrificial_anode:
+    defines: A method of preventing corrosion by attaching a more active metal (Mg, Al, or Zn) to the
+      metal being protected; corrosion occurs at the sacrificial anode instead of at the protected cathode.
+    needs:
+    - metallic_character
+    - reduction_potential
+    tier: 2
+  hall_heroult_cell:
+    defines: An electrolytic cell in which purified aluminum oxide dissolved in molten cryolite is reduced
+      at the cathode to produce metallic aluminum, the industrial standard for aluminum production.
+    needs:
+    - electrolysis
+    - representative_elements
+    tier: 2
+  haber_process:
+    defines: The industrial synthesis of ammonia by combining nitrogen and hydrogen gases over an iron
+      catalyst at high temperature and pressure, the principal source of fixed nitrogen for fertilizers.
+    needs:
+    - nitrogen_fixation
+    tier: 2
+  frasch_process:
+    defines: A method for extracting elemental sulfur from underground deposits by injecting superheated
+      water to melt the sulfur and compressed air to force the liquid sulfur to the surface.
+    needs:
+    - allotropes
+    tier: 2
+  downs_cell:
+    defines: An electrolytic cell used to produce metallic sodium and chlorine gas by passing direct current
+      through molten sodium chloride containing calcium chloride to lower the melting point.
+    needs:
+    - electrolysis
+    - alkali_metals
+    tier: 3
+  pidgeon_process:
+    defines: A chemical reduction method for producing magnesium by reacting magnesium oxide with elemental
+      silicon at high temperature, with continuous removal of magnesium vapor driving the reaction forward.
+    needs:
+    - chemical_reduction_metals
+    - alkaline_earth_metals
+    tier: 3
+  chlor_alkali_process:
+    defines: An electrochemical process that simultaneously produces chlorine gas and sodium hydroxide
+      by passing direct current through an aqueous sodium chloride solution.
+    needs:
+    - electrolysis
+    - halogens
+    tier: 3
+  ostwald_process:
+    defines: The industrial production of nitric acid by the catalytic oxidation of ammonia to NO, further
+      oxidation to NO2, and absorption in water.
+    needs:
+    - haber_process
+    - oxyacids
+    tier: 4

@@ -9,7 +9,7 @@ const ADAPTERS = {
   claude_cli: {
     label: 'Claude CLI',
     models: [
-      { value: 'claude-sonnet-4-6', label: 'Sonnet 4.6' },
+      { value: 'claude-sonnet-5', label: 'Sonnet 5' },
       { value: 'claude-haiku-4-5-20251001', label: 'Haiku 4.5' },
       { value: 'claude-opus-4-8', label: 'Opus 4.8' },
     ],
@@ -17,7 +17,7 @@ const ADAPTERS = {
   openrouter: {
     label: 'OpenRouter',
     models: [
-      { value: 'anthropic/claude-sonnet-4-6', label: 'Claude Sonnet 4.6' },
+      { value: 'anthropic/claude-sonnet-5', label: 'Claude Sonnet 5' },
       { value: 'anthropic/claude-haiku-4-5-20251001', label: 'Claude Haiku 4.5' },
       { value: 'anthropic/claude-opus-4-8', label: 'Claude Opus 4.8' },
       { value: 'google/gemini-2.5-pro', label: 'Gemini 2.5 Pro' },

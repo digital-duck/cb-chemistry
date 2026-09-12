@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Concept Graph — graph</title>
+<script src="https://unpkg.com/vis-network@9.1.9/standalone/umd/vis-network.min.js"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,sans-serif;background:#f0f2f5;overflow:hidden;height:100vh}
+.app{
+  display:grid;
+  grid-template-columns:230px 1fr 210px;
+  grid-template-rows:60vh 40vh;
+  height:100vh;
+  gap:0;
+}
+/* ── Left sidebar: learning path ── */
+#path-sidebar{
+  grid-column:1;grid-row:1/3;
+  background:#f5f6f8;color:#2a2a2a;
+  display:flex;flex-direction:column;
+  overflow:hidden;
+  border-right:1px solid #dde0e6;
+}
+#path-header{
+  padding:14px 14px 10px;
+  border-bottom:1px solid #dde0e6;
+  flex-shrink:0;
+}
+#path-header h1{font-size:13px;letter-spacing:.05em;text-transform:uppercase;color:#888;margin-bottom:2px;font-weight:700}
+#path-header .domain-name{font-size:11px;color:#555;margin-top:4px}
+#path-steps{flex:1;overflow-y:auto;padding:8px 0}
+#path-steps .hint{color:#aaa;font-size:12px;text-align:center;padding:24px 12px;line-height:1.5}
+.step-item{
+  display:flex;align-items:flex-start;gap:8px;
+  padding:7px 12px;cursor:pointer;
+  border-left:3px solid transparent;
+  transition:background .15s;
+}
+.step-item:hover{background:#ebebf0}
+.step-item.active{background:#e8eef8;border-left-color:#4a90d9}
+.step-item.target{background:#eaf5ea;border-left-color:#4caf50}
+.step-num{min-width:20px;font-size:10px;font-weight:700;color:#bbb;padding-top:2px;flex-shrink:0}
+.step-item.target .step-num{color:#4caf50}
+.step-label{font-size:12px;font-weight:600;color:#333;line-height:1.4}
+.step-def{font-size:10px;color:#888;margin-top:2px;line-height:1.4}
+.step-kind{display:inline-block;padding:0 5px;border-radius:8px;font-size:9px;font-weight:700;margin-left:4px}
+#path-count{font-size:10px;color:#aaa;margin-top:3px}
+/* ── Graph panel ── */
+#graph-panel{
+  grid-column:2;grid-row:1;
+  position:relative;background:#fff;
+  border-bottom:2px solid #dde;
+}
+#graph-container{width:100%;height:100%}
+.graph-recenter-btn{
+  position:absolute;right:16px;bottom:16px;z-index:50;
+  padding:6px 14px;border-radius:6px;
+  border:1px solid #1e3a5f;background:#1e3a5f;color:#fff;
+  font-size:12px;font-weight:600;font-family:system-ui,sans-serif;
+  box-shadow:0 1px 4px rgba(0,0,0,.25);cursor:pointer;
+}
+.graph-recenter-btn:hover{background:#28496f;border-color:#28496f}
+/* ── Explanation panel ── */
+#explain-panel{
+  grid-column:2;grid-row:2;
+  background:#fff;overflow-y:auto;
+  padding:16px 20px;
+}
+#explain-panel .empty{color:#aaa;font-size:13px;padding:20px 0;text-align:center}
+#explain-panel .node-title{
+  display:flex;align-items:center;gap:8px;margin-bottom:10px;
+}
+#explain-panel .node-title h2{font-size:16px;color:#1e3a5f}
+.badge{
+  display:inline-block;padding:2px 8px;border-radius:10px;
+  font-size:11px;font-weight:700;
+}
+.badge.primitive{background:#e8f5e9;color:#2e7d32}
+.badge.concept{background:#e3f2fd;color:#1565c0}
+.badge.application{background:#fff3e0;color:#ef6c00}
+.tier-tag{font-size:11px;color:#999;margin-left:auto}
+#explain-panel .defines{
+  font-size:14px;color:#333;line-height:1.6;margin-bottom:12px;
+  padding:10px 12px;background:#f8f9fb;border-radius:6px;
+  border-left:3px solid #90b4e8;
+}
+#explain-panel .section-label{
+  font-size:10px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.08em;color:#999;margin-bottom:6px;
+}
+#explain-panel .prereq-list{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.prereq-chip{
+  padding:3px 9px;border-radius:12px;font-size:11px;
+  background:#e3f2fd;color:#1565c0;cursor:pointer;
+  border:1px solid #90caf9;transition:background .12s;
+}
+.prereq-chip:hover{background:#bbdefb}
+#explain-panel .meta-row{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:10px}
+.meta-item{font-size:12px;color:#555}
+.meta-item b{color:#1e3a5f}
+#explain-panel .play-hint{
+  font-size:12px;color:#5a5a5a;line-height:1.6;
+  padding:8px 12px;background:#fffde7;border-radius:6px;
+  border-left:3px solid #ffd54f;margin-bottom:8px;
+}
+/* ── Notes sidebar ── */
+#notes-sidebar{
+  grid-column:3;grid-row:1/3;
+  background:#fafaf8;
+  border-left:2px solid #e8e8e0;
+  display:flex;flex-direction:column;
+  overflow:hidden;
+}
+#notes-header{
+  padding:10px 12px 8px;
+  border-bottom:1px solid #e0e0d8;
+  flex-shrink:0;
+}
+#notes-header-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:2px}
+#notes-header h2{font-size:12px;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.06em;margin:0}
+#notes-node-label{font-size:11px;color:#999;margin-top:2px}
+.nb-btn{font-size:10px;padding:2px 7px;border-radius:3px;
+  border:1px solid #ddd;background:#f0f0ea;cursor:pointer;color:#777;
+  font-family:system-ui,sans-serif}
+.nb-btn:hover{background:#e0e0d8;color:#444}
+#notes-textarea{
+  flex:0 0 auto;height:100px;border:none;resize:none;
+  padding:12px;font-size:12px;line-height:1.6;
+  font-family:inherit;background:#fafaf8;color:#333;
+  outline:none;
+}
+#notes-with-entries{
+  border-top:1px solid #e8e8e0;flex:1;min-height:0;overflow-y:auto;
+}
+.note-entry{
+  padding:6px 12px;cursor:pointer;
+  border-bottom:1px solid #f0f0e8;
+  font-size:11px;
+}
+.note-entry:hover{background:#f0efe8}
+.note-entry .note-node{font-weight:600;color:#555;display:flex;justify-content:space-between;align-items:center}
+.note-entry .note-ts{font-weight:400;color:#bbb;font-size:10px}
+.note-entry .note-preview{color:#999;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* ── kind badge colours in sidebar ── */
+.primitive-k{background:#e8f5e9;color:#2e7d32}
+.concept-k{background:#e3f2fd;color:#1565c0}
+.application-k{background:#fff3e0;color:#ef6c00}
+/* ── concept detail panel ── */
+#concept-detail{margin-top:14px;border-top:1px solid #e8e8e0;padding-top:10px;}
+#concept-iframe{width:100%;height:500px;border:1px solid #e0e0d8;border-radius:4px;margin-top:6px;display:block;}
+.concept-not-found{color:#e57373;font-size:12px;padding:6px 0;font-style:italic;}
+</style>
+</head>
+<body>
+<div class="app">
+
+<!-- LEFT: learning path sidebar -->
+<aside id="path-sidebar">
+  <div id="path-header">
+    <h1>Learning Path</h1>
+    <div class="domain-name">graph</div>
+    <div id="path-count"></div>
+  </div>
+  <div id="path-steps">
+    <div class="hint">Click any node in the graph<br>to see its learning path</div>
+  </div>
+</aside>
+
+<!-- CENTRE TOP: concept graph -->
+<div id="graph-panel">
+  <div id="graph-container"></div>
+  <button class="graph-recenter-btn" onclick="reCenterGraph()" title="Re-fit the graph to the viewport">Re-Center</button>
+</div>
+
+<!-- CENTRE BOTTOM: explanation panel -->
+<div id="explain-panel">
+  <div class="empty">Select a node to see its definition, prerequisites, and learning context.</div>
+</div>
+
+<!-- RIGHT: notes sidebar -->
+<aside id="notes-sidebar">
+  <div id="notes-header">
+    <div id="notes-header-top">
+      <h2>Notes</h2>
+      <div>
+        <button class="nb-btn" id="nb-clear-btn" onclick="clearNote()">Clear</button>
+        <button class="nb-btn" onclick="exportNotes()">Export</button>
+      </div>
+    </div>
+    <div id="notes-node-label">no node selected</div>
+  </div>
+  <textarea id="notes-textarea" placeholder="Type notes here&#10;(auto-saved per node)"></textarea>
+  <div id="notes-with-entries"></div>
+</aside>
+
+</div><!-- .app -->
+
+<script>
+const RAW = {"nodes": [{"id": "force", "label": "force", "kind": "primitive", "tier": 0, "defines": "A push or pull on an object, measured in newtons; a fundamental physical quantity assumed as given in this chapter.", "prereqs": [], "verifier": "", "lab": "", "play": "", "color": {"background": "#fffde7", "border": "#795548"}, "font": {"size": 13}}, {"id": "area", "label": "area", "kind": "primitive", "tier": 0, "defines": "The extent of a two-dimensional surface, treated as a known geometric quantity used in defining pressure.", "prereqs": [], "verifier": "", "lab": "", "play": "", "color": {"background": "#fffde7", "border": "#795548"}, "font": {"size": 13}}, {"id": "temperature_kelvin", "label": "temperature kelvin", "kind": "primitive", "tier": 0, "defines": "A measurable property of matter reflecting thermal energy; the Kelvin scale sets zero at absolute zero and is required for all gas law calculations.", "prereqs": [], "verifier": "", "lab": "", "play": "", "color": {"background": "#fffde7", "border": "#795548"}, "font": {"size": 13}}, {"id": "volume", "label": "volume", "kind": "primitive", "tier": 0, "defines": "The three-dimensional space occupied by a gas sample, typically expressed in liters or milliliters.", "prereqs": [], "verifier": "", "lab": "", "play": "", "color": {"background": "#fffde7", "border": "#795548"}, "font": {"size": 13}}, {"id": "amount_of_substance", "label": "amount of substance", "kind": "primitive", "tier": 0, "defines": "The quantity of matter expressed in moles, representing a fixed number of particles; assumed from prior chemistry study.", "prereqs": [], "verifier": "", "lab": "", "play": "", "color": {"background": "#fffde7", "border": "#795548"}, "font": {"size": 13}}, {"id": "molar_mass", "label": "molar mass", "kind": "primitive", "tier": 0, "defines": "The mass in grams of one mole of a substance, determined from atomic composition and assumed as a known quantity in this chapter.", "prereqs": [], "verifier": "", "lab": "", "play": "", "color": {"background": "#fffde7", "border": "#795548"}, "font": {"size": 13}}, {"id": "density", "label": "density", "kind": "primitive", "tier": 0, "defines": "Mass per unit volume of a substance; assumed as a known measurable property and used in hydrostatic pressure and gas density calculations.", "prereqs": [], "verifier": "", "lab": "", "play": "", "color": {"background": "#fffde7", "border": "#795548"}, "font": {"size": 13}}, {"id": "molecular_volume", "label": "molecular volume", "kind": "primitive", "tier": 0, "defines": "The nonzero physical size of real gas molecules, treated as a given physical fact when explaining deviations from ideal behavior.", "prereqs": [], "verifier": "", "lab": "", "play": "", "color": {"background": "#fffde7", "border": "#795548"}, "font": {"size": 13}}, {"id": "intermolecular_forces", "label": "intermolecular forces", "kind": "primitive", "tier": 0, "defines": "Attractive interactions between gas molecules; introduced as a given physical reality that becomes significant at high pressures and low temperatures.", "prereqs": [], "verifier": "", "lab": "", "play": "", "color": {"background": "#fffde7", "border": "#795548"}, "font": {"size": 13}}, {"id": "pressure", "label": "pressure", "kind": "concept", "tier": 1, "defines": "The force exerted by gas molecules per unit area of surface, caused by molecular collisions; expressed as P = F/A.", "prereqs": ["force", "area"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "mole_fraction", "label": "mole fraction", "kind": "concept", "tier": 1, "defines": "The dimensionless ratio of the moles of one component to the total moles of all components in a mixture, used to calculate partial pressures.", "prereqs": ["amount_of_substance"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "pressure_units", "label": "pressure units", "kind": "concept", "tier": 2, "defines": "A set of standard units for expressing pressure (pascal, atm, torr, bar, psi, mm Hg) with defined conversion factors among them.", "prereqs": ["pressure"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "atmospheric_pressure", "label": "atmospheric pressure", "kind": "concept", "tier": 2, "defines": "The pressure exerted by the weight of the overlying column of atmosphere, approximately 1 atm (101,325 Pa) at sea level.", "prereqs": ["pressure"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "hydrostatic_pressure", "label": "hydrostatic pressure", "kind": "concept", "tier": 2, "defines": "The pressure exerted by a fluid column due to gravity, given by p = h*rho*g, where h is height, rho is density, and g is gravitational acceleration.", "prereqs": ["pressure", "density"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "amontons_law", "label": "amontons law", "kind": "concept", "tier": 2, "defines": "At constant volume and fixed amount of gas, pressure is directly proportional to Kelvin temperature (P1/T1 = P2/T2).", "prereqs": ["pressure", "temperature_kelvin"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "charles_law", "label": "charles law", "kind": "concept", "tier": 2, "defines": "At constant pressure and fixed amount of gas, volume is directly proportional to Kelvin temperature (V1/T1 = V2/T2).", "prereqs": ["volume", "temperature_kelvin", "pressure"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "boyle_law", "label": "boyle law", "kind": "concept", "tier": 2, "defines": "At constant temperature and fixed amount of gas, pressure and volume are inversely proportional (P1*V1 = P2*V2).", "prereqs": ["pressure", "volume"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "avogadros_law", "label": "avogadros law", "kind": "concept", "tier": 2, "defines": "At constant temperature and pressure, the volume of a gas is directly proportional to the number of moles (V/n = constant).", "prereqs": ["volume", "amount_of_substance", "pressure"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "ideal_gas", "label": "ideal gas", "kind": "concept", "tier": 2, "defines": "A hypothetical gas whose molecules occupy no volume and exert no forces on each other, accurately described by the gas laws at low pressures and high temperatures.", "prereqs": ["pressure", "volume", "temperature_kelvin", "amount_of_substance"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "standard_conditions_stp", "label": "standard conditions stp", "kind": "concept", "tier": 2, "defines": "A defined reference state of 273.15 K (0 C) and 1 atm (101.325 kPa) used to compare and report gas properties.", "prereqs": ["temperature_kelvin", "pressure"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "diffusion", "label": "diffusion", "kind": "concept", "tier": 2, "defines": "The net movement of gas molecules from a region of higher concentration to a region of lower concentration driven by random molecular motion.", "prereqs": ["pressure"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "mean_free_path", "label": "mean free path", "kind": "concept", "tier": 2, "defines": "The average distance a gas molecule travels between successive collisions with other molecules; increases as pressure decreases.", "prereqs": ["pressure"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "effusion", "label": "effusion", "kind": "concept", "tier": 2, "defines": "The escape of gas molecules through a tiny opening into a vacuum; distinct from diffusion in that molecules pass through a physical barrier.", "prereqs": ["pressure"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "ideal_gas_law", "label": "ideal gas law", "kind": "concept", "tier": 3, "defines": "The unified equation PV = nRT combining Boyle's, Charles's, Amontons's, and Avogadro's laws, relating pressure, volume, moles, and Kelvin temperature via the universal gas constant R.", "prereqs": ["boyle_law", "charles_law", "amontons_law", "avogadros_law", "ideal_gas"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "grahams_law", "label": "grahams law", "kind": "concept", "tier": 3, "defines": "The rate of effusion of a gas is inversely proportional to the square root of its molar mass; rate_A/rate_B = sqrt(M_B/M_A).", "prereqs": ["effusion", "molar_mass"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "combined_gas_law", "label": "combined gas law", "kind": "concept", "tier": 4, "defines": "A form of the ideal gas law for a fixed amount of gas allowing simultaneous changes in P, V, and T; P1*V1/T1 = P2*V2/T2.", "prereqs": ["ideal_gas_law"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "standard_molar_volume", "label": "standard molar volume", "kind": "concept", "tier": 4, "defines": "The volume occupied by exactly one mole of an ideal gas at STP, approximately 22.4 L.", "prereqs": ["ideal_gas_law", "standard_conditions_stp"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "gas_density", "label": "gas density", "kind": "concept", "tier": 4, "defines": "The mass per unit volume of a gas sample, derived from the ideal gas law as d = P*M/(R*T), where M is molar mass.", "prereqs": ["ideal_gas_law", "molar_mass"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "partial_pressure", "label": "partial pressure", "kind": "concept", "tier": 4, "defines": "The pressure that a single component of a gas mixture would exert if it alone occupied the container at the same temperature and volume.", "prereqs": ["pressure", "ideal_gas_law"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "compressibility_factor", "label": "compressibility factor", "kind": "concept", "tier": 4, "defines": "The ratio of the actual molar volume of a real gas to the molar volume predicted by the ideal gas law (Z = P*Vm/RT); deviations from Z = 1 indicate non-ideal behavior.", "prereqs": ["ideal_gas_law"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "non_ideal_gas_behavior", "label": "non ideal gas behavior", "kind": "concept", "tier": 4, "defines": "Deviations of real gases from the ideal gas law, caused by finite molecular volume and intermolecular attractions, most pronounced at high pressures and low temperatures.", "prereqs": ["ideal_gas_law", "molecular_volume", "intermolecular_forces"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "kinetic_molecular_theory", "label": "kinetic molecular theory", "kind": "concept", "tier": 4, "defines": "A microscopic model of ideal gas behavior based on five postulates - molecules in constant random motion, negligibly small, pressure through wall collisions, elastic collisions, average KE proportional to Kelvin temperature.", "prereqs": ["ideal_gas_law"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "maxwell_boltzmann_distribution", "label": "maxwell boltzmann distribution", "kind": "concept", "tier": 5, "defines": "The statistical distribution of molecular speeds in a gas sample at a given temperature, showing the relative number of molecules at each speed.", "prereqs": ["kinetic_molecular_theory", "temperature_kelvin"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "average_kinetic_energy", "label": "average kinetic energy", "kind": "concept", "tier": 5, "defines": "The mean translational kinetic energy of molecules in a gas sample, equal to (3/2)*R*T per mole and directly proportional to Kelvin temperature.", "prereqs": ["kinetic_molecular_theory", "temperature_kelvin"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "daltons_law", "label": "daltons law", "kind": "concept", "tier": 5, "defines": "The total pressure of a mixture of ideal gases equals the sum of the partial pressures of all component gases.", "prereqs": ["partial_pressure", "mole_fraction"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "vapor_pressure_of_water", "label": "vapor pressure of water", "kind": "concept", "tier": 5, "defines": "The partial pressure exerted by water vapor in equilibrium with liquid water at a given temperature; must be subtracted when collecting gases over water.", "prereqs": ["partial_pressure", "temperature_kelvin"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "van_der_waals_equation", "label": "van der waals equation", "kind": "concept", "tier": 5, "defines": "A modified ideal gas law, (P + a*(n/V)^2)*(V - n*b) = n*R*T, that corrects for real gas behavior using empirical constants a (attraction) and b (volume).", "prereqs": ["ideal_gas_law", "non_ideal_gas_behavior"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "root_mean_square_speed", "label": "root mean square speed", "kind": "concept", "tier": 6, "defines": "A statistical measure of average molecular speed defined as the square root of the mean squared speed; u_rms = sqrt(3*R*T/M).", "prereqs": ["average_kinetic_energy", "molar_mass"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "barometer", "label": "barometer", "kind": "application", "tier": 3, "defines": "A device using a mercury column in an evacuated tube to measure atmospheric pressure by applying the hydrostatic pressure relation.", "prereqs": ["atmospheric_pressure", "hydrostatic_pressure"], "verifier": "", "lab": "", "play": "", "color": {"background": "#fce4ec", "border": "#c62828"}, "font": {"size": 13}}, {"id": "manometer", "label": "manometer", "kind": "application", "tier": 3, "defines": "A U-tube device containing liquid mercury used to measure the pressure of a trapped gas sample from the difference in liquid column heights.", "prereqs": ["hydrostatic_pressure", "atmospheric_pressure"], "verifier": "", "lab": "", "play": "", "color": {"background": "#fce4ec", "border": "#c62828"}, "font": {"size": 13}}, {"id": "molar_mass_determination", "label": "molar mass determination", "kind": "application", "tier": 4, "defines": "An experimental procedure using measured P, V, T, and mass of a gas sample with the ideal gas law to calculate an unknown molar mass.", "prereqs": ["ideal_gas_law", "molar_mass"], "verifier": "", "lab": "", "play": "", "color": {"background": "#fce4ec", "border": "#c62828"}, "font": {"size": 13}}, {"id": "gas_stoichiometry", "label": "gas stoichiometry", "kind": "application", "tier": 4, "defines": "The use of the ideal gas law and Avogadro's law to convert between volumes, moles, and masses of gaseous reactants and products in chemical reactions.", "prereqs": ["ideal_gas_law", "molar_mass"], "verifier": "", "lab": "", "play": "", "color": {"background": "#fce4ec", "border": "#c62828"}, "font": {"size": 13}}, {"id": "uranium_enrichment_by_diffusion", "label": "uranium enrichment by diffusion", "kind": "application", "tier": 4, "defines": "An industrial cascade process exploiting the slight effusion rate difference between 235UF6 and 238UF6 through porous barriers to enrich uranium in the fissile isotope.", "prereqs": ["grahams_law"], "verifier": "", "lab": "", "play": "", "color": {"background": "#fce4ec", "border": "#c62828"}, "font": {"size": 13}}, {"id": "gas_collection_over_water", "label": "gas collection over water", "kind": "application", "tier": 6, "defines": "A laboratory technique for collecting water-insoluble gases by water displacement, using Dalton's law to subtract vapor pressure and obtain the dry gas pressure.", "prereqs": ["daltons_law", "vapor_pressure_of_water"], "verifier": "", "lab": "", "play": "", "color": {"background": "#fce4ec", "border": "#c62828"}, "font": {"size": 13}}], "edges": [{"from": "force", "to": "pressure"}, {"from": "area", "to": "pressure"}, {"from": "temperature_kelvin", "to": "amontons_law"}, {"from": "temperature_kelvin", "to": "charles_law"}, {"from": "temperature_kelvin", "to": "ideal_gas"}, {"from": "temperature_kelvin", "to": "standard_conditions_stp"}, {"from": "temperature_kelvin", "to": "maxwell_boltzmann_distribution"}, {"from": "temperature_kelvin", "to": "average_kinetic_energy"}, {"from": "temperature_kelvin", "to": "vapor_pressure_of_water"}, {"from": "volume", "to": "charles_law"}, {"from": "volume", "to": "boyle_law"}, {"from": "volume", "to": "avogadros_law"}, {"from": "volume", "to": "ideal_gas"}, {"from": "amount_of_substance", "to": "mole_fraction"}, {"from": "amount_of_substance", "to": "avogadros_law"}, {"from": "amount_of_substance", "to": "ideal_gas"}, {"from": "molar_mass", "to": "grahams_law"}, {"from": "molar_mass", "to": "gas_density"}, {"from": "molar_mass", "to": "root_mean_square_speed"}, {"from": "molar_mass", "to": "molar_mass_determination"}, {"from": "molar_mass", "to": "gas_stoichiometry"}, {"from": "density", "to": "hydrostatic_pressure"}, {"from": "molecular_volume", "to": "non_ideal_gas_behavior"}, {"from": "intermolecular_forces", "to": "non_ideal_gas_behavior"}, {"from": "pressure", "to": "pressure_units"}, {"from": "pressure", "to": "atmospheric_pressure"}, {"from": "pressure", "to": "hydrostatic_pressure"}, {"from": "pressure", "to": "amontons_law"}, {"from": "pressure", "to": "charles_law"}, {"from": "pressure", "to": "boyle_law"}, {"from": "pressure", "to": "avogadros_law"}, {"from": "pressure", "to": "ideal_gas"}, {"from": "pressure", "to": "standard_conditions_stp"}, {"from": "pressure", "to": "diffusion"}, {"from": "pressure", "to": "mean_free_path"}, {"from": "pressure", "to": "effusion"}, {"from": "pressure", "to": "partial_pressure"}, {"from": "mole_fraction", "to": "daltons_law"}, {"from": "atmospheric_pressure", "to": "barometer"}, {"from": "atmospheric_pressure", "to": "manometer"}, {"from": "hydrostatic_pressure", "to": "barometer"}, {"from": "hydrostatic_pressure", "to": "manometer"}, {"from": "amontons_law", "to": "ideal_gas_law"}, {"from": "charles_law", "to": "ideal_gas_law"}, {"from": "boyle_law", "to": "ideal_gas_law"}, {"from": "avogadros_law", "to": "ideal_gas_law"}, {"from": "ideal_gas", "to": "ideal_gas_law"}, {"from": "standard_conditions_stp", "to": "standard_molar_volume"}, {"from": "effusion", "to": "grahams_law"}, {"from": "ideal_gas_law", "to": "combined_gas_law"}, {"from": "ideal_gas_law", "to": "standard_molar_volume"}, {"from": "ideal_gas_law", "to": "gas_density"}, {"from": "ideal_gas_law", "to": "partial_pressure"}, {"from": "ideal_gas_law", "to": "compressibility_factor"}, {"from": "ideal_gas_law", "to": "non_ideal_gas_behavior"}, {"from": "ideal_gas_law", "to": "kinetic_molecular_theory"}, {"from": "ideal_gas_law", "to": "van_der_waals_equation"}, {"from": "ideal_gas_law", "to": "molar_mass_determination"}, {"from": "ideal_gas_law", "to": "gas_stoichiometry"}, {"from": "grahams_law", "to": "uranium_enrichment_by_diffusion"}, {"from": "partial_pressure", "to": "daltons_law"}, {"from": "partial_pressure", "to": "vapor_pressure_of_water"}, {"from": "non_ideal_gas_behavior", "to": "van_der_waals_equation"}, {"from": "kinetic_molecular_theory", "to": "maxwell_boltzmann_distribution"}, {"from": "kinetic_molecular_theory", "to": "average_kinetic_energy"}, {"from": "average_kinetic_energy", "to": "root_mean_square_speed"}, {"from": "daltons_law", "to": "gas_collection_over_water"}, {"from": "vapor_pressure_of_water", "to": "gas_collection_over_water"}]};
+const DOMAIN_KEY = "graph";
+
+// ── index ──────────────────────────────────────────────────────────────────
+const nodeIndex = {};
+RAW.nodes.forEach(n => nodeIndex[n.id] = n);
+
+const prereqOf  = {};  // id → ids that are direct prerequisites OF id
+const dependsOn = {};  // id → ids that id feeds into
+RAW.nodes.forEach(n => { prereqOf[n.id] = []; dependsOn[n.id] = []; });
+RAW.edges.forEach(e => {
+  prereqOf[e.to].push(e.from);
+  dependsOn[e.from].push(e.to);
+});
+
+// ── BFS longest-path levels (fixes application nodes at wrong tier) ─────────
+const bfsLevels = (() => {
+  const levels = {};
+  const successors = {};
+  RAW.nodes.forEach(n => { levels[n.id] = -1; successors[n.id] = []; });
+  RAW.edges.forEach(e => successors[e.from].push(e.to));
+  const sources = RAW.nodes.filter(n => !RAW.edges.some(e => e.to === n.id));
+  const queue = sources.map(n => n.id);
+  queue.forEach(n => levels[n] = 0);
+  let i = 0;
+  while (i < queue.length) {
+    const cur = queue[i++];
+    for (const succ of successors[cur]) {
+      const nl = levels[cur] + 1;
+      if (levels[succ] < nl) { levels[succ] = nl; queue.push(succ); }
+    }
+  }
+  return levels;
+})();
+
+// ── graph algorithms ────────────────────────────────────────────────────────
+function getAncestors(targetId) {
+  const visited = new Set();
+  const queue = [targetId];
+  while (queue.length) {
+    const cur = queue.shift();
+    for (const p of prereqOf[cur])
+      if (!visited.has(p)) { visited.add(p); queue.push(p); }
+  }
+  return visited;
+}
+
+function topoSort(nodeSet) {
+  const inDeg = {};
+  nodeSet.forEach(n => inDeg[n] = 0);
+  nodeSet.forEach(n => { for (const p of prereqOf[n]) if (nodeSet.has(p)) inDeg[n]++; });
+  const reach = {};
+  nodeSet.forEach(n => {
+    let r = 0;
+    nodeSet.forEach(m => { if (m !== n && getAncestors(m).has(n)) r++; });
+    reach[n] = r;
+  });
+  const heap = [];
+  nodeSet.forEach(n => { if (inDeg[n] === 0) heap.push(n); });
+  heap.sort((a, b) => (reach[b] - reach[a]) || a.localeCompare(b));
+  const result = [];
+  while (heap.length) {
+    const node = heap.shift();
+    result.push(node);
+    for (const succ of dependsOn[node]) {
+      if (!nodeSet.has(succ)) continue;
+      if (--inDeg[succ] === 0) {
+        heap.push(succ);
+        heap.sort((a, b) => (reach[b] - reach[a]) || a.localeCompare(b));
+      }
+    }
+  }
+  return result;
+}
+
+// ── vis.js network ──────────────────────────────────────────────────────────
+const container = document.getElementById('graph-container');
+const visNodes = new vis.DataSet(RAW.nodes.map(n => ({
+  id: n.id,
+  label: n.label.replace(/ /g, '\n'),
+  level: bfsLevels[n.id] !== undefined ? bfsLevels[n.id] : n.tier,
+  color: n.color,
+  font: n.font,
+  title: `<b>${n.label}</b> [${n.kind}]<br>${n.defines || ''}`,
+  shape: n.kind === 'concept' ? 'ellipse' : 'box',
+})));
+const visEdges = new vis.DataSet(RAW.edges.map((e, i) => ({
+  id: i, from: e.from, to: e.to,
+  arrows: 'to', color: {color: '#c8ccd4'}, width: 1,
+})));
+const network = new vis.Network(container, {nodes: visNodes, edges: visEdges}, {
+  layout: { hierarchical: {
+    enabled: true, direction: 'UD',
+    sortMethod: 'directed', levelSeparation: 85, nodeSpacing: 130,
+  } },
+  physics: { enabled: false },
+  interaction: { hover: true, tooltipDelay: 150 },
+  edges: { smooth: { type: 'cubicBezier', forceDirection: 'vertical' } },
+});
+
+// Compact layout: group by tier, sort alphabetically, left-align all nodes.
+network.once('afterDrawing', function() {
+  const pos = network.getPositions();
+  const spacing = 140;
+
+  // Group nodes by their BFS tier
+  const byTier = {};
+  RAW.nodes.forEach(n => {
+    const tier = bfsLevels[n.id] ?? n.tier ?? 0;
+    if (!byTier[tier]) byTier[tier] = [];
+    byTier[tier].push(n.id);
+  });
+
+  // Sort each tier alphabetically, assign X starting from 0
+  const tiers = Object.keys(byTier).map(Number).sort((a, b) => a - b);
+  const tierSep = 85;
+  tiers.forEach((tier, ti) => {
+    const ids = byTier[tier].sort();
+    const y = ti * tierSep;
+    ids.forEach((id, i) => {
+      network.moveNode(id, i * spacing, y);
+    });
+  });
+
+  network.fit({ animation: false });
+});
+
+function reCenterGraph() {
+  network.fit({ animation: true });
+}
+
+const C_PATH   = {background: '#fff9c4', border: '#f9a825'};
+const C_TARGET = {background: '#ffe082', border: '#e65100'};
+
+function resetColors() {
+  visNodes.update(RAW.nodes.map(n => ({id: n.id, color: n.color})));
+  visEdges.update(RAW.edges.map((e, i) => ({id: i, color: {color: '#c8ccd4'}, width: 1})));
+}
+
+// ── explanation panel ───────────────────────────────────────────────────────
+function renderExplanation(node) {
+  const kclass = node.kind;
+  const prereqChips = (node.prereqs || []).map(p =>
+    `<span class="prereq-chip" onclick="selectNode('${p}')">${p.replace(/_/g,' ')}</span>`
+  ).join('');
+  const metaItems = [
+    node.verifier ? `<span class="meta-item"><b>Verifier:</b> ${node.verifier}</span>` : '',
+    node.lab      ? `<span class="meta-item"><b>Lab:</b> ${node.lab}</span>` : '',
+  ].filter(Boolean).join('');
+  const playHtml = node.play
+    ? `<div class="section-label">Try it</div><div class="play-hint">${node.play}</div>`
+    : '';
+
+  const panel = document.getElementById('explain-panel');
+  panel.innerHTML = `
+    <div class="node-title">
+      <h2>${node.label}</h2>
+      <span class="badge ${kclass}">${kclass}</span>
+      <span class="tier-tag">BFS level ${bfsLevels[node.id] ?? node.tier}</span>
+    </div>
+    ${node.defines ? `<div class="defines">${node.defines}</div>` : ''}
+    ${prereqChips ? `<div class="section-label">Prerequisites</div><div class="prereq-list">${prereqChips}</div>` : ''}
+    ${metaItems ? `<div class="meta-row">${metaItems}</div>` : ''}
+    ${playHtml}
+  `;
+
+  // ── concept HTML detail ──
+  const conceptsBase = window.__cb_CONCEPTS_BASE;
+  const conceptUrls = window.__cb_CONCEPT_URLS || {};
+  const mappedUrl = conceptUrls[node.id];
+  if (mappedUrl || conceptsBase) {
+    const conceptUrl = mappedUrl || (conceptsBase + 'concept_' + encodeURIComponent(node.id) + '.html');
+    const detail = document.createElement('div');
+    detail.id = 'concept-detail';
+    detail.innerHTML = '<div class="section-label">Concept Detail</div><div class="concept-loading" style="color:#aaa;font-size:12px;padding:6px 0">Loading…</div>';
+    panel.appendChild(detail);
+    fetch(conceptUrl)
+      .then(r => {
+        if (!r.ok) throw new Error('not found');
+        return r.text();
+      })
+      .then(html => {
+        const slot = detail.querySelector('.concept-loading');
+        if (!slot) return;
+        // Vite dev server returns the SPA index.html (200) for missing static files.
+        // Verify we got a real concept page by checking for a known marker.
+        if (html.includes('spl-credit') || html.includes('Powered by')) {
+          const iframe = document.createElement('iframe');
+          iframe.id = 'concept-iframe';
+          iframe.src = conceptUrl;
+          slot.replaceWith(iframe);
+        } else {
+          slot.className = 'concept-not-found';
+          slot.textContent = 'Content not found — generate it first.';
+        }
+      })
+      .catch(() => {
+        const slot = detail.querySelector('.concept-loading');
+        if (slot) { slot.className = 'concept-not-found'; slot.textContent = 'Content not found — generate it first.'; }
+      });
+  }
+}
+
+// ── learning path sidebar ───────────────────────────────────────────────────
+function renderPathSidebar(orderedPath, targetId) {
+  const stepsEl = document.getElementById('path-steps');
+  const countEl = document.getElementById('path-count');
+  countEl.textContent = orderedPath.length
+    ? `${orderedPath.length} step${orderedPath.length !== 1 ? 's' : ''} to learn first`
+    : 'Root concept — no prerequisites';
+
+  const target = nodeIndex[targetId];
+  const kc = k => `${k.charAt(0).toUpperCase() + k.slice(1)}`;
+
+  stepsEl.innerHTML = orderedPath.map((n, i) => {
+    const nd = nodeIndex[n];
+    return `<div class="step-item" onclick="selectNode('${n}')">
+      <span class="step-num">${i + 1}.</span>
+      <div>
+        <div class="step-label">${nd.label}
+          <span class="step-kind ${nd.kind}-k">${nd.kind}</span>
+        </div>
+        ${nd.defines ? `<div class="step-def">${nd.defines}</div>` : ''}
+      </div>
+    </div>`;
+  }).join('') + `<div class="step-item target">
+    <span class="step-num">▶</span>
+    <div>
+      <div class="step-label">${target.label}
+        <span class="step-kind ${target.kind}-k">${target.kind}</span>
+      </div>
+      ${target.defines ? `<div class="step-def">${target.defines}</div>` : ''}
+    </div>
+  </div>`;
+}
+
+// ── notes (localStorage) ────────────────────────────────────────────────────
+let currentNodeId = null;
+
+function noteKey(nodeId) { return `concept_notes_${DOMAIN_KEY}_${nodeId}`; }
+
+function loadNote(nodeId) {
+  const parsed = _parseNote(localStorage.getItem(noteKey(nodeId)));
+  return parsed ? parsed.text : '';
+}
+
+function saveNote(nodeId, text) {
+  if (text.trim()) {
+    const data = JSON.stringify({ text, ts: new Date().toISOString() });
+    localStorage.setItem(noteKey(nodeId), data);
+  } else {
+    localStorage.removeItem(noteKey(nodeId));
+  }
+  renderNotesList();
+}
+
+function _parseNote(raw) {
+  if (!raw) return null;
+  try { const d = JSON.parse(raw); return { text: d.text || '', ts: d.ts || '' }; }
+  catch (_) { return { text: raw, ts: '' }; }
+}
+
+function _fmtTs(iso) {
+  if (!iso) return '';
+  const d = new Date(iso);
+  const yy = d.getFullYear();
+  const mm = String(d.getMonth()+1).padStart(2,'0');
+  const dd = String(d.getDate()).padStart(2,'0');
+  const hh = String(d.getHours()).padStart(2,'0');
+  const mi = String(d.getMinutes()).padStart(2,'0');
+  return `${yy}-${mm}-${dd} ${hh}:${mi}`;
+}
+
+function renderNotesList() {
+  const container = document.getElementById('notes-with-entries');
+  const entries = RAW.nodes
+    .filter(n => localStorage.getItem(noteKey(n.id)))
+    .map(n => {
+      const parsed = _parseNote(localStorage.getItem(noteKey(n.id)));
+      return {id: n.id, label: n.label, preview: (parsed?.text || '').slice(0, 60), ts: parsed?.ts || ''};
+    });
+  if (!entries.length) { container.innerHTML = ''; return; }
+  container.innerHTML = entries.map(e =>
+    `<div class="note-entry" onclick="selectNode('${e.id}')">
+      <div class="note-node">${e.label}<span class="note-ts">${_fmtTs(e.ts)}</span></div>
+      <div class="note-preview">${e.preview}</div>
+    </div>`
+  ).join('');
+}
+
+function switchNotes(nodeId) {
+  if (currentNodeId !== null) {
+    saveNote(currentNodeId, document.getElementById('notes-textarea').value);
+  }
+  currentNodeId = nodeId;
+  document.getElementById('notes-textarea').value = loadNote(nodeId);
+  document.getElementById('notes-node-label').textContent =
+    nodeIndex[nodeId]?.label || nodeId;
+}
+
+function clearNote() {
+  if (!currentNodeId) return;
+  document.getElementById('notes-textarea').value = '';
+  saveNote(currentNodeId, '');
+  const btn = document.getElementById('nb-clear-btn');
+  if (btn) { btn.textContent = 'Cleared!'; setTimeout(() => { btn.textContent = 'Clear'; }, 1000); }
+}
+
+function exportNotes() {
+  const notes = {};
+  RAW.nodes.forEach(n => {
+    const v = localStorage.getItem(noteKey(n.id));
+    if (v) notes[n.id] = v;
+  });
+  const blob = new Blob([JSON.stringify(notes, null, 2)], {type: 'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `${DOMAIN_KEY}_notes.json`;
+  a.click();
+}
+
+document.getElementById('notes-textarea').addEventListener('input', () => {
+  if (currentNodeId) saveNote(currentNodeId, document.getElementById('notes-textarea').value);
+});
+
+// ── unified node select ─────────────────────────────────────────────────────
+function selectNode(nodeId) {
+  if (!nodeIndex[nodeId]) return;
+  network.selectNodes([nodeId]);
+  handleSelect(nodeId);
+}
+
+function handleSelect(targetId) {
+  const node = nodeIndex[targetId];
+
+  renderExplanation(node);
+  switchNotes(targetId);
+
+  const ancestors = getAncestors(targetId);
+  const pathSet = new Set([...ancestors]);
+  const orderedPath = topoSort(pathSet);
+
+  renderPathSidebar(orderedPath, targetId);
+
+  resetColors();
+  visNodes.update(orderedPath.map(n => ({id: n, color: C_PATH})));
+  visNodes.update([{id: targetId, color: C_TARGET}]);
+  visEdges.update(RAW.edges.map((e, i) => {
+    const inPath = pathSet.has(e.from) && (pathSet.has(e.to) || e.to === targetId);
+    return {id: i, color: {color: inPath ? '#f9a825' : '#c8ccd4'}, width: inPath ? 2 : 1};
+  }));
+}
+
+network.on('click', params => {
+  if (params.nodes.length) handleSelect(params.nodes[0]);
+});
+
+// initialise notes list on load
+renderNotesList();
+
+// When viewed directly (not in an iframe), inject a back link next to the
+// "Learning Path" heading so it doesn't look like a title-bar element.
+if (window.parent === window) {
+  var h1 = document.querySelector('#path-header h1');
+  if (h1) {
+    var backLink = document.createElement('a');
+    backLink.href = '../../';
+    backLink.textContent = '← App';
+    backLink.style.cssText = [
+      'font-size:10px','color:#2563eb','font-family:system-ui,sans-serif',
+      'text-decoration:none','font-weight:400','letter-spacing:normal',
+      'text-transform:none','white-space:nowrap','flex-shrink:0'
+    ].join(';');
+    var row = document.createElement('div');
+    row.style.cssText = 'display:flex;align-items:baseline;gap:8px;';
+    h1.parentNode.insertBefore(row, h1);
+    row.appendChild(h1);
+    row.appendChild(backLink);
+  }
+}
+</script>
+</body>
+</html>

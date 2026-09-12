@@ -15,6 +15,7 @@ Usage:
 """
 import argparse
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -62,7 +63,14 @@ def _pick_capstone(graph_yaml: dict) -> str | None:
     return max(concepts, key=lambda k: concepts[k].get("tier", 0))
 
 
-def sync_chapter(book: str, chapter: int, domain_prefix: str, dry_run: bool) -> dict | None:
+def _book_title(book: str) -> str:
+    """Derive a human-readable title from a book slug, e.g.
+    'college-physics-2e' -> 'College Physics 2e', 'chemistry-2e' -> 'Chemistry 2e'."""
+    words = book.replace("_", "-").split("-")
+    return " ".join(w if re.fullmatch(r"\d+e", w) else w.capitalize() for w in words)
+
+
+def sync_chapter(book: str, chapter: int, domain_prefix: str, book_title: str, dry_run: bool) -> dict | None:
     src_dir = PRESS_ROOT / "output" / book / f"ch{chapter}"
     graph_src = src_dir / "graph.yaml"
     if not graph_src.exists():
@@ -102,8 +110,8 @@ def sync_chapter(book: str, chapter: int, domain_prefix: str, dry_run: bool) -> 
 
     return {
         "id": domain_id,
-        "name": f"Physics Ch{chapter}: {title}",
-        "description": f"OpenStax College Physics 2e, Chapter {chapter}: {title}.",
+        "name": f"{book_title} Ch{chapter}: {title}",
+        "description": f"OpenStax {book_title}, Chapter {chapter}: {title}.",
         "capstone": capstone or "",
         **stats,
         "tags": ["science"],
@@ -132,9 +140,12 @@ def main():
     ap.add_argument("--book", required=True, help="concept-book-press book slug, e.g. college-physics-2e")
     ap.add_argument("--prefix", required=True, help="domain id prefix, e.g. college_physics_ch")
     ap.add_argument("--chapters", default=None, help="e.g. '3-34' or '1,3,5' — default: all available")
+    ap.add_argument("--title", default=None, help="Override the auto-derived book title (default: "
+                    "derived from --book, e.g. 'chemistry-2e' -> 'Chemistry 2e')")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
+    book_title = args.title or _book_title(args.book)
     book_dir = PRESS_ROOT / "output" / args.book
     if args.chapters:
         chapters = _parse_chapters(args.chapters)
@@ -153,7 +164,7 @@ def main():
     added, refreshed = 0, 0
 
     for ch in chapters:
-        entry = sync_chapter(args.book, ch, args.prefix, args.dry_run)
+        entry = sync_chapter(args.book, ch, args.prefix, book_title, args.dry_run)
         if entry is None:
             continue
         if entry["id"] in by_id:

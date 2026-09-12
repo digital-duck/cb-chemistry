@@ -45,7 +45,7 @@ python scripts/batch_generate.py [OPTIONS]
 | `--n-targets` | 2 | Number of application nodes per domain |
 | `--level` | domain default | Override level: `intro / core / college / research` |
 | `--language` | `en` | Output language ISO code (`en`, `zh`, `fr`, …) |
-| `--llm` | `claude_cli:claude-sonnet-4-6` | LLM backend (env: `CB_LLM`) |
+| `--llm` | `claude_cli:claude-sonnet-5` | LLM backend (env: `CB_LLM`) |
 | `--spl-dir` | `~/projects/digital-duck/SPL.py` | SPL.py root (env: `CB_SPL_DIR`) |
 | `--skip-cache` | off | Bypass spl3 LLM cache — force fresh generation |
 | `--skip-existing` | off | Skip targets already listed in `catalog.json` books |
@@ -264,7 +264,7 @@ SPL_WHILE_MAX_ITER=50 SPL_MAX_LLM_CALLS=50 \
 python scripts/batch_generate.py --domain english_morphology --llm ollama:gemma4
 
 SPL_WHILE_MAX_ITER=50 SPL_MAX_LLM_CALLS=50 \
-python scripts/batch_generate.py --domain english_morphology --llm claude_cli:claude-sonnet-4-6
+python scripts/batch_generate.py --domain english_morphology --llm claude_cli:claude-sonnet-5
 
 
 SPL_WHILE_MAX_ITER=50 SPL_MAX_LLM_CALLS=50 \

@@ -1,0 +1,282 @@
+domain: chemistry_2e_ch9
+primitives:
+  force:
+    defines: A push or pull on an object, measured in newtons; a fundamental physical quantity assumed
+      as given in this chapter.
+    tier: 0
+  area:
+    defines: The extent of a two-dimensional surface, treated as a known geometric quantity used in defining
+      pressure.
+    tier: 0
+  temperature_kelvin:
+    defines: A measurable property of matter reflecting thermal energy; the Kelvin scale sets zero at
+      absolute zero and is required for all gas law calculations.
+    tier: 0
+  volume:
+    defines: The three-dimensional space occupied by a gas sample, typically expressed in liters or milliliters.
+    tier: 0
+  amount_of_substance:
+    defines: The quantity of matter expressed in moles, representing a fixed number of particles; assumed
+      from prior chemistry study.
+    tier: 0
+  molar_mass:
+    defines: The mass in grams of one mole of a substance, determined from atomic composition and assumed
+      as a known quantity in this chapter.
+    tier: 0
+  density:
+    defines: Mass per unit volume of a substance; assumed as a known measurable property and used in hydrostatic
+      pressure and gas density calculations.
+    tier: 0
+  molecular_volume:
+    defines: The nonzero physical size of real gas molecules, treated as a given physical fact when explaining
+      deviations from ideal behavior.
+    tier: 0
+  intermolecular_forces:
+    defines: Attractive interactions between gas molecules; introduced as a given physical reality that
+      becomes significant at high pressures and low temperatures.
+    tier: 0
+concepts:
+  pressure:
+    defines: The force exerted by gas molecules per unit area of surface, caused by molecular collisions;
+      expressed as P = F/A.
+    composed_of:
+    - force
+    - area
+    tier: 1
+  mole_fraction:
+    defines: The dimensionless ratio of the moles of one component to the total moles of all components
+      in a mixture, used to calculate partial pressures.
+    composed_of:
+    - amount_of_substance
+    tier: 1
+  pressure_units:
+    defines: A set of standard units for expressing pressure (pascal, atm, torr, bar, psi, mm Hg) with
+      defined conversion factors among them.
+    composed_of:
+    - pressure
+    tier: 2
+  atmospheric_pressure:
+    defines: The pressure exerted by the weight of the overlying column of atmosphere, approximately 1
+      atm (101,325 Pa) at sea level.
+    composed_of:
+    - pressure
+    tier: 2
+  hydrostatic_pressure:
+    defines: The pressure exerted by a fluid column due to gravity, given by p = h*rho*g, where h is height,
+      rho is density, and g is gravitational acceleration.
+    composed_of:
+    - pressure
+    - density
+    tier: 2
+  amontons_law:
+    defines: At constant volume and fixed amount of gas, pressure is directly proportional to Kelvin temperature
+      (P1/T1 = P2/T2).
+    composed_of:
+    - pressure
+    - temperature_kelvin
+    tier: 2
+  charles_law:
+    defines: At constant pressure and fixed amount of gas, volume is directly proportional to Kelvin temperature
+      (V1/T1 = V2/T2).
+    composed_of:
+    - volume
+    - temperature_kelvin
+    - pressure
+    tier: 2
+  boyle_law:
+    defines: At constant temperature and fixed amount of gas, pressure and volume are inversely proportional
+      (P1*V1 = P2*V2).
+    composed_of:
+    - pressure
+    - volume
+    tier: 2
+  avogadros_law:
+    defines: At constant temperature and pressure, the volume of a gas is directly proportional to the
+      number of moles (V/n = constant).
+    composed_of:
+    - volume
+    - amount_of_substance
+    - pressure
+    tier: 2
+  ideal_gas:
+    defines: A hypothetical gas whose molecules occupy no volume and exert no forces on each other, accurately
+      described by the gas laws at low pressures and high temperatures.
+    composed_of:
+    - pressure
+    - volume
+    - temperature_kelvin
+    - amount_of_substance
+    tier: 2
+  standard_conditions_stp:
+    defines: A defined reference state of 273.15 K (0 C) and 1 atm (101.325 kPa) used to compare and report
+      gas properties.
+    composed_of:
+    - temperature_kelvin
+    - pressure
+    tier: 2
+  diffusion:
+    defines: The net movement of gas molecules from a region of higher concentration to a region of lower
+      concentration driven by random molecular motion.
+    composed_of:
+    - pressure
+    tier: 2
+  mean_free_path:
+    defines: The average distance a gas molecule travels between successive collisions with other molecules;
+      increases as pressure decreases.
+    composed_of:
+    - pressure
+    tier: 2
+  effusion:
+    defines: The escape of gas molecules through a tiny opening into a vacuum; distinct from diffusion
+      in that molecules pass through a physical barrier.
+    composed_of:
+    - pressure
+    tier: 2
+  ideal_gas_law:
+    defines: The unified equation PV = nRT combining Boyle's, Charles's, Amontons's, and Avogadro's laws,
+      relating pressure, volume, moles, and Kelvin temperature via the universal gas constant R.
+    composed_of:
+    - boyle_law
+    - charles_law
+    - amontons_law
+    - avogadros_law
+    - ideal_gas
+    tier: 3
+  grahams_law:
+    defines: The rate of effusion of a gas is inversely proportional to the square root of its molar mass;
+      rate_A/rate_B = sqrt(M_B/M_A).
+    composed_of:
+    - effusion
+    - molar_mass
+    tier: 3
+  combined_gas_law:
+    defines: A form of the ideal gas law for a fixed amount of gas allowing simultaneous changes in P,
+      V, and T; P1*V1/T1 = P2*V2/T2.
+    composed_of:
+    - ideal_gas_law
+    tier: 4
+  standard_molar_volume:
+    defines: The volume occupied by exactly one mole of an ideal gas at STP, approximately 22.4 L.
+    composed_of:
+    - ideal_gas_law
+    - standard_conditions_stp
+    tier: 4
+  gas_density:
+    defines: The mass per unit volume of a gas sample, derived from the ideal gas law as d = P*M/(R*T),
+      where M is molar mass.
+    composed_of:
+    - ideal_gas_law
+    - molar_mass
+    tier: 4
+  partial_pressure:
+    defines: The pressure that a single component of a gas mixture would exert if it alone occupied the
+      container at the same temperature and volume.
+    composed_of:
+    - pressure
+    - ideal_gas_law
+    tier: 4
+  compressibility_factor:
+    defines: The ratio of the actual molar volume of a real gas to the molar volume predicted by the ideal
+      gas law (Z = P*Vm/RT); deviations from Z = 1 indicate non-ideal behavior.
+    composed_of:
+    - ideal_gas_law
+    tier: 4
+  non_ideal_gas_behavior:
+    defines: Deviations of real gases from the ideal gas law, caused by finite molecular volume and intermolecular
+      attractions, most pronounced at high pressures and low temperatures.
+    composed_of:
+    - ideal_gas_law
+    - molecular_volume
+    - intermolecular_forces
+    tier: 4
+  kinetic_molecular_theory:
+    defines: A microscopic model of ideal gas behavior based on five postulates - molecules in constant
+      random motion, negligibly small, pressure through wall collisions, elastic collisions, average KE
+      proportional to Kelvin temperature.
+    composed_of:
+    - ideal_gas_law
+    tier: 4
+  maxwell_boltzmann_distribution:
+    defines: The statistical distribution of molecular speeds in a gas sample at a given temperature,
+      showing the relative number of molecules at each speed.
+    composed_of:
+    - kinetic_molecular_theory
+    - temperature_kelvin
+    tier: 5
+  average_kinetic_energy:
+    defines: The mean translational kinetic energy of molecules in a gas sample, equal to (3/2)*R*T per
+      mole and directly proportional to Kelvin temperature.
+    composed_of:
+    - kinetic_molecular_theory
+    - temperature_kelvin
+    tier: 5
+  daltons_law:
+    defines: The total pressure of a mixture of ideal gases equals the sum of the partial pressures of
+      all component gases.
+    composed_of:
+    - partial_pressure
+    - mole_fraction
+    tier: 5
+  vapor_pressure_of_water:
+    defines: The partial pressure exerted by water vapor in equilibrium with liquid water at a given temperature;
+      must be subtracted when collecting gases over water.
+    composed_of:
+    - partial_pressure
+    - temperature_kelvin
+    tier: 5
+  van_der_waals_equation:
+    defines: A modified ideal gas law, (P + a*(n/V)^2)*(V - n*b) = n*R*T, that corrects for real gas behavior
+      using empirical constants a (attraction) and b (volume).
+    composed_of:
+    - ideal_gas_law
+    - non_ideal_gas_behavior
+    tier: 5
+  root_mean_square_speed:
+    defines: A statistical measure of average molecular speed defined as the square root of the mean squared
+      speed; u_rms = sqrt(3*R*T/M).
+    composed_of:
+    - average_kinetic_energy
+    - molar_mass
+    tier: 6
+applications:
+  barometer:
+    defines: A device using a mercury column in an evacuated tube to measure atmospheric pressure by applying
+      the hydrostatic pressure relation.
+    needs:
+    - atmospheric_pressure
+    - hydrostatic_pressure
+    tier: 3
+  manometer:
+    defines: A U-tube device containing liquid mercury used to measure the pressure of a trapped gas sample
+      from the difference in liquid column heights.
+    needs:
+    - hydrostatic_pressure
+    - atmospheric_pressure
+    tier: 3
+  molar_mass_determination:
+    defines: An experimental procedure using measured P, V, T, and mass of a gas sample with the ideal
+      gas law to calculate an unknown molar mass.
+    needs:
+    - ideal_gas_law
+    - molar_mass
+    tier: 4
+  gas_stoichiometry:
+    defines: The use of the ideal gas law and Avogadro's law to convert between volumes, moles, and masses
+      of gaseous reactants and products in chemical reactions.
+    needs:
+    - ideal_gas_law
+    - molar_mass
+    tier: 4
+  uranium_enrichment_by_diffusion:
+    defines: An industrial cascade process exploiting the slight effusion rate difference between 235UF6
+      and 238UF6 through porous barriers to enrich uranium in the fissile isotope.
+    needs:
+    - grahams_law
+    tier: 4
+  gas_collection_over_water:
+    defines: A laboratory technique for collecting water-insoluble gases by water displacement, using
+      Dalton's law to subtract vapor pressure and obtain the dry gas pressure.
+    needs:
+    - daltons_law
+    - vapor_pressure_of_water
+    tier: 6

@@ -1,4 +1,4 @@
-# concept-book-base
+# ConceptBook for College Chemistry
 
 Template repo for concept-book apps — a web portal for exploring a knowledge domain
 through an interactive concept graph, powered by the [SPL.py](https://github.com/digital-duck/SPL.py)

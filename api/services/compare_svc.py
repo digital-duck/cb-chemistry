@@ -15,7 +15,7 @@ _SPL_DIR = _REPO_ROOT / "spl"
 _MODEL_TO_LLM: dict[str, str] = {
     "gemma3": "ollama:gemma3",
     "gemma4": "ollama:gemma4",
-    "sonnet": "claude_cli:claude-sonnet-4-6",
+    "sonnet": "claude_cli:claude-sonnet-5",
     "haiku":  "claude_cli:claude-haiku-4-5-20251001",
     "opus":   "claude_cli:claude-opus-4-8",
 }

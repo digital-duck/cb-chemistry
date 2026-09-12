@@ -1,0 +1,243 @@
+domain: chemistry_2e_ch19
+primitives:
+  electron_configuration:
+    defines: The arrangement of electrons in atomic orbitals, including the rule that s electrons are
+      removed before d or f electrons when forming transition metal ions.
+    tier: 0
+  oxidation_state:
+    defines: A number assigned to an element in a compound indicating the degree of oxidation, used to
+      track electron transfer in chemical reactions.
+    tier: 0
+  lewis_acid_base_interaction:
+    defines: A chemical interaction in which a Lewis base donates an electron pair to a Lewis acid acceptor.
+    tier: 0
+  reduction_potential:
+    defines: A measure of the tendency of a chemical species to be reduced, used to predict the relative
+      reactivity and oxidizing power of transition metal ions.
+    tier: 0
+  paramagnetism_diamagnetism:
+    defines: Paramagnetism is the attraction of a substance to a magnetic field due to unpaired electrons;
+      diamagnetism is the slight repulsion of a substance with no unpaired electrons.
+    tier: 0
+concepts:
+  transition_metals:
+    defines: Elements with partially filled d orbitals located in groups 3–11 of the periodic table, organized
+      into first, second, third, and fourth transition series.
+    composed_of:
+    - electron_configuration
+    tier: 1
+  inner_transition_metals:
+    defines: The f-block elements—lanthanides (atomic numbers 57–71) and actinides (atomic numbers 89–103)—which
+      have valence electrons in f orbitals.
+    composed_of:
+    - electron_configuration
+    tier: 1
+  coordinate_covalent_bond:
+    defines: A covalent bond in which both electrons are donated by a single atom (the Lewis base) to
+      an electron acceptor (the Lewis acid).
+    composed_of:
+    - lewis_acid_base_interaction
+    tier: 1
+  pairing_energy:
+    defines: The energy required to place two electrons with opposite spins into the same orbital, which
+      competes with crystal field splitting in determining electron arrangement in d orbitals.
+    composed_of:
+    - electron_configuration
+    tier: 1
+  transition_metal_oxidation_states:
+    defines: The ability of transition metals to exist in multiple stable oxidation states due to the
+      availability of both s and d valence electrons for removal.
+    composed_of:
+    - transition_metals
+    - oxidation_state
+    tier: 2
+  ligand:
+    defines: An ion or neutral molecule that donates one or more lone pairs of electrons to a central
+      metal ion to form a coordination compound.
+    composed_of:
+    - coordinate_covalent_bond
+    tier: 2
+  central_metal_ion:
+    defines: The metal atom or ion at the core of a coordination complex that acts as a Lewis acid and
+      accepts electron pairs from ligands.
+    composed_of:
+    - lewis_acid_base_interaction
+    - transition_metals
+    tier: 2
+  metal_extraction:
+    defines: The three-stage process of preliminary treatment, smelting, and refining used to isolate
+      transition metals from their ores, illustrated by iron, copper, and silver.
+    composed_of:
+    - transition_metals
+    - oxidation_state
+    tier: 2
+  transition_metal_compounds:
+    defines: Binary and polyatomic compounds of transition metals—including halides, oxides, hydroxides,
+      and carbonates—whose bonding character shifts from ionic at low oxidation states to covalent at
+      high oxidation states.
+    composed_of:
+    - transition_metal_oxidation_states
+    tier: 3
+  coordination_compound:
+    defines: A stable compound in which a central metal atom or ion acts as a Lewis acid and accepts one
+      or more pairs of electrons from surrounding ligands via coordinate covalent bonds.
+    composed_of:
+    - central_metal_ion
+    - ligand
+    tier: 3
+  monodentate_ligand:
+    defines: A ligand that attaches to the central metal through a single coordinate covalent bond from
+      one donor atom.
+    composed_of:
+    - ligand
+    tier: 3
+  polydentate_ligand:
+    defines: A ligand that bonds to a central metal ion through two or more donor atoms simultaneously,
+      classified by the number of donor sites (bidentate, tridentate, etc.).
+    composed_of:
+    - ligand
+    tier: 3
+  hydrometallurgy:
+    defines: A metal separation process in which the metal is first converted into soluble ions, extracted
+      from the ore mixture, and then reduced to precipitate the pure metal.
+    composed_of:
+    - metal_extraction
+    tier: 3
+  coordination_number:
+    defines: The number of donor atoms bonded to the central metal ion in a coordination complex, with
+      two, four, and six being the most common values.
+    composed_of:
+    - coordination_compound
+    tier: 4
+  coordination_sphere:
+    defines: The central metal ion or atom together with all directly attached ligands, enclosed in brackets
+      in the chemical formula.
+    composed_of:
+    - coordination_compound
+    tier: 4
+  chelate:
+    defines: A coordination complex formed when one or more polydentate ligands bond to a central metal
+      ion through multiple donor atoms, creating ring-like structures.
+    composed_of:
+    - polydentate_ligand
+    - coordination_compound
+    tier: 4
+  nomenclature_of_complexes:
+    defines: The systematic naming rules for coordination compounds based on Werner's system, specifying
+      ligand names and counts, metal identity, and oxidation state.
+    composed_of:
+    - coordination_compound
+    - oxidation_state
+    tier: 4
+  linkage_isomers:
+    defines: Coordination isomers that arise when an ambidentate ligand (such as CN⁻ or SCN⁻) can bind
+      to the metal through either of two different donor atoms.
+    composed_of:
+    - coordination_compound
+    - monodentate_ligand
+    tier: 4
+  crystal_field_theory:
+    defines: An electrostatic model that explains the colors, magnetic behavior, and structures of coordination
+      compounds by treating ligands as point charges that split the energies of the central metal's d
+      orbitals.
+    composed_of:
+    - coordination_compound
+    tier: 4
+  complex_geometry:
+    defines: The spatial arrangement of ligands around the central metal ion, determined by coordination
+      number, with octahedral (CN=6), square planar and tetrahedral (CN=4), and linear (CN=2) being most
+      common.
+    composed_of:
+    - coordination_compound
+    - coordination_number
+    tier: 5
+  ionization_isomers:
+    defines: Coordination isomers in which an anionic ligand inside the coordination sphere is exchanged
+      with the counter-ion outside the sphere.
+    composed_of:
+    - coordination_sphere
+    tier: 5
+  d_orbital_splitting:
+    defines: The separation of the five d orbitals into sets of different energies caused by electrostatic
+      repulsion from ligands, yielding t2g and eg sets in octahedral complexes.
+    composed_of:
+    - crystal_field_theory
+    tier: 5
+  geometric_isomers:
+    defines: Isomers of coordination complexes that have the same atoms connected by the same bond types
+      but differ in spatial orientation, exemplified by cis and trans configurations.
+    composed_of:
+    - complex_geometry
+    tier: 6
+  optical_isomers:
+    defines: Pairs of coordination complexes that are nonsuperimposable mirror images of each other, differing
+      only in their interaction with polarized light and other chiral molecules.
+    composed_of:
+    - complex_geometry
+    tier: 6
+  crystal_field_splitting:
+    defines: The energy difference between the eg and t2g orbital sets in an octahedral complex, whose
+      magnitude depends on the identity of the ligands, the metal charge, and the d-orbital period.
+    composed_of:
+    - d_orbital_splitting
+    tier: 6
+  spectrochemical_series:
+    defines: A ranking of ligands in order of the magnitude of crystal field splitting they produce, from
+      weak-field ligands (small Δoct) to strong-field ligands (large Δoct).
+    composed_of:
+    - crystal_field_splitting
+    tier: 7
+  high_spin_low_spin_complexes:
+    defines: Octahedral complexes in which electrons maximize unpaired spins by occupying all d orbitals
+      before pairing (high-spin, Δoct < P) or minimize unpaired spins by filling lower t2g orbitals first
+      (low-spin, Δoct > P).
+    composed_of:
+    - crystal_field_splitting
+    - pairing_energy
+    tier: 7
+  color_of_complexes:
+    defines: The visible color exhibited by coordination compounds when d-d electron transitions absorb
+      photons in the visible spectrum, with the observed color being complementary to the absorbed wavelengths.
+    composed_of:
+    - crystal_field_splitting
+    tier: 7
+  magnetic_moment_of_complexes:
+    defines: The experimentally measured magnetic property of a complex that reflects the number of unpaired
+      electrons, used to confirm high-spin or low-spin assignments predicted by crystal field theory.
+    composed_of:
+    - high_spin_low_spin_complexes
+    - paramagnetism_diamagnetism
+    tier: 8
+applications:
+  transition_metal_catalysts:
+    defines: The industrial application of transition metals as catalysts in manufacturing processes,
+      enabled by their ability to adopt multiple oxidation states and bind ligands.
+    needs:
+    - transition_metal_oxidation_states
+    - coordination_compound
+    tier: 4
+  high_temperature_superconductors:
+    defines: Transition metal oxide compounds, such as YBa2Cu3O7, that conduct electricity with zero resistance
+      at temperatures achievable with liquid nitrogen cooling.
+    needs:
+    - transition_metal_compounds
+    tier: 4
+  hemoglobin_oxygen_transport:
+    defines: The biological application of coordination chemistry in which iron(II) within the heme chelate
+      of hemoglobin reversibly binds oxygen for transport in the blood.
+    needs:
+    - chelate
+    - crystal_field_theory
+    tier: 5
+  chelation_therapy:
+    defines: The medical use of polydentate ligands such as BAL, enterobactin, and DMSA to form water-soluble
+      chelates with toxic heavy metals or excess iron, enabling their elimination from the body.
+    needs:
+    - chelate
+    tier: 5
+  cisplatin_anticancer:
+    defines: The square-planar cis-diamminedichloroplatinum(II) coordination compound used to treat cancer
+      by inhibiting cell division, with only the cis isomer being therapeutically active.
+    needs:
+    - geometric_isomers
+    tier: 7

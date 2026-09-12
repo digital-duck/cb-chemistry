@@ -45,7 +45,7 @@ DEFAULT_PROGRESS_FILE = Path(__file__).parent / "batch_gen_domains_progress.json
 
 # claude_cli / ollama shorthand -> the llm string spl3 expects.
 _LLM_ALIASES: dict[str, str] = {
-    "sonnet": "claude_cli:claude-sonnet-4-6",
+    "sonnet": "claude_cli:claude-sonnet-5",
     "haiku":  "claude_cli:claude-haiku-4-5-20251001",
     "opus":   "claude_cli:claude-opus-4-8",
     "gemma3": "ollama:gemma3",

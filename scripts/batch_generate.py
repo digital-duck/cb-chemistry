@@ -24,6 +24,10 @@ Usage examples:
     # Only specific domains
     python scripts/batch_generate.py --domain mechanics --domain calculus
 
+    # Domain ranges/lists in one --domain value (comma-separated, "-" for an
+    # inclusive numeric range between two same-prefix ids)
+    python scripts/batch_generate.py --domain "chemistry_ch05-chemistry_ch10,chemistry_ch21"
+
     # Force-regenerate targets already in catalog.json (default is to skip them)
     python scripts/batch_generate.py --no-skip-existing
 
@@ -43,6 +47,7 @@ Usage examples:
     python scripts/batch_generate.py --language zh
 """
 import os
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -140,7 +145,7 @@ def _resolve_style(level: str, tags: list[str]) -> str:
 _LLM_TO_MODEL: dict[str, str] = {
     "ollama:gemma3":                    "gemma3",
     "ollama:gemma4":                    "gemma4",
-    "claude_cli:claude-sonnet-4-6":     "sonnet",
+    "claude_cli:claude-sonnet-5":     "sonnet",
     "claude_cli:claude-haiku-4-5-20251001": "haiku",
     "claude_cli:claude-opus-4-8":       "opus",
 }
@@ -312,10 +317,66 @@ def _run_spl3(
     return proc.returncode == 0
 
 
-@click.command()
+_TRAILING_NUM = re.compile(r"^(.*?)(\d+)$")
+
+
+def _expand_domain_spec(spec: str) -> list[str]:
+    """Expand one --domain value into concrete domain ids.
+
+    Supports comma-separated lists and inclusive numeric ranges written as
+    "<prefix><NN>-<prefix><MM>" (same prefix, zero-padded to the left id's
+    width) or "<prefix><NN>-<MM>" (bare end number). Anything that doesn't
+    match a range shape is passed through unchanged.
+    """
+    ids = []
+    for chunk in spec.split(","):
+        chunk = chunk.strip()
+        if not chunk:
+            continue
+        if "-" in chunk:
+            left, _, right = chunk.partition("-")
+            left, right = left.strip(), right.strip()
+            m_left = _TRAILING_NUM.match(left)
+            if m_left:
+                prefix, start_str = m_left.groups()
+                m_right = _TRAILING_NUM.match(right)
+                if m_right and m_right.group(1) == prefix:
+                    end_str = m_right.group(2)
+                elif right.isdigit():
+                    end_str = right
+                else:
+                    end_str = None
+                if end_str is not None:
+                    start, end, width = int(start_str), int(end_str), len(start_str)
+                    if start <= end:
+                        ids.extend(f"{prefix}{n:0{width}d}" for n in range(start, end + 1))
+                        continue
+            ids.append(chunk)  # not a recognized range — treat as a literal id
+        else:
+            ids.append(chunk)
+    return ids
+
+
+CONTEXT_SETTINGS = dict(help_option_names=["-h", "--help"])
+
+
+@click.group(context_settings=CONTEXT_SETTINGS)
+def cli() -> None:
+    """Batch pre-generate concept books. See 'generate --help' / 'status --help'.
+
+    A bare invocation with no subcommand (e.g. `batch_generate.py --domain X`)
+    implicitly runs 'generate' for backward compatibility.
+    """
+
+
+@cli.command("generate", context_settings=CONTEXT_SETTINGS)
 @click.option(
     "--domain", "domains", multiple=True,
-    help="Domain ID to generate (repeatable). Default: all domains in catalog.",
+    help="Domain ID to generate (repeatable). Each value may also be a "
+         "comma-separated list, and/or a range of two same-prefix "
+         "zero-padded ids joined by '-' (e.g. "
+         "'chemistry_ch05-chemistry_ch10,chemistry_ch21'). "
+         "Default: all domains in catalog.",
 )
 @click.option(
     "--n-targets", default=None, type=int,
@@ -328,7 +389,7 @@ def _run_spl3(
 )
 @click.option("--language", default="en", show_default=True, help="Output language code.")
 @click.option(
-    "--llm", default="claude_cli:claude-sonnet-4-6", show_default=True,
+    "--llm", default="claude_cli:claude-sonnet-5", show_default=True,
     envvar="CB_LLM", help="LLM backend string passed to spl3.",
 )
 @click.option(
@@ -355,7 +416,7 @@ def _run_spl3(
     "--stop-on-error", is_flag=True, default=False,
     help="Abort the batch if any single generation fails.",
 )
-def main(
+def generate(
     domains: tuple,
     n_targets: int | None,
     level,
@@ -370,6 +431,9 @@ def main(
     stop_on_error: bool,
 ) -> None:
     """Batch pre-generate concept books for multiple domains."""
+    domains = tuple(dict.fromkeys(
+        expanded for raw in domains for expanded in _expand_domain_spec(raw)
+    ))
     if spl_dir is None:
         spl_dir = Path.home() / "projects" / "digital-duck" / "SPL.py"
 
@@ -466,5 +530,74 @@ def main(
         sys.exit(1)
 
 
+@cli.command("status", context_settings=CONTEXT_SETTINGS)
+@click.option(
+    "--domain", "domains", multiple=True,
+    help="Restrict to these domain ids (same comma-list/range syntax as "
+         "'generate --domain'). Default: all domains in catalog.json.",
+)
+@click.option(
+    "--verbose", "-v", is_flag=True,
+    help="Also list each domain's not-yet-generated target ids.",
+)
+def status(domains: tuple, verbose: bool) -> None:
+    """Show, per domain, how many application targets have been generated."""
+    domains = tuple(dict.fromkeys(
+        expanded for raw in domains for expanded in _expand_domain_spec(raw)
+    ))
+    catalog = _load_catalog()
+    domain_map = {d["id"]: d for d in catalog}
+    if domains:
+        missing = set(domains) - set(domain_map)
+        if missing:
+            click.echo(f"[warn] Unknown domain(s): {', '.join(sorted(missing))}", err=True)
+
+    entries = [d for d in catalog if not domains or d["id"] in domains]
+    if not entries:
+        click.echo("No domains found in catalog.json.")
+        return
+
+    header = f"{'Domain':28s} {'Name':38s} {'Done':>5s} {'Total':>6s} {'Pending':>8s}  Models/Langs"
+    click.echo(header)
+    click.echo("-" * len(header))
+
+    total_done = total_targets = 0
+    for entry in entries:
+        did = entry["id"]
+        app_ids = _get_application_ids(did)
+        books = entry.get("books", [])
+        done_targets = sorted({b["target"] for b in books if b["target"] in app_ids})
+        pending = [t for t in app_ids if t not in done_targets]
+        variants = sorted({f"{b.get('model', '?')}/{b.get('language', 'en')}" for b in books})
+        total_done += len(done_targets)
+        total_targets += len(app_ids)
+
+        name = entry.get("name", did)
+        click.echo(
+            f"{did:28s} {name[:38]:38s} {len(done_targets):5d} {len(app_ids):6d} "
+            f"{len(pending):8d}  {', '.join(variants) or '-'}"
+        )
+        if verbose and pending:
+            click.echo(f"    pending: {', '.join(pending)}")
+
+    click.echo("-" * len(header))
+    click.echo(
+        f"{'TOTAL':28s} {'':38s} {total_done:5d} {total_targets:6d} "
+        f"{total_targets - total_done:8d}"
+    )
+
+
+def _main() -> None:
+    """Dispatch to 'generate' by default so `batch_generate.py --domain X`
+    (pre-subcommand invocation style) keeps working unchanged."""
+    known = {"generate", "status"}
+    args = sys.argv[1:]
+    if not args:
+        args = ["generate"]
+    elif args[0] not in known and args[0] not in ("-h", "--help"):
+        args = ["generate", *args]
+    cli(args=args, prog_name=Path(sys.argv[0]).name)
+
+
 if __name__ == "__main__":
-    main()
+    _main()

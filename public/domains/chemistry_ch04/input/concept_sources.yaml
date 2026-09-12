@@ -1,0 +1,229 @@
+domain: chemistry_2e_ch4
+sources:
+  law_of_conservation_of_matter:
+    label: Law of Conservation of Matter
+    sections:
+    - id: ch04_s4_1
+      title: 4.1 Writing and Balancing Chemical Equations
+  mole:
+    label: Mole
+    sections: []
+  molar_mass:
+    label: Molar Mass
+    sections: []
+  avogadros_number:
+    label: Avogadro's Number
+    sections: []
+  molarity:
+    label: Molarity
+    sections: []
+  solubility:
+    label: Solubility
+    sections:
+    - id: ch04_s4_2
+      title: 4.2 Classifying Chemical Reactions
+  chemical_equation:
+    label: Chemical Equation
+    sections:
+    - id: ch04_s4_1
+      title: 4.1 Writing and Balancing Chemical Equations
+  reactant:
+    label: Reactant
+    sections:
+    - id: ch04_s4_1
+      title: 4.1 Writing and Balancing Chemical Equations
+  product:
+    label: Product
+    sections:
+    - id: ch04_s4_1
+      title: 4.1 Writing and Balancing Chemical Equations
+  coefficient:
+    label: Coefficient
+    sections:
+    - id: ch04_s4_1
+      title: 4.1 Writing and Balancing Chemical Equations
+  balanced_equation:
+    label: Balanced Chemical Equation
+    sections:
+    - id: ch04_s4_1
+      title: 4.1 Writing and Balancing Chemical Equations
+  molecular_equation:
+    label: Molecular Equation
+    sections:
+    - id: ch04_s4_1
+      title: 4.1 Writing and Balancing Chemical Equations
+  spectator_ion:
+    label: Spectator Ion
+    sections:
+    - id: ch04_s4_1
+      title: 4.1 Writing and Balancing Chemical Equations
+  complete_ionic_equation:
+    label: Complete Ionic Equation
+    sections:
+    - id: ch04_s4_1
+      title: 4.1 Writing and Balancing Chemical Equations
+  net_ionic_equation:
+    label: Net Ionic Equation
+    sections:
+    - id: ch04_s4_1
+      title: 4.1 Writing and Balancing Chemical Equations
+  precipitation_reaction:
+    label: Precipitation Reaction
+    sections:
+    - id: ch04_s4_2
+      title: 4.2 Classifying Chemical Reactions
+  solubility_rules:
+    label: Solubility Rules
+    sections:
+    - id: ch04_s4_2
+      title: 4.2 Classifying Chemical Reactions
+  acid:
+    label: Acid
+    sections:
+    - id: ch04_s4_2
+      title: 4.2 Classifying Chemical Reactions
+  base:
+    label: Base
+    sections:
+    - id: ch04_s4_2
+      title: 4.2 Classifying Chemical Reactions
+  strong_acid:
+    label: Strong Acid
+    sections:
+    - id: ch04_s4_2
+      title: 4.2 Classifying Chemical Reactions
+  weak_acid:
+    label: Weak Acid
+    sections:
+    - id: ch04_s4_2
+      title: 4.2 Classifying Chemical Reactions
+  strong_base:
+    label: Strong Base
+    sections:
+    - id: ch04_s4_2
+      title: 4.2 Classifying Chemical Reactions
+  weak_base:
+    label: Weak Base
+    sections:
+    - id: ch04_s4_2
+      title: 4.2 Classifying Chemical Reactions
+  acid_base_reaction:
+    label: Acid-Base Reaction
+    sections:
+    - id: ch04_s4_2
+      title: 4.2 Classifying Chemical Reactions
+  neutralization_reaction:
+    label: Neutralization Reaction
+    sections:
+    - id: ch04_s4_2
+      title: 4.2 Classifying Chemical Reactions
+  oxidation_number:
+    label: Oxidation Number
+    sections:
+    - id: ch04_s4_2
+      title: 4.2 Classifying Chemical Reactions
+  oxidation:
+    label: Oxidation
+    sections:
+    - id: ch04_s4_2
+      title: 4.2 Classifying Chemical Reactions
+  reduction:
+    label: Reduction
+    sections:
+    - id: ch04_s4_2
+      title: 4.2 Classifying Chemical Reactions
+  redox_reaction:
+    label: Oxidation-Reduction (Redox) Reaction
+    sections:
+    - id: ch04_s4_2
+      title: 4.2 Classifying Chemical Reactions
+  oxidizing_agent:
+    label: Oxidizing Agent
+    sections:
+    - id: ch04_s4_2
+      title: 4.2 Classifying Chemical Reactions
+  reducing_agent:
+    label: Reducing Agent
+    sections:
+    - id: ch04_s4_2
+      title: 4.2 Classifying Chemical Reactions
+  half_reaction_method:
+    label: Half-Reaction Method
+    sections:
+    - id: ch04_s4_2
+      title: 4.2 Classifying Chemical Reactions
+  combustion_reaction:
+    label: Combustion Reaction
+    sections:
+    - id: ch04_s4_2
+      title: 4.2 Classifying Chemical Reactions
+  single_displacement_reaction:
+    label: Single-Displacement Reaction
+    sections:
+    - id: ch04_s4_2
+      title: 4.2 Classifying Chemical Reactions
+  stoichiometry:
+    label: Reaction Stoichiometry
+    sections:
+    - id: ch04_s4_3
+      title: 4.3 Reaction Stoichiometry
+  stoichiometric_factor:
+    label: Stoichiometric Factor
+    sections:
+    - id: ch04_s4_3
+      title: 4.3 Reaction Stoichiometry
+  limiting_reactant:
+    label: Limiting Reactant
+    sections:
+    - id: ch04_s4_4
+      title: 4.4 Reaction Yields
+  excess_reactant:
+    label: Excess Reactant
+    sections:
+    - id: ch04_s4_4
+      title: 4.4 Reaction Yields
+  theoretical_yield:
+    label: Theoretical Yield
+    sections:
+    - id: ch04_s4_4
+      title: 4.4 Reaction Yields
+  actual_yield:
+    label: Actual Yield
+    sections:
+    - id: ch04_s4_4
+      title: 4.4 Reaction Yields
+  percent_yield:
+    label: Percent Yield
+    sections:
+    - id: ch04_s4_4
+      title: 4.4 Reaction Yields
+  atom_economy:
+    label: Atom Economy
+    sections:
+    - id: ch04_s4_4
+      title: 4.4 Reaction Yields
+  quantitative_analysis:
+    label: Quantitative Chemical Analysis
+    sections:
+    - id: ch04_s4_5
+      title: 4.5 Quantitative Chemical Analysis
+  titration_analysis:
+    label: Titration Analysis
+    sections:
+    - id: ch04_s4_5
+      title: 4.5 Quantitative Chemical Analysis
+  equivalence_point:
+    label: Equivalence Point
+    sections:
+    - id: ch04_s4_5
+      title: 4.5 Quantitative Chemical Analysis
+  gravimetric_analysis:
+    label: Gravimetric Analysis
+    sections:
+    - id: ch04_s4_5
+      title: 4.5 Quantitative Chemical Analysis
+  combustion_analysis:
+    label: Combustion Analysis
+    sections:
+    - id: ch04_s4_5
+      title: 4.5 Quantitative Chemical Analysis

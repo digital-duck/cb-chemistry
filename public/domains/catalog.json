@@ -1,1 +1,568 @@
-[]
+[
+  {
+    "id": "chemistry_ch01",
+    "name": "Chemistry 2e Ch1: Essential Ideas",
+    "description": "OpenStax Chemistry 2e, Chapter 1: Essential Ideas.",
+    "capstone": "temperature_scale_conversion",
+    "nodes": 47,
+    "edges": 66,
+    "primitives": 7,
+    "concepts": 37,
+    "applications": 3,
+    "tags": [
+      "science"
+    ],
+    "default_level": "college",
+    "has_navigator": true,
+    "has_book": true,
+    "books": [
+      {
+        "target": "temperature_scale_conversion",
+        "file": "output/college.en/sonnet/html/book_temperature_scale_conversion.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "periodic_table",
+        "file": "output/college.en/sonnet/html/book_periodic_table.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "target": "density_calculation",
+        "file": "output/college.en/sonnet/html/book_density_calculation.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ],
+    "generated_concepts": [
+      {
+        "name": "atom",
+        "label": "Atom",
+        "file": "output/college.en/sonnet/html/concept_atom.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "chemical_property",
+        "label": "Chemical Property",
+        "file": "output/college.en/sonnet/html/concept_chemical_property.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "compound",
+        "label": "Compound",
+        "file": "output/college.en/sonnet/html/concept_compound.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "density",
+        "label": "Density",
+        "file": "output/college.en/sonnet/html/concept_density.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "density_calculation",
+        "label": "Density Calculation",
+        "file": "output/college.en/sonnet/html/concept_density_calculation.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "dimensional_analysis",
+        "label": "Dimensional Analysis",
+        "file": "output/college.en/sonnet/html/concept_dimensional_analysis.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "element",
+        "label": "Element",
+        "file": "output/college.en/sonnet/html/concept_element.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "intensive_property",
+        "label": "Intensive Property",
+        "file": "output/college.en/sonnet/html/concept_intensive_property.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "mass",
+        "label": "Mass",
+        "file": "output/college.en/sonnet/html/concept_mass.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "matter",
+        "label": "Matter",
+        "file": "output/college.en/sonnet/html/concept_matter.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "measurement",
+        "label": "Measurement",
+        "file": "output/college.en/sonnet/html/concept_measurement.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "measurement_uncertainty",
+        "label": "Measurement Uncertainty",
+        "file": "output/college.en/sonnet/html/concept_measurement_uncertainty.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "periodic_table",
+        "label": "Periodic Table",
+        "file": "output/college.en/sonnet/html/concept_periodic_table.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "physical_property",
+        "label": "Physical Property",
+        "file": "output/college.en/sonnet/html/concept_physical_property.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "precision",
+        "label": "Precision",
+        "file": "output/college.en/sonnet/html/concept_precision.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "pure_substance",
+        "label": "Pure Substance",
+        "file": "output/college.en/sonnet/html/concept_pure_substance.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "si_units",
+        "label": "Si Units",
+        "file": "output/college.en/sonnet/html/concept_si_units.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "significant_figures",
+        "label": "Significant Figures",
+        "file": "output/college.en/sonnet/html/concept_significant_figures.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "temperature",
+        "label": "Temperature",
+        "file": "output/college.en/sonnet/html/concept_temperature.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "temperature_scale_conversion",
+        "label": "Temperature Scale Conversion",
+        "file": "output/college.en/sonnet/html/concept_temperature_scale_conversion.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
+        "name": "volume",
+        "label": "Volume",
+        "file": "output/college.en/sonnet/html/concept_volume.html",
+        "model": "sonnet",
+        "language": "en"
+      }
+    ]
+  },
+  {
+    "id": "chemistry_ch02",
+    "name": "Chemistry 2e Ch2: Atoms, Molecules, and Ions",
+    "description": "OpenStax Chemistry 2e, Chapter 2: Atoms, Molecules, and Ions.",
+    "capstone": "mass_spectrometry",
+    "nodes": 39,
+    "edges": 63,
+    "primitives": 5,
+    "concepts": 31,
+    "applications": 3,
+    "tags": [
+      "science"
+    ],
+    "default_level": "college",
+    "has_navigator": true,
+    "has_book": false,
+    "books": [],
+    "generated_concepts": []
+  },
+  {
+    "id": "chemistry_ch03",
+    "name": "Chemistry 2e Ch3: Composition of Substances and Solutions",
+    "description": "OpenStax Chemistry 2e, Chapter 3: Composition of Substances and Solutions.",
+    "capstone": "mass_mole_conversion",
+    "nodes": 24,
+    "edges": 29,
+    "primitives": 6,
+    "concepts": 16,
+    "applications": 2,
+    "tags": [
+      "science"
+    ],
+    "default_level": "college",
+    "has_navigator": true,
+    "has_book": false,
+    "books": [],
+    "generated_concepts": []
+  },
+  {
+    "id": "chemistry_ch04",
+    "name": "Chemistry 2e Ch4: Stoichiometry of Chemical Reactions",
+    "description": "OpenStax Chemistry 2e, Chapter 4: Stoichiometry of Chemical Reactions.",
+    "capstone": "gravimetric_analysis",
+    "nodes": 47,
+    "edges": 54,
+    "primitives": 14,
+    "concepts": 28,
+    "applications": 5,
+    "tags": [
+      "science"
+    ],
+    "default_level": "college",
+    "has_navigator": true,
+    "has_book": false,
+    "books": [],
+    "generated_concepts": []
+  },
+  {
+    "id": "chemistry_ch05",
+    "name": "Chemistry 2e Ch5: Thermochemistry",
+    "description": "OpenStax Chemistry 2e, Chapter 5: Thermochemistry.",
+    "capstone": "solar_thermal_energy_storage",
+    "nodes": 33,
+    "edges": 47,
+    "primitives": 5,
+    "concepts": 24,
+    "applications": 4,
+    "tags": [
+      "science"
+    ],
+    "default_level": "college",
+    "has_navigator": true,
+    "has_book": false,
+    "books": [],
+    "generated_concepts": []
+  },
+  {
+    "id": "chemistry_ch06",
+    "name": "Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements",
+    "description": "OpenStax Chemistry 2e, Chapter 6: Electronic Structure and Periodic Properties of Elements.",
+    "capstone": "periodic_table_blocks",
+    "nodes": 52,
+    "edges": 106,
+    "primitives": 7,
+    "concepts": 41,
+    "applications": 4,
+    "tags": [
+      "science"
+    ],
+    "default_level": "college",
+    "has_navigator": true,
+    "has_book": false,
+    "books": [],
+    "generated_concepts": []
+  },
+  {
+    "id": "chemistry_ch07",
+    "name": "Chemistry 2e Ch7: Chemical Bonding and Molecular Geometry",
+    "description": "OpenStax Chemistry 2e, Chapter 7: Chemical Bonding and Molecular Geometry.",
+    "capstone": "enthalpy_estimation_bond_energies",
+    "nodes": 38,
+    "edges": 60,
+    "primitives": 7,
+    "concepts": 28,
+    "applications": 3,
+    "tags": [
+      "science"
+    ],
+    "default_level": "college",
+    "has_navigator": true,
+    "has_book": false,
+    "books": [],
+    "generated_concepts": []
+  },
+  {
+    "id": "chemistry_ch08",
+    "name": "Chemistry 2e Ch8: Advanced Theories of Covalent Bonding",
+    "description": "OpenStax Chemistry 2e, Chapter 8: Advanced Theories of Covalent Bonding.",
+    "capstone": "homonuclear_diatomic_mo_configurations",
+    "nodes": 34,
+    "edges": 46,
+    "primitives": 6,
+    "concepts": 25,
+    "applications": 3,
+    "tags": [
+      "science"
+    ],
+    "default_level": "college",
+    "has_navigator": true,
+    "has_book": false,
+    "books": [],
+    "generated_concepts": []
+  },
+  {
+    "id": "chemistry_ch09",
+    "name": "Chemistry 2e Ch9: Gases",
+    "description": "OpenStax Chemistry 2e, Chapter 9: Gases.",
+    "capstone": "barometer",
+    "nodes": 44,
+    "edges": 68,
+    "primitives": 9,
+    "concepts": 29,
+    "applications": 6,
+    "tags": [
+      "science"
+    ],
+    "default_level": "college",
+    "has_navigator": true,
+    "has_book": false,
+    "books": [],
+    "generated_concepts": []
+  },
+  {
+    "id": "chemistry_ch10",
+    "name": "Chemistry 2e Ch10: Liquids and Solids",
+    "description": "OpenStax Chemistry 2e, Chapter 10: Liquids and Solids.",
+    "capstone": "capillary_rise_equation",
+    "nodes": 50,
+    "edges": 75,
+    "primitives": 5,
+    "concepts": 40,
+    "applications": 5,
+    "tags": [
+      "science"
+    ],
+    "default_level": "college",
+    "has_navigator": true,
+    "has_book": false,
+    "books": [],
+    "generated_concepts": []
+  },
+  {
+    "id": "chemistry_ch11",
+    "name": "Chemistry 2e Ch11: Solutions and Colloids",
+    "description": "OpenStax Chemistry 2e, Chapter 11: Solutions and Colloids.",
+    "capstone": "reverse_osmosis",
+    "nodes": 44,
+    "edges": 66,
+    "primitives": 6,
+    "concepts": 32,
+    "applications": 6,
+    "tags": [
+      "science"
+    ],
+    "default_level": "college",
+    "has_navigator": true,
+    "has_book": false,
+    "books": [],
+    "generated_concepts": []
+  },
+  {
+    "id": "chemistry_ch12",
+    "name": "Chemistry 2e Ch12: Kinetics",
+    "description": "OpenStax Chemistry 2e, Chapter 12: Kinetics.",
+    "capstone": "enzyme_catalysis",
+    "nodes": 34,
+    "edges": 47,
+    "primitives": 3,
+    "concepts": 29,
+    "applications": 2,
+    "tags": [
+      "science"
+    ],
+    "default_level": "college",
+    "has_navigator": true,
+    "has_book": false,
+    "books": [],
+    "generated_concepts": []
+  },
+  {
+    "id": "chemistry_ch13",
+    "name": "Chemistry 2e Ch13: Fundamental Equilibrium Concepts",
+    "description": "OpenStax Chemistry 2e, Chapter 13: Fundamental Equilibrium Concepts.",
+    "capstone": "haber_bosch_process",
+    "nodes": 26,
+    "edges": 36,
+    "primitives": 8,
+    "concepts": 15,
+    "applications": 3,
+    "tags": [
+      "science"
+    ],
+    "default_level": "college",
+    "has_navigator": true,
+    "has_book": false,
+    "books": [],
+    "generated_concepts": []
+  },
+  {
+    "id": "chemistry_ch14",
+    "name": "Chemistry 2e Ch14: Acid-Base Equilibria",
+    "description": "OpenStax Chemistry 2e, Chapter 14: Acid-Base Equilibria.",
+    "capstone": "ph_measurement_tools",
+    "nodes": 37,
+    "edges": 66,
+    "primitives": 5,
+    "concepts": 29,
+    "applications": 3,
+    "tags": [
+      "science"
+    ],
+    "default_level": "college",
+    "has_navigator": true,
+    "has_book": false,
+    "books": [],
+    "generated_concepts": []
+  },
+  {
+    "id": "chemistry_ch15",
+    "name": "Chemistry 2e Ch15: Equilibria of Other Reaction Classes",
+    "description": "OpenStax Chemistry 2e, Chapter 15: Equilibria of Other Reaction Classes.",
+    "capstone": "acid_enhanced_dissolution",
+    "nodes": 22,
+    "edges": 28,
+    "primitives": 6,
+    "concepts": 13,
+    "applications": 3,
+    "tags": [
+      "science"
+    ],
+    "default_level": "college",
+    "has_navigator": true,
+    "has_book": false,
+    "books": [],
+    "generated_concepts": []
+  },
+  {
+    "id": "chemistry_ch16",
+    "name": "Chemistry 2e Ch16: Thermodynamics",
+    "description": "OpenStax Chemistry 2e, Chapter 16: Thermodynamics.",
+    "capstone": "predicting_entropy_sign",
+    "nodes": 28,
+    "edges": 44,
+    "primitives": 6,
+    "concepts": 17,
+    "applications": 5,
+    "tags": [
+      "science"
+    ],
+    "default_level": "college",
+    "has_navigator": true,
+    "has_book": false,
+    "books": [],
+    "generated_concepts": []
+  },
+  {
+    "id": "chemistry_ch17",
+    "name": "Chemistry 2e Ch17: Electrochemistry",
+    "description": "OpenStax Chemistry 2e, Chapter 17: Electrochemistry.",
+    "capstone": "battery",
+    "nodes": 39,
+    "edges": 55,
+    "primitives": 8,
+    "concepts": 25,
+    "applications": 6,
+    "tags": [
+      "science"
+    ],
+    "default_level": "college",
+    "has_navigator": true,
+    "has_book": false,
+    "books": [],
+    "generated_concepts": []
+  },
+  {
+    "id": "chemistry_ch18",
+    "name": "Chemistry 2e Ch18: Representative Metals, Metalloids, and Nonmetals",
+    "description": "OpenStax Chemistry 2e, Chapter 18: Representative Metals, Metalloids, and Nonmetals.",
+    "capstone": "sacrificial_anode",
+    "nodes": 39,
+    "edges": 60,
+    "primitives": 10,
+    "concepts": 21,
+    "applications": 8,
+    "tags": [
+      "science"
+    ],
+    "default_level": "college",
+    "has_navigator": true,
+    "has_book": false,
+    "books": [],
+    "generated_concepts": []
+  },
+  {
+    "id": "chemistry_ch19",
+    "name": "Chemistry 2e Ch19: Transition Metals and Coordination Chemistry",
+    "description": "OpenStax Chemistry 2e, Chapter 19: Transition Metals and Coordination Chemistry.",
+    "capstone": "transition_metal_catalysts",
+    "nodes": 39,
+    "edges": 46,
+    "primitives": 5,
+    "concepts": 29,
+    "applications": 5,
+    "tags": [
+      "science"
+    ],
+    "default_level": "college",
+    "has_navigator": true,
+    "has_book": false,
+    "books": [],
+    "generated_concepts": []
+  },
+  {
+    "id": "chemistry_ch20",
+    "name": "Chemistry 2e Ch20: Organic Chemistry",
+    "description": "OpenStax Chemistry 2e, Chapter 20: Organic Chemistry.",
+    "capstone": "combustion_of_alkanes",
+    "nodes": 34,
+    "edges": 50,
+    "primitives": 5,
+    "concepts": 24,
+    "applications": 5,
+    "tags": [
+      "science"
+    ],
+    "default_level": "college",
+    "has_navigator": true,
+    "has_book": false,
+    "books": [],
+    "generated_concepts": []
+  },
+  {
+    "id": "chemistry_ch21",
+    "name": "Chemistry 2e Ch21: Nuclear Chemistry",
+    "description": "OpenStax Chemistry 2e, Chapter 21: Nuclear Chemistry.",
+    "capstone": "radioactive_tracer",
+    "nodes": 58,
+    "edges": 100,
+    "primitives": 8,
+    "concepts": 44,
+    "applications": 6,
+    "tags": [
+      "science"
+    ],
+    "default_level": "college",
+    "has_navigator": true,
+    "has_book": false,
+    "books": [],
+    "generated_concepts": []
+  }
+]

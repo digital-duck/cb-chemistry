@@ -13,7 +13,7 @@ set -euo pipefail
 
 REPO="$(cd "$(dirname "$0")/.." && pwd)"
 SPL_DIR="${CB_SPL_DIR:-$HOME/projects/digital-duck/SPL.py}"
-LLM="${CB_LLM:-claude_cli:claude-sonnet-4-6}"
+LLM="${CB_LLM:-claude_cli:claude-sonnet-5}"
 SPL_WORKFLOW="$REPO/spl"
 
 DOMAIN="${1:-geometry}"

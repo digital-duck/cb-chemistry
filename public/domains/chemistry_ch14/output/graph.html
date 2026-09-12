@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Concept Graph — graph</title>
+<script src="https://unpkg.com/vis-network@9.1.9/standalone/umd/vis-network.min.js"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,sans-serif;background:#f0f2f5;overflow:hidden;height:100vh}
+.app{
+  display:grid;
+  grid-template-columns:230px 1fr 210px;
+  grid-template-rows:60vh 40vh;
+  height:100vh;
+  gap:0;
+}
+/* ── Left sidebar: learning path ── */
+#path-sidebar{
+  grid-column:1;grid-row:1/3;
+  background:#f5f6f8;color:#2a2a2a;
+  display:flex;flex-direction:column;
+  overflow:hidden;
+  border-right:1px solid #dde0e6;
+}
+#path-header{
+  padding:14px 14px 10px;
+  border-bottom:1px solid #dde0e6;
+  flex-shrink:0;
+}
+#path-header h1{font-size:13px;letter-spacing:.05em;text-transform:uppercase;color:#888;margin-bottom:2px;font-weight:700}
+#path-header .domain-name{font-size:11px;color:#555;margin-top:4px}
+#path-steps{flex:1;overflow-y:auto;padding:8px 0}
+#path-steps .hint{color:#aaa;font-size:12px;text-align:center;padding:24px 12px;line-height:1.5}
+.step-item{
+  display:flex;align-items:flex-start;gap:8px;
+  padding:7px 12px;cursor:pointer;
+  border-left:3px solid transparent;
+  transition:background .15s;
+}
+.step-item:hover{background:#ebebf0}
+.step-item.active{background:#e8eef8;border-left-color:#4a90d9}
+.step-item.target{background:#eaf5ea;border-left-color:#4caf50}
+.step-num{min-width:20px;font-size:10px;font-weight:700;color:#bbb;padding-top:2px;flex-shrink:0}
+.step-item.target .step-num{color:#4caf50}
+.step-label{font-size:12px;font-weight:600;color:#333;line-height:1.4}
+.step-def{font-size:10px;color:#888;margin-top:2px;line-height:1.4}
+.step-kind{display:inline-block;padding:0 5px;border-radius:8px;font-size:9px;font-weight:700;margin-left:4px}
+#path-count{font-size:10px;color:#aaa;margin-top:3px}
+/* ── Graph panel ── */
+#graph-panel{
+  grid-column:2;grid-row:1;
+  position:relative;background:#fff;
+  border-bottom:2px solid #dde;
+}
+#graph-container{width:100%;height:100%}
+.graph-recenter-btn{
+  position:absolute;right:16px;bottom:16px;z-index:50;
+  padding:6px 14px;border-radius:6px;
+  border:1px solid #1e3a5f;background:#1e3a5f;color:#fff;
+  font-size:12px;font-weight:600;font-family:system-ui,sans-serif;
+  box-shadow:0 1px 4px rgba(0,0,0,.25);cursor:pointer;
+}
+.graph-recenter-btn:hover{background:#28496f;border-color:#28496f}
+/* ── Explanation panel ── */
+#explain-panel{
+  grid-column:2;grid-row:2;
+  background:#fff;overflow-y:auto;
+  padding:16px 20px;
+}
+#explain-panel .empty{color:#aaa;font-size:13px;padding:20px 0;text-align:center}
+#explain-panel .node-title{
+  display:flex;align-items:center;gap:8px;margin-bottom:10px;
+}
+#explain-panel .node-title h2{font-size:16px;color:#1e3a5f}
+.badge{
+  display:inline-block;padding:2px 8px;border-radius:10px;
+  font-size:11px;font-weight:700;
+}
+.badge.primitive{background:#e8f5e9;color:#2e7d32}
+.badge.concept{background:#e3f2fd;color:#1565c0}
+.badge.application{background:#fff3e0;color:#ef6c00}
+.tier-tag{font-size:11px;color:#999;margin-left:auto}
+#explain-panel .defines{
+  font-size:14px;color:#333;line-height:1.6;margin-bottom:12px;
+  padding:10px 12px;background:#f8f9fb;border-radius:6px;
+  border-left:3px solid #90b4e8;
+}
+#explain-panel .section-label{
+  font-size:10px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.08em;color:#999;margin-bottom:6px;
+}
+#explain-panel .prereq-list{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.prereq-chip{
+  padding:3px 9px;border-radius:12px;font-size:11px;
+  background:#e3f2fd;color:#1565c0;cursor:pointer;
+  border:1px solid #90caf9;transition:background .12s;
+}
+.prereq-chip:hover{background:#bbdefb}
+#explain-panel .meta-row{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:10px}
+.meta-item{font-size:12px;color:#555}
+.meta-item b{color:#1e3a5f}
+#explain-panel .play-hint{
+  font-size:12px;color:#5a5a5a;line-height:1.6;
+  padding:8px 12px;background:#fffde7;border-radius:6px;
+  border-left:3px solid #ffd54f;margin-bottom:8px;
+}
+/* ── Notes sidebar ── */
+#notes-sidebar{
+  grid-column:3;grid-row:1/3;
+  background:#fafaf8;
+  border-left:2px solid #e8e8e0;
+  display:flex;flex-direction:column;
+  overflow:hidden;
+}
+#notes-header{
+  padding:10px 12px 8px;
+  border-bottom:1px solid #e0e0d8;
+  flex-shrink:0;
+}
+#notes-header-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:2px}
+#notes-header h2{font-size:12px;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.06em;margin:0}
+#notes-node-label{font-size:11px;color:#999;margin-top:2px}
+.nb-btn{font-size:10px;padding:2px 7px;border-radius:3px;
+  border:1px solid #ddd;background:#f0f0ea;cursor:pointer;color:#777;
+  font-family:system-ui,sans-serif}
+.nb-btn:hover{background:#e0e0d8;color:#444}
+#notes-textarea{
+  flex:0 0 auto;height:100px;border:none;resize:none;
+  padding:12px;font-size:12px;line-height:1.6;
+  font-family:inherit;background:#fafaf8;color:#333;
+  outline:none;
+}
+#notes-with-entries{
+  border-top:1px solid #e8e8e0;flex:1;min-height:0;overflow-y:auto;
+}
+.note-entry{
+  padding:6px 12px;cursor:pointer;
+  border-bottom:1px solid #f0f0e8;
+  font-size:11px;
+}
+.note-entry:hover{background:#f0efe8}
+.note-entry .note-node{font-weight:600;color:#555;display:flex;justify-content:space-between;align-items:center}
+.note-entry .note-ts{font-weight:400;color:#bbb;font-size:10px}
+.note-entry .note-preview{color:#999;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* ── kind badge colours in sidebar ── */
+.primitive-k{background:#e8f5e9;color:#2e7d32}
+.concept-k{background:#e3f2fd;color:#1565c0}
+.application-k{background:#fff3e0;color:#ef6c00}
+/* ── concept detail panel ── */
+#concept-detail{margin-top:14px;border-top:1px solid #e8e8e0;padding-top:10px;}
+#concept-iframe{width:100%;height:500px;border:1px solid #e0e0d8;border-radius:4px;margin-top:6px;display:block;}
+.concept-not-found{color:#e57373;font-size:12px;padding:6px 0;font-style:italic;}
+</style>
+</head>
+<body>
+<div class="app">
+
+<!-- LEFT: learning path sidebar -->
+<aside id="path-sidebar">
+  <div id="path-header">
+    <h1>Learning Path</h1>
+    <div class="domain-name">graph</div>
+    <div id="path-count"></div>
+  </div>
+  <div id="path-steps">
+    <div class="hint">Click any node in the graph<br>to see its learning path</div>
+  </div>
+</aside>
+
+<!-- CENTRE TOP: concept graph -->
+<div id="graph-panel">
+  <div id="graph-container"></div>
+  <button class="graph-recenter-btn" onclick="reCenterGraph()" title="Re-fit the graph to the viewport">Re-Center</button>
+</div>
+
+<!-- CENTRE BOTTOM: explanation panel -->
+<div id="explain-panel">
+  <div class="empty">Select a node to see its definition, prerequisites, and learning context.</div>
+</div>
+
+<!-- RIGHT: notes sidebar -->
+<aside id="notes-sidebar">
+  <div id="notes-header">
+    <div id="notes-header-top">
+      <h2>Notes</h2>
+      <div>
+        <button class="nb-btn" id="nb-clear-btn" onclick="clearNote()">Clear</button>
+        <button class="nb-btn" onclick="exportNotes()">Export</button>
+      </div>
+    </div>
+    <div id="notes-node-label">no node selected</div>
+  </div>
+  <textarea id="notes-textarea" placeholder="Type notes here&#10;(auto-saved per node)"></textarea>
+  <div id="notes-with-entries"></div>
+</aside>
+
+</div><!-- .app -->
+
+<script>
+const RAW = {"nodes": [{"id": "proton_transfer", "label": "proton transfer", "kind": "primitive", "tier": 0, "defines": "Movement of H+ from a donor to an acceptor species; mechanistic basis of Brønsted-Lowry acid-base reactions.", "prereqs": [], "verifier": "", "lab": "", "play": "", "color": {"background": "#fffde7", "border": "#795548"}, "font": {"size": 13}}, {"id": "hydronium_ion", "label": "hydronium ion", "kind": "primitive", "tier": 0, "defines": "The H3O+ cation formed when water accepts a proton; characteristic acid species in aqueous solution.", "prereqs": [], "verifier": "", "lab": "", "play": "", "color": {"background": "#fffde7", "border": "#795548"}, "font": {"size": 13}}, {"id": "hydroxide_ion", "label": "hydroxide ion", "kind": "primitive", "tier": 0, "defines": "The OH− anion formed when water donates a proton; characteristic base species in aqueous solution.", "prereqs": [], "verifier": "", "lab": "", "play": "", "color": {"background": "#fffde7", "border": "#795548"}, "font": {"size": 13}}, {"id": "chemical_equilibrium", "label": "chemical equilibrium", "kind": "primitive", "tier": 0, "defines": "Dynamic state where forward and reverse reaction rates are equal, characterized by an equilibrium constant expression.", "prereqs": [], "verifier": "", "lab": "", "play": "", "color": {"background": "#fffde7", "border": "#795548"}, "font": {"size": 13}}, {"id": "le_chateliers_principle", "label": "le chateliers principle", "kind": "primitive", "tier": 0, "defines": "A system at equilibrium shifts to oppose any imposed stress; used to explain perturbation of aqueous equilibria by added acids or bases.", "prereqs": [], "verifier": "", "lab": "", "play": "", "color": {"background": "#fffde7", "border": "#795548"}, "font": {"size": 13}}, {"id": "bronsted_lowry_acid", "label": "bronsted lowry acid", "kind": "concept", "tier": 1, "defines": "A substance that donates a proton (H+) to another species in a chemical reaction.", "prereqs": ["proton_transfer"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "bronsted_lowry_base", "label": "bronsted lowry base", "kind": "concept", "tier": 1, "defines": "A substance that accepts a proton (H+) from another species in a chemical reaction.", "prereqs": ["proton_transfer"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "water_autoionization", "label": "water autoionization", "kind": "concept", "tier": 1, "defines": "Reaction in which two water molecules transfer a proton between each other to produce H3O+ and OH−.", "prereqs": ["proton_transfer", "hydronium_ion", "hydroxide_ion"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "ph_scale", "label": "ph scale", "kind": "concept", "tier": 1, "defines": "Logarithmic scale pH = −log[H3O+] that compresses the wide range of hydronium ion concentrations into a convenient numerical range.", "prereqs": ["hydronium_ion"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "conjugate_acid_base_pair", "label": "conjugate acid base pair", "kind": "concept", "tier": 2, "defines": "Two species related by the gain or loss of exactly one proton; the acid's conjugate base and the base's conjugate acid.", "prereqs": ["bronsted_lowry_acid", "bronsted_lowry_base"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "amphiprotic_species", "label": "amphiprotic species", "kind": "concept", "tier": 2, "defines": "A substance capable of both donating and accepting protons, acting as either a Brønsted-Lowry acid or base depending on the reaction partner.", "prereqs": ["bronsted_lowry_acid", "bronsted_lowry_base"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "ion_product_constant_kw", "label": "ion product constant kw", "kind": "concept", "tier": 2, "defines": "Equilibrium constant for water autoionization, [H3O+][OH−] = 1.0 × 10−14 at 25 °C, establishing an inverse relationship between hydronium and hydroxide concentrations.", "prereqs": ["water_autoionization", "chemical_equilibrium"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "acid_ionization", "label": "acid ionization", "kind": "concept", "tier": 3, "defines": "Reaction in which an acid transfers a proton to water, yielding hydronium ions and the conjugate base of the acid.", "prereqs": ["bronsted_lowry_acid", "conjugate_acid_base_pair"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "base_ionization", "label": "base ionization", "kind": "concept", "tier": 3, "defines": "Reaction in which a base accepts a proton from water, yielding hydroxide ions and the conjugate acid of the base.", "prereqs": ["bronsted_lowry_base", "conjugate_acid_base_pair"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "poh_scale", "label": "poh scale", "kind": "concept", "tier": 3, "defines": "Logarithmic scale pOH = −log[OH−]; at 25 °C related to pH by pH + pOH = 14.", "prereqs": ["hydroxide_ion", "ion_product_constant_kw"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "acidic_basic_neutral_classification", "label": "acidic basic neutral classification", "kind": "concept", "tier": 3, "defines": "Classification of aqueous solutions by comparing [H3O+] and [OH−]: acidic (pH < 7), basic (pH > 7), or neutral (pH = 7) at 25 °C.", "prereqs": ["ion_product_constant_kw", "ph_scale"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "acid_ionization_constant_ka", "label": "acid ionization constant ka", "kind": "concept", "tier": 4, "defines": "Equilibrium constant for weak acid ionization in water; larger Ka indicates stronger acid with greater ionization at equilibrium.", "prereqs": ["acid_ionization", "chemical_equilibrium"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "base_ionization_constant_kb", "label": "base ionization constant kb", "kind": "concept", "tier": 4, "defines": "Equilibrium constant for weak base ionization in water; larger Kb indicates stronger base producing higher hydroxide concentrations at equilibrium.", "prereqs": ["base_ionization", "chemical_equilibrium"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "equivalence_point", "label": "equivalence point", "kind": "concept", "tier": 4, "defines": "Point in a titration where stoichiometrically equivalent amounts of acid and base have reacted; solution pH equals 7 for strong/strong titrations and deviates when weak species are involved.", "prereqs": ["acid_ionization", "base_ionization", "ph_scale"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "strong_weak_acid_base", "label": "strong weak acid base", "kind": "concept", "tier": 5, "defines": "Classification by degree of ionization; strong acids/bases ionize completely while weak acids/bases ionize partially with measurable ionization constants.", "prereqs": ["acid_ionization_constant_ka", "base_ionization_constant_kb"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "percent_ionization", "label": "percent ionization", "kind": "concept", "tier": 5, "defines": "Percentage of an acid or base that ionizes in solution; equilibrium concentration of ionized form divided by initial concentration times 100; varies with initial concentration for weak species.", "prereqs": ["acid_ionization_constant_ka", "base_ionization_constant_kb"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "conjugate_pair_strength_relation", "label": "conjugate pair strength relation", "kind": "concept", "tier": 5, "defines": "Inverse relationship between strengths of a conjugate pair expressed as Ka × Kb = Kw; stronger acid yields weaker conjugate base, and vice versa.", "prereqs": ["conjugate_acid_base_pair", "acid_ionization_constant_ka", "base_ionization_constant_kb", "ion_product_constant_kw"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "structure_acidity_relationship", "label": "structure acidity relationship", "kind": "concept", "tier": 5, "defines": "Trends in acid strength based on molecular structure, including binary acid strength down a group or across a period, and oxyacid strength with central-atom oxidation state or electronegativity.", "prereqs": ["bronsted_lowry_acid", "acid_ionization_constant_ka"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "ice_table_method", "label": "ice table method", "kind": "concept", "tier": 5, "defines": "Tabular technique using Initial, Change, and Equilibrium concentration rows to set up and solve weak acid or base equilibrium calculations.", "prereqs": ["acid_ionization_constant_ka", "base_ionization_constant_kb"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "hydrated_metal_ion_acidity", "label": "hydrated metal ion acidity", "kind": "concept", "tier": 5, "defines": "Weak-acid behavior of dissolved metal ions that coordinate water molecules, polarizing the O-H bond and enabling proton donation to surrounding water.", "prereqs": ["acid_ionization", "acid_ionization_constant_ka"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "polyprotic_acid", "label": "polyprotic acid", "kind": "concept", "tier": 5, "defines": "An acid containing more than one ionizable proton per molecule; each successive ionization has a smaller ionization constant.", "prereqs": ["acid_ionization", "acid_ionization_constant_ka"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "buffer_solution", "label": "buffer solution", "kind": "concept", "tier": 5, "defines": "Solution containing a weak conjugate acid-base pair that resists pH changes by converting added strong acid or base into the weak conjugate partner.", "prereqs": ["conjugate_acid_base_pair", "acid_ionization_constant_ka", "le_chateliers_principle"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "henderson_hasselbalch_equation", "label": "henderson hasselbalch equation", "kind": "concept", "tier": 5, "defines": "Logarithmic form of Ka expression, pH = pKa + log([A−]/[HA]), used to calculate buffer pH from the ratio of conjugate base to weak acid concentrations.", "prereqs": ["acid_ionization_constant_ka", "ph_scale", "conjugate_acid_base_pair"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "acid_base_indicator", "label": "acid base indicator", "kind": "concept", "tier": 5, "defines": "A weak acid or base whose protonated and deprotonated forms have distinct colors, changing color over a pH interval of approximately pKa ± 1 to signal the endpoint of a titration.", "prereqs": ["conjugate_acid_base_pair", "ph_scale", "acid_ionization_constant_ka"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "leveling_effect", "label": "leveling effect", "kind": "concept", "tier": 6, "defines": "Water limits effective dissolved acid/base strength to H3O+ and OH− respectively; any stronger acid or base reacts completely with water and is leveled to those species.", "prereqs": ["strong_weak_acid_base"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "salt_hydrolysis", "label": "salt hydrolysis", "kind": "concept", "tier": 6, "defines": "Acid or base ionization of salt ions in water, making the solution acidic, basic, or neutral depending on whether constituent ions are conjugates of weak or strong acids and bases.", "prereqs": ["conjugate_acid_base_pair", "strong_weak_acid_base"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "stepwise_ionization", "label": "stepwise ionization", "kind": "concept", "tier": 6, "defines": "Sequential, one-proton-at-a-time ionization of a polyprotic acid or base; successive ionization constants decrease by large factors, allowing each step to be treated as an independent equilibrium.", "prereqs": ["polyprotic_acid", "acid_ionization_constant_ka"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "buffer_capacity", "label": "buffer capacity", "kind": "concept", "tier": 6, "defines": "Quantity of strong acid or base a buffer can absorb before its pH changes by approximately one unit; determined by absolute concentrations of the conjugate pair, not just their ratio.", "prereqs": ["buffer_solution"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "titration_curve", "label": "titration curve", "kind": "concept", "tier": 6, "defines": "Plot of solution pH versus volume of added titrant revealing the four stages of a titration and guiding selection of an appropriate indicator.", "prereqs": ["ph_scale", "equivalence_point", "acid_base_indicator"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "ph_measurement_tools", "label": "ph measurement tools", "kind": "application", "tier": 2, "defines": "Instruments and materials for experimentally determining solution pH, including electronic pH meters and colorimetric pH paper or universal indicator solutions.", "prereqs": ["ph_scale"], "verifier": "", "lab": "", "play": "", "color": {"background": "#fce4ec", "border": "#c62828"}, "font": {"size": 13}}, {"id": "acid_rain", "label": "acid rain", "kind": "application", "tier": 4, "defines": "Precipitation with pH below 5 from dissolution of atmospheric SO2, SO3, and NOx to form sulfuric and nitric acids; illustrates environmental consequences of acid-base chemistry.", "prereqs": ["ph_scale", "acidic_basic_neutral_classification"], "verifier": "", "lab": "", "play": "", "color": {"background": "#fce4ec", "border": "#c62828"}, "font": {"size": 13}}, {"id": "blood_buffer_system", "label": "blood buffer system", "kind": "application", "tier": 6, "defines": "The carbonic acid/bicarbonate conjugate pair that buffers human blood near pH 7.4, supplemented by respiratory regulation of dissolved CO2 to maintain acid-base balance.", "prereqs": ["buffer_solution", "henderson_hasselbalch_equation"], "verifier": "", "lab": "", "play": "", "color": {"background": "#fce4ec", "border": "#c62828"}, "font": {"size": 13}}], "edges": [{"from": "proton_transfer", "to": "bronsted_lowry_acid"}, {"from": "proton_transfer", "to": "bronsted_lowry_base"}, {"from": "proton_transfer", "to": "water_autoionization"}, {"from": "hydronium_ion", "to": "water_autoionization"}, {"from": "hydronium_ion", "to": "ph_scale"}, {"from": "hydroxide_ion", "to": "water_autoionization"}, {"from": "hydroxide_ion", "to": "poh_scale"}, {"from": "chemical_equilibrium", "to": "ion_product_constant_kw"}, {"from": "chemical_equilibrium", "to": "acid_ionization_constant_ka"}, {"from": "chemical_equilibrium", "to": "base_ionization_constant_kb"}, {"from": "le_chateliers_principle", "to": "buffer_solution"}, {"from": "bronsted_lowry_acid", "to": "conjugate_acid_base_pair"}, {"from": "bronsted_lowry_acid", "to": "amphiprotic_species"}, {"from": "bronsted_lowry_acid", "to": "acid_ionization"}, {"from": "bronsted_lowry_acid", "to": "structure_acidity_relationship"}, {"from": "bronsted_lowry_base", "to": "conjugate_acid_base_pair"}, {"from": "bronsted_lowry_base", "to": "amphiprotic_species"}, {"from": "bronsted_lowry_base", "to": "base_ionization"}, {"from": "water_autoionization", "to": "ion_product_constant_kw"}, {"from": "ph_scale", "to": "acidic_basic_neutral_classification"}, {"from": "ph_scale", "to": "equivalence_point"}, {"from": "ph_scale", "to": "henderson_hasselbalch_equation"}, {"from": "ph_scale", "to": "acid_base_indicator"}, {"from": "ph_scale", "to": "titration_curve"}, {"from": "ph_scale", "to": "ph_measurement_tools"}, {"from": "ph_scale", "to": "acid_rain"}, {"from": "conjugate_acid_base_pair", "to": "acid_ionization"}, {"from": "conjugate_acid_base_pair", "to": "base_ionization"}, {"from": "conjugate_acid_base_pair", "to": "conjugate_pair_strength_relation"}, {"from": "conjugate_acid_base_pair", "to": "buffer_solution"}, {"from": "conjugate_acid_base_pair", "to": "henderson_hasselbalch_equation"}, {"from": "conjugate_acid_base_pair", "to": "acid_base_indicator"}, {"from": "conjugate_acid_base_pair", "to": "salt_hydrolysis"}, {"from": "ion_product_constant_kw", "to": "poh_scale"}, {"from": "ion_product_constant_kw", "to": "acidic_basic_neutral_classification"}, {"from": "ion_product_constant_kw", "to": "conjugate_pair_strength_relation"}, {"from": "acid_ionization", "to": "acid_ionization_constant_ka"}, {"from": "acid_ionization", "to": "equivalence_point"}, {"from": "acid_ionization", "to": "hydrated_metal_ion_acidity"}, {"from": "acid_ionization", "to": "polyprotic_acid"}, {"from": "base_ionization", "to": "base_ionization_constant_kb"}, {"from": "base_ionization", "to": "equivalence_point"}, {"from": "acidic_basic_neutral_classification", "to": "acid_rain"}, {"from": "acid_ionization_constant_ka", "to": "strong_weak_acid_base"}, {"from": "acid_ionization_constant_ka", "to": "percent_ionization"}, {"from": "acid_ionization_constant_ka", "to": "conjugate_pair_strength_relation"}, {"from": "acid_ionization_constant_ka", "to": "structure_acidity_relationship"}, {"from": "acid_ionization_constant_ka", "to": "ice_table_method"}, {"from": "acid_ionization_constant_ka", "to": "hydrated_metal_ion_acidity"}, {"from": "acid_ionization_constant_ka", "to": "polyprotic_acid"}, {"from": "acid_ionization_constant_ka", "to": "buffer_solution"}, {"from": "acid_ionization_constant_ka", "to": "henderson_hasselbalch_equation"}, {"from": "acid_ionization_constant_ka", "to": "acid_base_indicator"}, {"from": "acid_ionization_constant_ka", "to": "stepwise_ionization"}, {"from": "base_ionization_constant_kb", "to": "strong_weak_acid_base"}, {"from": "base_ionization_constant_kb", "to": "percent_ionization"}, {"from": "base_ionization_constant_kb", "to": "conjugate_pair_strength_relation"}, {"from": "base_ionization_constant_kb", "to": "ice_table_method"}, {"from": "equivalence_point", "to": "titration_curve"}, {"from": "strong_weak_acid_base", "to": "leveling_effect"}, {"from": "strong_weak_acid_base", "to": "salt_hydrolysis"}, {"from": "polyprotic_acid", "to": "stepwise_ionization"}, {"from": "buffer_solution", "to": "buffer_capacity"}, {"from": "buffer_solution", "to": "blood_buffer_system"}, {"from": "henderson_hasselbalch_equation", "to": "blood_buffer_system"}, {"from": "acid_base_indicator", "to": "titration_curve"}]};
+const DOMAIN_KEY = "graph";
+
+// ── index ──────────────────────────────────────────────────────────────────
+const nodeIndex = {};
+RAW.nodes.forEach(n => nodeIndex[n.id] = n);
+
+const prereqOf  = {};  // id → ids that are direct prerequisites OF id
+const dependsOn = {};  // id → ids that id feeds into
+RAW.nodes.forEach(n => { prereqOf[n.id] = []; dependsOn[n.id] = []; });
+RAW.edges.forEach(e => {
+  prereqOf[e.to].push(e.from);
+  dependsOn[e.from].push(e.to);
+});
+
+// ── BFS longest-path levels (fixes application nodes at wrong tier) ─────────
+const bfsLevels = (() => {
+  const levels = {};
+  const successors = {};
+  RAW.nodes.forEach(n => { levels[n.id] = -1; successors[n.id] = []; });
+  RAW.edges.forEach(e => successors[e.from].push(e.to));
+  const sources = RAW.nodes.filter(n => !RAW.edges.some(e => e.to === n.id));
+  const queue = sources.map(n => n.id);
+  queue.forEach(n => levels[n] = 0);
+  let i = 0;
+  while (i < queue.length) {
+    const cur = queue[i++];
+    for (const succ of successors[cur]) {
+      const nl = levels[cur] + 1;
+      if (levels[succ] < nl) { levels[succ] = nl; queue.push(succ); }
+    }
+  }
+  return levels;
+})();
+
+// ── graph algorithms ────────────────────────────────────────────────────────
+function getAncestors(targetId) {
+  const visited = new Set();
+  const queue = [targetId];
+  while (queue.length) {
+    const cur = queue.shift();
+    for (const p of prereqOf[cur])
+      if (!visited.has(p)) { visited.add(p); queue.push(p); }
+  }
+  return visited;
+}
+
+function topoSort(nodeSet) {
+  const inDeg = {};
+  nodeSet.forEach(n => inDeg[n] = 0);
+  nodeSet.forEach(n => { for (const p of prereqOf[n]) if (nodeSet.has(p)) inDeg[n]++; });
+  const reach = {};
+  nodeSet.forEach(n => {
+    let r = 0;
+    nodeSet.forEach(m => { if (m !== n && getAncestors(m).has(n)) r++; });
+    reach[n] = r;
+  });
+  const heap = [];
+  nodeSet.forEach(n => { if (inDeg[n] === 0) heap.push(n); });
+  heap.sort((a, b) => (reach[b] - reach[a]) || a.localeCompare(b));
+  const result = [];
+  while (heap.length) {
+    const node = heap.shift();
+    result.push(node);
+    for (const succ of dependsOn[node]) {
+      if (!nodeSet.has(succ)) continue;
+      if (--inDeg[succ] === 0) {
+        heap.push(succ);
+        heap.sort((a, b) => (reach[b] - reach[a]) || a.localeCompare(b));
+      }
+    }
+  }
+  return result;
+}
+
+// ── vis.js network ──────────────────────────────────────────────────────────
+const container = document.getElementById('graph-container');
+const visNodes = new vis.DataSet(RAW.nodes.map(n => ({
+  id: n.id,
+  label: n.label.replace(/ /g, '\n'),
+  level: bfsLevels[n.id] !== undefined ? bfsLevels[n.id] : n.tier,
+  color: n.color,
+  font: n.font,
+  title: `<b>${n.label}</b> [${n.kind}]<br>${n.defines || ''}`,
+  shape: n.kind === 'concept' ? 'ellipse' : 'box',
+})));
+const visEdges = new vis.DataSet(RAW.edges.map((e, i) => ({
+  id: i, from: e.from, to: e.to,
+  arrows: 'to', color: {color: '#c8ccd4'}, width: 1,
+})));
+const network = new vis.Network(container, {nodes: visNodes, edges: visEdges}, {
+  layout: { hierarchical: {
+    enabled: true, direction: 'UD',
+    sortMethod: 'directed', levelSeparation: 85, nodeSpacing: 130,
+  } },
+  physics: { enabled: false },
+  interaction: { hover: true, tooltipDelay: 150 },
+  edges: { smooth: { type: 'cubicBezier', forceDirection: 'vertical' } },
+});
+
+// Compact layout: group by tier, sort alphabetically, left-align all nodes.
+network.once('afterDrawing', function() {
+  const pos = network.getPositions();
+  const spacing = 140;
+
+  // Group nodes by their BFS tier
+  const byTier = {};
+  RAW.nodes.forEach(n => {
+    const tier = bfsLevels[n.id] ?? n.tier ?? 0;
+    if (!byTier[tier]) byTier[tier] = [];
+    byTier[tier].push(n.id);
+  });
+
+  // Sort each tier alphabetically, assign X starting from 0
+  const tiers = Object.keys(byTier).map(Number).sort((a, b) => a - b);
+  const tierSep = 85;
+  tiers.forEach((tier, ti) => {
+    const ids = byTier[tier].sort();
+    const y = ti * tierSep;
+    ids.forEach((id, i) => {
+      network.moveNode(id, i * spacing, y);
+    });
+  });
+
+  network.fit({ animation: false });
+});
+
+function reCenterGraph() {
+  network.fit({ animation: true });
+}
+
+const C_PATH   = {background: '#fff9c4', border: '#f9a825'};
+const C_TARGET = {background: '#ffe082', border: '#e65100'};
+
+function resetColors() {
+  visNodes.update(RAW.nodes.map(n => ({id: n.id, color: n.color})));
+  visEdges.update(RAW.edges.map((e, i) => ({id: i, color: {color: '#c8ccd4'}, width: 1})));
+}
+
+// ── explanation panel ───────────────────────────────────────────────────────
+function renderExplanation(node) {
+  const kclass = node.kind;
+  const prereqChips = (node.prereqs || []).map(p =>
+    `<span class="prereq-chip" onclick="selectNode('${p}')">${p.replace(/_/g,' ')}</span>`
+  ).join('');
+  const metaItems = [
+    node.verifier ? `<span class="meta-item"><b>Verifier:</b> ${node.verifier}</span>` : '',
+    node.lab      ? `<span class="meta-item"><b>Lab:</b> ${node.lab}</span>` : '',
+  ].filter(Boolean).join('');
+  const playHtml = node.play
+    ? `<div class="section-label">Try it</div><div class="play-hint">${node.play}</div>`
+    : '';
+
+  const panel = document.getElementById('explain-panel');
+  panel.innerHTML = `
+    <div class="node-title">
+      <h2>${node.label}</h2>
+      <span class="badge ${kclass}">${kclass}</span>
+      <span class="tier-tag">BFS level ${bfsLevels[node.id] ?? node.tier}</span>
+    </div>
+    ${node.defines ? `<div class="defines">${node.defines}</div>` : ''}
+    ${prereqChips ? `<div class="section-label">Prerequisites</div><div class="prereq-list">${prereqChips}</div>` : ''}
+    ${metaItems ? `<div class="meta-row">${metaItems}</div>` : ''}
+    ${playHtml}
+  `;
+
+  // ── concept HTML detail ──
+  const conceptsBase = window.__cb_CONCEPTS_BASE;
+  const conceptUrls = window.__cb_CONCEPT_URLS || {};
+  const mappedUrl = conceptUrls[node.id];
+  if (mappedUrl || conceptsBase) {
+    const conceptUrl = mappedUrl || (conceptsBase + 'concept_' + encodeURIComponent(node.id) + '.html');
+    const detail = document.createElement('div');
+    detail.id = 'concept-detail';
+    detail.innerHTML = '<div class="section-label">Concept Detail</div><div class="concept-loading" style="color:#aaa;font-size:12px;padding:6px 0">Loading…</div>';
+    panel.appendChild(detail);
+    fetch(conceptUrl)
+      .then(r => {
+        if (!r.ok) throw new Error('not found');
+        return r.text();
+      })
+      .then(html => {
+        const slot = detail.querySelector('.concept-loading');
+        if (!slot) return;
+        // Vite dev server returns the SPA index.html (200) for missing static files.
+        // Verify we got a real concept page by checking for a known marker.
+        if (html.includes('spl-credit') || html.includes('Powered by')) {
+          const iframe = document.createElement('iframe');
+          iframe.id = 'concept-iframe';
+          iframe.src = conceptUrl;
+          slot.replaceWith(iframe);
+        } else {
+          slot.className = 'concept-not-found';
+          slot.textContent = 'Content not found — generate it first.';
+        }
+      })
+      .catch(() => {
+        const slot = detail.querySelector('.concept-loading');
+        if (slot) { slot.className = 'concept-not-found'; slot.textContent = 'Content not found — generate it first.'; }
+      });
+  }
+}
+
+// ── learning path sidebar ───────────────────────────────────────────────────
+function renderPathSidebar(orderedPath, targetId) {
+  const stepsEl = document.getElementById('path-steps');
+  const countEl = document.getElementById('path-count');
+  countEl.textContent = orderedPath.length
+    ? `${orderedPath.length} step${orderedPath.length !== 1 ? 's' : ''} to learn first`
+    : 'Root concept — no prerequisites';
+
+  const target = nodeIndex[targetId];
+  const kc = k => `${k.charAt(0).toUpperCase() + k.slice(1)}`;
+
+  stepsEl.innerHTML = orderedPath.map((n, i) => {
+    const nd = nodeIndex[n];
+    return `<div class="step-item" onclick="selectNode('${n}')">
+      <span class="step-num">${i + 1}.</span>
+      <div>
+        <div class="step-label">${nd.label}
+          <span class="step-kind ${nd.kind}-k">${nd.kind}</span>
+        </div>
+        ${nd.defines ? `<div class="step-def">${nd.defines}</div>` : ''}
+      </div>
+    </div>`;
+  }).join('') + `<div class="step-item target">
+    <span class="step-num">▶</span>
+    <div>
+      <div class="step-label">${target.label}
+        <span class="step-kind ${target.kind}-k">${target.kind}</span>
+      </div>
+      ${target.defines ? `<div class="step-def">${target.defines}</div>` : ''}
+    </div>
+  </div>`;
+}
+
+// ── notes (localStorage) ────────────────────────────────────────────────────
+let currentNodeId = null;
+
+function noteKey(nodeId) { return `concept_notes_${DOMAIN_KEY}_${nodeId}`; }
+
+function loadNote(nodeId) {
+  const parsed = _parseNote(localStorage.getItem(noteKey(nodeId)));
+  return parsed ? parsed.text : '';
+}
+
+function saveNote(nodeId, text) {
+  if (text.trim()) {
+    const data = JSON.stringify({ text, ts: new Date().toISOString() });
+    localStorage.setItem(noteKey(nodeId), data);
+  } else {
+    localStorage.removeItem(noteKey(nodeId));
+  }
+  renderNotesList();
+}
+
+function _parseNote(raw) {
+  if (!raw) return null;
+  try { const d = JSON.parse(raw); return { text: d.text || '', ts: d.ts || '' }; }
+  catch (_) { return { text: raw, ts: '' }; }
+}
+
+function _fmtTs(iso) {
+  if (!iso) return '';
+  const d = new Date(iso);
+  const yy = d.getFullYear();
+  const mm = String(d.getMonth()+1).padStart(2,'0');
+  const dd = String(d.getDate()).padStart(2,'0');
+  const hh = String(d.getHours()).padStart(2,'0');
+  const mi = String(d.getMinutes()).padStart(2,'0');
+  return `${yy}-${mm}-${dd} ${hh}:${mi}`;
+}
+
+function renderNotesList() {
+  const container = document.getElementById('notes-with-entries');
+  const entries = RAW.nodes
+    .filter(n => localStorage.getItem(noteKey(n.id)))
+    .map(n => {
+      const parsed = _parseNote(localStorage.getItem(noteKey(n.id)));
+      return {id: n.id, label: n.label, preview: (parsed?.text || '').slice(0, 60), ts: parsed?.ts || ''};
+    });
+  if (!entries.length) { container.innerHTML = ''; return; }
+  container.innerHTML = entries.map(e =>
+    `<div class="note-entry" onclick="selectNode('${e.id}')">
+      <div class="note-node">${e.label}<span class="note-ts">${_fmtTs(e.ts)}</span></div>
+      <div class="note-preview">${e.preview}</div>
+    </div>`
+  ).join('');
+}
+
+function switchNotes(nodeId) {
+  if (currentNodeId !== null) {
+    saveNote(currentNodeId, document.getElementById('notes-textarea').value);
+  }
+  currentNodeId = nodeId;
+  document.getElementById('notes-textarea').value = loadNote(nodeId);
+  document.getElementById('notes-node-label').textContent =
+    nodeIndex[nodeId]?.label || nodeId;
+}
+
+function clearNote() {
+  if (!currentNodeId) return;
+  document.getElementById('notes-textarea').value = '';
+  saveNote(currentNodeId, '');
+  const btn = document.getElementById('nb-clear-btn');
+  if (btn) { btn.textContent = 'Cleared!'; setTimeout(() => { btn.textContent = 'Clear'; }, 1000); }
+}
+
+function exportNotes() {
+  const notes = {};
+  RAW.nodes.forEach(n => {
+    const v = localStorage.getItem(noteKey(n.id));
+    if (v) notes[n.id] = v;
+  });
+  const blob = new Blob([JSON.stringify(notes, null, 2)], {type: 'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `${DOMAIN_KEY}_notes.json`;
+  a.click();
+}
+
+document.getElementById('notes-textarea').addEventListener('input', () => {
+  if (currentNodeId) saveNote(currentNodeId, document.getElementById('notes-textarea').value);
+});
+
+// ── unified node select ─────────────────────────────────────────────────────
+function selectNode(nodeId) {
+  if (!nodeIndex[nodeId]) return;
+  network.selectNodes([nodeId]);
+  handleSelect(nodeId);
+}
+
+function handleSelect(targetId) {
+  const node = nodeIndex[targetId];
+
+  renderExplanation(node);
+  switchNotes(targetId);
+
+  const ancestors = getAncestors(targetId);
+  const pathSet = new Set([...ancestors]);
+  const orderedPath = topoSort(pathSet);
+
+  renderPathSidebar(orderedPath, targetId);
+
+  resetColors();
+  visNodes.update(orderedPath.map(n => ({id: n, color: C_PATH})));
+  visNodes.update([{id: targetId, color: C_TARGET}]);
+  visEdges.update(RAW.edges.map((e, i) => {
+    const inPath = pathSet.has(e.from) && (pathSet.has(e.to) || e.to === targetId);
+    return {id: i, color: {color: inPath ? '#f9a825' : '#c8ccd4'}, width: inPath ? 2 : 1};
+  }));
+}
+
+network.on('click', params => {
+  if (params.nodes.length) handleSelect(params.nodes[0]);
+});
+
+// initialise notes list on load
+renderNotesList();
+
+// When viewed directly (not in an iframe), inject a back link next to the
+// "Learning Path" heading so it doesn't look like a title-bar element.
+if (window.parent === window) {
+  var h1 = document.querySelector('#path-header h1');
+  if (h1) {
+    var backLink = document.createElement('a');
+    backLink.href = '../../';
+    backLink.textContent = '← App';
+    backLink.style.cssText = [
+      'font-size:10px','color:#2563eb','font-family:system-ui,sans-serif',
+      'text-decoration:none','font-weight:400','letter-spacing:normal',
+      'text-transform:none','white-space:nowrap','flex-shrink:0'
+    ].join(';');
+    var row = document.createElement('div');
+    row.style.cssText = 'display:flex;align-items:baseline;gap:8px;';
+    h1.parentNode.insertBefore(row, h1);
+    row.appendChild(h1);
+    row.appendChild(backLink);
+  }
+}
+</script>
+</body>
+</html>

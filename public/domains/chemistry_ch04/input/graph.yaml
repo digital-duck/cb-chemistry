@@ -1,0 +1,271 @@
+domain: chemistry_2e_ch4
+primitives:
+  law_of_conservation_of_matter:
+    defines: Mass is neither created nor destroyed in a chemical reaction, so atoms must be accounted
+      for equally on both sides of a chemical equation.
+    tier: 0
+  mole:
+    defines: A counting unit representing 6.022 × 10²³ entities, used to relate macroscopic masses to
+      numbers of atoms or molecules.
+    tier: 0
+  molar_mass:
+    defines: The mass in grams of one mole of a substance, numerically equal to its atomic or molecular
+      weight.
+    tier: 0
+  avogadros_number:
+    defines: The number of particles in one mole, equal to 6.022 × 10²³, used to convert between moles
+      and individual particles.
+    tier: 0
+  molarity:
+    defines: A measure of solution concentration expressed as moles of solute per liter of solution.
+    tier: 0
+  solubility:
+    defines: The maximum concentration of a substance that can be dissolved in a solvent under specified
+      conditions.
+    tier: 0
+  chemical_equation:
+    defines: A symbolic representation of a chemical reaction showing reactant formulas on the left and
+      product formulas on the right, separated by an arrow.
+    tier: 0
+  reactant:
+    defines: A substance consumed in a chemical reaction, represented on the left side of a chemical equation.
+    tier: 0
+  product:
+    defines: A substance formed in a chemical reaction, represented on the right side of a chemical equation.
+    tier: 0
+  coefficient:
+    defines: A whole number placed before a formula in a chemical equation indicating the relative number
+      of that species involved in the reaction.
+    tier: 0
+  acid:
+    defines: A substance that dissolves in water to yield hydronium ions (H₃O⁺).
+    tier: 0
+  base:
+    defines: A substance that dissolves in water to yield hydroxide ions (OH⁻).
+    tier: 0
+  actual_yield:
+    defines: The measured amount of product actually obtained from a reaction, which is typically less
+      than the theoretical yield due to competing reactions, incomplete reactions, or losses during collection.
+    tier: 0
+  oxidation_number:
+    defines: The hypothetical charge an atom would carry in a compound if the compound were ionic, assigned
+      according to a set of standard rules.
+    tier: 0
+concepts:
+  balanced_equation:
+    defines: A chemical equation in which the number of atoms of each element is equal on the reactant
+      and product sides, consistent with conservation of matter.
+    composed_of:
+    - law_of_conservation_of_matter
+    - chemical_equation
+    - coefficient
+    tier: 1
+  molecular_equation:
+    defines: A chemical equation in which all reactants and products are written as neutral (undissociated)
+      formulas.
+    composed_of:
+    - chemical_equation
+    - reactant
+    - product
+    tier: 1
+  precipitation_reaction:
+    defines: A reaction in which dissolved reactants form one or more insoluble solid products (precipitates)
+      that separate from solution.
+    composed_of:
+    - solubility
+    - reactant
+    - product
+    tier: 1
+  strong_acid:
+    defines: An acid that reacts completely when dissolved in water, converting essentially all dissolved
+      molecules to hydronium ions.
+    composed_of:
+    - acid
+    tier: 1
+  weak_acid:
+    defines: An acid that only partially ionizes when dissolved in water, leaving most molecules in their
+      un-ionized form.
+    composed_of:
+    - acid
+    tier: 1
+  strong_base:
+    defines: A base that completely dissociates when dissolved in water to yield hydroxide ions.
+    composed_of:
+    - base
+    tier: 1
+  weak_base:
+    defines: A base that only partially reacts with water to yield hydroxide ions, leaving most dissolved
+      molecules unreacted.
+    composed_of:
+    - base
+    tier: 1
+  acid_base_reaction:
+    defines: A chemical reaction in which a hydrogen ion (H⁺) is transferred from one species (the acid)
+      to another (the base).
+    composed_of:
+    - acid
+    - base
+    tier: 1
+  complete_ionic_equation:
+    defines: A chemical equation in which all dissolved ionic species, including spectator ions, are explicitly
+      shown in dissociated form.
+    composed_of:
+    - molecular_equation
+    tier: 2
+  neutralization_reaction:
+    defines: A specific acid-base reaction in which an acid and a base react to produce a salt and, typically,
+      water.
+    composed_of:
+    - acid_base_reaction
+    tier: 2
+  solubility_rules:
+    defines: A set of empirical guidelines used to predict whether an ionic compound will dissolve or
+      precipitate when dissolved ionic compounds are combined in aqueous solution.
+    composed_of:
+    - solubility
+    - precipitation_reaction
+    tier: 2
+  oxidation:
+    defines: The process by which an element's oxidation number increases, corresponding to the loss of
+      electrons.
+    composed_of:
+    - oxidation_number
+    tier: 2
+  reduction:
+    defines: The process by which an element's oxidation number decreases, corresponding to the gain of
+      electrons.
+    composed_of:
+    - oxidation_number
+    tier: 2
+  stoichiometry:
+    defines: The quantitative relationships between the amounts of reactants consumed and products formed
+      in a chemical reaction, derived from the coefficients of a balanced equation.
+    composed_of:
+    - balanced_equation
+    - mole
+    tier: 2
+  spectator_ion:
+    defines: An ion present in a reaction mixture that undergoes no chemical or physical change and is
+      omitted from the net ionic equation.
+    composed_of:
+    - complete_ionic_equation
+    tier: 3
+  redox_reaction:
+    defines: A reaction in which one or more elements undergo a change in oxidation number, involving
+      the transfer of electrons between species.
+    composed_of:
+    - oxidation
+    - reduction
+    tier: 3
+  stoichiometric_factor:
+    defines: A ratio of coefficients from a balanced chemical equation used as a conversion factor to
+      relate molar amounts of any two species in the reaction.
+    composed_of:
+    - stoichiometry
+    tier: 3
+  limiting_reactant:
+    defines: The reactant present in a sub-stoichiometric amount relative to other reactants, which determines
+      the maximum amount of product that can form.
+    composed_of:
+    - stoichiometry
+    tier: 3
+  equivalence_point:
+    defines: The point in a titration at which the titrant has been added in exactly the stoichiometric
+      amount required to completely react with the analyte.
+    composed_of:
+    - stoichiometry
+    tier: 3
+  quantitative_analysis:
+    defines: Any method for determining the amount or concentration of a substance in a sample, often
+      relying on known reaction stoichiometry.
+    composed_of:
+    - stoichiometry
+    - molarity
+    tier: 3
+  net_ionic_equation:
+    defines: A chemical equation derived from the complete ionic equation by removing spectator ions,
+      showing only the species that actually undergo chemical change.
+    composed_of:
+    - complete_ionic_equation
+    - spectator_ion
+    tier: 4
+  oxidizing_agent:
+    defines: A substance that causes oxidation of another species and is itself reduced in the process.
+    composed_of:
+    - redox_reaction
+    tier: 4
+  reducing_agent:
+    defines: A substance that causes reduction of another species and is itself oxidized in the process.
+    composed_of:
+    - redox_reaction
+    tier: 4
+  half_reaction_method:
+    defines: A systematic procedure for balancing redox equations by separately balancing the oxidation
+      and reduction half-reactions before combining them.
+    composed_of:
+    - redox_reaction
+    - balanced_equation
+    tier: 4
+  single_displacement_reaction:
+    defines: A redox reaction in which an elemental substance is oxidized and displaces an ion of another
+      element from solution.
+    composed_of:
+    - redox_reaction
+    tier: 4
+  excess_reactant:
+    defines: A reactant present in an amount greater than required by the reaction stoichiometry, so some
+      remains unreacted after the limiting reactant is consumed.
+    composed_of:
+    - limiting_reactant
+    - stoichiometry
+    tier: 4
+  theoretical_yield:
+    defines: The maximum amount of product that could be produced from given reactant quantities according
+      to the balanced equation stoichiometry.
+    composed_of:
+    - limiting_reactant
+    - stoichiometry
+    tier: 4
+  percent_yield:
+    defines: A measure of reaction efficiency calculated as the ratio of actual yield to theoretical yield,
+      expressed as a percentage.
+    composed_of:
+    - theoretical_yield
+    - actual_yield
+    tier: 5
+applications:
+  gravimetric_analysis:
+    defines: A quantitative analytical method in which the analyte is separated from the sample by a physical
+      or chemical process and its concentration is determined from mass measurements of the isolated species.
+    needs:
+    - stoichiometry
+    - molar_mass
+    tier: 3
+  titration_analysis:
+    defines: A quantitative analytical technique in which the volume of a titrant solution of known concentration
+      required to completely react with an analyte is measured and used to calculate the analyte's concentration.
+    needs:
+    - molarity
+    - stoichiometry
+    - equivalence_point
+    tier: 4
+  combustion_reaction:
+    defines: A vigorous redox reaction between a fuel (reductant) and an oxidant that releases significant
+      heat and often produces a visible flame.
+    needs:
+    - redox_reaction
+    tier: 4
+  atom_economy:
+    defines: A measure of synthetic efficiency defined as the percentage by mass of the desired final
+      product relative to the total mass of all reactants used.
+    needs:
+    - stoichiometry
+    - theoretical_yield
+    tier: 5
+  combustion_analysis:
+    defines: A gravimetric technique for determining the elemental composition of a compound by completely
+      combusting a known mass of the sample and measuring the masses of the resulting gaseous products.
+    needs:
+    - combustion_reaction
+    - gravimetric_analysis
+    tier: 5

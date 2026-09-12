@@ -1,0 +1,252 @@
+domain: chemistry_2e_ch2
+primitives:
+  matter:
+    defines: The physical substance that makes up all things, composed of atoms according to atomic theory.
+    tier: 0
+  element:
+    defines: A pure substance consisting of only one type of atom, which cannot be broken down into simpler
+      substances by chemical means.
+    tier: 0
+  electric_charge:
+    defines: A fundamental physical property of matter (positive or negative) that determines electromagnetic
+      interactions.
+    tier: 0
+  mass:
+    defines: A measure of the quantity of matter in an object, used here to characterize atoms and compare
+      isotopes.
+    tier: 0
+  chemical_bond:
+    defines: An attractive force between atoms or ions that holds them together in a molecule or crystal.
+    tier: 0
+concepts:
+  daltons_atomic_theory:
+    defines: A set of postulates stating that matter is composed of indivisible atoms, each element has
+      one unique atom type, atoms combine in fixed whole-number ratios, and atoms are conserved in chemical
+      changes.
+    composed_of:
+    - matter
+    - element
+    tier: 1
+  law_of_definite_proportions:
+    defines: All samples of a pure compound contain the same elements in the same proportions by mass.
+    composed_of:
+    - matter
+    - element
+    - mass
+    tier: 1
+  law_of_multiple_proportions:
+    defines: When two elements react to form more than one compound, a fixed mass of one element reacts
+      with masses of the other in a ratio of small whole numbers.
+    composed_of:
+    - element
+    - mass
+    tier: 1
+  law_of_conservation_of_matter:
+    defines: Atoms are neither created nor destroyed during a chemical change; total mass of matter is
+      conserved.
+    composed_of:
+    - matter
+    - mass
+    tier: 1
+  chemical_symbol:
+    defines: A one-, two-, or three-letter abbreviation used to represent an element or its atoms in chemical
+      notation.
+    composed_of:
+    - element
+    tier: 1
+  atom:
+    defines: The smallest unit of an element that can participate in a chemical change, as defined by
+      Dalton's atomic theory.
+    composed_of:
+    - daltons_atomic_theory
+    - element
+    tier: 2
+  electron:
+    defines: A negatively charged subatomic particle of very low mass found outside the nucleus, discovered
+      via cathode ray experiments by Thomson.
+    composed_of:
+    - atom
+    - electric_charge
+    tier: 3
+  proton:
+    defines: A positively charged subatomic particle found in the nucleus with a mass of approximately
+      1 amu, identified by Rutherford.
+    composed_of:
+    - atom
+    - electric_charge
+    tier: 3
+  neutron:
+    defines: An uncharged subatomic particle found in the nucleus with a mass approximately equal to a
+      proton, discovered by Chadwick in 1932.
+    composed_of:
+    - atom
+    tier: 3
+  atomic_mass_unit:
+    defines: A unit of mass defined as exactly 1/12 of the mass of a carbon-12 atom, equal to 1.6605 ×
+      10⁻²⁴ g.
+    composed_of:
+    - mass
+    - atom
+    tier: 3
+  molecular_formula:
+    defines: A chemical notation using element symbols and subscripts to indicate the exact number of
+      each type of atom in a molecule or compound.
+    composed_of:
+    - atom
+    - chemical_symbol
+    tier: 3
+  nucleus:
+    defines: The small, dense, positively charged center of an atom containing protons and neutrons, surrounded
+      by a much larger region of electrons.
+    composed_of:
+    - proton
+    - neutron
+    tier: 4
+  mass_number:
+    defines: The sum of the numbers of protons and neutrons in the nucleus of an atom.
+    composed_of:
+    - proton
+    - neutron
+    tier: 4
+  ion:
+    defines: An electrically charged atom or molecule that results from gaining or losing electrons, giving
+      it unequal numbers of protons and electrons.
+    composed_of:
+    - atom
+    - electron
+    tier: 4
+  empirical_formula:
+    defines: A formula showing the simplest whole-number ratio of atoms of each element present in a compound.
+    composed_of:
+    - molecular_formula
+    tier: 4
+  structural_formula:
+    defines: A representation showing the types, numbers, and bonding connections of atoms within a molecule.
+    composed_of:
+    - molecular_formula
+    - chemical_bond
+    tier: 4
+  covalent_bond:
+    defines: An attractive force formed when two atoms share one or more pairs of electrons, typically
+      between nonmetal atoms.
+    composed_of:
+    - atom
+    - electron
+    tier: 4
+  atomic_number:
+    defines: The number of protons in the nucleus of an atom, which uniquely identifies the element.
+    composed_of:
+    - proton
+    - nucleus
+    tier: 5
+  cation:
+    defines: A positively charged ion formed when an atom loses one or more electrons.
+    composed_of:
+    - ion
+    tier: 5
+  anion:
+    defines: A negatively charged ion formed when an atom gains one or more electrons.
+    composed_of:
+    - ion
+    tier: 5
+  isomers:
+    defines: Compounds that share the same molecular formula but differ in the arrangement or spatial
+      orientation of their atoms, resulting in different chemical properties.
+    composed_of:
+    - molecular_formula
+    - structural_formula
+    tier: 5
+  molecular_compound:
+    defines: A compound composed of discrete, neutral molecules in which atoms are held together by covalent
+      bonds, typically formed from two or more nonmetals.
+    composed_of:
+    - covalent_bond
+    - molecular_formula
+    tier: 5
+  polyatomic_ion:
+    defines: An electrically charged molecule consisting of two or more bonded atoms that acts as a single
+      discrete unit in ionic compounds.
+    composed_of:
+    - ion
+    - covalent_bond
+    tier: 5
+  isotope:
+    defines: Atoms of the same element that have the same number of protons but different numbers of neutrons,
+      and thus different mass numbers.
+    composed_of:
+    - atomic_number
+    - neutron
+    tier: 6
+  periodic_law:
+    defines: The properties of elements are periodic functions of their atomic numbers, forming the basis
+      for organizing the periodic table.
+    composed_of:
+    - element
+    - atomic_number
+    tier: 6
+  ionic_bond:
+    defines: An electrostatic force of attraction between oppositely charged ions formed by electron transfer
+      from a metal to a nonmetal.
+    composed_of:
+    - cation
+    - anion
+    tier: 6
+  average_atomic_mass:
+    defines: The weighted average of the masses of all naturally occurring isotopes of an element, calculated
+      using each isotope's mass and fractional abundance.
+    composed_of:
+    - isotope
+    - atomic_mass_unit
+    tier: 7
+  periodic_table:
+    defines: An arrangement of elements in order of increasing atomic number into rows (periods) and columns
+      (groups) such that elements with similar chemical properties appear in the same group.
+    composed_of:
+    - periodic_law
+    tier: 7
+  ionic_compound:
+    defines: A compound composed of cations and anions held together by ionic bonds, generally formed
+      from a metal and a nonmetal, and electrically neutral overall.
+    composed_of:
+    - ionic_bond
+    tier: 7
+  element_classification:
+    defines: A categorization of elements based on shared physical and chemical properties, where metals
+      are shiny and conductive, nonmetals are dull and poor conductors, and metalloids exhibit intermediate
+      properties.
+    composed_of:
+    - periodic_table
+    - element
+    tier: 8
+  element_families:
+    defines: Named sets of elements occupying the same periodic table column that share similar chemical
+      behaviors, such as alkali metals (group 1), alkaline earth metals (group 2), halogens (group 17),
+      and noble gases (group 18).
+    composed_of:
+    - periodic_table
+    tier: 8
+applications:
+  mass_spectrometry:
+    defines: An analytical technique that vaporizes and ionizes a sample, then separates ions by mass-to-charge
+      ratio to identify isotopes and their natural abundances.
+    needs:
+    - ion
+    - isotope
+    - average_atomic_mass
+    tier: 8
+  chemical_nomenclature:
+    defines: A systematic set of rules for naming ionic and molecular compounds, including binary compounds,
+      compounds with polyatomic ions, hydrates, binary acids, and oxyacids.
+    needs:
+    - ionic_compound
+    - molecular_compound
+    - polyatomic_ion
+    tier: 8
+  predicting_ion_formation:
+    defines: Using an element's group number to forecast the charge and type of ion it will form, with
+      metals losing electrons to match the preceding noble gas and nonmetals gaining electrons to match
+      the following noble gas.
+    needs:
+    - element_families
+    - ion
+    tier: 9
