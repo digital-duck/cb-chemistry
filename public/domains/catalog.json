@@ -33,6 +33,56 @@
         "file": "output/college.en/sonnet/html/book_density_calculation.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "target": "precision",
+        "file": "output/college.en/sonnet/html/book_precision.html",
+        "model": "sonnet"
+      },
+      {
+        "target": "intensive_property",
+        "file": "output/college.en/sonnet/html/book_intensive_property.html",
+        "model": "sonnet"
+      },
+      {
+        "target": "unit_conversion_factor",
+        "file": "output/college.en/sonnet/html/book_unit_conversion_factor.html",
+        "model": "sonnet"
+      },
+      {
+        "target": "si_units",
+        "file": "output/college.en/sonnet/html/book_si_units.html",
+        "model": "sonnet"
+      },
+      {
+        "target": "pure_substance",
+        "file": "output/college.en/sonnet/html/book_pure_substance.html",
+        "model": "sonnet"
+      },
+      {
+        "target": "volume",
+        "file": "output/college.en/sonnet/html/book_volume.html",
+        "model": "sonnet"
+      },
+      {
+        "target": "measurement",
+        "file": "output/college.en/sonnet/html/book_measurement.html",
+        "model": "sonnet"
+      },
+      {
+        "target": "matter",
+        "file": "output/college.en/sonnet/html/book_matter.html",
+        "model": "sonnet"
+      },
+      {
+        "target": "plasma",
+        "file": "output/college.en/sonnet/html/book_plasma.html",
+        "model": "sonnet"
+      },
+      {
+        "target": "energy",
+        "file": "output/college.en/sonnet/html/book_energy.html",
+        "model": "sonnet"
       }
     ],
     "generated_concepts": [
@@ -40,148 +90,167 @@
         "name": "atom",
         "label": "Atom",
         "file": "output/college.en/sonnet/html/concept_atom.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "chemical_property",
         "label": "Chemical Property",
         "file": "output/college.en/sonnet/html/concept_chemical_property.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "compound",
         "label": "Compound",
         "file": "output/college.en/sonnet/html/concept_compound.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "density",
         "label": "Density",
         "file": "output/college.en/sonnet/html/concept_density.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "density_calculation",
         "label": "Density Calculation",
         "file": "output/college.en/sonnet/html/concept_density_calculation.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "dimensional_analysis",
         "label": "Dimensional Analysis",
         "file": "output/college.en/sonnet/html/concept_dimensional_analysis.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "element",
         "label": "Element",
         "file": "output/college.en/sonnet/html/concept_element.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
+      },
+      {
+        "name": "energy",
+        "label": "Energy",
+        "file": "output/college.en/sonnet/html/concept_energy.html",
+        "model": "sonnet"
       },
       {
         "name": "intensive_property",
         "label": "Intensive Property",
         "file": "output/college.en/sonnet/html/concept_intensive_property.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "mass",
         "label": "Mass",
         "file": "output/college.en/sonnet/html/concept_mass.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "matter",
         "label": "Matter",
         "file": "output/college.en/sonnet/html/concept_matter.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "measurement",
         "label": "Measurement",
         "file": "output/college.en/sonnet/html/concept_measurement.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "measurement_uncertainty",
         "label": "Measurement Uncertainty",
         "file": "output/college.en/sonnet/html/concept_measurement_uncertainty.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "periodic_table",
         "label": "Periodic Table",
         "file": "output/college.en/sonnet/html/concept_periodic_table.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "physical_property",
         "label": "Physical Property",
         "file": "output/college.en/sonnet/html/concept_physical_property.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
+      },
+      {
+        "name": "plasma",
+        "label": "Plasma",
+        "file": "output/college.en/sonnet/html/concept_plasma.html",
+        "model": "sonnet"
       },
       {
         "name": "precision",
         "label": "Precision",
         "file": "output/college.en/sonnet/html/concept_precision.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "pure_substance",
         "label": "Pure Substance",
         "file": "output/college.en/sonnet/html/concept_pure_substance.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "si_units",
         "label": "Si Units",
         "file": "output/college.en/sonnet/html/concept_si_units.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "significant_figures",
         "label": "Significant Figures",
         "file": "output/college.en/sonnet/html/concept_significant_figures.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
+      },
+      {
+        "name": "states_of_matter",
+        "label": "States Of Matter",
+        "file": "output/college.en/sonnet/html/concept_states_of_matter.html",
+        "model": "sonnet"
       },
       {
         "name": "temperature",
         "label": "Temperature",
         "file": "output/college.en/sonnet/html/concept_temperature.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "temperature_scale_conversion",
         "label": "Temperature Scale Conversion",
         "file": "output/college.en/sonnet/html/concept_temperature_scale_conversion.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "volume",
         "label": "Volume",
         "file": "output/college.en/sonnet/html/concept_volume.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
+      }
+    ],
+    "pdfs": [
+      {
+        "target": "volume",
+        "file": "output/college.en/sonnet/pdf/concept_volume.pdf"
+      },
+      {
+        "target": "precision",
+        "file": "output/college.en/sonnet/pdf/concept_precision.pdf"
+      },
+      {
+        "target": "intensive_property",
+        "file": "output/college.en/sonnet/pdf/concept_intensive_property.pdf"
+      },
+      {
+        "target": "pure_substance",
+        "file": "output/college.en/sonnet/pdf/concept_pure_substance.pdf"
+      },
+      {
+        "target": "density_calculation",
+        "file": "output/college.en/sonnet/pdf/concept_density_calculation.pdf"
       }
     ]
   },
@@ -219,6 +288,16 @@
         "file": "output/college.en/sonnet/html/book_predicting_ion_formation.html",
         "model": "sonnet",
         "language": "en"
+      },
+      {
+        "target": "element",
+        "file": "output/college.en/sonnet/html/book_element.html",
+        "model": "sonnet"
+      },
+      {
+        "target": "atom",
+        "file": "output/college.en/sonnet/html/book_atom.html",
+        "model": "sonnet"
       }
     ],
     "generated_concepts": [
@@ -226,211 +305,190 @@
         "name": "anion",
         "label": "Anion",
         "file": "output/college.en/sonnet/html/concept_anion.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "atom",
         "label": "Atom",
         "file": "output/college.en/sonnet/html/concept_atom.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "atomic_mass_unit",
         "label": "Atomic Mass Unit",
         "file": "output/college.en/sonnet/html/concept_atomic_mass_unit.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "atomic_number",
         "label": "Atomic Number",
         "file": "output/college.en/sonnet/html/concept_atomic_number.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "average_atomic_mass",
         "label": "Average Atomic Mass",
         "file": "output/college.en/sonnet/html/concept_average_atomic_mass.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "cation",
         "label": "Cation",
         "file": "output/college.en/sonnet/html/concept_cation.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "chemical_nomenclature",
         "label": "Chemical Nomenclature",
         "file": "output/college.en/sonnet/html/concept_chemical_nomenclature.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "chemical_symbol",
         "label": "Chemical Symbol",
         "file": "output/college.en/sonnet/html/concept_chemical_symbol.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "covalent_bond",
         "label": "Covalent Bond",
         "file": "output/college.en/sonnet/html/concept_covalent_bond.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "daltons_atomic_theory",
         "label": "Daltons Atomic Theory",
         "file": "output/college.en/sonnet/html/concept_daltons_atomic_theory.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "electric_charge",
         "label": "Electric Charge",
         "file": "output/college.en/sonnet/html/concept_electric_charge.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "electron",
         "label": "Electron",
         "file": "output/college.en/sonnet/html/concept_electron.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "element",
         "label": "Element",
         "file": "output/college.en/sonnet/html/concept_element.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "element_families",
         "label": "Element Families",
         "file": "output/college.en/sonnet/html/concept_element_families.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "ion",
         "label": "Ion",
         "file": "output/college.en/sonnet/html/concept_ion.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "ionic_bond",
         "label": "Ionic Bond",
         "file": "output/college.en/sonnet/html/concept_ionic_bond.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "ionic_compound",
         "label": "Ionic Compound",
         "file": "output/college.en/sonnet/html/concept_ionic_compound.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "isotope",
         "label": "Isotope",
         "file": "output/college.en/sonnet/html/concept_isotope.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "mass",
         "label": "Mass",
         "file": "output/college.en/sonnet/html/concept_mass.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "mass_spectrometry",
         "label": "Mass Spectrometry",
         "file": "output/college.en/sonnet/html/concept_mass_spectrometry.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "matter",
         "label": "Matter",
         "file": "output/college.en/sonnet/html/concept_matter.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "molecular_compound",
         "label": "Molecular Compound",
         "file": "output/college.en/sonnet/html/concept_molecular_compound.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "molecular_formula",
         "label": "Molecular Formula",
         "file": "output/college.en/sonnet/html/concept_molecular_formula.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "neutron",
         "label": "Neutron",
         "file": "output/college.en/sonnet/html/concept_neutron.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "nucleus",
         "label": "Nucleus",
         "file": "output/college.en/sonnet/html/concept_nucleus.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "periodic_law",
         "label": "Periodic Law",
         "file": "output/college.en/sonnet/html/concept_periodic_law.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "periodic_table",
         "label": "Periodic Table",
         "file": "output/college.en/sonnet/html/concept_periodic_table.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "polyatomic_ion",
         "label": "Polyatomic Ion",
         "file": "output/college.en/sonnet/html/concept_polyatomic_ion.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "predicting_ion_formation",
         "label": "Predicting Ion Formation",
         "file": "output/college.en/sonnet/html/concept_predicting_ion_formation.html",
-        "model": "sonnet",
-        "language": "en"
+        "model": "sonnet"
       },
       {
         "name": "proton",
         "label": "Proton",
         "file": "output/college.en/sonnet/html/concept_proton.html",
+        "model": "sonnet"
+      }
+    ],
+    "pdfs": [
+      {
+        "target": "element",
+        "level": "college",
+        "language": "en",
         "model": "sonnet",
-        "language": "en"
+        "file": "output/college.en/sonnet/pdf/concept_element.pdf"
       }
     ]
   },
@@ -3549,6 +3607,12 @@
         "file": "output/college.en/sonnet/html/concept_reduction.html",
         "model": "sonnet",
         "language": "en"
+      }
+    ],
+    "pdfs": [
+      {
+        "target": "galvanic_cell",
+        "file": "output/college.en/sonnet/pdf/concept_galvanic_cell.pdf"
       }
     ]
   },

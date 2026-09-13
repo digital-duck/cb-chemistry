@@ -24,11 +24,14 @@ def mark_book_generated(
 ) -> None:
     variant = f"{level}.{language}"
     html_dir = settings.public_domains / domain_id / "output" / variant / model / "html"
+    # model_seg avoids a double slash ("output/variant//html/...") when
+    # model="" — same guard already applied in pdf_svc.py.
+    model_seg = f"{model}/" if model else ""
     new_concepts = [
         {
             "name": p.stem[len("concept_"):],
             "label": p.stem[len("concept_"):].replace("_", " ").title(),
-            "file": f"output/{variant}/{model}/html/{p.name}",
+            "file": f"output/{variant}/{model_seg}html/{p.name}",
             "model": model,
         }
         for p in html_dir.glob("concept_*.html")
@@ -39,7 +42,7 @@ def mark_book_generated(
             if d["id"] != domain_id:
                 continue
             books: list[dict] = d.setdefault("books", [])
-            book_file = f"output/{variant}/{model}/html/book_{target}.html"
+            book_file = f"output/{variant}/{model_seg}html/book_{target}.html"
             # Deduplicate by (target, model) pair
             if not any(b["target"] == target and b.get("model") == model for b in books):
                 books.append({"target": target, "file": book_file, "model": model})

@@ -101,43 +101,9 @@ def _resolve_lang(raw: str) -> str:
     return key
 
 
-# Maps content levels (intro/core/college/research, per CLAUDE.md's learner-
-# progression axis) to a spl/style_profiles.py profile name. build_concept_book.spl
-# has no @lvl input parameter — only @style — so passing --param lvl=... (the
-# prior behavior) was silently ignored by spl3 and every job generated at the
-# hardcoded @style DEFAULT 'textbook' (university/calculus-background audience)
-# regardless of the requested level. This map is what --level actually controls now.
-#
-# college -> "college" (not "textbook"): "textbook"'s structure forces a "Key
-# theorem" + notation-heavy treatment on every concept regardless of whether the
-# concept is actually mathematical (e.g. it produced relational-algebra notation
-# and a forced "Key Theorem (ACID Guarantees)" for a systems concept like DBMS).
-# "college" makes that formalism conditional on the concept's own nature; forced
-# rigorous math/proof notation is reserved for "research".
-_LEVEL_TO_STYLE: dict[str, str] = {
-    "intro":    "feynman",
-    "core":     "core",
-    "college":  "college",
-    "research": "research",
-}
-
-# Domain catalog "tags" values for which full mathematical/proof-notation rigor
-# (the "research" style profile) is appropriate at research level. Any other
-# domain — technology, chemistry, biology, etc. — falls back to
-# "research_applied" instead: same graduate-level depth and citation-readiness,
-# but without inventing math/proof notation for concepts that aren't themselves
-# mathematical results (systems, protocols, regulations, biological mechanisms,
-# chemical processes). Math/proof notation is otherwise reserved for these three
-# tags at research level; "college" level is separately conditional per-concept
-# (see the "college" style profile's own depth instruction).
-_STEM_MATH_TAGS = {"math", "physics", "engineering"}
-
-
-def _resolve_style(level: str, tags: list[str]) -> str:
-    style = _LEVEL_TO_STYLE.get(level, "college")
-    if style == "research" and not (_STEM_MATH_TAGS & set(tags)):
-        return "research_applied"
-    return style
+# level->style mapping shared with api/services/executor.py — see
+# scripts/level_style.py for the map and math-tag fallback rationale.
+from level_style import LEVEL_TO_STYLE as _LEVEL_TO_STYLE, resolve_style as _resolve_style  # noqa: E402
 
 
 # Maps spl3 llm strings → short model names used as folder segments.
@@ -282,7 +248,7 @@ def _run_spl3(
         "--param", f"language={language}",
         "--param", f"output_dir={output_dir}",
         "--param", f"skip_cache={'yes' if skip_cache else 'no'}",
-        "--param", f"llm={llm}",
+        "--param", f"model={model}",
     ]
 
     spl_env = {
