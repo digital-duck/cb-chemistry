@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Water Autoionization | Chemistry Ch14</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="water-autoionization">Water Autoionization</h2>
+<p>Even pure water conducts a tiny electric current, which tells us something surprising: water molecules react with each other. In this process, called autoionization, one water molecule transfers a proton to another:</p>
+$$\text{H}_2\text{O}(l) + \text{H}_2\text{O}(l) \rightleftharpoons \text{H}_3\text{O}^+(aq) + \text{OH}^-(aq)$$
+<p>Because this is an equilibrium, it has an equilibrium constant, denoted $K_w$. At 25°C, $K_w = 1.0 \times 10^{-14}$, defined as:</p>
+$$K_w = [\text{H}_3\text{O}^+][\text{OH}^-] = 1.0 \times 10^{-14}$$
+<p>This relationship is intrinsically quantitative — it's what allows us to convert between acidity and basicity — so the notation is essential here, not decorative. In pure water, the two ions form in a 1:1 ratio, so $[\text{H}_3\text{O}^+] = [\text{OH}^-] = 1.0 \times 10^{-7}\ \text{M}$.</p>
+<p><strong>Worked example.</strong> Suppose a solution has $[\text{OH}^-] = 2.0 \times 10^{-5}\ \text{M}$ (from dissolved NaOH). What is $[\text{H}_3\text{O}^+]$, and is the solution acidic or basic?</p>
+<p>Since $K_w$ must always hold, regardless of what's dissolved in the water:</p>
+$$[\text{H}_3\text{O}^+] = \frac{K_w}{[\text{OH}^-]} = \frac{1.0 \times 10^{-14}}{2.0 \times 10^{-5}} = 5.0 \times 10^{-10}\ \text{M}$$
+<p>Since $[\text{H}_3\text{O}^+] < 1.0 \times 10^{-7}\ \text{M}$, the solution is basic — consistent with adding a strong base.</p>
+<p><strong>Problem-solving application.</strong> The real power of $K_w$ is that it lets you find one ion concentration whenever you know the other — you never need to measure both directly. This matters in practical settings: a chemist testing wastewater might measure $[\text{H}_3\text{O}^+]$ with a pH probe and use $K_w$ to infer $[\text{OH}^-]$, which is harder to measure directly. It also explains why "neutral" doesn't always mean pH 7: at higher temperatures, $K_w$ increases (autoionization is endothermic), so neutral water — where $[\text{H}_3\text{O}^+] = [\text{OH}^-]$ still holds — has a pH slightly below 7. Try it yourself: at $60°C$, $K_w \approx 1.0 \times 10^{-13}$. What is the pH of neutral water at this temperature? (Answer: solve $[\text{H}_3\text{O}^+]^2 = 1.0\times10^{-13}$, giving pH $\approx 6.5$ — still neutral, just on a shifted scale.)</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

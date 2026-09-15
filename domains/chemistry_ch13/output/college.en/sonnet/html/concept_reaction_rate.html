@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reaction Rate | Chemistry Ch13</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="reaction-rate">Reaction Rate</h2>
+<p>The rate of a chemical reaction measures how quickly reactants are converted into products, typically expressed as a change in concentration per unit time. For a reaction $aA + bB \rightarrow cC + dD$, the rate is defined so that it gives the same value regardless of which species you track:</p>
+$$
+\text{rate} = -\frac{1}{a}\frac{d[A]}{dt} = -\frac{1}{b}\frac{d[B]}{dt} = \frac{1}{c}\frac{d[C]}{dt} = \frac{1}{d}\frac{d[D]}{dt}
+$$
+<p>The negative signs on reactants reflect that their concentrations decrease over time, while products increase. Dividing by stoichiometric coefficients ensures the rate is a single, unambiguous number rather than one that depends arbitrarily on which molecule you happened to measure.</p>
+<p><strong>Worked example.</strong> Consider the decomposition $2N_2O_5 \rightarrow 4NO_2 + O_2$. Suppose experiments show $O_2$ forming at $2.5 \times 10^{-3}\ \text{mol/(L·s)}$. What is the rate of $NO_2$ formation, and how fast is $N_2O_5$ disappearing?</p>
+<p>Using the coefficient ratios: the overall rate equals $\frac{d[O_2]}{dt} = 2.5\times10^{-3}$ mol/(L·s). Since $NO_2$'s coefficient is 4 versus $O_2$'s coefficient of 1, $NO_2$ forms four times faster: $\frac{d[NO_2]}{dt} = 4(2.5\times10^{-3}) = 1.0\times10^{-2}$ mol/(L·s). For $N_2O_5$, coefficient 2 means it disappears twice as fast as the overall rate: $-\frac{d[N_2O_5]}{dt} = 2(2.5\times10^{-3}) = 5.0\times10^{-3}$ mol/(L·s).</p>
+<p><strong>Problem-solving application.</strong> This relationship lets chemists convert between any two species' rates without needing separate measurements for each — a critical skill in lab settings where only one species (often a colored one, measured by spectrophotometry) is convenient to monitor directly. For instance, if a kinetics experiment reports that a reactant is consumed at a known rate, you can immediately predict how fast any product forms, or vice versa, purely from the balanced equation's coefficients. This also underlies rate-law experiments: when chemists say "the rate of reaction is $k[A]^n$," they mean the standardized rate defined above, not the raw disappearance rate of an arbitrarily chosen reactant — a distinction that matters when comparing rate laws across different sources or reactions with different stoichiometry.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

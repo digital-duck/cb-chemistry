@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculating Delta S Standard | Chemistry Ch16</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="calculating-delta-s-standard">Calculating Delta S Standard</h2>
+<p>The standard entropy change of a reaction, $\Delta S^\circ_{rxn}$, tells you whether a process increases or decreases the disorder of a system under standard conditions (1 bar, typically 298 K, solutes at 1 M). Unlike enthalpy, entropy has <em>absolute</em> values — every substance has a defined standard molar entropy $S^\circ$ (in $\text{J/mol·K}$), never a value of zero even in its most stable form, because entropy measures the number of accessible microstates, and even a perfect crystal at any temperature above 0 K has some vibrational disorder. This is why you'll find $S^\circ$ tabulated directly for elements and compounds, unlike $\Delta H_f^\circ$, which is defined relative to elements in their standard states.</p>
+<p>Because entropy is a state function, $\Delta S^\circ_{rxn}$ is calculated the same way you calculate $\Delta H^\circ_{rxn}$ — sum the products, subtract the reactants, weighted by stoichiometric coefficients:</p>
+$$\Delta S^\circ_{rxn} = \sum n_p S^\circ_{products} - \sum n_r S^\circ_{reactants}$$
+<p><strong>Worked example:</strong> Consider the synthesis of ammonia:</p>
+$$\text{N}_2(g) + 3\text{H}_2(g) \rightarrow 2\text{NH}_3(g)$$
+<p>Using standard molar entropies: $S^\circ[\text{N}_2] = 191.6$, $S^\circ[\text{H}_2] = 130.7$, $S^\circ[\text{NH}_3] = 192.8$ J/mol·K.</p>
+$$\Delta S^\circ_{rxn} = [2(192.8)] - [191.6 + 3(130.7)] = 385.6 - 583.7 = -198.1 \text{ J/mol·K}$$
+<p>The large negative value makes physical sense before you even calculate it: 4 moles of gas become 2 moles of gas, so the system becomes more ordered — fewer independent particles moving randomly means fewer accessible microstates.</p>
+<p><strong>Problem-solving application:</strong> When predicting the sign of $\Delta S^\circ_{rxn}$ quickly (useful for checking your arithmetic or for multiple-choice reasoning), scan for changes in the number of gas moles, phase changes, or dissolution of solids, since gas-phase disorder dominates entropy far more than differences among solids or liquids. A reaction producing more gas moles than it consumes will almost always have $\Delta S^\circ_{rxn} > 0$; the reverse trend, as in ammonia synthesis, gives a negative value. Try this reasoning on other reactions before calculating: does water vapor condensing, or limestone decomposing into calcium oxide and $\text{CO}_2(g)$, increase or decrease entropy? Building this intuition for the sign of $\Delta S^\circ_{rxn}$ will make later calculations — where this quantity is combined with enthalpy to assess spontaneity — much easier to check for reasonableness.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

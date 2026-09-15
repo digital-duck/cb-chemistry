@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boyle Law | Chemistry Ch09</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="boyle-law">Boyle Law</h2>
+<p>Boyle's Law describes how the pressure and volume of a gas relate when temperature and the amount of gas are held constant. Formally, for a fixed quantity of gas at constant temperature, pressure and volume are inversely proportional:</p>
+$$
+P_1 V_1 = P_2 V_2
+$$
+<p>where $P_1, V_1$ are the initial pressure and volume, and $P_2, V_2$ are the pressure and volume after a change. This relationship holds because pressure arises from gas molecules colliding with the walls of their container. Compress the gas into a smaller volume and the molecules strike the walls more frequently per unit area, raising pressure. Expand the volume and collisions become less frequent, lowering pressure — provided the temperature (which governs molecular speed) doesn't change.</p>
+<p><strong>Worked example.</strong> A syringe contains $50\ \text{mL}$ of air at $1.0\ \text{atm}$. If you seal the tip and push the plunger down to compress the gas to $20\ \text{mL}$, what is the new pressure, assuming temperature stays constant?</p>
+<p>Using $P_1V_1 = P_2V_2$:</p>
+$$
+(1.0\ \text{atm})(50\ \text{mL}) = P_2 (20\ \text{mL})
+$$
+$$
+P_2 = \frac{50}{20} = 2.5\ \text{atm}
+$$
+<p>Compressing the gas to two-fifths of its original volume raises the pressure to 2.5 times its original value — consistent with the inverse relationship.</p>
+<p><strong>Problem-solving application.</strong> Boyle's Law is the tool of choice whenever a problem gives you two of the four variables ($P_1, V_1, P_2, V_2$) and asks for the third or fourth, with temperature and gas quantity fixed. A common trap is unit mismatch: if one pressure is in atm and another in kPa, convert both to the same unit before applying the formula, since the equation only balances when units are consistent on both sides. Another common scenario involves scuba diving: as a diver descends, water pressure increases, compressing air in their lungs and gear according to $P_1V_1 = P_2V_2$ — which is why divers are trained to ascend slowly and exhale continuously, preventing the reverse expansion of trapped air from over-expanding and damaging lung tissue. Recognizing "constant temperature, fixed gas amount, pressure-volume relationship" as the signature of a problem is the key skill; once identified, the algebra is a single substitution and solve.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

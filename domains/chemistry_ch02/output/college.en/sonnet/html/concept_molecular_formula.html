@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Molecular Formula | Chemistry Ch02</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="molecular-formula">Molecular Formula</h2>
+<p>A molecular formula specifies the exact number of each type of atom in a single molecule of a compound. Written as element symbols followed by subscript counts (e.g., $\text{C}_6\text{H}_{12}\text{O}_6$ for glucose), it is more informative than an empirical formula, which only gives the simplest whole-number ratio of atoms. Many different compounds can share the same empirical formula while having distinct molecular formulas — and distinct properties — because the actual atom count, and therefore the molecule's size and structure, differs.</p>
+<p><strong>Worked example.</strong> Suppose a compound has an empirical formula of $\text{CH}_2\text{O}$ (empirical molar mass $\approx 30.03\ \text{g/mol}$) and an experimentally determined molar mass of $180.16\ \text{g/mol}$. To find the molecular formula, divide the actual molar mass by the empirical formula mass:</p>
+$$
+n = \frac{180.16}{30.03} \approx 6
+$$
+<p>Multiplying every subscript in $\text{CH}_2\text{O}$ by $n=6$ gives $\text{C}_6\text{H}_{12}\text{O}_6$ — glucose. Formaldehyde is also built from $\text{CH}_2\text{O}$ units, yet it is chemically very different from glucose — exactly why the molecular formula, not just the ratio, matters for identifying a compound.</p>
+<p><strong>Problem-solving application.</strong> This is the standard method for identifying an unknown compound from lab data: one measurement gives you the empirical formula (from percent composition), and a separate measurement gives you the molar mass. Combine the two using the ratio above. As practice, try this: a compound is 40.0% carbon, 6.7% hydrogen, and 53.3% oxygen by mass, with a molar mass of $180\ \text{g/mol}$. First convert percentages to a mole ratio (assume 100 g of sample, divide each mass by its atomic mass, then divide through by the smallest value) to get the empirical formula, then apply the ratio method above to recover the molecular formula. You should arrive at the same glucose formula, $\text{C}_6\text{H}_{12}\text{O}_6$ — a useful check on your work, and a reminder that molecular formula determination always requires two independent pieces of data: composition and mass.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

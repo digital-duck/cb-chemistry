@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enzyme Catalysis | Chemistry Ch12</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="enzyme-catalysis">Enzyme Catalysis</h2>
+<p>Enzymes are biological catalysts, almost always proteins, that accelerate chemical reactions inside cells without being consumed in the process. Every reaction has an energy barrier — the activation energy $E_a$ — that reactants must overcome before they can transform into products. Enzymes work by binding substrate molecules at a specific region called the active site and stabilizing the transition state, the fleeting, high-energy arrangement of atoms partway between reactant and product. By lowering $E_a$, an enzyme increases the rate at which a reaction reaches equilibrium, often by factors of a million or more, while leaving the equilibrium position and the overall energy change of the reaction unaffected.</p>
+<p>Consider the enzyme catalase, found in liver and red blood cells, which breaks down hydrogen peroxide ($\mathrm{H_2O_2}$), a toxic byproduct of metabolism, into water and oxygen: $2\,\mathrm{H_2O_2} \rightarrow 2\,\mathrm{H_2O} + \mathrm{O_2}$. Uncatalyzed, this reaction proceeds slowly. With catalase, one enzyme molecule can convert millions of $\mathrm{H_2O_2}$ molecules per second. This is why fresh liver tissue dropped into hydrogen peroxide fizzes vigorously with oxygen bubbles — a classic demonstration you can run yourself with a potato or liver sample and 3% peroxide solution from a pharmacy.</p>
+<p>Enzyme activity is not constant; it depends on conditions. Temperature and pH each have an optimum range, outside of which the enzyme's three-dimensional shape distorts — a process called denaturation — and the active site no longer fits its substrate. Substrate concentration also matters: as you add more substrate, reaction rate rises until every active site is occupied, at which point the enzyme is saturated and rate levels off, a pattern described by Michaelis-Menten kinetics.</p>
+<p>This behavior has direct problem-solving payoff. Suppose a diagnostic lab needs to determine why a patient's blood test for an enzyme-dependent reaction shows unexpectedly low activity. A systematic approach checks, in order: is the sample at the wrong temperature or pH (denaturation), is substrate insufficient (below saturation), or is an inhibitor present (competing for the active site)? Enzyme inhibitors — molecules that block or slow catalysis — are themselves the basis of many drugs, including statins and antibiotics, making this troubleshooting logic directly applicable to pharmacology and clinical diagnostics.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

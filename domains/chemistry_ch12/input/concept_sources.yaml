@@ -1,0 +1,168 @@
+domain: chemistry_2e_ch12
+sources:
+  molar_concentration:
+    label: Molar Concentration
+    sections: []
+  stoichiometry:
+    label: Stoichiometric Relationships
+    sections: []
+  temperature:
+    label: Temperature
+    sections: []
+  reaction_rate:
+    label: Reaction Rate
+    sections:
+    - id: ch12_s12_1
+      title: 12.1 Chemical Reaction Rates
+  average_rate:
+    label: Average Rate
+    sections:
+    - id: ch12_s12_1
+      title: 12.1 Chemical Reaction Rates
+  instantaneous_rate:
+    label: Instantaneous Rate
+    sections:
+    - id: ch12_s12_1
+      title: 12.1 Chemical Reaction Rates
+  initial_rate:
+    label: Initial Rate
+    sections:
+    - id: ch12_s12_1
+      title: 12.1 Chemical Reaction Rates
+  stoichiometric_rate_relations:
+    label: Relative Rates of Reaction
+    sections:
+    - id: ch12_s12_1
+      title: 12.1 Chemical Reaction Rates
+  factors_affecting_rates:
+    label: Factors Affecting Reaction Rates
+    sections:
+    - id: ch12_s12_2
+      title: 12.2 Factors Affecting Reaction Rates
+  rate_law:
+    label: Rate Law
+    sections:
+    - id: ch12_s12_3
+      title: 12.3 Rate Laws
+  rate_constant:
+    label: Rate Constant
+    sections:
+    - id: ch12_s12_3
+      title: 12.3 Rate Laws
+  reaction_order:
+    label: Reaction Order
+    sections:
+    - id: ch12_s12_3
+      title: 12.3 Rate Laws
+  overall_reaction_order:
+    label: Overall Reaction Order
+    sections:
+    - id: ch12_s12_3
+      title: 12.3 Rate Laws
+  method_of_initial_rates:
+    label: Method of Initial Rates
+    sections:
+    - id: ch12_s12_3
+      title: 12.3 Rate Laws
+  integrated_rate_law:
+    label: Integrated Rate Law
+    sections:
+    - id: ch12_s12_4
+      title: 12.4 Integrated Rate Laws
+  first_order_kinetics:
+    label: First-Order Kinetics
+    sections:
+    - id: ch12_s12_4
+      title: 12.4 Integrated Rate Laws
+  second_order_kinetics:
+    label: Second-Order Kinetics
+    sections:
+    - id: ch12_s12_4
+      title: 12.4 Integrated Rate Laws
+  zero_order_kinetics:
+    label: Zero-Order Kinetics
+    sections:
+    - id: ch12_s12_4
+      title: 12.4 Integrated Rate Laws
+  half_life:
+    label: Half-Life
+    sections:
+    - id: ch12_s12_4
+      title: 12.4 Integrated Rate Laws
+  collision_theory:
+    label: Collision Theory
+    sections:
+    - id: ch12_s12_5
+      title: 12.5 Collision Theory
+  activation_energy:
+    label: Activation Energy
+    sections:
+    - id: ch12_s12_5
+      title: 12.5 Collision Theory
+  activated_complex:
+    label: Activated Complex (Transition State)
+    sections:
+    - id: ch12_s12_5
+      title: 12.5 Collision Theory
+  arrhenius_equation:
+    label: Arrhenius Equation
+    sections:
+    - id: ch12_s12_5
+      title: 12.5 Collision Theory
+  frequency_factor:
+    label: Frequency Factor
+    sections:
+    - id: ch12_s12_5
+      title: 12.5 Collision Theory
+  reaction_mechanism:
+    label: Reaction Mechanism
+    sections:
+    - id: ch12_s12_6
+      title: 12.6 Reaction Mechanisms
+  elementary_reaction:
+    label: Elementary Reaction
+    sections:
+    - id: ch12_s12_6
+      title: 12.6 Reaction Mechanisms
+  molecularity:
+    label: Molecularity
+    sections:
+    - id: ch12_s12_6
+      title: 12.6 Reaction Mechanisms
+  reaction_intermediate:
+    label: Reaction Intermediate
+    sections:
+    - id: ch12_s12_6
+      title: 12.6 Reaction Mechanisms
+  rate_determining_step:
+    label: Rate-Determining Step
+    sections:
+    - id: ch12_s12_6
+      title: 12.6 Reaction Mechanisms
+  catalyst:
+    label: Catalyst
+    sections:
+    - id: ch12_s12_2
+      title: 12.2 Factors Affecting Reaction Rates
+    - id: ch12_s12_7
+      title: 12.7 Catalysis
+  homogeneous_catalyst:
+    label: Homogeneous Catalyst
+    sections:
+    - id: ch12_s12_7
+      title: 12.7 Catalysis
+  heterogeneous_catalyst:
+    label: Heterogeneous Catalyst
+    sections:
+    - id: ch12_s12_7
+      title: 12.7 Catalysis
+  enzyme_catalysis:
+    label: Enzyme Catalysis
+    sections:
+    - id: ch12_s12_7
+      title: 12.7 Catalysis
+  radioactive_decay_kinetics:
+    label: Radioactive Decay Kinetics
+    sections:
+    - id: ch12_s12_4
+      title: 12.4 Integrated Rate Laws

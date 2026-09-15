@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Third Law Of Thermodynamics | Chemistry Ch16</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="third-law-of-thermodynamics">Third Law Of Thermodynamics</h2>
+<p><strong>Definition.</strong> The third law of thermodynamics states that as the temperature of a perfect crystal approaches absolute zero (\(T \to 0\,\text{K}\)), its entropy approaches a constant minimum value, taken to be zero. Formally,</p>
+<p>\[ \lim_{T \to 0} S = 0 \quad \text{(for a perfect crystalline substance)}. \]</p>
+<p>Entropy, recall, measures the number of microscopic arrangements (microstates) consistent with a system's macroscopic state, via \(S = k_B \ln \Omega\), where \(\Omega\) is the number of accessible microstates. A perfect crystal at absolute zero has only one possible arrangement — every atom locked into its unique lowest-energy lattice position — so \(\Omega = 1\) and \(S = k_B \ln 1 = 0\). This is why the law requires the notation: it is fundamentally a statement about the limiting behavior of a statistical quantity, and cannot be stated correctly in plain prose alone.</p>
+<p><strong>Worked example.</strong> Suppose you're given the standard molar entropies of two solids at 298 K: diamond (\(S^\circ = 2.4\ \text{J/mol·K}\)) and rock salt, NaCl (\(S^\circ = 72.1\ \text{J/mol·K}\)). Both values are measured <em>relative to</em> the zero-entropy reference at \(T=0\) guaranteed by the third law — without that fixed reference point, "absolute entropy" would be meaningless, since entropy differences (not absolute values) are all the first and second laws can determine. Diamond's much lower entropy reflects its rigid, highly ordered covalent lattice; NaCl's ionic lattice, while still crystalline, has more vibrational freedom and slightly less perfect order in practice, giving it a higher baseline.</p>
+<p><strong>Problem-solving application.</strong> The third law's practical payoff is that it lets chemists calculate <em>absolute</em> entropies (not just changes) by integrating heat capacity data from \(T = 0\) up to any temperature:</p>
+<p>\[ S(T) = \int_0^T \frac{C_p(T')}{T'}\, dT'. \]</p>
+<p>This is exactly how tabulated \(S^\circ\) values — used in every \(\Delta S_{\text{rxn}}\) or \(\Delta G\) calculation you'll do in thermochemistry — are actually determined experimentally. It also explains why reaching exactly \(T = 0\,\text{K}\) is physically unattainable: doing so would require removing all entropy in a finite number of steps, which the law forbids. This underlies real engineering limits in cryogenic cooling and quantum computing, where systems can get arbitrarily close to absolute zero but never reach it.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

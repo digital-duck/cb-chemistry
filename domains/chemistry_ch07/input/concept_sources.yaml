@@ -1,0 +1,192 @@
+domain: chemistry_2e_ch7
+sources:
+  valence_electrons:
+    label: Valence Electrons
+    sections: []
+  electron_configuration:
+    label: Electron Configuration
+    sections:
+    - id: ch07_s7_1
+      title: 7.1 Ionic Bonding
+  ionization_energy:
+    label: Ionization Energy
+    sections:
+    - id: ch07_s7_1
+      title: 7.1 Ionic Bonding
+  electron_affinity:
+    label: Electron Affinity
+    sections:
+    - id: ch07_s7_1
+      title: 7.1 Ionic Bonding
+    - id: ch07_s7_2
+      title: 7.2 Covalent Bonding
+  noble_gas_configuration:
+    label: Noble Gas Configuration
+    sections:
+    - id: ch07_s7_1
+      title: 7.1 Ionic Bonding
+  periodic_table_trends:
+    label: Periodic Table Trends
+    sections:
+    - id: ch07_s7_1
+      title: 7.1 Ionic Bonding
+    - id: ch07_s7_2
+      title: 7.2 Covalent Bonding
+  electrostatic_force:
+    label: Electrostatic Force
+    sections: []
+  ion:
+    label: Ion
+    sections:
+    - id: ch07_s7_1
+      title: 7.1 Ionic Bonding
+  ionic_bond:
+    label: Ionic Bond
+    sections:
+    - id: ch07_s7_1
+      title: 7.1 Ionic Bonding
+  ionic_compound:
+    label: Ionic Compound
+    sections:
+    - id: ch07_s7_1
+      title: 7.1 Ionic Bonding
+  covalent_bond:
+    label: Covalent Bond
+    sections:
+    - id: ch07_s7_2
+      title: 7.2 Covalent Bonding
+  electronegativity:
+    label: Electronegativity
+    sections:
+    - id: ch07_s7_2
+      title: 7.2 Covalent Bonding
+  pure_covalent_bond:
+    label: Pure (Nonpolar) Covalent Bond
+    sections:
+    - id: ch07_s7_2
+      title: 7.2 Covalent Bonding
+  polar_covalent_bond:
+    label: Polar Covalent Bond
+    sections:
+    - id: ch07_s7_2
+      title: 7.2 Covalent Bonding
+  bond_polarity:
+    label: Bond Polarity
+    sections:
+    - id: ch07_s7_2
+      title: 7.2 Covalent Bonding
+  lewis_symbol:
+    label: Lewis Symbol
+    sections:
+    - id: ch07_s7_3
+      title: 7.3 Lewis Symbols and Structures
+  lone_pair:
+    label: Lone Pair
+    sections:
+    - id: ch07_s7_3
+      title: 7.3 Lewis Symbols and Structures
+  single_bond:
+    label: Single Bond
+    sections:
+    - id: ch07_s7_3
+      title: 7.3 Lewis Symbols and Structures
+  double_bond:
+    label: Double Bond
+    sections:
+    - id: ch07_s7_3
+      title: 7.3 Lewis Symbols and Structures
+  triple_bond:
+    label: Triple Bond
+    sections:
+    - id: ch07_s7_3
+      title: 7.3 Lewis Symbols and Structures
+  lewis_structure:
+    label: Lewis Structure
+    sections:
+    - id: ch07_s7_3
+      title: 7.3 Lewis Symbols and Structures
+  octet_rule:
+    label: Octet Rule
+    sections:
+    - id: ch07_s7_3
+      title: 7.3 Lewis Symbols and Structures
+  octet_rule_exceptions:
+    label: Exceptions to the Octet Rule
+    sections:
+    - id: ch07_s7_3
+      title: 7.3 Lewis Symbols and Structures
+  formal_charge:
+    label: Formal Charge
+    sections:
+    - id: ch07_s7_4
+      title: 7.4 Formal Charges and Resonance
+  resonance:
+    label: Resonance
+    sections:
+    - id: ch07_s7_4
+      title: 7.4 Formal Charges and Resonance
+  resonance_hybrid:
+    label: Resonance Hybrid
+    sections:
+    - id: ch07_s7_4
+      title: 7.4 Formal Charges and Resonance
+  bond_energy:
+    label: Bond Energy (Bond Dissociation Energy)
+    sections:
+    - id: ch07_s7_5
+      title: 7.5 Strengths of Ionic and Covalent Bonds
+  bond_length:
+    label: Bond Length
+    sections:
+    - id: ch07_s7_5
+      title: 7.5 Strengths of Ionic and Covalent Bonds
+  lattice_energy:
+    label: Lattice Energy
+    sections:
+    - id: ch07_s7_5
+      title: 7.5 Strengths of Ionic and Covalent Bonds
+  born_haber_cycle:
+    label: Born-Haber Cycle
+    sections:
+    - id: ch07_s7_5
+      title: 7.5 Strengths of Ionic and Covalent Bonds
+  enthalpy_estimation_bond_energies:
+    label: Enthalpy Estimation from Bond Energies
+    sections:
+    - id: ch07_s7_5
+      title: 7.5 Strengths of Ionic and Covalent Bonds
+  vsepr_theory:
+    label: VSEPR Theory
+    sections:
+    - id: ch07_s7_6
+      title: 7.6 Molecular Structure and Polarity
+  electron_pair_geometry:
+    label: Electron-Pair Geometry
+    sections:
+    - id: ch07_s7_6
+      title: 7.6 Molecular Structure and Polarity
+  molecular_structure:
+    label: Molecular Structure
+    sections:
+    - id: ch07_s7_6
+      title: 7.6 Molecular Structure and Polarity
+  bond_angle:
+    label: Bond Angle
+    sections:
+    - id: ch07_s7_6
+      title: 7.6 Molecular Structure and Polarity
+  bond_dipole_moment:
+    label: Bond Dipole Moment
+    sections:
+    - id: ch07_s7_6
+      title: 7.6 Molecular Structure and Polarity
+  molecular_dipole_moment:
+    label: Molecular Dipole Moment
+    sections:
+    - id: ch07_s7_6
+      title: 7.6 Molecular Structure and Polarity
+  polar_molecule:
+    label: Polar Molecule
+    sections:
+    - id: ch07_s7_6
+      title: 7.6 Molecular Structure and Polarity

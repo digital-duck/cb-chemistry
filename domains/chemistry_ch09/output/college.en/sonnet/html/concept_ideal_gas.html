@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ideal Gas | Chemistry Ch09</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="ideal-gas">Ideal Gas</h2>
+<p>The ideal gas law is one of the most useful approximations in physical science because it lets you predict how pressure, volume, temperature, and quantity of a gas relate to one another using a single equation:</p>
+$$PV = nRT$$
+<p>Here $P$ is pressure, $V$ is volume, $n$ is the number of moles of gas, $T$ is absolute temperature (in kelvin), and $R$ is the universal gas constant ($8.314\ \text{J}\,\text{mol}^{-1}\text{K}^{-1}$, or equivalently $0.0821\ \text{L}\,\text{atm}\,\text{mol}^{-1}\text{K}^{-1}$). The "ideal" assumption is that gas particles have negligible volume and no intermolecular attractions — a good approximation for most gases at ordinary pressures and temperatures, though it breaks down at very high pressure or very low temperature, where real gases condense.</p>
+<p><strong>Worked example.</strong> Suppose you have 2.00 mol of an ideal gas confined to a 10.0 L tank at 300 K. What is the pressure?</p>
+<p>Solve the equation for $P$:</p>
+$$P = \frac{nRT}{V} = \frac{(2.00\ \text{mol})(0.0821\ \text{L atm mol}^{-1}\text{K}^{-1})(300\ \text{K})}{10.0\ \text{L}} \approx 4.93\ \text{atm}$$
+<p><strong>Problem-solving application.</strong> The real power of the ideal gas law is comparing two states of the same gas sample. If $n$ is constant, you can combine the law into the <strong>combined gas law</strong>:</p>
+$$\frac{P_1 V_1}{T_1} = \frac{P_2 V_2}{T_2}$$
+<p>For instance, a weather balloon released at ground level holds 800 L of helium at 1.00 atm and 293 K. As it rises, atmospheric pressure drops to 0.25 atm and temperature falls to 220 K. What is the new volume?</p>
+$$V_2 = V_1 \cdot \frac{P_1}{P_2} \cdot \frac{T_2}{T_1} = 800\ \text{L} \times \frac{1.00}{0.25} \times \frac{220}{293} \approx 2405\ \text{L}$$
+<p>The balloon expands roughly threefold — which is exactly why weather balloons are launched only partially inflated: engineers must design the envelope material to withstand this predictable expansion without bursting prematurely. This kind of before-and-after reasoning, holding $nR$ constant and tracking how the remaining variables trade off, is the core skill for applying the ideal gas law to real systems, from scuba tanks to internal combustion engines.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

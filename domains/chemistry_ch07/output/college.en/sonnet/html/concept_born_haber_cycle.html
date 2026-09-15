@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Born Haber Cycle | Chemistry Ch07</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="born-haber-cycle">Born Haber Cycle</h2>
+<p>The Born-Haber cycle is a thermodynamic tool that lets chemists calculate the lattice energy of an ionic compound — a quantity that cannot be measured directly — by applying Hess's Law to a sequence of measurable enthalpy changes. Because enthalpy is a state function, the total enthalpy change for forming a compound from its elements is the same whether it happens in one step or many. The Born-Haber cycle exploits this by breaking the formation of an ionic solid into steps whose enthalpies are known (sublimation, ionization energy, bond dissociation, electron affinity) and then solving for the one unknown step: lattice energy.</p>
+<p><strong>Worked example.</strong> Consider the formation of solid NaCl from its elements:</p>
+$$\text{Na}(s) + \tfrac{1}{2}\text{Cl}_2(g) \rightarrow \text{NaCl}(s), \quad \Delta H_f = -411 \text{ kJ/mol}$$
+<p>This single reaction is equivalent to five sequential steps:</p>
+<li>Sublimation of Na(s) → Na(g): $\Delta H_{sub} = +107$ kJ/mol</li>
+<li>Ionization of Na(g) → Na$^+$(g) + e$^-$: $\Delta H_{IE} = +496$ kJ/mol</li>
+<li>Dissociation of $\tfrac{1}{2}$Cl$_2$(g) → Cl(g): $\Delta H_{diss} = +122$ kJ/mol</li>
+<li>Electron affinity of Cl(g) + e$^-$ → Cl$^-$(g): $\Delta H_{EA} = -349$ kJ/mol</li>
+<li>Lattice formation: Na$^+$(g) + Cl$^-$(g) → NaCl(s): $\Delta H_{lattice} = ?$</li>
+<p>Because the overall path sums to the direct formation enthalpy:</p>
+$$\Delta H_f = \Delta H_{sub} + \Delta H_{IE} + \Delta H_{diss} + \Delta H_{EA} + \Delta H_{lattice}$$
+<p>Solving: $-411 = 107 + 496 + 122 - 349 + \Delta H_{lattice}$, giving $\Delta H_{lattice} = -787$ kJ/mol — a large negative value reflecting the strong electrostatic attraction between Na$^+$ and Cl$^-$ ions in the crystal lattice.</p>
+<p><strong>Problem-solving application.</strong> The cycle is most useful as a diagnostic. If an experimentally derived lattice energy (from the cycle) disagrees sharply with a theoretically predicted one (from a purely ionic electrostatic model), that gap signals covalent character in the bonding — common in compounds like AgCl or ZnS. Students can also use the cycle in reverse: given a known lattice energy and four of the five other steps, solve algebraically for the missing quantity, such as an unmeasured electron affinity. This makes the Born-Haber cycle a practical bookkeeping device as much as a conceptual model of ionic bond formation.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

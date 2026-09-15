@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nonspontaneous Process | Chemistry Ch16</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="nonspontaneous-process">Nonspontaneous Process</h2>
+<p>A nonspontaneous process is a chemical or physical change that will not occur on its own under a given set of conditions; it requires a continuous input of energy from outside the system to proceed. Thermodynamically, spontaneity is governed by the Gibbs free energy change, $\Delta G = \Delta H - T\Delta S$. A process is spontaneous when $\Delta G < 0$, at equilibrium when $\Delta G = 0$, and nonspontaneous in the forward direction when $\Delta G > 0$. Importantly, "nonspontaneous" does not mean "impossible" — it means the reverse reaction is favored, or that energy must be supplied to force the reaction forward. It also says nothing about speed: a nonspontaneous process is not simply a slow one; some spontaneous reactions are slow (like rust forming), while some nonspontaneous ones can be driven rapidly if enough energy is supplied.</p>
+<p>A classic worked example is the electrolysis of water: $2H_2O(l) \rightarrow 2H_2(g) + O_2(g)$. Under standard conditions, $\Delta G^\circ$ for this reaction is strongly positive (about $+474\ \text{kJ}$ for the equation as written), so water does not decompose into hydrogen and oxygen on its own. Only by passing an electric current through the water — supplying electrical energy that gets converted into chemical potential energy in the products — can the reaction be pushed forward. This is precisely why electrolysis requires a power source rather than happening spontaneously in a beaker of water sitting on a shelf.</p>
+<p>The practical skill is using $\Delta G = \Delta H - T\Delta S$ to predict and manage nonspontaneous behavior. Suppose a reaction has $\Delta H = +120\ \text{kJ}$ and $\Delta S = +150\ \text{J/K}$. At $T = 298\ \text{K}$, $\Delta G = 120\ \text{kJ} - (298\ \text{K})(0.150\ \text{kJ/K}) = 120 - 44.7 = +75.3\ \text{kJ}$, so the reaction is nonspontaneous at room temperature. But because $\Delta S$ is positive, raising the temperature makes the $-T\Delta S$ term more negative. Solving for the temperature at which $\Delta G = 0$ gives $T = \Delta H / \Delta S = 120{,}000\ \text{J} / 150\ \text{J/K} = 800\ \text{K}$. Above this temperature, the same reaction becomes spontaneous. This calculation — finding the crossover temperature — is a standard problem-solving technique for engineers and chemists deciding how to drive an otherwise unfavorable reaction, such as in metal smelting or industrial synthesis, by controlling temperature or coupling it to an external energy source.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

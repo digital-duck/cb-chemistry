@@ -1,0 +1,145 @@
+domain: chemistry_2e_ch3
+primitives:
+  atomic_mass:
+    defines: The average mass of an atom of an element in atomic mass units (amu), treated as a given
+      starting point from which formula masses are computed.
+    tier: 0
+  mole:
+    defines: An amount unit equal to 6.022 × 10²³ discrete entities, providing a bridge between the macroscopic
+      mass of a sample and the microscopic count of its atoms or molecules.
+    tier: 0
+  avogadros_number:
+    defines: The experimentally determined constant 6.022 × 10²³ mol⁻¹ representing the number of entities
+      in exactly one mole of substance.
+    tier: 0
+  solution:
+    defines: A homogeneous mixture of two or more substances with uniform composition and properties throughout
+      its entire volume.
+    tier: 0
+  solvent:
+    defines: The solution component present at the highest relative concentration, in which all other
+      components are dispersed.
+    tier: 0
+  solute:
+    defines: A solution component present at a lower concentration than the solvent, dispersed or dissolved
+      throughout the solution.
+    tier: 0
+concepts:
+  formula_mass:
+    defines: The sum of the average atomic masses of all atoms represented in a chemical formula, expressed
+      in amu.
+    composed_of:
+    - atomic_mass
+    tier: 1
+  aqueous_solution:
+    defines: A solution in which water is the solvent.
+    composed_of:
+    - solution
+    - solvent
+    tier: 1
+  concentration:
+    defines: A quantitative measure of the relative amount of solute present in a given amount of solution.
+    composed_of:
+    - solution
+    - solute
+    tier: 1
+  molecular_mass:
+    defines: The formula mass of a covalent compound, equal to the sum of average atomic masses of all
+      atoms in one molecule.
+    composed_of:
+    - formula_mass
+    tier: 2
+  molar_mass:
+    defines: The mass in grams of one mole of a substance, numerically equivalent to its formula mass
+      in amu, expressed in g/mol.
+    composed_of:
+    - formula_mass
+    - mole
+    tier: 2
+  percent_composition:
+    defines: The mass percentage of each element in a compound, calculated by dividing each element's
+      mass contribution by the compound's total formula mass and multiplying by 100.
+    composed_of:
+    - atomic_mass
+    - formula_mass
+    tier: 2
+  molarity:
+    defines: A concentration unit defined as the number of moles of solute dissolved in exactly one liter
+      of solution, with units of mol/L (M).
+    composed_of:
+    - concentration
+    - mole
+    tier: 2
+  dilution:
+    defines: The process of decreasing solution concentration by adding solvent, increasing total volume
+      while keeping moles of solute constant.
+    composed_of:
+    - concentration
+    - solvent
+    tier: 2
+  mass_percentage:
+    defines: A concentration unit expressing the ratio of solute mass to total solution mass as a percentage.
+    composed_of:
+    - concentration
+    tier: 2
+  volume_percentage:
+    defines: A concentration unit expressing the ratio of solute volume to total solution volume as a
+      percentage, commonly used for liquid solutes dissolved in liquid solvents.
+    composed_of:
+    - concentration
+    tier: 2
+  mass_volume_percentage:
+    defines: A mixed concentration unit expressing the ratio of solute mass to solution volume as a percentage,
+      widely used in biochemical and medical contexts.
+    composed_of:
+    - concentration
+    tier: 2
+  parts_per_million:
+    defines: A concentration unit equal to the ratio of solute mass to solution mass multiplied by 10⁶,
+      used to express trace-level concentrations of solutes such as environmental contaminants.
+    composed_of:
+    - concentration
+    tier: 2
+  parts_per_billion:
+    defines: A concentration unit equal to the ratio of solute mass to solution mass multiplied by 10⁹,
+      used for very low trace-level concentrations below the practical range of ppm.
+    composed_of:
+    - concentration
+    tier: 2
+  empirical_formula:
+    defines: The simplest whole-number ratio of atoms of each element in a compound, derived by converting
+      experimental element masses to molar amounts and reducing to the smallest integer ratio.
+    composed_of:
+    - molar_mass
+    tier: 3
+  empirical_formula_mass:
+    defines: The sum of the average atomic masses of all atoms represented in an empirical formula, used
+      to scale the empirical formula up to the molecular formula.
+    composed_of:
+    - empirical_formula
+    - atomic_mass
+    tier: 4
+  molecular_formula:
+    defines: The actual count of atoms of each element in one molecule of a covalent compound, obtained
+      by multiplying empirical formula subscripts by the ratio of molecular (or molar) mass to empirical
+      formula mass.
+    composed_of:
+    - empirical_formula
+    - empirical_formula_mass
+    - molar_mass
+    tier: 5
+applications:
+  mass_mole_conversion:
+    defines: The interconversion between a substance's mass and its amount in moles using molar mass as
+      the conversion factor.
+    needs:
+    - molar_mass
+    - mole
+    tier: 3
+  dilution_equation:
+    defines: The relationship C₁V₁ = C₂V₂ expressing conservation of moles of solute when a solution is
+      diluted from an initial concentration and volume to a final concentration and volume.
+    needs:
+    - dilution
+    - molarity
+    tier: 3

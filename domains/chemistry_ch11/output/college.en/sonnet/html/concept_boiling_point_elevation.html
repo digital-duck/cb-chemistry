@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boiling Point Elevation | Chemistry Ch11</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="boiling-point-elevation">Boiling Point Elevation</h2>
+<p>When you dissolve a nonvolatile solute — one that doesn't itself evaporate — into a liquid solvent, the resulting solution boils at a higher temperature than the pure solvent does. This is boiling point elevation, and it belongs to a family of behaviors called colligative properties: effects that depend on how many solute particles are dissolved, not on what those particles chemically are. Adding salt, sugar, or any other nonvolatile solute to water raises its boiling point, and the size of the effect scales with particle concentration.</p>
+<p>The reason is rooted in vapor pressure. A liquid boils when its vapor pressure equals atmospheric pressure. Solute particles occupy space at the liquid's surface and disrupt the solvent's ability to escape into vapor, lowering the vapor pressure at any given temperature. To restore boiling, you must heat the solution further. This relationship is captured by the equation:</p>
+$$\Delta T_b = i \cdot K_b \cdot m$$
+<p>Here, $\Delta T_b$ is the boiling point elevation, $K_b$ is the ebullioscopic constant (a property specific to the solvent, e.g., $0.512\ ^\circ\text{C·kg/mol}$ for water), $m$ is the molality of the solution (moles of solute per kilogram of solvent), and $i$ is the van't Hoff factor — the number of particles each solute unit produces in solution.</p>
+<p><strong>Worked example</strong>: Suppose you dissolve 1.0 mole of table salt (NaCl) in 1.0 kg of water. NaCl dissociates into two ions, Na⁺ and Cl⁻, so $i = 2$. Using water's $K_b = 0.512\ ^\circ\text{C·kg/mol}$:</p>
+$$\Delta T_b = 2 \times 0.512 \times 1.0 = 1.024\ ^\circ\text{C}$$
+<p>Water normally boils at $100\ ^\circ\text{C}$, so this solution boils at approximately $101.02\ ^\circ\text{C}$. Compare this to dissolving 1.0 mole of glucose (a molecular, non-dissociating solute) in the same amount of water: since $i = 1$, $\Delta T_b = 0.512\ ^\circ\text{C}$, only half as much elevation, despite using the same number of moles of solute.</p>
+<p><strong>Problem-solving application</strong>: This distinction — that ionic compounds elevate boiling point more than molecular ones at equal molality — is exactly why road crews use salt rather than sugar to melt ice (via the related freezing point depression), and why food scientists must account for salt content when calibrating candy-making thermometers. To solve real problems, always identify $i$ correctly first: check whether the solute dissociates, and into how many ions, before applying the formula.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

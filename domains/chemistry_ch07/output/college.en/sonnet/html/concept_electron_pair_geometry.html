@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electron Pair Geometry | Chemistry Ch07</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="electron-pair-geometry">Electron Pair Geometry</h2>
+<p>Electron pair geometry describes the three-dimensional arrangement of all electron groups—bonding pairs and lone pairs alike—around a central atom in a molecule. The organizing principle is VSEPR theory (Valence Shell Electron Pair Repulsion): because electron groups are negatively charged, they repel one another and spread out to maximize the distance between them. The number of electron groups around the central atom determines a specific geometry: two groups give a linear arrangement ($180°$ apart), three give trigonal planar ($120°$), four give tetrahedral ($109.5°$), five give trigonal bipyramidal, and six give octahedral ($90°$ and $180°$). Note the distinction between <em>electron pair geometry</em>, which counts every electron group, and <em>molecular geometry</em>, which describes only the positions of atoms—lone pairs are invisible in the final shape but still push bonding pairs around.</p>
+<p><strong>Worked example.</strong> Consider ammonia, $\text{NH}_3$. Nitrogen has five valence electrons, three of which form bonds to hydrogen atoms, leaving one lone pair. Counting electron groups: three bonding pairs plus one lone pair equals four total groups. Four groups always arrange themselves tetrahedrally to minimize repulsion, so the electron pair geometry of $\text{NH}_3$ is tetrahedral. However, since one of those four positions is occupied by a lone pair (not an atom), the <em>molecular</em> geometry—what you'd actually see if you could photograph the molecule—is trigonal pyramidal. The lone pair also compresses the H–N–H bond angle slightly below the ideal $109.5°$, to about $107°$, because lone-pair–bond-pair repulsion is stronger than bond-pair–bond-pair repulsion.</p>
+<p><strong>Problem-solving application.</strong> To predict geometry for any molecule, follow three steps: (1) draw the Lewis structure and identify the central atom, (2) count the total electron groups around it (each bond—single, double, or triple—counts as one group, and each lone pair counts as one group), and (3) match that count to the corresponding electron pair geometry, then remove lone pairs mentally to get the molecular geometry. Try this on water, $\text{H}_2\text{O}$: oxygen has two bonding pairs and two lone pairs, giving four total groups (tetrahedral electron pair geometry), but only two atoms attached, yielding a bent molecular geometry with an even more compressed angle of about $104.5°$—a direct, testable consequence of two lone pairs each pushing the bonds inward.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

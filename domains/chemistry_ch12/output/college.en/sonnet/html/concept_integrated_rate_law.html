@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Integrated Rate Law | Chemistry Ch12</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="integrated-rate-law">Integrated Rate Law</h2>
+<p>A rate law like $\text{rate} = k[A]$ tells you how fast a reaction is going at a single instant, but it doesn't directly answer a question chemists care about most: how much reactant is left after a given amount of time? The <strong>integrated rate law</strong> answers this by converting a differential rate expression into an equation for concentration as a function of time.</p>
+<p>For a first-order reaction, $A \rightarrow \text{products}$, the rate law is $-\frac{d[A]}{dt} = k[A]$. Using calculus, this differential equation integrates to:</p>
+$$\ln[A]_t = \ln[A]_0 - kt$$
+<p>or equivalently $[A]_t = [A]_0 e^{-kt}$. This exponential decay form is intrinsic to first-order kinetics — it isn't optional notation, it's what "first-order" mathematically means. Other reaction orders have their own integrated forms: zero-order gives $[A]_t = [A]_0 - kt$ (a straight line in $[A]$ vs. $t$), and second-order gives $\frac{1}{[A]_t} = \frac{1}{[A]_0} + kt$ (a straight line in $\frac{1}{[A]}$ vs. $t$).</p>
+<p><strong>Worked example.</strong> Suppose a drug in the bloodstream decomposes by first-order kinetics with $k = 0.0231\ \text{hr}^{-1}$, and the initial concentration is $[A]_0 = 80\ \mu\text{mol/L}$. What is the concentration after 24 hours?</p>
+$$\ln[A]_{24} = \ln(80) - (0.0231)(24) = 4.382 - 0.554 = 3.828$$
+$$[A]_{24} = e^{3.828} \approx 46\ \mu\text{mol/L}$$
+<p><strong>Problem-solving application.</strong> The real power of integrated rate laws is diagnostic: if you have concentration-vs-time data but don't know the reaction order, plot $\ln[A]$, $[A]$, and $\frac{1}{[A]}$ separately against $t$. Whichever plot is linear reveals the order, and its slope gives $k$ directly (slope $= -k$ for first-order, $= -k$ for zero-order, $= +k$ for second-order). This is exactly how pharmacologists determine drug elimination kinetics, how environmental scientists model pollutant decay, and how you can predict, for any future time, exactly how much reactant — or drug, or contaminant — remains, rather than only knowing its rate at one instant.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

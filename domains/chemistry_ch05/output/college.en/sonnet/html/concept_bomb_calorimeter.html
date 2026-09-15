@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bomb Calorimeter | Chemistry Ch05</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="bomb-calorimeter">Bomb Calorimeter</h2>
+<p>A bomb calorimeter is a sealed device used to measure the heat released by a combustion reaction at constant volume. The "bomb" is a thick-walled steel container that holds a sample and pressurized oxygen; when the sample is ignited electrically, it burns completely, and the heat released flows into a surrounding water bath. Because the container's volume never changes, all of the reaction's internal energy change is transferred as heat — none is lost to work of expansion. This makes the bomb calorimeter the standard tool for measuring $\Delta U$ of combustion reactions, most commonly used to determine the caloric content of foods and fuels.</p>
+<p>The energy balance for the system is straightforward: heat released by combustion equals heat absorbed by the calorimeter and its water bath. This is expressed as</p>
+$$q_{rxn} = -C_{cal}\Delta T$$
+<p>where $C_{cal}$ is the calorimeter's heat capacity (in J/°C) and $\Delta T$ is the observed temperature rise. Because $C_{cal}$ depends on the exact mass of water and metal in a given setup, it must first be calibrated by burning a sample whose heat of combustion is already known precisely.</p>
+<p><strong>Worked example.</strong> A lab calibrates its calorimeter by burning 1.000 g of benzoic acid, a standard reference compound with a known $\Delta U_{comb} = -26.4\ \text{kJ/g}$, and observes $\Delta T = 2.857°C$. Solving $q_{rxn} = -C_{cal}\Delta T$ for $C_{cal}$ gives</p>
+$$C_{cal} = \frac{26.4\ \text{kJ}}{2.857°C} = 9.24\ \text{kJ/°C}$$
+<p>Using this calibrated value, the lab burns 1.00 g of glucose and measures $\Delta T = 3.55°C$:</p>
+$$q_{rxn} = -(9.24\ \text{kJ/°C})(3.55°C) = -32.8\ \text{kJ}$$
+<p>Since this came from 1.00 g of glucose, the energy content is about 32.8 kJ/g, consistent with literature values for glucose combustion.</p>
+<p><strong>Problem-solving application.</strong> With the calorimeter already calibrated to $C_{cal} = 9.24\ \text{kJ/°C}$, a nutrition lab can now verify the caloric label on a snack bar. Burning a 2.00 g sample produces $\Delta T = 6.20°C$, so</p>
+$$q_{rxn} = -(9.24\ \text{kJ/°C})(6.20°C) = -57.3\ \text{kJ}$$
+<p>Dividing by the sample mass gives about 28.6 kJ/g, or roughly 6.8 Calories per gram — a number the lab can compare directly against the package's nutritional claim. Any mismatch points to either an inaccurate label or an error in sample mass, ignition, or calibration.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heisenberg Uncertainty Principle | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="heisenberg-uncertainty-principle">Heisenberg Uncertainty Principle</h2>
+<p>At the quantum scale, some pairs of physical properties cannot both be known with arbitrary precision at the same time — not because of measurement clumsiness, but as a fundamental feature of nature. The most famous pair is position and momentum. Werner Heisenberg formalized this in 1927:</p>
+$$\Delta x \, \Delta p \geq \frac{\hbar}{2}$$
+<p>Here $\Delta x$ is the uncertainty (standard deviation) in a particle's position, $\Delta p$ is the uncertainty in its momentum, and $\hbar = h/2\pi \approx 1.055 \times 10^{-34}\ \text{J·s}$ is the reduced Planck constant. The inequality says that the product of these two uncertainties has an unavoidable floor: shrink one, and the other must grow to compensate. This is not a limitation of instruments — it follows from the wave nature of matter itself. A particle with a perfectly defined momentum corresponds to a wave of a single, infinitely extended wavelength, which has no localized position at all; to localize the particle, you must superpose many wavelengths, which spreads out its momentum.</p>
+<p><strong>Worked example.</strong> Suppose an electron is confined to a region of width $\Delta x = 1.0 \times 10^{-10}\ \text{m}$ (roughly the size of an atom). The minimum uncertainty in momentum is:</p>
+$$\Delta p \geq \frac{\hbar}{2 \Delta x} = \frac{1.055 \times 10^{-34}}{2 \times 1.0 \times 10^{-10}} \approx 5.3 \times 10^{-25}\ \text{kg·m/s}$$
+<p>Dividing by the electron's mass ($m_e \approx 9.11 \times 10^{-31}\ \text{kg}$) converts this to a speed uncertainty of about $5.8 \times 10^{5}\ \text{m/s}$ — a substantial fraction of typical atomic electron speeds. This is why electrons in atoms cannot be pictured as tiny orbiting balls with a definite position and velocity; confining an electron to an atomic-sized region forces a large spread in its speed.</p>
+<p><strong>Problem-solving application.</strong> The principle is a practical constraint, not just a curiosity. It explains why atoms don't collapse: squeezing an electron closer to the nucleus (reducing $\Delta x$) forces $\Delta p$ up, raising kinetic energy and creating an effective outward pressure that balances electrostatic attraction. Setting the two energy contributions — the electrostatic attraction pulling the electron in and the kinetic energy implied by the momentum uncertainty pushing it out — against each other, and finding the radius that minimizes total energy, reproduces the correct order of magnitude for the size of a hydrogen atom, without ever solving the full Schrödinger equation. The same reasoning sets practical design limits in technologies like scanning tunneling microscopes and quantum sensors, where engineers must budget how tightly they can localize a particle before momentum noise degrades a measurement.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

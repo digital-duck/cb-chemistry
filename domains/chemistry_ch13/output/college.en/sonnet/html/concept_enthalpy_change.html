@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enthalpy Change | Chemistry Ch13</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="enthalpy-change">Enthalpy Change</h2>
+<p>Enthalpy ($H$) is a measure of the total heat content of a system at constant pressure, defined as $H = U + PV$, where $U$ is internal energy, $P$ is pressure, and $V$ is volume. Because most chemical reactions occur in open containers exposed to constant atmospheric pressure, chemists rarely track internal energy directly — they track enthalpy change, $\Delta H$, which equals the heat absorbed or released by a reaction at constant pressure: $\Delta H = q_p$. A negative $\Delta H$ signals an exothermic reaction (heat released, energy flows to the surroundings), while a positive $\Delta H$ signals an endothermic reaction (heat absorbed from the surroundings). A key property of $\Delta H$ is that it depends only on the initial and final states of the system, not on the path taken to get there — a reaction broken into several steps has an overall $\Delta H$ equal to the sum of the $\Delta H$ values of the individual steps.</p>
+<p><strong>Worked example.</strong> Consider the combustion of methane:</p>
+$$\text{CH}_4(g) + 2\text{O}_2(g) \rightarrow \text{CO}_2(g) + 2\text{H}_2\text{O}(l), \quad \Delta H = -890.4 \text{ kJ/mol}$$
+<p>This tells us that burning one mole of methane releases 890.4 kJ of heat. Suppose a camping stove burns 32 g of methane (molar mass 16 g/mol, so 2 mol). The total heat released is:</p>
+$$\Delta H_{\text{total}} = 2 \text{ mol} \times (-890.4 \text{ kJ/mol}) = -1780.8 \text{ kJ}$$
+<p>That energy could, in principle, raise the temperature of about 4.25 L of water from room temperature to boiling, using $q = mc\Delta T$ with water's specific heat $c = 4.18 \text{ J/g·°C}$.</p>
+<p><strong>Problem-solving application.</strong> The path-independence of $\Delta H$ is the tool chemists use to calculate enthalpy changes for reactions that are difficult or dangerous to measure directly — this strategy is known as Hess's Law. For instance, to find $\Delta H$ for $\text{C(graphite)} + \frac{1}{2}\text{O}_2 \rightarrow \text{CO}$, a reaction hard to isolate from further oxidation to $\text{CO}_2$, one combines the known combustion enthalpies of graphite (to $\text{CO}_2$) and of CO (to $\text{CO}_2$), reversing and scaling equations as needed while flipping the sign of $\Delta H$ whenever a reaction is reversed. This additive strategy — decompose an unknown process into known steps, then sum the enthalpies — is the core problem-solving skill: engineers use it to estimate fuel efficiency, and biochemists use it to analyze metabolic pathways where each enzymatic step contributes its own $\Delta H$ to the overall energy balance of the cell.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

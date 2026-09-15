@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Equilibrium Constant | Chemistry Ch13</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="equilibrium-constant">Equilibrium Constant</h2>
+<p>For a reversible reaction, the forward and reverse rates become equal at equilibrium, but this does not mean the reactants and products are present in equal amounts. Instead, their concentrations settle into a fixed ratio that depends on the reaction and the temperature. This ratio is captured by the equilibrium constant $K$.</p>
+<p>For a general reaction</p>
+$$aA + bB \rightleftharpoons cC + dD,$$
+<p>the equilibrium constant is defined as</p>
+$$K = \frac{[C]^c[D]^d}{[A]^a[B]^b},$$
+<p>where each concentration term is raised to the power of its stoichiometric coefficient. Pure solids and liquids are omitted because their "concentrations" (densities) do not change during the reaction. $K$ is a genuine theoretical result — it follows directly from the condition that forward and reverse rates are equal, so it earns its formal notation.</p>
+<p><strong>Worked example.</strong> Consider the synthesis of ammonia:</p>
+$$N_2(g) + 3H_2(g) \rightleftharpoons 2NH_3(g).$$
+<p>At a given temperature, an equilibrium mixture is measured to have $[N_2] = 0.50\ \text{M}$, $[H_2] = 1.00\ \text{M}$, and $[NH_3] = 0.30\ \text{M}$. Substituting into the expression:</p>
+$$K = \frac{[NH_3]^2}{[N_2][H_2]^3} = \frac{(0.30)^2}{(0.50)(1.00)^3} = \frac{0.090}{0.50} = 0.18.$$
+<p>A small $K$ like this tells us that, at equilibrium, reactants are favored over products — the mixture contains relatively little ammonia compared to nitrogen and hydrogen.</p>
+<p><strong>Problem-solving application.</strong> The real power of $K$ is predictive. Suppose you measure a mixture that is <em>not</em> yet at equilibrium — say, a flask of $N_2$, $H_2$, and $NH_3$ mixed together before any reaction occurs. Plug those concentrations into the very same expression used to define $K$. If the resulting number is smaller than the true $K$, the mixture has "too much reactant" relative to equilibrium, so the reaction will proceed forward, building up more product until the ratio matches $K$. If the resulting number is larger than $K$, the reaction runs in reverse instead, consuming product to rebuild reactant. If it already equals $K$, the mixture is at equilibrium and nothing shifts. In other words, you never need a second formula: recomputing the $K$ expression with whatever concentrations you currently have — rather than the equilibrium ones — tells you which direction the reaction is headed. This is the standard tool chemists use to answer questions like "will more product form if I add more hydrogen gas?" without re-solving the full equilibrium problem from scratch.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

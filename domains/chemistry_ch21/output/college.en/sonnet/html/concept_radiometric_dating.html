@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radiometric Dating | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="radiometric-dating">Radiometric Dating</h2>
+<p>Radiometric dating determines the age of a material by measuring the ratio of a radioactive "parent" isotope to its stable "daughter" isotope. Radioactive decay is a random process at the level of individual atoms, but for a large sample it follows a precise exponential law: the number of parent atoms remaining after time $t$ is</p>
+$$N(t) = N_0 e^{-\lambda t}$$
+<p>where $N_0$ is the initial quantity, and $\lambda$ is the decay constant specific to the isotope. This exponential behavior is not an approximation chosen for convenience — it follows from the fact that each atom has the same constant probability of decaying per unit time, independent of the atom's age or its neighbors. The half-life, $t_{1/2} = \ln 2 / \lambda$, is the time for half of the parent atoms to decay, and is the quantity usually reported for a given isotope (e.g., $5{,}730$ years for carbon-14).</p>
+<p><strong>Worked example.</strong> Suppose a fossil contains 12.5% of the carbon-14 found in living tissue. Since $12.5\% = (1/2)^3$, three half-lives have elapsed: $t = 3 \times 5{,}730 = 17{,}190$ years. More generally, solving $N/N_0 = e^{-\lambda t}$ for $t$ gives</p>
+$$t = \frac{\ln(N_0/N)}{\lambda} = \frac{t_{1/2}}{\ln 2}\ln\!\left(\frac{N_0}{N}\right).$$
+<p>For a remaining fraction of 30%, $t = \dfrac{5{,}730}{\ln 2}\ln(1/0.30) \approx 9{,}950$ years.</p>
+<p><strong>Problem-solving application.</strong> In practice, scientists rarely know $N_0$ directly; instead they measure the present ratio of parent to daughter isotope, since every decayed parent atom becomes one daughter atom. If $P$ is the parent count and $D$ is the accumulated daughter count today, then $N_0 = P + D$ and $N = P$, so</p>
+$$t = \frac{t_{1/2}}{\ln 2}\ln\!\left(\frac{P+D}{P}\right) = \frac{t_{1/2}}{\ln 2}\ln\!\left(1+\frac{D}{P}\right).$$
+<p>This form is what geologists actually use in the field: measure the parent-to-daughter ratio in a rock sample, plug in the known half-life for that isotope pair (e.g., uranium-238 to lead-206, half-life 4.5 billion years), and solve for $t$. Choosing the right isotope pair for the timescale in question — carbon-14 for organic material under ~50,000 years old, uranium-lead for rocks billions of years old — is itself a key problem-solving skill, since a pair with too short a half-life will show essentially zero parent atoms remaining, while one with too long a half-life will show no measurable decay at all.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

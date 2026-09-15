@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buffer Solution | Chemistry Ch14</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="buffer-solution">Buffer Solution</h2>
+<p>A buffer solution resists changes in pH when small amounts of acid or base are added to it. This resistance comes from a specific composition: a buffer contains a weak acid together with its conjugate base (or a weak base together with its conjugate acid) in comparable concentrations. Because both species are present simultaneously, the solution has a built-in reserve that can neutralize incoming $\text{H}^+$ or $\text{OH}^-$ ions without producing a large swing in pH.</p>
+<p>The quantitative relationship governing buffers is the Henderson–Hasselbalch equation:</p>
+$$\text{pH} = \text{p}K_a + \log\left(\frac{[\text{A}^-]}{[\text{HA}]}\right)$$
+<p>where $\text{HA}$ is the weak acid and $\text{A}^-$ is its conjugate base. This equation is essential here because a buffer's behavior is fundamentally a statement about equilibrium ratios, and no amount of prose substitutes for tracking how that ratio shifts.</p>
+<p><strong>Worked example.</strong> Suppose you prepare a buffer from acetic acid ($K_a = 1.8 \times 10^{-5}$, so $\text{p}K_a = 4.74$) with $[\text{CH}_3\text{COOH}] = 0.20\ \text{M}$ and $[\text{CH}_3\text{COO}^-] = 0.20\ \text{M}$. Since the ratio is 1, $\log(1) = 0$, so $\text{pH} = 4.74$. Now add a small amount of strong base, enough to convert 0.02 M of the acid into its conjugate base. The new concentrations are $[\text{CH}_3\text{COOH}] = 0.18\ \text{M}$ and $[\text{CH}_3\text{COO}^-] = 0.22\ \text{M}$. Plugging in:</p>
+$$\text{pH} = 4.74 + \log\left(\frac{0.22}{0.18}\right) = 4.74 + 0.087 \approx 4.83$$
+<p>The pH shifted by less than 0.1 units — compare this to adding the same amount of base to pure water, which would jump the pH by several units.</p>
+<p><strong>Problem-solving application.</strong> Buffers are used whenever a system must maintain a stable pH despite ongoing chemical activity: human blood uses a carbonic acid/bicarbonate buffer to stay near pH 7.4 despite metabolic acid production; biochemists use phosphate or Tris buffers to keep enzyme reactions at their optimal pH; and industrial processes use buffers to protect sensitive reactions from pH drift. When solving buffer problems, always start by identifying the weak acid/base pair, find or look up its $\text{p}K_a$, and then use the desired pH to solve for the required ratio of conjugate base to acid — this ratio, not the absolute concentrations, is what determines the pH, though total concentration determines buffer capacity.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

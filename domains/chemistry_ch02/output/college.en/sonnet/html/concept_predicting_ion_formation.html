@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Predicting Ion Formation | Chemistry Ch02</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="predicting-ion-formation">Predicting Ion Formation</h2>
+<p>Atoms form ions—charged particles—by gaining or losing electrons to reach a more stable electron configuration, typically one resembling the nearest noble gas. Metals, which have low ionization energies, tend to lose electrons and form cations (positive ions). Nonmetals, which have high electron affinities, tend to gain electrons and form anions (negative ions). The number of electrons an element gains or loses is governed largely by its position in the periodic table: elements in Groups 1, 2, and 13 typically lose 1, 2, or 3 electrons respectively, while elements in Groups 15, 16, and 17 typically gain 3, 2, or 1 electrons respectively, in each case to achieve a filled outer shell of eight electrons (the octet rule).</p>
+<p><strong>Worked example.</strong> Consider sodium (Na, atomic number 11) and chlorine (Cl, atomic number 17). Sodium's electron configuration is $1s^2 2s^2 2p^6 3s^1$—one lone electron in its outer shell. Losing that electron gives sodium the stable configuration of neon ($1s^2 2s^2 2p^6$) and a charge of $+1$, so sodium forms $\text{Na}^+$. Chlorine's configuration is $1s^2 2s^2 2p^6 3s^2 3p^5$—one electron short of a full outer shell. Gaining one electron gives chlorine the configuration of argon and a charge of $-1$, so chlorine forms $\text{Cl}^-$. The oppositely charged ions then attract each other, forming the ionic compound NaCl.</p>
+<p><strong>Problem-solving application.</strong> To predict the charge an element's ion will most likely adopt, first identify its group number, then count how many electrons must be added or removed to reach the nearest noble gas configuration—whichever direction requires fewer electrons moved. For example, magnesium (Group 2) loses 2 electrons to form $\text{Mg}^{2+}$ rather than gaining 6 to fill its shell, because losing 2 electrons requires far less energy. Oxygen (Group 16) gains 2 electrons to form $\text{O}^{2-}$ rather than losing 6. This reasoning lets you predict not only the charge of a monatomic ion but also the likely formula of an ionic compound: since compounds are electrically neutral overall, magnesium ($+2$) and oxygen ($-2$) combine in a 1:1 ratio to form MgO, while magnesium and chlorine ($-1$ each) combine in a 1:2 ratio to form $\text{MgCl}_2$—balancing total positive and negative charge to zero.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solubility Equilibrium | Chemistry Ch15</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="solubility-equilibrium">Solubility Equilibrium</h2>
+<p>When an ionic solid is added to water, it dissolves until the solution becomes saturated — the point where dissolution and precipitation occur at equal rates. At this dynamic equilibrium, the solid, its dissolved ions, and the solution coexist in balance. For a generic salt $\text{A}_m\text{B}_n$, the equilibrium is written:</p>
+$$\text{A}_m\text{B}_{n(s)} \rightleftharpoons m\,\text{A}^{n+}_{(aq)} + n\,\text{B}^{m-}_{(aq)}$$
+<p>Because the solid's concentration is constant, the equilibrium expression uses only the dissolved ion concentrations, defining the solubility product constant:</p>
+$$K_{sp} = [\text{A}^{n+}]^m[\text{B}^{m-}]^n$$
+<p>$K_{sp}$ is a fixed value at a given temperature, characteristic of the compound, and it tells you how far dissolution proceeds before precipitation balances it.</p>
+<p><strong>Worked example.</strong> Silver chloride, AgCl, has $K_{sp} = 1.8 \times 10^{-10}$ at 25°C. Find its molar solubility, $s$, in pure water.</p>
+$$\text{AgCl}_{(s)} \rightleftharpoons \text{Ag}^+_{(aq)} + \text{Cl}^-_{(aq)}$$
+<p>Each mole of AgCl that dissolves produces one mole of Ag$^+$ and one mole of Cl$^-$, so $[\text{Ag}^+] = [\text{Cl}^-] = s$. Substituting:</p>
+$$K_{sp} = s \cdot s = s^2 = 1.8 \times 10^{-10}$$
+$$s = \sqrt{1.8 \times 10^{-10}} \approx 1.3 \times 10^{-5}\ \text{mol/L}$$
+<p><strong>Problem-solving application.</strong> $K_{sp}$ becomes powerful when predicting whether a precipitate will form under real conditions — for example, mixing two solutions in water treatment or geochemistry. You compute the <em>ion product</em>, $Q$, using actual (not equilibrium) concentrations, and compare it to $K_{sp}$: if $Q > K_{sp}$, the solution is supersaturated and precipitation occurs; if $Q < K_{sp}$, more solid can dissolve; if $Q = K_{sp}$, the system is at equilibrium.</p>
+<p>This same logic explains the <strong>common-ion effect</strong>: adding a soluble salt that shares an ion with a sparingly soluble one (e.g., adding NaCl to a AgCl solution) raises $[\text{Cl}^-]$, which shifts the equilibrium to reduce $[\text{Ag}^+]$ and lowers AgCl's solubility — a principle used deliberately in selective precipitation to separate metal ions in qualitative analysis.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

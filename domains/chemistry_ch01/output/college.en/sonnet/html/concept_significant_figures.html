@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Significant Figures | Chemistry Ch01</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="significant-figures">Significant Figures</h2>
+<p><strong>Definition.</strong> The <em>significant figures</em> (sig figs) of a measured or computed quantity are the digits that carry meaningful information about its precision: all nonzero digits, any zeros between nonzero digits, and trailing zeros to the right of a decimal point. Leading zeros (e.g., in $0.0042$) are not significant; they merely fix the decimal position. Formally, if a number is written in scientific notation as $a \times 10^{n}$ with $1 \le |a| < 10$, the significant figures are precisely the digits of the mantissa $a$.</p>
+<p><strong>Worked example.</strong> Consider the measurement $x = 0.003040$ m. In scientific notation, $x = 3.040 \times 10^{-3}$ m. The mantissa $3.040$ has four digits, all significant: the leading zeros in $0.003040$ are not significant, but the trailing zero after the decimal point is, since it signals that the measurement is precise to that place. If this value is multiplied by a constant $c = 2.0$ (two sig figs), the product $c x = 6.080 \times 10^{-3}$ must be rounded to two significant figures, yielding $6.1 \times 10^{-3}$, since the result cannot be more precise than the least precise factor.</p>
+<p><strong>Key theorem (propagation of significant figures).</strong> For multiplication or division of quantities $x_1, \dots, x_k$ with $n_1, \dots, n_k$ significant figures respectively, the result should be reported with $\min(n_1, \dots, n_k)$ significant figures. For addition or subtraction, the result's precision is instead governed by the least precise <em>decimal place</em> among the operands, not the count of significant figures. This asymmetry reflects the distinction between relative error (multiplicative operations) and absolute error (additive operations).</p>
+<p><strong>Lab cell (SymPy).</strong></p>
+<pre><code>from sympy import Float, N
+
+def round_to_sig_figs(x, n):
+    return float(N(Float(x), n))
+
+x1 = round_to_sig_figs(0.003040, 4)   # 0.003040
+x2 = round_to_sig_figs(2.0, 2)
+product = round_to_sig_figs(x1 * x2, 2)
+print(product)  # 0.0061</code></pre>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

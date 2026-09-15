@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lattice Energy | Chemistry Ch07</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="lattice-energy">Lattice Energy</h2>
+<p>Lattice energy is the energy released when gaseous ions combine to form one mole of an ionic solid, or equivalently, the energy required to separate that solid completely into its gaseous ions. For a compound like $\text{NaCl}$, lattice energy is the energy change for $\text{Na}^+(g) + \text{Cl}^-(g) \rightarrow \text{NaCl}(s)$. It is a direct measure of the strength of the electrostatic attraction holding an ionic crystal together, and it explains properties like melting point, hardness, and solubility that simple bonding pictures cannot.</p>
+<p>Because the attraction between ions is fundamentally an electrostatic (Coulombic) interaction, lattice energy does have a genuine quantitative basis rooted in Coulomb's law:</p>
+$$E \propto \frac{Q_1 Q_2}{r}$$
+<p>where $Q_1$ and $Q_2$ are the magnitudes of the ionic charges and $r$ is the distance between ion centers (essentially the sum of ionic radii). This relationship lets us make and check predictions without needing the full Born–Haber calculation that gives lattice energy's precise experimental value.</p>
+<p><strong>Worked example:</strong> Compare the lattice energies of $\text{NaCl}$ and $\text{MgO}$. Sodium and chloride ions each carry a charge of 1, while magnesium and oxide ions each carry a charge of 2. Ionic radii are similar in scale for both pairs. Since lattice energy scales with the product of the charges, $\text{MgO}$'s product is $2 \times 2 = 4$, four times $\text{NaCl}$'s $1 \times 1 = 1$. This predicts $\text{MgO}$ should have a dramatically larger lattice energy — consistent with experimental values (~3800 kJ/mol for MgO vs. ~790 kJ/mol for NaCl) and with MgO's much higher melting point (2852 °C vs. 801 °C).</p>
+<p><strong>Problem-solving application:</strong> Rank $\text{LiF}$, $\text{LiCl}$, and $\text{LiBr}$ by predicted lattice energy. All three pairs have charges of $+1$ and $-1$, so charge doesn't differentiate them — instead, focus on ionic radius, which increases down the halogen group ($\text{F}^- < \text{Cl}^- < \text{Br}^-$). Since $E \propto 1/r$, larger radius means smaller lattice energy, so the predicted order is $\text{LiF} > \text{LiCl} > \text{LiBr}$. This trend-based reasoning — charge dominates when it differs, radius decides when charge is equal — is the key problem-solving strategy for lattice energy comparisons, and it generalizes to predicting relative melting points, hardness, and solubility across families of ionic compounds.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

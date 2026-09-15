@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charles Law | Chemistry Ch09</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="charles-law">Charles Law</h2>
+<p>Charles's Law states that at constant pressure, the volume of a fixed amount of gas is directly proportional to its absolute temperature. Formally, $\dfrac{V}{T} = k$, where $V$ is volume, $T$ is temperature in kelvin, and $k$ is a constant for a given sample of gas at fixed pressure. Because the relationship is a direct proportion — not merely a correlation — doubling the absolute temperature doubles the volume, provided pressure and the amount of gas do not change. This law is a special case of the ideal gas law, $PV = nRT$, obtained by holding $P$ and $n$ constant. The requirement to use absolute (kelvin) temperature is essential: the proportionality only holds when zero corresponds to zero molecular kinetic energy, which is the physical meaning of absolute zero. Using Celsius or Fahrenheit would break the direct proportionality and give incorrect predictions.</p>
+<p><strong>Worked example.</strong> A balloon holds $2.50\text{ L}$ of air at $20^\circ\text{C}$ ($293.15\text{ K}$). If the balloon is heated to $80^\circ\text{C}$ ($353.15\text{ K}$) at constant pressure, what is its new volume? Since $\dfrac{V_1}{T_1} = \dfrac{V_2}{T_2}$, we solve for $V_2$:</p>
+$$V_2 = V_1 \cdot \frac{T_2}{T_1} = 2.50\text{ L} \times \frac{353.15\text{ K}}{293.15\text{ K}} \approx 3.01\text{ L}$$
+<p>The volume increases by about 20%, matching the roughly 20% increase in absolute temperature — a direct consequence of the proportional relationship.</p>
+<p><strong>Problem-solving application.</strong> Charles's Law is the reasoning behind hot-air balloons, the behavior of weather balloons at altitude, and safety warnings on aerosol cans ("do not store above 120°F"). Suppose an engineer needs a balloon to expand from $1200\text{ m}^3$ at $15^\circ\text{C}$ to $1500\text{ m}^3$ using a propane burner, at roughly constant atmospheric pressure. Rearranging the law gives:</p>
+$$T_2 = T_1 \cdot \frac{V_2}{V_1} = 288.15\text{ K} \times \frac{1500}{1200} = 360.19\text{ K} \approx 87^\circ\text{C}$$
+<p>This calculation tells the engineer the minimum internal air temperature required — a direct, practical application of proportional reasoning to a real design constraint, and a reminder that gas laws are tools for prediction, not just descriptions of behavior.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

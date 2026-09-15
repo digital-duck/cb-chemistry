@@ -1,0 +1,122 @@
+domain: chemistry_2e
+sources:
+  reversible_reaction:
+    label: Reversible Reaction
+    sections:
+    - id: ch13_s13_1
+      title: 13.1 Chemical Equilibria
+  reaction_rate:
+    label: Reaction Rate
+    sections: []
+  concentration:
+    label: Molar Concentration
+    sections: []
+  temperature:
+    label: Temperature
+    sections: []
+  stoichiometry:
+    label: Reaction Stoichiometry
+    sections: []
+  enthalpy_change:
+    label: Enthalpy Change
+    sections: []
+  partial_pressure:
+    label: Partial Pressure
+    sections: []
+  activation_energy:
+    label: Activation Energy
+    sections:
+    - id: ch13_s13_3
+      title: '13.3 Shifting Equilibria: Le Châtelier’s Principle'
+  dynamic_equilibrium:
+    label: Dynamic Equilibrium
+    sections:
+    - id: ch13_s13_1
+      title: 13.1 Chemical Equilibria
+  reaction_quotient:
+    label: Reaction Quotient (Q)
+    sections:
+    - id: ch13_s13_2
+      title: 13.2 Equilibrium Constants
+  equilibrium_constant:
+    label: Equilibrium Constant (K)
+    sections:
+    - id: ch13_s13_2
+      title: 13.2 Equilibrium Constants
+  law_of_mass_action:
+    label: Law of Mass Action
+    sections:
+    - id: ch13_s13_2
+      title: 13.2 Equilibrium Constants
+  kc_kp_relationship:
+    label: Relationship Between Kc and Kp
+    sections:
+    - id: ch13_s13_2
+      title: 13.2 Equilibrium Constants
+  homogeneous_equilibrium:
+    label: Homogeneous Equilibrium
+    sections:
+    - id: ch13_s13_2
+      title: 13.2 Equilibrium Constants
+  heterogeneous_equilibrium:
+    label: Heterogeneous Equilibrium
+    sections:
+    - id: ch13_s13_2
+      title: 13.2 Equilibrium Constants
+  coupled_equilibria:
+    label: Coupled Equilibria
+    sections:
+    - id: ch13_s13_2
+      title: 13.2 Equilibrium Constants
+  le_chatelier_principle:
+    label: Le Châtelier's Principle
+    sections:
+    - id: ch13_s13_3
+      title: '13.3 Shifting Equilibria: Le Châtelier’s Principle'
+  concentration_stress:
+    label: Effect of Concentration Change on Equilibrium
+    sections:
+    - id: ch13_s13_3
+      title: '13.3 Shifting Equilibria: Le Châtelier’s Principle'
+  pressure_volume_stress:
+    label: Effect of Pressure and Volume Change on Equilibrium
+    sections:
+    - id: ch13_s13_3
+      title: '13.3 Shifting Equilibria: Le Châtelier’s Principle'
+  temperature_stress:
+    label: Effect of Temperature Change on Equilibrium
+    sections:
+    - id: ch13_s13_3
+      title: '13.3 Shifting Equilibria: Le Châtelier’s Principle'
+  catalyst_effect_on_equilibrium:
+    label: Effect of a Catalyst on Equilibrium
+    sections:
+    - id: ch13_s13_3
+      title: '13.3 Shifting Equilibria: Le Châtelier’s Principle'
+  ice_table_method:
+    label: ICE Table Method
+    sections:
+    - id: ch13_s13_4
+      title: 13.4 Equilibrium Calculations
+  q_vs_k_comparison:
+    label: Comparing Q to K to Predict Reaction Direction
+    sections:
+    - id: ch13_s13_2
+      title: 13.2 Equilibrium Constants
+    - id: ch13_s13_4
+      title: 13.4 Equilibrium Calculations
+  haber_bosch_process:
+    label: Haber-Bosch Process
+    sections:
+    - id: ch13_s13_3
+      title: '13.3 Shifting Equilibria: Le Châtelier’s Principle'
+  carbonated_beverage_equilibrium:
+    label: Carbonated Beverage Equilibrium
+    sections:
+    - id: ch13_s13_3
+      title: '13.3 Shifting Equilibria: Le Châtelier’s Principle'
+  pharmaceutical_equilibrium:
+    label: Pharmaceutical Dosing via Equilibrium
+    sections:
+    - id: ch13_s13_4
+      title: 13.4 Equilibrium Calculations

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dna Hydrogen Bonding | Chemistry Ch10</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="dna-hydrogen-bonding">Dna Hydrogen Bonding</h2>
+<p>DNA's two strands are held together not by strong covalent bonds but by hydrogen bonds — weaker electrostatic attractions between a hydrogen atom bonded to an electronegative atom (nitrogen or oxygen) and another electronegative atom nearby. This is deliberate: hydrogen bonds are strong enough to hold the double helix stable under normal conditions, yet weak enough to be broken and reformed during replication and transcription. The base-pairing rule follows directly from bond geometry: adenine (A) pairs with thymine (T) via two hydrogen bonds, while guanine (G) pairs with cytosine (C) via three hydrogen bonds. This is why A-T and G-C are called "complementary" — their molecular shapes and hydrogen-bond donor/acceptor sites align precisely, while A-C or G-T pairings do not fit geometrically and cannot form stable bonds.</p>
+<p>Consider a DNA strand with the sequence 5'-ATGCCGTA-3'. To find its complementary strand, pair each base according to the rule (A↔T, G↔C) and reverse the direction (since the two strands run antiparallel): the complement is 3'-TACGGCAT-5', or written conventionally, 5'-TACGGCAT-3'. Because G-C pairs have three hydrogen bonds versus two for A-T, a DNA segment richer in G-C content requires more energy to separate. This has a direct, testable consequence: the melting temperature ($T_m$) of a DNA duplex — the temperature at which the two strands separate — rises with GC content. Biologists estimate this with the empirical Wallace rule for short sequences: $T_m = 4(G+C) + 2(A+T)$, where each term counts the number of that base type. For our 8-base strand, G+C = 4 and A+T = 4, giving $T_m = 4(4) + 2(4) = 24\,^\circ\text{C}$.</p>
+<p>This matters practically: PCR (polymerase chain reaction), a technique used in genetic testing, forensics, and COVID diagnostics, requires heating DNA above its $T_m$ to separate strands before copying them. If a lab technician designs primers (short DNA sequences) with too few G-C bonds, the $T_m$ is too low, and the primer may bind nonspecifically at the reaction temperature, producing false results. Conversely, GC-rich primers with excessively high $T_m$ may fail to denature properly. Estimating $T_m$ from hydrogen-bond composition is therefore a routine first step in experimental design — turning a molecular-level property into an actionable engineering constraint.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

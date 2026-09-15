@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radiation Therapy | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="radiation-therapy">Radiation Therapy</h2>
+<p>Radiation therapy treats cancer by directing high-energy radiation—photons, protons, or electrons—at tumor tissue to damage the DNA of cancer cells beyond repair. Cancer cells divide rapidly and have weaker DNA-repair machinery than most healthy cells, so a carefully chosen radiation dose kills a larger fraction of tumor cells than of surrounding normal tissue. The central engineering and medical challenge is not delivering radiation—that part is straightforward—but concentrating the dose on the tumor while sparing nearby organs, since radiation damage is cumulative and healthy-tissue tolerance is limited.</p>
+<p><strong>Worked example.</strong> Suppose a tumor requires a total dose of 60 Gy (gray, the unit of absorbed radiation energy per kilogram of tissue) to achieve a high probability of destruction, but a single dose that large would also destroy adjacent healthy tissue and cause severe side effects. Clinicians solve this by <em>fractionation</em>: splitting the total dose into smaller daily doses (e.g., 2 Gy/day for 30 days). Healthy cells recover between fractions faster than cancer cells do, so repeated sublethal doses accumulate lethal damage preferentially in the tumor. A second strategy is <em>conformal delivery</em>: using multiple radiation beams aimed from different angles, all converging on the tumor. Each beam's path through healthy tissue receives only a fraction of the dose, while the tumor—sitting at the intersection of all beams—receives the full sum. If five beams each deliver 12 Gy to the tumor but only 2–3 Gy to the tissue they individually pass through, the tumor accumulates 60 Gy while no single healthy region exceeds a tolerable dose.</p>
+<p><strong>Problem-solving application.</strong> Treatment planning is essentially a geometric and dosimetric optimization problem: given a tumor's shape, location, and proximity to critical organs (e.g., the spinal cord or a lung), planners choose beam angles, intensities, and fractionation schedules to maximize tumor dose while keeping every nearby organ below its known damage threshold. Modern techniques like intensity-modulated radiation therapy (IMRT) go further, varying the beam's intensity across its cross-section so that even irregularly shaped tumors wrapped around sensitive structures can be targeted precisely. Understanding radiation therapy this way—as a constrained optimization between "enough dose to kill the tumor" and "not too much dose to any single healthy region"—clarifies why treatment plans differ so much between patients even for tumors of similar size: the surrounding anatomy, not just the tumor itself, determines the achievable trade-off.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

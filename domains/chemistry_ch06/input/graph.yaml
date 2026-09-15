@@ -1,0 +1,370 @@
+domain: chemistry_2e_ch6
+primitives:
+  wave:
+    defines: An oscillation or periodic movement that can transport energy from one point in space to
+      another without net displacement of matter.
+    tier: 0
+  wavelength:
+    defines: The distance between two consecutive peaks or troughs in a wave, denoted by λ and measured
+      in meters.
+    tier: 0
+  frequency:
+    defines: The number of wave cycles that pass a specified point in space per unit time, denoted by
+      ν and measured in hertz (Hz).
+    tier: 0
+  amplitude:
+    defines: The magnitude of a wave's displacement, related to the intensity (brightness for light, loudness
+      for sound).
+    tier: 0
+  speed_of_light:
+    defines: The constant speed at which electromagnetic radiation travels through a vacuum, c = 2.998
+      × 10⁸ m/s.
+    tier: 0
+  planck_constant:
+    defines: A fundamental physical constant h = 6.626 × 10⁻³⁴ J·s that relates the energy of a photon
+      to its frequency.
+    tier: 0
+  electromagnetic_radiation:
+    defines: Energy transmitted by waves composed of oscillating electric and magnetic fields perpendicular
+      to each other and to the direction of travel.
+    tier: 0
+concepts:
+  wave_speed_equation:
+    defines: The relationship c = λν, stating that the speed of a wave equals the product of its wavelength
+      and frequency.
+    composed_of:
+    - wavelength
+    - frequency
+    - speed_of_light
+    tier: 1
+  electromagnetic_spectrum:
+    defines: The continuous range of all electromagnetic radiation ordered by frequency and wavelength,
+      from radio waves through microwaves, infrared, visible, ultraviolet, X-rays, and gamma rays.
+    composed_of:
+    - electromagnetic_radiation
+    - frequency
+    - wavelength
+    tier: 1
+  interference:
+    defines: The superposition of two or more waves producing regions of constructive interference (peaks
+      align) or destructive interference (peaks cancel troughs).
+    composed_of:
+    - wave
+    - amplitude
+    tier: 1
+  standing_wave:
+    defines: A localized wave phenomenon constrained within a region of space such that only an integer
+      number of half-wavelengths fits between the fixed endpoints, making the wavelengths inherently quantized.
+    composed_of:
+    - wave
+    - wavelength
+    - interference
+    tier: 2
+  continuous_spectrum:
+    defines: Electromagnetic radiation emitted over an unbroken series of wavelengths, as produced by
+      heated solids, liquids, or dense gases.
+    composed_of:
+    - electromagnetic_radiation
+    - electromagnetic_spectrum
+    tier: 2
+  quantization:
+    defines: The restriction of a physical property (such as energy or wavelength) to discrete allowed
+      values rather than a continuous range.
+    composed_of:
+    - standing_wave
+    tier: 3
+  blackbody_radiation:
+    defines: The characteristic continuous spectrum of electromagnetic radiation emitted by an idealized
+      perfect absorber/emitter, whose spectral distribution depends only on temperature.
+    composed_of:
+    - electromagnetic_radiation
+    - continuous_spectrum
+    tier: 3
+  photon:
+    defines: The smallest discrete packet (quantum) of electromagnetic radiation, whose energy is given
+      by E = hν.
+    composed_of:
+    - electromagnetic_radiation
+    - planck_constant
+    - quantization
+    tier: 4
+  line_spectrum:
+    defines: Electromagnetic radiation emitted at discrete, characteristic wavelengths by atoms or molecules
+      in an excited gaseous state, reflecting quantized electronic energy levels.
+    composed_of:
+    - electromagnetic_radiation
+    - electromagnetic_spectrum
+    - quantization
+    tier: 4
+  photon_energy:
+    defines: The energy of a single photon expressed as E = hν = hc/λ, where energy is directly proportional
+      to frequency and inversely proportional to wavelength.
+    composed_of:
+    - photon
+    - wave_speed_equation
+    tier: 5
+  rydberg_formula:
+    defines: An empirical equation predicting all emission wavelengths of hydrogen using two integer quantum
+      numbers n₁ and n₂ and the Rydberg constant R∞.
+    composed_of:
+    - line_spectrum
+    - wavelength
+    tier: 5
+  photoelectric_effect:
+    defines: The ejection of electrons from a metal surface when struck by photons whose frequency exceeds
+      a threshold value; kinetic energy of ejected electrons depends on photon frequency, not light intensity.
+    composed_of:
+    - photon
+    - photon_energy
+    tier: 6
+  bohr_model:
+    defines: A structural model in which the electron moves in discrete circular orbits of quantized energy
+      around the nucleus, emitting or absorbing a photon only when transitioning between orbits.
+    composed_of:
+    - quantization
+    - photon_energy
+    - line_spectrum
+    - rydberg_formula
+    tier: 6
+  wave_particle_duality:
+    defines: The observation that electromagnetic radiation and quantum particles such as electrons exhibit
+      both wavelike behavior (interference, diffraction) and particle-like behavior (discrete collisions,
+      localized packets).
+    composed_of:
+    - interference
+    - photon
+    - photoelectric_effect
+    tier: 7
+  energy_level:
+    defines: One of the discrete, quantized energies an electron in an atom may possess, characterized
+      by quantum number n, with energy increasing (becoming less negative) as n increases.
+    composed_of:
+    - bohr_model
+    tier: 7
+  de_broglie_wavelength:
+    defines: The wavelength λ = h/mv associated with any particle of mass m moving at velocity v, extending
+      wave–particle duality to matter.
+    composed_of:
+    - wave_particle_duality
+    - planck_constant
+    tier: 8
+  ground_state:
+    defines: The lowest possible energy state of an atom, in which electrons occupy the lowest available
+      orbitals.
+    composed_of:
+    - energy_level
+    tier: 8
+  heisenberg_uncertainty_principle:
+    defines: The fundamental quantum mechanical limit stating that the position and momentum of a particle
+      cannot both be determined exactly and simultaneously; ΔxΔp ≥ ℏ/2.
+    composed_of:
+    - wave_particle_duality
+    - de_broglie_wavelength
+    tier: 9
+  excited_state:
+    defines: An atom's state when one or more electrons have absorbed energy and occupy orbitals higher
+      than the ground state.
+    composed_of:
+    - energy_level
+    - ground_state
+    tier: 9
+  electronic_transition:
+    defines: The movement of an electron between quantized energy levels, accompanied by absorption of
+      a photon (transition to higher level) or emission of a photon (transition to lower level).
+    composed_of:
+    - energy_level
+    - photon
+    - ground_state
+    - excited_state
+    tier: 10
+  wavefunction:
+    defines: A mathematical function that is the solution to the Schrödinger equation for an electron
+      in an atom; its squared magnitude |ψ|² gives the probability density of finding the electron at
+      a given location.
+    composed_of:
+    - wave_particle_duality
+    - heisenberg_uncertainty_principle
+    tier: 10
+  principal_quantum_number:
+    defines: A positive integer (n = 1, 2, 3, …) that specifies the electron shell, determines the general
+      size and energy of an orbital, and gives the average distance of the electron from the nucleus.
+    composed_of:
+    - wavefunction
+    tier: 11
+  spin_quantum_number:
+    defines: A quantum number with only two possible values (+1/2 or −1/2) describing the intrinsic angular
+      momentum (spin) of an electron, a purely quantum mechanical property with no classical analogue.
+    composed_of:
+    - wavefunction
+    tier: 11
+  angular_momentum_quantum_number:
+    defines: An integer from 0 to n−1 that specifies the shape of an orbital and defines the subshell
+      (l = 0 → s, l = 1 → p, l = 2 → d, l = 3 → f).
+    composed_of:
+    - principal_quantum_number
+    tier: 12
+  magnetic_quantum_number:
+    defines: An integer from −l to +l that specifies the spatial orientation of an orbital within a subshell;
+      there are 2l + 1 possible values for each l.
+    composed_of:
+    - angular_momentum_quantum_number
+    tier: 13
+  atomic_orbital:
+    defines: A three-dimensional region of space around the nucleus, described by a wavefunction, within
+      which an electron has the highest probability of being found; characterized by quantum numbers n,
+      l, and mₗ.
+    composed_of:
+    - wavefunction
+    - principal_quantum_number
+    - angular_momentum_quantum_number
+    - magnetic_quantum_number
+    tier: 14
+  orbital_shapes:
+    defines: 'The characteristic three-dimensional geometries of atomic orbitals determined by l: s orbitals
+      are spherical, p orbitals are dumbbell-shaped, d orbitals are four-lobed or torus-shaped, and f
+      orbitals are more complex multilobed regions.'
+    composed_of:
+    - atomic_orbital
+    - angular_momentum_quantum_number
+    tier: 15
+  radial_nodes:
+    defines: Spherical surfaces at specific distances from the nucleus where the wavefunction—and therefore
+      electron probability density—equals zero; the number of radial nodes equals n − l − 1.
+    composed_of:
+    - atomic_orbital
+    - principal_quantum_number
+    - angular_momentum_quantum_number
+    tier: 15
+  pauli_exclusion_principle:
+    defines: The rule that no two electrons in the same atom can share the same set of all four quantum
+      numbers, limiting each orbital to a maximum of two electrons with opposite spins.
+    composed_of:
+    - atomic_orbital
+    - spin_quantum_number
+    tier: 15
+  degenerate_orbitals:
+    defines: Orbitals that have the same energy; in a hydrogen atom all orbitals with the same n are degenerate,
+      while in multi-electron atoms orbitals with the same n and l are degenerate.
+    composed_of:
+    - atomic_orbital
+    - energy_level
+    tier: 15
+  electron_shielding:
+    defines: The reduction of the effective nuclear attraction experienced by an outer electron due to
+      repulsion and partial screening by inner (core) electrons.
+    composed_of:
+    - atomic_orbital
+    - principal_quantum_number
+    tier: 15
+  aufbau_principle:
+    defines: The procedure for building up electron configurations by filling orbitals in order of increasing
+      energy (1s, 2s, 2p, 3s, 3p, 4s, 3d, …), subject to the Pauli exclusion principle.
+    composed_of:
+    - atomic_orbital
+    - degenerate_orbitals
+    - electron_shielding
+    - pauli_exclusion_principle
+    tier: 16
+  hunds_rule:
+    defines: The rule that within a set of degenerate orbitals, the lowest-energy configuration has the
+      maximum number of unpaired electrons, all with the same spin.
+    composed_of:
+    - degenerate_orbitals
+    - spin_quantum_number
+    tier: 16
+  effective_nuclear_charge:
+    defines: The net positive charge experienced by a valence electron after accounting for shielding
+      by inner electrons; Zeff = Z − shielding, and increases across a period.
+    composed_of:
+    - electron_shielding
+    tier: 16
+  electron_configuration:
+    defines: A notation specifying the complete occupancy of electrons in an atom's shells and subshells
+      (e.g., 1s²2s²2p³), determined by applying the Aufbau principle, Pauli exclusion principle, and Hund's
+      rule.
+    composed_of:
+    - atomic_orbital
+    - aufbau_principle
+    - pauli_exclusion_principle
+    - hunds_rule
+    tier: 17
+  covalent_radius:
+    defines: One-half the distance between the nuclei of two identical atoms joined by a covalent bond,
+      used as a measure of atomic size.
+    composed_of:
+    - effective_nuclear_charge
+    - principal_quantum_number
+    tier: 17
+  valence_electrons:
+    defines: Electrons in the outermost (highest principal quantum number) shell of an atom; they determine
+      chemical reactivity and are the electrons gained, lost, or shared in chemical reactions.
+    composed_of:
+    - electron_configuration
+    - principal_quantum_number
+    tier: 18
+  core_electrons:
+    defines: Electrons occupying inner shells of an atom that are not involved in bonding; they shield
+      valence electrons from the full nuclear charge.
+    composed_of:
+    - electron_configuration
+    - electron_shielding
+    tier: 18
+  ionic_radius:
+    defines: The measure of the size of an ion; cations are smaller than their parent atoms (fewer electrons,
+      same nuclear charge) and anions are larger (more electrons, same nuclear charge).
+    composed_of:
+    - covalent_radius
+    - electron_configuration
+    tier: 18
+  ionization_energy:
+    defines: The energy required to remove the most loosely bound electron from a gaseous atom or ion
+      in its ground state; increases across a period and decreases down a group.
+    composed_of:
+    - effective_nuclear_charge
+    - electron_configuration
+    tier: 18
+  electron_affinity:
+    defines: The energy change when a gaseous atom accepts an additional electron to form an anion; generally
+      becomes more negative (more exothermic) moving left to right across a period.
+    composed_of:
+    - effective_nuclear_charge
+    - electron_configuration
+    tier: 18
+applications:
+  periodic_table_blocks:
+    defines: The classification of elements into s-block, p-block, d-block, and f-block based on the subshell
+      receiving the last Aufbau electron.
+    needs:
+    - electron_configuration
+    - aufbau_principle
+    - angular_momentum_quantum_number
+    - principal_quantum_number
+    tier: 18
+  ion_electron_configuration:
+    defines: The electron configurations of cations (formed by removing ns or np electrons last added)
+      and anions (formed by adding electrons following the Aufbau principle), derived from the parent
+      atom's configuration.
+    needs:
+    - electron_configuration
+    - aufbau_principle
+    - valence_electrons
+    - core_electrons
+    tier: 19
+  isoelectronic_species:
+    defines: Atoms or ions that have identical electron configurations; among isoelectronic ions, the
+      greater the nuclear charge, the smaller the radius.
+    needs:
+    - electron_configuration
+    - effective_nuclear_charge
+    - ionic_radius
+    tier: 19
+  periodic_trends:
+    defines: The systematic variation of atomic radius, ionization energy, and electron affinity across
+      periods and down groups of the periodic table, explained by changes in effective nuclear charge
+      and principal quantum number.
+    needs:
+    - covalent_radius
+    - ionization_energy
+    - electron_affinity
+    - effective_nuclear_charge
+    tier: 19

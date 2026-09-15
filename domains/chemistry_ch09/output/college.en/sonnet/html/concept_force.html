@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Force | Chemistry Ch09</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="force">Force</h2>
+<p>A force is any push or pull that can change an object's motion — its speed, its direction, or both. Forces arise from interactions: gravity pulling you toward Earth, a hand pushing a cart, friction resisting a sliding book, air resistance slowing a falling leaf. Because a force has both a size and a direction, it is a vector quantity, and its effect on motion is captured precisely by Newton's second law:</p>
+$$\vec{F}_{\text{net}} = m\vec{a}$$
+<p>Here $\vec{F}_{\text{net}}$ is the vector sum of all forces acting on an object, $m$ is its mass, and $\vec{a}$ is the resulting acceleration. This equation is unavoidable in its algebraic form because force is <em>defined</em> through its effect on acceleration — there is no way to state the relationship in prose without losing the precision needed to solve problems.</p>
+<p><strong>Worked example.</strong> A 2 kg box sits on a frictionless table. A horizontal force of 6 N pushes it to the right while a second force of 2 N pushes it to the left. Find the acceleration.</p>
+<p>Net force: $F_{\text{net}} = 6\,\text{N} - 2\,\text{N} = 4\,\text{N}$ (to the right, taking right as positive).</p>
+<p>Acceleration: $a = F_{\text{net}}/m = 4\,\text{N} / 2\,\text{kg} = 2\,\text{m/s}^2$, directed to the right.</p>
+<p>Notice that only the <em>net</em> force matters — individual forces can be large, but if they cancel, there is no acceleration. This is why a book resting on a table doesn't fall through it: gravity pulls it down, but the table pushes up with an equal and opposite normal force, so $\vec{F}_{\text{net}} = 0$ and $\vec{a} = 0$.</p>
+<p><strong>Applying it.</strong> Suppose a 1000 kg car needs to accelerate from rest to $20\,\text{m/s}$ in 5 seconds on a level road, and friction/air resistance exert a steady 500 N opposing force. What engine force is required?</p>
+<p>First find the needed acceleration: $a = \Delta v / \Delta t = 20/5 = 4\,\text{m/s}^2$. The net force required is $F_{\text{net}} = ma = 1000 \times 4 = 4000\,\text{N}$. Since resistance subtracts 500 N from the engine's push, the engine itself must supply $F_{\text{engine}} = 4000 + 500 = 4500\,\text{N}$. This kind of forward-and-backward reasoning — from desired motion to required force, accounting for opposing forces — is the core skill for solving real mechanical design problems, from car engines to rocket thrust.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

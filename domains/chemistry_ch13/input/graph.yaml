@@ -1,0 +1,156 @@
+domain: chemistry_2e
+primitives:
+  reversible_reaction:
+    defines: A chemical reaction that can proceed in both the forward and reverse directions under given
+      conditions.
+    tier: 0
+  reaction_rate:
+    defines: The speed at which reactants are consumed or products are formed in a chemical reaction.
+    tier: 0
+  concentration:
+    defines: The amount of a substance (in moles) per liter of solution or gas mixture.
+    tier: 0
+  temperature:
+    defines: A thermodynamic property governing molecular kinetic energy and reaction rate constants.
+    tier: 0
+  stoichiometry:
+    defines: The quantitative molar relationships among reactants and products expressed by balanced-equation
+      coefficients.
+    tier: 0
+  enthalpy_change:
+    defines: The heat absorbed or released by a reaction at constant pressure.
+    tier: 0
+  partial_pressure:
+    defines: The pressure exerted by a single gas component in a mixture, proportional to its molar concentration.
+    tier: 0
+  activation_energy:
+    defines: The minimum energy barrier that must be overcome for a reaction to proceed.
+    tier: 0
+concepts:
+  dynamic_equilibrium:
+    defines: The state in which forward and reverse reaction rates are equal, yielding constant species
+      concentrations.
+    composed_of:
+    - reversible_reaction
+    - reaction_rate
+    tier: 1
+  reaction_quotient:
+    defines: A ratio of product to reactant concentrations or partial pressures at any point during a
+      reaction, used to assess distance from equilibrium.
+    composed_of:
+    - concentration
+    - partial_pressure
+    - stoichiometry
+    tier: 1
+  law_of_mass_action:
+    defines: The principle that the reaction quotient for a system at equilibrium is constant at a given
+      temperature, defining the equilibrium constant K.
+    composed_of:
+    - reaction_quotient
+    - dynamic_equilibrium
+    tier: 2
+  equilibrium_constant:
+    defines: The fixed numerical value of the reaction quotient when the system has reached equilibrium
+      at a given temperature.
+    composed_of:
+    - law_of_mass_action
+    tier: 3
+  q_vs_k_comparison:
+    defines: Comparing Q to K predicts whether a mixture will shift forward (Q < K), reverse (Q > K),
+      or is at equilibrium (Q = K).
+    composed_of:
+    - reaction_quotient
+    - equilibrium_constant
+    tier: 4
+  kc_kp_relationship:
+    defines: The quantitative conversion KP = Kc(RT)^Δn between concentration-based and pressure-based
+      equilibrium constants.
+    composed_of:
+    - equilibrium_constant
+    - temperature
+    tier: 4
+  homogeneous_equilibrium:
+    defines: An equilibrium in which all species are in the same phase, so all appear as concentration
+      or pressure terms in K.
+    composed_of:
+    - equilibrium_constant
+    tier: 4
+  heterogeneous_equilibrium:
+    defines: An equilibrium involving multiple phases, where pure solids and liquids are omitted from
+      Q and K expressions.
+    composed_of:
+    - equilibrium_constant
+    - homogeneous_equilibrium
+    tier: 5
+  coupled_equilibria:
+    defines: Two or more equilibrium reactions sharing species, whose combined K equals the product of
+      individual K values after algebraic manipulation.
+    composed_of:
+    - equilibrium_constant
+    tier: 4
+  ice_table_method:
+    defines: A systematic algebraic approach using Initial, Change, and Equilibrium rows to calculate
+      unknown equilibrium concentrations or K.
+    composed_of:
+    - equilibrium_constant
+    - stoichiometry
+    - concentration
+    tier: 4
+  le_chatelier_principle:
+    defines: When a stress unequally affects forward and reverse rates, the system shifts to partially
+      counteract the stress and re-establish equilibrium.
+    composed_of:
+    - dynamic_equilibrium
+    - equilibrium_constant
+    tier: 4
+  concentration_stress:
+    defines: Adding/removing a reactant or product shifts Q away from K, driving the reaction toward products
+      or reactants until Q = K again.
+    composed_of:
+    - le_chatelier_principle
+    - q_vs_k_comparison
+    tier: 5
+  pressure_volume_stress:
+    defines: Volume changes shift a gas-phase equilibrium toward the side with fewer moles of gas when
+      Δn ≠ 0.
+    composed_of:
+    - le_chatelier_principle
+    - stoichiometry
+    tier: 5
+  temperature_stress:
+    defines: Temperature changes shift endothermic equilibria toward products and exothermic equilibria
+      toward reactants, and alter the numerical value of K.
+    composed_of:
+    - le_chatelier_principle
+    - enthalpy_change
+    tier: 5
+  catalyst_effect_on_equilibrium:
+    defines: A catalyst lowers activation energy equally for both directions, accelerating approach to
+      equilibrium without changing K or the equilibrium composition.
+    composed_of:
+    - le_chatelier_principle
+    - activation_energy
+    tier: 5
+applications:
+  haber_bosch_process:
+    defines: Industrial ammonia synthesis exploiting Le Châtelier's principle via high pressure, moderate
+      temperature, and a catalyst to maximize yield despite small K.
+    needs:
+    - pressure_volume_stress
+    - temperature_stress
+    - catalyst_effect_on_equilibrium
+    tier: 6
+  carbonated_beverage_equilibrium:
+    defines: CO2 dissolution equilibrium in beverages controlled by sealing under high CO2 pressure; opening
+      releases CO2 as the system re-equilibrates.
+    needs:
+    - concentration_stress
+    - pressure_volume_stress
+    tier: 6
+  pharmaceutical_equilibrium:
+    defines: Quantitative equilibrium calculations applied to determine drug concentrations across multiple
+      simultaneous equilibria in body systems.
+    needs:
+    - ice_table_method
+    - coupled_equilibria
+    tier: 5

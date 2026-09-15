@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formula Mass | Chemistry Ch03</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="formula-mass">Formula Mass</h2>
+<p>The <strong>formula mass</strong> of a compound is the sum of the atomic masses of all atoms represented in its chemical formula, expressed in atomic mass units (amu) or, per mole of formula units, in grams per mole (g/mol). For an ionic compound such as $\text{NaCl}$ or a covalent compound such as $\text{CO}_2$, formula mass is calculated the same way: multiply each element's atomic mass (from the periodic table) by the number of times that atom appears in the formula, then add the results. The term "molecular mass" is reserved for compounds that exist as discrete molecules, while "formula mass" applies more broadly — including to ionic compounds, which don't form true molecules but still have a fixed formula ratio.</p>
+<p><strong>Worked example.</strong> Find the formula mass of calcium phosphate, $\text{Ca}_3(\text{PO}_4)_2$, using atomic masses $\text{Ca} = 40.08$, $\text{P} = 30.97$, $\text{O} = 16.00$ (all in amu).</p>
+<p>First, count atoms of each element. The subscript 3 applies to Ca; the subscript 2 outside the parentheses multiplies everything inside — so there are $2 \times 1 = 2$ P atoms and $2 \times 4 = 8$ O atoms.</p>
+$$
+\text{Formula mass} = 3(40.08) + 2(30.97) + 8(16.00)
+$$
+$$
+= 120.24 + 61.94 + 128.00 = 310.18 \ \text{amu}
+$$
+<p>So one mole of $\text{Ca}_3(\text{PO}_4)_2$ has a mass of $310.18$ g/mol.</p>
+<p><strong>Problem-solving application.</strong> Formula mass is the bridge between a lab-bench quantity (grams) and a chemically meaningful quantity (moles), so it appears in nearly every stoichiometry problem. Suppose you need to prepare $0.250$ mol of ammonium sulfate, $(\text{NH}_4)_2\text{SO}_4$, for a reaction. Its formula mass is $2(14.01 + 4 \times 1.01) + 32.07 + 4(16.00) = 132.15$ g/mol. The mass required is then</p>
+$$
+0.250 \ \text{mol} \times 132.15 \ \text{g/mol} = 33.0 \ \text{g}.
+$$
+<p>Before trusting any such calculation, always double-check two things: that every subscript (including those distributed across parentheses) was counted correctly, and that the atomic masses used match the correct element symbols — a transposed subscript or a misread periodic-table entry is the most common source of error in formula-mass problems.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

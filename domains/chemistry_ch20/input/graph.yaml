@@ -1,0 +1,226 @@
+domain: chemistry_2e_ch20
+primitives:
+  organic_compound:
+    defines: A natural or synthetic compound that contains carbon as the principal element, typically
+      bonded to hydrogen and other carbon atoms.
+    tier: 0
+  carbon_tetravalence:
+    defines: The capacity of carbon atoms to form up to four strong covalent bonds, enabling the construction
+      of chains, branches, and rings of varying size and complexity.
+    tier: 0
+  hybridization:
+    defines: The mixing of atomic orbitals to form hybrid orbitals (sp3, sp2, sp) that determine molecular
+      geometry and bond angles around carbon atoms.
+    tier: 0
+  oxidation_number:
+    defines: A bookkeeping value assigned to atoms to track electron distribution, used to describe how
+      carbon's oxidation state changes as C-H bonds are replaced by C-O bonds.
+    tier: 0
+  resonance_structure:
+    defines: One of two or more equivalent Lewis structures for a molecule whose actual bonding is an
+      intermediate (hybrid) of all contributing structures, used to describe delocalized electrons in
+      aromatic systems.
+    tier: 0
+concepts:
+  hydrocarbon:
+    defines: The simplest class of organic compounds, composed exclusively of carbon and hydrogen atoms,
+      whose diversity arises from chain length, branching, ring formation, and bond type.
+    composed_of:
+    - organic_compound
+    - carbon_tetravalence
+    tier: 1
+  condensed_structural_formula:
+    defines: A shorthand representation of an organic molecule that implies connectivity by grouping atoms
+      around each carbon without drawing all individual bond lines.
+    composed_of:
+    - organic_compound
+    tier: 1
+  skeletal_structure:
+    defines: A line-angle shorthand in which carbon atoms are represented by line endpoints and bends
+      and attached hydrogen atoms are omitted but understood to be present.
+    composed_of:
+    - organic_compound
+    tier: 1
+  structural_isomer:
+    defines: Compounds sharing the same molecular formula but differing in the connectivity or arrangement
+      of their atoms, such as n-butane and 2-methylpropane.
+    composed_of:
+    - organic_compound
+    tier: 1
+  functional_group:
+    defines: The atom or group of atoms within an organic molecule that confers specific and predictable
+      chemical reactivity, used to classify organic compounds into families.
+    composed_of:
+    - organic_compound
+    tier: 1
+  carbonyl_group:
+    defines: A functional group consisting of a carbon atom double-bonded to an oxygen atom (C=O), with
+      sp2-hybridized carbon in trigonal planar geometry, that is the defining structural unit of aldehydes,
+      ketones, carboxylic acids, and esters.
+    composed_of:
+    - hybridization
+    tier: 1
+  alkane:
+    defines: A saturated hydrocarbon containing only single C-C bonds, with sp3-hybridized carbons, tetrahedral
+      geometry, and the general formula CnH2n+2 for noncyclic structures.
+    composed_of:
+    - hydrocarbon
+    - hybridization
+    tier: 2
+  alkene:
+    defines: An unsaturated hydrocarbon containing at least one C=C double bond composed of one sigma
+      bond and one pi bond, with sp2-hybridized carbons in trigonal planar geometry.
+    composed_of:
+    - hydrocarbon
+    - hybridization
+    tier: 2
+  alkyne:
+    defines: An unsaturated hydrocarbon containing at least one C-C triple bond (one sigma bond and two
+      pi bonds), with sp-hybridized carbons and linear geometry.
+    composed_of:
+    - hydrocarbon
+    - hybridization
+    tier: 2
+  aromatic_hydrocarbon:
+    defines: A cyclic hydrocarbon with delocalized pi electrons described by resonance structures, exhibiting
+      bond lengths and energies intermediate between single and double bonds, and preferring substitution
+      reactions over addition reactions.
+    composed_of:
+    - hydrocarbon
+    - resonance_structure
+    tier: 2
+  alcohol:
+    defines: A hydrocarbon derivative in which a hydroxyl group (-OH) is covalently bonded to a carbon
+      atom, named by replacing the terminal -e of the parent alkane with -ol.
+    composed_of:
+    - hydrocarbon
+    - functional_group
+    tier: 2
+  amine:
+    defines: An organic compound in which a nitrogen atom bearing a lone pair of electrons is bonded to
+      one or more carbon or hydrogen atoms, making it a weak base analogous to ammonia.
+    composed_of:
+    - organic_compound
+    - functional_group
+    tier: 2
+  alkyl_group:
+    defines: A substituent derived from an alkane by removing one hydrogen atom, named by replacing the
+      -ane suffix with -yl; alkyl groups exist only as parts of larger molecules.
+    composed_of:
+    - alkane
+    tier: 3
+  geometric_isomer:
+    defines: A pair of isomers with identical atomic connectivity but different orientations of substituents
+      about a rigid C=C double bond, designated cis (same side) or trans (opposite sides).
+    composed_of:
+    - alkene
+    - structural_isomer
+    tier: 3
+  substitution_reaction:
+    defines: A reaction in which one atom or group replaces another in a molecule without breaking C-C
+      bonds or changing carbon hybridization, characteristic of alkanes reacting with halogens.
+    composed_of:
+    - alkane
+    - functional_group
+    tier: 3
+  addition_reaction:
+    defines: A reaction characteristic of alkenes and alkynes in which a pi bond is broken and atoms of
+      a reagent add across the multiple bond to form two new sigma bonds, converting sp2 (or sp) carbons
+      to sp3.
+    composed_of:
+    - alkene
+    - alkyne
+    tier: 3
+  ether:
+    defines: An organic compound containing an oxygen atom bonded by single bonds to two separate carbon
+      groups (R-O-R), formed by the dehydration of two alcohol molecules.
+    composed_of:
+    - alcohol
+    tier: 3
+  oxidation_reduction_organic:
+    defines: In organic molecules, oxidation is the replacement of a C-H bond with a C-O bond (raising
+      the carbon oxidation state), and reduction is the reverse; this framework describes the progression
+      from alkane to alcohol to aldehyde to carboxylic acid.
+    composed_of:
+    - oxidation_number
+    - alcohol
+    tier: 3
+  iupac_nomenclature:
+    defines: A systematic naming system in which organic compounds are named by identifying the longest
+      carbon chain, numbering from the end nearest a substituent, and listing substituents with position
+      numbers and alphabetical order.
+    composed_of:
+    - alkyl_group
+    - functional_group
+    tier: 4
+  aldehyde:
+    defines: An organic compound in which the carbonyl group is bonded to at least one hydrogen atom (-CHO),
+      formed by oxidation of a primary alcohol, and named with the suffix -al.
+    composed_of:
+    - carbonyl_group
+    - oxidation_reduction_organic
+    tier: 4
+  ketone:
+    defines: An organic compound in which the carbonyl group is bonded to two carbon substituents (-CO-),
+      formed by oxidation of a secondary alcohol, and named with the suffix -one.
+    composed_of:
+    - carbonyl_group
+    - oxidation_reduction_organic
+    tier: 4
+  carboxylic_acid:
+    defines: An organic compound containing a carbonyl carbon bonded to a hydroxyl group (-CO2H), acting
+      as a weak acid in water and prepared by oxidation of an aldehyde or primary alcohol.
+    composed_of:
+    - aldehyde
+    tier: 5
+  ester:
+    defines: An organic compound in which the carbonyl carbon is bonded to an oxygen atom that is itself
+      bonded to a carbon substituent (-CO2R), produced by reaction of a carboxylic acid with an alcohol.
+    composed_of:
+    - carboxylic_acid
+    - alcohol
+    tier: 6
+  amide:
+    defines: An organic compound in which a nitrogen atom is bonded directly to the carbon of a carbonyl
+      group, formed by condensation of a carboxylic acid with an amine with elimination of water.
+    composed_of:
+    - carboxylic_acid
+    - amine
+    tier: 6
+applications:
+  combustion_of_alkanes:
+    defines: The exothermic oxidation of alkanes with oxygen to yield carbon dioxide and water, making
+      hydrocarbons such as methane, propane, and octane valuable as fuels.
+    needs:
+    - alkane
+    tier: 3
+  fractional_distillation:
+    defines: An industrial separation process that exploits boiling-point differences among alkane mixtures
+      in crude oil to isolate fractions such as gasoline, kerosene, and diesel fuel.
+    needs:
+    - alkane
+    tier: 3
+  polymerization:
+    defines: A reaction in which many small monomer molecules containing double bonds (e.g., ethylene)
+      link together to form high-molecular-mass polymer chains (e.g., polyethylene) used as plastics.
+    needs:
+    - alkene
+    - addition_reaction
+    tier: 4
+  esterification:
+    defines: The reaction of a carboxylic acid with an alcohol to produce an ester and water, responsible
+      for the flavors and fragrances of fruits and used in the synthesis of fats and oils.
+    needs:
+    - carboxylic_acid
+    - alcohol
+    - ester
+    tier: 7
+  amidation:
+    defines: The condensation reaction between a carboxylic acid and an amine to form an amide bond with
+      loss of water, the same reaction by which amino acids polymerize to form proteins in biological
+      systems.
+    needs:
+    - carboxylic_acid
+    - amine
+    - amide
+    tier: 7

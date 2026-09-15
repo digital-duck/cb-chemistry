@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amontons Law | Chemistry Ch09</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="amontons-law">Amontons Law</h2>
+<p>Amontons' Law describes friction between two solid surfaces in contact. It states that the maximum static friction force, $f_s$, and the kinetic friction force, $f_k$, are each proportional to the normal force $N$ pressing the surfaces together, and are essentially independent of the apparent contact area or the sliding speed. Formally:</p>
+$$f_s \le \mu_s N, \qquad f_k = \mu_k N$$
+<p>where $\mu_s$ and $\mu_k$ are the coefficients of static and kinetic friction, dimensionless constants that depend on the identity and roughness of the two materials in contact. Since $\mu_s$ is generally slightly larger than $\mu_k$, more force is needed to start an object moving than to keep it moving.</p>
+<p>The proportionality to $N$ rather than area is not obvious — a large box and a small box of the same weight resting on the same floor experience the same maximum friction, even though their footprints differ enormously. This is explained microscopically: real surfaces touch only at scattered microscopic high points (asperities), and the true contact area scales with the load rather than with the visible surface area, keeping friction proportional to $N$ regardless of the object's apparent size.</p>
+<p><strong>Worked example.</strong> A 20 kg crate rests on a warehouse floor with $\mu_s = 0.5$ and $\mu_k = 0.4$. The normal force equals the crate's weight, $N = mg = 20 \times 9.8 = 196\ \text{N}$. To determine whether a 90 N horizontal push starts the crate moving, compare it to the maximum static friction: $f_{s,\max} = \mu_s N = 0.5 \times 196 = 98\ \text{N}$. Since 90 N < 98 N, the crate remains stationary; static friction adjusts itself to exactly 90 N to balance the push. If the push increases to 110 N, it exceeds $f_{s,\max}$, the crate begins sliding, and kinetic friction takes over at $f_k = \mu_k N = 0.4 \times 196 = 78.4\ \text{N}$, giving a net force of $110 - 78.4 = 31.6\ \text{N}$ and an acceleration of $a = 31.6/20 = 1.58\ \text{m/s}^2$.</p>
+<p><strong>Application.</strong> Amontons' Law lets engineers predict friction without measuring contact area — useful for designing brakes, tires, and conveyor systems. To find the minimum force to overcome static friction on an incline, or to size a motor that must move a loaded pallet, you apply the same two-step process: compute $N$ from the geometry and forces involved, then multiply by the appropriate $\mu$ to find the friction threshold.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

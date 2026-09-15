@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gibbs Free Energy | Chemistry Ch16</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="gibbs-free-energy">Gibbs Free Energy</h2>
+<p>Gibbs free energy, denoted $G$, is the thermodynamic quantity that predicts whether a chemical or physical process will occur spontaneously at constant temperature and pressure — the conditions of nearly every reaction run in an open beaker or inside a living cell. You already know that reactions are governed by enthalpy $H$ (energy content) and entropy $S$ (disorder), and that these two often pull in opposite directions. Gibbs's contribution is to combine them into a single number that settles the trade-off:</p>
+$$\Delta G = \Delta H - T\Delta S$$
+<p>where $T$ is the absolute temperature in kelvin. This equation genuinely requires its mathematical form: spontaneity depends on a trade-off between two quantities with opposite signs, and only the algebraic combination — not a verbal description alone — tells you which one wins at a given temperature. The rule is simple: if $\Delta G < 0$, the process is spontaneous; if $\Delta G > 0$, it is non-spontaneous as written (it would need energy input); if $\Delta G = 0$, the system is at equilibrium.</p>
+<p><strong>Worked example.</strong> Consider ice melting: $\text{H}_2\text{O}(s) \rightarrow \text{H}_2\text{O}(l)$, with $\Delta H = +6.01\text{ kJ/mol}$ and $\Delta S = +22.0\text{ J/(mol·K)}$. At $T = 263\text{ K}$ (−10°C):</p>
+$$\Delta G = 6010\text{ J} - (263)(22.0\text{ J}) = 6010 - 5786 = +224\text{ J/mol}$$
+<p>Positive $\Delta G$ means ice does <em>not</em> melt spontaneously below freezing — consistent with observation. At $T = 283\text{ K}$ (+10°C):</p>
+$$\Delta G = 6010 - (283)(22.0) = 6010 - 6226 = -216\text{ J/mol}$$
+<p>Now $\Delta G$ is negative, so melting is spontaneous. The crossover point, where $\Delta G = 0$, gives $T = \Delta H/\Delta S = 6010/22.0 \approx 273\text{ K}$ — exactly $0°\text{C}$, the melting point.</p>
+<p><strong>Problem-solving application.</strong> This equation lets you predict a reaction's spontaneity across temperatures without running the experiment, and it explains why some endothermic reactions still occur (a large positive $\Delta S$ can outweigh a positive $\Delta H$ at high $T$). In biochemistry, cells couple non-spontaneous reactions (like protein synthesis, $\Delta G > 0$) to spontaneous ones (like ATP hydrolysis, $\Delta G < 0$) so that the net $\Delta G$ of the combined process is negative — the same arithmetic that governs ice and steam governs metabolism.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

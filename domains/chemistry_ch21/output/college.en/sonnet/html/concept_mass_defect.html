@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mass Defect | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="mass-defect">Mass Defect</h2>
+<p>When protons and neutrons bind together to form a nucleus, the resulting nucleus has slightly less mass than the sum of its separate, unbound parts. This missing mass is called the <strong>mass defect</strong>, $\Delta m$:</p>
+$$
+\Delta m = \left[ Zm_p + (A-Z)m_n \right] - m_{\text{nucleus}}
+$$
+<p>where $Z$ is the number of protons, $A-Z$ is the number of neutrons, $m_p$ and $m_n$ are the proton and neutron masses, and $m_{\text{nucleus}}$ is the measured mass of the bound nucleus. The mass defect is intrinsically a relativistic result — it only makes sense once you accept Einstein's mass-energy equivalence, $E = mc^2$ — so it does require this piece of formalism to be understood correctly. The "missing" mass has not vanished; it has been converted into the energy that holds the nucleus together, called the <strong>binding energy</strong>:</p>
+$$
+E_b = \Delta m \, c^2
+$$
+<p><strong>Worked example.</strong> Consider helium-4 ($^4\text{He}$), with $Z=2$ protons and $2$ neutrons.</p>
+<li>Mass of 2 free protons: $2 \times 1.007276\ \text{u} = 2.014552\ \text{u}$</li>
+<li>Mass of 2 free neutrons: $2 \times 1.008665\ \text{u} = 2.017330\ \text{u}$</li>
+<li>Sum of separate parts: $4.031882\ \text{u}$</li>
+<li>Measured mass of $^4\text{He}$ nucleus: $4.002602\ \text{u}$</li>
+$$
+\Delta m = 4.031882\ \text{u} - 4.002602\ \text{u} = 0.029280\ \text{u}
+$$
+<p>Converting to energy using $1\ \text{u} = 931.5\ \text{MeV}/c^2$:</p>
+$$
+E_b = 0.029280 \times 931.5\ \text{MeV} \approx 27.3\ \text{MeV}
+$$
+<p>That 27.3 MeV is the energy you would need to supply to tear the helium-4 nucleus apart into two separate protons and two separate neutrons — and it is also the energy released when those four particles first fused together.</p>
+<p><strong>Problem-solving application.</strong> Mass defect is the key to comparing nuclear stability across elements. Because larger nuclei simply contain more nucleons, raw binding energy isn't a fair comparison — you need the <strong>binding energy per nucleon</strong>, $E_b/A$. Iron-56 has the highest binding energy per nucleon of any nucleus (about 8.8 MeV/nucleon), which is why fusing light elements toward iron (as in stars) or splitting heavy elements toward iron (as in fission reactors) both release energy: in each case, the products end up with a larger mass defect per nucleon than the reactants, and that increase in binding energy is released, typically as kinetic energy and radiation.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

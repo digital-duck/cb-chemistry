@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reduction | Chemistry Ch04</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="reduction">Reduction</h2>
+<p><strong>Reduction</strong> is the process of showing that one problem can be solved by transforming it into another problem you already know how to solve. Instead of designing a new algorithm from scratch, you write a procedure that converts any instance of Problem A into an instance of Problem B, solves it using an existing method for B, and then converts the answer back. Reduction is the workhorse of computer science and mathematics: it is how new problems get connected to a shared toolbox of known solutions, and it is also the primary technique for proving that a problem is <em>hard</em> — if a known-hard problem reduces to yours, yours is at least as hard.</p>
+<p><strong>Worked example.</strong> Suppose you need to find the <em>maximum</em> value in a list, but you only have a working function <code>find_min(list)</code> that returns the minimum. Rather than writing a new search routine, negate every number in the list, run <code>find_min</code> on the negated list, and negate the result again:</p>
+<pre><code>def find_max(nums):
+    negated = [-x for x in nums]
+    return -find_min(negated)</code></pre>
+<p>This is a genuine reduction: "find the max" has been transformed into "find the min," with a cheap conversion step (negation) on both ends. The correctness of <code>find_max</code> now rests entirely on the correctness of <code>find_min</code> — you don't need to reprove anything about searching.</p>
+<p><strong>Problem-solving application.</strong> Reductions are especially powerful for classifying problem difficulty. In computer science, a problem $P$ is shown to be NP-hard by taking a problem already known to be NP-hard, such as Boolean satisfiability (SAT), and constructing a polynomial-time transformation from SAT into $P$. If such a reduction exists, then any efficient algorithm for $P$ would also give an efficient algorithm for SAT — so $P$ inherits SAT's difficulty. This is why, when you encounter an unfamiliar optimization problem (say, scheduling jobs on machines to minimize delay), a productive first move is to ask: does this look like a disguised version of a problem I already know, such as bin-packing or the traveling salesman problem? If you can build a mapping between the two, you immediately gain access to decades of existing algorithms, complexity results, and heuristics — turning an unsolved problem into a solved one in translation.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

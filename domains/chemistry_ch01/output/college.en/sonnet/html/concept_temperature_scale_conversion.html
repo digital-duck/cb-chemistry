@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Temperature Scale Conversion | Chemistry Ch01</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="temperature-scale-conversion">Temperature Scale Conversion</h2>
+<p><strong>Definition.</strong> A temperature scale assigns a real number to a thermal state via an affine map fixed by two reference points. The Celsius scale $C$ and Fahrenheit scale $F$ are related by the affine transformation</p>
+$$
+F = \frac{9}{5}C + 32, \qquad C = \frac{5}{9}(F - 32).
+$$
+<p>The Kelvin scale $K$, used in thermodynamics, is a shifted version of Celsius with no affine slope adjustment:</p>
+$$
+K = C + 273.15.
+$$
+<p>Because $K$ is an absolute scale, $K \geq 0$ for all physical temperatures, with $K = 0$ corresponding to absolute zero.</p>
+<p><strong>Worked example.</strong> Convert $98.6^\circ\text{F}$ (normal human body temperature) to Celsius and Kelvin. Using the inverse relation,</p>
+$$
+C = \frac{5}{9}(98.6 - 32) = \frac{5}{9}(66.6) = 37.0^\circ\text{C}.
+$$
+<p>Then $K = 37.0 + 273.15 = 310.15\ \text{K}$.</p>
+<p><strong>Key theorem.</strong> <em>The Celsius-to-Fahrenheit map $\phi(C) = \frac{9}{5}C + 32$ is a bijective affine function on $\mathbb{R}$, hence invertible, with a unique fixed point at $C = F = -40$.</em></p>
+<p><em>Proof sketch.</em> Since $\phi$ has nonzero slope $\frac{9}{5} \neq 0$, it is strictly increasing and therefore injective; affine maps with nonzero slope are surjective onto $\mathbb{R}$, giving bijectivity. The inverse is $\phi^{-1}(F) = \frac{5}{9}(F-32)$, obtained by solving $F = \frac{9}{5}C+32$ for $C$. A fixed point satisfies $\phi(C) = C$, i.e., $C = \frac{9}{5}C + 32$, giving $-\frac{4}{5}C = 32$, so $C = -40$. $\blacksquare$</p>
+<p><strong>Lab cell (SymPy).</strong></p>
+<pre><code>from sympy import symbols, Eq, solve, Rational
+
+C, F, K = symbols('C F K')
+
+# Define conversions
+F_expr = Rational(9, 5) * C + 32
+C_expr = Rational(5, 9) * (F - 32)
+K_expr = C + Rational(27315, 100)
+
+# Verify fixed point
+fixed_point = solve(Eq(F_expr, C), C)
+print("Fixed point (C = F):", fixed_point)  # [-40]
+
+# Convert 98.6 F to Celsius and Kelvin
+c_val = C_expr.subs(F, Rational(986, 10))
+k_val = K_expr.subs(C, c_val)
+print("Celsius:", float(c_val))   # 37.0
+print("Kelvin:", float(k_val))    # 310.15</code></pre>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

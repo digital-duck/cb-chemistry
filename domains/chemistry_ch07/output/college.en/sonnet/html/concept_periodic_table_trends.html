@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Periodic Table Trends | Chemistry Ch07</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="periodic-table-trends">Periodic Table Trends</h2>
+<p>The periodic table is organized so that elements in the same column (group) share similar valence electron configurations, while moving across a row (period) or down a column produces predictable, quantifiable changes in atomic properties. The single idea that explains nearly all of these changes is <strong>effective nuclear charge</strong> ($Z_{\text{eff}}$): the net positive pull a valence electron actually feels, once you subtract the shielding effect of inner electrons. Protons in the nucleus pull electrons inward; inner-shell electrons push back outward by blocking some of that pull. $Z_{\text{eff}}$ is what's left over. Moving left to right across a period, protons increase while the number of shielding (inner-shell) electrons stays fixed, so $Z_{\text{eff}}$ rises steadily — atomic radius shrinks and ionization energy (the energy needed to remove an electron) increases. Moving down a group, a new electron shell is added each row, so shielding grows faster than nuclear charge, $Z_{\text{eff}}$ effectively drops, atomic radius grows, and ionization energy decreases. Electron affinity and electronegativity follow this same $Z_{\text{eff}}$ logic and trend in the same directions, so once you can reason about radius and ionization energy, you can reason about them too.</p>
+<p><strong>Worked example.</strong> Compare the first ionization energies of sodium (Na, Z=11) and chlorine (Cl, Z=17), both in period 3. Na has electron configuration $[\text{Ne}]3s^1$; its single valence electron feels a low $Z_{\text{eff}}$, so removing it takes only about 496 kJ/mol. Cl has configuration $[\text{Ne}]3s^23p^5$; with six more protons and the same shielding shell, its valence electrons feel a much higher $Z_{\text{eff}}$, so ionization energy jumps to about 1251 kJ/mol. This matches the left-to-right trend exactly.</p>
+<p><strong>Problem-solving application.</strong> $Z_{\text{eff}}$ reasoning lets you predict unmeasured properties and rank reactivity without memorizing tables. Suppose you need to predict which of three elements — potassium (K), calcium (Ca), and rubidium (Rb) — has the largest atomic radius and lowest ionization energy. K and Ca are in the same period (Ca is one step right of K), so Ca has higher $Z_{\text{eff}}$ than K, giving it a smaller radius and higher ionization energy. Rb sits directly below K in the same group, adding a full electron shell, so Rb has lower $Z_{\text{eff}}$ than K, giving it a larger radius and lower ionization energy. Combining both comparisons: Rb > K > Ca in radius, and Ca > K > Rb in ionization energy. This two-step reasoning — locate the elements, decide whether the comparison runs across a period or down a group, then track how $Z_{\text{eff}}$ shifts — is the core skill for periodic-table problems, whether predicting reactivity, bond type, or relative acidity of oxides.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

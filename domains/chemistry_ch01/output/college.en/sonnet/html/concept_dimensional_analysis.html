@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dimensional Analysis | Chemistry Ch01</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="dimensional-analysis">Dimensional Analysis</h2>
+<p><strong>Definition.</strong> Every physical quantity $Q$ can be expressed as a product of powers of fundamental dimensions—typically mass $\mathsf{M}$, length $\mathsf{L}$, and time $\mathsf{T}$—written as a <em>dimensional formula</em> $[Q] = \mathsf{M}^a \mathsf{L}^b \mathsf{T}^c$. Dimensional analysis is the study of relationships among physical quantities by tracking these exponents, independent of the numerical values or units chosen (SI, CGS, etc.). A valid physical equation must be <em>dimensionally homogeneous</em>: every additive term must carry the same dimensional formula.</p>
+<p><strong>Worked example.</strong> Consider the period $T$ of a simple pendulum, hypothesized to depend on its length $\ell$, mass $m$, and gravitational acceleration $g$. Assume $T = k\, \ell^a m^b g^c$ for some dimensionless constant $k$. Substituting dimensions—$[T]=\mathsf{T}$, $[\ell]=\mathsf{L}$, $[m]=\mathsf{M}$, $[g]=\mathsf{L}\mathsf{T}^{-2}$—gives</p>
+$$\mathsf{T} = \mathsf{L}^a \mathsf{M}^b (\mathsf{L}\mathsf{T}^{-2})^c = \mathsf{L}^{a+c}\mathsf{M}^b\mathsf{T}^{-2c}.$$
+<p>Matching exponents: $b=0$ (mass), $-2c=1 \Rightarrow c=-\tfrac12$, and $a+c=0 \Rightarrow a=\tfrac12$. Thus $T = k\sqrt{\ell/g}$, recovering the correct functional form without solving the pendulum's differential equation.</p>
+<p><strong>Key theorem (Buckingham $\pi$ theorem).</strong> If a physical relation among $n$ variables involves $r$ independent fundamental dimensions, the relation can be rewritten equivalently in terms of $n-r$ dimensionless groups $\pi_1, \dots, \pi_{n-r}$. This theorem guarantees that dimensional analysis, though it cannot determine dimensionless constants like $k$, always reduces the complexity of a physical law by exactly $r$ parameters.</p>
+<p><strong>Lab cell (SymPy).</strong></p>
+<pre><code>from sympy import symbols, Rational, solve, Eq
+
+a, b, c = symbols('a b c')
+# [T]=T, [l]=L, [m]=M, [g]=L*T^-2
+eqs = [Eq(b, 0), Eq(-2*c, 1), Eq(a + c, 0)]
+sol = solve(eqs, [a, b, c])
+print(sol)  # {a: -1/2... solved as a=1/2 via a+c=0}</code></pre>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

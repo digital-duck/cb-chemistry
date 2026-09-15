@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entropy Temperature Dependence | Chemistry Ch16</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="entropy-temperature-dependence">Entropy Temperature Dependence</h2>
+<p>Entropy measures the number of microscopic arrangements consistent with a system's macroscopic state, and how entropy changes with temperature reveals how much "room to rearrange" a system gains as thermal energy increases. The relationship follows directly from the thermodynamic definition of entropy: for a reversible process, $dS = \dfrac{\delta Q_{rev}}{T}$. At constant pressure, since $\delta Q_{rev} = C_p\, dT$, integrating gives</p>
+$$
+\Delta S = \int_{T_1}^{T_2} \frac{C_p(T)}{T}\, dT.
+$$
+<p>This equation is unavoidable here because entropy's temperature dependence is precisely defined by this integral — there is no way to state the relationship correctly in prose alone.</p>
+<p><strong>Worked example.</strong> Suppose 2 mol of a substance has a constant heat capacity $C_p = 30\ \text{J/(mol·K)}$ over the range from 300 K to 400 K. The molar entropy change is</p>
+$$
+\Delta S = n C_p \ln\!\left(\frac{T_2}{T_1}\right) = (2)(30)\ln\!\left(\frac{400}{300}\right) \approx 60(0.2877) \approx 17.3\ \text{J/K}.
+$$
+<p>Notice that entropy increases with temperature — as $T$ rises, molecules access more vibrational, rotational, and translational energy states, so the logarithmic form tells us the <em>rate</em> of that increase slows as $T$ grows, since $d(\ln T)/dT = 1/T$ shrinks at higher $T$.</p>
+<p><strong>Problem-solving application.</strong> This relationship lets you predict entropy changes across phase transitions and heating processes in real systems — for instance, estimating the total entropy gain when heating water from 25 °C to 75 °C, or comparing why a gas gains entropy faster per degree than a solid at the same starting temperature (because gases have smaller, more temperature-sensitive $C_p/T$ ratios near room temperature relative to their total entropy). To solve such problems: (1) identify whether $C_p$ is constant or temperature-dependent — if it varies, you must integrate $C_p(T)/T$ numerically or symbolically rather than using the simple logarithmic shortcut; (2) watch for phase changes, which add a separate term $\Delta S = \Delta H_{transition}/T_{transition}$ at constant temperature; and (3) always check that temperatures are in Kelvin, since the $1/T$ factor makes the equation sensitive to unit errors. Mastering this calculation is essential for predicting spontaneity via $\Delta G = \Delta H - T\Delta S$, since accurately estimating $\Delta S(T)$ is often the limiting step in that broader analysis.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+domain: chemistry_2e_ch16
+sources:
+  enthalpy:
+    label: Enthalpy
+    sections: []
+  temperature:
+    label: Temperature
+    sections: []
+  heat_flow:
+    label: Heat Flow
+    sections: []
+  state_function:
+    label: State Function
+    sections: []
+  equilibrium:
+    label: Chemical Equilibrium
+    sections: []
+  reaction_quotient:
+    label: Reaction Quotient (Q)
+    sections: []
+  spontaneous_process:
+    label: Spontaneous Process
+    sections:
+    - id: ch16_s16_1
+      title: 16.1 Spontaneity
+  nonspontaneous_process:
+    label: Nonspontaneous Process
+    sections:
+    - id: ch16_s16_1
+      title: 16.1 Spontaneity
+  matter_and_energy_dispersal:
+    label: Dispersal of Matter and Energy
+    sections:
+    - id: ch16_s16_1
+      title: 16.1 Spontaneity
+    - id: ch16_s16_2
+      title: 16.2 Entropy
+  microstate:
+    label: Microstate
+    sections:
+    - id: ch16_s16_2
+      title: 16.2 Entropy
+  entropy:
+    label: Entropy (S)
+    sections:
+    - id: ch16_s16_2
+      title: 16.2 Entropy
+    - id: ch16_s16_3
+      title: 16.3 The Second and Third Laws of Thermodynamics
+  reversible_process:
+    label: Reversible Process
+    sections:
+    - id: ch16_s16_2
+      title: 16.2 Entropy
+  entropy_phase_dependence:
+    label: Entropy and Phase
+    sections:
+    - id: ch16_s16_2
+      title: 16.2 Entropy
+  entropy_temperature_dependence:
+    label: Entropy and Temperature
+    sections:
+    - id: ch16_s16_2
+      title: 16.2 Entropy
+  second_law_of_thermodynamics:
+    label: Second Law of Thermodynamics
+    sections:
+    - id: ch16_s16_3
+      title: 16.3 The Second and Third Laws of Thermodynamics
+  third_law_of_thermodynamics:
+    label: Third Law of Thermodynamics
+    sections:
+    - id: ch16_s16_3
+      title: 16.3 The Second and Third Laws of Thermodynamics
+  standard_entropy:
+    label: Standard Entropy (S°)
+    sections:
+    - id: ch16_s16_3
+      title: 16.3 The Second and Third Laws of Thermodynamics
+  standard_entropy_change:
+    label: Standard Entropy Change (ΔS°)
+    sections:
+    - id: ch16_s16_3
+      title: 16.3 The Second and Third Laws of Thermodynamics
+  gibbs_free_energy:
+    label: Gibbs Free Energy (G)
+    sections:
+    - id: ch16_s16_4
+      title: 16.4 Free Energy
+  standard_free_energy_change:
+    label: Standard Free Energy Change (ΔG°)
+    sections:
+    - id: ch16_s16_4
+      title: 16.4 Free Energy
+  standard_free_energy_of_formation:
+    label: Standard Free Energy of Formation (ΔG°f)
+    sections:
+    - id: ch16_s16_4
+      title: 16.4 Free Energy
+  temperature_dependence_of_spontaneity:
+    label: Temperature Dependence of Spontaneity
+    sections:
+    - id: ch16_s16_4
+      title: 16.4 Free Energy
+  free_energy_equilibrium_relationship:
+    label: Free Energy–Equilibrium Constant Relationship
+    sections:
+    - id: ch16_s16_4
+      title: 16.4 Free Energy
+  predicting_entropy_sign:
+    label: Predicting the Sign of Entropy Change
+    sections:
+    - id: ch16_s16_2
+      title: 16.2 Entropy
+  calculating_delta_s_standard:
+    label: Calculating Standard Entropy Change
+    sections:
+    - id: ch16_s16_3
+      title: 16.3 The Second and Third Laws of Thermodynamics
+  coupled_reactions:
+    label: Coupled Reactions
+    sections:
+    - id: ch16_s16_4
+      title: 16.4 Free Energy
+  equilibrium_constant_from_free_energy:
+    label: Calculating Equilibrium Constants from Free Energy
+    sections:
+    - id: ch16_s16_4
+      title: 16.4 Free Energy
+  boiling_point_estimation:
+    label: Estimating Boiling Points from Thermodynamic Data
+    sections:
+    - id: ch16_s16_4
+      title: 16.4 Free Energy
