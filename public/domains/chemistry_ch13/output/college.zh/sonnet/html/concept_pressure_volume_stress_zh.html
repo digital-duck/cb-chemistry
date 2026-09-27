@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pressure Volume Stress | Chemistry Ch13</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="pressure-volume-stress">Pressure Volume Stress</h2>
+<p><strong>定义</strong></p>
+<p>压力-体积胁迫（pressure volume stress）是指细胞或组织因周围介质渗透压变化而承受的机械应力，其结果是水分跨膜净移动，导致细胞体积膨胀或收缩。当细胞置于低渗溶液中，水分依渗透作用净流入细胞，细胞膨压（turgor pressure，$P$）上升，细胞壁对膨胀的抵抗力与膨压相平衡，使细胞保持稳定体积而不破裂；当细胞置于高渗溶液中，水分外流，细胞发生质壁分离（plasmolysis），体积收缩，膨压趋近于零。这种由水势差驱动的压力与体积变化关系，是植物细胞维持形态、支撑茎叶直立以及气孔开闭调节的物理基础。</p>
+<p>细胞的总水势可表示为溶质势与压力势之和：</p>
+$$\Psi = \Psi_s + \Psi_p$$
+<p>其中 $\Psi_s$（溶质势，通常为负值）反映溶质浓度对水势的降低作用，$\Psi_p$（压力势，即膨压，在膨胀细胞中为正值）反映细胞壁对膨胀的机械反作用力。水分总是从水势高处流向水势低处，直到两侧水势相等，系统达到平衡。</p>
+<p><strong>实例分析</strong></p>
+<p>将一片新鲜生菜叶放入清水中，细胞外水势高于细胞内（细胞内因溶质存在水势更低），水分净流入细胞，$\Psi_p$ 随之升高，叶片变得挺硬（膨压增加）。若改将叶片放入浓盐水中，细胞外水势因高溶质浓度而降低，水分净流出细胞，细胞萎蔫，膨压下降甚至消失，叶片变软下垂——这正是腌制蔬菜或凉拌菜"出水变软"的生理机制。</p>
+<p><strong>问题解决应用</strong></p>
+<p>假设某细胞的溶质势为 $\Psi_s = -0.8\ \text{MPa}$，置于压力势为零的开放溶液中，达到渗透平衡时细胞水势应等于外界溶液水势。若外界溶液的水势为 $-0.3\ \text{MPa}$，则平衡时细胞压力势为：</p>
+$$\Psi_p = \Psi_{\text{外}} - \Psi_s = -0.3 - (-0.8) = 0.5\ \text{MPa}$$
+<p>这表明细胞将维持正的膨压，处于挺实状态。若外界溶液水势降至 $-1.0\ \text{MPa}$（例如加盐后），则 $\Psi_p = -1.0-(-0.8) = -0.2\ \text{MPa}$，负值意味着细胞壁已无法维持膨胀、细胞发生质壁分离。这类计算常用于预测灌溉水质、盐渍土壤或食品保鲜过程中植物组织的失水风险。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch13: Fundamental Equilibrium Concepts (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

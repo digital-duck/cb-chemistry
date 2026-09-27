@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mole Fraction | Chemistry Ch11</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="摩尔分数">摩尔分数</h2>
+<p><strong>定义</strong></p>
+<p>摩尔分数（mole fraction，符号 $x$）是溶液中某一组分的物质的量占混合物总物质的量的比例。对于由组分 A、B、C……组成的混合物，组分 A 的摩尔分数定义为</p>
+$$
+x_A = \frac{n_A}{n_A + n_B + n_C + \cdots} = \frac{n_A}{n_{\text{总}}}
+$$
+<p>其中 $n_A$ 为组分 A 的物质的量（单位：mol）。摩尔分数没有单位，取值范围为 $0$ 到 $1$，且混合物中所有组分的摩尔分数之和恒等于 1：</p>
+$$
+x_A + x_B + x_C + \cdots = 1
+$$
+<p>与质量分数或体积分数不同，摩尔分数直接反映"分子个数"层面的组成比例，这使它在处理气体分压（拉乌尔定律、道尔顿分压定律）和依数性质（如蒸气压下降、凝固点降低）时格外方便，因为这些性质取决于溶质粒子的数目，而非质量。</p>
+<p><strong>例题</strong></p>
+<p>某溶液由 $2.0\ \text{mol}$ 乙醇（$\text{C}_2\text{H}_5\text{OH}$）和 $8.0\ \text{mol}$ 水（$\text{H}_2\text{O}$）混合而成。求乙醇和水各自的摩尔分数。</p>
+<p>总物质的量：$n_{\text{总}} = 2.0 + 8.0 = 10.0\ \text{mol}$</p>
+$$
+x_{\text{乙醇}} = \frac{2.0}{10.0} = 0.20, \qquad x_{\text{水}} = \frac{8.0}{10.0} = 0.80
+$$
+<p>验证：$0.20 + 0.80 = 1$，符合总和为 1 的规则。</p>
+<p><strong>解题应用</strong></p>
+<p>实际问题中，我们常常需要从质量数据出发计算摩尔分数，这就要求先把质量换算成物质的量。例如：某混合气体含 $44\ \text{g}$ 二氧化碳（摩尔质量 $44\ \text{g/mol}$）和 $28\ \text{g}$ 氮气（摩尔质量 $28\ \text{g/mol}$）。先分别求物质的量：$n_{\text{CO}_2} = 44/44 = 1.0\ \text{mol}$，$n_{\text{N}_2} = 28/28 = 1.0\ \text{mol}$，故 $x_{\text{CO}_2} = x_{\text{N}_2} = 0.50$。</p>
+<p>在气体系统中，摩尔分数还与分压直接相关：根据道尔顿分压定律，某组分的分压 $P_A = x_A \cdot P_{\text{总}}$。这一关系在计算大气成分分压、呼吸气体交换等实际问题中十分常用。掌握质量→物质的量→摩尔分数的换算链条，是正确应用依数性质公式和分压定律的前提。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch11: Solutions and Colloids (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electron Configuration | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="electron-configuration">Electron Configuration</h2>
+<p><strong>定义</strong></p>
+<p>电子排布（electron configuration）描述了电子在原子中如何分布于不同的能级（energy level）和轨道（orbital）之中。原子核外的电子并非杂乱无章地分布,而是按照能量由低到高依次填入允许的空间区域——即轨道。每个轨道由三个量子数确定其形状与取向,分为 $s$、$p$、$d$、$f$ 四类亚层,分别最多容纳 $2$、$6$、$10$、$14$ 个电子。电子填充遵循三条基本规则:<strong>能量最低原理</strong>(电子优先占据能量最低的轨道)、<strong>泡利不相容原理</strong>(每个轨道最多容纳两个自旋相反的电子)、<strong>洪特规则</strong>(同一亚层的简并轨道,电子先单独占据不同轨道,且自旋方向相同,再成对填充)。原子的电子排布决定了其化学性质,尤其是最外层的价电子(valence electron)数目,直接影响原子的成键能力和反应活性。</p>
+<p><strong>实例解析</strong></p>
+<p>以氧原子($Z=8$)为例,其电子排布写作 $1s^2\,2s^2\,2p^4$。填充顺序遵循近似的能级图(Aufbau 顺序):先填满 $1s$(2个电子),再填 $2s$(2个电子),剩余4个电子进入 $2p$ 亚层。根据洪特规则,这4个电子会先以自旋平行的方式分占三个 $2p$ 轨道($2p_x, 2p_y, 2p_z$),即先各占一个,第四个电子才与其中一个配对。这样氧原子的 $2p$ 轨道中有两个未成对电子,解释了氧气分子($O_2$)具有顺磁性这一实验事实。</p>
+<p><strong>问题解决应用</strong></p>
+<p>电子排布的实际价值在于预测元素的化学行为。例如,判断某元素能否形成稳定离子:钠($Z=11$)的排布为 $1s^2\,2s^2\,2p^6\,3s^1$,失去最外层的单个 $3s$ 电子后即达到与氖相同的稳定八电子层结构,因此钠易形成 $\mathrm{Na}^+$。再如,通过比较两种过渡金属离子(如 $\mathrm{Fe}^{2+}$ 与 $\mathrm{Fe}^{3+}$)的 $3d$ 电子排布差异,可以解释它们在磁性和颜色上的不同——这正是电子排布分析在无机化学和材料科学中的常见应用:写出目标原子或离子的排布式,识别价电子层,进而推断其反应倾向、化合价与光谱行为。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

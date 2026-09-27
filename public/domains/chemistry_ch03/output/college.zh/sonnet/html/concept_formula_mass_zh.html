@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formula Mass | Chemistry Ch03</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="formula-mass">Formula Mass</h2>
+<p><strong>定义</strong></p>
+<p>式量（formula mass），又称式量或分子量（对于共价化合物常称"分子量" molecular mass），是化合物化学式中所有原子的原子量之和，单位是原子质量单位（amu）。对于离子化合物（如 $\text{NaCl}$），由于不存在真正的"分子"，化学家更严谨地使用"式量"而非"分子量"这一术语——因为离子化合物是由阳离子和阴离子按固定比例排列成的晶格，其化学式代表的是最简整数比，而非独立存在的分子单元。计算式量时，只需将化学式中各元素的原子量乘以其下标数目，再求和即可。</p>
+<p><strong>范例</strong></p>
+<p>求硫酸钙 $\text{CaSO}_4$ 的式量。查元素周期表：$\text{Ca} = 40.08\ \text{amu}$，$\text{S} = 32.07\ \text{amu}$，$\text{O} = 16.00\ \text{amu}$。式中含 1 个 Ca、1 个 S、4 个 O，因此：</p>
+$$
+40.08 + 32.07 + (4 \times 16.00) = 40.08 + 32.07 + 64.00 = 136.15\ \text{amu}
+$$
+<p>再看一个含括号的例子，磷酸铵 $(\text{NH}_4)_3\text{PO}_4$：括号外的下标 3 作用于括号内所有原子，即 3 个 N、12 个 H；再加上 1 个 P、4 个 O：</p>
+$$
+3(14.01) + 12(1.01) + 30.97 + 4(16.00) = 42.03 + 12.12 + 30.97 + 64.00 = 149.12\ \text{amu}
+$$
+<p><strong>解题应用</strong></p>
+<p>式量是连接"化学式"与"实验室可称量的质量"这两个尺度的桥梁，是后续摩尔计算、溶液配制、化学计量学的基础工具。常见错误是漏乘括号内原子的下标，或把水合物的结晶水质量遗漏——例如硫酸铜晶体 $\text{CuSO}_4 \cdot 5\text{H}_2\text{O}$ 的式量必须包含 5 个水分子的质量（$5 \times 18.02 = 90.10\ \text{amu}$），总式量为 $159.61 + 90.10 = 249.71\ \text{amu}$。练习策略：先写出化学式中每种元素及其总原子数，逐项列出乘法式，最后求和并核对小数位，避免因计算顺序混乱而出错。掌握式量计算的准确性，是之后学习摩尔质量、百分组成和化学反应计量关系的必要前提。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch3: Composition of Substances and Solutions (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

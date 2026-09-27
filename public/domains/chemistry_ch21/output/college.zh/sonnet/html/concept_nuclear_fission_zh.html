@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nuclear Fission | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="nuclear-fission">Nuclear Fission</h2>
+<p><strong>定义</strong></p>
+<p>核裂变（nuclear fission）是指一个质量数很大的原子核（如铀-235或钚-239）在吸收一个中子后，分裂成两个质量较小、较稳定的原子核（称为裂变碎片），同时释放出2至3个自由中子和大量能量的核反应过程。这一过程之所以能释放能量，根本原因在于比结合能（binding energy per nucleon）曲线的形状：中等质量原子核（如铁附近）的比结合能远高于铀这样的重核，因此重核分裂为中等质量核时，部分质量转化为能量释放出来，其定量关系由爱因斯坦质能方程 $E = \Delta m \, c^2$ 描述，其中 $\Delta m$ 是反应前后的质量亏损。</p>
+<p><strong>举例说明</strong></p>
+<p>铀-235裂变的一个典型反应式为：</p>
+$$
+{}^{235}_{92}\text{U} + {}^{1}_{0}\text{n} \rightarrow {}^{141}_{56}\text{Ba} + {}^{92}_{36}\text{Kr} + 3\,{}^{1}_{0}\text{n} + \text{能量}
+$$
+<p>每次裂变释放约200 MeV能量，相较于化学反应（如燃烧）每个反应约几个eV，裂变释放的能量高出近一亿倍。更关键的是，反应产生的多余中子可以继续轰击其他铀-235原子核，引发<strong>链式反应（chain reaction）</strong>——这正是核反应堆和核武器能够持续释放能量的物理基础。</p>
+<p><strong>问题解决应用</strong></p>
+<p>工程与安全设计的核心问题是控制链式反应的速率。用"中子倍增因子" $k$（即每一代裂变中平均引发下一代裂变的中子数）来描述反应状态：$k=1$ 时反应稳定持续（核电站正常运行状态，称为"临界"）；$k<1$ 时反应逐渐熄灭（次临界）；$k>1$ 时反应迅速增长（超临界，武器所需状态）。核反应堆通过插入吸收中子的控制棒（如镉、硼材料）来调节 $k$，使其维持在1附近，从而实现可控的能量输出用于发电。而核武器则设计为让 $k$ 远大于1，在极短时间内释放海量能量。理解这一临界性概念，是分析核安全事故（如切尔诺贝利事故中 $k$ 失控上升）和评估核不扩散政策的基础。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

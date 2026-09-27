@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reversible Reaction | Chemistry Ch13</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="可逆反应">可逆反应</h2>
+<p><strong>定义</strong></p>
+<p>大多数化学反应并非"一去不复返"。当反应物生成产物的同时,产物也在不断转化回反应物,这样的反应称为<strong>可逆反应</strong>,用符号 $\rightleftharpoons$ 表示,而不是单向箭头 $\rightarrow$。例如合成氨反应:</p>
+$$
+N_2(g) + 3H_2(g) \rightleftharpoons 2NH_3(g)
+$$
+<p>正向反应(生成 $NH_3$)与逆向反应(分解 $NH_3$)同时发生。当正向反应速率与逆向反应速率相等时,系统达到<strong>化学平衡</strong>——此时反应物和产物的浓度不再随时间变化,但反应本身并未停止,这是一种动态平衡,而非静止状态。</p>
+<p><strong>举例说明</strong></p>
+<p>以经典的可逆反应为例:</p>
+$$
+2SO_2(g) + O_2(g) \rightleftharpoons 2SO_3(g)
+$$
+<p>反应初期只有 $SO_2$ 和 $O_2$,正向反应速率快、逆向反应速率为零。随着 $SO_3$ 不断生成,逆向反应速率逐渐增大,同时正向反应速率因反应物消耗而减小。最终两者相等,浓度保持恒定,系统进入平衡态。这一现象可以通过将气体密封在透明容器中,用气体颜色深浅(如 $NO_2 \rightleftharpoons N_2O_4$ 体系,$NO_2$ 为红棕色)直观观察到:颜色最终稳定不变,说明达到平衡。</p>
+<p><strong>解决问题的应用</strong></p>
+<p>理解可逆反应的关键在于能够预测:当外部条件改变时,平衡会如何移动。这就是<strong>勒夏特列原理</strong>——若对平衡体系施加扰动(改变浓度、压强或温度),体系会向能够部分抵消这一扰动的方向移动,重新建立平衡。</p>
+<p>应用示例:对于合成氨反应 $N_2 + 3H_2 \rightleftharpoons 2NH_3$(正反应放热),若要提高 $NH_3$ 产率,可以:</p>
+<li><strong>增大 $N_2$ 或 $H_2$ 浓度</strong>:平衡正向移动,消耗多余反应物;</li>
+<li><strong>降低温度</strong>:由于正反应放热,降温有利于放热方向(正向),但反应速率会变慢,工业上需权衡产率与速率(实际生产采用约 400–500°C 的折中温度);</li>
+<li><strong>增大压强</strong>:由于正向反应气体分子数减少(4 mol → 2 mol),加压有利于正向移动。</li>
+<p>掌握这一原理,可以帮助我们预测并调控从工业合成到人体内酶促反应等各类可逆过程的产物产量。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch13: Fundamental Equilibrium Concepts (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

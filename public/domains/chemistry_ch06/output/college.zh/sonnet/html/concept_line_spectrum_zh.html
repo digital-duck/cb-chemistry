@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Line Spectrum | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="line-spectrum-线状光谱">Line Spectrum(线状光谱)</h2>
+<p><strong>定义</strong></p>
+<p>当气态原子受到加热或放电激发后，会吸收能量,并以光的形式将能量释放出来。若用棱镜或光栅将这些发射光分解，得到的不是连续的彩虹色带,而是一系列在特定波长处出现的分立亮线,这就是<strong>线状光谱</strong>（line spectrum）,也称原子发射光谱。每种元素的线状光谱都是独一无二的,如同"光学指纹",可用于鉴定物质成分。</p>
+<p>线状光谱的成因在于原子中电子的能级是量子化的——电子只能占据一系列分立的能量状态 $E_1, E_2, E_3, \ldots$,而不能取任意能量值。当电子从高能级 $E_i$ 跃迁到低能级 $E_f$ 时,会释放出一个光子,其能量恰好等于两能级之差：</p>
+$$
+E_{\text{光子}} = E_i - E_f = h\nu = \dfrac{hc}{\lambda}
+$$
+<p>其中 $h$ 为普朗克常数,$c$ 为光速,$\nu$ 和 $\lambda$ 分别为光子的频率与波长。由于原子的能级数目有限且数值固定,可能的跃迁组合也是有限的,因此发射光只能出现在若干特定波长处,形成线状光谱,而非连续光谱。</p>
+<p><strong>实例分析</strong></p>
+<p>氢原子是最简单的例子。当氢原子中的电子从 $n=3$ 跃迁到 $n=2$ 能级时,会发射出波长约为 $656\ \text{nm}$ 的红光,这是巴耳末系（Balmer series）中最强的一条谱线,肉眼可见。若跃迁发生在紫外区（如莱曼系,跃迁到 $n=1$）或红外区（帕邢系,跃迁到 $n=3$）,则人眼无法直接观察,需借助专门探测器。</p>
+<p><strong>应用与解题思路</strong></p>
+<p>天文学家利用恒星光谱中的线状光谱吸收线,判断遥远恒星和星际气体云的化学组成——这正是我们得知太阳富含氢和氦、而非直接采样分析的原因。解题时,关键步骤是：（1）由题给能级图或能量差,先求出光子能量 $\Delta E$；（2）代入 $\Delta E = hc/\lambda$ 反解波长 $\lambda$；（3）根据波长判断该谱线落在可见光、紫外还是红外区。反过来,若已知某谱线波长,也可反推对应的能级跃迁,这类"由光谱倒推结构"的推理,正是原子光谱学与光谱分析化学的核心应用之一。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Half Life | Chemistry Ch12</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="half-life">Half Life</h2>
+<p><strong>定义</strong></p>
+<p>半衰期（half-life，符号 $t_{1/2}$）是指一定量的放射性同位素中,有一半原子核发生衰变所需要的时间。放射性衰变是一个随机过程——我们无法预测某一个原子核何时衰变，但对于大量原子核的集合，衰变遵循确定的统计规律。每种放射性同位素都有其固定的半衰期，不受温度、压力或化学状态的影响，这使得半衰期成为测定年代、评估辐射安全性以及计算药物或示踪剂剂量的可靠工具。</p>
+<p>衰变过程满足指数衰减规律：</p>
+$$N(t) = N_0 \left(\frac{1}{2}\right)^{t/t_{1/2}}$$
+<p>其中 $N_0$ 是初始原子核数量，$N(t)$ 是经过时间 $t$ 后剩余的原子核数量。每经过一个半衰期，剩余量就减少为原来的一半，如此反复，永远不会精确降为零，但会趋近于零。</p>
+<p><strong>例题</strong></p>
+<p>碳-14（$^{14}\text{C}$）的半衰期约为 5730 年，常用于考古年代测定。假设一块古代木材样本中 $^{14}\text{C}$ 的含量降至活体植物中原始含量的 25%，求该木材的大致年龄。</p>
+<p>由于 $25\% = \left(\frac{1}{2}\right)^2$，说明经过了 2 个半衰期：</p>
+$$t = 2 \times 5730 \text{ 年} = 11460 \text{ 年}$$
+<p>验证：代入公式，$N(t)/N_0 = (1/2)^{11460/5730} = (1/2)^2 = 0.25$，与题目条件一致。</p>
+<p><strong>应用与问题求解</strong></p>
+<p>医学上，碘-131（半衰期约 8 天）用于甲状腺治疗，医生需根据半衰期计算患者体内放射性剂量随时间的衰减，以确定安全出院时间和防护措施。核废料处理中，钚-239 的半衰期长达约 24000 年，这决定了废料储存设施必须具备极长期的隔离能力。</p>
+<p>求解此类问题的关键是先判断经过的时间是否恰好为整数个半衰期（可直接用 $(1/2)^n$ 计算），若不是整数倍，则需要利用公式两边取自然对数求解 $t$：</p>
+$$t = t_{1/2} \cdot \frac{\ln(N/N_0)}{\ln(1/2)}$$
+<p>掌握半衰期概念，本质上是理解指数衰减这一自然界普遍存在的模式，它同样适用于药物代谢、电容器放电等看似无关的现象。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch12: Kinetics (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

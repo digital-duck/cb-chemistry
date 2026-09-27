@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bond Energy | Chemistry Ch07</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="bond-energy">Bond Energy</h2>
+<p><strong>定义</strong></p>
+<p>键能（bond energy）是指断裂 1 mol 气态分子中某一化学键，使其分解为气态原子（或原子团）所需吸收的平均能量，单位通常为 $\text{kJ/mol}$。键能是衡量化学键强弱的重要指标：键能越大，该键越难断裂，分子也越稳定。需要注意的是，对于多原子分子中同种类型的键（例如 $\text{CH}_4$ 中的四个 C–H 键），由于断裂每一根键时分子的电子环境略有不同，实际所需能量并不完全相同，因此键能通常取多个同类键断裂能量的平均值，称为"平均键能"。断键过程需要吸收能量（吸热），成键过程则释放能量（放热），这一点是利用键能计算反应热的基础。</p>
+<p><strong>实例解析</strong></p>
+<p>以甲烷燃烧反应为例：</p>
+$$\text{CH}_4(g) + 2\text{O}_2(g) \rightarrow \text{CO}_2(g) + 2\text{H}_2\text{O}(g)$$
+<p>反应热可以通过"断键吸收的总能量减去成键释放的总能量"来估算：</p>
+$$\Delta H \approx \sum(\text{反应物键能}) - \sum(\text{生成物键能})$$
+<p>已知部分平均键能：C–H 约 $413\ \text{kJ/mol}$，O=O 约 $498\ \text{kJ/mol}$，C=O（在 $\text{CO}_2$ 中）约 $799\ \text{kJ/mol}$，O–H 约 $463\ \text{kJ/mol}$。</p>
+<p>反应物断键需吸收：$4(413) + 2(498) = 1652 + 996 = 2648\ \text{kJ}$ 生成物成键释放：$2(799) + 4(463) = 1598 + 1852 = 3450\ \text{kJ}$</p>
+$$\Delta H \approx 2648 - 3450 = -802\ \text{kJ/mol}$$
+<p>负值表示反应放热，与甲烷燃烧是剧烈放热反应的实验事实一致。</p>
+<p><strong>解题应用</strong></p>
+<p>利用键能估算反应热是化学计算中的常见题型，解题步骤可归纳为三步：(1) 画出反应物和生成物的结构式，列出所有断裂和形成的化学键；(2) 查表获取相应平均键能；(3) 代入公式求和比较。需要提醒的是，这种方法给出的是"估算值"而非精确值，因为查表中的键能本身是多种分子中同类键的平均结果，与具体分子中的真实键能会有一定偏差；对于涉及离子键、金属键或强分子间作用力的体系，键能法的适用性会降低。尽管如此，键能估算法在快速判断反应放热或吸热趋势、比较不同反应的能量变化时非常实用，是学习热化学与反应机理分析的重要工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch7: Chemical Bonding and Molecular Geometry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

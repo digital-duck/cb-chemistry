@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atomic Mass Unit | Chemistry Ch02</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="atomic-mass-unit">Atomic Mass Unit</h2>
+<p><strong>定义</strong></p>
+<p>原子的质量极其微小，若用千克表示会出现极不方便的数字（例如一个碳原子约为 $1.99 \times 10^{-26}\ \text{kg}$）。为了更直观地比较不同原子的相对质量，科学家定义了<strong>原子质量单位</strong>（atomic mass unit，符号 $\text{u}$，也称"道尔顿"，符号 $\text{Da}$）。国际标准规定：一个原子质量单位等于碳-12（$^{12}\text{C}$）原子静止质量的 $\dfrac{1}{12}$。</p>
+$$1\ \text{u} = \frac{1}{12} \times m(^{12}\text{C}) \approx 1.6605 \times 10^{-27}\ \text{kg}$$
+<p>之所以选择碳-12作为基准，是因为它是一种稳定、丰度高、易于精确测量的核素。有了这个基准，其余所有原子（包括质子、中子）的质量都可以用一个接近整数的相对值来表示：质子约为 $1.007\ \text{u}$，中子约为 $1.009\ \text{u}$，而单个电子仅约 $0.00055\ \text{u}$，其质量在计算原子质量时通常可忽略不计。</p>
+<p><strong>实例讲解</strong></p>
+<p>考虑氧-16原子（$^{16}_{8}\text{O}$），它含有8个质子和8个中子。若粗略估算，其质量约为</p>
+$$8 \times 1.007\ \text{u} + 8 \times 1.009\ \text{u} \approx 16.13\ \text{u}$$
+<p>而实际测得的原子质量为 $15.995\ \text{u}$，两者存在约 $0.13\ \text{u}$ 的差异。这一差值并非误差，而是源于<strong>核结合能</strong>：当质子和中子结合形成原子核时，部分质量按照 $E = mc^2$ 转化为释放的能量（结合能），使得原子核的实际质量略小于其组成粒子质量之和，这种现象称为"质量亏损"。</p>
+<p><strong>问题解决应用</strong></p>
+<p>原子质量单位的实际价值在于连接微观质量与宏观可称量物质。由 $\text{u}$ 的定义可推知：$1\ \text{mol}$ 某物质（即 $6.022 \times 10^{23}$ 个粒子，阿伏伽德罗常数）的质量（以克为单位）在数值上等于该粒子以 $\text{u}$ 为单位的质量。因此，若某分子的分子量为 $180\ \text{u}$（如葡萄糖 $\text{C}_6\text{H}_{12}\text{O}_6$），则 $1\ \text{mol}$ 该物质质量恰为 $180\ \text{g}$。这一对应关系使化学家能够直接通过称量宏观样品的质量，推算出所含粒子的数目——这是定量化学分析、配制溶液浓度和进行化学计量计算的基础工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch2: Atoms, Molecules, and Ions (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

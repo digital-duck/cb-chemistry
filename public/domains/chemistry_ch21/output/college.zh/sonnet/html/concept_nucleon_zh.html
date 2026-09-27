@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nucleon | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="nucleon">Nucleon</h2>
+<p><strong>定义</strong></p>
+<p>核子（nucleon）是构成原子核的基本粒子的统称，包括质子（proton）和中子（neutron）。质子带一个单位正电荷，中子不带电，二者质量几乎相等（约为电子质量的 1836 倍）。原子核中质子数决定元素的化学身份（即原子序数 $Z$），而质子数与中子数之和称为质量数 $A$：</p>
+$$A = Z + N$$
+<p>其中 $N$ 为中子数。核子之间通过强核力（strong nuclear force）紧密束缚在一起。强核力是短程力，作用范围仅约 $10^{-15}$ 米（1 飞米），但在此距离内远强于将带正电质子相互排斥的静电斥力，因此能克服库仑排斥而维持原子核的稳定。</p>
+<p><strong>举例说明</strong></p>
+<p>以氦-4（$^4_2\text{He}$）原子核为例：其质量数 $A=4$，原子序数 $Z=2$，因此含有 2 个质子和 $N = A - Z = 2$ 个中子，共 4 个核子。再看碳的两种同位素——碳-12（$^{12}_6\text{C}$）和碳-14（$^{14}_6\text{C}$）：两者都有 6 个质子（因此都是碳元素），但中子数不同，分别为 6 和 8。这说明同位素（isotope）的本质是核子组成中质子数相同、中子数不同。</p>
+<p><strong>解决问题的应用</strong></p>
+<p>核子概念是理解核反应与核稳定性的基础。例如，比较原子核的结合能（binding energy）时，需要先确定核子总数：结合能除以核子数得到的“每核子结合能”是衡量原子核稳定程度的关键指标——铁-56 附近的核素每核子结合能最高，这解释了为何轻核聚变（如氢聚变为氦）和重核裂变（如铀裂变）都能释放能量，因为两个方向都趋向每核子结合能更高、更稳定的构型。</p>
+<p>在实际计算中，已知某核素的质量数和原子序数，即可迅速写出核子组成。例如，钚-239（$^{239}_{94}\text{Pu}$）含有 94 个质子和 $239-94=145$ 个中子，共 239 个核子。掌握质子数、中子数与质量数之间的关系，是配平核反应方程、计算核素稳定性及理解放射性衰变类型（如 $\alpha$ 衰变改变核子总数，$\beta$ 衰变只改变质子与中子的比例而核子总数不变）的必备技能。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

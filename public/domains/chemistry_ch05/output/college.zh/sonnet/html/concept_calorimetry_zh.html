@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calorimetry | Chemistry Ch05</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="calorimetry-量热法">Calorimetry（量热法）</h2>
+<p><strong>定义</strong></p>
+<p>量热法是通过测量热量传递来确定物质热性质的实验技术。其核心原理是能量守恒:在一个绝热(与外界无热交换)的系统中,一种物质释放的热量等于另一种物质吸收的热量。计算热量传递的基本公式为:</p>
+$$q = mc\Delta T$$
+<p>其中 $q$ 为热量(单位:焦耳,J),$m$ 为物质质量(g),$c$ 为比热容(specific heat,单位:$\text{J/(g·°C)}$),$\Delta T = T_{\text{末}} - T_{\text{初}}$ 为温度变化。比热容反映了物质"吸热而不易升温"的能力——水的比热容($4.18\ \text{J/(g·°C)}$)远高于金属,这也是为什么沿海地区气候比内陆更温和。</p>
+<p><strong>范例演示</strong></p>
+<p>实验中最常见的装置是"简易量热计":将一块温度已知的热金属投入已知质量和温度的水中,搅拌至系统达到热平衡,记录最终温度。此时:</p>
+$$q_{\text{金属释放}} = -q_{\text{水吸收}}$$
+<p>即 $m_{\text{金属}}c_{\text{金属}}\Delta T_{\text{金属}} = -m_{\text{水}}c_{\text{水}}\Delta T_{\text{水}}$</p>
+<p>例如,一块 50.0 g 的铝块,初温 100.0°C,投入 150.0 g、初温 22.0°C 的水中,系统最终稳定在 27.5°C。铝的 $\Delta T = 27.5 - 100.0 = -72.5°C$,水的 $\Delta T = 27.5 - 22.0 = 5.5°C$。利用上式可解出铝的比热容 $c_{\text{铝}}$,并与已知参考值($0.900\ \text{J/(g·°C)}$)比对,评估实验误差来源(如热量向容器壁或空气逸散)。</p>
+<p><strong>解题应用</strong></p>
+<p>量热法的应用远不止测定比热容。在化学反应中,弹式量热计(bomb calorimeter)用于测定反应放出或吸收的热量,进而计算反应的焓变 $\Delta H$,这是热化学计算和食品能量标注(卡路里测定)的基础。解题时应把握三个步骤:先明确"谁放热、谁吸热",再列出 $q_{\text{放}} = -q_{\text{吸}}$ 的能量守恒方程,最后代入已知量求解未知的质量、温度或比热容。常见易错点包括:混淆 $\Delta T$ 的正负号,以及忽略量热计本身(如金属容器)吸收的热量——精密实验中需引入"量热计常数"加以修正。掌握量热法不仅是实验技能,更是理解能量在物理与化学过程中如何定量传递的关键工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch5: Thermochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selective Precipitation | Chemistry Ch15</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="selective-precipitation">Selective Precipitation</h2>
+<p><strong>定义</strong></p>
+<p>选择性沉淀（selective precipitation）是一种利用不同离子化合物溶解度差异，从混合溶液中依次分离目标离子的分析化学方法。当溶液中同时存在多种可与同一沉淀剂反应的阳离子（或阴离子）时，通过控制沉淀剂的加入量或溶液条件（如 pH），可以使溶度积（$K_{sp}$）较小的化合物优先沉淀析出,而溶度积较大的化合物仍留在溶液中,从而实现分步分离。这一原理广泛应用于水质检测、湿法冶金提纯金属，以及医学检验中特定离子的定量分析。</p>
+<p><strong>核心判据</strong></p>
+<p>判断哪种离子先沉淀，需比较达到饱和所需的沉淀剂浓度。对于通式 $\mathrm{M^{n+} + nX^{-} \rightleftharpoons MX_n(s)}$，沉淀开始的条件是离子积等于 $K_{sp}$：</p>
+$$[\mathrm{M^{n+}}][\mathrm{X^-}]^n = K_{sp}$$
+<p>$K_{sp}$ 越小的化合物，通常在较低沉淀剂浓度下即可析出,因此优先沉淀。</p>
+<p><strong>例题</strong></p>
+<p>某溶液中含 $0.010\ \text{mol/L}\ \mathrm{Ag^+}$ 和 $0.010\ \text{mol/L}\ \mathrm{Pb^{2+}}$，向其中滴加 $\mathrm{Cl^-}$ 溶液。已知 $K_{sp}(\mathrm{AgCl}) = 1.8\times10^{-10}$，$K_{sp}(\mathrm{PbCl_2}) = 1.7\times10^{-5}$。</p>
+<p>先计算各自开始沉淀所需的 $[\mathrm{Cl^-}]$：</p>
+<li>AgCl：$[\mathrm{Cl^-}] = K_{sp}/[\mathrm{Ag^+}] = 1.8\times10^{-10}/0.010 = 1.8\times10^{-8}\ \text{mol/L}$</li>
+<li>PbCl₂：$[\mathrm{Cl^-}] = \sqrt{K_{sp}/[\mathrm{Pb^{2+}}]} = \sqrt{1.7\times10^{-5}/0.010} \approx 4.1\times10^{-2}\ \text{mol/L}$</li>
+<p>由于 AgCl 所需的 $\mathrm{Cl^-}$ 浓度远低于 PbCl₂，说明滴加 $\mathrm{Cl^-}$ 时 $\mathrm{Ag^+}$ 会先以 AgCl 形式沉淀出来，只要将 $\mathrm{Cl^-}$ 浓度控制在两者之间（例如约 $10^{-3}\ \text{mol/L}$），即可实现 $\mathrm{Ag^+}$ 与 $\mathrm{Pb^{2+}}$ 的分离。</p>
+<p><strong>实际应用中的问题解决</strong></p>
+<p>在实验设计中，需要计算"完全沉淀"（通常定义为剩余离子浓度低于 $10^{-5}\ \text{mol/L}$）所需的最低沉淀剂浓度，并确认此时第二种离子是否仍远未达到其沉淀条件，从而给出安全的操作浓度区间。这类计算是湿法分离、废水重金属处理及定性分析实验设计的基本技能。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch15: Equilibria of Other Reaction Classes (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

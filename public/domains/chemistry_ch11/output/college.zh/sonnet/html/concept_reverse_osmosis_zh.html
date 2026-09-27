@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reverse Osmosis | Chemistry Ch11</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="reverse-osmosis">Reverse Osmosis</h2>
+<p><strong>定义</strong></p>
+<p>渗透（osmosis）是水分子通过半透膜，从溶质浓度低的一侧自发流向浓度高的一侧的过程，直到两侧的化学势达到平衡。这个自发流动会在浓侧产生一个可测量的压强差，称为<strong>渗透压</strong> $\pi$。对于稀溶液，范特霍夫方程给出了很好的近似：</p>
+$$\pi = MRT$$
+<p>其中 $M$ 是溶质的摩尔浓度，$R$ 是气体常数，$T$ 是绝对温度。</p>
+<p><strong>反渗透（reverse osmosis, RO）</strong> 则是人为地在浓侧施加一个大于渗透压的外部压强（$\Delta P > \pi$），迫使水分子反方向通过半透膜——从高浓度侧流向低浓度侧，而盐分和大多数溶质被膜阻挡。这样就能从海水或苦咸水中"挤出"淡水，是目前应用最广的淡化和纯水技术。</p>
+<p><strong>举例说明</strong></p>
+<p>以海水淡化为例：海水的含盐量约为 35 g/L，渗透压约为 2.7 MPa（约 27 个大气压）。要让水从海水一侧穿过膜流向淡水一侧，工程上通常施加 5.5–8 MPa 的压强，远超渗透压，以保证有效通量并克服膜表面的浓差极化效应。这也是家用 RO 净水器需要增压泵、而不能仅依靠自来水压强的原因——自来水压强（约 0.3–0.5 MPa）远低于克服反渗透所需的压强。</p>
+<p><strong>问题解决应用</strong></p>
+<p>假设某苦咸水源含盐浓度对应摩尔浓度 $M = 0.05\ \text{mol/L}$，温度为 $25^\circ\text{C}$（$298\ \text{K}$）。用范特霍夫方程估算其渗透压：</p>
+$$\pi = MRT = (0.05\ \text{mol/L}) \times (0.0821\ \text{L·atm/(mol·K)}) \times 298\ \text{K} \approx 1.22\ \text{atm}$$
+<p>这意味着 RO 系统至少需要施加超过 1.22 atm 的压强才能启动反向流动，实际工程设计中往往取 2–3 倍安全余量，以维持经济可行的产水速率并延缓膜污染。这类计算是水处理工程师选择泵功率、评估能耗（进而估算淡化成本）的第一步，也说明了为什么海水淡化（高渗透压）比苦咸水淡化耗能高得多。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch11: Solutions and Colloids (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

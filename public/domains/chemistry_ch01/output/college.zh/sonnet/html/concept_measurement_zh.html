@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Measurement | Chemistry Ch01</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="measurement">Measurement</h2>
+<p><strong>定义</strong></p>
+<p>测量（measurement）是将某一物理量与公认的标准单位进行比较，从而用数字加单位来描述这一物理量大小的过程。在自然科学中，一切定量分析都建立在测量之上——没有可靠的测量，就没有可重复、可验证的实验结果。国际单位制（International System of Units，简称 SI）规定了七个基本单位，例如长度用米（m）、质量用千克（kg）、时间用秒（s）、温度用开尔文（K）表示；其余物理量（如体积、密度、浓度）都由这些基本单位组合导出。</p>
+<p>测量结果永远伴随不确定度。<strong>准确度（accuracy）</strong>指测量值与真实值的接近程度，<strong>精密度（precision）</strong>指多次重复测量结果彼此接近的程度。两者并不等价：一组数据可以彼此高度一致（精密）却系统性偏离真值（不准确），例如仪器未校准导致的系统误差。<strong>有效数字（significant figures）</strong>是记录测量精密度的规范方式——测量值中每一位数字（包括仪器读数时估计的最后一位）都携带信息，计算时结果的有效数字不应超过原始测量所能支持的精度。</p>
+<p><strong>范例</strong></p>
+<p>某学生用量筒测量一份液体样品的体积，三次读数分别为 24.6 mL、24.5 mL、24.7 mL。三次结果彼此接近，说明测量精密度较好；取平均值 24.6 mL 作为最佳估计。若已知该液体真实体积为 24.6 mL，则该测量既精密又准确。若真实值实际为 26.0 mL，则说明量筒可能存在系统误差（如刻度校准问题），此时精密但不准确。</p>
+<p><strong>问题解决应用</strong></p>
+<p>在实验报告中，测量数据常需参与计算，此时有效数字规则决定最终答案应保留几位。加减运算时，结果的小数位数由参与运算中小数位数最少的数据决定；乘除运算时，结果的有效数字位数由参与运算中有效数字位数最少的数据决定。例如，密度计算 $\rho = m/V$，若质量测得为 12.34 g（4位有效数字），体积测得为 5.2 mL（2位有效数字），则</p>
+$$\rho = \frac{12.34\ \text{g}}{5.2\ \text{mL}} = 2.4\ \text{g/mL}$$
+<p>结果只能保留 2 位有效数字，因为体积测量是精度最低的环节——即使质量测得再精确，最终结果的可信度仍受限于体积读数的粗糙程度。这一规则提醒学生：科学结论的可靠性取决于最弱的那一环测量，选择合适精度的仪器与如实报告不确定度，是严谨科学实践的基本要求。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch1: Essential Ideas (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Standard State | Chemistry Ch05</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="standard-state">Standard State</h2>
+<p>在化学中，比较不同物质的能量或研究反应的方向性时，必须先确定一个统一的参照条件，否则数据之间无法直接比较——这就是"标准状态"（standard state）存在的意义。标准状态是国际纯粹与应用化学联合会（IUPAC）规定的一组参考条件，用来定义热力学量（如生成焓 $\Delta H_f^\circ$、生成自由能 $\Delta G_f^\circ$、标准熵 $S^\circ$）的基准值。具体规定如下：气体的标准状态是压强为 $1\ \text{bar}$（约等于 $1\ \text{atm}$）时的纯气体（假设为理想气体）；纯液体或纯固体的标准状态是 $1\ \text{bar}$ 压强下的最稳定纯物质形态；溶液中的溶质标准态是浓度为 $1\ \text{mol/L}$ 的理想溶液。需要注意的是，标准状态并不规定温度，但热力学表格中给出的数值通常是在 $298\ \text{K}$（$25^\circ\text{C}$）下测得的，这是一个常见但独立的附加条件，不要将两者混淆。</p>
+<p><strong>举例说明</strong>：石墨是碳元素在标准状态下最稳定的同素异形体，因此定义碳元素的标准生成焓为零：$\Delta H_f^\circ(\text{C, 石墨}) = 0\ \text{kJ/mol}$，而金刚石作为碳的另一种形态，其标准生成焓为 $+1.9\ \text{kJ/mol}$，说明它比石墨能量略高、不太稳定。同理，$\text{O}_2(g)$、$\text{H}_2(g)$、$\text{N}_2(g)$ 等单质气体在标准状态下的生成焓都被定义为零，因为它们本身就是"起点"，不涉及生成反应。</p>
+<p><strong>解决实际问题</strong>：标准状态的价值在于让我们能够用赫斯定律（Hess's law）计算任意反应的焓变，而无需实际做实验测量。例如，计算甲烷燃烧反应</p>
+$$\text{CH}_4(g) + 2\text{O}_2(g) \rightarrow \text{CO}_2(g) + 2\text{H}_2\text{O}(l)$$
+<p>的标准反应焓时，只需查表得到各物质的标准生成焓，代入公式：</p>
+$$\Delta H_{rxn}^\circ = \sum \Delta H_f^\circ(\text{产物}) - \sum \Delta H_f^\circ(\text{反应物})$$
+<p>代入数值 $\Delta H_f^\circ(\text{CO}_2) = -393.5$，$\Delta H_f^\circ(\text{H}_2\text{O}, l) = -285.8$，$\Delta H_f^\circ(\text{CH}_4) = -74.8\ \text{kJ/mol}$（$\text{O}_2$ 为零），可得 $\Delta H_{rxn}^\circ = [-393.5 + 2(-285.8)] - [-74.8] = -890.3\ \text{kJ/mol}$。这正是查表法预测反应放热量的标准流程，广泛应用于燃料效率评估与工业热量核算。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch5: Thermochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

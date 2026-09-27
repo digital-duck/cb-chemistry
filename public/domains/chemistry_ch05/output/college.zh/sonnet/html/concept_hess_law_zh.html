@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hess Law | Chemistry Ch05</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="hess-law">Hess Law</h2>
+<p><strong>定义</strong></p>
+<p>赫斯定律（Hess's Law，盖斯定律）指出：一个化学反应的焓变（enthalpy change）$\Delta H$ 只取决于反应的始态和终态，与反应经历的具体途径无关。换句话说，如果一个反应可以看作是若干个分步反应的总和，那么总反应的焓变等于各分步反应焓变之和：</p>
+$$\Delta H_{\text{总}} = \Delta H_1 + \Delta H_2 + \cdots + \Delta H_n$$
+<p>这一规律成立的根本原因是焓（enthalpy）是一个<strong>状态函数</strong>（state function）——它只依赖于系统当前的状态，而不依赖于系统是如何到达这个状态的。这意味着我们可以像做代数运算一样，对已知的化学方程式进行加减、乘以系数或反向书写（此时 $\Delta H$ 变号），从而拼出目标反应，并直接得到它的焓变，而不必在实验室里真正测量这个往往难以直接进行的反应。</p>
+<p><strong>范例</strong></p>
+<p>碳燃烧生成二氧化碳的反应很难分两步在实验室中精确测量，但可以通过赫斯定律计算：</p>
+<p>已知：</p>
+<li>$\text{C(s)} + \text{O}_2\text{(g)} \rightarrow \text{CO}_2\text{(g)}$，$\Delta H_1 = -393.5\ \text{kJ/mol}$</li>
+<li>$\text{CO(g)} + \tfrac{1}{2}\text{O}_2\text{(g)} \rightarrow \text{CO}_2\text{(g)}$，$\Delta H_2 = -283.0\ \text{kJ/mol}$</li>
+<p>求目标反应 $\text{C(s)} + \tfrac{1}{2}\text{O}_2\text{(g)} \rightarrow \text{CO(g)}$ 的 $\Delta H_3$。</p>
+<p>将第二个方程反向（$\Delta H_2$ 变为 $+283.0$），再与第一个方程相加，消去 CO$_2$ 和多余的 O$_2$，剩下的正是目标反应。因此：</p>
+$$\Delta H_3 = \Delta H_1 - \Delta H_2 = -393.5 - (-283.0) = -110.5\ \text{kJ/mol}$$
+<p><strong>解题应用</strong></p>
+<p>利用赫斯定律解题的关键步骤是：（1）写出目标反应；（2）比较已知反应中各物质的位置，决定是否需要反向或乘以系数；（3）确认所有中间体和多余物质在加和后完全抵消；（4）对 $\Delta H$ 做相应的代数运算。生成焓表（standard enthalpies of formation, $\Delta H_f^\circ$）是最常用的赫斯定律工具，公式为：</p>
+$$\Delta H_{\text{反应}}^\circ = \sum \Delta H_f^\circ(\text{产物}) - \sum \Delta H_f^\circ(\text{反应物})$$
+<p>熟练应用这一方法，能帮助学生在无法直接测量反应热的情况下，通过已知数据推算出任意目标反应的焓变。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch5: Thermochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

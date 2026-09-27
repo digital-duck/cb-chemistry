@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Molar Mass | Chemistry Ch03</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="molar-mass">Molar Mass</h2>
+<p><strong>定义</strong></p>
+<p>摩尔质量（molar mass）是指1摩尔（mol）某物质所含粒子（原子、分子或离子）的质量，单位为 g/mol。它在数值上等于该物质的相对原子质量或相对分子质量，只是单位从"无量纲"变为"g/mol"。例如，碳的原子质量是12.01（相对原子质量单位，amu），而碳的摩尔质量则是 $12.01\ \text{g/mol}$。</p>
+<p>摩尔质量的计算方法很直接：将化合物中每种元素的原子质量按其在化学式中的个数相加。以水（$\text{H}_2\text{O}$）为例：</p>
+$$
+M(\text{H}_2\text{O}) = 2 \times 1.008 + 1 \times 16.00 = 18.02\ \text{g/mol}
+$$
+<p>摩尔质量是连接"看不见的粒子数目"与"可以称量的宏观质量"之间的桥梁，是化学计量学（stoichiometry）计算的核心工具。</p>
+<p><strong>实例演示</strong></p>
+<p>假设你需要为某实验称取 0.500 mol 的葡萄糖（$\text{C}_6\text{H}_{12}\text{O}_6$）。首先计算其摩尔质量：</p>
+$$
+M = 6(12.01) + 12(1.008) + 6(16.00) = 180.16\ \text{g/mol}
+$$
+<p>再利用关系式：</p>
+$$
+\text{质量} = \text{摩尔数} \times \text{摩尔质量}
+$$
+$$
+m = 0.500\ \text{mol} \times 180.16\ \text{g/mol} = 90.08\ \text{g}
+$$
+<p>也就是说，只需在天平上称取约 90.1 g 葡萄糖，就相当于称取了 0.500 mol 的粒子——大约 $3.01 \times 10^{23}$ 个葡萄糖分子。</p>
+<p><strong>解决问题的应用</strong></p>
+<p>摩尔质量最常用于三类计算的相互换算：质量、摩尔数与粒子数目。其一般思路可总结为下表关系：</p>
+<li>已知质量 → 摩尔数：$n = m / M$</li>
+<li>已知摩尔数 → 质量：$m = n \times M$</li>
+<li>已知摩尔数 → 粒子数：$N = n \times N_A$（$N_A = 6.022 \times 10^{23}\ \text{mol}^{-1}$ 为阿伏伽德罗常数）</li>
+<p>例如，若某反应需要 44.0 g 二氧化碳（$\text{CO}_2$，$M = 44.01\ \text{g/mol}$）参与，可求出摩尔数：</p>
+$$
+n = \frac{44.0\ \text{g}}{44.01\ \text{g/mol}} \approx 1.00\ \text{mol}
+$$
+<p>这一摩尔数随后可代入化学方程式的系数比中，用于计算反应中其他物质的用量——这正是摩尔质量在配平反应、计算产率、确定限制性试剂等实际问题中不可替代的作用。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch3: Composition of Substances and Solutions (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

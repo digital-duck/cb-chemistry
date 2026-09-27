@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Water Autoionization | Chemistry Ch14</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="water-autoionization">Water Autoionization</h2>
+<p><strong>定义</strong></p>
+<p>水并非完全惰性的分子,即使是最纯净的水,也会发生微弱的自我电离(autoionization):两个水分子之间发生质子转移,一个水分子将一个氢离子转移给另一个水分子,生成水合氢离子($H_3O^+$)和氢氧根离子($OH^-$)。这一过程可写作:</p>
+$$2H_2O(l) \rightleftharpoons H_3O^+(aq) + OH^-(aq)$$
+<p>这是一个动态平衡:正向反应(电离)与逆向反应(中和)以相同速率进行,因此纯水中始终存在极低但恒定浓度的 $H_3O^+$ 和 $OH^-$。由于该平衡遵循质量作用定律,水的离子积常数(ion-product constant, $K_w$)定义为:</p>
+$$K_w = [H_3O^+][OH^-]$$
+<p>在 $25^\circ C$ 时,$K_w = 1.0 \times 10^{-14}$。这是一个真正的平衡常数,其数值随温度变化(温度升高,电离程度增大,$K_w$ 增大)——理解它本质上是勒夏特列原理在极弱电解质体系中的体现。</p>
+<p><strong>实例演算</strong></p>
+<p>在纯水中,由反应计量关系可知 $[H_3O^+] = [OH^-]$。设两者浓度均为 $x$,则:</p>
+$$x^2 = 1.0 \times 10^{-14} \implies x = 1.0 \times 10^{-7}\ \text{mol/L}$$
+<p>这正是纯水中 $H_3O^+$ 和 $OH^-$ 的浓度,对应 $pH = 7$,即所谓的"中性"。</p>
+<p><strong>问题解决应用</strong></p>
+<p>$K_w$ 的价值在于:只要知道溶液中任一离子的浓度,就能求出另一离子的浓度——无论溶液是酸性、碱性还是中性,因为 $K_w$ 在给定温度下恒定不变。</p>
+<p>例如,若某溶液中 $[H_3O^+] = 1.0 \times 10^{-3}\ \text{mol/L}$(明显酸性),则:</p>
+$$[OH^-] = \frac{K_w}{[H_3O^+]} = \frac{1.0\times10^{-14}}{1.0\times10^{-3}} = 1.0\times10^{-11}\ \text{mol/L}$$
+<p>可见,酸性溶液中 $OH^-$ 并未消失,只是浓度极低。这一关系是求解 pH 与 pOH 相互换算、稀释计算、以及缓冲溶液问题的基础工具。掌握 $K_w$ 的意义在于认识到:酸碱性并非"有" $H_3O^+$ 或"有" $OH^-$ 的问题,而是两者相对浓度谁占优势的问题——这一视角将在后续学习 pH 标度与酸碱滴定时反复出现。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch14: Acid-Base Equilibria (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

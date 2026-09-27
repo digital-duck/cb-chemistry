@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entropy Temperature Dependence | Chemistry Ch16</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="entropy-temperature-dependence">Entropy Temperature Dependence</h2>
+<p><strong>定义</strong></p>
+<p>熵（entropy，符号 $S$）衡量一个系统中微观状态的混乱程度或能量分布的分散程度。根据热力学第二定律，孤立系统的总熵在自发过程中只会增加或保持不变。熵不仅取决于系统所处的状态（固态、液态、气态），也强烈依赖于温度：温度升高时，粒子的平动、转动和振动运动加剧,可供占据的微观状态数目增多,因此熵随温度升高而增大。这一关系可以从玻尔兹曼熵公式理解：</p>
+$$S = k_B \ln \Omega$$
+<p>其中 $k_B$ 是玻尔兹曼常数，$\Omega$ 是系统在给定能量下可能的微观状态数。温度越高，系统能够访问的微观状态数 $\Omega$ 越大，熵也就越大。此外，物质相变（熔化、汽化）会伴随熵的突跃式增加，因为分子排列的有序度骤降。</p>
+<p><strong>实例分析</strong></p>
+<p>考虑 1 摩尔水从 0°C 的冰逐渐加热到 100°C 的水蒸气。在固态阶段内部升温时，熵随温度平缓上升，因为分子只是振动幅度增大。但在 0°C 熔化时，熵会发生一次跳跃——固定在晶格中的水分子获得了平动自由度，熵增量为：</p>
+$$\Delta S_{fus} = \frac{\Delta H_{fus}}{T_{fus}}$$
+<p>代入水的熔化焓 $\Delta H_{fus} \approx 6.01\ \text{kJ/mol}$，$T_{fus} = 273\ \text{K}$，得到 $\Delta S_{fus} \approx 22\ \text{J/(mol·K)}$。同理，在 100°C 汽化时，熵的跳跃更大，因为气态分子几乎完全自由运动，$\Delta S_{vap} = \Delta H_{vap}/T_{vap} \approx 109\ \text{J/(mol·K)}$，远大于熔化熵。</p>
+<p><strong>应用与解题</strong></p>
+<p>在实际问题中，判断某个化学反应或相变是否自发，往往需要综合考虑焓变与熵变对温度的依赖关系，即吉布斯自由能 $\Delta G = \Delta H - T\Delta S$。由于熵项随温度升高而对总能量的影响增强，同一反应在低温下可能不自发（$\Delta G > 0$），而在高温下变为自发（$\Delta G < 0$），前提是 $\Delta S > 0$。这正是许多分解反应（如碳酸钙分解为氧化钙和二氧化碳）只在高温下才能进行的原因：气体产物带来的熵增在高温下才能足以抵消吸热焓变。掌握熵随温度变化的规律，是预测反应方向与相变条件的关键工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch16: Thermodynamics (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

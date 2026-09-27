@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Born Haber Cycle | Chemistry Ch07</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="born-haber-cycle">Born Haber Cycle</h2>
+<p>玻恩-哈伯循环（Born-Haber Cycle）是一种利用赫斯定律（Hess's Law）来计算离子化合物晶格能的方法。晶格能——即气态正、负离子结合形成一摩尔固态离子晶体所释放的能量——无法通过实验直接测量，因为我们不能把离子单独"制造"出来再让它们结合。玻恩-哈伯循环巧妙地绕过了这个困难：它把离子化合物由单质生成的总反应，拆分成一系列可以通过实验测定焓变的中间步骤，再利用总焓变等于各步骤焓变之和这一原理，反推出晶格能。</p>
+<p>以氯化钠（NaCl）的生成为例。整体反应</p>
+$$\text{Na(s)} + \tfrac{1}{2}\text{Cl}_2\text{(g)} \rightarrow \text{NaCl(s)}$$
+<p>的生成焓 $\Delta H_f$ 可以直接测得。但这一步实际上包含了五个隐藏过程：</p>
+<li>升华：$\text{Na(s)} \rightarrow \text{Na(g)}$，吸收升华热；</li>
+<li>解离：$\tfrac{1}{2}\text{Cl}_2\text{(g)} \rightarrow \text{Cl(g)}$，吸收键解离能的一半；</li>
+<li>电离：$\text{Na(g)} \rightarrow \text{Na}^+\text{(g)} + e^-$，吸收电离能；</li>
+<li>电子亲和：$\text{Cl(g)} + e^- \rightarrow \text{Cl}^-\text{(g)}$，释放电子亲和能；</li>
+<li>晶格形成：$\text{Na}^+\text{(g)} + \text{Cl}^-\text{(g)} \rightarrow \text{NaCl(s)}$，释放晶格能 $U$。</li>
+<p>由赫斯定律，总生成焓等于这五步焓变之和：</p>
+$$\Delta H_f = \Delta H_{\text{升华}} + \Delta H_{\text{解离}} + \Delta H_{\text{电离}} + \Delta H_{\text{电子亲和}} + U$$
+<p>只要前四项和 $\Delta H_f$ 均可由实验测得，就能反解出唯一未知量 $U$（晶格能）。实际计算时，将循环画成一个能量图（能量-坐标图），从元素单质出发，沿箭头方向逐步升高或降低能量，最终回到 NaCl(s)，箭头之和必须等于零——这正是能量守恒在化学反应中的体现。</p>
+<p>这一方法的实际价值在于验证和预测晶格能的理论模型：如果由玻恩-哈伯循环得到的实验晶格能，与用离子间静电作用力模型计算出的理论值相差很大，就说明该化合物中共价成键的比例较高，纯离子模型不再适用（例如 AgCl 的偏差就明显大于 NaCl）。因此，玻恩-哈伯循环不仅是一种计算工具，也是判断化学键"离子性"与"共价性"程度的重要证据。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch7: Chemical Bonding and Molecular Geometry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

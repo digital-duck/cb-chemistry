@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neutron | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="中子">中子</h2>
+<p>中子是构成原子核的两种核子之一,与质子一起通过强核力结合在一起。中子不带电荷(电中性),质量约为 $1.675 \times 10^{-27}\ \text{kg}$,略大于质子的质量($1.673 \times 10^{-27}\ \text{kg}$)。中子由三个夸克组成(一个上夸克、两个下夸克),属于重子家族。原子核中中子的数目决定了同一元素不同同位素之间的区别——同位素拥有相同的质子数(即相同的原子序数 $Z$),但中子数 $N$ 不同,因此质量数 $A = Z + N$ 也不同。自由中子并不稳定,会通过 $\beta$ 衰变转变为质子、电子和反中微子,半衰期约为 14.7 分钟;但束缚在稳定原子核内的中子可以保持长期稳定,这是因为核力与核子间的能量平衡阻止了衰变发生。</p>
+<p><strong>举例说明</strong>:碳有三种天然存在的同位素——碳-12、碳-13 和碳-14。三者的质子数都是 6,但中子数分别为 6、7 和 8。碳-12 和碳-13 是稳定的,而碳-14 因中子数过多导致核内力平衡被打破,会自发发生 $\beta$ 衰变,释放出电子并转变为氮-14。这正是放射性碳定年法的物理基础:碳-14 半衰期约为 5730 年,通过测量样本中碳-14 与碳-12 的比例衰减程度,可以推算出有机物质死亡后经过的时间。</p>
+<p><strong>问题应用</strong>:假设某矿物样本中铀-238($Z=92$)衰变为铅-206($Z=82$),已知质子数减少了 10,质量数减少了 32。请计算这一衰变链中中子数的净变化,并说明为何原子序数下降幅度小于质量数下降幅度。解答思路:铀-238 的中子数为 $238-92=146$,铅-206 的中子数为 $206-82=124$,因此中子数净减少了 $146-124=22$ 个。质子数与中子数的减少幅度不同,是因为这条衰变链由多次 $\alpha$ 衰变(每次同时损失 2 个质子和 2 个中子)与若干次 $\beta$ 衰变(质子数增加、中子数减少,但质量数不变)共同构成,二者共同作用使质子和中子按不同比例被消耗,最终生成稳定的铅同位素。这类计算是理解放射性衰变链、核反应堆燃料演化以及地质年代测定的基础工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

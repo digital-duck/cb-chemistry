@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Np Ratio | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="np-ratio">Np Ratio</h2>
+<p><strong>定义</strong></p>
+<p>原子核由质子（数量记为 $Z$）和中子（数量记为 $N$）组成，二者的比值 $N/Z$ 称为<strong>中子质子比</strong>（neutron-to-proton ratio，简称 N/Z 比）。这一比值决定了原子核是否稳定。质子带正电，彼此之间存在强烈的静电排斥力；中子不带电，只参与将核子束缚在一起的核力（强相互作用）。当核内质子数较少时（$Z < 20$），核力足以在 $N/Z \approx 1$（即中子数约等于质子数）时维持稳定，例如 $^{12}_{6}\text{C}$（$N=6, Z=6$）和 $^{16}_{8}\text{O}$（$N=8, Z=8$）。但随着 $Z$ 增大，质子间的排斥力增长速度快于核力的有效作用范围，因此重核需要更多"多余"的中子来稀释质子间的排斥、增强核力的粘合效果，才能保持稳定。于是稳定核的 $N/Z$ 比会随原子序数增大而逐渐升高，从轻核的约 1.0 上升到重核（如 $^{208}_{82}\text{Pb}$，$N=126, Z=82$）的约 1.5。将所有稳定核素的 $N$ 对 $Z$ 作图，会形成一条被称为"稳定带"（band of stability）的窄带。</p>
+<p><strong>实例分析</strong></p>
+<p>以铁-56（$^{56}_{26}\text{Fe}$）为例：$Z=26$，$N=56-26=30$，故 $N/Z = 30/26 \approx 1.15$，落在稳定带内，铁-56 确实是稳定同位素。再看碘-131（$^{131}_{53}\text{I}$）：$Z=53$，$N=131-53=78$，$N/Z \approx 1.47$，这一比值偏离该原子序数对应的稳定带范围（中子偏多），因此碘-131 具有放射性，会通过 $\beta^-$ 衰变（中子转变为质子并放出电子）向稳定带靠拢。</p>
+<p><strong>问题解决应用</strong></p>
+<p>利用 N/Z 比可以预测某同位素的衰变方式：若某核素的 $N/Z$ 高于稳定带（中子过剩），倾向于发生 $\beta^-$ 衰变，使一个中子转化为质子，从而降低 $N/Z$；若 $N/Z$ 低于稳定带（质子过剩），则倾向于发生 $\beta^+$ 衰变或电子俘获，将质子转化为中子，从而升高 $N/Z$。练习：碳-14（$^{14}_{6}\text{C}$，$N=8, Z=6$，$N/Z \approx 1.33$）相对于稳定的碳-12（$N/Z=1.0$）中子明显偏多,据此判断其衰变方式——应为 $\beta^-$ 衰变，生成氮-14（$Z=7, N=7$），这与实验观测一致。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

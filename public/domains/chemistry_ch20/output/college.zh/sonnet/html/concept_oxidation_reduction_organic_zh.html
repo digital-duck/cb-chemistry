@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oxidation Reduction Organic | Chemistry Ch20</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="oxidation-reduction-organic">Oxidation Reduction Organic</h2>
+<h3 id="定义">定义</h3>
+<p>在有机化学中，氧化还原反应的判断不依赖于电子转移的正式计数（这在含碳共价键的体系中很难直接观察），而是依据一条实用规则：<strong>氧化</strong>是碳原子上与氢的键减少、与氧（或氮、卤素等电负性更强原子）的键增多；<strong>还原</strong>则相反——碳原子上与氢的键增多、与氧的键减少。换句话说，只需数清楚目标碳原子周围氢和氧原子数目的变化，就能判断反应方向。这条经验法则可以在不写半反应、不配平电子的情况下，快速判断绝大多数有机官能团转化的氧化态变化。</p>
+<h3 id="实例分析">实例分析</h3>
+<p>以醇到羧酸的完整氧化序列为例：</p>
+$$\text{CH}_3\text{CH}_2\text{OH} \xrightarrow{\text{氧化}} \text{CH}_3\text{CHO} \xrightarrow{\text{氧化}} \text{CH}_3\text{COOH}$$
+<p>乙醇（一级醇）中，与官能团碳相连的是 2 个 C–H 键和 1 个 C–O 键。第一步氧化（常用氧化剂如 $\text{PCC}$，即氯铬酸吡啶盐）脱去一个 $\text{H}_2$（严格说是脱去两个氢原子），生成乙醛，此时该碳只剩 1 个 C–H 键，但与氧形成了双键（C=O），氧键数增加。第二步用更强的氧化剂（如高锰酸钾 $\text{KMnO}_4$ 或 Jones 试剂）将醛继续氧化为羧酸，碳上的 C–H 键完全消失，转而形成第二个 C–O 键（-OH）。整个过程中氢键持续减少、氧键持续增加，符合氧化的定义。反之，用 $\text{LiAlH}_4$（氢化铝锂）或 $\text{NaBH}_4$ 把羧酸或醛还原为醇，则是氢键增多、氧键减少的还原过程。</p>
+<h3 id="解题应用">解题应用</h3>
+<p>判断有机氧化还原反应，可以按以下步骤操作：</p>
+<li><strong>锁定反应碳</strong>：找出反应前后成键发生变化的那个碳原子。</li>
+<li><strong>数键</strong>：分别数出反应前后该碳上 C–H 键和 C–O（或 C–N、C–X）键的数目。</li>
+<li><strong>比较</strong>：若 C–H 减少、C–O 增加 → 氧化；若相反 → 还原；若两者都不变（如取代反应）→ 既非氧化也非还原。</li>
+<p>例如，判断下列反应的类型：环己醇 $\rightarrow$ 环己酮。反应碳上 C–H 键由 2 个减为 1 个，C=O 键由无变为有，因此属于氧化反应，且氧化态从 $0$ 净变化为 $+2$（每减少一个 C–H、增加一个 C–O，氧化数各变化 $+1$）。这种"数键法"在有机合成路线设计中极为实用，可以快速判断某一步反应需要选用氧化剂（如 $\text{PCC}$、$\text{KMnO}_4$）还是还原剂（如 $\text{NaBH}_4$、$\text{LiAlH}_4$），而无需写出复杂的电子转移方程式。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch20: Organic Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

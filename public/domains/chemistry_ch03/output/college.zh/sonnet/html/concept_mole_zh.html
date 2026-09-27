@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mole | Chemistry Ch03</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="摩尔">摩尔</h2>
+<p><strong>定义</strong></p>
+<p>摩尔（mole，符号 $\text{mol}$）是国际单位制中用于计量物质的量（amount of substance）的基本单位。1 摩尔的任何物质都含有 $6.022 \times 10^{23}$ 个基本单元（可以是原子、分子、离子或电子等），这个数字称为阿伏加德罗常数（Avogadro's number），记作 $N_A = 6.022 \times 10^{23}\ \text{mol}^{-1}$。摩尔的意义在于架起了微观粒子与宏观可称量物质之间的桥梁：化学反应发生在原子、分子层面，但实验室中我们只能称量克数，摩尔正是二者之间的换算工具。</p>
+<p>一种物质的摩尔质量（molar mass，单位 $\text{g/mol}$）在数值上等于其相对原子质量或相对分子质量。例如碳的摩尔质量约为 $12.0\ \text{g/mol}$，水（$\text{H}_2\text{O}$）的摩尔质量为 $2(1.0) + 16.0 = 18.0\ \text{g/mol}$。三者关系为：</p>
+$$
+n = \frac{m}{M}
+$$
+<p>其中 $n$ 为物质的量（$\text{mol}$），$m$ 为质量（$\text{g}$），$M$ 为摩尔质量（$\text{g/mol}$）。</p>
+<p><strong>实例演算</strong></p>
+<p>若某学生称取 $9.0\ \text{g}$ 水，求其中含有多少水分子。</p>
+<p>第一步，计算摩尔数：</p>
+$$
+n = \frac{9.0\ \text{g}}{18.0\ \text{g/mol}} = 0.50\ \text{mol}
+$$
+<p>第二步，换算为分子个数：</p>
+$$
+N = n \times N_A = 0.50\ \text{mol} \times 6.022 \times 10^{23}\ \text{mol}^{-1} \approx 3.0 \times 10^{23}\ \text{个分子}
+$$
+<p><strong>问题解决应用</strong></p>
+<p>摩尔概念在化学计量学（stoichiometry）中至关重要，尤其用于预测反应产物的量。例如，反应 $2\text{H}_2 + \text{O}_2 \rightarrow 2\text{H}_2\text{O}$ 中，若已知消耗了 $4.0\ \text{g}$ 氢气（摩尔质量 $2.0\ \text{g/mol}$，即 $2.0\ \text{mol}$），根据反应方程式中的摩尔比 $2:1:2$，可推算生成水的物质的量为 $2.0\ \text{mol}$，对应质量为 $2.0 \times 18.0 = 36.0\ \text{g}$。这种"先转摩尔、再按比例换算、最后转回质量"的三步法，是解决几乎所有化学计量问题的通用策略，也是摩尔单位存在的核心价值所在。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch3: Composition of Substances and Solutions (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

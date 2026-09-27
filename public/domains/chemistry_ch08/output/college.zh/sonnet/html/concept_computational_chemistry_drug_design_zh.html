@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Computational Chemistry Drug Design | Chemistry Ch08</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="computational-chemistry-drug-design">Computational Chemistry Drug Design</h2>
+<p><strong>定义</strong></p>
+<p>计算化学药物设计（computational chemistry drug design），又称计算机辅助药物设计（CADD），是指利用分子建模、量子化学计算和统计算法，在实验合成之前预测化合物与生物靶点（如蛋白质受体或酶）的结合方式与结合强度，从而筛选和优化候选药物分子。其核心思想是：药物分子要发挥疗效，通常需要以特定的三维构象嵌入靶蛋白的活性位点，并通过氢键、疏水作用、静电作用等非共价相互作用与靶点结合。计算方法主要分两类——基于结构的方法（利用已知靶蛋白的三维结构，进行分子对接 molecular docking）和基于配体的方法（利用已知活性分子的化学特征，通过定量构效关系 QSAR 预测新分子的活性）。分子对接程序会计算候选分子在结合口袋中成千上万种可能姿态的结合自由能，并给出打分函数（scoring function）对结合强度排序，分数越低（更负）通常代表结合越稳定。</p>
+<p><strong>实例分析</strong></p>
+<p>以设计流感神经氨酸酶抑制剂（如达菲的活性成分奥司他韦）为例：科学家先通过X射线晶体学获得神经氨酸酶的三维结构，确定其活性位点的形状与关键氨基酸残基。随后用对接软件将候选小分子逐一"放入"该口袋，计算机尝试数千种旋转和平移方式，寻找能量最低、相互作用最强的构象。达菲的设计正是基于对酶天然底物唾液酸（sialic acid）的过渡态结构模拟，用一个带正电的胍基或氨基取代基精确匹配酶活性位点中的天冬氨酸残基，从而形成强静电作用，阻断病毒从宿主细胞释放。</p>
+<p><strong>问题解决应用</strong></p>
+<p>计算化学的价值在于大幅压缩传统药物研发的时间与成本：实验室合成并测试一个化合物可能耗费数周，而计算机可在数小时内虚拟筛选数百万个分子库，只留下最有希望的十几个候选物进行合成验证。例如，制药公司常用虚拟筛选（virtual screening）结合机器学习模型预测化合物的毒性、溶解度和代谢稳定性，提前淘汰"药代动力学差"的分子。在实际应用中，学生可以练习：给定某靶点结合口袋的关键氨基酸性质（如带负电、疏水），推断候选药物分子应具备何种官能团（如带正电基团、芳香环）才能形成有效结合，这正是训练构效关系直觉的核心技能。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch8: Advanced Theories of Covalent Bonding (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mass Mole Conversion | Chemistry Ch03</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="mass-mole-conversion">Mass Mole Conversion</h2>
+<h3 id="定义">定义</h3>
+<p>摩尔（mol）是化学中用来计数微观粒子（原子、分子或离子）数量的单位，正如"打"（dozen）用来计数宏观物体一样。1 摩尔任何物质都含有 $6.022 \times 10^{23}$ 个粒子，这个数字称为阿伏伽德罗常数 $N_A$。摩尔质量（molar mass，单位 $\text{g/mol}$）是连接"质量"与"摩尔数"这两种度量方式的桥梁：它在数值上等于该物质在元素周期表中查得的原子量（或各原子量之和），但单位从"原子质量单位（amu）"换成了"克/摩尔"。质量、摩尔数与摩尔质量之间的换算关系为：</p>
+$$
+n = \frac{m}{M}
+$$
+<p>其中 $n$ 为物质的量（mol），$m$ 为质量（g），$M$ 为摩尔质量（g/mol）。这一关系式是配平化学方程式、计算反应产率、确定溶液浓度等一切定量化学计算的基础。</p>
+<h3 id="实例演示">实例演示</h3>
+<p>计算 88.0 g 二氧化碳（$\text{CO}_2$）中含有多少摩尔的 $\text{CO}_2$，以及对应多少个 $\text{CO}_2$ 分子。</p>
+<p><strong>第一步：求摩尔质量。</strong> 碳原子量约为 12.0 g/mol，氧原子量约为 16.0 g/mol，$\text{CO}_2$ 含 1 个碳原子和 2 个氧原子：</p>
+$$
+M(\text{CO}_2) = 12.0 + 2 \times 16.0 = 44.0 \ \text{g/mol}
+$$
+<p><strong>第二步：求摩尔数。</strong></p>
+$$
+n = \frac{88.0 \ \text{g}}{44.0 \ \text{g/mol}} = 2.00 \ \text{mol}
+$$
+<p><strong>第三步：求分子个数。</strong></p>
+$$
+2.00 \ \text{mol} \times 6.022 \times 10^{23} \ \text{个/mol} = 1.204 \times 10^{24} \ \text{个分子}
+$$
+<h3 id="解题应用">解题应用</h3>
+<p>在实际问题中，质量-摩尔换算常作为多步计算的中间环节。例如，若要计算某反应中生成的气体在标准状况下的体积，需要先由已知质量求出摩尔数，再结合摩尔体积（22.4 L/mol，STP 条件下）求出体积；若要配制某浓度的溶液，也需先由目标摩尔数反推所需称量的质量。解题时应养成"质量 → 摩尔 → 目标量"的思维路径：先明确已知量和目标量分别处于哪个"层级"（质量、摩尔或粒子数），再用摩尔质量和阿伏伽德罗常数作为换算桥梁逐步转化，并始终检查单位是否正确抵消，以确认换算方向无误。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch3: Composition of Substances and Solutions (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

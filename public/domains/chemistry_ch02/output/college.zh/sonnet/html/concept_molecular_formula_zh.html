@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Molecular Formula | Chemistry Ch02</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="molecular-formula-分子式">Molecular Formula 分子式</h2>
+<p><strong>定义</strong></p>
+<p>分子式（molecular formula）是用元素符号和右下角数字精确表示一个分子中各元素原子实际数目的化学式，例如葡萄糖的分子式为 $\text{C}_6\text{H}_{12}\text{O}_6$，表示每个葡萄糖分子含有 6 个碳原子、12 个氢原子和 6 个氧原子。分子式不同于实验式（empirical formula，又称最简式），后者只给出原子数目的最简整数比。例如乙酸的分子式是 $\text{C}_2\text{H}_4\text{O}_2$，而它的实验式是 $\text{CH}_2\text{O}$——两者比例相同（1:2:1），但分子式反映的是真实的分子大小。要从实验式得到分子式，需要额外知道该化合物的摩尔质量：将摩尔质量除以实验式的式量，得到一个整数倍数 $n$，再把实验式中每种原子的下标乘以 $n$。</p>
+<p><strong>实例解析</strong></p>
+<p>某化合物经元素分析测得实验式为 $\text{CH}_2$，且已知其摩尔质量约为 $84\ \text{g/mol}$。实验式 $\text{CH}_2$ 的式量为 $12 + 2(1) = 14\ \text{g/mol}$。用摩尔质量除以实验式量：$84 \div 14 = 6$，说明分子式中的原子数是实验式的 6 倍，因此分子式为 $\text{C}_6\text{H}_{12}$（这正是环己烷的分子式）。这个例子说明，仅凭元素百分组成无法确定分子的真实大小，必须结合分子量数据才能锁定唯一的分子式。</p>
+<p><strong>问题解决应用</strong></p>
+<p>在实际分析化学和有机化学中，确定分子式通常分三步进行：第一步，通过燃烧分析或元素分析仪测出各元素的质量百分比，换算成摩尔比，得到实验式；第二步，通过质谱（mass spectrometry）等技术测定化合物的分子量；第三步，用分子量除以实验式量，求出整数倍数 $n$，再放大实验式得到分子式。这一流程在药物开发、新材料鉴定和环境污染物检测中极为常见——例如，鉴定一种未知污染物时，实验室先做元素分析确定其实验式，再用质谱确认分子量，从而推出准确的分子式，为后续判断其化学结构和潜在毒性提供依据。掌握这一推导过程，是连接"宏观测量数据"与"微观分子结构"的关键技能。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch2: Atoms, Molecules, and Ions (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

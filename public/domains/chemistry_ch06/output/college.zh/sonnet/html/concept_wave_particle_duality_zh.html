@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wave Particle Duality | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="波粒二象性">波粒二象性</h2>
+<p><strong>定义</strong></p>
+<p>波粒二象性是指光和实物粒子（如电子、质子）都同时具有波动性和粒子性这两种看似矛盾的属性，具体表现为何种性质取决于观测方式。19世纪末,光的干涉和衍射实验(如杨氏双缝实验)确立了光的波动本质;但爱因斯坦在1905年解释光电效应时提出,光以离散的能量包——光子——的形式与物质相互作用,每个光子的能量为 $E = h\nu$,其中 $h$ 为普朗克常数,$\nu$ 为光的频率。1924年,德布罗意进一步提出,不仅光具有粒子性,实物粒子也具有波动性,其波长由</p>
+$$\lambda = \frac{h}{p}$$
+<p>给出,其中 $p$ 是粒子的动量。这一关系将波动图像与粒子图像统一在同一框架下,是量子力学的基石之一。</p>
+<p><strong>实例分析</strong></p>
+<p>考虑电子双缝实验:当电子束逐个通过双缝装置并打在探测屏上时,单个电子表现为一次次离散的撞击点(粒子性),但大量电子累积后,撞击点却呈现出明暗相间的干涉条纹(波动性)。这说明每个电子并非沿单一路径运动,而是像波一样同时"感知"两条缝隙的存在。若在缝隙处放置探测器以确定电子究竟通过哪条缝,干涉条纹便会消失,电子表现得如同经典粒子。这一现象揭示了一个深刻的原理:观测行为本身会改变系统的量子态。</p>
+<p><strong>问题解决应用</strong></p>
+<p>德布罗意公式使我们能够定量判断何种尺度下波动性变得显著。计算一个质量为 $9.11\times10^{-31}\,\text{kg}$、速度为 $2.0\times10^6\,\text{m/s}$ 的电子的德布罗意波长:</p>
+$$\lambda = \frac{h}{mv} = \frac{6.63\times10^{-34}}{(9.11\times10^{-31})(2.0\times10^6)} \approx 3.6\times10^{-10}\,\text{m}$$
+<p>这一波长与原子间距同数量级,因此电子的波动性在原子尺度上至关重要,这正是电子显微镜分辨率远超光学显微镜的物理基础——短波长意味着更高的分辨能力。相比之下,一个质量为 0.05 kg、速度 30 m/s 的棒球,其德布罗意波长约为 $4.4\times10^{-34}\,\text{m}$,远小于任何可观测尺度,故其波动性完全可以忽略。这解释了为什么宏观物体遵循经典力学,而微观粒子必须用量子力学描述——波粒二象性并非随意切换的属性,而是由物质的质量和运动状态共同决定其波动效应是否可观测。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

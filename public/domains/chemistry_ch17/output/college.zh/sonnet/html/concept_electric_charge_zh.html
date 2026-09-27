@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electric Charge | Chemistry Ch17</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="electric-charge">Electric Charge</h2>
+<p><strong>定义</strong></p>
+<p>电荷是物质的一种基本属性，决定了它在电磁场中如何受力以及如何与其他带电物体相互作用。电荷分为两种：正电荷和负电荷，同种电荷相互排斥，异种电荷相互吸引。电荷是量子化的，即任何可观测的电荷量都是基本电荷 $e \approx 1.6 \times 10^{-19}\ \text{C}$ 的整数倍，其中 $\text{C}$（库仑）是电荷的国际单位。原子中，质子带正电（$+e$），电子带负电（$-e$），中子不带电；一个物体的净电荷取决于它得失电子的数目。电荷遵循守恒定律：在一个孤立系统中，电荷既不能被创造也不能被消灭，只能从一处转移到另一处，例如摩擦起电时电子从一种材料转移到另一种材料。</p>
+<p>两个点电荷之间的相互作用力由库仑定律描述：</p>
+$$F = k_e \frac{|q_1 q_2|}{r^2}$$
+<p>其中 $F$ 是两电荷间的作用力，$q_1$ 和 $q_2$ 是两个电荷的电荷量，$r$ 是它们之间的距离，$k_e \approx 8.99 \times 10^9\ \text{N·m}^2/\text{C}^2$ 是库仑常数。</p>
+<p><strong>实例分析</strong></p>
+<p>假设两个电荷分别为 $q_1 = 2\ \mu\text{C}$ 和 $q_2 = -3\ \mu\text{C}$，相距 $r = 0.5\ \text{m}$。代入库仑定律：</p>
+$$F = (8.99 \times 10^9) \times \frac{(2\times 10^{-6})(3\times 10^{-6})}{(0.5)^2} \approx 0.216\ \text{N}$$
+<p>由于两电荷符号相反，这个力是吸引力，方向指向彼此。</p>
+<p><strong>应用与解题练习</strong></p>
+<p>在解决电荷相关问题时，关键步骤是：确认各电荷的符号（决定力是吸引还是排斥）、统一单位（通常将电荷换算为库仑、距离换算为米）、再代入公式计算大小。例如，若把上例中两电荷间距离减半（$r = 0.25\ \text{m}$），根据反比平方关系，作用力将变为原来的 4 倍，约为 $0.864\ \text{N}$——这体现了库仑力对距离的高度敏感性。在生物和化学情境中，这一原理同样适用于理解离子键的形成、细胞膜两侧电位差的产生，以及神经元动作电位传导过程中带电粒子（如 $\text{Na}^+$、$\text{K}^+$）的相互作用，都是电荷守恒与库仑作用力的具体体现。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch17: Electrochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wave Function | Chemistry Ch08</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="wave-function">Wave Function</h2>
+<p><strong>定义</strong></p>
+<p>波函数（wave function），记作 $\Psi(x, t)$，是量子力学中用来描述微观粒子（如电子、光子）状态的数学函数。与经典物理中用位置和速度精确描述一个粒子不同，量子力学承认我们无法同时精确知道粒子的位置和动量。波函数本身并不直接代表某种可观测的"波动"，它的物理意义由玻恩（Max Born）提出的<strong>概率解释</strong>给出：波函数模的平方 $|\Psi(x, t)|^2$ 表示在时刻 $t$、位置 $x$ 附近找到粒子的概率密度。由于粒子必定存在于空间某处，波函数必须满足<strong>归一化条件</strong>：</p>
+$$\int_{-\infty}^{\infty} |\Psi(x, t)|^2 \, dx = 1$$
+<p>波函数随时间的演化由薛定谔方程支配，这正是量子力学的核心动力学方程，之所以在此引入方程而非仅作定性描述，是因为波函数的存在意义本身就依赖于这一严格的数学结构。</p>
+<p><strong>推导实例</strong></p>
+<p>考虑一维无限深势阱中的电子——这是化学中理解原子轨道形状的最简单模型。势阱宽度为 $L$，电子被限制在 $0 < x < L$ 之间。求解定态薛定谔方程后，波函数的解为一系列驻波：</p>
+$$\psi_n(x) = \sqrt{\frac{2}{L}} \sin\left(\frac{n\pi x}{L}\right), \quad n = 1, 2, 3, \dots$$
+<p>每个 $n$ 对应一个允许的能级 $E_n = \dfrac{n^2 h^2}{8mL^2}$。注意能量是<strong>量子化</strong>的——只能取离散值，这正是"量子"一词的来源，也解释了原子光谱为何呈现分立谱线而非连续谱。</p>
+<p><strong>问题解决应用</strong></p>
+<p>利用波函数，我们可以计算电子出现在阱内某区域的概率。例如，对于基态（$n=1$）,电子出现在 $0$ 到 $L/2$ 之间的概率为：</p>
+$$P = \int_0^{L/2} |\psi_1(x)|^2 \, dx = 0.5$$
+<p>这与经典直觉（电子应均匀分布，概率恰为一半）一致；但对于 $n=2$ 态计算同一区间时，概率恰好为 $0.5$（因对称性），而计算 $0$ 到 $L/4$ 的概率则会得到不同于经典预期的结果，体现了量子驻波节点结构的影响。这类概率密度计算是理解化学键、原子轨道电子云分布的基础工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch8: Advanced Theories of Covalent Bonding (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

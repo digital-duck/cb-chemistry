@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reduction Potential | Chemistry Ch18</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="reduction-potential">Reduction Potential</h2>
+<p><strong>定义</strong></p>
+<p>还原电势（reduction potential，$E$）衡量一个化学物种从另一物种夺取电子、使自身被还原的倾向大小，单位为伏特（V）。它本质上是电化学中"谁抢电子能力更强"的定量指标：$E$ 值越高（越正），该物质被还原（获得电子）的倾向越强，是更强的氧化剂；$E$ 值越低（越负），该物质越倾向于失去电子（被氧化），是更强的还原剂。所有数值都是相对测量，参照标准氢电极（Standard Hydrogen Electrode, SHE）定义为 $E^\circ = 0\ \text{V}$，因此表中列出的是"标准还原电势"$E^\circ$，测量条件为 25°C、1 atm、离子浓度 1 M。</p>
+<p>两个半反应组合成完整的氧化还原反应时，电池的整体电动势为：</p>
+$$E^\circ_{\text{cell}} = E^\circ_{\text{cathode（还原）}} - E^\circ_{\text{anode（氧化）}}$$
+<p>若 $E^\circ_{\text{cell}} > 0$，反应在标准条件下自发进行；若为负值，则该方向非自发（逆反应才自发）。</p>
+<p><strong>实例分析</strong></p>
+<p>考虑铜与锌的经典电池：</p>
+$$\text{Zn}^{2+} + 2e^- \rightarrow \text{Zn} \quad E^\circ = -0.76\ \text{V}$$
+$$\text{Cu}^{2+} + 2e^- \rightarrow \text{Cu} \quad E^\circ = +0.34\ \text{V}$$
+<p>由于 Cu²⁺ 的还原电势更高，说明它更"渴望"电子，因此在反应中作为阴极（被还原），Zn 则被迫氧化，作为阳极提供电子。整体电池电压为：</p>
+$$E^\circ_{\text{cell}} = 0.34 - (-0.76) = 1.10\ \text{V}$$
+<p>这正是伽伐尼电池（Zn–Cu 电池）实际测得的电动势，也说明该反应能自发放出电能——这正是电池工作的原理。</p>
+<p><strong>解题应用</strong></p>
+<p>在生物化学中，电子传递链（呼吸链）中各载体（NADH、细胞色素、O₂）依次按还原电势从低到高排列，电子沿电势梯度"下坡"传递，驱动 ATP 合成；判断某氧化还原反应能否自发发生，只需比较两个半反应的标准还原电势，电势差为正即自发。这一原理广泛用于预测金属腐蚀倾向、设计电镀工艺，以及分析细胞代谢中电子流动的方向。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch18: Representative Metals, Metalloids, and Nonmetals (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

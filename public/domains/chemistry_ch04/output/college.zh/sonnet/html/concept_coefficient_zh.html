@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coefficient | Chemistry Ch04</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="coefficient">Coefficient</h2>
+<p><strong>定义</strong></p>
+<p>在化学中,系数(coefficient)是写在化学方程式中化学式前面的数字,用来表示反应中各物质的相对分子数目或摩尔数。系数确保方程式两边遵守质量守恒定律——反应前后每种原子的总数必须相等。系数不同于化学式中的下标:下标是分子结构的固有部分,不能改变;而系数是可以调整的,专门用来配平方程式。例如,在 $2H_2 + O_2 \rightarrow 2H_2O$ 中,数字 "2" 就是系数,表示需要 2 摩尔氢气和 2 摩尔水,而下标 "2"(如 $H_2$ 中的 2)则表示每个氢分子含有 2 个氢原子,是分子本身固定的组成。</p>
+<p><strong>实例讲解</strong></p>
+<p>以镁在氧气中燃烧生成氧化镁为例。未配平的方程式为:</p>
+$$Mg + O_2 \rightarrow MgO$$
+<p>左边有 2 个氧原子($O_2$),右边只有 1 个氧原子(MgO),原子数不守恒。为了配平,我们在 MgO 前加系数 2:</p>
+$$Mg + O_2 \rightarrow 2MgO$$
+<p>现在右边有 2 个镁原子,所以左边也要加系数 2:</p>
+$$2Mg + O_2 \rightarrow 2MgO$$
+<p>检查:左边镁原子 2 个,氧原子 2 个;右边镁原子 2 个,氧原子 2 个。方程式配平完成。这里的系数 2、1、2 就代表参与反应的摩尔比。</p>
+<p><strong>问题解决应用</strong></p>
+<p>系数的真正价值在于它能把化学方程式转化为定量计算的工具,这正是化学计量学(stoichiometry)的核心。已知配平方程式 $2Mg + O_2 \rightarrow 2MgO$,如果给定 4 摩尔镁完全反应,可利用系数比(2 Mg : 1 $O_2$ : 2 MgO)直接算出:需要 2 摩尔 $O_2$,生成 4 摩尔 MgO。这种"系数比即摩尔比"的关系,是解决产率计算、限量反应物判断等实际问题的基础。练习配平方程式时,建议先配平出现次数最少的原子(如金属),再配平多原子基团,最后处理氧和氢,并始终用整数最小比作为最终系数。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch4: Stoichiometry of Chemical Reactions (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Molality | Chemistry Ch11</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="molality">Molality</h2>
+<p><strong>定义</strong></p>
+<p>质量摩尔浓度（molality，符号 $m$）是溶液浓度的一种表示方法，定义为溶质的物质的量（mol）除以溶剂的质量（kg）：</p>
+$$
+m = \frac{n_{\text{溶质}}}{m_{\text{溶剂}}(\text{kg})}
+$$
+<p>单位为 $\text{mol/kg}$，有时写作 $\text{mol} \cdot \text{kg}^{-1}$。这与更常见的物质的量浓度（molarity，$c = n/V$）不同：molarity 以溶液的体积为分母，而 molality 以溶剂的质量为分母。这个区别看似细微，却非常关键——体积会随温度变化而热胀冷缩，但质量不会。因此，在需要精确控制浓度、且实验可能跨越较大温度范围的场合（例如依数性质的测定：沸点升高、凝固点降低、渗透压计算），化学家更偏爱使用 molality，因为它不受温度影响，具有更好的稳定性。</p>
+<p><strong>实例演算</strong></p>
+<p>假设将 $10.0\ \text{g}$ 的葡萄糖（$\text{C}_6\text{H}_{12}\text{O}_6$，摩尔质量 $180.16\ \text{g/mol}$）溶解在 $250\ \text{g}$ 水中，求该溶液的质量摩尔浓度。</p>
+<p>第一步，求葡萄糖的物质的量：</p>
+$$
+n = \frac{10.0\ \text{g}}{180.16\ \text{g/mol}} = 0.0555\ \text{mol}
+$$
+<p>第二步，将溶剂质量换算为千克：$250\ \text{g} = 0.250\ \text{kg}$。</p>
+<p>第三步，代入定义式：</p>
+$$
+m = \frac{0.0555\ \text{mol}}{0.250\ \text{kg}} = 0.222\ \text{mol/kg}
+$$
+<p>所以该溶液的质量摩尔浓度为 $0.222\ m$。</p>
+<p><strong>解题应用</strong></p>
+<p>molality 的价值在依数性质计算中体现得最为明显。例如，凝固点降低公式为：</p>
+$$
+\Delta T_f = K_f \cdot m \cdot i
+$$
+<p>其中 $K_f$ 是溶剂的凝固点降低常数，$i$ 是范特霍夫因子（反映溶质在溶液中电离或聚集的粒子数）。若已知某未知溶质的 $\Delta T_f$，可反推出 $m$，进而结合已知溶质质量求出其摩尔质量——这是实验室测定未知化合物分子量的经典方法之一。做此类题目时，务必先确认体系是否发生电离（如 $\text{NaCl}$ 需乘以 $i \approx 2$），并始终以溶剂（而非溶液）的质量为分母，这是学生最容易出错的地方。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch11: Solutions and Colloids (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

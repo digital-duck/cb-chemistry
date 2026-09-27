@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Binding Energy Per Nucleon | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="每核子结合能">每核子结合能</h2>
+<p><strong>定义</strong></p>
+<p>原子核的结合能是将其完全拆解为自由质子和中子所需的能量，等价于组成核子的质量之和与原子核实际质量之差按照 $E = mc^2$ 转化而来的能量。若把结合能除以核子总数 $A$（质子数 $Z$ 加中子数 $N$），得到的量称为每核子结合能，记作 $E_b/A$。这个值比总结合能更有意义，因为它反映了核子在核内被束缚得有多"紧"，可以直接用来比较不同大小原子核的稳定性——就像比较不同公司时看人均利润，而不是只看总利润。</p>
+<p><strong>规律与图像</strong></p>
+<p>把每核子结合能对质量数 $A$ 作图，会得到一条先陡峭上升、在 $A \approx 56$（铁-56附近）达到峰值约 $8.8\ \text{MeV}$，然后缓慢下降的曲线。氢的每核子结合能几乎为零（单个质子没有结合能可言），氦-4则跳升到约 $7.1\ \text{MeV}$，铀-238降到约 $7.6\ \text{MeV}$。这条曲线的形状解释了核能释放的两种途径：</p>
+<li><strong>聚变</strong>：轻核（曲线左侧，如氢、氦）合并成较重的核时，每核子结合能上升，多余能量释放出来——这是太阳发光的机制。</li>
+<li><strong>裂变</strong>：重核（曲线右侧，如铀）分裂成中等质量的核时，每核子结合能同样上升，释放能量——这是核反应堆和原子弹的机制。</li>
+<p>铁附近的核最稳定，因为它们位于曲线的顶点，每核子结合能最高，既不倾向于聚变也不倾向于裂变。</p>
+<p><strong>计算示例</strong></p>
+<p>以氦-4（$^4_2\text{He}$）为例。质子质量 $1.007276\ \text{u}$，中子质量 $1.008665\ \text{u}$，氦-4原子核质量 $4.001506\ \text{u}$。</p>
+<p>质量亏损：</p>
+$$\Delta m = (2 \times 1.007276 + 2 \times 1.008665) - 4.001506 = 0.030376\ \text{u}$$
+<p>结合能：</p>
+$$E_b = \Delta m \times 931.5\ \text{MeV/u} \approx 28.3\ \text{MeV}$$
+<p>每核子结合能：</p>
+$$\frac{E_b}{A} = \frac{28.3}{4} \approx 7.1\ \text{MeV}$$
+<p><strong>应用</strong></p>
+<p>判断一个核反应是否放能，只需比较反应前后每核子结合能曲线上的位置：产物若更靠近曲线峰值（铁附近），反应就会释放能量。这一原则可用于快速估算聚变或裂变反应的能量输出，而不必逐一计算每种核的绝对结合能。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

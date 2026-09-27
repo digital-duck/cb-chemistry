@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acidic Basic Neutral Classification | Chemistry Ch14</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="acidic-basic-neutral-classification">Acidic Basic Neutral Classification</h2>
+<p><strong>定义</strong></p>
+<p>溶液的酸碱性由其中氢离子浓度 $[\text{H}^+]$ 决定，通常用 pH 值表示：</p>
+$$\text{pH} = -\log_{10}[\text{H}^+]$$
+<p>在 $25^\circ\text{C}$ 的纯水中，水会发生微弱的自电离：</p>
+$$\text{H}_2\text{O} \rightleftharpoons \text{H}^+ + \text{OH}^-$$
+<p>此时 $[\text{H}^+] = [\text{OH}^-] = 10^{-7}\ \text{mol/L}$，对应 $\text{pH} = 7$，称为<strong>中性</strong>。当溶液中 $[\text{H}^+] > [\text{OH}^-]$，即 $\text{pH} < 7$ 时为<strong>酸性</strong>；当 $[\text{OH}^-] > [\text{H}^+]$，即 $\text{pH} > 7$ 时为<strong>碱性</strong>。由于 pH 是对数标度，pH 每相差 1 个单位，$[\text{H}^+]$ 就相差 10 倍——这是理解酸碱强度差异的关键。</p>
+<p><strong>范例解析</strong></p>
+<p>假设某柠檬汁样品测得 $[\text{H}^+] = 2.0 \times 10^{-3}\ \text{mol/L}$，求其 pH 并判断酸碱性。</p>
+$$\text{pH} = -\log_{10}(2.0 \times 10^{-3}) \approx 2.70$$
+<p>由于 $2.70 < 7$，该样品呈强酸性，这与柠檬汁富含柠檬酸的事实相符。若换成家用漂白剂，其典型 pH 约为 $12.5$，则属于强碱性，因为 $12.5 > 7$。</p>
+<p><strong>解题应用</strong></p>
+<p>分类问题在实际中常需要“反推”：已知 pH，求离子浓度。例如某清洁剂 pH $= 11.0$，求 $[\text{OH}^-]$：先求 $[\text{H}^+] = 10^{-11.0}\ \text{mol/L}$，再利用水的离子积常数 $K_w = [\text{H}^+][\text{OH}^-] = 1.0 \times 10^{-14}$（$25^\circ\text{C}$ 下）求出：</p>
+$$[\text{OH}^-] = \frac{1.0 \times 10^{-14}}{10^{-11.0}} = 1.0 \times 10^{-3}\ \text{mol/L}$$
+<p>在实验或环境监测中（如测定土壤、河水、血液样本），第一步永远是明确测得的是 pH 读数还是浓度数值，再据此选择用对数或指数运算转换，最后对照 $\text{pH} = 7$ 这一基准判断样品属于酸性、中性还是碱性。血液的正常 pH 维持在 $7.35$–$7.45$ 之间，这一狭窄区间说明生物体对酸碱平衡的调节极为精细，稍有偏离即可能引发生理紊乱。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch14: Acid-Base Equilibria (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

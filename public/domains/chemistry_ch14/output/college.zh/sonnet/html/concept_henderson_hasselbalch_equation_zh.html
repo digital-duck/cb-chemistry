@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Henderson Hasselbalch Equation | Chemistry Ch14</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="henderson-hasselbalch-equation">Henderson Hasselbalch Equation</h2>
+<p><strong>定义</strong></p>
+<p>亨德森-哈塞尔巴赫方程（Henderson-Hasselbalch equation）把弱酸缓冲体系的酸碱平衡与其组分浓度直接联系起来，是理解并计算缓冲液 pH 的核心工具。对于弱酸 $\text{HA}$ 及其共轭碱 $\text{A}^-$ 组成的缓冲体系，其电离平衡为</p>
+$$\text{HA} \rightleftharpoons \text{H}^+ + \text{A}^-$$
+<p>平衡常数 $K_a$ 定义为 $K_a = \dfrac{[\text{H}^+][\text{A}^-]}{[\text{HA}]}$。对该式取负对数并整理，得到：</p>
+$$\text{pH} = \text{p}K_a + \log\frac{[\text{A}^-]}{[\text{HA}]}$$
+<p>这个方程之所以重要，是因为它揭示了一个关键事实：缓冲液的 pH 主要由弱酸的 $\text{p}K_a$（其电离常数的负对数）决定，而共轭碱与弱酸的<strong>浓度比</strong>只起微调作用——即使总浓度改变，只要比值不变，pH 就基本不变。这正是缓冲液能够抵抗 pH 剧烈波动的化学基础。</p>
+<p><strong>应用实例</strong></p>
+<p>以人体血液中的碳酸-碳酸氢盐缓冲系统为例：$\text{H}_2\text{CO}_3$（相当于 HA）与 $\text{HCO}_3^-$（相当于 $\text{A}^-$）构成缓冲对，其 $\text{p}K_a \approx 6.1$。若血浆中 $[\text{HCO}_3^-] = 24\ \text{mmol/L}$，$[\text{H}_2\text{CO}_3] \approx 1.2\ \text{mmol/L}$，代入方程：</p>
+$$\text{pH} = 6.1 + \log\frac{24}{1.2} = 6.1 + \log(20) = 6.1 + 1.3 = 7.4$$
+<p>计算结果恰好落在人体血液正常 pH（7.35–7.45）范围内，说明该缓冲系统在生理条件下确实维持着稳定的酸碱平衡。</p>
+<p><strong>解决问题的应用</strong></p>
+<p>亨德森-哈塞尔巴赫方程最实用的场景是<strong>反向设计缓冲液</strong>：给定目标 pH 和某种弱酸的 $\text{p}K_a$，可以反解出所需的 $[\text{A}^-]/[\text{HA}]$ 比值，进而配制出稳定在特定 pH 的溶液，这在生物化学实验（如酶活性测定、细胞培养）中极为常见。此外，该方程也解释了缓冲液的<strong>有效缓冲范围</strong>：当比值 $[\text{A}^-]/[\text{HA}]$ 偏离 1（即偏离 $\text{p}K_a$ 超过约 1 个单位）太多时，缓冲能力会显著下降，这提示在选择缓冲体系时，应选取 $\text{p}K_a$ 接近目标 pH 的弱酸，才能获得最佳抗扰动效果。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch14: Acid-Base Equilibria (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

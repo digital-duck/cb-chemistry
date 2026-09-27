@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spontaneous Process | Chemistry Ch16</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="spontaneous-process">Spontaneous Process</h2>
+<p><strong>定义</strong></p>
+<p>自发过程（spontaneous process）是指在给定条件下,不需要外界持续输入能量就能自行发生的过程。需要强调的是,"自发"不等于"快速"——铁生锈是自发过程,但可能需要数年才明显发生;钻石转变为石墨在常温常压下也是自发的,但反应速率极慢,以至于在人类时间尺度上观察不到变化。判断一个过程是否自发,依据的是热力学第二定律:一个孤立系统中,自发过程总是朝着熵($S$)增大的方向进行,即 $\Delta S_{universe} > 0$。</p>
+<p>对于在恒温恒压下发生的化学反应(实验室中最常见的条件),更实用的判据是吉布斯自由能变化 $\Delta G$：</p>
+$$\Delta G = \Delta H - T\Delta S$$
+<p>当 $\Delta G < 0$ 时,过程自发;$\Delta G > 0$ 时,过程非自发(逆过程才自发);$\Delta G = 0$ 时,系统处于平衡态。这里 $\Delta H$ 是焓变(反应放热或吸热),$T$ 是绝对温度(单位:K),$\Delta S$ 是体系的熵变。</p>
+<p><strong>举例说明</strong></p>
+<p>冰在室温下融化就是一个好例子。这个过程是吸热的($\Delta H > 0$,系统从环境吸收热量),但液态水比固态冰更加无序,所以熵增大($\Delta S > 0$)。在 $T = 298\text{ K}$ 时,$T\Delta S$ 这一项足够大,能够抵消正的 $\Delta H$,使得 $\Delta G = \Delta H - T\Delta S < 0$,融化自发进行。但若把温度降到 $-10^\circ\text{C}$($263\text{ K}$),$T\Delta S$ 变小,不足以抵消 $\Delta H$,此时 $\Delta G > 0$,融化反而变成非自发过程——这正是冰在寒冷环境下不会融化的原因。</p>
+<p><strong>解决问题的应用</strong></p>
+<p>判断某反应在特定温度下是否自发,可以通过分析 $\Delta H$ 和 $\Delta S$ 的正负号组合来预测：</p>
+<li>$\Delta H < 0,\ \Delta S > 0$：任何温度下都自发($\Delta G$ 恒为负)</li>
+<li>$\Delta H > 0,\ \Delta S < 0$：任何温度下都不自发</li>
+<li>$\Delta H < 0,\ \Delta S < 0$：低温下自发,高温下不自发</li>
+<li>$\Delta H > 0,\ \Delta S > 0$：高温下自发,低温下不自发(如冰融化的例子)</li>
+<p>对后两种情况,可以求出使 $\Delta G = 0$ 的临界温度 $T = \Delta H / \Delta S$,从而确定反应自发进行的温度范围——这一方法在工业化学(如判断某合成反应在何种温度条件下可行)中极为实用。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch16: Thermodynamics (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

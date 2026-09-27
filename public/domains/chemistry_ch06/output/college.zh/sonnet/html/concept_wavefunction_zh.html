@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wavefunction | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="wavefunction">Wavefunction</h2>
+<p><strong>定义</strong></p>
+<p>波函数（wavefunction，符号 $\psi$）是量子力学中描述微观粒子（如电子）状态的数学函数。与经典力学不同，电子不能被赋予确定的位置和轨迹；薛定谔方程的解 $\psi(x,y,z)$ 给出的是电子在空间中出现的"概率振幅"。波函数本身没有直接的物理意义，但其<strong>模的平方</strong> $|\psi|^2$ 表示在空间某点找到电子的概率密度。这正是原子轨道（$s$、$p$、$d$ 轨道）图像的数学来源——教科书中那些云状图案，本质上就是 $|\psi|^2$ 在空间的分布图。</p>
+<p><strong>举例说明</strong></p>
+<p>以氢原子基态为例，其波函数为</p>
+$$\psi_{1s}(r) = \frac{1}{\sqrt{\pi a_0^3}}\, e^{-r/a_0}$$
+<p>其中 $r$ 是电子到原子核的距离，$a_0$ 是玻尔半径（约 $5.29\times10^{-11}\,\text{m}$）。计算 $|\psi_{1s}|^2$ 可知，电子出现概率在核附近最大，随 $r$ 增大呈指数衰减，但绝不会在某个固定"轨道"上运行——这就是"电子云"取代"电子轨道"概念的原因。</p>
+<p><strong>应用于解题</strong></p>
+<p>理解波函数的关键应用是判断轨道的形状与节点（node，即 $\psi=0$ 的位置）。例如 $2s$ 轨道的波函数在离核某一半径处变号，产生一个球形节面；而 $2p_z$ 轨道则在 $z=0$ 平面上为零，形成节面把电子云分成正负两瓣。节点数目遵循规律：径向节点数 $= n - l - 1$，角节点数 $= l$（$n$ 为主量子数，$l$ 为角量子数）。做题时，只需记住这一节点计数规则，即可迅速判断某轨道（如 $3p$、$3d$）具有多少径向节点与角节点，而无需求解薛定谔方程本身。这种"由波函数节点结构推断轨道形状"的思路，是理解元素周期表电子排布、化学键形成方向性（如 $sp^3$ 杂化）的基础。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

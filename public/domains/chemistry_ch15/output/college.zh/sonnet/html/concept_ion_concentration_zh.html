@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ion Concentration | Chemistry Ch15</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="ion-concentration-离子浓度">Ion Concentration(离子浓度)</h2>
+<p><strong>定义</strong></p>
+<p>离子浓度指溶液中某种带电粒子(阳离子或阴离子)的量,通常以摩尔浓度(mol/L,记作 M)表示。当离子化合物(如 $\text{NaCl}$)溶于水时,它会解离成自由移动的离子:</p>
+$$\text{NaCl}(s) \xrightarrow{\text{H}_2\text{O}} \text{Na}^+(aq) + \text{Cl}^-(aq)$$
+<p>由于每摩尔 $\text{NaCl}$ 解离产生一摩尔 $\text{Na}^+$ 和一摩尔 $\text{Cl}^-$,溶液中每种离子的浓度都等于原盐的浓度。但对于像 $\text{CaCl}_2$ 这样解离出不同比例离子的化合物,必须按化学计量比分别计算每种离子的浓度,不能直接套用化合物本身的浓度。</p>
+<p><strong>例题</strong></p>
+<p>配制 0.10 M 的 $\text{CaCl}_2$ 溶液,求 $\text{Ca}^{2+}$ 和 $\text{Cl}^-$ 的浓度。</p>
+<p>解离方程为:</p>
+$$\text{CaCl}_2(s) \rightarrow \text{Ca}^{2+}(aq) + 2\text{Cl}^-(aq)$$
+<p>每溶解 1 mol $\text{CaCl}_2$,生成 1 mol $\text{Ca}^{2+}$ 和 2 mol $\text{Cl}^-$。因此:</p>
+$$[\text{Ca}^{2+}] = 0.10\ \text{M}, \qquad [\text{Cl}^-] = 2 \times 0.10\ \text{M} = 0.20\ \text{M}$$
+<p><strong>应用:溶液配制与稀释计算</strong></p>
+<p>在实验室或临床场景中,常需要将储备液稀释到指定的离子浓度。此时使用稀释公式:</p>
+$$C_1V_1 = C_2V_2$$
+<p>其中 $C_1, V_1$ 为原始浓度和体积,$C_2, V_2$ 为稀释后的浓度和体积。</p>
+<p><strong>问题</strong>:实验室有 1.0 M 的 $\text{CaCl}_2$ 储备液,需要配制 250 mL 、$[\text{Cl}^-] = 0.20$ M 的溶液,应取多少毫升储备液?</p>
+<p>先求所需 $\text{CaCl}_2$ 的浓度:由于每摩尔 $\text{CaCl}_2$ 产生 2 mol $\text{Cl}^-$,所以目标 $\text{CaCl}_2$ 浓度为 $0.20 / 2 = 0.10$ M。代入稀释公式:</p>
+$$(1.0\ \text{M})(V_1) = (0.10\ \text{M})(250\ \text{mL})$$
+$$V_1 = 25\ \text{mL}$$
+<p>即需取 25 mL 储备液,加水稀释至 250 mL。这种计算在细胞培养基配制、静脉输液电解质配比等实际工作中十分常见,准确区分"化合物浓度"与"离子浓度"是避免配制错误的关键。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch15: Equilibria of Other Reaction Classes (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electrochemical Cell | Chemistry Ch17</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="electrochemical-cell-电化学电池">Electrochemical Cell（电化学电池）</h2>
+<p><strong>定义</strong></p>
+<p>电化学电池是一种通过氧化还原反应实现化学能与电能相互转化的装置。它由两个电极（阳极与阴极）、电解质溶液以及连接两个半电池的盐桥或多孔隔膜组成。阳极发生氧化反应（失去电子），阴极发生还原反应（得到电子）。根据能量转化方向，电化学电池分为两大类：<strong>原电池（伽伐尼电池）</strong>将自发的氧化还原反应转化为电能对外做功；<strong>电解池</strong>则消耗外部电能驱动非自发反应进行。电子通过外部导线从阳极流向阴极，而离子通过电解质在两个半电池之间迁移，以维持电荷平衡——这一内部离子流动与外部电子流动的分工，正是电池能持续产生电流的关键。</p>
+<p><strong>实例分析：丹尼尔电池</strong></p>
+<p>经典的丹尼尔电池由锌电极浸在硫酸锌溶液中，铜电极浸在硫酸铜溶液中，两者通过盐桥连接构成。锌的氧化倾向强于铜，因此锌作为阳极被氧化：</p>
+$$\text{Zn}(s) \rightarrow \text{Zn}^{2+}(aq) + 2e^-$$
+<p>铜离子在阴极被还原，沉积为铜金属：</p>
+$$\text{Cu}^{2+}(aq) + 2e^- \rightarrow \text{Cu}(s)$$
+<p>总反应为：</p>
+$$\text{Zn}(s) + \text{Cu}^{2+}(aq) \rightarrow \text{Zn}^{2+}(aq) + \text{Cu}(s)$$
+<p>电子经外电路从锌电极流向铜电极，产生约 1.10 V 的标准电池电压。盐桥中的离子（如 $\text{K}^+$ 和 $\text{NO}_3^-$）分别向铜半电池和锌半电池迁移，中和两侧因反应而累积的电荷，防止电流中断。</p>
+<p><strong>问题解决应用</strong></p>
+<p>理解电化学电池的核心技能在于判断反应的自发性并预测电池电压。利用标准电极电势表，电池的标准电动势可由下式估算：</p>
+$$E^\circ_{\text{cell}} = E^\circ_{\text{cathode}} - E^\circ_{\text{anode}}$$
+<p>其中阴极选取还原电势较高（更易被还原）的半反应，阳极选取还原电势较低的半反应。若计算得到 $E^\circ_{\text{cell}} > 0$，说明该反应在标准条件下自发进行，可构成原电池；若为负值，则该反应需外加电压驱动，属于电解池的工作原理。这一判据广泛应用于选择电池材料（如锂离子电池中电极对的搭配）、评估金属腐蚀倾向，以及设计电镀工艺中的电极组合，是连接理论电势数据与实际工程决策的桥梁。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch17: Electrochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

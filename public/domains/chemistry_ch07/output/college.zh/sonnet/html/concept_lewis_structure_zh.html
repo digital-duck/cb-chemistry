@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lewis Structure | Chemistry Ch07</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="lewis-structure">Lewis Structure</h2>
+<p><strong>定义</strong></p>
+<p>路易斯结构（Lewis structure，又称电子点式）是一种用元素符号表示原子核和内层电子、用小圆点表示价电子、用短线表示共价键的分子表示法。它由美国化学家 G. N. Lewis 于1916年提出，核心思想是：原子通过共享或转移价电子，使每个原子（氢除外）的价层达到8个电子的稳定结构，即"八隅体规则"（octet rule）。绘制路易斯结构分三步：（1）计算分子中所有原子的价电子总数；（2）确定中心原子和外围原子，用单键连接，每条单键代表一对共用电子；（3）将剩余电子分配为孤对电子，优先满足外围原子的八隅体，再检查中心原子是否需要形成双键或三键以达到八隅体。</p>
+<p><strong>范例演练</strong></p>
+<p>以二氧化碳（$\mathrm{CO_2}$）为例。碳有4个价电子，每个氧有6个价电子，总计 $4 + 6 \times 2 = 16$ 个价电子。碳作为中心原子，与两个氧原子各形成一个单键，消耗4个电子，剩余12个电子。若将这12个电子全部作为孤对分配给两个氧原子（每个氧6个电子，即3对孤对），此时氧原子满足八隅体，但碳只有4个电子，未满足八隅体。因此需要从每个氧原子转移一对孤对电子，与碳形成第二个共价键，即碳与每个氧之间形成双键（$\mathrm{O=C=O}$）。此时碳周围有4个共用电子对（8个电子），每个氧周围有2对孤对加1个双键（8个电子），所有原子均满足八隅体规则。</p>
+<p><strong>解题应用</strong></p>
+<p>路易斯结构的价值在于它能预测分子的键合方式和几何构型，是后续学习价层电子对互斥理论（VSEPR）和分子极性的基础。练习时常见的难点是处理"形式电荷"（formal charge），用以判断多种可能结构中哪一种最稳定：形式电荷 = 价电子数 − 非键电子数 − 共用电子数的一半。最稳定的结构通常是形式电荷总和最小、且负电荷分布在电负性较大原子上的结构。例如画硫酸根（$\mathrm{SO_4^{2-}}$）或臭氧（$\mathrm{O_3}$）时，学生需要比较不同双键位置对应的形式电荷分布，从而确定最合理的共振结构。掌握路易斯结构不仅是记忆规则，更是训练系统性思维：先满足电子总数守恒，再优化电荷分布，这一逻辑贯穿有机化学中官能团分析和无机化学中配位化合物结构判断等更高阶应用。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch7: Chemical Bonding and Molecular Geometry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

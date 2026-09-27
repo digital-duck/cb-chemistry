@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lattice Energy | Chemistry Ch07</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="晶格能">晶格能</h2>
+<p>晶格能（lattice energy，$\Delta H_{\text{lattice}}$）是指气态正离子和气态负离子结合形成 1 mol 离子晶体固体时释放的能量，其符号定义为负值（放能过程）；反过来，将 1 mol 离子晶体拆散为气态离子所需吸收的能量则为正值。晶格能的大小反映了离子晶体中正负离子之间静电吸引力的强弱，是衡量离子化合物稳定性的重要指标。晶格能越负（数值越大），晶体越稳定，熔点、硬度通常也越高。</p>
+<p>晶格能主要受两个因素影响：离子的电荷和离子间的距离（即离子半径之和）。根据库仑定律，两个点电荷之间的静电吸引能与电荷的乘积成正比，与距离成反比：</p>
+$$E \propto \dfrac{Q_1 Q_2}{r}$$
+<p>其中 $Q_1$、$Q_2$ 为正负离子的电荷，$r$ 为核间距。因此，离子电荷越高、离子半径越小，晶格能的绝对值越大。例如，NaCl 中 Na⁺ 和 Cl⁻ 均为 1 价离子，晶格能约为 $-787\ \text{kJ/mol}$；而 MgO 中 Mg²⁺ 和 O²⁻ 均为 2 价离子，且离子半径更小，晶格能高达约 $-3795\ \text{kJ/mol}$，远大于 NaCl，这与 MgO 具有极高熔点（约 2852 °C）的实验事实一致。</p>
+<p>晶格能不能直接测量，通常通过 Born–Haber 循环（一种基于盖斯定律的能量循环图）间接计算得到，将晶格能与升华热、电离能、解离能、电子亲和能以及生成热联系起来，利用总反应焓变已知的条件反推晶格能数值。</p>
+<p><strong>解题应用</strong>：比较一系列离子化合物晶格能大小时，可按以下步骤操作：（1）写出各化合物的离子电荷组合；（2）估算离子半径之和（可查阅周期表半径趋势）；（3）依据"电荷乘积越大、半径和越小，晶格能绝对值越大"的规律排序。例如比较 LiF、NaCl、CaO 三者，CaO 因离子电荷均为 2 价且半径较小，晶格能绝对值最大；LiF 次之（1 价离子但半径很小）；NaCl 最小。此类推理常用于解释晶体的熔点高低、溶解度趋势及硬度差异。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch7: Chemical Bonding and Molecular Geometry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

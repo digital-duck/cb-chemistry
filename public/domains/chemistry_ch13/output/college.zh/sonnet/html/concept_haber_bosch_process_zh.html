@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haber Bosch Process | Chemistry Ch13</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="haber-bosch-process">Haber Bosch Process</h2>
+<p><strong>定义</strong></p>
+<p>哈伯-博施法（Haber-Bosch process）是一种通过氮气与氢气直接化合合成氨的工业方法，其化学方程式为</p>
+$$N_2(g) + 3H_2(g) \rightleftharpoons 2NH_3(g) \qquad \Delta H = -92\ \text{kJ/mol}$$
+<p>这是一个可逆的放热反应。空气中约78%是氮气，但$N_2$分子中的三键键能极高（约946 kJ/mol），使其在常温下几乎不参与反应。哈伯-博施法通过高压（约150–300大气压）、中等高温（约400–500°C）以及铁基催化剂，把这种极其稳定的气体转化为可被植物吸收利用的氨，从而解决了人类历史上长期存在的"氮素瓶颈"问题——土壤中天然可利用的氮不足以支撑不断增长的人口所需的粮食产量。</p>
+<p><strong>条件选择背后的化学逻辑</strong></p>
+<p>这个反应的条件设计体现了勒沙特列原理（Le Chatelier's principle）与反应速率之间的权衡。由于正反应使气体分子数减少（4mol反应物变为2mol产物），根据勒沙特列原理，增大压强会使平衡向生成氨的方向移动，理论上压强越高，氨的产率越高。然而温度的作用恰恰相反：由于反应放热，升高温度会使平衡向逆反应（分解氨）方向移动，降低产率。但温度过低时，反应速率会变得极其缓慢，即使平衡产率高，实际达到平衡所需时间也长得不切实际。工业上因此选择400–500°C的"折中"温度，用铁催化剂加速反应达到平衡的速度，再配合高压来弥补温度升高造成的产率损失，同时不断将生成的氨从体系中移走以维持化学平衡持续正向移动。</p>
+<p><strong>问题解决应用</strong></p>
+<p>假设某合成氨反应器中，反应达到平衡后测得平衡时$N_2$浓度为0.50 mol/L，$H_2$浓度为1.5 mol/L，$NH_3$浓度为0.20 mol/L，可以利用平衡常数表达式</p>
+$$K_c = \dfrac{[NH_3]^2}{[N_2][H_2]^3}$$
+<p>计算该温度下的平衡常数，进而预测：若增大压强（即压缩体积使各浓度同比升高），生成物浓度比反应物浓度增长得更快，平衡应向生成$NH_3$方向移动，产率提高。这类计算训练学生把勒沙特列原理转化为定量分析工具，也是理解现代化肥工业如何在能耗与产率之间做工程权衡的基础——哈伯-博施法目前消耗全球约1%–2%的能源，却支撑着地球上近一半人口的粮食生产。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch13: Fundamental Equilibrium Concepts (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

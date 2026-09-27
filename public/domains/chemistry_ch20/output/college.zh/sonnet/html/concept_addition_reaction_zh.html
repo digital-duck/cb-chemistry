@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Addition Reaction | Chemistry Ch20</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="addition-reaction">Addition Reaction</h2>
+<p><strong>定义</strong></p>
+<p>加成反应是指两个或多个分子结合生成一个新分子，且没有原子被取代或消去的反应类型。这类反应最常发生在含有不饱和键（即碳碳双键 $\text{C=C}$ 或三键 $\text{C}\equiv\text{C}$）的有机分子上。由于 $\pi$ 键的电子密度较高、结合较弱，容易被外来试剂攻击并打开，使原本以双键或三键相连的两个碳原子各自多接上一个新的原子或基团。反应前后，分子中的原子总数增加，而不饱和键的数目减少——这也是判断“加成反应”而非“取代反应”的关键标准。</p>
+<p><strong>实例解析</strong></p>
+<p>最典型的例子是烯烯与氢气的加成（催化加氢）：</p>
+$$
+\text{CH}_2=\text{CH}_2 + \text{H}_2 \xrightarrow{\text{Ni 催化剂}} \text{CH}_3-\text{CH}_3
+$$
+<p>乙烯分子中的双键打开，两个氢原子分别加到两个碳原子上，生成饱和的乙烷。类似地，烯烯与卤素（如 $\text{Br}_2$）反应生成二卤代烷：</p>
+$$
+\text{CH}_2=\text{CH}_2 + \text{Br}_2 \rightarrow \text{CH}_2\text{Br}-\text{CH}_2\text{Br}
+$$
+<p>这一反应常被用作检验分子中是否存在碳碳双键的实验方法——溴的橙红色溶液会因加成反应而褪色，这是有机实验室中常见的“溴水褪色试验”。</p>
+<p><strong>解题应用</strong></p>
+<p>在解决加成反应相关问题时，核心思路是先辨认分子中的不饱和键位置，再判断加成试剂将如何在双键两端分别键合。当加成试剂本身不对称（例如卤化氢 $\text{HX}$）加到不对称烯烃上时，需要用马尔科夫尼科夫规则来预测主要产物：氢原子倾向于加到含氢较多的碳上，而卤素原子加到含氢较少（取代基较多）的碳上，因为这样生成的中间碳正离子更稳定。</p>
+<p>例如，丙烯与 $\text{HBr}$ 反应：</p>
+$$
+\text{CH}_3-\text{CH}=\text{CH}_2 + \text{HBr} \rightarrow \text{CH}_3-\text{CHBr}-\text{CH}_3 \;(\text{主要产物})
+$$
+<p>掌握加成反应不仅有助于理解有机合成中如何从简单的烯烃、烯类原料出发构建更复杂的分子，也是理解聚合反应（如聚乙烯的生成）机理的基础——聚合反应本质上就是大量加成反应的连续重复。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch20: Organic Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

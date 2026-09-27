@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reaction Mechanism | Chemistry Ch12</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="reaction-mechanism-反应机理">Reaction Mechanism（反应机理）</h2>
+<p><strong>定义</strong></p>
+<p>化学方程式(如 $2\text{H}_2\text{O}_2 \rightarrow 2\text{H}_2\text{O} + \text{O}_2$)只告诉我们反应物和产物,却没有说明分子层面上究竟发生了什么。反应机理(reaction mechanism)就是描述一个总反应如何通过一系列<strong>基元反应</strong>(elementary steps)逐步完成的详细过程,每一步都对应着真实的分子碰撞、键的断裂与生成。所有基元步骤相加,必须还原出总反应式;而反应过程中生成、又在后续步骤中消耗掉的物质,称为<strong>中间体</strong>(intermediate),它不会出现在总反应式中。</p>
+<p>机理研究的核心价值在于:反应速率由机理中最慢的一步——<strong>速率决定步骤</strong>(rate-determining step)——决定,而不是由总反应式的化学计量数决定。这也是为什么实验测得的速率方程往往与总反应式的系数不一致。</p>
+<p><strong>实例解析</strong></p>
+<p>以过氧化氢在碘离子催化下分解为例,实验提出如下两步机理:</p>
+<p>步骤1(慢,速率决定步骤):$\text{H}_2\text{O}_2 + \text{I}^- \rightarrow \text{H}_2\text{O} + \text{IO}^-$</p>
+<p>步骤2(快):$\text{H}_2\text{O}_2 + \text{IO}^- \rightarrow \text{H}_2\text{O} + \text{O}_2 + \text{I}^-$</p>
+<p>两步相加,$\text{IO}^-$(中间体)和多余的 $\text{I}^-$ 抵消,恰好还原为总反应 $2\text{H}_2\text{O}_2 \rightarrow 2\text{H}_2\text{O} + \text{O}_2$。由于步骤1是最慢的一步,总反应速率应当只依赖于步骤1中出现的物种,即速率方程为 $\text{rate} = k[\text{H}_2\text{O}_2][\text{I}^-]$——这与实验测得的结果吻合,而 $\text{I}^-$ 作为催化剂,虽然被消耗又被再生,不出现在总反应式中,却出现在速率方程里。</p>
+<p><strong>解题应用</strong></p>
+<p>判断一个提议的机理是否合理,需要检验三点:(1)各步基元反应相加后是否等于总反应式;(2)速率决定步骤所涉及的物种是否与实验测得的速率方程一致;(3)机理中出现的中间体不应出现在最终速率方程中——若某一步生成的中间体出现在速率决定步骤的产物一侧,通常需要借助前置快速平衡步骤,将中间体浓度用反应物浓度重新表达,才能得到与实验相符的速率方程。这种"倒推验证"是机理类习题的标准解法。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch12: Kinetics (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

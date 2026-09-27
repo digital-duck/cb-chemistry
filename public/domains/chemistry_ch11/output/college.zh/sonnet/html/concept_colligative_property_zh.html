@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colligative Property | Chemistry Ch11</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="依数性">依数性</h2>
+<p>依数性（colligative property）是指溶液的某些物理性质只取决于溶质粒子的<strong>数目</strong>（即粒子的物质的量浓度），而与溶质本身的化学性质、大小或种类无关。常见的四种依数性为：蒸气压下降、沸点升高、凝固点降低和渗透压。这些性质之所以关联在一起，是因为它们的根本原因相同——溶质粒子的加入降低了溶剂分子在液态中的"有效浓度"，从而干扰了溶剂正常的相变平衡。</p>
+<p>以沸点升高为例，其定量关系为：</p>
+$$\Delta T_b = i \cdot K_b \cdot m$$
+<p>其中 $\Delta T_b$ 是沸点升高的幅度，$K_b$ 是溶剂的沸点升高常数（单位 $°C \cdot kg/mol$，为溶剂固有性质），$m$ 是质量摩尔浓度（mol 溶质每 kg 溶剂），$i$ 是范特霍夫因子，表示每个溶质单元在溶液中实际解离出的粒子数（对于非电解质如蔗糖，$i=1$；对于强电解质如 NaCl，理论上 $i=2$）。凝固点降低公式形式相同，只是换用凝固点降低常数 $K_f$，且 $\Delta T_f$ 为温度<strong>降低</strong>量。</p>
+<p><strong>例题</strong>：将 5.85 g NaCl（摩尔质量 58.5 g/mol）溶于 1.00 kg 水中，求凝固点降低值。已知水的 $K_f = 1.86\ °C \cdot kg/mol$。</p>
+<p>先求质量摩尔浓度：$m = \dfrac{5.85\text{ g} / 58.5\text{ g/mol}}{1.00\text{ kg}} = 0.100\text{ mol/kg}$。</p>
+<p>NaCl 在水中完全解离为 $\text{Na}^+$ 和 $\text{Cl}^-$，故 $i = 2$。</p>
+<p>代入公式：$\Delta T_f = i \cdot K_f \cdot m = 2 \times 1.86 \times 0.100 = 0.372\ °C$。</p>
+<p>因此该溶液的凝固点为 $-0.372\ °C$，而不是纯水的 $0\ °C$。</p>
+<p><strong>应用于解决问题</strong>：依数性的实际价值在于它提供了一种反推溶质信息的手段。例如，若已知某未知非电解质溶于水后测得凝固点降低了 $0.512\ °C$，且已知 $K_f = 1.86$，即可反解出质量摩尔浓度 $m = 0.512/1.86 \approx 0.275\ mol/kg$；结合溶质质量与溶剂质量，便能计算出该未知物质的摩尔质量。这正是经典的"凝固点降低法测分子量"实验原理，也是依数性从抽象概念转化为实验室定量工具的关键一步。同理，渗透压测定常用于测定大分子（如蛋白质）的摩尔质量，因为其他依数性变化过小而难以精确测量。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch11: Solutions and Colloids (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

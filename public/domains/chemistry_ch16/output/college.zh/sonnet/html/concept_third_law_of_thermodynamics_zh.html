@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Third Law Of Thermodynamics | Chemistry Ch16</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="热力学第三定律">热力学第三定律</h2>
+<p><strong>定义</strong></p>
+<p>热力学第三定律指出：当温度趋近于绝对零度（$T \to 0\,\text{K}$）时，任何完美晶体（原子排列完全有序、无缺陷）的熵趋近于一个常数，通常取为零：</p>
+$$
+\lim_{T \to 0} S = 0
+$$
+<p>熵（$S$）衡量的是系统微观状态的混乱程度或可能排列方式的数目。在完美晶体中，所有原子都固定在唯一确定的晶格位置上，且处于最低能量状态，此时系统只有一种可能的微观排列方式，因此其"位形熵"为零。这一定律为熵提供了一个绝对的参考零点，使我们可以计算物质在任意温度下的<strong>绝对熵</strong>（$S^\circ$），而不仅仅是熵的变化量 $\Delta S$——这与内能或焓不同，后两者只能测量相对值。</p>
+<p><strong>应用实例</strong></p>
+<p>考虑冰在 $0\,\text{K}$ 时的状态。如果冰的晶体结构完全规则（每个水分子的取向都一致），其熵为零。但实际测量发现，许多物质（如一氧化碳 CO、冰本身）在绝对零度附近仍保留微小的"剩余熵"（residual entropy）。这是因为分子在结晶时可能存在两种几乎等价的取向（例如 CO 分子可以以 C-O 或 O-C 方向嵌入晶格），导致晶体并非完美有序。这说明第三定律描述的是理想情形，真实晶体的行为可作为检验其结构完美程度的实验依据。</p>
+<p><strong>解决问题的应用</strong></p>
+<p>第三定律的实际价值在于它使化学家和工程师能够计算任意物质在标准状态下的绝对熵值 $S^\circ_{298}$，这些数值被列于热力学数据表中。利用这些绝对熵，我们可以计算化学反应的熵变：</p>
+$$
+\Delta S^\circ_{rxn} = \sum n_p S^\circ_{products} - \sum n_r S^\circ_{reactants}
+$$
+<p>进而结合吉布斯自由能公式 $\Delta G = \Delta H - T\Delta S$，判断某一反应在给定温度下是否自发进行。例如，工程师在设计低温制冷系统或研究超导材料时，需要知道材料在接近绝对零度时的熵行为，以评估系统效率的理论极限——第三定律表明，无法通过有限次操作使任何系统的温度降至绝对零度，这也是低温物理和量子计算硬件设计中的一项基本约束。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch16: Thermodynamics (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

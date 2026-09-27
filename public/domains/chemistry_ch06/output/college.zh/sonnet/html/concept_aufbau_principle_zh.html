@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aufbau Principle | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="aufbau-principle">Aufbau Principle</h2>
+<p><strong>定义</strong></p>
+<p>构造原理（Aufbau Principle，源自德语"构建"）描述了电子如何依次填入原子的各个轨道，以确定基态原子的电子排布。核心规则是：电子优先占据能量最低的可用轨道，然后依次填入能量较高的轨道，直到所有电子都被安置。轨道的相对能量顺序并非简单按主量子数 $n$ 递增，而是遵循 $(n+l)$ 规则——轨道能量近似随 $n+l$ 之和增大而升高；当 $n+l$ 相同时，$n$ 较小的轨道能量更低。这就是为什么 $4s$（$n+l=4$）会先于 $3d$（$n+l=5$）被填充，尽管 $3d$ 的主量子数更小。构造原理必须与另外两条规则配合使用：<strong>泡利不相容原理</strong>（每个轨道最多容纳 2 个自旋相反的电子）和<strong>洪特规则</strong>（简并轨道中，电子先单独占据不同轨道且自旋平行，再成对填充）。</p>
+<p><strong>实例解析</strong></p>
+<p>以铁（Fe，原子序数 26）为例。按填充顺序 $1s,2s,2p,3s,3p,4s,3d,4p,\dots$ 依次分配 26 个电子：</p>
+$$1s^2\,2s^2\,2p^6\,3s^2\,3p^6\,4s^2\,3d^6$$
+<p>验证：$2+2+6+2+6+2+6=26$，电子数守恒。注意 $3d$ 轨道虽然主量子数小于 $4s$，但因 $(n+l)$ 值更大（$3+2=5$ 对比 $4+0=4$），故在 $4s$ 之后填充。这也解释了铁的核心化学性质：其价电子构型 $4s^2 3d^6$ 使得铁能通过失去 $4s$ 电子（有时也失去部分 $3d$ 电子）形成 $\text{Fe}^{2+}$ 和 $\text{Fe}^{3+}$ 两种常见氧化态。</p>
+<p><strong>解题应用</strong></p>
+<p>构造原理是预测元素化学行为、书写电子排布式、判断磁性（顺磁性/抗磁性）的基础工具。解题时应按以下步骤操作：(1) 确定原子的总电子数；(2) 按能量递增顺序（可借助对角线法则记忆填充次序）分配电子，同一亚层内先按洪特规则单占再配对；(3) 检查特殊情况——某些过渡金属（如 Cr、Cu）为达到半满或全满的 $d$ 亚层稳定构型，会打破严格顺序，从 $4s$ "借调"一个电子到 $3d$（如铬为 $4s^1 3d^5$ 而非 $4s^2 3d^4$）。掌握这一原理，学生便能系统地推导任意元素的电子排布，并据此解释周期表中原子半径、电离能和化学反应活性的变化趋势。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

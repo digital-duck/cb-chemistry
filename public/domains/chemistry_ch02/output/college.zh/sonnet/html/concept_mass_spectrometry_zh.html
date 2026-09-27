@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mass Spectrometry | Chemistry Ch02</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="质谱法">质谱法</h2>
+<p><strong>定义</strong></p>
+<p>质谱法（mass spectrometry, MS）是一种通过测量分子及其碎片的质荷比（$m/z$）来确定化合物分子量、分子式乃至结构的分析技术。其基本流程分三步：首先将样品分子在电离室中电离，通常采用电子轰击（electron ionization, EI），高能电子撞击中性分子使其失去一个电子，形成带正电的分子离子（molecular ion, $M^+$）；该分子离子往往不稳定，会进一步断裂成一系列带正电的碎片离子。第二步，这些离子在电场和磁场作用下按质荷比大小被分离——质荷比越小，在磁场中偏转越大。第三步，检测器记录各离子的丰度，最终得到质谱图：横轴为 $m/z$，纵轴为相对强度（%）。图中强度最高的峰称为基峰（base peak），而分子离子峰（若能观测到）的 $m/z$ 值即等于化合物的分子量。</p>
+<p><strong>实例分析</strong></p>
+<p>以正丁醇（$\text{C}_4\text{H}_{10}\text{O}$，分子量 74）为例。其质谱图中可见 $m/z = 74$ 的分子离子峰（强度较弱，因醇类分子离子不稳定）。分子离子失去 $\cdot\text{OH}$（质量17）后生成 $m/z = 57$ 的碳正离子峰；若发生 $\alpha$-裂解，丢失 $\cdot\text{C}_3\text{H}_7$（质量43）则生成 $m/z = 31$ 的 $\text{CH}_2=\overset{+}{\text{O}}\text{H}$ 峰，这是伯醇的特征碎片。通过比对碎片质量差（例如 $74-57=17$，对应 $\cdot\text{OH}$ 的丢失），可以反推分子中官能团的位置。</p>
+<p><strong>问题解决应用</strong></p>
+<p>在实际未知物鉴定中，解题思路通常遵循以下步骤：（1）从最高质荷比峰估算分子量，并结合氮规则判断分子中氮原子数目的奇偶性；（2）计算分子离子与相邻主要碎片峰之间的质量差，对照常见丢失基团表（如丢失15为 $\cdot\text{CH}_3$，丢失18为 $\text{H}_2\text{O}$，丢失28为 $\text{CO}$ 或 $\text{C}_2\text{H}_4$，丢失43为 $\cdot\text{C}_3\text{H}_7$ 或乙酰基）；（3）综合多个碎片峰的丢失模式，拼出可能的结构骨架。例如，若测得分子量为100且连续丢失15、29对应甲基和 $\cdot\text{CHO}$，则提示存在支链醛结构。此外，质谱常与气相色谱联用（GC-MS），先分离混合物中的各组分，再逐一测定质谱，广泛应用于法医毒物检测、环境污染物分析及药物代谢产物鉴定等实际问题中。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch2: Atoms, Molecules, and Ions (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

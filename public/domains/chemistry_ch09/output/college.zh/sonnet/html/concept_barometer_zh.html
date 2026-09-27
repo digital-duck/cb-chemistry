@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barometer | Chemistry Ch09</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="气压计">气压计</h2>
+<p>气压计（barometer）是用来测量大气压强的仪器。大气压强是空气分子撞击物体表面所产生的力，其大小等于单位面积上方空气柱的重量。标准大气压（1 atm）约等于 $101{,}325\ \text{Pa}$，也常表示为 $760\ \text{mmHg}$（毫米汞柱）。海拔越高，上方空气柱越短、越稀薄，大气压就越低；这也是气压计能够用来估算海拔高度、预测天气变化的物理基础。</p>
+<p>最经典的设计是<strong>水银气压计</strong>：将一根一端封闭的玻璃管完全充满水银，倒插入盛有水银的容器中。管内水银会下降，直到管内水银柱的重量与管外大气压力达到平衡，此时管内水银柱上方形成真空。水银柱的高度就直接反映了大气压的大小。托里拆利在 1643 年首次用这种方法测出了大气压强的数值，因此这种真空区域也被称为"托里拆利真空"。</p>
+<p><strong>受力平衡分析</strong>：设水银柱高度为 $h$，水银密度为 $\rho$，重力加速度为 $g$，则管内水银柱底部产生的压强为 $P = \rho g h$。在平衡状态下，这个压强必须等于外界大气压 $P_{\text{atm}}$，即：</p>
+$$P_{\text{atm}} = \rho g h$$
+<p>标准大气压下，水银密度约为 $13{,}600\ \text{kg/m}^3$，代入可得 $h \approx 0.76\ \text{m}$，即 760 mm，与实测值吻合。</p>
+<p><strong>问题解决应用</strong>：假设在某高原地区测得水银柱高度为 $680\ \text{mm}$，求该处大气压强（以 Pa 为单位），并判断此处大气压相当于标准大气压的百分之多少。</p>
+<p>解：将 $h = 0.680\ \text{m}$、$\rho = 13{,}600\ \text{kg/m}^3$、$g = 9.8\ \text{m/s}^2$ 代入公式：</p>
+$$P = \rho g h = 13{,}600 \times 9.8 \times 0.680 \approx 90{,}630\ \text{Pa}$$
+<p>与标准大气压相比：$90{,}630 / 101{,}325 \approx 89.4\%$。这说明该地区大气压约为海平面的 89%，符合高原地区气压偏低的实际情况——这正是登山者在高海拔地区呼吸困难、需要携带氧气瓶的物理原因。</p>
+<p>现代实践中，水银气压计因水银有毒已逐渐被<strong>无液气压计</strong>（利用弹性金属盒随气压变化而形变）取代，广泛用于天气预报仪器和智能手机的气压传感器中。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch9: Gases (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

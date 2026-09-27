@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bonding Molecular Orbital | Chemistry Ch08</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="bonding-molecular-orbital">Bonding Molecular Orbital</h2>
+<p><strong>定义</strong></p>
+<p>当两个原子相互靠近并成键时，它们各自的原子轨道会发生叠加，重新组合成新的分子轨道。根据波函数叠加的方式不同,会形成两类分子轨道:成键分子轨道（bonding molecular orbital）和反键分子轨道（antibonding molecular orbital）。成键分子轨道是由两个原子轨道<strong>同相位叠加</strong>形成的,其结果是电子云在两个原子核之间的区域出现增强,电子密度升高。这种在核间区域富集的负电荷像"胶水"一样,同时吸引两个带正电的原子核,从而降低了体系的整体能量,使分子比两个孤立原子更稳定。成键轨道的能量低于组成它的原子轨道能量,电子优先填入成键轨道,这正是共价键能够形成并维持分子稳定性的根本原因。</p>
+<p><strong>举例说明</strong></p>
+<p>以最简单的氢分子 $H_2$ 为例:两个氢原子各带一个处于 $1s$ 轨道的电子。当两个 $1s$ 轨道以相同符号（同相位）叠加时,两核之间的区域电子概率密度显著增大,形成成键分子轨道,记作 $\sigma_{1s}$。两个电子（自旋相反）填入这一低能轨道,使体系总能量低于两个分离氢原子的能量之和,于是形成稳定的 $H_2$ 分子。相反,若两个 $1s$ 轨道以相反符号叠加,则在核间产生一个电子密度为零的节点面,形成能量更高的反键轨道 $\sigma_{1s}^{*}$,该轨道若被电子占据,反而会削弱甚至破坏化学键。</p>
+<p><strong>解决问题的应用</strong></p>
+<p>分子轨道理论最实用之处,在于它能帮助我们预测分子能否稳定存在、键的强弱如何比较。判断方法是计算"键级"(bond order):</p>
+$$
+\text{键级} = \frac{(\text{成键轨道电子数}) - (\text{反键轨道电子数})}{2}
+$$
+<p>键级越大,键越短、越强;键级为零则该分子在正常条件下无法稳定存在。例如,对于假想的 $He_2$ 分子,每个 $He$ 原子贡献两个 $1s$ 电子,共 4 个电子。按能量由低到高填充,$\sigma_{1s}$ 轨道填 2 个电子,$\sigma_{1s}^{*}$ 轨道也填 2 个电子,键级为 $(2-2)/2=0$,这解释了为什么氦气以单原子形式存在,而不形成双原子分子。这一方法同样可用于分析 $O_2$、$N_2$ 等分子的键级、磁性(未成对电子导致顺磁性)以及键能大小的相对比较,是无机与物理化学中判断分子稳定性的核心工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch8: Advanced Theories of Covalent Bonding (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

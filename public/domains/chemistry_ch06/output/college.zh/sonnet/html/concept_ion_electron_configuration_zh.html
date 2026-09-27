@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ion Electron Configuration | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="离子电子排布">离子电子排布</h2>
+<p>原子失去或得到电子形成离子后，其电子排布会发生变化，理解这一变化的规则是预测离子性质、化合价和化学反应活性的基础。对于主族元素，规则很简单：<strong>金属原子失去电子时，总是先从最外层（能层数 $n$ 最大的能级）移走</strong>；<strong>非金属原子得到电子时，则按照构造原理继续填充到能量最低的空轨道</strong>，使离子达到与最近的稀有气体相同的稳定电子构型（八隅体规则）。</p>
+<p>以钠原子为例，其基态电子排布为 $1s^2\,2s^2\,2p^6\,3s^1$。钠失去一个电子形成 $\text{Na}^+$ 时，排布变为 $1s^2\,2s^2\,2p^6$，恰好与氖（Ne）相同，外层电子全满，故 $\text{Na}^+$ 十分稳定。氯原子的基态排布为 $1s^2\,2s^2\,2p^6\,3s^2\,3p^5$，得到一个电子后形成 $\text{Cl}^-$，排布变为 $1s^2\,2s^2\,2p^6\,3s^2\,3p^6$，与氩（Ar）相同。</p>
+<p>过渡金属离子的规则需要特别注意：尽管填充顺序遵循 $4s$ 先于 $3d$（即 $\ldots 3d^n\,4s^2$ 的写法习惯上写作 $4s$ 在前），但<strong>失去电子时却先移除 $4s$ 电子，再移除 $3d$ 电子</strong>。例如铁的基态排布为 $[\text{Ar}]\,3d^6\,4s^2$，形成 $\text{Fe}^{2+}$ 时先失去两个 $4s$ 电子，得到 $[\text{Ar}]\,3d^6$，而不是移除 $3d$ 电子。若进一步氧化为 $\text{Fe}^{3+}$，则再失去一个 $3d$ 电子，得到 $[\text{Ar}]\,3d^5$——半满的 $3d$ 亚层具有额外的稳定性，这也是铁在自然界中常以 $+2$ 和 $+3$ 两种价态共存的原因之一。</p>
+<p>解决实际问题时，可按以下步骤操作：（1）写出中性原子的基态排布；（2）根据离子电荷判断得失电子数；（3）金属阳离子从最高能层依次移除电子（过渡金属先移 $4s$ 后移 $3d$），非金属阴离子则按构造原理继续填充。例如判断 $\text{Cu}^+$ 的排布：铜的基态为 $[\text{Ar}]\,3d^{10}\,4s^1$，失去唯一的 $4s$ 电子后得到稳定的 $[\text{Ar}]\,3d^{10}$，这也解释了为什么 $\text{Cu}^+$ 比 $\text{Cu}^{2+}$ 在某些环境下更容易生成。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

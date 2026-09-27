@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photoelectric Effect | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="photoelectric-effect">Photoelectric Effect</h2>
+<p><strong>定义</strong></p>
+<p>光电效应是指当光照射到金属表面时，金属会发射出电子（称为光电子）的现象。这一现象在1887年由赫兹首次观察到，但其背后的物理机制直到1905年才由爱因斯坦给出正确解释——这也是他获得1921年诺贝尔物理学奖的主要工作。经典波动理论预言：光的强度越大，电子获得的能量就应该越高；只要光照射时间足够长，即使是很弱的光也应该能使电子逸出。然而实验观察到的结果与此完全不同：电子的最大动能只取决于光的<strong>频率</strong>，与光强无关；而且存在一个<strong>截止频率</strong> $\nu_0$，低于这个频率无论光多强都无法打出电子；光强只影响逸出电子的<strong>数量</strong>（即电流大小），而不影响它们的能量。</p>
+<p>爱因斯坦提出，光本身以离散的能量packet——光子（photon）——的形式存在，每个光子的能量为</p>
+$$E = h\nu$$
+<p>其中 $h = 6.626 \times 10^{-34}\ \text{J·s}$ 是普朗克常数，$\nu$ 是光的频率。当一个光子被金属中的电子吸收时，它的全部能量一次性转移给该电子。若这份能量超过金属的<strong>逸出功</strong> $\phi$（电子挣脱金属表面束缚所需的最小能量），电子就会被发射出来，剩余能量转化为电子的动能：</p>
+$$E_k = h\nu - \phi$$
+<p><strong>例题</strong></p>
+<p>某金属的逸出功为 $\phi = 2.3\ \text{eV}$。用频率 $\nu = 7.5\times10^{14}\ \text{Hz}$ 的紫光照射该金属表面，求光电子的最大动能。</p>
+<p>先计算光子能量：$E = h\nu = (6.626\times10^{-34})(7.5\times10^{14}) = 4.97\times10^{-19}\ \text{J} \approx 3.10\ \text{eV}$。</p>
+<p>代入公式：$E_k = 3.10\ \text{eV} - 2.3\ \text{eV} = 0.80\ \text{eV}$。</p>
+<p><strong>应用与拓展</strong></p>
+<p>光电效应不仅验证了光的粒子性，也是许多现代技术的基础：太阳能电池板、数码相机的CCD/CMOS传感器、夜视仪的光电倍增管都依赖类似原理将光信号转化为电信号。求解此类问题的关键步骤是：先判断入射光子能量是否超过逸出功（即 $\nu$ 是否大于截止频率 $\nu_0 = \phi/h$），再用能量守恒式求出剩余动能，切勿将光强误当作决定电子能量的因素。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

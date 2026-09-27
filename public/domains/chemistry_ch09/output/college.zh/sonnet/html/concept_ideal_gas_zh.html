@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ideal Gas | Chemistry Ch09</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="ideal-gas">Ideal Gas</h2>
+<p><strong>定义</strong></p>
+<p>理想气体是一种简化的物理模型：假设气体分子本身不占体积，分子之间除碰撞瞬间外没有相互作用力。这一模型在压强不太高、温度不太低的条件下能很好地近似真实气体的行为。理想气体的状态由四个变量描述——压强 $P$、体积 $V$、物质的量 $n$、温度 $T$——它们之间满足理想气体状态方程：</p>
+$$PV = nRT$$
+<p>其中 $R = 8.314\ \text{J/(mol·K)}$ 是理想气体常数（若压强用 atm、体积用 L，则 $R = 0.0821\ \text{L·atm/(mol·K)}$）。这个方程把玻意耳定律（$P \propto 1/V$，恒温）、查理定律（$V \propto T$，恒压）和阿伏伽德罗定律（$V \propto n$，恒温恒压）统一在一个公式里。</p>
+<p><strong>范例解析</strong></p>
+<p>一个 5.00 L 的钢瓶中装有 2.00 mol 氮气，温度为 300 K，求瓶内压强。</p>
+<p>代入方程求解：</p>
+$$P = \frac{nRT}{V} = \frac{(2.00\ \text{mol})(0.0821\ \text{L·atm/(mol·K)})(300\ \text{K})}{5.00\ \text{L}} \approx 9.85\ \text{atm}$$
+<p>这个结果告诉我们：即使体积不变，只要知道分子数和温度，就能算出气体对容器壁施加的压强——这正是轮胎打气、高压罐储气等实际问题的计算基础。</p>
+<p><strong>解题应用</strong></p>
+<p>理想气体方程最常见的应用是处理气体状态变化问题。当气体的量 $n$ 不变时，可以将方程改写为比例形式：</p>
+$$\frac{P_1 V_1}{T_1} = \frac{P_2 V_2}{T_2}$$
+<p>例如，一个气球在地面（$P_1 = 1.00\ \text{atm}$，$T_1 = 293\ \text{K}$，$V_1 = 2.50\ \text{L}$）被释放升空，在高空处气压降至 $0.400\ \text{atm}$，温度降至 $250\ \text{K}$，求此时气球体积：</p>
+$$V_2 = V_1 \times \frac{P_1}{P_2} \times \frac{T_2}{T_1} = 2.50 \times \frac{1.00}{0.400} \times \frac{250}{293} \approx 5.33\ \text{L}$$
+<p>这类计算在化学计量学（如气体反应产物体积估算）、气象学（大气压随高度变化）和工程设计（气罐安全容量）中都极为常见。需要注意的是，理想气体模型在高压或低温（接近气体液化点）时会明显偏离实际，此时需引入范德华方程等修正模型来提高精度。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch9: Gases (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parent Daughter Nuclide | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="parent-daughter-nuclide">Parent Daughter Nuclide</h2>
+<p><strong>定义</strong></p>
+<p>在放射性衰变中，发生衰变的原始原子核称为<strong>母核</strong>（parent nuclide），衰变后生成的新原子核称为<strong>子核</strong>（daughter nuclide）。母核通过释放粒子（如 $\alpha$ 粒子、$\beta$ 粒子）或能量（如 $\gamma$ 射线）转变为子核，这一过程会改变原子核的质子数（原子序数 $Z$）和/或质量数 $A$，因此母核与子核往往是不同的化学元素。衰变过程可用通式表示：</p>
+$$
+{}_{Z}^{A}\text{X} \;\rightarrow\; {}_{Z'}^{A'}\text{Y} + \text{粒子/能量}
+$$
+<p>其中 X 为母核，Y 为子核。不同衰变类型对 $Z$ 和 $A$ 的改变规律不同：$\alpha$ 衰变使 $A$ 减少 4、$Z$ 减少 2；$\beta^-$ 衰变使 $Z$ 增加 1、$A$ 不变；$\beta^+$ 衰变（或电子俘获）使 $Z$ 减少 1、$A$ 不变。</p>
+<p><strong>举例说明</strong></p>
+<p>铀-238 是天然放射性衰变链的起点母核，经过 $\alpha$ 衰变生成钍-234：</p>
+$$
+{}_{92}^{238}\text{U} \;\rightarrow\; {}_{90}^{234}\text{Th} + {}_{2}^{4}\text{He}
+$$
+<p>这里 U-238 是母核，Th-234 是子核。值得注意的是，子核本身通常也不稳定，会继续衰变，形成一条完整的衰变链，最终生成稳定的铅-206。因此"母核"和"子核"是相对概念：Th-234 相对于 U-238 是子核，但相对于它自身的衰变产物镤-234，它又是母核。</p>
+<p><strong>问题解决应用</strong></p>
+<p>理解母子核关系是放射性年代测定的基础。例如，测定岩石年龄时，科学家测量样品中母核（如 U-238）与子核（如 Pb-206）的比例。若已知衰变常数与半衰期，并假设子核最初不存在、系统封闭无外来物质混入，就可以通过母核剩余量与子核累积量的比值反推出岩石形成以来经过的时间。这种方法广泛应用于地质学中测定地球和陨石的年龄。在实际应用题中，学生需要先根据衰变方程写出正确的母核—子核对应关系，确认质量数与原子序数守恒，再结合半衰期公式求解具体的时间或剩余量问题。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

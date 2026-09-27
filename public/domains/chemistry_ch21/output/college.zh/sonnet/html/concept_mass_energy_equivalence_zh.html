@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mass Energy Equivalence | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="mass-energy-equivalence">Mass Energy Equivalence</h2>
+<p><strong>定义</strong></p>
+<p>质能等价是爱因斯坦狭义相对论最深刻的结论之一：质量和能量并非两种独立的物理量,而是同一实体的不同表现形式,二者可以通过著名的关系式相互转换：</p>
+$$E = mc^2$$
+<p>其中 $E$ 是静止能量(焦耳),$m$ 是静止质量(千克),$c$ 是真空中的光速($c \approx 3.00 \times 10^8 \text{ m/s}$)。这个方程告诉我们:任何具有质量的物体,即使静止不动,也蕴含着巨大的能量储备,因为 $c^2$ 是一个极其庞大的数值($9 \times 10^{16} \text{ m}^2/\text{s}^2$)。在核反应中,当原子核发生裂变或聚变时,产物的总静止质量会略小于反应物的总静止质量——这部分"消失"的质量并没有真正消失,而是转化成了释放出的能量,即<strong>质量亏损</strong>(mass defect)。</p>
+<p><strong>范例分析</strong></p>
+<p>以太阳内部的核聚变为例:四个氢原子核(质子)聚合成一个氦-4原子核。反应物的质量为 $4 \times 1.6726 \times 10^{-27} \text{ kg} = 6.6904 \times 10^{-27} \text{ kg}$,而生成的氦核质量仅为 $6.6447 \times 10^{-27} \text{ kg}$。质量亏损为 $\Delta m = 4.57 \times 10^{-29} \text{ kg}$。代入公式:</p>
+$$E = \Delta m \cdot c^2 = (4.57 \times 10^{-29})(9 \times 10^{16}) \approx 4.1 \times 10^{-12} \text{ J}$$
+<p>单个反应释放的能量看似微小,但太阳每秒进行约 $10^{38}$ 次这样的聚变反应,总能量输出高达 $3.8 \times 10^{26}$ 瓦——这正是太阳持续几十亿年发光发热的根本原因。</p>
+<p><strong>解题应用</strong></p>
+<p>在核医学与核能工程中,质能等价被用来计算反应堆或放射性衰变释放的能量。例如,计算核电站中铀-235裂变释放的能量时,工程师首先测量裂变前后所有产物的精确质量,求出质量亏损 $\Delta m$,再用 $E=\Delta mc^2$ 求出单次裂变释放的能量,进而结合每秒裂变次数估算反应堆的总功率输出。这类计算的关键步骤是:(1)确保所有质量单位一致(通常用原子质量单位换算为千克);(2)因 $c^2$ 数值巨大,微小的质量差就会对应可观的能量,故计算时须保留足够的有效数字,避免因舍入误差导致能量估算严重失真。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

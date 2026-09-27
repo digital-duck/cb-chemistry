@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wavelength | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="wavelength">Wavelength</h2>
+<p><strong>定义</strong></p>
+<p>波长是波在一个完整周期内传播的空间距离,通常用希腊字母 $\lambda$（拉姆达）表示,单位为米（m）或其倍数（如纳米 nm、微米 $\mu$m）。对于电磁波（包括可见光、紫外线、红外线、X射线等）以及机械波（如声波、水波),波长描述的是相邻两个波峰之间,或相邻两个波谷之间的距离。波长与波的频率 $\nu$（每秒振动次数,单位为赫兹 Hz）和传播速度 $v$ 之间满足关系式：</p>
+$$v = \lambda \nu$$
+<p>这个关系式的物理意义是:波速等于波长乘以频率。对于电磁波在真空中传播,速度固定为光速 $c \approx 3.0 \times 10^8$ m/s,因此波长和频率成反比——波长越长,频率越低;波长越短,频率越高。</p>
+<p><strong>应用实例</strong></p>
+<p>在光谱学中,不同波长的可见光对应不同颜色:红光波长约为 700 nm,紫光波长约为 400 nm。植物进行光合作用时,叶绿素主要吸收波长在 430–450 nm（蓝紫光）和 640–680 nm（红光）范围内的光,而反射绿光（约 500–550 nm),这就是植物呈现绿色的原因。</p>
+<p><strong>解题应用</strong></p>
+<p>已知某红外辐射的频率为 $3.0 \times 10^{13}$ Hz,求其波长。</p>
+<p>利用公式 $\lambda = v / \nu$,代入真空光速 $c = 3.0 \times 10^8$ m/s：</p>
+$$\lambda = \frac{3.0 \times 10^8 \text{ m/s}}{3.0 \times 10^{13} \text{ Hz}} = 1.0 \times 10^{-5} \text{ m} = 10\ \mu\text{m}$$
+<p>这一波长落在红外线范围内,与题目条件一致。</p>
+<p>在实际科研与医学中,波长的选择至关重要:X射线波长极短（约 0.01–10 nm),能穿透软组织用于医学成像;而微波炉利用波长约 12 cm 的微波,使水分子发生偶极振荡产生热量加热食物。理解波长与频率、能量之间的关系,是分析光谱数据、设计成像技术乃至研究分子间相互作用的基础工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

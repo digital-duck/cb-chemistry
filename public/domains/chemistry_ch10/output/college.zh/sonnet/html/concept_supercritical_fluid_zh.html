@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Supercritical Fluid | Chemistry Ch10</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="supercritical-fluid">Supercritical Fluid</h2>
+<p><strong>定义</strong></p>
+<p>物质通常以固、液、气三种状态存在，但当温度和压力都超过某一特定值——即"临界点"（critical point，临界温度 $T_c$、临界压力 $P_c$）——时，液相和气相之间的界限消失，物质进入第四种状态：超临界流体（supercritical fluid, SCF）。此时的物质兼具气体的低黏度、高扩散性与液体的高密度、强溶解能力,是一种"既非气也非液"的均匀相。以二氧化碳为例，其临界点为 $T_c = 31.1\,^\circ\text{C}$，$P_c = 7.38\,\text{MPa}$；一旦超过这两个条件，$\text{CO}_2$ 便成为超临界 $\text{CO}_2$（scCO₂），密度可接近液体（约 $0.4$–$0.9\,\text{g/mL}$），但流动性和渗透能力仍类似气体。</p>
+<p><strong>应用实例：超临界 CO₂ 咖啡脱因</strong></p>
+<p>传统脱因工艺使用有机溶剂（如二氯甲烷），存在残留和环保问题。工业上改用 scCO₂：将咖啡豆置于高压容器中，通入 CO₂ 并加压至约 $73$–$300\,\text{atm}$、温度控制在 $31$–$80\,^\circ\text{C}$ 之间，使其转变为超临界态。scCO₂ 的非极性特性使其能高效溶解并萃取咖啡因（一种中等极性的生物碱），而对赋予风味的芳香化合物影响较小。萃取完成后，只需降压——CO₂ 立即变回气态并挥发逸出，不留任何溶剂残留，咖啡因则可在分离塔中被水或活性炭捕集回收。这正是超临界流体作为"绿色溶剂"的核心优势：可调控性强（改变压力和温度即可调节其溶解性质），且去除容易（减压即可分离，无需蒸馏或萃后清洗）。</p>
+<p><strong>解决问题：为什么必须精确控制压力与温度？</strong></p>
+<p>若压力或温度低于临界点，CO₂ 会重新出现明显的气液分界，溶解效率骤降，导致咖啡因去除不完全或萃取时间大幅延长；若温度过高，则可能同时萃取出更多风味物质，破坏咖啡本身的香气成分。因此实际工艺中，工程师需要参照 CO₂ 的相图，将操作点严格维持在临界曲线之上的"操作窗口"内——这体现了超临界流体应用的关键原则：溶解能力和选择性并非固定不变，而是压力—温度条件的函数，可通过精细调节实现"按需萃取"。这一原理同样应用于超临界水处理有机废物、超临界流体色谱分析及药物纳米颗粒的制备等领域。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch10: Liquids and Solids (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gravimetric Analysis | Chemistry Ch04</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="gravimetric-analysis">Gravimetric Analysis</h2>
+<p><strong>定义</strong></p>
+<p>重量分析法（Gravimetric Analysis）是一种通过精确测量物质质量来确定样品中某成分含量的定量分析方法。其核心思路是：将待测组分转化为一种组成固定、性质稳定、便于分离和称量的沉淀物或气体产物，再通过质量测量反推出原始样品中该组分的含量。这类方法不依赖仪器读数（如吸光度或电位），而是直接依据物质的化学计量关系，因此常被视为"绝对分析法"，准确度和精密度都很高，常用于校正其他分析方法。</p>
+<p>重量分析通常包含四个关键步骤：溶解样品、生成沉淀（通常通过加入过量沉淀剂）、过滤并洗涤沉淀以去除杂质、灼烧或干燥后称量恒重的产物。为保证结果准确，沉淀必须满足两个条件：溶解度极小（避免损失）和纯度高（避免共沉淀带入杂质）。</p>
+<p><strong>实例解析</strong></p>
+<p>一个经典应用是测定水样中硫酸根离子（$\text{SO}_4^{2-}$）的含量。向样品中加入过量氯化钡溶液，发生反应：</p>
+$$\text{Ba}^{2+}(aq) + \text{SO}_4^{2-}(aq) \rightarrow \text{BaSO}_4(s)\downarrow$$
+<p>生成的硫酸钡沉淀溶解度极低，经过滤、洗涤、灼烧至恒重后称量。假设最终得到 $0.2330\ \text{g}$ 纯净的 $\text{BaSO}_4$（摩尔质量 $233.4\ \text{g/mol}$），可计算：</p>
+$$n(\text{BaSO}_4) = \frac{0.2330\ \text{g}}{233.4\ \text{g/mol}} = 9.983\times10^{-4}\ \text{mol}$$
+<p>由于反应中 $\text{Ba}^{2+}$ 与 $\text{SO}_4^{2-}$ 按 1:1 反应，故原样品中 $\text{SO}_4^{2-}$ 的物质的量也为 $9.983\times10^{-4}\ \text{mol}$，再乘以其摩尔质量（$96.06\ \text{g/mol}$）即可得到样品中硫酸根的质量。</p>
+<p><strong>问题解决应用</strong></p>
+<p>在实际实验设计中，学生需要考虑：沉淀剂应过量多少才能保证反应完全，又不至于引入过多杂质；灼烧温度是否足以去除结晶水或分解共沉淀的碳酸盐；以及如何通过多次称量确认"恒重"（即连续两次称量差值小于 $0.3\ \text{mg}$）。这些实际操作细节直接影响最终计算结果的准确性，是重量分析法教学中训练定量思维和实验规范的核心环节。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch4: Stoichiometry of Chemical Reactions (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

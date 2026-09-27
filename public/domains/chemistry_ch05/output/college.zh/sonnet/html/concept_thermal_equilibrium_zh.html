@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thermal Equilibrium | Chemistry Ch05</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="thermal-equilibrium">Thermal Equilibrium</h2>
+<p><strong>定义</strong></p>
+<p>当两个物体相互接触且不再有净热量流动时,它们就处于<strong>热平衡</strong>(thermal equilibrium)状态。热量总是自发地从温度较高的物体流向温度较低的物体,直到两者温度相等为止。这一现象背后的原理是<strong>热力学第零定律</strong>:如果物体A与物体C处于热平衡,且物体B也与物体C处于热平衡,那么A与B必然彼此处于热平衡。正是这条定律使"温度"成为一个可以被明确定义、可以用温度计测量的物理量——温度计本身就是通过与被测物体达到热平衡后读数不再变化来完成测量的。</p>
+<p>需要注意的是,热平衡并不意味着两个物体内部所有分子的运动状态完全相同,而是指宏观上可测量的温度相等,系统的净能量交换为零。</p>
+<p><strong>实例分析</strong></p>
+<p>想象将一杯 $90^\circ\text{C}$ 的热咖啡放入 $20^\circ\text{C}$ 的房间中。刚开始温差很大,热量迅速从咖啡传递到周围空气;随着时间推移,咖啡温度逐渐下降,空气温度(由于房间体积远大于咖啡)几乎不变。当咖啡温度降到与室温非常接近时,净热量流动趋近于零,系统达到热平衡——此时咖啡与房间温度相同,约为 $20^\circ\text{C}$。</p>
+<p><strong>问题解决应用</strong></p>
+<p>热平衡概念在实际计算中常与<strong>热量守恒</strong>结合使用:两个物体在没有热量流失到外界的情况下混合,失去的热量等于获得的热量,即</p>
+$$
+m_1 c_1 (T_1 - T_f) = m_2 c_2 (T_f - T_2)
+$$
+<p>其中 $m$ 为质量,$c$ 为比热容,$T_f$ 为最终的平衡温度。</p>
+<p><strong>例题</strong>:将质量为 $200\,\text{g}$、温度为 $80^\circ\text{C}$ 的金属块放入质量为 $300\,\text{g}$、温度为 $20^\circ\text{C}$ 的水中(水的比热容 $c_{水} = 4.18\,\text{J/(g·°C)}$,金属比热容 $c_{金属} = 0.90\,\text{J/(g·°C)}$),求达到热平衡时的最终温度 $T_f$。</p>
+<p>代入公式:</p>
+$$
+200 \times 0.90 \times (80 - T_f) = 300 \times 4.18 \times (T_f - 20)
+$$
+<p>解得 $T_f \approx 22.3^\circ\text{C}$。这说明水的比热容大、量也多,因此最终温度更接近水的初始温度,而非两者的简单平均值。理解热平衡与比热容的关系,是分析量热实验、气候系统热调节乃至人体体温调节等真实问题的基础。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch5: Thermochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radioactive Decay | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="radioactive-decay-放射性衰变">Radioactive Decay 放射性衰变</h2>
+<p><strong>定义</strong></p>
+<p>放射性衰变是不稳定原子核自发地释放粒子或能量、转变为更稳定核素的过程。常见的衰变方式包括：$\alpha$衰变（放出氦核 $^4_2\text{He}$，质量数减4、原子序数减2）、$\beta^-$衰变（中子转变为质子并放出电子，原子序数加1）和$\gamma$衰变（原子核释放高能光子，质量数与原子序数均不变）。衰变是随机事件——无法预测某一个原子核何时衰变，但对于大量原子核的集合，衰变遵循严格的统计规律：单位时间内衰变的原子核数与现有原子核总数成正比。这一规律用衰变方程描述：</p>
+$$N(t) = N_0 e^{-\lambda t}$$
+<p>其中 $N_0$ 为初始核数，$\lambda$ 为衰变常数（每种核素固有），$t$ 为时间。半衰期 $t_{1/2}$（核数衰减到一半所需时间）与衰变常数的关系为：</p>
+$$t_{1/2} = \frac{\ln 2}{\lambda}$$
+<p><strong>范例解析</strong></p>
+<p>碳-14的半衰期约为5730年，是考古测年的基础。假设某古木样品中碳-14含量为原始大气水平的25%，求其年代。由 $N/N_0 = (1/2)^{t/t_{1/2}}$，得 $0.25 = (1/2)^{t/5730}$，即 $t/5730 = 2$（因为 $0.25 = (1/2)^2$），所以 $t \approx 11460$ 年。这说明经过两个半衰期，剩余量降为原来的 $1/4$。</p>
+<p><strong>问题解决应用</strong></p>
+<p>放射性衰变的应用远不止测年。在医学上，锝-99m（半衰期约6小时）被用作显影剂：半衰期短意味着患者体内放射性迅速消退，但也要求医院能及时获得新鲜制备的同位素并快速完成检查。在核废料管理中，需要计算某种放射性核素衰变到安全水平（例如降至初始活度的千分之一）所需时间，这决定了废料储存设施的选址与设计年限。解题的关键思路是：先由已知的半衰期求出 $\lambda$，再代入衰变方程求解未知的时间或剩余量。理解衰变的指数本质，还能帮助学生辨析常见误区——例如认为放射性物质会在整数个半衰期后"消失殆尽"，而实际上按指数规律，理论上只是不断趋近于零，永远不会精确归零。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

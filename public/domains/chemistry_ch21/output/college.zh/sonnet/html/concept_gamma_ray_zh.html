@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gamma Ray | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="gamma-ray">Gamma Ray</h2>
+<p><strong>定义</strong></p>
+<p>γ 射线（gamma ray）是原子核在从高能激发态跃迁到较低能量状态时释放的一种高能电磁辐射。它与 X 射线本质相同——都是光子——但能量更高，通常在 $10 \text{ keV}$ 到几 $\text{MeV}$ 之间，波长短于 $10^{-11}\text{ m}$。γ 射线通常伴随 α 衰变或 β 衰变发生：核先经历粒子衰变进入一个仍处于激发态的子核，随后该子核通过放出一个或多个 γ 光子回落到基态，这一过程被称为<strong>γ 衰变</strong>（gamma decay），核的质子数和质量数在此过程中都不改变，只是核内能量降低。由于光子不带电荷、不具静止质量，γ 射线的穿透力远强于 α 粒子和 β 粒子，需要厚铅板或数厘米厚的混凝土才能有效阻挡。</p>
+<p><strong>实例分析</strong></p>
+<p>钴-60（$^{60}\text{Co}$）是医用放疗中常见的 γ 源。它先经 β 衰变生成处于激发态的镍-60（$^{60}\text{Ni}^{<em>}$），随后 $^{60}\text{Ni}^{</em>}$ 依次放出两个 γ 光子（能量分别约为 $1.17\text{ MeV}$ 和 $1.33\text{ MeV}$）回到基态：</p>
+$$^{60}_{27}\text{Co} \rightarrow\ ^{60}_{28}\text{Ni}^{*} + \ ^{0}_{-1}e + \bar{\nu}_e$$
+$$^{60}_{28}\text{Ni}^{*} \rightarrow\ ^{60}_{28}\text{Ni} + 2\gamma$$
+<p>注意两个方程中原子序数与质量数都保持配平，γ 衰变一行左右两侧的质子数、质量数不变，只是能量以光子形式释放。</p>
+<p><strong>应用与解题思路</strong></p>
+<p>处理涉及 γ 射线的问题时，关键是识别核反应的“净变化”：γ 光子的放出不改变质量数 $A$ 与原子序数 $Z$，因此配平核反应方程时可以先忽略 γ，只对涉及粒子（α、β）的步骤配平质子数和中子数，再补上 γ 作为能量出口。另一类常见问题是屏蔽计算：γ 射线强度随屏蔽厚度按指数规律衰减，$I = I_0 e^{-\mu x}$，其中 $\mu$ 是材料的线性吸收系数、$x$ 是厚度。给定某种材料对某能量 γ 射线的 $\mu$ 值，可用此式计算将辐射强度降低到安全水平所需的最小屏蔽厚度——这类计算在核医学防护、反应堆屏蔽设计和放射性废料处置评估中都有直接应用。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

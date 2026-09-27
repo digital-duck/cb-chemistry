@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boyle Law | Chemistry Ch09</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="boyle-law">Boyle Law</h2>
+<p><strong>定义</strong></p>
+<p>波义耳定律描述了在温度恒定的条件下，一定量气体的压强与体积之间的关系：压强与体积成反比。用数学式表达为</p>
+$$P_1 V_1 = P_2 V_2 \quad (\text{温度、气体的量不变})$$
+<p>其中 $P_1, V_1$ 为初始压强和体积，$P_2, V_2$ 为变化后的压强和体积。这个关系可以从分子运动论直接理解：气体压强来自气体分子撞击容器壁所产生的力。当体积缩小时，分子在单位时间内撞击器壁的次数增加，压强随之升高；反之，体积增大时，分子分布更稀疏，撞击频率降低，压强下降。由于温度不变，分子的平均动能保持恒定，所以压强变化完全来自体积变化，二者呈严格的反比关系，而不是线性关系。</p>
+<p><strong>例题</strong></p>
+<p>一个注射器内封闭了 $30\ \text{mL}$ 的空气，压强为 $1.0\ \text{atm}$。若在温度不变的情况下将活塞压缩，使气体体积减小到 $10\ \text{mL}$，求此时气体的压强。</p>
+<p>由 $P_1V_1 = P_2V_2$：</p>
+$$P_2 = \frac{P_1 V_1}{V_2} = \frac{(1.0\ \text{atm})(30\ \text{mL})}{10\ \text{mL}} = 3.0\ \text{atm}$$
+<p>体积缩小为原来的三分之一，压强相应增大为原来的三倍，符合反比关系。</p>
+<p><strong>问题解决应用</strong></p>
+<p>波义耳定律在实际问题中最常见的用法，是已知一种状态下的压强与体积，求另一状态下的未知量。解题的关键步骤是：先确认温度和气体量确实不变（否则需改用更一般的理想气体定律 $PV = nRT$），再将已知的三个量代入 $P_1V_1 = P_2V_2$，解出第四个未知量。这一思路广泛应用于潜水员上浮时肺部气体膨胀的分析、注射器与气压装置设计，以及呼吸生理学中肺容积变化对气道压强的影响。需要特别注意单位统一（如均使用 atm 或均使用 mL），并检查计算结果是否符合"体积减小、压强增大"的物理直觉，这是判断答案合理性的一个简单而有效的方法。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch9: Gases (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

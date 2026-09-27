@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blood Buffer System | Chemistry Ch14</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="血液缓冲系统">血液缓冲系统</h2>
+<h3 id="定义">定义</h3>
+<p>人体血液的 pH 值必须严格维持在 $7.35\text{–}7.45$ 之间,偏离这一范围超过零点几个单位就可能干扰酶的功能,导致代谢紊乱甚至危及生命。然而,人体代谢每天都在产生大量酸性物质——细胞呼吸产生的 $\text{CO}_2$、剧烈运动产生的乳酸、脂肪分解产生的酮体——这些物质本应使血液迅速变酸。血液之所以能保持 pH 稳定,依靠的是<strong>碳酸-碳酸氢盐缓冲系统</strong>(carbonic acid–bicarbonate buffer system)。该系统由弱酸 $\text{H}_2\text{CO}_3$(碳酸)及其共轭碱 $\text{HCO}_3^-$(碳酸氢根)组成,二者在血浆中同时存在,通过下列平衡相互转化:</p>
+$$\text{CO}_2 + \text{H}_2\text{O} \rightleftharpoons \text{H}_2\text{CO}_3 \rightleftharpoons \text{H}^+ + \text{HCO}_3^-$$
+<p>当血液中额外的 $\text{H}^+$ 增多(变酸)时,平衡向左移动,$\text{HCO}_3^-$ 与 $\text{H}^+$ 结合生成 $\text{H}_2\text{CO}_3$,再分解为 $\text{CO}_2$ 和水,多余的 $\text{CO}_2$ 通过肺部呼出;当血液变碱时,平衡向右移动,释放 $\text{H}^+$ 以中和碱性物质。这一系统之所以高效,是因为它同时连接了呼吸系统(排出 $\text{CO}_2$)与肾脏(调节 $\text{HCO}_3^-$ 的排泄和重吸收),形成了双重调控。</p>
+<h3 id="应用实例">应用实例</h3>
+<p>考虑一名剧烈运动的运动员:肌肉无氧呼吸产生大量乳酸,乳酸解离释放 $\text{H}^+$,这些 $\text{H}^+$ 立即与血浆中的 $\text{HCO}_3^-$ 结合,生成 $\text{H}_2\text{CO}_3$ 并进一步转化为 $\text{CO}_2$。运动员的呼吸频率随之加快,这不仅是为了摄入更多氧气,也是为了加速排出体内多余的 $\text{CO}_2$,防止血液 pH 下降过多。这解释了为什么剧烈运动时呼吸会明显变得又深又快。</p>
+<h3 id="解决问题的应用">解决问题的应用</h3>
+<p>医学上,这一系统的意义在于诊断<strong>酸中毒</strong>(acidosis)与<strong>碱中毒</strong>(alkalosis)。呼吸系统疾病(如慢性阻塞性肺病)导致 $\text{CO}_2$ 蓄积,引起呼吸性酸中毒;而肾功能衰竭导致 $\text{HCO}_3^-$ 流失过多,则引起代谢性酸中毒。临床医生通过检测血液中 $\text{CO}_2$ 分压与 $\text{HCO}_3^-$ 浓度的比值,可以判断酸碱失衡的类型和来源,进而决定治疗方案,例如通过机械通气调节呼吸频率,或静脉输注碳酸氢钠溶液直接补充缓冲碱。理解这一系统,是掌握呼吸生理学与临床急救处理的基础。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch14: Acid-Base Equilibria (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nonspontaneous Process | Chemistry Ch16</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="nonspontaneous-process-非自发过程">Nonspontaneous Process(非自发过程)</h2>
+<p><strong>定义</strong></p>
+<p>非自发过程是指在给定条件下不会自动发生、必须依靠外界持续输入能量才能进行的变化。判断一个过程是否自发，关键在于吉布斯自由能变化 $\Delta G$：</p>
+$$\Delta G = \Delta H - T\Delta S$$
+<p>当 $\Delta G < 0$ 时，过程自发；当 $\Delta G > 0$ 时，过程为非自发过程，必须依靠外部做功才能推动其发生；当 $\Delta G = 0$ 时，体系处于平衡状态。需要注意的是，"非自发"并不等于"不可能发生"，而是说该过程不会在没有外界帮助的情况下自己进行到底。</p>
+<p><strong>实例分析</strong></p>
+<p>最典型的例子是水的电解：</p>
+$$2H_2O(l) \rightarrow 2H_2(g) + O_2(g) \qquad \Delta G^\circ = +474.4 \text{ kJ/mol}$$
+<p>由于 $\Delta G^\circ$ 为正值，这个反应在常温常压下不会自发进行。要让水分解为氢气和氧气，必须通电，用外部电能驱动电解槽中的氧化还原反应。一旦断电，反应立即停止——这正是非自发过程依赖持续能量输入的特征。</p>
+<p>生物体内的许多合成代谢反应也是非自发的。例如，将葡萄糖合成为糖原（一种储能多糖）需要消耗ATP水解释放的能量，因为糖原合成本身的 $\Delta G$ 为正值。细胞通过将这一非自发反应与ATP水解（$\Delta G$ 为负值）这一自发过程"偶联"（coupled reaction），使两者加和后的总 $\Delta G$ 为负，从而使合成反应得以进行。</p>
+<p><strong>解决问题的应用</strong></p>
+<p>判断某反应是否需要外部能量输入，是化学与生物学中的常见问题。例如，光合作用中将 $CO_2$ 和 $H_2O$ 转化为葡萄糖的反应：</p>
+$$6CO_2 + 6H_2O \rightarrow C_6H_{12}O_6 + 6O_2 \qquad \Delta G^\circ = +2870 \text{ kJ/mol}$$
+<p>这是一个高度非自发的过程，因此植物必须依靠捕获的太阳能（光能）作为驱动力，通过光反应产生的ATP和NADPH为暗反应（卡尔文循环）供能。</p>
+<p>在实际问题中，遇到 $\Delta G^\circ > 0$ 的反应时，应思考：（1）能否通过升高浓度、改变温度或压力使 $\Delta G$ 转负（即反应虽标准态非自发，但在特定条件下可自发）；（2）能否通过偶联反应或外部电源、光能等持续供能的方式驱动其进行。这种分析思路广泛应用于电池设计、工业电解、代谢通路解析等领域。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch16: Thermodynamics (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

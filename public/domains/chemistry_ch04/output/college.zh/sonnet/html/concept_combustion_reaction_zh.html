@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Combustion Reaction | Chemistry Ch04</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="combustion-reaction">Combustion Reaction</h2>
+<p><strong>定义</strong></p>
+<p>燃烧反应（combustion reaction）是指一种物质（燃料）与氧气迅速反应，放出光和热的化学过程。燃料通常是碳氢化合物（如天然气、汽油、木材、葡萄糖等），完全燃烧时的通式为：</p>
+$$
+\text{C}_x\text{H}_y + \left(x + \frac{y}{4}\right)\text{O}_2 \rightarrow x\,\text{CO}_2 + \frac{y}{2}\,\text{H}_2\text{O} + \text{能量}
+$$
+<p>也就是说，只要氧气供应充足，碳氢化合物中的碳原子最终都会转化为二氧化碳，氢原子转化为水，同时释放大量能量。这是一种放热反应（exothermic reaction），反应物的化学键能高于生成物，多余的能量以热和光的形式释放出来。若氧气不足，则发生不完全燃烧，产物中会出现一氧化碳（CO）甚至碳烟（未燃烧的碳颗粒），这也是家用燃气热水器必须保证通风的原因——不完全燃烧产生的CO是无色无味的剧毒气体。</p>
+<p><strong>实例解析</strong></p>
+<p>以丙烷（$\text{C}_3\text{H}_8$，烧烤炉常用燃料）的完全燃烧为例，先写出未配平的反应式：</p>
+$$
+\text{C}_3\text{H}_8 + \text{O}_2 \rightarrow \text{CO}_2 + \text{H}_2\text{O}
+$$
+<p>配平步骤：先平衡碳（3个C → 3个$\text{CO}_2$），再平衡氢（8个H → 4个$\text{H}_2\text{O}$），最后平衡氧（右边共 $3\times2 + 4\times1 = 10$ 个O原子，需要5个$\text{O}_2$）：</p>
+$$
+\text{C}_3\text{H}_8 + 5\,\text{O}_2 \rightarrow 3\,\text{CO}_2 + 4\,\text{H}_2\text{O}
+$$
+<p>这个配平过程本质上是应用质量守恒定律——反应前后原子种类和数目不变。</p>
+<p><strong>问题解决应用</strong></p>
+<p>化学计量法（stoichiometry）让我们能从燃烧反应预测实际需要的资源或产生的污染物。例如：若燃烧11 g丙烷（摩尔质量44 g/mol，约0.25 mol），根据配平方程的摩尔比 1:5，需要 $0.25 \times 5 = 1.25$ mol $\text{O}_2$，可换算成体积或质量以评估燃烧效率、氧气供给设计，或估算生成的$\text{CO}_2$排放量（$0.25 \times 3 = 0.75$ mol，约33 g）。这种计算是评估能源效率、设计内燃机进气系统，以及量化碳足迹的基础工具，也解释了为何完全燃烧碳氢燃料是气候变化讨论中的核心议题。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch4: Stoichiometry of Chemical Reactions (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

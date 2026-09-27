@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manometer | Chemistry Ch09</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="manometer-测压计">Manometer(测压计)</h2>
+<p><strong>定义</strong></p>
+<p>测压计是一种利用液柱高度差来测量气体压强的装置,最常见的类型是U形管测压计。它由一根弯成U形的玻璃管构成,管内装有液体(通常是水银或水),一端连接到待测气体的容器,另一端开口于大气(或连接到另一已知压强的系统)。当气体压强与大气压不相等时,液柱会在U形管两臂中产生高度差 $h$。这个高度差直接反映了压强差的大小,其关系遵循流体静力学基本方程:</p>
+$$P_{gas} = P_{atm} + \rho g h$$
+<p>其中 $\rho$ 是液体密度,$g$ 是重力加速度,$h$ 是两液面的高度差。若气体压强小于大气压,则公式中的符号相反,即 $P_{gas} = P_{atm} - \rho g h$。判断符号的关键在于观察液面哪一侧较高——气体压强较大的一侧,液面会被压得更低。</p>
+<p><strong>实例分析</strong></p>
+<p>假设某容器中气体连接到开口式水银U形管测压计。已知大气压为 $760 \text{ mmHg}$,测得连接气体一侧的水银柱比开口一侧低 $25 \text{ mm}$。由于气体一侧液面较低,说明气体压强大于大气压,推动水银向开口一侧移动。因此:</p>
+$$P_{gas} = 760 \text{ mmHg} + 25 \text{ mmHg} = 785 \text{ mmHg}$$
+<p>若要换算为标准单位(帕斯卡),已知 $1 \text{ mmHg} \approx 133.3 \text{ Pa}$,则:</p>
+$$785 \text{ mmHg} \times 133.3 \text{ Pa/mmHg} \approx 1.046 \times 10^5 \text{ Pa}$$
+<p><strong>解题应用</strong></p>
+<p>在实际解题中,首先要正确识别测压计类型(开口式或封闭式)以及液体种类,因为水银密度($13.6 \text{ g/cm}^3$)远大于水,同样的压强差会产生小得多的液柱高度差,这也是实验室常用水银而非水的原因。其次,务必仔细判断液面高低对应的压强方向——画图标出气体一侧和大气一侧,观察哪端液面更高,再决定公式中用加号还是减号。最后,单位换算是常见失分点,须记住 $\text{mmHg}$、$\text{atm}$、$\text{kPa}$ 之间的换算关系,并在计算气体定律(如波义耳定律)相关问题时,先用测压计读数求出准确的气体压强,再代入后续计算。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch9: Gases (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

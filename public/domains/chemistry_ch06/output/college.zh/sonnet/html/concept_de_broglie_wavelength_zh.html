@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>De Broglie Wavelength | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="de-broglie-wavelength">De Broglie Wavelength</h2>
+<p><strong>定义</strong></p>
+<p>1924年,法国物理学家德布罗意提出一个大胆的假设:不仅光具有波粒二象性,一切具有质量的运动粒子——电子、质子,甚至宏观物体——也同时具有波动性。这种伴随粒子运动而存在的波,称为<strong>物质波</strong>(matter wave),其波长由下式给出:</p>
+$$
+\lambda = \frac{h}{p} = \frac{h}{mv}
+$$
+<p>其中 $h = 6.626 \times 10^{-34}\ \text{J·s}$ 是普朗克常数,$p = mv$ 是粒子的动量。这个公式把粒子的"波动身份"(波长 $\lambda$)与它的"粒子身份"(动量 $p$)直接联系起来,是波粒二象性从光扩展到实物粒子的关键一步。它之所以必须用这个精确的数学关系表达,是因为德布罗意波长本身就是一个可测量、可验证的物理量——后来的电子衍射实验正是通过测量波长来证实这一假设的。</p>
+<p><strong>worked example(计算实例)</strong></p>
+<p>计算一个以 $2.0 \times 10^6\ \text{m/s}$ 速度运动的电子(质量 $m_e = 9.11 \times 10^{-31}\ \text{kg}$)的德布罗意波长:</p>
+$$
+\lambda = \frac{h}{mv} = \frac{6.626 \times 10^{-34}}{(9.11 \times 10^{-31})(2.0 \times 10^6)} \approx 3.6 \times 10^{-10}\ \text{m} = 0.36\ \text{nm}
+$$
+<p>这个波长与晶体中原子间距(约 $0.1$–$0.3\ \text{nm}$)相当,这正是为什么电子束可以像X射线一样发生衍射——电子显微镜的物理基础就在于此。</p>
+<p><strong>问题解决应用</strong></p>
+<p>反过来考虑一个质量 $0.15\ \text{kg}$、速度 $30\ \text{m/s}$ 的棒球:</p>
+$$
+\lambda = \frac{6.626 \times 10^{-34}}{(0.15)(30)} \approx 1.5 \times 10^{-34}\ \text{m}
+$$
+<p>这个波长比原子核还小万亿倍,完全无法被观测到——这解释了为什么宏观物体的波动性在日常生活中完全不可见,但对微观粒子(电子、中子)却至关重要。</p>
+<p>解题时抓住两个要点:第一,速度越大或质量越大,波长越短,波动性越不明显;第二,只有当德布罗意波长与研究对象的空间尺度(如晶格间距、原子直径)相当时,波动效应才会显现。这一判据是理解电子衍射、扫描隧道显微镜以及量子力学中"波函数"概念的出发点。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

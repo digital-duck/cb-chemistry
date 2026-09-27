@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Covalent Radius | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="共价半径">共价半径</h2>
+<p><strong>定义</strong></p>
+<p>共价半径（covalent radius）是指两个通过共价键相连的原子，其原子核间距离的一半。对于同核双原子分子（如 $\text{Cl}_2$），共价半径的测定最为直接：只需测出键长 $d$，再取半值,即 $r_{\text{cov}} = d/2$。例如 $\text{Cl}_2$ 分子的键长约为 $198\ \text{pm}$，故氯的共价半径约为 $99\ \text{pm}$。对于异核化合物（如 $\text{H–Cl}$），共价半径通常近似满足可加性：</p>
+$$d_{A-B} \approx r_A + r_B$$
+<p>这一加和规则并非精确定律，而是经验近似——因为键长还受电负性差异、键级（单键、双键、三键）等因素影响，但它在估算未知键长时非常实用。</p>
+<p>共价半径在周期表中呈现清晰的周期性变化规律：同一周期从左到右，随核电荷数增加、有效核电荷增强，电子云被更紧地拉向核心，半径逐渐减小；同一族从上到下，随电子层数增加，半径逐渐增大。这与原子半径、离子半径的变化趋势是一致的，反映了同一套决定原子大小的物理机制。</p>
+<p><strong>应用实例</strong></p>
+<p>假设你已知 $\text{C–C}$ 单键的共价半径为 $77\ \text{pm}$，$\text{Cl}$ 的共价半径为 $99\ \text{pm}$，需要估算 $\text{CCl}_4$ 分子中 $\text{C–Cl}$ 键的键长。利用可加性规则：</p>
+$$d_{C-Cl} \approx r_C + r_{Cl} = 77\ \text{pm} + 99\ \text{pm} = 176\ \text{pm}$$
+<p>实验测得的 $\text{C–Cl}$ 键长约为 $177\ \text{pm}$，二者高度吻合，说明该经验规则在估算未知化合物结构时相当可靠。</p>
+<p><strong>问题解决训练</strong></p>
+<p>共价半径的实际价值在于：当晶体学数据缺失时，它能帮助化学家预测分子的几何构型与键长。练习时可以采用以下思路：</p>
+<li>先查阅或记忆常见原子的共价半径（如 $\text{C}=77\ \text{pm}$、$\text{N}=75\ \text{pm}$、$\text{O}=73\ \text{pm}$、$\text{H}=37\ \text{pm}$）；</li>
+<li>对目标分子写出可加性公式，估算键长；</li>
+<li>若分子含有双键或三键，需注意共价半径会相应缩短（例如 $\text{C=C}$ 半径小于 $\text{C–C}$），因为多重键的电子密度更高，将原子拉得更近。</li>
+<p>掌握共价半径的周期性趋势和可加性原理，是理解分子结构、预测反应活性乃至解释键能大小的重要基础工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

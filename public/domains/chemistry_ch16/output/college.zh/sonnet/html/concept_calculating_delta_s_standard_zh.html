@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculating Delta S Standard | Chemistry Ch16</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="calculating-delta-s-standard">Calculating Delta S Standard</h2>
+<p><strong>定义</strong></p>
+<p>标准熵变 $\Delta S^\circ_{rxn}$ 描述一个化学反应在标准状态（298 K，1 atm）下体系混乱程度的变化。它反映了反应物转变为生成物时，微观粒子排列方式数目的增减——气体分子增多、固体溶解、大分子分解为小分子碎片，这些过程通常使熵增大；反之，气体凝聚、分子聚合、离子结合成晶体则使熵减小。</p>
+<p>由于熵是状态函数，标准反应熵可以像标准反应焓一样，通过生成物与反应物的标准摩尔熵 $S^\circ$（单位：$\text{J·mol}^{-1}\text{K}^{-1}$）直接相减求得：</p>
+$$
+\Delta S^\circ_{rxn} = \sum n_p S^\circ_{products} - \sum n_r S^\circ_{reactants}
+$$
+<p>其中 $n_p$、$n_r$ 是化学方程式中各物质的化学计量数。与生成焓不同，单质的标准摩尔熵<strong>不为零</strong>——因为熵是绝对值（源于热力学第三定律：完美晶体在 0 K 时熵为零），每种物质在标准状态下都有确定的正熵值，可从热力学数据表中查得。</p>
+<p><strong>范例演算</strong></p>
+<p>计算下列反应的标准熵变：</p>
+$$
+2\text{H}_2(g) + \text{O}_2(g) \rightarrow 2\text{H}_2\text{O}(l)
+$$
+<p>已知标准摩尔熵：$S^\circ[\text{H}_2(g)] = 130.7$，$S^\circ[\text{O}_2(g)] = 205.2$，$S^\circ[\text{H}_2\text{O}(l)] = 70.0$（单位均为 $\text{J·mol}^{-1}\text{K}^{-1}$）。</p>
+$$
+\Delta S^\circ = [2(70.0)] - [2(130.7) + 205.2] = 140.0 - 466.6 = -326.6\ \text{J·mol}^{-1}\text{K}^{-1}
+$$
+<p>结果为大幅负值，符合预期：3 mol 气体转变为 2 mol 液体，气体分子的高度无序性丧失，体系混乱度显著下降。</p>
+<p><strong>解题应用</strong></p>
+<p>在实际解题中，先用化学方程式两侧的物质状态（气、液、固）做定性判断——气体分子数增加通常对应 $\Delta S^\circ > 0$，减少则对应 $\Delta S^\circ < 0$——再代入数值计算加以验证，可以有效检查计算是否存在符号或计量数错误。这一技巧在后续判断反应自发性（结合吉布斯自由能 $\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$）时尤为关键，因为 $\Delta S^\circ$ 的正负直接决定温度对自发性的影响方向。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch16: Thermodynamics (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

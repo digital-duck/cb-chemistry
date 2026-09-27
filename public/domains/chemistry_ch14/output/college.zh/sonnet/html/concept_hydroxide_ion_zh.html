@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hydroxide Ion | Chemistry Ch14</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="hydroxide-ion">Hydroxide Ion</h2>
+<p><strong>定义</strong></p>
+<p>氢氧根离子（hydroxide ion），化学式为 $\text{OH}^-$，是由一个氧原子和一个氢原子通过共价键结合、并携带一个单位负电荷的多原子离子。这个负电荷来自氧原子多保留的一对孤对电子，使整个离子带负一价。氢氧根是水溶液中"碱性"的直接来源：根据阿伦尼乌斯（Arrhenius）酸碱理论,凡是在水中电离能增加溶液中 $\text{OH}^-$ 浓度的物质就是碱。例如氢氧化钠（$\text{NaOH}$）溶于水时完全电离：</p>
+$$\text{NaOH}(aq) \rightarrow \text{Na}^+(aq) + \text{OH}^-(aq)$$
+<p>值得注意的是，即使在纯水中，由于水分子自身的微弱电离（自耦电离），也存在极少量的 $\text{OH}^-$ 和 $\text{H}^+$（更准确地说是 $\text{H}_3\text{O}^+$），二者浓度相等，这正是纯水呈中性的原因。</p>
+<p><strong>水的自耦电离与 $K_w$</strong></p>
+<p>水的自耦电离可写作：</p>
+$$\text{H}_2\text{O}(l) \rightleftharpoons \text{H}^+(aq) + \text{OH}^-(aq)$$
+<p>在 25°C 下，这一平衡的离子积常数为 $K_w = [\text{H}^+][\text{OH}^-] = 1.0 \times 10^{-14}$。这是一个必须掌握的定量关系，因为它把溶液的酸碱性用一个简单公式联系了起来：只要知道 $\text{H}^+$ 浓度，就能算出 $\text{OH}^-$ 浓度，反之亦然。</p>
+<p><strong>解题应用</strong></p>
+<p>例如，若某溶液中 $[\text{H}^+] = 1.0 \times 10^{-3}\ \text{mol/L}$，求 $[\text{OH}^-]$：</p>
+$$[\text{OH}^-] = \frac{K_w}{[\text{H}^+]} = \frac{1.0 \times 10^{-14}}{1.0 \times 10^{-3}} = 1.0 \times 10^{-11}\ \text{mol/L}$$
+<p>由于 $[\text{OH}^-]$ 远小于 $[\text{H}^+]$，该溶液显酸性。类似地，可以定义 $\text{pOH} = -\log[\text{OH}^-]$，并利用关系式 $\text{pH} + \text{pOH} = 14$（25°C 下）在 $\text{pH}$ 与 $\text{pOH}$ 之间相互换算——这是滴定实验和缓冲溶液计算中最常用的技巧之一。掌握 $\text{OH}^-$ 浓度与 $K_w$ 的关系，是理解中和反应、酸碱滴定曲线以及生理体液 pH 调节等后续内容的基础。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch14: Acid-Base Equilibria (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

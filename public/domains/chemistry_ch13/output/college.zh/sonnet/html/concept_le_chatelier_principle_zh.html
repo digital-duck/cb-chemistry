@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Chatelier Principle | Chemistry Ch13</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="le-chatelier-principle">Le Chatelier Principle</h2>
+<p><strong>定义</strong></p>
+<p>当一个处于平衡状态的可逆反应受到外界条件（浓度、压强、温度）的扰动时，平衡会向着能够部分抵消该扰动的方向移动，直到建立新的平衡。这就是勒夏特列原理（Le Chatelier's Principle）。它并不是一个需要证明的数学定理，而是对平衡系统响应规律的经验性总结,可以由平衡常数表达式直接理解：反应达到平衡时，</p>
+$$K = \frac{[\text{产物}]^{c}[\text{产物}]^{d}}{[\text{反应物}]^{a}[\text{反应物}]^{b}}$$
+<p>在给定温度下 $K$ 为常数。任何使浓度或压强偏离平衡比值的扰动,都会促使正向或逆向反应加速,直到该比值重新等于 $K$。</p>
+<p><strong>实例分析</strong></p>
+<p>以工业合成氨反应为例：</p>
+$$N_2(g) + 3H_2(g) \rightleftharpoons 2NH_3(g) \quad \Delta H = -92\ \text{kJ/mol}$$
+<li><strong>增大压强</strong>：正反应气体分子数（4 mol）多于逆反应（2 mol）,平衡向分子数减少的方向移动,即正向移动,提高氨的产率。</li>
+<li><strong>升高温度</strong>：该反应为放热反应,升温相当于对产物一侧"加入"能量,平衡向吸热方向（逆反应）移动,氨产率反而下降。</li>
+<li><strong>移除产物 $NH_3$</strong>：降低产物浓度,平衡向正向移动以补充产物,持续生成更多氨——这也是工业上不断冷凝分离氨气以提高转化率的原理。</li>
+<p>这说明工业条件（约 450 °C、200–300 atm，并使用催化剂）是速率与产率之间的折中：升温虽然降低平衡产率，却大幅提高反应速率；加压则同时有利于产率和经济可行性。</p>
+<p><strong>解决问题的应用</strong></p>
+<p>判断平衡移动方向的实用步骤：</p>
+<li>写出配平的平衡方程式,确认物质状态（气、液、固、水溶液）。</li>
+<li>明确扰动类型——浓度变化只影响该物质本身参与的方向；压强变化只对气体分子数不等的反应有效,且不改变 $K$ 值；温度变化会真正改变 $K$ 值,方向取决于反应是放热还是吸热。</li>
+<li>用"抵消扰动"的思路预测移动方向,而非死记结论。</li>
+<p>例如，对于 $CaCO_3(s) \rightleftharpoons CaO(s) + CO_2(g)$，增大容器体积（降低压强）会使平衡向气体分子数增多的方向（正向）移动，从而促进 $CaCO_3$ 分解——石灰窑正是利用这一原理，通过持续通风带走 $CO_2$ 来推动煅烧反应完全进行。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch13: Fundamental Equilibrium Concepts (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beta Particle | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="beta-particle-β粒子">Beta Particle（β粒子）</h2>
+<p><strong>定义</strong></p>
+<p>β粒子是放射性核素经β衰变释放出的高速电子（β⁻粒子）或正电子（β⁺粒子）。β衰变的本质是原子核内中子与质子的相互转化：在β⁻衰变中，一个中子转变为一个质子，同时放出一个电子和一个反中微子；在β⁺衰变中，一个质子转变为一个中子，放出一个正电子和一个中微子。可写成：</p>
+$$
+n \rightarrow p + e^- + \bar{\nu}_e \qquad (\beta^- \text{衰变})
+$$
+$$
+p \rightarrow n + e^+ + \nu_e \qquad (\beta^+ \text{衰变})
+$$
+<p>由于核内质子数改变，β衰变会使原子序数 $Z$ 增加或减少1，而质量数 $A$ 不变——这是β衰变区别于α衰变的关键特征。与α粒子相比，β粒子质量小、速度快（可达光速的90%以上），穿透能力更强，可穿透几毫米厚的铝箔，但仍会被更厚的金属或几厘米的塑料板阻挡。</p>
+<p><strong>实例解析</strong></p>
+<p>以碳-14衰变为氮-14为例：</p>
+$$
+{}^{14}_{6}\text{C} \rightarrow {}^{14}_{7}\text{N} + e^- + \bar{\nu}_e
+$$
+<p>原子序数从6变为7（多了一个质子），质量数仍为14。这正是放射性碳定年法的物理基础：生物体死亡后不再摄入新的碳-14，体内碳-14以半衰期约5730年的速率持续衰变为氮-14，通过测量样本中剩余碳-14的比例，可推算生物遗骸的年代。</p>
+<p><strong>应用与解题</strong></p>
+<p>判断β衰变产物的关键规则：写出衰变方程时，质量数守恒、原子序数按β⁻加1（或β⁺减1）调整，同时补上相应的轻子（电子/反中微子或正电子/中微子）以满足能量-动量及轻子数守恒。</p>
+<p>练习：磷-32（$^{32}_{15}\text{P}$）是常用于生物示踪实验的β⁻放射源，请写出其衰变方程。</p>
+<p>解：质量数不变，仍为32；原子序数从15增加到16，对应元素为硫（S）。方程为：</p>
+$$
+{}^{32}_{15}\text{P} \rightarrow {}^{32}_{16}\text{S} + e^- + \bar{\nu}_e
+$$
+<p>在实际防护中，由于β粒子穿透力介于α与γ之间，实验室操作β放射源时通常使用有机玻璃（而非金属）屏蔽，以避免高能电子撞击金属产生二次的韧致辐射（X射线）。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

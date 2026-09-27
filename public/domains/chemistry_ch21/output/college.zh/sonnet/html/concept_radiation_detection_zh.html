@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radiation Detection | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="radiation-detection">Radiation Detection</h2>
+<p><strong>定义</strong></p>
+<p>放射性衰变释放出的粒子（$\alpha$、$\beta$）和电磁辐射（$\gamma$ 射线、X 射线）本身不可见，但它们与物质相互作用时会引发电离——即把原子中的电子撞出，产生带电的离子对。辐射探测的核心原理正是捕捉并放大这种电离效应，将其转化为可测量的电信号或可见信号。常见探测器分三类：盖革计数器（Geiger-Müller counter）利用充气管中电离产生的电流脉冲，每次脉冲对应一次电离事件，输出简单的"咔嗒"计数，灵敏但不能区分能量高低；闪烁计数器（scintillation counter）使用碘化钠等晶体，辐射撞击晶体使其发出微弱闪光，再由光电倍增管放大，可以测出射线的能量，因此常用于医学影像和核素鉴别；半导体探测器（如锗探测器）则利用辐射在半导体中产生电子-空穴对，具有最高的能量分辨率，广泛用于精密的伽马能谱分析。</p>
+<p><strong>实例分析</strong></p>
+<p>假设一枚盖革计数器放置在某放射源附近，1 分钟内记录到 1200 次脉冲，本底（环境自然辐射）计数率为每分钟 20 次。净计数率为 $1200 - 20 = 1180$ 次/分钟，即约 19.7 次/秒。这个数值本身不能直接告诉我们放射性活度（贝可数），因为探测器只能捕捉到从源发出、恰好射入探测器有效体积的那一小部分粒子——这一比例称为"几何效率"，还需乘以探测器对该能量射线的"本征效率"，才能反推真实的衰变速率。这也是为什么核医学和辐射防护工作者必须先用已知活度的标准源对探测器进行刻度（calibration），才能把原始计数率转换为准确的剂量或活度读数。</p>
+<p><strong>问题解决应用</strong></p>
+<p>在实际问题中，探测器选择需要结合场景权衡。例如，医院核医学科要区分患者体内注入的碘-131（发射特定能量的 $\gamma$ 射线）与背景本底，就必须选用闪烁计数器或半导体探测器的能谱分辨能力，而非只能计数的盖革计数器。另一类典型问题是本底扣除与统计涨落：放射性衰变是随机过程，计数服从泊松分布，因此低计数率测量的相对不确定度较大（不确定度约为 $\sqrt{N}/N$，$N$ 为计数次数），实验设计时需延长测量时间以降低误差，这是核物理与环境监测实验室日常需要处理的实际问题。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

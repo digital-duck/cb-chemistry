@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solar Thermal Energy Storage | Chemistry Ch05</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="solar-thermal-energy-storage-太阳能热储能">Solar Thermal Energy Storage（太阳能热储能）</h2>
+<p><strong>定义</strong></p>
+<p>太阳能热储能是指将太阳辐射转化为热能后，以某种介质（通常是熔融盐、导热油或水）的显热或潜热形式储存起来，以便在没有阳光的时段（夜间或阴天）持续供热或发电的技术。其核心矛盾在于：太阳能的产生具有间歇性，而电力或热力的需求却是连续的，储能正是解决这一时间错配的关键环节。储存的热量多少取决于介质的比热容 $c$、质量 $m$ 以及温度变化 $\Delta T$，其关系可用显热储能的基本公式表示：</p>
+$$Q = mc\Delta T$$
+<p>若介质发生相变（如熔融盐凝固或水结冰），还需加上潜热项 $Q = mL$，其中 $L$ 为相变潜热。</p>
+<p><strong>实例分析</strong></p>
+<p>以聚光太阳能发电站（CSP，Concentrated Solar Power）为例：抛物面反射镜将阳光聚焦加热熔融盐（通常是硝酸钠与硝酸钾的混合物），使其温度从约 290°C 升至 565°C。白天多余的热盐被储存在保温良好的高温储罐中；夜晚，这些热盐流经换热器产生蒸汽，驱动汽轮机发电。西班牙的 Gemasolar 电站正是利用这一原理，实现了 24 小时不间断供电。</p>
+<p><strong>问题解决应用</strong></p>
+<p>假设某储能罐中有 $1.0\times10^{5}\,\text{kg}$ 熔融盐，比热容 $c = 1500\,\text{J/(kg·°C)}$，温度从 290°C 升至 565°C，计算其储存的热能：</p>
+$$Q = mc\Delta T = (1.0\times10^{5})(1500)(565-290)$$
+$$Q = (1.0\times10^{5})(1500)(275) = 4.125\times10^{10}\,\text{J}$$
+<p>即约 412.5 亿焦耳，相当于约 11,458 千瓦时。这一数值级别说明，大规模储能需要巨大的储罐容积和良好的绝热设计，以减少散热损失——这正是工程设计中评估储能系统效率与经济性的关键计算步骤。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch5: Thermochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

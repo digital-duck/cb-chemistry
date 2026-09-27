@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Equilibrium Constant From Free Energy | Chemistry Ch16</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="equilibrium-constant-from-free-energy">Equilibrium Constant From Free Energy</h2>
+<p><strong>定义</strong></p>
+<p>化学反应能否自发进行、进行到什么程度，由吉布斯自由能变化 $\Delta G$ 决定。但 $\Delta G$ 描述的是反应在某一特定条件（某组浓度或分压）下的自发性，而平衡常数 $K$ 描述的是反应达到平衡时各物种浓度之间的固定比例关系。这两者通过标准自由能变化 $\Delta G^\circ$ 联系起来：</p>
+$$
+\Delta G^\circ = -RT\ln K
+$$
+<p>其中 $R$ 是气体常数（$8.314\ \text{J/(mol·K)}$），$T$ 是绝对温度（单位 K）。这个公式之所以必须用对数形式，是因为自由能是加和量，而平衡常数是浓度的乘积/比值——只有对数运算能把"乘除关系"转换成"加减关系"，使两者在数学上相容。当 $\Delta G^\circ < 0$（反应本身倾向自发）时，$K>1$，说明平衡时生成物占优；当 $\Delta G^\circ > 0$ 时，$K<1$，反应物占优；$\Delta G^\circ = 0$ 时 $K=1$。</p>
+<p><strong>范例解析</strong></p>
+<p>已知某反应在 298 K 下 $\Delta G^\circ = -10.0\ \text{kJ/mol} = -10000\ \text{J/mol}$，求 $K$。</p>
+$$
+\ln K = -\frac{\Delta G^\circ}{RT} = -\frac{-10000}{8.314 \times 298} \approx 4.04
+$$
+$$
+K = e^{4.04} \approx 57
+$$
+<p>这说明在平衡时，生成物的有效浓度显著大于反应物，反应"偏向"正方向，但并未进行到底——反应物仍以较小比例存在。</p>
+<p><strong>解题应用</strong></p>
+<p>这一关系最实用之处在于：只要能算出（或查表得到）反应的标准生成自由能 $\Delta G_f^\circ$，就能在不做任何实验的情况下预测平衡常数，进而预测浓度、产率或 pH。例如计算弱酸解离常数 $K_a$、溶度积 $K_{sp}$、或工业合成氨反应在不同温度下的转化率，都是先由标准热力学数据算出 $\Delta G^\circ$，再用上式求 $K$。反过来，若通过实验测得 $K$，也可以反推 $\Delta G^\circ$，从而判断反应的自发性強弱。解题时常见的陷阱是温度单位或忽略反应条件（标准态是 1 mol/L 或 1 atm）是否成立，因此使用非标准条件浓度时，应改用 $\Delta G = \Delta G^\circ + RT\ln Q$，其中 $Q$ 为反应商。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch16: Thermodynamics (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

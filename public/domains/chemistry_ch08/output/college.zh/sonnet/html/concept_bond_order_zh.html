@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bond Order | Chemistry Ch08</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="bond-order">Bond Order</h2>
+<p><strong>定义</strong></p>
+<p>键级（bond order）是描述两个原子之间化学键强度和类型的一个数值指标，其定义为：</p>
+$$
+\text{键级} = \frac{\text{成键电子数} - \text{反键电子数}}{2}
+$$
+<p>在分子轨道理论中，电子填入成键轨道会降低体系能量、增强原子间的结合；填入反键轨道则相反，会削弱甚至抵消成键作用。键级越高，通常意味着键长越短、键能越大、键越稳定。对于简单的路易斯结构（Lewis structure），键级也可以直接理解为两原子间共享的电子对数目：单键键级为 1，双键为 2，三键为 3。当分子存在共振结构（resonance）时，键级可以是分数，例如苯环中每个碳碳键的键级为 1.5。</p>
+<p><strong>实例分析</strong></p>
+<p>以氮气分子 $\text{N}_2$ 为例，利用分子轨道理论分析其电子排布可得：成键轨道中共有 8 个电子，反键轨道中有 2 个电子。代入公式：</p>
+$$
+\text{键级} = \frac{8 - 2}{2} = 3
+$$
+<p>这与路易斯结构中 $\text{N}\equiv\text{N}$ 的三键完全吻合，也解释了为什么 $\text{N}_2$ 的键能高达约 945 kJ/mol，键长仅约 110 pm，是自然界最稳定的双原子分子之一。相比之下，氧气分子 $\text{O}_2$ 的键级为 2（双键），而氟气 $\text{F}_2$ 的键级仅为 1（单键），三者键长依次增长、键能依次减弱，正好验证了键级与键强度之间的对应关系。</p>
+<p><strong>应用于解题</strong></p>
+<p>键级概念的实际价值在于预测和解释分子的相对稳定性与反应活性。例如，比较氧分子失去一个电子形成 $\text{O}_2^+$ 后的变化：中性 $\text{O}_2$ 的键级为 2，而 $\text{O}_2^+$ 因移除的是一个反键电子，键级升高为 2.5，因而 $\text{O}_2^+$ 的键长比 $\text{O}_2$ 更短、键能更高。这类问题在无机化学和光谱分析中经常出现：给定分子或离子的总价电子数，先画出分子轨道能级图，确定成键与反键电子的分布，再套用公式计算键级，即可定量比较一系列相关物种（如 $\text{O}_2$、$\text{O}_2^+$、$\text{O}_2^-$）的键长与键能变化趋势，这是分子轨道理论区别于简单价键理论的重要实用工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch8: Advanced Theories of Covalent Bonding (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

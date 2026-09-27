@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Concentration | Chemistry Ch13</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="concentration">Concentration</h2>
+<p><strong>定义</strong></p>
+<p>浓度（concentration）描述的是溶质在溶液中分布的密集程度，即单位体积或单位质量溶液中所含溶质的量。它是化学、生物学和环境科学中最基本的定量概念之一：反应速率、渗透压、药物剂量、污染物毒性，几乎都取决于"有多少"而不仅仅是"有没有"。</p>
+<p>化学中最常用的浓度单位是摩尔浓度（molarity），定义为：</p>
+$$
+c = \frac{n}{V}
+$$
+<p>其中 $n$ 是溶质的物质的量（单位：mol），$V$ 是溶液的体积（单位：L），$c$ 的单位为 $\text{mol/L}$，记作 $\text{M}$。此外，质量浓度（$\text{g/L}$）、质量分数（$\%$）、百万分之几（ppm）等也常用于描述稀溶液或环境样品。</p>
+<p><strong>范例分析</strong></p>
+<p>假设要配制 $0.500\ \text{L}$ 浓度为 $0.200\ \text{M}$ 的氯化钠（NaCl）溶液。首先求所需溶质的量：</p>
+$$
+n = c \times V = 0.200\ \text{mol/L} \times 0.500\ \text{L} = 0.100\ \text{mol}
+$$
+<p>已知 NaCl 的摩尔质量为 $58.5\ \text{g/mol}$，所以需要称取的质量为：</p>
+$$
+m = n \times M_{\text{molar}} = 0.100\ \text{mol} \times 58.5\ \text{g/mol} = 5.85\ \text{g}
+$$
+<p>将 $5.85\ \text{g}$ NaCl 溶于水并定容至 $0.500\ \text{L}$，即得到所需浓度的溶液。</p>
+<p><strong>问题解决应用</strong></p>
+<p>浓度概念在稀释计算中尤为实用，核心关系为：</p>
+$$
+c_1 V_1 = c_2 V_2
+$$
+<p>它表明稀释前后溶质的总量（$n = cV$）保持不变。例如，实验室有 $12.0\ \text{M}$ 的浓盐酸，需要配制 $250\ \text{mL}$ 的 $2.0\ \text{M}$ 稀盐酸，应取用的体积为：</p>
+$$
+V_1 = \frac{c_2 V_2}{c_1} = \frac{2.0 \times 0.250}{12.0} \approx 0.0417\ \text{L} = 41.7\ \text{mL}
+$$
+<p>即量取 $41.7\ \text{mL}$ 浓盐酸，加水稀释至 $250\ \text{mL}$。这一方法广泛应用于配制生理盐水、调配消毒液，以及在生物实验中制备培养基和缓冲液，是定量实验操作中不可或缺的基本技能。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch13: Fundamental Equilibrium Concepts (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

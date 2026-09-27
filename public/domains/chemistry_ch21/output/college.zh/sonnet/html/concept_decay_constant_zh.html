@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Decay Constant | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="衰变常数">衰变常数</h2>
+<p><strong>定义</strong></p>
+<p>放射性衰变是一个随机过程：对于任意一个不稳定原子核，我们无法预测它何时衰变，但大量原子核的集体行为却表现出严格的统计规律。衰变常数（decay constant，符号 $\lambda$）定义为单位时间内单个原子核发生衰变的概率，单位是时间的倒数（如 $\text{s}^{-1}$ 或 $\text{yr}^{-1}$）。$\lambda$ 越大，说明该核素越不稳定，衰变得越快。</p>
+<p>对于任意时刻含有 $N$ 个未衰变原子核的样品，其衰变速率（活度）正比于当前的核数目：</p>
+$$
+\frac{dN}{dt} = -\lambda N
+$$
+<p>这是一个一阶线性微分方程，其解为指数衰减规律：</p>
+$$
+N(t) = N_0 e^{-\lambda t}
+$$
+<p>其中 $N_0$ 是 $t=0$ 时的原子核数目。这个方程之所以采用指数形式，根本原因在于衰变概率对每个原子核都是恒定的、与其"年龄"无关——这正是 $\lambda$ 作为一个常数的物理含义。</p>
+<p><strong>衰变常数与半衰期的关系</strong></p>
+<p>半衰期 $T_{1/2}$ 是样品中一半原子核发生衰变所需的时间，二者满足：</p>
+$$
+T_{1/2} = \frac{\ln 2}{\lambda} \approx \frac{0.693}{\lambda}
+$$
+<p><strong>例题</strong></p>
+<p>碳-14 的衰变常数为 $\lambda = 1.21 \times 10^{-4}\ \text{yr}^{-1}$。求其半衰期，并计算经过 11,460 年后，样品中还剩多少比例的碳-14。</p>
+<p>解：</p>
+$$
+T_{1/2} = \frac{0.693}{1.21\times10^{-4}} \approx 5730\ \text{年}
+$$
+<p>11,460 年恰好是两个半衰期（$2 \times 5730$），所以剩余比例为：</p>
+$$
+\frac{N}{N_0} = \left(\frac{1}{2}\right)^2 = 0.25
+$$
+<p>即剩余 25%。也可直接代入指数公式验证：$e^{-\lambda t} = e^{-1.386} \approx 0.25$，结果一致。</p>
+<p><strong>解决问题的应用</strong></p>
+<p>考古学中常利用碳定年法反推样品年龄：已知现今大气中碳-14与碳-12的比例，测出样品中该比例后，即可通过 $t = \dfrac{1}{\lambda}\ln\!\left(\dfrac{N_0}{N}\right)$ 求出年代。这也是核医学中确定放射性药物有效剂量窗口、核废料处理中评估长期放射性风险的核心计算工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

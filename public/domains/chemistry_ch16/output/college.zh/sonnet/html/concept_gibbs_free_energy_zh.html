@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gibbs Free Energy | Chemistry Ch16</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="gibbs-free-energy">Gibbs Free Energy</h2>
+<p><strong>定义</strong></p>
+<p>吉布斯自由能（Gibbs free energy，符号 $G$）是用来判断一个化学反应在恒温恒压条件下能否自发进行的热力学函数。它把反应的两个驱动力——焓变（$\Delta H$，能量释放或吸收）和熵变（$\Delta S$，混乱度变化）——结合在一个公式里：</p>
+$$\Delta G = \Delta H - T\Delta S$$
+<p>其中 $T$ 是绝对温度（单位：K）。判断标准很简单：</p>
+<li>$\Delta G < 0$：反应自发进行（放能反应，exergonic）</li>
+<li>$\Delta G > 0$：反应非自发，需要外部输入能量才能进行（吸能反应，endergonic）</li>
+<li>$\Delta G = 0$：体系处于平衡态</li>
+<p>需要强调的是，"自发"不等于"瞬间发生"——它只说明反应在热力学上是有利的，并不代表反应速率快。反应速率由活化能和催化剂决定，这是动力学问题，与 $\Delta G$ 无关。</p>
+<p><strong>举例说明</strong></p>
+<p>细胞呼吸中葡萄糖的完全氧化：</p>
+$$\text{C}_6\text{H}_{12}\text{O}_6 + 6\text{O}_2 \rightarrow 6\text{CO}_2 + 6\text{H}_2\text{O}$$
+<p>这个反应的 $\Delta G^\circ \approx -2870\ \text{kJ/mol}$，是高度放能且自发的，因此细胞用它来驱动 ATP 的合成。相反，ATP 水解为 ADP 和磷酸的反应 $\Delta G^\circ \approx -30.5\ \text{kJ/mol}$，同样自发，正是这个能量释放驱动了细胞内大量原本非自发的反应（如蛋白质合成），这种机制称为"能量偶联"（energy coupling）。</p>
+<p><strong>解决问题的应用</strong></p>
+<p>判断一个反应能否自发，需要综合考虑 $\Delta H$ 和 $\Delta S$ 两个因素，而不能只看其中一个：</p>
+<p>| $\Delta H$ | $\Delta S$ | $\Delta G$ | 结果 | |---|---|---|---| | 负（放热） | 正（增熵） | 恒为负 | 任何温度下自发 | | 正（吸热） | 负（减熵） | 恒为正 | 任何温度下非自发 | | 负 | 负 | 取决于 $T$ | 低温下自发 | | 正 | 正 | 取决于 $T$ | 高温下自发 |</p>
+<p>例如，冰融化成水：$\Delta H > 0$（吸热），$\Delta S > 0$（液态更混乱），所以 $\Delta G$ 的正负取决于温度——这正是 $0^\circ\text{C}$ 成为熔点的原因：此时 $\Delta G = 0$，体系达到平衡。理解这一关系，能帮助学生解释为何某些生物反应必须偶联放能反应才能进行。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch16: Thermodynamics (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

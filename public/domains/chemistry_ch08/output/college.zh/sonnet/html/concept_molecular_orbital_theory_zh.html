@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Molecular Orbital Theory | Chemistry Ch08</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="molecular-orbital-theory">Molecular Orbital Theory</h2>
+<p><strong>定义</strong></p>
+<p>分子轨道理论（Molecular Orbital Theory, MOT）认为，当原子结合成分子时，原子轨道并不是简单地保持独立、只用来"配对共享"电子（这是价键理论的图景），而是彼此重叠、混合，生成一套全新的、属于整个分子的轨道——分子轨道。每个分子轨道可以容纳最多两个电子（自旋相反），电子填入分子轨道遵循与原子轨道相同的规则：能量从低到高依次填充，并遵循泡利不相容原理。</p>
+<p>两个原子轨道相互作用时，会生成两条分子轨道：一条能量低于原来原子轨道的<strong>成键轨道</strong>（bonding orbital），电子云集中在两核之间，起到"粘合"两个原子核的作用；另一条能量高于原来原子轨道的<strong>反键轨道</strong>（antibonding orbital，记作带星号，如 $\sigma^*$），其电子云在两核之间出现节点，倾向于把原子核推开。分子是否稳定、键的强弱，取决于成键轨道与反键轨道中电子的净分布。这可以用<strong>键级</strong>（bond order）定量描述：</p>
+$$
+\text{键级} = \frac{(\text{成键轨道电子数}) - (\text{反键轨道电子数})}{2}
+$$
+<p>键级越高，键越短、越强；键级为零，则分子不能稳定存在。</p>
+<p><strong>实例分析</strong></p>
+<p>以氢分子 $\text{H}_2$ 为例：两个氢原子各贡献一个 $1s$ 电子，组合成一个 $\sigma_{1s}$ 成键轨道和一个 $\sigma_{1s}^*$ 反键轨道。两个电子都填入能量较低的 $\sigma_{1s}$，键级 $=(2-0)/2=1$，对应稳定的单键，这与实验事实一致。</p>
+<p>再看氦分子 $\text{He}_2$（假想）：四个电子中两个填入 $\sigma_{1s}$，另两个必须填入 $\sigma_{1s}^*$，键级 $=(2-2)/2=0$。这解释了为什么氦气以单原子形式存在，而不形成稳定的 $\text{He}_2$ 分子——这是价键理论无法直接说明、而分子轨道理论能自然解释的现象。</p>
+<p><strong>解题应用</strong></p>
+<p>利用分子轨道图和键级公式，可以预测和比较一系列双原子分子（及其离子）的稳定性、键长和磁性。例如判断 $\text{O}_2$、$\text{O}_2^+$、$\text{O}_2^-$ 的键长顺序：先分别填充分子轨道图得到各自键级（分别为 2、2.5、1.5），键级越大键越短，于是可预测 $\text{O}_2^+$ 键最短、$\text{O}_2^-$ 键最长。此外，分子轨道图还能解释 $\text{O}_2$ 为何具有磁性（含未成对电子）——这是价键理论完全无法预测的关键实验事实，是分子轨道理论优越性的经典例证。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch8: Advanced Theories of Covalent Bonding (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enthalpy Change | Chemistry Ch05</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="enthalpy-change">Enthalpy Change</h2>
+<p><strong>定义</strong></p>
+<p>焓变（enthalpy change，符号 $\Delta H$）是指化学反应或相变过程中，系统在恒定压强下与环境交换的热量。焓 $H$ 本身是一个状态函数,定义为 $H = U + PV$，其中 $U$ 是内能，$P$ 是压强，$V$ 是体积。由于大多数化学反应都在敞口容器中进行（恒压条件），焓变就等于反应放出或吸收的热量：</p>
+$$\Delta H = H_{\text{产物}} - H_{\text{反应物}}$$
+<p>当 $\Delta H < 0$ 时，反应放热（exothermic），能量以热的形式释放到环境中，体系焓降低；当 $\Delta H > 0$ 时，反应吸热（endothermic），体系从环境吸收能量。焓变的单位通常是 $\text{kJ/mol}$，表示每摩尔反应所对应的能量变化。</p>
+<p><strong>举例说明</strong></p>
+<p>以甲烷燃烧为例：</p>
+$$\text{CH}_4(g) + 2\text{O}_2(g) \rightarrow \text{CO}_2(g) + 2\text{H}_2\text{O}(l) \qquad \Delta H = -890 \ \text{kJ/mol}$$
+<p>负号表明该反应释放大量热量，这也是天然气作为燃料的化学基础。反之，硝酸铵溶于水时：</p>
+$$\text{NH}_4\text{NO}_3(s) \rightarrow \text{NH}_4^+(aq) + \text{NO}_3^-(aq) \qquad \Delta H = +26 \ \text{kJ/mol}$$
+<p>该过程吸热，这正是冷敷袋（instant cold pack）的工作原理——溶解过程从周围吸收热量，使袋子表面变冷。</p>
+<p><strong>解题应用</strong></p>
+<p>焓变最实用的性质是可加性，遵循<strong>赫斯定律（Hess's Law）</strong>：如果一个反应可以分解为几个步骤之和，总焓变等于各步骤焓变之和，与反应途径无关。这使我们能够通过已知反应组合，计算难以直接测量的焓变。</p>
+<p>例如，已知：</p>
+<li>$\text{C(s)} + \text{O}_2(g) \rightarrow \text{CO}_2(g)$，$\Delta H_1 = -393.5\ \text{kJ/mol}$</li>
+<li>$\text{CO}(g) + \tfrac{1}{2}\text{O}_2(g) \rightarrow \text{CO}_2(g)$，$\Delta H_2 = -283.0\ \text{kJ/mol}$</li>
+<p>求 $\text{C(s)} + \tfrac{1}{2}\text{O}_2(g) \rightarrow \text{CO}(g)$ 的 $\Delta H$。</p>
+<p>将第一式减去第二式，得到目标反应，所以：</p>
+$$\Delta H = \Delta H_1 - \Delta H_2 = -393.5 - (-283.0) = -110.5\ \text{kJ/mol}$$
+<p>这种"反应组合法"是热化学计算中最核心的解题技巧，广泛应用于工业过程能量核算与生物代谢途径的能量分析。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch5: Thermochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

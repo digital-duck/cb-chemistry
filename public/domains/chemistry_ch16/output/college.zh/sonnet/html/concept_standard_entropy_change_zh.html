@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Standard Entropy Change | Chemistry Ch16</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="标准熵变">标准熵变</h2>
+<p><strong>定义</strong>　熵（entropy，符号 $S$）是描述体系混乱程度或微观状态数目的热力学量，单位为 $\text{J/(mol·K)}$。与焓不同，物质的熵没有"零点"争议——绝对零度下完美晶体的熵为零（热力学第三定律），因此每种物质都有一个可测量的<strong>标准摩尔熵</strong> $S^\circ$（298 K、1 atm 下）。<strong>标准熵变</strong> $\Delta S^\circ_{rxn}$ 是反应物转化为生成物时体系熵的变化量，计算方法与标准生成焓类似：</p>
+$$\Delta S^\circ_{rxn} = \sum n_p S^\circ(\text{生成物}) - \sum n_r S^\circ(\text{反应物})$$
+<p>其中 $n$ 为化学计量数。判断 $\Delta S^\circ$ 正负的直观规则：气体分子数增加、固体或液体变为气体、大分子分解为多个小分子，都会使熵增大（$\Delta S^\circ > 0$）；反之则熵减小。</p>
+<p><strong>范例计算</strong>　考虑合成氨反应：</p>
+$$N_2(g) + 3H_2(g) \rightarrow 2NH_3(g)$$
+<p>已知 $S^\circ[N_2(g)] = 191.6$，$S^\circ[H_2(g)] = 130.7$，$S^\circ[NH_3(g)] = 192.8$（单位均为 $\text{J/(mol·K)}$）。代入公式：</p>
+$$\Delta S^\circ = 2(192.8) - [191.6 + 3(130.7)] = 385.6 - 583.7 = -198.1 \text{ J/(mol·K)}$$
+<p>结果为负值，这与预期一致：反应左边有 4 mol 气体，右边只有 2 mol 气体，气体分子数减少意味着微观状态数减少，体系变得更"有序"，熵必然降低。</p>
+<p><strong>解题应用</strong>　标准熵变的价值在于它是判断反应自发性的关键一环。仅凭 $\Delta H^\circ$（放热或吸热）不足以预测反应能否自发进行，必须结合吉布斯自由能公式 $\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$。例如上述合成氨反应虽然放热（$\Delta H^\circ$ 为负），但因为 $\Delta S^\circ$ 为负，在高温下 $-T\Delta S^\circ$ 项会变得很大且为正，可能抵消放热带来的有利影响,这正是工业合成氨（Haber 法）需要在中等温度、高压下进行的原因之一——低温有利于平衡但反应速率太慢，因此需要在动力学与热力学之间权衡。掌握标准熵变的计算,可以帮助你系统地预测和解释哪些反应在什么条件下能够自发进行。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch16: Thermodynamics (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

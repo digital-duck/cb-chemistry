@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volume | Chemistry Ch01</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="体积">体积</h2>
+<p><strong>定义</strong></p>
+<p>体积（Volume）是物体占据三维空间大小的量度，国际单位制（SI）中的基本单位是立方米（$\text{m}^3$），实验室中更常用毫升（mL）或升（L）表示，其中 $1\ \text{L} = 1000\ \text{mL} = 1000\ \text{cm}^3$。体积是一种广度性质（extensive property），即它随物质的量增加而增加，这与密度、温度等强度性质（intensive property）不同。规则几何体的体积可由公式直接计算，例如长方体 $V = l \times w \times h$，圆柱体 $V = \pi r^2 h$，球体 $V = \dfrac{4}{3}\pi r^3$；而不规则固体的体积则通过排水法（水位上升的体积差）测定。在气体体系中，体积还与压强、温度、物质的量通过理想气体状态方程 $PV = nRT$ 相互关联，这是化学与物理中最常用的体积计算工具之一。</p>
+<p><strong>实例解析</strong></p>
+<p>假设需要测定一块不规则形状石块的体积。将量筒中装入 $50.0\ \text{mL}$ 水，放入石块后水面升至 $73.5\ \text{mL}$。石块排开的水体积即为其自身体积：</p>
+$$
+V_{\text{石块}} = 73.5\ \text{mL} - 50.0\ \text{mL} = 23.5\ \text{mL} = 23.5\ \text{cm}^3
+$$
+<p>若已知石块质量为 $63.5\ \text{g}$，可进一步求得密度 $\rho = \dfrac{m}{V} = \dfrac{63.5\ \text{g}}{23.5\ \text{cm}^3} \approx 2.70\ \text{g/cm}^3$，与铝的密度接近，从而推断该石块可能是铝质矿石或类似材料。</p>
+<p><strong>问题解决应用</strong></p>
+<p>体积计算在化学反应中尤为关键，尤其涉及气体产物时。例如，某反应在标准状况（STP，$0\ ^\circ\text{C}$，$1\ \text{atm}$）下生成 $2.0\ \text{mol}$ 的 $\text{CO}_2$ 气体，求其体积。根据理想气体方程，STP 下 $1\ \text{mol}$ 气体占据 $22.4\ \text{L}$，因此：</p>
+$$
+V = n \times 22.4\ \text{L/mol} = 2.0\ \text{mol} \times 22.4\ \text{L/mol} = 44.8\ \text{L}
+$$
+<p>若条件非标准状况（如 $T = 310\ \text{K}$，$P = 1.5\ \text{atm}$），则需代入 $PV = nRT$（$R = 0.0821\ \text{L·atm/(mol·K)}$）重新求解：</p>
+$$
+V = \frac{nRT}{P} = \frac{2.0 \times 0.0821 \times 310}{1.5} \approx 33.9\ \text{L}
+$$
+<p>这说明体积并非固定不变的物理量，而是随温度、压强等条件动态变化，这一原理广泛应用于呼吸生理学（肺容积随压强变化）、工业气体储运及环境科学中的气体排放计算。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch1: Essential Ideas (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

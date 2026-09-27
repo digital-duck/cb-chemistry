@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radiation Biological Effects | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="radiation-biological-effects-辐射的生物效应">Radiation Biological Effects（辐射的生物效应）</h2>
+<p><strong>定义</strong></p>
+<p>电离辐射（如 X 射线、γ 射线、α 粒子、β 粒子）携带足够能量,能够将原子或分子中的电子击出,形成离子对。当这种辐射穿过活体组织时,会直接损伤 DNA 分子,或先电离细胞内的水分子生成自由基（如羟自由基 $\cdot\text{OH}$）,再由自由基间接攻击 DNA、蛋白质和细胞膜——这称为"间接作用",占辐射损伤总量的约三分之二。辐射的生物效应通常用<strong>吸收剂量</strong>（单位:戈瑞,Gy，即每千克组织吸收 1 焦耳能量）和<strong>当量剂量</strong>（单位:希沃特,Sv，将吸收剂量乘以辐射权重因子后得到,用于比较不同类型辐射造成生物损伤的严重程度）来量化。</p>
+<p>细胞对辐射损伤的反应取决于剂量大小。低剂量下,DNA 修复酶通常能够纠正双链断裂；但若修复失败或不完全,细胞可能发生<strong>突变</strong>（可能致癌）,或触发凋亡程序而死亡。高剂量、短时间的全身照射会导致<strong>急性辐射综合征</strong>:骨髓等分裂活跃的组织（造血干细胞、肠上皮细胞、生殖细胞）最先受损,因为这些细胞分裂频繁,DNA 复制中的辐射损伤更易被放大并传递。</p>
+<p><strong>实例分析</strong></p>
+<p>设某患者接受一次腹部 CT 扫描,吸收剂量为 10 mGy，辐射权重因子 $w_R = 1$（X 射线）,则当量剂量为:</p>
+$$
+H = D \times w_R = 10\ \text{mGy} \times 1 = 10\ \text{mSv}
+$$
+<p>相比之下,若同一组织吸收等量能量的 α 粒子辐射（$w_R = 20$）,当量剂量将高达 200 mSv——说明相同吸收剂量下,高传能线密度（LET）辐射（如 α 粒子）造成的生物损伤远大于低 LET 辐射（如 X 射线）,因为 α 粒子在组织中沿途密集电离,造成的 DNA 双链断裂更难修复。</p>
+<p><strong>问题解决应用</strong></p>
+<p>医学与职业防护中常需评估累积剂量风险。假设一名放射科技师每年因职业暴露接受 5 mSv 的当量剂量,已知每 Sv 累积剂量对应约 5% 的终身致癌超额风险,那么其 30 年职业生涯的额外患癌风险估算为:</p>
+$$
+\text{风险} = (5\ \text{mSv/年} \times 30\ \text{年}) \times \frac{5\%}{1000\ \text{mSv}} = 150\ \text{mSv} \times 0.005\% / \text{mSv} = 0.75\%
+$$
+<p>这类计算是放射防护规范（如年剂量限值 20 mSv）制定的依据,体现了"合理可行尽量低"（ALARA）原则在实际防护决策中的量化应用。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

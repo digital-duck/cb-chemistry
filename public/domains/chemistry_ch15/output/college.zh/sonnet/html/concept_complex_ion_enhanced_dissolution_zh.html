@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Complex Ion Enhanced Dissolution | Chemistry Ch15</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="complex-ion-enhanced-dissolution-配离子促进溶解">Complex Ion Enhanced Dissolution（配离子促进溶解）</h2>
+<p><strong>定义</strong></p>
+<p>许多金属氢氧化物、硫化物或卤化物盐的溶解度很小，其溶解平衡可以写成：</p>
+$$\text{MX}(s) \rightleftharpoons \text{M}^{n+}(aq) + \text{X}^{-}(aq)$$
+<p>如果溶液中加入某种能与 $\text{M}^{n+}$ 形成稳定配离子（complex ion）的配体（如 $\text{NH}_3$、$\text{CN}^-$、$\text{OH}^-$ 过量、$\text{S}_2\text{O}_3^{2-}$ 等），配体会与游离的金属离子结合：</p>
+$$\text{M}^{n+}(aq) + n\,L \rightleftharpoons \text{ML}_n^{\;n+}(aq)$$
+<p>根据勒夏特列原理，游离 $\text{M}^{n+}$ 被大量消耗，会驱动第一个平衡不断向右移动，使更多固体溶解，直到新的整体平衡建立。这种现象称为"配离子促进溶解"。溶解度的提升幅度取决于配离子的<strong>生成常数</strong> $K_f$（formation constant）——$K_f$ 越大，配合物越稳定，促进效果越显著。总的溶解平衡可以看作两个平衡的叠加，其总平衡常数近似为 $K_{sp} \times K_f$。</p>
+<p><strong>实例分析</strong></p>
+<p>经典例子是 $\text{AgCl}$ 在氨水中的溶解。$\text{AgCl}$ 本身极难溶（$K_{sp} \approx 1.8\times10^{-10}$），但加入氨水后：</p>
+$$\text{AgCl}(s) \rightleftharpoons \text{Ag}^+(aq) + \text{Cl}^-(aq)$$
+$$\text{Ag}^+(aq) + 2\,\text{NH}_3(aq) \rightleftharpoons \text{Ag(NH}_3)_2^+(aq) \quad K_f \approx 1.7\times10^7$$
+<p>两式相加，总反应为：</p>
+$$\text{AgCl}(s) + 2\,\text{NH}_3(aq) \rightleftharpoons \text{Ag(NH}_3)_2^+(aq) + \text{Cl}^-(aq)$$
+<p>其平衡常数 $K = K_{sp}\times K_f \approx 3.1\times10^{-3}$，比原来的 $K_{sp}$ 大了约七个数量级，说明氨水的存在能使原本几乎不溶的 $\text{AgCl}$ 显著溶解。这正是照相底片定影（用硫代硫酸钠溶解未反应的 $\text{AgBr}$）以及湿法冶金中用氰化物浸出金、银等贵金属的化学基础。</p>
+<p><strong>解题应用</strong></p>
+<p>处理这类问题时，标准方法是把总反应拆成"溶解"与"配位"两步，分别写出 $K_{sp}$ 与 $K_f$ 表达式，再将两式相乘消去中间产物 $\text{M}^{n+}$，得到总平衡常数 $K$。随后可用 ICE 表（初始—变化—平衡）设未知量 $x$ 为溶解的摩尔浓度，代入 $K$ 表达式求解，从而定量计算给定配体浓度下沉淀的溶解度，或反推需要多大浓度的配体才能使指定质量的沉淀完全溶解。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch15: Equilibria of Other Reaction Classes (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

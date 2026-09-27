@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solute | Chemistry Ch03</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="solute">Solute</h2>
+<p><strong>定义</strong></p>
+<p>溶质（solute）是指溶解在另一种物质中、形成均匀混合物（即溶液，solution）的成分；溶解溶质的介质称为溶剂（solvent），通常溶剂的量远多于溶质。在溶液中，溶质以分子或离子的形式均匀分散在溶剂中，肉眼无法分辨出独立的颗粒，这与悬浊液或胶体不同。判断谁是溶质、谁是溶剂的一般规则是：量少的成分是溶质，量多的成分是溶剂；当两者比例相近时（例如乙醇和水的混合），则按惯例把与最终溶液物理状态相同的成分视为溶剂。溶质可以是固体（如食盐）、液体（如乙醇）或气体（如二氧化碳），溶剂最常见的是水，因为水分子的极性使其能够溶解许多离子型和极性化合物。</p>
+<p><strong>实例解析</strong></p>
+<p>以生理盐水为例：将 0.9 g 氯化钠（NaCl）溶于 100 mL 水中，NaCl 是溶质，水是溶剂。氯化钠溶于水时，水分子带部分负电荷的一端吸引 Na⁺、带部分正电荷的一端吸引 Cl⁻，使晶格中的离子被逐一拉开并被水分子包围，最终均匀分散在溶液中。要定量描述溶质的多少，常用摩尔浓度表示：</p>
+$$
+c = \frac{n}{V}
+$$
+<p>其中 $n$ 为溶质的摩尔数，$V$ 为溶液体积（单位通常为升）。对于上述生理盐水，NaCl 的摩尔质量约为 58.5 g/mol，故 $n = 0.9/58.5 \approx 0.0154$ mol，体积为 0.1 L，代入公式得 $c \approx 0.154$ mol/L，与人体血浆渗透压相近，这正是生理盐水能安全用于医疗输液的化学基础。</p>
+<p><strong>问题解决应用</strong></p>
+<p>理解溶质有助于解决配制特定浓度溶液的实际问题。例如，实验室需要配制 250 mL 浓度为 0.5 mol/L 的葡萄糖溶液（葡萄糖摩尔质量为 180 g/mol），可先由 $c = n/V$ 反推所需溶质摩尔数：$n = c \times V = 0.5 \times 0.25 = 0.125$ mol，再换算为质量：$m = n \times M = 0.125 \times 180 = 22.5$ g。这类计算广泛应用于医学配药、环境水质检测（如污染物浓度限值）以及工业生产中的质量控制，凸显了准确识别溶质并进行定量分析的重要性。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch3: Composition of Substances and Solutions (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

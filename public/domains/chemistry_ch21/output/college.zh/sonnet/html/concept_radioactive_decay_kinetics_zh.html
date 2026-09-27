@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radioactive Decay Kinetics | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="radioactive-decay-kinetics-放射性衰变动力学">Radioactive Decay Kinetics（放射性衰变动力学）</h2>
+<p><strong>定义</strong></p>
+<p>放射性衰变是原子核自发地释放粒子或能量、转变为另一种核素的过程。无论外界温度、压强或化学环境如何变化，每一个不稳定原子核在单位时间内发生衰变的概率都是恒定的。这意味着放射性衰变遵循一级动力学：某一时刻样品的衰变速率只取决于当前尚存的原子核数目 $N$，而与其他任何因素无关。其数学表达为：</p>
+$$
+\frac{dN}{dt} = -\lambda N
+$$
+<p>其中 $\lambda$ 称为衰变常数，表示单个原子核在单位时间内衰变的概率。对该微分方程积分，得到指数衰变规律：</p>
+$$
+N(t) = N_0 e^{-\lambda t}
+$$
+<p>由此可以定义<strong>半衰期</strong> $t_{1/2}$——样品中原子核数目衰减到初始值一半所需的时间。令 $N(t_{1/2}) = N_0/2$，代入上式解得：</p>
+$$
+t_{1/2} = \frac{\ln 2}{\lambda}
+$$
+<p>半衰期是每种放射性核素的固有属性，从千分之一秒（如某些超铀元素）到上百亿年（如铀-238）不等。</p>
+<p><strong>例题</strong></p>
+<p>某放射性同位素的半衰期为 $8$ 天（如碘-131，常用于医学诊断）。若初始样品中含有 $80\ \text{mg}$ 该同位素，经过 $24$ 天后还剩多少？</p>
+<p>由于 $24$ 天恰好是 $3$ 个半衰期（$24 \div 8 = 3$），样品每经过一个半衰期质量减半：</p>
+$$
+80\ \text{mg} \rightarrow 40\ \text{mg} \rightarrow 20\ \text{mg} \rightarrow 10\ \text{mg}
+$$
+<p>所以剩余质量为 $10\ \text{mg}$。也可直接代入公式验证：$N(t) = 80 \times \left(\tfrac{1}{2}\right)^{3} = 10\ \text{mg}$。</p>
+<p><strong>问题解决应用</strong></p>
+<p>放射性衰变动力学最重要的实际应用之一是<strong>放射性测年法</strong>。例如碳-14测年：生物体存活时通过呼吸和摄食不断补充碳-14，体内碳-14与碳-12的比例与大气中相同；一旦生物死亡，碳-14不再补充，只会按已知的半衰期（约 $5730$ 年）持续衰变。通过测量样品中残余的碳-14比例，利用 $N(t) = N_0 e^{-\lambda t}$ 反解出时间 $t$，就能推算出生物遗骸或有机文物的年代。同样的原理也用于核医学（追踪示踪剂在体内的有效作用时间）、核废料管理（评估放射性降至安全水平所需年限）以及地质学中利用铀-铅衰变链测定岩石年龄。掌握指数衰变规律，是理解这些跨学科应用的关键。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dilution Equation | Chemistry Ch03</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="dilution-equation">Dilution Equation</h2>
+<p><strong>定义</strong></p>
+<p>稀释是指向溶液中加入更多溶剂，从而降低溶质浓度的过程。稀释过程中溶质的物质的量(摩尔数)保持不变——只是分布在更大体积的溶剂中,浓度随之下降。这一守恒关系可以用稀释方程表示:</p>
+$$C_1 V_1 = C_2 V_2$$
+<p>其中 $C_1$、$V_1$ 分别为稀释前的浓度和体积,$C_2$、$V_2$ 分别为稀释后的浓度和体积。该方程成立的前提是稀释过程中溶质总量 $n = CV$ 不发生变化,即没有溶质被加入或移除,只是加水(或其他溶剂)改变了体积。</p>
+<p><strong>例题</strong></p>
+<p>实验室中有一瓶浓度为 $6.0\ \text{mol/L}$ 的盐酸(HCl)原液,现需要配制 $500\ \text{mL}$ 浓度为 $1.5\ \text{mol/L}$ 的稀盐酸,应取用多少毫升原液?</p>
+<p>设需取用原液体积为 $V_1$,代入稀释方程:</p>
+$$C_1 V_1 = C_2 V_2$$
+$$(6.0\ \text{mol/L})(V_1) = (1.5\ \text{mol/L})(500\ \text{mL})$$
+$$V_1 = \frac{(1.5)(500)}{6.0} = 125\ \text{mL}$$
+<p>因此,应量取 $125\ \text{mL}$ 的原液,加水稀释至总体积 $500\ \text{mL}$。注意操作顺序:应将酸缓慢加入水中(而不是将水加入浓酸),因为浓酸稀释会释放大量热,若操作顺序颠倒可能导致液体飞溅甚至灼伤。</p>
+<p><strong>应用与解题练习</strong></p>
+<p>稀释方程在实际应用中常需要先求解某个未知量,再结合其他化学关系。例如,配制血糖检测标准液、稀释消毒剂(如次氯酸钠原液配制成家用消毒水)、或在滴定实验前调整待测液浓度,都依赖这一方程。</p>
+<p>解题时的常见策略是:先明确已知三个量、求解第四个量,并统一体积单位(如全部换算为毫升或升)。若题目涉及连续两次稀释,可分步计算,即第一次稀释后的浓度作为第二次稀释的 $C_1$。此外,稀释方程也可以从质量守恒的角度理解:溶质的质量 $m = C \times V \times M$($M$ 为摩尔质量)在稀释前后不变,这为验证计算结果提供了另一种思路。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch3: Composition of Substances and Solutions (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

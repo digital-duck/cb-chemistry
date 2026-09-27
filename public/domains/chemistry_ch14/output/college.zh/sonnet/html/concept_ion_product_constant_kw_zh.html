@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ion Product Constant Kw | Chemistry Ch14</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="ion-product-constant-kw">Ion Product Constant Kw</h2>
+<p>水虽然是极弱的电解质,但它能够发生微弱的自身电离(autoionization):一个水分子作为酸给出质子,另一个水分子作为碱接受质子,生成水合氢离子和氢氧根离子:</p>
+$$\text{H}_2\text{O}(l) + \text{H}_2\text{O}(l) \rightleftharpoons \text{H}_3\text{O}^+(aq) + \text{OH}^-(aq)$$
+<p>这个平衡的平衡常数称为<strong>水的离子积常数</strong>,记作 $K_w$。由于纯水或稀水溶液中水的浓度几乎不变,可将其并入常数中,于是:</p>
+$$K_w = [\text{H}_3\text{O}^+][\text{OH}^-]$$
+<p>在 25°C 时,实验测得 $K_w = 1.0 \times 10^{-14}$。这个值揭示了一个关键事实:在任何水溶液中,无论酸性、中性还是碱性, $[\text{H}_3\text{O}^+]$ 与 $[\text{OH}^-]$ 的乘积始终保持恒定,只是二者的相对大小随溶液性质变化。</p>
+<p><strong>范例解析</strong>:在中性水溶液中,水电离产生的 $\text{H}_3\text{O}^+$ 与 $\text{OH}^-$ 数量相等,设二者浓度均为 $x$,则</p>
+$$x^2 = 1.0 \times 10^{-14} \implies x = 1.0 \times 10^{-7} \text{ mol/L}$$
+<p>这正是 25°C 下纯水中 $[\text{H}_3\text{O}^+] = [\text{OH}^-] = 1.0 \times 10^{-7}$ mol/L 的来源,也是 pH = 7 被定义为中性点的原因。</p>
+<p><strong>解题应用</strong>:$K_w$ 最实用之处在于,只要知道溶液中一种离子的浓度,就能求出另一种。例如,某溶液中 $[\text{H}_3\text{O}^+] = 1.0 \times 10^{-3}$ mol/L(明显偏酸性),则</p>
+$$[\text{OH}^-] = \frac{K_w}{[\text{H}_3\text{O}^+]} = \frac{1.0 \times 10^{-14}}{1.0 \times 10^{-3}} = 1.0 \times 10^{-11} \text{ mol/L}$$
+<p>这说明酸性溶液中并非没有 $\text{OH}^-$,只是浓度远低于中性水平。这一关系是计算 pH 与 pOH、判断溶液酸碱强弱、以及处理酸碱滴定和缓冲溶液问题的基础工具。此外需注意,$K_w$ 是温度的函数——温度升高时水的电离程度增大,$K_w$ 随之增大(例如 100°C 时约为 $5.5 \times 10^{-13}$),这也解释了为何"中性"不总是对应 pH = 7,而是始终对应 $[\text{H}_3\text{O}^+] = [\text{OH}^-]$。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch14: Acid-Base Equilibria (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

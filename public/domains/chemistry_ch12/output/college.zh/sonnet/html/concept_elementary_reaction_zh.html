@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elementary Reaction | Chemistry Ch12</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="elementary-reaction-基元反应">Elementary Reaction 基元反应</h2>
+<p><strong>定义</strong></p>
+<p>在化学反应动力学中，绝大多数我们写出的化学方程式（如 $2H_2 + O_2 \rightarrow 2H_2O$）只是反应物变为产物的<strong>总反应</strong>（overall reaction），它描述的是"起点"和"终点"，并不代表分子真实碰撞、断键、成键的实际路径。真正在分子尺度上一步完成的反应，才叫做<strong>基元反应</strong>——即反应物分子通过一次有效碰撞或分解，直接转化为产物，中间不经过任何可分离的中间体。</p>
+<p>基元反应最重要的性质是：它的<strong>反应级数可以直接从化学计量数（分子数）读出</strong>。也就是说，对于基元反应，速率方程中每种反应物的指数，恰好等于该反应物在方程式中的系数。这与总反应完全不同——总反应的速率方程必须通过实验测定，不能从方程式系数直接推断。</p>
+<p>一个总反应通常是由一系列基元反应组成的序列，称为<strong>反应机理</strong>（reaction mechanism）。机理中最慢的一步称为<strong>速率决定步骤</strong>（rate-determining step），它的速率方程就近似等于整个总反应的速率方程。</p>
+<p><strong>实例解析</strong></p>
+<p>考虑反应 $NO_2 + CO \rightarrow NO + CO_2$。实验测得速率方程为 $\text{rate} = k[NO_2]^2$，与 CO 浓度无关。如果这是基元反应，速率应为 $k[NO_2][CO]$——与实验不符，说明它不是基元反应，而是分两步完成：</p>
+<p>第一步（慢，速率决定）：$2NO_2 \rightarrow NO_3 + NO$，是基元反应，速率 $= k_1[NO_2]^2$ 第二步（快）：$NO_3 + CO \rightarrow NO_2 + CO_2$</p>
+<p>第一步生成的中间体 $NO_3$ 在第二步中被迅速消耗，不出现在总反应式中。因为第一步是速率决定步骤，总反应速率恰好等于 $k_1[NO_2]^2$，与实验结果吻合。</p>
+<p><strong>解题应用</strong></p>
+<p>判断一个反应机理是否合理，标准流程是：</p>
+<li>将各基元步骤相加，抵消中间体，看是否等于给定的总反应式；</li>
+<li>找出速率决定步骤（通常题目会指明，或是最慢的一步）；</li>
+<li>写出该步骤的速率方程（系数即指数）；</li>
+<li>若该步骤涉及中间体，需要用前面快速平衡步骤的关系式将中间体浓度替换为反应物浓度；</li>
+<li>将结果与实验速率方程对比，一致则机理合理。</li>
+<p>掌握这一方法，是解决动力学机理类问题的核心技能。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch12: Kinetics (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

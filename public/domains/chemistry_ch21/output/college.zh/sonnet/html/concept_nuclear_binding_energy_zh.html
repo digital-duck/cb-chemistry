@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nuclear Binding Energy | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="nuclear-binding-energy-原子核结合能">Nuclear Binding Energy(原子核结合能)</h2>
+<p><strong>定义</strong></p>
+<p>原子核由质子和中子(统称核子)组成,但一个原子核的实际质量总是小于组成它的所有核子的质量之和。这个"消失"的质量差称为质量缺损(mass defect),记作 $\Delta m$:</p>
+$$\Delta m = \left[Zm_p + Nm_n\right] - M_{\text{nucleus}}$$
+<p>其中 $Z$ 为质子数,$N$ 为中子数,$m_p$、$m_n$ 分别为质子和中子的质量,$M_{\text{nucleus}}$ 为原子核的实际质量。根据爱因斯坦质能关系 $E = mc^2$,这部分"丢失"的质量转化为将核子束缚在原子核内的能量,称为结合能(binding energy):</p>
+$$E_b = \Delta m \, c^2$$
+<p>结合能可以理解为:要把一个原子核完全拆散成自由质子和中子,必须提供的能量;反过来,当核子结合成原子核时,会释放出等量的能量。比较不同原子核稳定性时,更有意义的指标是平均核子结合能 $E_b/A$($A$ 为核子总数,即质量数),它反映了每个核子被束缚的"牢固程度"。</p>
+<p><strong>实例计算</strong></p>
+<p>以氦-4($^4_2\text{He}$)为例。已知质子质量 $m_p = 1.007276\ \text{u}$,中子质量 $m_n = 1.008665\ \text{u}$,氦-4原子核质量 $M = 4.001506\ \text{u}$。</p>
+$$\Delta m = 2(1.007276) + 2(1.008665) - 4.001506 = 0.030376\ \text{u}$$
+<p>利用 $1\ \text{u} = 931.5\ \text{MeV}/c^2$,可得:</p>
+$$E_b = 0.030376 \times 931.5\ \text{MeV} \approx 28.3\ \text{MeV}$$
+<p>平均每个核子的结合能约为 $28.3/4 \approx 7.07\ \text{MeV}$。</p>
+<p><strong>问题解决应用</strong></p>
+<p>平均核子结合能随质量数 $A$ 变化的曲线(结合能曲线)是核物理与核能利用的核心工具。曲线在铁、镍附近($A \approx 56$)达到峰值,这解释了两种释能过程:</p>
+<li><strong>核聚变</strong>:轻核(如氢、氦)结合成较重的核时,平均结合能升高,释放能量——这是太阳产能与氢弹的原理。</li>
+<li><strong>核裂变</strong>:重核(如铀-235)分裂成中等质量的核时,平均结合能同样升高,释放能量——这是核反应堆和原子弹的原理。</li>
+<p>实际应用中,工程师和物理学家利用结合能曲线预测哪些核反应在能量上是有利的(即产物的总结合能高于反应物),并据此计算反应释放的能量、设计反应堆燃料循环,或评估核废料的稳定性。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

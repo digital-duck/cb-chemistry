@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ph Measurement Tools | Chemistry Ch14</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="ph-measurement-tools">Ph Measurement Tools</h2>
+<p><strong>定义</strong></p>
+<p>pH 是衡量溶液酸碱程度的指标，定义为氢离子浓度的负对数：$\text{pH} = -\log_{10}[\text{H}^+]$。pH 值越低,溶液中 $\text{H}^+$ 浓度越高,酸性越强;pH 值每降低 1 个单位,$[\text{H}^+]$ 浓度增大 10 倍。测量 pH 的工具主要有三类:pH 试纸(通过颜色变化粗略估计)、酸碱指示剂(如酚酞、石蕊,依据颜色转变范围判断)、以及 pH 计(通过玻璃电极测量溶液的电位差,再换算为精确的 pH 数值)。不同工具的精度和适用场景不同——试纸适合快速定性判断,pH 计则用于需要精确到小数点后一到两位的定量实验。</p>
+<p><strong>实例解析</strong></p>
+<p>假设某实验室需要检测三种液体样本:自来水、柠檬汁和肥皂水溶液。若使用 pH 试纸,分别浸入三种液体后,试纸变色对照标准比色卡,大致可读出自来水约为 pH 7(中性)、柠檬汁约为 pH 2(强酸性)、肥皂水约为 pH 10(碱性)。但若需要更精确的数值来验证某化学反应是否达到预期的酸碱条件(例如某酶的最适 pH 为 7.4),试纸的读数误差(通常 ±0.5 至 ±1 个单位)可能无法满足要求,这时必须使用经过标准缓冲液校准的 pH 计,才能获得如 pH 7.38 这样精确到小数点后两位的读数。</p>
+<p><strong>问题解决应用</strong></p>
+<p>在实际问题中,选择合适的 pH 测量工具需要权衡精度需求、成本和操作便利性。例如,在设计一个监测鱼缸水质的方案时,学生需要判断:日常监测(每天检查)适合用便宜且操作简便的 pH 试纸或电子笔式检测仪,因为水质波动通常较大,不需要极高精度;但若要研究某种鱼类对 pH 微小变化(如 0.1 个单位)的敏感反应,则必须使用实验室级 pH 计,并定期用已知 pH 值的缓冲液(如 pH 4.01、7.00、10.01)进行两点或三点校准,以消除电极老化带来的系统误差。此外,还需考虑温度对 pH 读数的影响——大多数 pH 计具备自动温度补偿(ATC)功能,因为 $[\text{H}^+]$ 的电离平衡会随温度变化,若不校正,读数会产生偏差。掌握工具选择与校准方法,是将 pH 测量应用于生物、环境和化学实验设计的关键技能。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch14: Acid-Base Equilibria (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

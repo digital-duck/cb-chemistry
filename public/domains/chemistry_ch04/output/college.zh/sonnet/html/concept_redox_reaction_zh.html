@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redox Reaction | Chemistry Ch04</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="redox-reaction">Redox Reaction</h2>
+<p><strong>定义</strong></p>
+<p>氧化还原反应(redox reaction)是伴随电子转移的化学反应,其本质是一种物质失去电子,同时另一种物质获得电子。失去电子的过程称为氧化(oxidation),得到电子的过程称为还原(reduction)——二者必然同时发生,因此得名"氧化还原"。判断氧化还原反应的关键工具是<strong>氧化数</strong>(oxidation number):元素氧化数升高表示被氧化,降低表示被还原。例如在</p>
+$$
+\text{Zn} + \text{Cu}^{2+} \rightarrow \text{Zn}^{2+} + \text{Cu}
+$$
+<p>中,Zn 的氧化数从 $0$ 变为 $+2$(失去 2 个电子,被氧化),$\text{Cu}^{2+}$ 的氧化数从 $+2$ 变为 $0$(获得 2 个电子,被还原)。失电子的物质(Zn)称为<strong>还原剂</strong>(reducing agent),因为它使另一物质被还原;得电子的物质($\text{Cu}^{2+}$)称为<strong>氧化剂</strong>(oxidizing agent)。</p>
+<p><strong>范例解析</strong></p>
+<p>配平氧化还原方程式常用"半反应法":将反应拆成氧化半反应与还原半反应,分别配平原子数与电荷数,再合并使电子得失相等。以铁被高锰酸钾氧化为例:</p>
+$$
+\text{Fe}^{2+} \rightarrow \text{Fe}^{3+} + e^-
+$$
+$$
+\text{MnO}_4^- + 8\text{H}^+ + 5e^- \rightarrow \text{Mn}^{2+} + 4\text{H}_2\text{O}
+$$
+<p>由于高锰酸根一次接受 5 个电子,而 $\text{Fe}^{2+}$ 每次只给出 1 个电子,需将第一式乘以 5 使电子数相等,再相加消去电子,得到配平后的总反应:</p>
+$$
+5\text{Fe}^{2+} + \text{MnO}_4^- + 8\text{H}^+ \rightarrow 5\text{Fe}^{3+} + \text{Mn}^{2+} + 4\text{H}_2\text{O}
+$$
+<p><strong>问题解决应用</strong></p>
+<p>半反应法不仅用于配平方程式,更是分析真实体系的通用工具:电池设计、金属防腐蚀、生物体内的电子传递链(如细胞呼吸中 $\text{NADH}$ 被氧化、$\text{O}_2$ 被还原)都可以拆解成一对半反应来理解能量如何随电子流动而释放或储存。解题时的通用步骤是:①标出反应前后各元素的氧化数,找出谁被氧化、谁被还原;②写出两个半反应并分别配平原子与电荷;③按电子转移数目的最小公倍数调整系数,合并消去电子。掌握这一方法后,无论面对无机盐溶液反应还是复杂的生物氧化过程,都能系统地判断反应方向与配平关系。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch4: Stoichiometry of Chemical Reactions (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

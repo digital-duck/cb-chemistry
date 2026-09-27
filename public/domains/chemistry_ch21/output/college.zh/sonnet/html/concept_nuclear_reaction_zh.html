@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nuclear Reaction | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="nuclear-reaction-核反应">Nuclear Reaction 核反应</h2>
+<p><strong>定义</strong></p>
+<p>核反应是原子核内部结构发生改变的过程,通常伴随质子数或中子数的变化,从而生成新的原子核,并释放或吸收巨大能量。这与化学反应有本质区别：化学反应只涉及核外电子的重新排布,原子核本身保持不变;而核反应改变的是原子核内部的质子和中子组成,原子序数或质量数会发生变化。核反应主要分为三类:<strong>放射性衰变</strong>(不稳定原子核自发释放粒子)、<strong>核裂变</strong>(重核分裂为两个较轻的核,如铀-235吸收中子后分裂)、以及<strong>核聚变</strong>(轻核结合为较重的核,如太阳内部氢聚变为氦)。</p>
+<p>核反应遵循几条守恒定律：质量数守恒、电荷数(原子序数)守恒、以及动量守恒。书写核反应方程时,箭头两侧的质量数之和与原子序数之和必须分别相等。</p>
+<p><strong>范例解析</strong></p>
+<p>以铀-235的中子诱导裂变为例:</p>
+$$^{235}_{92}\text{U} + {}^{1}_{0}\text{n} \rightarrow {}^{141}_{56}\text{Ba} + {}^{92}_{36}\text{Kr} + 3\,{}^{1}_{0}\text{n} + \text{能量}$$
+<p>检验质量数守恒：左边 $235+1=236$,右边 $141+92+3\times1=236$,相等。检验原子序数守恒：左边 $92+0=92$,右边 $56+36+0=92$,相等。释放的能量来自反应前后微小的质量亏损,依据爱因斯坦质能关系 $E=mc^2$ 转化而来——这也是核反应能量远大于化学反应能量的根本原因。</p>
+<p><strong>应用与解题</strong></p>
+<p>解核反应方程题目的关键步骤是"先配平,再求解未知粒子"。例如,已知反应</p>
+$$^{14}_{7}\text{N} + {}^{4}_{2}\text{He} \rightarrow {}^{17}_{8}\text{O} + {}^{?}_{?}X$$
+<p>先配平质量数：$14+4=17+A$,得 $A=1$；再配平原子序数：$7+2=8+Z$,得 $Z=1$,因此 $X$ 是质子 $^{1}_{1}\text{H}$。这种"配平法"同样适用于放射性衰变(如 $\alpha$、$\beta$ 衰变)的产物判断,是核化学与核物理中最基本、最常用的解题工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

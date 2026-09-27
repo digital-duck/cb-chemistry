@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interference | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="interference">Interference</h2>
+<p><strong>定义</strong></p>
+<p>干涉（interference）是两列或多列波在空间同一区域相遇时，依据叠加原理（principle of superposition）合并形成新波形的现象。当两列波的波峰与波峰、波谷与波谷重合时，振幅相加，称为相长干涉（constructive interference）；当一列波的波峰与另一列波的波谷重合时，振幅相消，称为相消干涉（destructive interference）。干涉现象只发生在相干波源（coherent sources）之间——即两列波必须具有相同的频率，并保持恒定的相位差。这是波动区别于粒子最本质的特征之一：两个粒子相遇只会碰撞或穿过，而两列波相遇却能相互加强或抵消。</p>
+<p><strong>核心关系</strong></p>
+<p>对于从两个相干点光源（或声源）发出、到达同一点的两列波，其光程差（path difference）$\Delta L$ 决定了该点是相长还是相消干涉：</p>
+$$\Delta L = m\lambda \quad (m = 0, \pm1, \pm2, \dots) \quad \text{相长干涉}$$
+$$\Delta L = \left(m + \tfrac{1}{2}\right)\lambda \quad \text{相消干涉}$$
+<p>其中 $\lambda$ 为波长，$m$ 为整数（干涉级数）。这一关系是理解杨氏双缝实验（Young's double-slit experiment）、薄膜干涉（如肥皂泡呈现彩色条纹）以及噪声消除耳机原理的基础。</p>
+<p><strong>解题应用</strong></p>
+<p>杨氏双缝实验中，两缝间距为 $d$，屏幕距双缝为 $L$（$L \gg d$），则屏幕上第 $m$ 级亮纹（相长干涉）到中央亮纹的距离为：</p>
+$$y_m = \frac{m\lambda L}{d}$$
+<p>例如，若激光波长 $\lambda = 650\ \text{nm}$，双缝间距 $d = 0.20\ \text{mm}$，屏幕距离 $L = 2.0\ \text{m}$，则第一级亮纹（$m=1$）的位置为：</p>
+$$y_1 = \frac{(1)(650\times10^{-9}\,\text{m})(2.0\,\text{m})}{0.20\times10^{-3}\,\text{m}} = 6.5\times10^{-3}\ \text{m} = 6.5\ \text{mm}$$
+<p>这类计算不仅用于光学实验室测定波长，也广泛应用于实际技术：主动降噪耳机通过产生与环境噪声反相（相位差为 $\pi$）的声波，利用相消干涉抵消噪声；薄膜镀层（如镜头增透膜）则通过精确控制薄膜厚度，使反射光发生相消干涉，从而减少反射、提高透光率。理解干涉的关键在于始终追踪两列波之间的相位差（或等效的光程差），并判断其是否为波长的整数倍或半整数倍。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

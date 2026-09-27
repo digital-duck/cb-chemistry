@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capillary Rise Equation | Chemistry Ch10</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="毛细上升方程">毛细上升方程</h2>
+<p><strong>定义</strong></p>
+<p>当细管插入液体时,液体会沿管壁上升或下降,这一现象称为毛细现象(capillarity)。其根本原因是液体分子间的<strong>内聚力</strong>(cohesion)与液体分子和管壁固体分子间的<strong>附着力</strong>(adhesion)的竞争。若附着力强于内聚力(如水与洁净玻璃),液体会润湿管壁并沿管上升;若内聚力更强(如水银与玻璃),液面则会下降。</p>
+<p>上升高度由<strong>杨-拉普拉斯方程</strong>推导得出的毛细上升公式描述:</p>
+$$
+h = \frac{2\gamma \cos\theta}{\rho g r}
+$$
+<p>其中 $h$ 为上升高度,$\gamma$ 为液体的表面张力,$\theta$ 为接触角(液面与管壁的夹角),$\rho$ 为液体密度,$g$ 为重力加速度,$r$ 为管的内半径。该公式的物理含义是:向上的表面张力分量(沿管壁周长作用)与被抬升液柱的重量在力学上达到平衡。</p>
+<p><strong>例题</strong></p>
+<p>一根内半径 $r = 0.10\ \text{mm}$ 的玻璃毛细管插入 20°C 的水中。已知水的表面张力 $\gamma = 0.073\ \text{N/m}$,水几乎完全润湿洁净玻璃,故 $\theta \approx 0°$,$\cos\theta \approx 1$;水的密度 $\rho = 1000\ \text{kg/m}^3$,$g = 9.8\ \text{m/s}^2$。代入公式:</p>
+$$
+h = \frac{2 \times 0.073}{1000 \times 9.8 \times 1.0\times10^{-4}} \approx 0.149\ \text{m}
+$$
+<p>即水面在管中上升约 15 厘米。这一结果说明:管径越细,上升高度越大——这正是植物木质部导管(直径仅数十微米)能够依靠毛细作用辅助水分向上运输的原因之一,尽管在高大乔木中,蒸腾拉力才是水分上升的主导机制。</p>
+<p><strong>问题解决应用</strong></p>
+<p>毛细方程也可用于反推材料性质。例如,若实验测得某未知液体在半径 $0.05\ \text{mm}$ 的管中上升 $6.0\ \text{cm}$,液体密度为 $800\ \text{kg/m}^3$,且完全润湿管壁($\theta = 0°$),即可将 $h$、$\rho$、$r$、$g$ 代入公式反解出该液体的表面张力 $\gamma$,这是实验测定表面张力的标准方法之一。此外,该方程也解释了为什么油类比水的毛细上升更低(表面张力较小),以及为什么使用防水涂层(增大接触角,甚至使 $\cos\theta$ 为负值)可以抑制或逆转毛细渗水,这一原理广泛应用于建筑防潮处理中。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch10: Liquids and Solids (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

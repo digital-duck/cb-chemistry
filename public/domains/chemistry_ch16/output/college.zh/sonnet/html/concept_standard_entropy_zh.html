@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Standard Entropy | Chemistry Ch16</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="standard-entropy">Standard Entropy</h2>
+<p><strong>定义</strong></p>
+<p>标准熵（standard entropy，符号 $S°$）是指 1 摩尔纯物质在标准状态（通常取 298 K、1 bar 压强）下所具有的绝对熵值，单位为 $\text{J} \cdot \text{mol}^{-1} \cdot \text{K}^{-1}$。与标准生成焓 $\Delta H_f°$ 不同，标准熵不是相对于某个"零点参考态"定义的相对量，而是真正的绝对值。这一点来自热力学第三定律：在绝对零度（0 K）下，一个完美晶体的熵为零，因为此时粒子的排列方式只有一种，微观状态数 $\Omega = 1$，根据玻尔兹曼公式 $S = k_B \ln \Omega$，熵为零。从这个真正的零点出发，测量物质从 0 K 升温到 298 K 过程中吸收的热量，就可以计算出其标准熵的绝对数值。</p>
+<p>熵本质上反映的是体系微观状态的混乱程度或能量的分散程度。气体的熵远大于液体，液体又大于固体，因为气体分子可以自由运动、占据的空间和能级更多；分子结构越复杂（原子数越多、化学键越多、可旋转的方式越多），熵值通常也越大。</p>
+<p><strong>实例分析</strong></p>
+<p>比较水的三种状态：$S°(\text{H}_2\text{O}, s) = 48\ \text{J/(mol·K)}$，$S°(\text{H}_2\text{O}, l) = 70\ \text{J/(mol·K)}$，$S°(\text{H}_2\text{O}, g) = 189\ \text{J/(mol·K)}$。可以清楚看到，从固态到液态再到气态，熵值依次显著增大，这与分子自由度增加、微观状态数增多的直觉完全吻合。</p>
+<p><strong>解题应用</strong></p>
+<p>标准熵最重要的实际用途，是计算化学反应的标准熵变 $\Delta S°_{rxn}$，进而判断反应的自发性趋势。计算公式为：</p>
+$$\Delta S°_{rxn} = \sum n \, S°(\text{产物}) - \sum m \, S°(\text{反应物})$$
+<p>例如，对于反应 $\text{CaCO}_3(s) \rightarrow \text{CaO}(s) + \text{CO}_2(g)$，由于生成物中出现了气体（原本反应物全是固体），可以预判 $\Delta S°_{rxn}$ 应为正值——查表计算后确实得到 $\Delta S°_{rxn} \approx +160\ \text{J/(mol·K)}$，与直觉一致。将 $\Delta S°$ 与 $\Delta H°$ 结合，代入吉布斯自由能公式 $\Delta G° = \Delta H° - T\Delta S°$，就能判断反应在给定温度下是否自发，这是化学热力学中最核心的问题求解技能之一。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch16: Thermodynamics (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

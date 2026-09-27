@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reaction Quotient | Chemistry Ch15</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="反应商">反应商</h2>
+<p><strong>定义</strong></p>
+<p>反应商（reaction quotient），记作 $Q$，用来描述一个化学反应在<strong>任意时刻</strong>——不一定处于平衡——各物质浓度（或分压）之间的关系。对于一般反应</p>
+$$aA + bB \rightleftharpoons cC + dD$$
+<p>反应商定义为</p>
+$$Q = \frac{[C]^c[D]^d}{[A]^a[B]^b}$$
+<p>其形式与平衡常数表达式完全相同，区别在于：平衡常数 $K$ 只用<strong>平衡浓度</strong>代入，而 $Q$ 可以用反应过程中<strong>任意时刻</strong>测得的浓度代入。换句话说，$K$ 是 $Q$ 在平衡态时的特定取值。正是这一点让 $Q$ 成为判断反应"走向"的工具：比较 $Q$ 与 $K$ 的大小，就能预测反应会正向进行、逆向进行,还是已经达到平衡。</p>
+<p><strong>判断规则</strong>：</p>
+<li>若 $Q < K$，正向反应（生成物增多）占优，直到 $Q$ 升高至等于 $K$；</li>
+<li>若 $Q > K$，逆向反应占优，直到 $Q$ 降低至等于 $K$；</li>
+<li>若 $Q = K$，系统已处于平衡，无净变化。</li>
+<p><strong>例题</strong></p>
+<p>在某温度下，反应 $\text{N}_2(g) + 3\text{H}_2(g) \rightleftharpoons 2\text{NH}_3(g)$ 的 $K = 0.500$。某时刻测得 $[\text{N}_2] = 0.20\ \text{M}$，$[\text{H}_2] = 0.30\ \text{M}$，$[\text{NH}_3] = 0.10\ \text{M}$。求 $Q$，并判断反应方向。</p>
+$$Q = \frac{[\text{NH}_3]^2}{[\text{N}_2][\text{H}_2]^3} = \frac{(0.10)^2}{(0.20)(0.30)^3} = \frac{0.010}{0.0054} \approx 1.85$$
+<p>由于 $Q(1.85) > K(0.500)$，逆向反应占优，$\text{NH}_3$ 将分解为 $\text{N}_2$ 和 $\text{H}_2$，直到 $Q$ 降回 $0.500$。</p>
+<p><strong>解题应用</strong></p>
+<p>$Q$ 与 $K$ 的比较是解决"预测反应方向"或"给定初始浓度、判断系统是否平衡"类问题的核心工具，常见于工业合成（如氨合成中调节压力和浓度以维持 $Q < K$、持续正向生产）以及分析化学中判断沉淀是否会生成（将离子浓度乘积 $Q$ 与溶度积 $K_{sp}$ 比较）。掌握这一比较方法，是从"静态平衡计算"过渡到"动态过程预测"的关键一步。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch15: Equilibria of Other Reaction Classes (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

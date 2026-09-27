@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quantization | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="量子化">量子化</h2>
+<p><strong>定义</strong></p>
+<p>量子化（quantization）指某些物理量不能连续变化，只能取一系列离散、分立数值的现象。这是量子力学最核心的特征之一,与经典物理中"能量、角动量等可连续取任意值"的假设截然不同。最典型的例子是原子中电子的能量:电子只能处于一系列特定的能级上,而不能取这些能级之间的任意中间值。当电子从高能级跃迁到低能级时,会以光子形式释放出能量,且光子能量恰好等于两能级之差:</p>
+$$
+\Delta E = E_{高} - E_{低} = h\nu
+$$
+<p>其中 $h$ 为普朗克常数（$6.626\times10^{-34}\ \text{J·s}$),$\nu$ 为发射光子的频率。正是因为能级是离散的,原子发射和吸收的光谱才表现为一条条分立的谱线,而不是连续光谱。</p>
+<p><strong>实例解析</strong></p>
+<p>以氢原子为例,玻尔模型给出其能级公式:</p>
+$$
+E_n = -\dfrac{13.6\ \text{eV}}{n^2}\quad (n=1,2,3,\dots)
+$$
+<p>当电子从 $n=3$ 跃迁到 $n=2$ 时,释放的光子能量为:</p>
+$$
+\Delta E = E_3 - E_2 = \left(-\dfrac{13.6}{9}\right)-\left(-\dfrac{13.6}{4}\right)\approx 1.89\ \text{eV}
+$$
+<p>这对应巴耳末系中一条可见的红色谱线（约 656 nm),这也是为什么氢灯发出的光呈现特定颜色，而非白色连续光谱的原因。</p>
+<p><strong>解题应用</strong></p>
+<p>量子化概念在实际问题中常用于计算跃迁能量、判断谱线波长,或反推原子的能级结构。解题时把握两个关键点:</p>
+<li>能级差决定光子能量,可用 $\Delta E = hc/\lambda$ 将能量换算为波长；</li>
+<li>只有满足特定能级差的跃迁才会产生对应谱线,因此谱线数目是有限且可预测的。</li>
+<p>例如,若已知某原子从 $n=4$ 跃迁到基态 $n=1$ 释放能量 12.75 eV,可反推该能级结构是否与氢原子玻尔模型一致,从而判断该谱线属于莱曼系（紫外区）还是巴耳末系（可见光区）。这种"由能级差算光子性质,或由光子性质反推能级结构"的思路,是理解原子光谱学、荧光光谱及激光原理等实际应用的基础。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

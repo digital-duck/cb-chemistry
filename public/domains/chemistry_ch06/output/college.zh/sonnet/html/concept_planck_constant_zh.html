@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planck Constant | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="普朗克常数">普朗克常数</h2>
+<p><strong>定义</strong></p>
+<p>普朗克常数（记作 $h$）是连接光的频率与其携带能量的基本物理常数，其值为 $h = 6.626 \times 10^{-34} \, \text{J·s}$。1900年，普朗克为了解释黑体辐射问题提出：物体吸收或发射电磁辐射时，能量不是连续变化的，而是以离散的"能量包"（后称为光子）形式传递。每个光子的能量由下式给出：</p>
+$$E = h\nu$$
+<p>其中 $\nu$ 是电磁波的频率（单位：赫兹，Hz）。由于 $h$ 的数值极小，这一"量子化"效应在日常宏观世界中几乎察觉不到，但在原子和分子尺度上却起决定性作用——它解释了为什么原子只能吸收或发射特定波长的光，从而形成特征性的原子光谱线。</p>
+<p><strong>范例解析</strong></p>
+<p>考虑氢原子中电子从高能级跃迁到低能级时发射的一条谱线，波长为 $\lambda = 656 \, \text{nm}$（氢原子巴耳末系的 $H_\alpha$ 线，呈红色）。利用波速关系 $c = \lambda \nu$，可得频率：</p>
+$$\nu = \frac{c}{\lambda} = \frac{3.00 \times 10^{8} \, \text{m/s}}{656 \times 10^{-9} \, \text{m}} \approx 4.57 \times 10^{14} \, \text{Hz}$$
+<p>代入普朗克公式，该光子携带的能量为：</p>
+$$E = h\nu = (6.626 \times 10^{-34} \, \text{J·s})(4.57 \times 10^{14} \, \text{Hz}) \approx 3.03 \times 10^{-19} \, \text{J}$$
+<p>这正是电子跃迁时释放的能量差，也是光谱仪能够精确测出原子"指纹"的物理基础。</p>
+<p><strong>解题应用</strong></p>
+<p>在化学与地球科学中，普朗克常数常用于计算光化学反应所需的最小光子能量，判断某波长的光能否引发特定反应（如光合作用中叶绿素对红光和蓝光的吸收，或大气中臭氧分子对紫外线的光解）。解题时的基本策略是：先由已知波长求频率，再用 $E=h\nu$ 求单光子能量，若需计算摩尔尺度的能量，则再乘以阿伏伽德罗常数 $N_A$，即 $E_{\text{mol}} = N_A h\nu$。掌握这一换算，是理解光合作用效率、紫外线对DNA损伤机制以及光电效应等真实问题的关键工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

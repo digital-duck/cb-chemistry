@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Law Of Mass Action | Chemistry Ch13</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="law-of-mass-action">Law Of Mass Action</h2>
+<p><strong>定义</strong></p>
+<p>质量作用定律（Law of Mass Action）描述了化学反应速率与反应物浓度之间的定量关系：在给定温度下，基元反应（elementary reaction）的速率与反应物浓度的乘积成正比，每种反应物浓度的指数等于其在反应方程式中的系数。对于基元反应</p>
+$$aA + bB \rightarrow cC + dD$$
+<p>正反应速率可表示为</p>
+$$v = k[A]^a[B]^b$$
+<p>其中 $k$ 为速率常数，$[A]$、$[B]$ 为反应物的摩尔浓度。需要强调的是，这一指数关系仅对基元反应严格成立；对于多步反应，速率方程必须通过实验测定，不能直接从总反应方程式的系数推出。当反应达到平衡时，正、逆反应速率相等，由此可导出平衡常数表达式</p>
+$$K_{eq} = \frac{[C]^c[D]^d}{[A]^a[B]^b}$$
+<p><strong>范例解析</strong></p>
+<p>考虑基元反应 $2NO + O_2 \rightarrow 2NO_2$。若该反应确认为基元反应，则速率方程为 $v = k[NO]^2[O_2]$。假设某实验中 $[NO]$ 浓度增加为原来的 2 倍，其他条件不变，速率应变为原来的 $2^2 = 4$ 倍；若 $[O_2]$ 浓度也同时加倍，速率将再增加 2 倍，总体变为原速率的 8 倍。这说明反应速率对浓度的敏感程度取决于反应级数（reaction order），而反应级数由分子机制决定，不能想象性地从化学方程式系数猜测（对于非基元反应）。</p>
+<p><strong>问题解决应用</strong></p>
+<p>质量作用定律是分析反应动力学和平衡问题的核心工具。在工业生产中，工程师利用它预测改变反应物浓度对生成速率或产率的影响，从而优化反应条件（如合成氨的哈伯法工艺）。在生物化学中，酶催化反应的速率方程、以及生理系统中气体交换（如血红蛋白与氧结合）的平衡关系，也遵循质量作用定律的基本逻辑。解题时的关键步骤：首先判断反应是否为基元反应（若题目未说明，通常给出实验速率数据，需要通过比较不同浓度下的速率来确定反应级数）；然后代入已知浓度和速率常数求解未知速率或平衡浓度。掌握这一原理，有助于理解从化学反应釜设计到细胞代谢调控等多个领域中"浓度变化如何驱动系统响应"这一普遍规律。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch13: Fundamental Equilibrium Concepts (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

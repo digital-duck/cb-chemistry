@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radiation Therapy | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="radiation-therapy-放射治疗">Radiation Therapy 放射治疗</h2>
+<p><strong>定义</strong></p>
+<p>放射治疗（radiation therapy，简称放疗）是利用高能电离辐射——如X射线、γ射线或带电粒子束——破坏癌细胞DNA，从而杀死肿瘤细胞或阻止其增殖的治疗手段。电离辐射通过两种途径造成DNA损伤：直接击中DNA双链造成断裂；或通过辐射水分子产生自由基（如$\cdot$OH），间接氧化损伤DNA碱基与糖磷酸骨架。癌细胞由于分裂速度快、DNA损伤修复能力相对较弱，对辐射的敏感性通常高于周围正常组织，这一"治疗窗口"（therapeutic window）是放疗能够选择性杀伤肿瘤而保留正常组织功能的生物学基础。放疗剂量以戈瑞（Gray, Gy）为单位，表示单位质量组织吸收的辐射能量（$1\ \text{Gy} = 1\ \text{J/kg}$）。临床上常采用分次照射（fractionation）——将总剂量分成多次给予，例如总剂量60 Gy分30次、每次2 Gy——目的是让正常细胞在两次照射间隔中修复亚致死损伤，而肿瘤细胞修复能力较差、累积损伤更严重，从而扩大治疗窗口。</p>
+<p><strong>应用实例</strong></p>
+<p>以体外远程放疗（external beam radiation therapy, EBRT）治疗前列腺癌为例：医生先通过CT/MRI影像勾画肿瘤靶区及周围危及器官（如膀胱、直肠），再用调强放疗（IMRT）技术从多个角度、多种强度照射肿瘤，使高剂量区域与肿瘤形状高度吻合,同时降低正常组织的受量。另一类是近距离放疗（brachytherapy），将放射源直接植入或贴近肿瘤（如宫颈癌的腔内放疗），利用辐射强度随距离平方衰减的特性，实现肿瘤局部高剂量、周边组织低剂量的效果。</p>
+<p><strong>问题解决应用</strong></p>
+<p>放疗方案设计本质上是一个剂量优化问题：如何在杀灭肿瘤细胞与保护正常组织之间取得平衡。临床医生需依据肿瘤类型、分期、位置及患者耐受性，选择总剂量、分次方案与照射技术。例如，脑转移瘤邻近脑干时，需通过立体定向放疗（SRS）将剂量高度集中于病灶，同时严格限制脑干受量以避免神经功能损伤。评估疗效与副作用时,常用剂量-体积直方图（dose-volume histogram, DVH）定量比较不同治疗计划对靶区与危及器官的剂量分布,从而选出安全性与疗效兼顾的最优方案。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Antibonding Molecular Orbital | Chemistry Ch08</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="反键分子轨道">反键分子轨道</h2>
+<p>当两个原子相互靠近并共享电子时，它们各自的原子轨道会重新组合，形成新的分子轨道。根据波函数叠加的方式不同,会产生两类分子轨道：成键分子轨道和反键分子轨道。当两个原子轨道以"同相"方式叠加时，电子云在两核之间的区域增大，形成能量较低、更稳定的成键轨道。而当两个原子轨道以"反相"方式叠加时，波函数在两核之间发生相消干涉，产生一个节面（电子出现概率为零的平面），电子云被排斥到远离核间区域的两侧。这样形成的轨道能量高于原子轨道，被称为<strong>反键分子轨道</strong>（antibonding molecular orbital），通常用带星号的符号表示，例如 $\sigma^<em>$ 或 $\pi^</em>$。</p>
+<p><strong>举例说明：</strong> 以最简单的氢分子 $H_2$ 为例。两个氢原子各贡献一个 $1s$ 电子和一个 $1s$ 轨道。这两个 $1s$ 轨道组合成一个成键轨道 $\sigma_{1s}$ 和一个反键轨道 $\sigma_{1s}^<em>$。基态氢分子的两个电子都填入能量较低的 $\sigma_{1s}$ 成键轨道，因此 $H_2$ 是稳定分子。但如果我们考虑假想的 $He_2$ 分子：每个氦原子有两个 $1s$ 电子，共四个电子。前两个电子填入 $\sigma_{1s}$ 成键轨道，后两个电子则必须填入能量更高的 $\sigma_{1s}^</em>$ 反键轨道。反键轨道对键的削弱作用恰好抵消成键轨道的稳定作用，导致 $He_2$ 几乎没有净成键效果，这解释了为什么氦气以单原子形式存在，而不形成稳定的双原子分子。</p>
+<p><strong>应用于解决问题：</strong> 判断一个双原子分子是否稳定、以及键的强弱，关键在于计算"键级"（bond order）：</p>
+$$
+\text{键级} = \frac{(\text{成键轨道电子数}) - (\text{反键轨道电子数})}{2}
+$$
+<p>键级越高，键越短、越强；键级为零则分子不能稳定存在。例如，对于 $O_2$ 分子，分子轨道理论预测其在 $\pi^*$ 反键轨道中有两个未成对电子，这不仅给出键级为 2，还成功解释了氧气的顺磁性——这是简单的路易斯结构无法解释的实验事实。掌握反键轨道的填充规则，能帮助我们预测分子的稳定性、键长趋势以及磁性等物理性质。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch8: Advanced Theories of Covalent Bonding (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

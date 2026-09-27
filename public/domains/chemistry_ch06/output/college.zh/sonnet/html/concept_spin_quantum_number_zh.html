@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spin Quantum Number | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="spin-quantum-number">Spin Quantum Number</h2>
+<p><strong>定义</strong></p>
+<p>自旋量子数（记作 $m_s$）描述电子的一种内在角动量属性，通常被形象地类比为电子绕自身轴的"旋转"，尽管这只是一个便于理解的比喻，电子并非真的在空间中旋转。$m_s$ 只能取两个可能的值：$+\tfrac{1}{2}$ 或 $-\tfrac{1}{2}$，分别对应两种自旋状态（常称为"上旋"和"下旋"）。自旋量子数与其他三个量子数——主量子数 $n$、角量子数 $l$、磁量子数 $m_l$——共同构成描述原子中每个电子状态的完整"地址"。泡利不相容原理指出，同一原子中不存在两个电子具有完全相同的四个量子数；因此，每个原子轨道最多只能容纳两个电子，且这两个电子必须具有相反的自旋方向。这一限制是理解元素电子排布、周期表结构以及化学键形成的基础。</p>
+<p><strong>举例说明</strong></p>
+<p>以氦原子（He，原子序数 2）为例。它的两个电子都占据 $1s$ 轨道，具有相同的 $n=1$、$l=0$、$m_l=0$。若两者的自旋量子数也相同，则会违反泡利不相容原理；因此其中一个电子的 $m_s=+\tfrac{1}{2}$，另一个必为 $m_s=-\tfrac{1}{2}$。这就是为什么 $1s$ 轨道恰好容纳两个、而不是三个或一个电子。</p>
+<p><strong>解题应用</strong></p>
+<p>自旋量子数的实际用途在于预测原子的电子排布和磁性。写出氮原子（N，原子序数 7）的电子排布 $1s^2\,2s^2\,2p^3$ 时，洪特规则要求：在能量相同的三个 $2p$ 轨道中，电子先各占一个轨道、且自旋方向相同（例如都取 $m_s=+\tfrac{1}{2}$），而不是先两两配对。这样做使体系总自旋最大化，能量更低，也解释了为何氮原子在基态下具有三个未成对电子，表现出较强的顺磁性。当学生分析某原子或离子是顺磁性（存在未成对电子，被磁场吸引）还是反磁性（电子全部配对，被磁场微弱排斥）时，正是通过逐一填充轨道并追踪每个电子的自旋方向来判断的。这一分析方法广泛应用于化学中预测过渡金属配合物的磁学性质、判断分子稳定性，以及理解光谱学中的选择定则。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

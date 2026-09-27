@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oxidation | Chemistry Ch17</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="oxidation-氧化">Oxidation（氧化）</h2>
+<p><strong>定义</strong></p>
+<p>氧化最初指物质与氧结合的反应，但现代化学给出更普适的定义：氧化是指一个原子、离子或分子<strong>失去电子</strong>的过程。与之相对的是还原（reduction），即获得电子的过程。二者总是同时发生，合称氧化还原反应（redox reaction）。判断一个原子是否被氧化，最实用的方法是比较反应前后该原子的<strong>氧化数</strong>（oxidation number，也称氧化态）——氧化数升高即被氧化，降低即被还原。氧化数的分配遵循一套规则：单质中原子氧化数为0；单原子离子的氧化数等于其电荷；化合物中氧通常为$-2$，氢通常为$+1$；分子或离子中所有原子氧化数之和分别等于0或该离子的电荷数。</p>
+<p><strong>实例解析</strong></p>
+<p>以铁生锈为例：</p>
+$$4Fe + 3O_2 \rightarrow 2Fe_2O_3$$
+<p>反应前，单质铁和单质氧的氧化数均为0。反应后，$Fe_2O_3$中铁的氧化数为$+3$，氧为$-2$。铁的氧化数从0升到$+3$，失去了3个电子，被氧化；氧的氧化数从0降到$-2$，被还原。氧在此充当<strong>氧化剂</strong>（oxidizing agent，自身被还原，促使他物被氧化），铁则是<strong>还原剂</strong>（reducing agent）。</p>
+<p>细胞呼吸也是典型氧化过程：葡萄糖中的碳被逐步氧化为$CO_2$，释放的电子经电子传递链最终传给$O_2$，生成$H_2O$并释放能量供细胞使用。</p>
+<p><strong>问题解决应用</strong></p>
+<p>判断复杂反应中谁被氧化、谁被氧化，关键步骤是：(1) 为反应物和产物中每个原子标出氧化数；(2) 比较同一元素在反应前后的氧化数变化；(3) 配平时，失去电子总数必须等于获得电子总数（电子守恒）。</p>
+<p>例如配平：$MnO_4^- + Fe^{2+} \rightarrow Mn^{2+} + Fe^{3+}$（酸性条件下）。 先算氧化数：Mn从$+7$降到$+2$（获得5个电子，被还原）；Fe从$+2$升到$+3$（失去1个电子，被氧化）。要使电子守恒，需要5个$Fe^{2+}$对应1个$MnO_4^-$，再补充$H^+$与$H_2O$配平氧、氢原子，最终得到：</p>
+$$MnO_4^- + 5Fe^{2+} + 8H^+ \rightarrow Mn^{2+} + 5Fe^{3+} + 4H_2O$$
+<p>这种“先定氧化数变化，再用电子守恒配平”的方法，是解决滴定分析、金属腐蚀、生物氧化磷酸化等实际问题的通用工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch17: Electrochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

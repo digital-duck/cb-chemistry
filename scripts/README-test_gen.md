@@ -91,12 +91,8 @@ college_physics_ch4
 ```bash
 conda activate spl123
 
-# Test — 1 domain, current defaults (sonnet / college / en)
-python scripts/batch_gen_domains.py -f scripts/domains-college-physics.txt --limit 1
+python3 scripts/batch_generate.py generate --domain chemistry_ch01-chemistry_ch21 --language zh
 
-# Full run (resumable — re-running skips anything already marked done)
-python scripts/batch_gen_domains.py -f scripts/domains-college-physics.txt \
-    --log-file scripts/batch_gen_domains.log
 ```
 
 Expect ~6–7 min per domain with Sonnet (dozens of LLM calls each) — a 31-domain

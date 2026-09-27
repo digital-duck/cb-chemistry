@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enzyme Catalysis | Chemistry Ch12</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="enzyme-catalysis">Enzyme Catalysis</h2>
+<p><strong>定义</strong></p>
+<p>酶是一类蛋白质（少数是RNA）催化剂，能够大幅加快细胞内化学反应的速率，同时自身在反应前后不发生消耗。酶的催化能力源于其三维结构中的一个特定区域——活性位点（active site）。活性位点的形状、电荷分布和化学环境与底物（substrate，即被反应的分子）高度互补，这种关系常被形象地称为"锁与钥匙"模型，更精确的描述则是"诱导契合"（induced fit）模型：底物结合时，活性位点会发生微小的构象调整,以达到最佳催化效果。</p>
+<p>从能量角度看，任何化学反应要发生，反应物都必须先越过一个能量屏障，称为活化能（activation energy, $E_a$）。酶的核心作用是降低这一活化能，从而让更多反应物分子在体温条件下就能获得足够能量完成反应，而不改变反应的始态和终态能量差（即不改变反应的热力学自由能变化 $\Delta G$）。酶不会使本不能自发进行的反应变得可行，它只是加快已经可行的反应的速率。</p>
+<p><strong>实例分析</strong></p>
+<p>以过氧化氢酶（catalase）为例：细胞代谢产生的过氧化氢（$H_2O_2$）对细胞有毒性。未催化时，$H_2O_2$ 分解为水和氧气的反应极为缓慢；而过氧化氢酶可将每秒的反应次数提升至约 $4\times10^7$ 次（每个酶分子），反应式为：</p>
+$$2H_2O_2 \xrightarrow{\text{catalase}} 2H_2O + O_2$$
+<p>酶通过多种机制降低活化能：使底物分子在活性位点上定向排列，减少熵损失；对底物分子中的化学键施加张力，使其更接近过渡态；或直接参与质子转移等化学步骤。</p>
+<p><strong>问题解决应用</strong></p>
+<p>酶的活性受温度和pH影响,二者都存在最适值——超出此范围,酶蛋白的氢键和疏水作用力被破坏，导致变性（denaturation），催化能力丧失。此外，竞争性抑制剂通过占据活性位点、非竞争性抑制剂通过结合别的位点改变酶构象，均可降低反应速率，这是许多药物（如他汀类药物抑制胆固醇合成酶）设计的基础。在实际问题中，判断某抑制剂类型时，可通过观察提高底物浓度是否能恢复酶活性来区分：能恢复则为竞争性抑制,不能恢复则通常为非竞争性抑制。理解这一机制,是设计药物、诊断代谢疾病乃至优化工业发酵过程的关键。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch12: Kinetics (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

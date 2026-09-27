@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Specific Heat Capacity | Chemistry Ch05</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="specific-heat-capacity">Specific Heat Capacity</h2>
+<p><strong>定义</strong></p>
+<p>比热容（specific heat capacity，符号 $c$）是指使单位质量的某种物质温度升高（或降低）$1\,^\circ\text{C}$（等价于 $1\,\text{K}$）所需吸收（或释放）的热量，单位通常为 $\text{J/(g·°C)}$ 或 $\text{J/(kg·K)}$。它是物质本身的一种特征属性，与物质的种类和状态有关，而与物体的质量、形状无关——这一点使它区别于"热容"（heat capacity，整个物体升温所需的总热量，与质量成正比）。水的比热容很大，约为 $4.18\,\text{J/(g·°C)}$，这也是为什么海洋和湖泊能够缓和沿岸地区气温变化的原因：水吸收或释放大量热量时，自身温度变化却很小。金属的比热容普遍较小，例如铁约为 $0.45\,\text{J/(g·°C)}$，因此金属受热或遇冷时温度变化得更快。</p>
+<p>热量、质量、比热容与温度变化之间的关系可以用下式表达：</p>
+$$
+Q = mc\Delta T
+$$
+<p>其中 $Q$ 为吸收或放出的热量（J），$m$ 为物质质量（g 或 kg），$c$ 为比热容，$\Delta T = T_{\text{末}} - T_{\text{初}}$ 为温度变化。</p>
+<p><strong>例题</strong></p>
+<p>某实验中，将 $200\,\text{g}$ 的水从 $20\,^\circ\text{C}$ 加热到 $80\,^\circ\text{C}$，求所需热量。</p>
+<p>代入公式：</p>
+$$
+Q = (200\,\text{g})(4.18\,\text{J/(g·°C)})(80-20)\,^\circ\text{C} = 50160\,\text{J} \approx 50.2\,\text{kJ}
+$$
+<p>若换成同样质量的铁块经历相同的温度变化，则：</p>
+$$
+Q = (200\,\text{g})(0.45\,\text{J/(g·°C)})(60) = 5400\,\text{J}
+$$
+<p>可见，将等量的水加热到同样温度所需的能量约是铁的 9 倍，这正是水"难热难冷"特性的量化体现。</p>
+<p><strong>应用与解题策略</strong></p>
+<p>比热容公式常用于混合体系中的热平衡问题：当两种温度不同的物质接触后，一方放出的热量等于另一方吸收的热量（假设无热量损失），即 $Q_{\text{放}} = Q_{\text{吸}}$。解题时应先明确谁升温、谁降温，正确设定 $\Delta T$ 的符号，再列出等量关系求解未知的质量、比热容或末温。这类"量热法"计算是化学与物理实验中测定未知物质比热容、验证能量守恒定律的基本方法。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch5: Thermochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electroplating | Chemistry Ch17</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="electroplating">Electroplating</h2>
+<p><strong>定义</strong></p>
+<p>电镀（electroplating）是利用电解的方法，在导电物体表面沉积一层薄而均匀的金属涂层的工艺。其基本原理是电解：待镀的物体作为阴极（cathode），接通电源负极；用于提供镀层金属的电极作为阳极（anode），接通电源正极；两极浸入含有该金属离子的电解质溶液（electrolyte）中。通电后，阳极金属被氧化溶解为金属阳离子进入溶液，同时溶液中的金属阳离子在阴极表面被还原，沉积成一层金属膜，附着在被镀物体上。电镀常用于防腐蚀（如镀锌钢铁）、装饰（如镀金银首饰）以及提高导电性或耐磨性（如电子元件镀铜、镀镍）。</p>
+<p><strong>工作实例：铜的电镀</strong></p>
+<p>以硫酸铜（$\text{CuSO}_4$）溶液电镀铜为例：阳极为纯铜片，阴极为待镀的金属物件。通电后，阳极发生氧化反应：</p>
+$$\text{Cu}(s) \rightarrow \text{Cu}^{2+}(aq) + 2e^-$$
+<p>阴极发生还原反应：</p>
+$$\text{Cu}^{2+}(aq) + 2e^- \rightarrow \text{Cu}(s)$$
+<p>两个半反应互为逆过程，铜从阳极不断溶解，又在阴极不断沉积，溶液中 $\text{Cu}^{2+}$ 浓度基本保持不变，这也是电镀能持续、稳定进行的关键：阳极同时充当"金属供给源"。</p>
+<p><strong>问题解决应用：计算镀层质量</strong></p>
+<p>电镀的实际应用常需计算在给定电流和时间下能沉积多少金属，这依赖于法拉第电解定律。通过电荷量 $Q = It$（电流 $I$ 乘以时间 $t$）可求得转移的电子的摩尔数：</p>
+$$n_{e^-} = \frac{It}{F}$$
+<p>其中 $F = 96500\ \text{C/mol}$ 为法拉第常数。由于每摩尔 $\text{Cu}^{2+}$ 需要 2 摩尔电子才能被还原为铜，沉积的铜的摩尔数为 $n_{e^-}/2$，再乘以铜的摩尔质量（$63.5\ \text{g/mol}$）即可得镀层质量。</p>
+<p>例如，用 $2.0\ \text{A}$ 的电流镀铜 $1$ 小时（$3600\ \text{s}$）：</p>
+$$n_{e^-} = \frac{2.0 \times 3600}{96500} \approx 0.0746\ \text{mol}$$
+$$m_{\text{Cu}} = \frac{0.0746}{2} \times 63.5 \approx 2.37\ \text{g}$$
+<p>这类计算在工业电镀中用于精确控制镀层厚度，兼顾成本与防护效果。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch17: Electrochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

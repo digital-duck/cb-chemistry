@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Molar Concentration | Chemistry Ch12</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="molar-concentration">Molar Concentration</h2>
+<p><strong>定义</strong></p>
+<p>摩尔浓度（molar concentration），又称物质的量浓度，是描述溶液中溶质含量多少的核心物理量，符号为 $c$，单位是 $\text{mol/L}$（常写作 $\text{M}$）。它的定义是：单位体积溶液中所含溶质的物质的量：</p>
+$$c = \dfrac{n}{V}$$
+<p>其中 $n$ 是溶质的物质的量（单位：$\text{mol}$），$V$ 是溶液的体积（单位：$\text{L}$）。需要特别注意的是，分母是<strong>溶液</strong>的总体积，而不是溶剂的体积——这是初学者最容易出错的地方。例如，将 $1\ \text{mol}$ 的 NaCl 溶于水并定容至 $1\ \text{L}$，得到的是 $1\ \text{M}$ 的溶液；但如果只是把 $1\ \text{mol}$ NaCl 加入 $1\ \text{L}$ 水中，最终溶液体积会略大于 $1\ \text{L}$，浓度也会略低于 $1\ \text{M}$。</p>
+<p><strong>例题</strong></p>
+<p>实验室需要配制 $500\ \text{mL}$、浓度为 $0.20\ \text{M}$ 的 NaOH 溶液，需要称取多少克 NaOH 固体？（NaOH 摩尔质量 $= 40\ \text{g/mol}$）</p>
+<p>第一步，求所需物质的量：</p>
+$$n = c \times V = 0.20\ \text{mol/L} \times 0.500\ \text{L} = 0.10\ \text{mol}$$
+<p>第二步，换算为质量：</p>
+$$m = n \times M = 0.10\ \text{mol} \times 40\ \text{g/mol} = 4.0\ \text{g}$$
+<p>因此需称取 $4.0\ \text{g}$ NaOH，溶解后用容量瓶定容至 $500\ \text{mL}$。</p>
+<p><strong>问题解决应用</strong></p>
+<p>摩尔浓度真正的威力在于它把"看不见的粒子数目"变成了可以用移液管和容量瓶直接操作的体积。这在稀释计算中尤为常见，遵循守恒关系：</p>
+$$c_1 V_1 = c_2 V_2$$
+<p>例如，实验室只有 $6.0\ \text{M}$ 的浓盐酸原液，需要配制 $250\ \text{mL}$、$1.5\ \text{M}$ 的稀盐酸。代入公式：</p>
+$$6.0 \times V_1 = 1.5 \times 0.250$$
+<p>解得 $V_1 = 0.0625\ \text{L} = 62.5\ \text{mL}$。操作时应量取 $62.5\ \text{mL}$ 浓盐酸，缓慢加入适量水中（切记"酸入水"而非"水入酸"，以防放热飞溅），再定容至 $250\ \text{mL}$。掌握这一关系，是后续学习滴定、化学计量比反应以及配制标准溶液的基础。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch12: Kinetics (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>
