@@ -926,6 +926,13 @@
         "language": "en",
         "model": "sonnet",
         "file": "output/college.en/sonnet/pdf/concept_atom.pdf"
+      },
+      {
+        "target": "matter",
+        "level": "college",
+        "language": "en",
+        "model": "sonnet",
+        "file": "output/college.en/sonnet/pdf/concept_matter.pdf"
       }
     ]
   },
