@@ -11,6 +11,8 @@ MathJax = {
 };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
@@ -26,6 +28,12 @@ p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
 footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
       font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
 footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
 .page{max-width:780px;margin:0 auto;padding:40px 32px}
 section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
 section:first-of-type{border-top:none;padding-top:0}
@@ -35,19 +43,12 @@ section:first-of-type{border-top:none;padding-top:0}
 <div class="page">
   <main>
     <h2 id="atomic-mass-unit">Atomic Mass Unit</h2>
-<p>An atomic mass unit (symbol $\text{u}$, also called a dalton, $\text{Da}$) is a unit of mass defined as exactly $\frac{1}{12}$ the mass of a single, unbound carbon-12 atom in its ground state. This gives $1\ \text{u} = 1.6605 \times 10^{-27}\ \text{kg}$. The unit exists because atoms and molecules are far too light to measure conveniently in kilograms — a single hydrogen atom has a mass of about $1.67 \times 10^{-27}\ \text{kg}$, a number that is cumbersome to work with in every calculation. By anchoring the scale to carbon-12, chemists get a system where each element's atomic mass is close to a small whole number (hydrogen $\approx 1\ \text{u}$, oxygen $\approx 16\ \text{u}$), which makes mental estimation and stoichiometry far easier.</p>
-<p><strong>Worked example.</strong> Suppose you want to find the mass, in kilograms, of a single molecule of water, $\text{H}_2\text{O}$. Using standard atomic masses, hydrogen is $1.008\ \text{u}$ and oxygen is $16.00\ \text{u}$. The molecular mass is</p>
-$$
-2(1.008\ \text{u}) + 16.00\ \text{u} = 18.02\ \text{u}.
-$$
-<p>Converting to kilograms:</p>
-$$
-18.02\ \text{u} \times 1.6605 \times 10^{-27}\ \frac{\text{kg}}{\text{u}} = 2.992 \times 10^{-26}\ \text{kg}.
-$$
-<p>This is the actual mass of one water molecule — a number essentially unusable in lab work, which is exactly why chemists instead report $18.02\ \text{u}$.</p>
-<p><strong>Problem-solving application.</strong> The real power of the amu shows up once you scale up from a single molecule to a lab-sized sample. Chemists have chosen units so that a sample whose mass in grams equals its molecular mass in amu always contains the same fixed number of molecules, no matter what substance you're weighing. That number is fixed at $6.022 \times 10^{23}$, and it's not a coincidence — it's built into how the amu is defined relative to carbon-12. So if a problem gives you $18.02\ \text{g}$ of water, you immediately know it contains $6.022 \times 10^{23}$ water molecules, because $18.02\ \text{g}$ is exactly the water's molecular mass expressed in grams. If instead you had $9.01\ \text{g}$ — half that mass — you'd expect half as many molecules: $3.011 \times 10^{23}$. Mastering the amu means being comfortable converting between the mass of a substance you can weigh on a scale and the number of individual molecules it contains, which is the core move behind nearly every stoichiometry problem you'll encounter.</p>
+<p>The atomic mass unit (u), also called the dalton (Da), is the standard unit for expressing the mass of atoms and molecules. Because atoms are far too small to weigh in grams (a single hydrogen atom has a mass of about $1.67 \times 10^{-24}$ g), chemists use a relative scale instead. By international agreement, one atomic mass unit is defined as exactly $\frac{1}{12}$ the mass of a single carbon-12 atom, the most common isotope of carbon. This gives 1 u $= 1.6605 \times 10^{-24}$ g. Carbon-12 was chosen as the reference because it is stable, abundant, and easy to isolate in pure form, making it a reliable universal benchmark.</p>
+<p>Every element's atomic mass, listed on the periodic table, is measured in atomic mass units. Hydrogen has an atomic mass of about 1.008 u, oxygen about 16.00 u, and iron about 55.85 u. These values represent the weighted average mass of all naturally occurring isotopes of that element, accounting for how abundant each isotope is. For example, chlorine has two major isotopes, chlorine-35 and chlorine-37, occurring in roughly a 3:1 ratio. The weighted average, $(0.758 \times 35) + (0.242 \times 37) \approx 35.45$ u, is the value printed on the periodic table for chlorine.</p>
+<p>This system solves a practical problem: it lets chemists compare atoms and molecules on a common, convenient numerical scale without writing out extremely small numbers in grams every time. When you calculate the molar mass of a compound, such as water ($\mathrm{H_2O}$), you simply add the atomic masses: $2(1.008) + 16.00 = 18.02$ u. This same number, expressed in grams per mole, tells you the mass of one mole ($6.022 \times 10^{23}$ molecules) of water — a direct bridge between atomic-scale mass and lab-scale measurements you can weigh on a balance.</p>
+<p>Try this: calculate the atomic mass unit value for a molecule of carbon dioxide ($\mathrm{CO_2}$), using carbon at 12.01 u and oxygen at 16.00 u per atom. Adding one carbon and two oxygens gives $12.01 + 2(16.00) = 44.01$ u — the same number used to determine that 44.01 grams of $\mathrm{CO_2}$ constitutes one mole, a calculation performed routinely in stoichiometry problems throughout general chemistry.</p>
   </main>
-  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch2: Atoms, Molecules, and Ions (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>
 </body>
 </html>

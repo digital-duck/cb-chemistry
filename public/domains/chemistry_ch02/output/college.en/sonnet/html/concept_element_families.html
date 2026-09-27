@@ -11,6 +11,8 @@ MathJax = {
 };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
@@ -26,6 +28,12 @@ p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
 footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
       font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
 footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
 .page{max-width:780px;margin:0 auto;padding:40px 32px}
 section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
 section:first-of-type{border-top:none;padding-top:0}
@@ -35,12 +43,12 @@ section:first-of-type{border-top:none;padding-top:0}
 <div class="page">
   <main>
     <h2 id="element-families">Element Families</h2>
-<p>The periodic table is organized so that elements with similar chemical behavior fall into vertical columns called groups, or families. Membership in a family is determined by the number of valence electrons — the electrons in the outermost shell, which participate in bonding. Elements in the same family have the same valence electron count and therefore tend to form similar types of bonds, exhibit similar reactivity, and produce compounds with analogous formulas.</p>
-<p>Consider the alkali metals (Group 1: Li, Na, K, Rb, Cs). Each has exactly one valence electron. Because a single electron is relatively easy to lose, these elements are highly reactive metals that readily form +1 ions. Sodium reacting with water produces hydrogen gas and a hydroxide, and potassium does the same, more violently, because its valence electron is farther from the nucleus and even more loosely held. Compare this to the halogens (Group 17: F, Cl, Br, I), which have seven valence electrons — one shy of a stable octet. These elements readily gain an electron to form −1 ions, making them highly reactive nonmetals that react vigorously with the alkali metals themselves, forming stable ionic salts like NaCl.</p>
-<p>This pattern gives chemists real predictive power. Suppose you're asked to predict the formula for the compound formed between calcium (Group 2, two valence electrons, forms Ca²⁺) and chlorine (Group 17, forms Cl⁻). Since the charges must balance to zero overall, one calcium ion pairs with two chloride ions: CaCl₂. You didn't need to memorize this compound — you derived it from family membership alone. This same reasoning extends to predicting whether an untested element will be reactive, metallic, or likely to form colored compounds (a hallmark of the transition metals, Group 3–12, whose partially filled d-orbitals allow multiple oxidation states).</p>
-<p>Element families also explain trends across a period: moving left to right, valence electron count increases steadily, causing elements to shift from metallic and electron-losing (like sodium) to nonmetallic and electron-gaining (like chlorine). Recognizing a family, then, is not just classification — it's a shortcut for predicting reactivity, bonding behavior, and compound formulas without needing to look up experimental data for every individual element.</p>
+<p>The periodic table is not just a chart—it is a map of chemical behavior. Elements are organized into vertical columns called <strong>groups</strong> (or families), and elements within the same group share similar chemical properties because they have the same number of valence electrons (electrons in the outermost energy level). This shared electron configuration is what drives similar reactivity, bonding patterns, and physical trends.</p>
+<p>Several families are especially important. The <strong>alkali metals</strong> (Group 1: Li, Na, K, Rb, Cs, Fr) each have one valence electron, making them extremely reactive—they readily lose that electron to form +1 ions, reacting violently with water to produce hydrogen gas and a metal hydroxide. The <strong>alkaline earth metals</strong> (Group 2: Be, Mg, Ca, Sr, Ba, Ra) have two valence electrons and form +2 ions; they are reactive but less so than Group 1. The <strong>halogens</strong> (Group 17: F, Cl, Br, I, At) have seven valence electrons and are highly reactive nonmetals that readily gain one electron to form −1 ions, giving them strong oxidizing power. The <strong>noble gases</strong> (Group 18: He, Ne, Ar, Kr, Xe, Rn) have a full outer shell (eight valence electrons, or two for helium), making them chemically inert under most conditions—this is why they exist as stable, unreactive single atoms in nature.</p>
+<p><strong>Worked example:</strong> Predict whether potassium (K) or calcium (Ca) will react more vigorously with water. Potassium is in Group 1 (one valence electron, alkali metal); calcium is in Group 2 (two valence electrons, alkaline earth metal). Alkali metals lose their single valence electron more readily than alkaline earth metals lose two, so potassium reacts more violently with water, producing $2\text{K} + 2\text{H}_2\text{O} \rightarrow 2\text{KOH} + \text{H}_2$, often with visible flame, while calcium reacts more slowly and steadily.</p>
+<p><strong>Problem-solving application:</strong> Suppose an unknown element X reacts explosively with water and forms a +1 ion in compounds. Using periodic trends, you can confidently classify X as an alkali metal without needing to test every property individually—group membership predicts an entire suite of behaviors at once, which is the real power of organizing elements by family.</p>
   </main>
-  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch2: Atoms, Molecules, and Ions (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>
 </body>
 </html>

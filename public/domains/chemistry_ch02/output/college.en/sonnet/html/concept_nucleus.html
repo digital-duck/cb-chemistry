@@ -11,6 +11,8 @@ MathJax = {
 };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
@@ -26,6 +28,12 @@ p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
 footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
       font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
 footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
 .page{max-width:780px;margin:0 auto;padding:40px 32px}
 section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
 section:first-of-type{border-top:none;padding-top:0}
@@ -35,12 +43,15 @@ section:first-of-type{border-top:none;padding-top:0}
 <div class="page">
   <main>
     <h2 id="nucleus">Nucleus</h2>
-<p>The nucleus is the dense, positively charged core of an atom, containing protons and neutrons (collectively called nucleons) and accounting for more than 99.9% of the atom's mass while occupying only about 1/10,000th of its diameter. This extreme density arises because the nucleus is held together not by the same electromagnetic force that governs chemistry, but by the strong nuclear force — a short-range interaction powerful enough to overcome the mutual electrostatic repulsion between packed-together protons.</p>
-<p>Consider a carbon-12 nucleus: 6 protons and 6 neutrons confined within a radius of roughly $10^{-15}$ meters. The protons, all positively charged, should repel each other violently at that distance — Coulomb's law predicts a repulsive force strong enough to blow the nucleus apart in an instant. Yet carbon-12 is stable. The resolution is that the strong force, though it has a range of only about 1–2 femtometers, is roughly 100 times stronger than the electromagnetic force at nuclear distances, so it wins decisively at close range while contributing nothing between distant nuclei or atoms.</p>
-<p>This balance of forces explains a practical, testable pattern: nuclear stability. Plot the number of neutrons against the number of protons for all known stable isotopes, and you get a "band of stability" that curves above the line $N = Z$ for heavier elements. Light nuclei (like helium-4, with 2 protons and 2 neutrons) are stable with roughly equal numbers of protons and neutrons, because the short-range strong force needs only nearby neighbors to bind. But as more protons are added, the cumulative long-range Coulomb repulsion grows faster than the strong force can compensate for with immediate neighbors alone, so stable heavy nuclei (like lead-208, with 82 protons and 126 neutrons) require a surplus of neutrons — extra "glue" that adds strong-force attraction without adding electrostatic repulsion.</p>
-<p>This gives you a working tool: given an isotope's proton and neutron counts, you can predict whether it lies near the band of stability or is likely radioactive. An isotope far from the band — too many protons relative to neutrons, or vice versa — will tend to decay (via processes like beta decay) toward a more favorable ratio, converting a proton to a neutron or a neutron to a proton until the strong and electromagnetic forces reach a workable equilibrium.</p>
+<p>The nucleus is the small, dense core of an atom, located at its center and composed of two types of subatomic particles: protons, which carry a positive electric charge, and neutrons, which carry no charge. Although the nucleus accounts for more than 99.9% of an atom's mass, it occupies only about 1/10,000th of the atom's total volume — most of the atom is empty space occupied by the much lighter, negatively charged electrons that orbit far outside the nucleus. Every atom of a given element has the same number of protons in its nucleus (for example, every carbon nucleus has exactly 6 protons), while the number of neutrons can vary somewhat between atoms of the same element.</p>
+<p><strong>Worked example.</strong> Consider carbon, the element used in radiocarbon dating. A typical carbon nucleus has 6 protons and 6 neutrons, for 12 particles total. A rarer, heavier form of carbon has the same 6 protons but 8 neutrons instead of 6, for 14 particles total. In both cases, the protons and neutrons are held together tightly inside this tiny nucleus despite the fact that protons, all carrying the same positive charge, should repel one another; a powerful short-range attractive force between nuclear particles overcomes this repulsion at the extremely small distances inside the nucleus.</p>
+<p><strong>Problem-solving application.</strong> Nuclear composition determines whether an atom is stable or unstable. The ordinary carbon nucleus (6 protons, 6 neutrons) is stable and persists indefinitely, while the heavier carbon nucleus (6 protons, 8 neutrons) has an unbalanced ratio of neutrons to protons and is unstable: over time it spontaneously converts one of its neutrons into a proton, releasing energy in the process. Because this conversion happens at a fixed, measurable rate, scientists can use it as a natural clock. When a plant or animal dies, it stops taking in new carbon, and the unstable form gradually disappears from its remains while the stable form does not; by comparing how much of the unstable form is left, researchers estimate how long ago the organism died. This same logic — using the fixed composition and behavior of a nucleus to infer age, identity, or behavior of matter — underlies techniques ranging from archaeological dating to nuclear medicine.</p>
+<figure class="cb-figure">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Stylised_Lithium_Atom.svg" alt="Diagram of an atom showing a central nucleus with protons and neutrons, surrounded by electron shells" class="cb-figure-img">
+  <figcaption>A simplified model of an atom, showing the dense central nucleus (protons and neutrons) surrounded by orbiting electrons. Source: <a href="https://commons.wikimedia.org/wiki/File:Stylised_Lithium_Atom.svg">Wikimedia Commons</a>, Public Domain.</figcaption>
+</figure>
   </main>
-  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch2: Atoms, Molecules, and Ions (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>
 </body>
 </html>

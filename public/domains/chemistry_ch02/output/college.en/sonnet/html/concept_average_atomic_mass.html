@@ -11,6 +11,8 @@ MathJax = {
 };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
@@ -26,6 +28,12 @@ p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
 footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
       font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
 footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
 .page{max-width:780px;margin:0 auto;padding:40px 32px}
 section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
 section:first-of-type{border-top:none;padding-top:0}
@@ -35,19 +43,23 @@ section:first-of-type{border-top:none;padding-top:0}
 <div class="page">
   <main>
     <h2 id="average-atomic-mass">Average Atomic Mass</h2>
-<p>Most elements exist in nature as a mixture of isotopes — atoms with the same number of protons but different numbers of neutrons, and therefore different masses. The average atomic mass listed on the periodic table is not the mass of any single atom; it is a weighted average of the masses of all naturally occurring isotopes of that element, weighted by how abundant each isotope actually is in nature. This distinction matters: you will never find a chlorine atom with a mass of 35.45 amu, yet that is the number printed on the periodic table for chlorine.</p>
-<p><strong>Worked example.</strong> Chlorine occurs as two isotopes: chlorine-35 (mass 34.97 amu, natural abundance 75.76%) and chlorine-37 (mass 36.97 amu, natural abundance 24.24%). To find the average atomic mass, convert each percentage to a decimal fraction, multiply by the isotope's mass, and add the results:</p>
+<p>The atomic mass listed on the periodic table for any element is not the mass of a single atom — it is a <strong>weighted average</strong> of the masses of all naturally occurring isotopes of that element, weighted by how abundant each isotope is in nature. Isotopes of an element have the same number of protons but different numbers of neutrons, so they differ slightly in mass. Because a natural sample of an element is a mixture of these isotopes in fixed proportions, chemists report a single average value that reflects what you would actually weigh out in the lab.</p>
+<p>The calculation is straightforward: multiply each isotope's mass by its fractional abundance (as a decimal), then sum the results.</p>
 $$
-(0.7576)(34.97) + (0.2424)(36.97) = 26.50 + 8.964 = 35.46 \ \text{amu}
+\text{Average atomic mass} = \sum_i (\text{mass of isotope}_i \times \text{fractional abundance}_i)
 $$
-<p>This matches the periodic table value of 35.45 amu (small rounding differences come from the precision of the input data). Notice that the result is pulled closer to chlorine-35's mass, because that isotope is roughly three times more abundant.</p>
-<p><strong>Problem-solving application.</strong> This weighted-average logic runs in reverse whenever you're given an element's average atomic mass and asked to find isotopic abundances. Suppose boron has two isotopes, boron-10 (10.01 amu) and boron-11 (11.01 amu), and its average atomic mass is 10.81 amu. Let $x$ be the fractional abundance of boron-10; then $(1-x)$ is the abundance of boron-11:</p>
+<p><strong>Worked example.</strong> Chlorine occurs naturally as two isotopes: chlorine-35 (mass = 34.969 amu, abundance = 75.77%) and chlorine-37 (mass = 36.966 amu, abundance = 24.23%). Applying the formula:</p>
 $$
-10.01x + 11.01(1-x) = 10.81
+(34.969)(0.7577) + (36.966)(0.2423) = 26.496 + 8.960 = 35.456 \text{ amu}
 $$
-<p>Solving: $11.01 - 1.00x = 10.81$, so $x = 0.20$. Boron-10 makes up about 20% of natural boron, and boron-11 makes up 80%. This same two-equation approach generalizes to any element with two dominant isotopes, and it's the method mass spectrometry data is routinely reduced to when chemists report isotopic compositions. The key skill is recognizing that "average atomic mass" is always an abundance-weighted sum, never a simple arithmetic mean of isotope masses — a common error is dividing by the number of isotopes instead of weighting by how common each one is.</p>
+<p>This matches the periodic table value of 35.45 amu for chlorine — and explains why it isn't a whole number, unlike the mass of any individual atom.</p>
+<p><strong>Problem-solving application.</strong> This calculation is reversible: if you know the average atomic mass and the masses of two isotopes, you can solve for the unknown abundances. Suppose copper has two isotopes, Cu-63 (62.930 amu) and Cu-65 (64.928 amu), and its average atomic mass is 63.546 amu. Let $x$ be the fractional abundance of Cu-63, so $(1-x)$ is the abundance of Cu-65:</p>
+$$
+62.930x + 64.928(1-x) = 63.546
+$$
+<p>Solving gives $x \approx 0.692$, meaning copper is about 69.2% Cu-63 and 30.8% Cu-65 — consistent with measured values. This algebraic reversal is a common exam question and also underlies how mass spectrometry data (which gives isotope masses and relative peak heights) is converted into the atomic mass reported on the periodic table.</p>
   </main>
-  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch2: Atoms, Molecules, and Ions (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>
 </body>
 </html>

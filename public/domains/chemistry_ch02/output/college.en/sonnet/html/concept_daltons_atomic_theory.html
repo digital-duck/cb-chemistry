@@ -11,6 +11,8 @@ MathJax = {
 };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
@@ -26,6 +28,12 @@ p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
 footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
       font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
 footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
 .page{max-width:780px;margin:0 auto;padding:40px 32px}
 section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
 section:first-of-type{border-top:none;padding-top:0}
@@ -35,12 +43,12 @@ section:first-of-type{border-top:none;padding-top:0}
 <div class="page">
   <main>
     <h2 id="dalton-s-atomic-theory">Dalton's Atomic Theory</h2>
-<p>John Dalton's atomic theory (1803–1808) is the foundational chemical model that explains how matter combines. It rests on four claims: (1) all matter is composed of indivisible particles called atoms; (2) atoms of a given element are identical in mass and properties, while atoms of different elements differ; (3) compounds form when atoms of different elements combine in fixed, small whole-number ratios; and (4) chemical reactions rearrange atoms but never create, destroy, or transmute them.</p>
-<p>Dalton did not invent this from pure speculation — he built it to explain two experimental patterns already known in his time: the law of conservation of mass (Lavoisier) and the law of definite proportions (Proust), which showed that a given compound always contains the same elements in the same mass ratio. Dalton added a third pattern, the law of multiple proportions, based on his own analysis of gases: when two elements form more than one compound, the masses of one element that combine with a fixed mass of the other stand in a ratio of small whole numbers.</p>
-<p><strong>Worked example.</strong> Carbon and oxygen form two distinct compounds: carbon monoxide (CO) and carbon dioxide (CO₂). Suppose 12 g of carbon combines with 16 g of oxygen in one compound and with 32 g of oxygen in the other. Fixing the mass of carbon at 12 g, the oxygen masses are 16 g and 32 g — a ratio of 16:32, or 1:2, a small whole-number ratio. Dalton's theory explains this instantly: one carbon atom bonds with one oxygen atom in CO, and one carbon atom bonds with two oxygen atoms in CO₂. The masses must fall in a whole-number ratio because atoms themselves are indivisible units — you cannot combine "1.37 atoms" of oxygen with one atom of carbon.</p>
-<p><strong>Problem-solving application.</strong> Given mass-ratio data for two compounds of the same two elements, you can test whether they are consistent with atomic theory and even infer their formulas — this is simply the law of multiple proportions applied in reverse. Take iron and chlorine: a fixed mass of 55.85 g of iron combines with two different masses of chlorine, depending on the compound. If compound A has an Fe:Cl mass ratio of 55.85:35.45 and compound B has 55.85:70.90, then comparing the chlorine masses alone gives 35.45:70.90, which reduces to 1:2. That small whole-number ratio tells you compound A must have one Cl atom per Fe atom (FeCl₂-type) and compound B must have twice as many (FeCl₃-type). This is the reasoning tool underlying every empirical-formula and mole-ratio calculation in modern chemistry.</p>
+<p>In 1808, John Dalton proposed the first modern atomic theory to explain a pattern chemists had already observed: elements always combine in the same fixed proportions by mass. Dalton's theory rests on four postulates. First, all matter consists of tiny, indivisible particles called atoms — this is the theory's central idea. Second, all atoms of a given element are identical in mass and properties, while atoms of different elements differ. Third, compounds form when atoms of different elements combine in simple, fixed whole-number ratios. Fourth, atoms are neither created nor destroyed in chemical reactions — they are only rearranged. This last postulate explains why the total mass before and after a reaction stays the same: if a reaction simply reshuffles atoms rather than creating or destroying them, no mass can appear or vanish.</p>
+<p>Consider water and hydrogen peroxide as a worked example. Water is H$_2$O, with a hydrogen-to-oxygen mass ratio of about 1:8. Hydrogen peroxide is H$_2$O$_2$, with a ratio of about 1:16 — exactly double. Both compounds are built from the same two kinds of atoms, combined in different fixed whole-number ratios (2:1 versus 2:2, which simplifies to 1:1). That the ratios differ by a clean whole-number factor, rather than varying continuously, only makes sense if matter is made of discrete, countable atoms rather than some infinitely divisible substance.</p>
+<p>For problem-solving, Dalton's postulates are the reasoning tool behind mass calculations in chemical reactions. If 10 g of hydrogen reacts completely with 80 g of oxygen to form water, the conservation postulate guarantees the product has a mass of exactly 90 g — no more, no less — because every atom that entered the reaction must appear in the products, just rearranged into a new compound. This same reasoning lets you predict exact quantities of reactants and products in any reaction, not just qualitative outcomes: count the atoms on each side, and the masses must balance.</p>
+<p>Modern science has added detail to Dalton's model — atoms turn out to have internal structure, and not every atom of a given element is perfectly identical in mass. Yet the core insight, that chemical reactions are the rearrangement of conserved, discrete units, remains the foundation of quantitative chemistry.</p>
   </main>
-  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch2: Atoms, Molecules, and Ions (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>
 </body>
 </html>

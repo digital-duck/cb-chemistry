@@ -11,6 +11,8 @@ MathJax = {
 };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
@@ -26,6 +28,12 @@ p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
 footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
       font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
 footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
 .page{max-width:780px;margin:0 auto;padding:40px 32px}
 section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
 section:first-of-type{border-top:none;padding-top:0}
@@ -35,11 +43,15 @@ section:first-of-type{border-top:none;padding-top:0}
 <div class="page">
   <main>
     <h2 id="electron">Electron</h2>
-<p>An electron is a subatomic particle carrying a single unit of negative electric charge, approximately $-1.602 \times 10^{-19}\text{ C}$, and a mass of about $9.109 \times 10^{-31}\text{ kg}$ — roughly 1/1836 the mass of a proton. Electrons occupy the space around an atomic nucleus, and their arrangement determines nearly every chemical and electrical property of matter: how atoms bond, how materials conduct electricity, and how light interacts with substances. Unlike a planet orbiting the sun, an electron does not follow a fixed path; quantum mechanics describes its location only probabilistically, in terms of regions called orbitals where it is likely to be found.</p>
-<p><strong>Worked example.</strong> Consider a neutral carbon atom, atomic number 6, meaning it has 6 protons and therefore 6 electrons. These electrons fill orbitals in order of increasing energy: 2 electrons occupy the innermost shell, and the remaining 4 occupy the second shell. This second-shell arrangement of 4 electrons — not enough to fill the shell, but more than half full — is exactly why carbon can form four bonds with other atoms, making it the backbone of organic chemistry. Contrast this with neon (atomic number 10), whose second shell is completely full with 8 electrons, leaving it chemically inert. The number of outer, or "valence," electrons is the single most predictive fact about how an element behaves.</p>
-<p><strong>Problem-solving application.</strong> Suppose you are asked to predict whether magnesium (atomic number 12) will tend to lose or gain electrons when forming a compound. Its electron arrangement is 2, 8, 2 — two electrons sit alone in the outermost shell. Removing those two is easier than acquiring six more to fill the shell, so magnesium loses them, forming a $\text{Mg}^{2+}$ ion. This same reasoning — count the valence electrons, then judge whether losing or gaining fewer electrons gets the atom to a full outer shell — lets you predict the charge and reactivity of almost any element on the periodic table, and explains why table salt forms as $\text{Na}^+\text{Cl}^-$ rather than some other combination. This predictive power is what makes the electron, despite its tiny mass, central to chemistry, materials science, and electrical engineering alike.</p>
+<p>An electron is a subatomic particle carrying one unit of negative electric charge ($-1.602 \times 10^{-19}$ C) and a mass of about $9.109 \times 10^{-31}$ kg — roughly 1/1836 the mass of a proton. Electrons occupy the space surrounding an atom's nucleus, held there by their electrical attraction to the positively charged protons inside it. Because electrons determine how atoms interact, bond, and exchange energy, they are the particles responsible for essentially all chemistry, from forming molecules to conducting electricity.</p>
+<p>In a neutral atom, the number of electrons always equals the number of protons (the atomic number), so the atom's positive and negative charges balance exactly. Consider sodium (atomic number 11): a neutral sodium atom has 11 electrons balancing its 11 protons. Electrons are not all held with equal strength, though — those farther from the nucleus are more loosely bound and easier to remove. Sodium's outermost electron is held so loosely that the atom readily loses it, becoming a sodium ion, $\text{Na}^+$, with 11 protons but only 10 electrons — one unit of net positive charge. This is why sodium reacts vigorously with elements like chlorine to form table salt: sodium gives up its loosely held electron, and chlorine takes it.</p>
+<p>This relationship between electron count and charge is the key problem-solving tool for working with ions: to find an ion's charge, compare its electron count to its proton count. Consider oxygen (atomic number 8, so 8 protons in a neutral atom). In compounds like MgO, oxygen gains two electrons, giving it 10 electrons total. With 8 protons and 10 electrons, the net charge is $8 - 10 = -2$, written $\text{O}^{2-}$. The same subtraction — protons minus electrons — works for any ion: a magnesium atom (12 protons) that loses two electrons becomes $\text{Mg}^{2+}$, with charge $12 - 10 = +2$. Practicing this calculation — starting from an element's atomic number, then adding or subtracting electrons to match a described ion — is the core skill for connecting atomic structure to the ions atoms form.</p>
+<figure class="cb-figure">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Electron_shell_011_Sodium.svg" alt="Bohr model diagram of a sodium atom showing electron shells with 2, 8, and 1 electrons" class="cb-figure-img">
+  <figcaption>Diagram of a sodium atom, showing its 11 electrons arranged around the nucleus, with a single electron farthest out and most easily lost. Source: <a href="https://commons.wikimedia.org/wiki/File:Electron_shell_011_Sodium.svg">Wikimedia Commons</a>, Public Domain.</figcaption>
+</figure>
   </main>
-  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch2: Atoms, Molecules, and Ions (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>
 </body>
 </html>

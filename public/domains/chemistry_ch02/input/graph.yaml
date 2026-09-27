@@ -16,6 +16,9 @@ primitives:
       isotopes.
     tier: 0
   chemical_bond:
+    diagram:
+      type: flowchart LR
+      hint: "covalent bond: two atoms sharing electron pair (shown between them) vs ionic bond: one atom transfers electron to other (arrow), resulting in + and - ions"
     defines: An attractive force between atoms or ions that holds them together in a molecule or crystal.
     tier: 0
 concepts:
@@ -55,6 +58,9 @@ concepts:
     - element
     tier: 1
   atom:
+    diagram:
+      type: image
+      hint: "Bohr model of the atom showing nucleus (protons + neutrons) at center with electron shells orbiting — Wikimedia Commons labeled diagram"
     defines: The smallest unit of an element that can participate in a chemical change, as defined by
       Dalton's atomic theory.
     composed_of:
@@ -249,4 +255,5 @@ applications:
     needs:
     - element_families
     - ion
+    - chemical_bond
     tier: 9

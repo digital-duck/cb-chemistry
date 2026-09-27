@@ -11,6 +11,8 @@ MathJax = {
 };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
@@ -26,6 +28,12 @@ p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
 footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
       font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
 footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
 .page{max-width:780px;margin:0 auto;padding:40px 32px}
 section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
 section:first-of-type{border-top:none;padding-top:0}
@@ -35,19 +43,18 @@ section:first-of-type{border-top:none;padding-top:0}
 <div class="page">
   <main>
     <h2 id="periodic-table">Periodic Table</h2>
-<p><strong>Definition.</strong> The periodic table is a systematic arrangement of all known chemical elements, organized by increasing atomic number (the number of protons in an atom's nucleus) and grouped by shared chemical properties. Elements are arranged in rows called <em>periods</em> and columns called <em>groups</em>. Moving left to right across a period, atoms gain one proton; dropping to the next period, a new electron shell begins filling. Elements in the same group share the same number of valence electrons — the outermost electrons that drive chemical bonding — which is why they exhibit similar reactivity patterns.</p>
-<p>The table's power lies in the <em>periodic law</em>: properties of elements repeat in a predictable pattern as atomic number increases. This periodicity is a direct consequence of quantum mechanics and electron shell structure, not an arbitrary organizational choice.</p>
-<p><strong>Key trends to know.</strong> Across a period (left → right): atomic radius shrinks (more protons pull electrons closer), electronegativity increases, and ionization energy increases. Down a group (top → bottom): atomic radius grows, electronegativity decreases, and reactivity of metals increases while reactivity of nonmetals decreases. The noble gases (Group 18) sit at the far right — their full valence shells make them chemically inert under ordinary conditions.</p>
-<p><strong>Worked example.</strong> Predict which element is more reactive: sodium (Na, Group 1, Period 3) or potassium (K, Group 1, Period 4).</p>
-<p>Both are alkali metals with one valence electron. Moving down Group 1 from Na to K, the valence electron sits farther from the nucleus and is shielded by more inner electron shells. This makes it easier to remove — lower ionization energy. Therefore, potassium is <em>more reactive</em> than sodium. This prediction matches observation: potassium reacts violently with water, while sodium reacts vigorously but less explosively.</p>
-<p><strong>Problem-solving application.</strong> When asked to compare two unknown elements X (Period 2, Group 17) and Y (Period 3, Group 17):</p>
-<li>Both are halogens — they want one electron to complete their valence shell.</li>
-<li>X is higher in the group → smaller radius, higher electronegativity.</li>
-<li>X pulls electrons more strongly → X is the better oxidizing agent.</li>
-<li>Therefore X is more reactive as a nonmetal.</li>
-<p>The periodic table turns isolated facts into a navigable map: position encodes behavior, and behavior follows from electron structure.</p>
+<p>The periodic table organizes all known chemical elements by increasing atomic number, arranged so that elements with similar chemical behavior fall into the same vertical column, called a <strong>group</strong>. Rows are called <strong>periods</strong>. This arrangement isn't arbitrary — it reflects the underlying electron configuration of each atom. Elements in the same group share the same number of valence electrons (electrons in the outermost shell), which is the primary driver of chemical reactivity. Moving left to right across a period, protons and electrons are added one at a time, and predictable trends emerge: atomic radius shrinks, ionization energy (energy needed to remove an electron) rises, and electronegativity (an atom's pull on shared electrons) increases. Moving down a group, atomic radius grows because electrons occupy shells farther from the nucleus.</p>
+<p><strong>Worked example:</strong> Compare sodium (Na, atomic number 11) and chlorine (Cl, atomic number 17), both in Period 3. Na has one valence electron and readily loses it to form Na⁺, while Cl has seven valence electrons and readily gains one to form Cl⁻, achieving a stable octet. This electron transfer is why NaCl forms an ionic bond. Now compare Na to potassium (K, atomic number 19), directly below it in Group 1. K has the same single valence electron but an additional electron shell, so its outer electron is farther from the nucleus and less tightly held — K loses its electron more easily than Na, making K more reactive.</p>
+<p><strong>Problem-solving application:</strong> Given an unfamiliar element's position on the table, you can predict its behavior without memorizing individual properties. For instance, an element in Group 17 (the halogens), regardless of period, will need one electron to complete its outer shell and will tend to form a −1 ion. An element in Group 2 will lose two electrons to form a +2 ion. This predictive power is the table's central practical value: it lets chemists forecast bonding patterns, reactivity, and even physical properties (melting point, density) for elements they've never directly studied, simply from position.</p>
+<pre class="mermaid">flowchart LR
+    A["Atomic number increases left to right"] --> B["Valence electrons determine group"]
+    B --> C["Same group = similar reactivity"]
+    A --> D["Ionization energy increases left to right"]
+    A --> E["Atomic radius decreases left to right"]
+    B --> F["Atomic radius increases top to bottom"]</pre>
+<p><em>This diagram shows how position on the periodic table (row and column) maps to predictable trends in atomic properties and reactivity.</em></p>
   </main>
-  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch2: Atoms, Molecules, and Ions (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>
 </body>
 </html>

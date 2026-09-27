@@ -487,7 +487,6 @@ concepts:
     defines: A pure substance composed of a single type of atom that cannot be broken
       down into simpler substances by chemical changes.
     composed_of:
-    - atom
     - pure_substance
     tier: 2
     source_domain: chemistry_ch01

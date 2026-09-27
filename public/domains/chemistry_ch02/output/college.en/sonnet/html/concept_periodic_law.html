@@ -11,6 +11,8 @@ MathJax = {
 };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
@@ -26,6 +28,12 @@ p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
 footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
       font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
 footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
 .page{max-width:780px;margin:0 auto;padding:40px 32px}
 section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
 section:first-of-type{border-top:none;padding-top:0}
@@ -35,11 +43,12 @@ section:first-of-type{border-top:none;padding-top:0}
 <div class="page">
   <main>
     <h2 id="periodic-law">Periodic Law</h2>
-<p>The periodic law states that when elements are arranged by increasing atomic number, their chemical and physical properties recur at regular, predictable intervals. This recurrence is not coincidental — it reflects the underlying pattern in which electrons fill atomic orbitals. Elements in the same column (group) of the periodic table have the same number of valence electrons, which is why they display similar bonding behavior, reactivity, and typical ion charges. Properties such as atomic radius, ionization energy, and electronegativity all show smooth, periodic trends across a row and down a column, because each of these properties depends directly on how strongly the nucleus attracts the outermost electrons and how many electron shells shield that attraction.</p>
-<p><strong>Worked example.</strong> Consider ionization energy — the energy required to remove one electron from a neutral atom. Moving left to right across a period (say, from sodium to argon), ionization energy generally increases, because the nuclear charge increases while the number of shielding shells stays the same, so each added proton pulls the valence electrons in more tightly. Moving down a group (say, from lithium to cesium), ionization energy decreases, because each successive element adds a new shell, and the valence electron sits farther from the nucleus with more inner-shell shielding. This is why cesium loses an electron far more easily than lithium, despite both being in Group 1.</p>
-<p><strong>Problem-solving application.</strong> Suppose you're given an unfamiliar element and told only that it has a very low first ionization energy and a large atomic radius. Using periodic law, you can predict where it sits: low ionization energy and large radius both point toward the lower-left region of the table — an alkali or alkaline-earth metal in a high period. You can further predict it will readily lose one or two electrons to form a stable cation, react vigorously with water or halogens, and form a basic oxide. This predictive power is the practical payoff of the periodic law: rather than memorizing properties element by element, you can infer unknown behavior from an element's position, then verify it against real data — the same reasoning chemists used to predict the existence and properties of undiscovered elements before they were isolated in the lab.</p>
+<p>The Periodic Law states that when elements are arranged in order of increasing atomic number, their physical and chemical properties recur in a regular, predictable pattern. This periodicity is the direct consequence of how electrons fill successive shells and subshells: elements in the same column (group) have the same number of valence electrons, so they tend to form similar types of bonds and exhibit similar reactivity, even though their atomic sizes and masses differ substantially.</p>
+<p>Consider the alkali metals — lithium, sodium, potassium. Each has a single valence electron in an s-orbital, so each reacts vigorously with water to form a hydroxide and hydrogen gas, and each readily loses one electron to form a +1 ion. Move one group to the right, into the alkaline earth metals (beryllium, magnesium, calcium), and each element now has two valence electrons, forms +2 ions, and reacts less violently. This recurring pattern — not identical behavior, but a systematic trend — is what "periodic" means: properties repeat at regular intervals as atomic number increases, not that every element behaves identically.</p>
+<p>The law also predicts trends that cut across the entire table, not just within a group. Atomic radius shrinks moving left to right across a period (increasing nuclear charge pulls electrons in more tightly) and grows moving down a group (each row adds a new occupied shell). Ionization energy and electronegativity follow the reverse trend: they generally rise across a period and fall down a group, because it becomes progressively harder to remove an electron from an atom that holds its valence shell tightly.</p>
+<p>These trends make the periodic table a genuine problem-solving tool rather than a reference chart to memorize. Given two elements' positions, a student can reason out, without looking up data, which one has the larger atomic radius, which loses an electron more easily, or which forms a more stable ionic compound with a given anion. For instance, to predict whether magnesium or calcium reacts more vigorously with water, note that calcium sits below magnesium in the same group — larger atomic radius, more loosely held valence electrons, weaker attraction to the nucleus — so calcium reacts more vigorously. This kind of positional reasoning, built directly from the Periodic Law, is what allows chemists to predict the behavior of an unfamiliar element from its address on the table alone.</p>
   </main>
-  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch2: Atoms, Molecules, and Ions (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>
 </body>
 </html>

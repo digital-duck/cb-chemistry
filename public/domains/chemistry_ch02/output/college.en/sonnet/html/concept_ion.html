@@ -11,6 +11,8 @@ MathJax = {
 };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
@@ -26,6 +28,12 @@ p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
 footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
       font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
 footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
 .page{max-width:780px;margin:0 auto;padding:40px 32px}
 section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
 section:first-of-type{border-top:none;padding-top:0}
@@ -35,12 +43,12 @@ section:first-of-type{border-top:none;padding-top:0}
 <div class="page">
   <main>
     <h2 id="ion">Ion</h2>
-<p>An ion is an atom or molecule that has gained or lost one or more electrons, giving it a net electric charge. In a neutral atom, the number of protons (positive charge) equals the number of electrons (negative charge), so the charges cancel. Remove an electron and the atom becomes positively charged, since it now has more protons than electrons; this is called a cation. Add an electron and the atom becomes negatively charged, an anion, since electrons now outnumber protons. The number of protons never changes during ionization — that would make it a different element entirely — only the electron count shifts.</p>
-<p>Consider sodium (Na), which has 11 protons and, in its neutral state, 11 electrons. Sodium readily loses its single outermost electron to achieve a stable, filled-shell configuration like neon. It becomes Na⁺, with 11 protons and only 10 electrons, giving a net charge of +1. Chlorine (Cl), with 17 protons and 17 electrons, tends to gain one electron to fill its outer shell like argon, becoming Cl⁻, with 17 protons and 18 electrons, a net charge of −1. These two ions attract each other electrostatically and combine to form table salt, NaCl — a compound held together by an ionic bond, which is fundamentally the attraction between oppositely charged ions.</p>
-<p>To predict whether an atom forms a cation or anion, and how many charges it carries, look at its position on the periodic table. Elements in Group 1 (like Na, K) lose one electron to form +1 ions; Group 2 elements (like Mg, Ca) lose two electrons to form +2 ions. Elements in Group 17 (like Cl, F) gain one electron to form −1 ions; Group 16 elements (like O, S) gain two electrons to form −2 ions. This pattern reflects each element's drive to reach a stable electron configuration, usually a filled outer shell of eight electrons (the octet rule).</p>
-<p><strong>Problem-solving application</strong>: Suppose you need to determine the charge and electron count of a calcium ion, Ca²⁺, given that neutral calcium has 20 protons and 20 electrons. Since the ion carries a +2 charge, it has 2 fewer electrons than protons: $20 - 2 = 18$ electrons, matching the stable configuration of argon. This same subtraction logic — protons minus net charge equals electron count — applies to any ion you encounter, whether predicting formulas for ionic compounds or balancing charges in a chemical equation.</p>
+<p>An <strong>ion</strong> is an atom or molecule that has gained or lost one or more electrons, giving it a net electric charge. A neutral atom has equal numbers of protons (positive) and electrons (negative), so their charges cancel. Remove an electron and the atom becomes positively charged — a <strong>cation</strong>. Add an electron and it becomes negatively charged — an <strong>anion</strong>. The charge is written as a superscript: $\text{Na}^+$ has lost one electron, $\text{Cl}^-$ has gained one, and $\text{Ca}^{2+}$ has lost two.</p>
+<p>Ion formation is driven by an atom's tendency to reach a stable, filled outer electron shell — the same principle behind the octet rule. Sodium (atomic number 11) has one lone electron in its outermost shell; losing it leaves a full shell underneath, producing $\text{Na}^+$. Chlorine has seven outer electrons; gaining one completes its shell to eight, producing $\text{Cl}^-$. Because oppositely charged ions attract, $\text{Na}^+$ and $\text{Cl}^-$ combine in a fixed ratio to form the ionic compound sodium chloride, table salt.</p>
+<p><strong>Worked example:</strong> Predict the ion formed by magnesium (atomic number 12) and by oxygen (atomic number 8). Magnesium's electron configuration is $2, 8, 2$ — two electrons sit alone in the outer shell, so magnesium loses both to become $\text{Mg}^{2+}$. Oxygen's configuration is $2, 6$ — it needs two more electrons to complete its outer shell, so it gains two to become $\text{O}^{2-}$. Because charges must balance in a neutral compound, one $\text{Mg}^{2+}$ pairs with one $\text{O}^{2-}$ to form MgO.</p>
+<p><strong>Problem-solving application:</strong> Ion charge and formula prediction come up constantly in chemistry — writing correct compound formulas, balancing equations, and predicting solubility all depend on it. Try this: aluminum (atomic number 13, configuration $2, 8, 3$) reacts with sulfur (atomic number 16, configuration $2, 8, 6$). Aluminum loses 3 electrons to form $\text{Al}^{3+}$; sulfur gains 2 to form $\text{S}^{2-}$. To balance total charge, you need the lowest common multiple of 3 and 2, which is 6 — so two $\text{Al}^{3+}$ ions (total $+6$) pair with three $\text{S}^{2-}$ ions (total $-6$), giving the formula $\text{Al}_2\text{S}_3$. This charge-balancing strategy — matching total positive and negative charge to zero — is the standard method for writing any ionic formula.</p>
   </main>
-  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch2: Atoms, Molecules, and Ions (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>
 </body>
 </html>

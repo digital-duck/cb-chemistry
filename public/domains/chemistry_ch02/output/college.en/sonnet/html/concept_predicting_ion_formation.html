@@ -11,6 +11,8 @@ MathJax = {
 };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
@@ -26,6 +28,12 @@ p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
 footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
       font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
 footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
 .page{max-width:780px;margin:0 auto;padding:40px 32px}
 section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
 section:first-of-type{border-top:none;padding-top:0}
@@ -35,11 +43,13 @@ section:first-of-type{border-top:none;padding-top:0}
 <div class="page">
   <main>
     <h2 id="predicting-ion-formation">Predicting Ion Formation</h2>
-<p>Atoms form ions—charged particles—by gaining or losing electrons to reach a more stable electron configuration, typically one resembling the nearest noble gas. Metals, which have low ionization energies, tend to lose electrons and form cations (positive ions). Nonmetals, which have high electron affinities, tend to gain electrons and form anions (negative ions). The number of electrons an element gains or loses is governed largely by its position in the periodic table: elements in Groups 1, 2, and 13 typically lose 1, 2, or 3 electrons respectively, while elements in Groups 15, 16, and 17 typically gain 3, 2, or 1 electrons respectively, in each case to achieve a filled outer shell of eight electrons (the octet rule).</p>
-<p><strong>Worked example.</strong> Consider sodium (Na, atomic number 11) and chlorine (Cl, atomic number 17). Sodium's electron configuration is $1s^2 2s^2 2p^6 3s^1$—one lone electron in its outer shell. Losing that electron gives sodium the stable configuration of neon ($1s^2 2s^2 2p^6$) and a charge of $+1$, so sodium forms $\text{Na}^+$. Chlorine's configuration is $1s^2 2s^2 2p^6 3s^2 3p^5$—one electron short of a full outer shell. Gaining one electron gives chlorine the configuration of argon and a charge of $-1$, so chlorine forms $\text{Cl}^-$. The oppositely charged ions then attract each other, forming the ionic compound NaCl.</p>
-<p><strong>Problem-solving application.</strong> To predict the charge an element's ion will most likely adopt, first identify its group number, then count how many electrons must be added or removed to reach the nearest noble gas configuration—whichever direction requires fewer electrons moved. For example, magnesium (Group 2) loses 2 electrons to form $\text{Mg}^{2+}$ rather than gaining 6 to fill its shell, because losing 2 electrons requires far less energy. Oxygen (Group 16) gains 2 electrons to form $\text{O}^{2-}$ rather than losing 6. This reasoning lets you predict not only the charge of a monatomic ion but also the likely formula of an ionic compound: since compounds are electrically neutral overall, magnesium ($+2$) and oxygen ($-2$) combine in a 1:1 ratio to form MgO, while magnesium and chlorine ($-1$ each) combine in a 1:2 ratio to form $\text{MgCl}_2$—balancing total positive and negative charge to zero.</p>
+<p>Atoms form ions to achieve a more stable electron configuration, typically one that matches the nearest noble gas (a full outer shell of eight electrons, or two for elements near helium). Whether an atom loses, gains, or shares electrons depends on its position on the periodic table, which determines how strongly its nucleus attracts electrons and how many electrons it needs to reach that stable configuration.</p>
+<p>Metals, found on the left side of the periodic table, have few valence electrons (1–3) and low ionization energies — it takes relatively little energy to remove these electrons. Losing them empties the outer shell, revealing the full shell beneath and forming a stable cation. Sodium (Na, group 1, one valence electron) loses that single electron to form $\text{Na}^+$, matching the electron configuration of neon. Magnesium (group 2) loses two electrons to form $\text{Mg}^{2+}$.</p>
+<p>Nonmetals, on the right side, have many valence electrons (5–7) and high electron affinities — they readily accept electrons to complete their outer shell. Chlorine (group 17, seven valence electrons) gains one electron to form $\text{Cl}^-$, achieving the argon configuration. Oxygen (group 16) gains two electrons to form $\text{O}^{2-}$.</p>
+<p>A reliable predictive rule: the charge a main-group metal or nonmetal ion adopts is often set by its group number. For groups 1, 2, and 13, the ion charge equals the group number (+1, +2, +3). For groups 15, 16, and 17, the ion charge equals the group number minus 8 (−3, −2, −1). Transition metals are less predictable, since they can lose electrons from more than one subshell, giving elements like iron multiple stable charges ($\text{Fe}^{2+}$ and $\text{Fe}^{3+}$).</p>
+<p>Apply this to predict the formula of an ionic compound: aluminum oxide. Aluminum (group 13) forms $\text{Al}^{3+}$; oxygen (group 16) forms $\text{O}^{2-}$. To balance total positive and negative charge, find the smallest whole-number ratio: two $\text{Al}^{3+}$ ions (total charge $+6$) balance three $\text{O}^{2-}$ ions (total charge $-6$), giving the formula $\text{Al}_2\text{O}_3$. This charge-balancing method — matching total positive and negative charge to zero — is the standard technique for predicting ionic formulas from group-number charges, and it works for any main-group metal–nonmetal pair once you know each element's typical ion charge.</p>
   </main>
-  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch2: Atoms, Molecules, and Ions (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>
 </body>
 </html>

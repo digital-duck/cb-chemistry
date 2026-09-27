@@ -11,6 +11,8 @@ MathJax = {
 };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
@@ -26,6 +28,12 @@ p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
 footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
       font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
 footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
 .page{max-width:780px;margin:0 auto;padding:40px 32px}
 section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
 section:first-of-type{border-top:none;padding-top:0}
@@ -35,11 +43,17 @@ section:first-of-type{border-top:none;padding-top:0}
 <div class="page">
   <main>
     <h2 id="proton">Proton</h2>
-<p>A proton is a subatomic particle carrying one positive elementary charge, $+1.602 \times 10^{-19}\ \text{C}$, and a mass of approximately $1.673 \times 10^{-27}\ \text{kg}$ — roughly 1,836 times heavier than an electron. Protons reside in the atomic nucleus alongside neutrons, bound together by the strong nuclear force, which overcomes the electrostatic repulsion that positively charged protons exert on one another at close range. The number of protons in an atom's nucleus, called the atomic number $Z$, uniquely determines the chemical identity of an element: every carbon atom has exactly 6 protons, every oxygen atom exactly 8, and so on. Because protons are conserved in ordinary chemical reactions, $Z$ never changes when atoms bond, break apart, or rearrange — only nuclear reactions (fission, fusion, radioactive decay) can alter proton count.</p>
-<p>Consider a neutral atom of nitrogen, which has $Z = 14$. Since the atom is electrically neutral, it must carry 14 electrons to balance the 14 positive charges from its protons. If this atom loses three electrons to form a nitrogen ion, the proton count stays fixed at 14, but the ion now carries a net charge of $+3$, written $\text{N}^{3+}$. This illustrates a key distinction: protons define what an element <em>is</em>, while electrons (which can be gained or lost) determine an atom's ionic charge and much of its chemical behavior.</p>
-<p>This distinction becomes a practical tool when identifying atoms and ions from data. Suppose a particle has 17 protons, 18 neutrons, and 18 electrons. The proton count immediately identifies the element as chlorine ($Z = 17$). The mass number, $A = Z + N = 17 + 18 = 35$, tells you this is the chlorine-35 isotope. Comparing protons (17) to electrons (18) shows one extra electron, giving a net charge of $-1$: this is the chloride ion, $^{35}\text{Cl}^-$. Working through such problems — given proton, neutron, and electron counts, determine the element, isotope, and charge — is the core skill built from understanding what a proton represents: the invariant fingerprint of an element, distinct from the variable neutron count (isotopes) and variable electron count (ions) that can change around it.</p>
+<p>A proton is a positively charged subatomic particle located in the atomic nucleus, with a mass of approximately 1 atomic mass unit (amu), or about $1.673 \times 10^{-27}$ kg. Its charge, $+1$ elementary charge ($+1.602 \times 10^{-19}$ C), exactly balances the negative charge of an electron, which is why atoms with equal numbers of protons and electrons are electrically neutral. The number of protons in an atom's nucleus — its atomic number — defines which element the atom is; changing the proton count changes the element itself, whereas changing the neutron count merely produces a different isotope.</p>
+<p>Protons were identified by Ernest Rutherford through his analysis of the 1909 gold foil experiment. When alpha particles were fired at thin gold foil, most passed straight through, but a small fraction deflected sharply or bounced back. This pattern revealed that atoms contain a small, dense, positively charged core — the nucleus — rather than the diffuse "plum pudding" structure previously proposed by J.J. Thomson. Rutherford later identified the hydrogen nucleus, the simplest possible nucleus, as a fundamental positive particle, which he named the proton.</p>
+<p><strong>Problem-solving application:</strong> Atomic number and mass number together let you determine nuclear composition. For an atom with atomic number $Z$ and mass number $A$, the number of protons equals $Z$, and the number of neutrons equals $A - Z$. For example, carbon-14 has $Z = 6$ and $A = 14$, so it contains 6 protons and $14 - 6 = 8$ neutrons. Because atomic number is fixed for a given element, students can use this relationship to identify isotopes, predict nuclear stability, and balance nuclear equations — skills essential in both chemistry and nuclear physics contexts.</p>
+<pre class="mermaid">flowchart LR
+    A[Alpha particles fired at gold foil] --> B[Most pass straight through]
+    A --> C[Few deflect at large angles]
+    C --> D[Implies small, dense, positive nucleus]
+    D --> E[Nucleus later shown to contain protons]</pre>
+<p><em>Rutherford's gold foil experiment: unexpected deflections revealed a concentrated positive nucleus, leading to the discovery of the proton.</em></p>
   </main>
-  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch2: Atoms, Molecules, and Ions (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>
 </body>
 </html>

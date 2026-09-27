@@ -488,7 +488,8 @@
         "name": "anion",
         "label": "Anion",
         "file": "output/college.en/sonnet/html/concept_anion.html",
-        "model": "sonnet"
+        "model": "sonnet",
+        "language": "en"
       },
       {
         "name": "anion_zh",
@@ -501,7 +502,8 @@
         "name": "atom",
         "label": "Atom",
         "file": "output/college.en/sonnet/html/concept_atom.html",
-        "model": "sonnet"
+        "model": "sonnet",
+        "language": "en"
       },
       {
         "name": "atom_zh",
@@ -514,7 +516,8 @@
         "name": "atomic_mass_unit",
         "label": "Atomic Mass Unit",
         "file": "output/college.en/sonnet/html/concept_atomic_mass_unit.html",
-        "model": "sonnet"
+        "model": "sonnet",
+        "language": "en"
       },
       {
         "name": "atomic_mass_unit_zh",
@@ -527,7 +530,8 @@
         "name": "atomic_number",
         "label": "Atomic Number",
         "file": "output/college.en/sonnet/html/concept_atomic_number.html",
-        "model": "sonnet"
+        "model": "sonnet",
+        "language": "en"
       },
       {
         "name": "atomic_number_zh",
@@ -540,7 +544,8 @@
         "name": "average_atomic_mass",
         "label": "Average Atomic Mass",
         "file": "output/college.en/sonnet/html/concept_average_atomic_mass.html",
-        "model": "sonnet"
+        "model": "sonnet",
+        "language": "en"
       },
       {
         "name": "average_atomic_mass_zh",
@@ -553,7 +558,8 @@
         "name": "cation",
         "label": "Cation",
         "file": "output/college.en/sonnet/html/concept_cation.html",
-        "model": "sonnet"
+        "model": "sonnet",
+        "language": "en"
       },
       {
         "name": "cation_zh",
@@ -563,10 +569,18 @@
         "language": "zh"
       },
       {
+        "name": "chemical_bond",
+        "label": "Chemical Bond",
+        "file": "output/college.en/sonnet/html/concept_chemical_bond.html",
+        "model": "sonnet",
+        "language": "en"
+      },
+      {
         "name": "chemical_nomenclature",
         "label": "Chemical Nomenclature",
         "file": "output/college.en/sonnet/html/concept_chemical_nomenclature.html",
-        "model": "sonnet"
+        "model": "sonnet",
+        "language": "en"
       },
       {
         "name": "chemical_nomenclature_zh",
@@ -579,7 +593,8 @@
         "name": "chemical_symbol",
         "label": "Chemical Symbol",
         "file": "output/college.en/sonnet/html/concept_chemical_symbol.html",
-        "model": "sonnet"
+        "model": "sonnet",
+        "language": "en"
       },
       {
         "name": "chemical_symbol_zh",
@@ -592,7 +607,8 @@
         "name": "covalent_bond",
         "label": "Covalent Bond",
         "file": "output/college.en/sonnet/html/concept_covalent_bond.html",
-        "model": "sonnet"
+        "model": "sonnet",
+        "language": "en"
       },
       {
         "name": "covalent_bond_zh",
@@ -605,7 +621,8 @@
         "name": "daltons_atomic_theory",
         "label": "Daltons Atomic Theory",
         "file": "output/college.en/sonnet/html/concept_daltons_atomic_theory.html",
-        "model": "sonnet"
+        "model": "sonnet",
+        "language": "en"
       },
       {
         "name": "daltons_atomic_theory_zh",
@@ -618,7 +635,8 @@
         "name": "electric_charge",
         "label": "Electric Charge",
         "file": "output/college.en/sonnet/html/concept_electric_charge.html",
-        "model": "sonnet"
+        "model": "sonnet",
+        "language": "en"
       },
       {
         "name": "electric_charge_zh",
@@ -631,7 +649,8 @@
         "name": "electron",
         "label": "Electron",
         "file": "output/college.en/sonnet/html/concept_electron.html",
-        "model": "sonnet"
+        "model": "sonnet",
+        "language": "en"
       },
       {
         "name": "electron_zh",
@@ -644,13 +663,15 @@
         "name": "element",
         "label": "Element",
         "file": "output/college.en/sonnet/html/concept_element.html",
-        "model": "sonnet"
+        "model": "sonnet",
+        "language": "en"
       },
       {
         "name": "element_families",
         "label": "Element Families",
         "file": "output/college.en/sonnet/html/concept_element_families.html",
-        "model": "sonnet"
+        "model": "sonnet",
+        "language": "en"
       },
       {
         "name": "element_families_zh",
@@ -670,7 +691,8 @@
         "name": "ion",
         "label": "Ion",
         "file": "output/college.en/sonnet/html/concept_ion.html",
-        "model": "sonnet"
+        "model": "sonnet",
+        "language": "en"
       },
       {
         "name": "ion_zh",
@@ -683,7 +705,8 @@
         "name": "ionic_bond",
         "label": "Ionic Bond",
         "file": "output/college.en/sonnet/html/concept_ionic_bond.html",
-        "model": "sonnet"
+        "model": "sonnet",
+        "language": "en"
       },
       {
         "name": "ionic_bond_zh",
@@ -696,7 +719,8 @@
         "name": "ionic_compound",
         "label": "Ionic Compound",
         "file": "output/college.en/sonnet/html/concept_ionic_compound.html",
-        "model": "sonnet"
+        "model": "sonnet",
+        "language": "en"
       },
       {
         "name": "ionic_compound_zh",
@@ -709,7 +733,8 @@
         "name": "isotope",
         "label": "Isotope",
         "file": "output/college.en/sonnet/html/concept_isotope.html",
-        "model": "sonnet"
+        "model": "sonnet",
+        "language": "en"
       },
       {
         "name": "isotope_zh",
@@ -722,13 +747,15 @@
         "name": "mass",
         "label": "Mass",
         "file": "output/college.en/sonnet/html/concept_mass.html",
-        "model": "sonnet"
+        "model": "sonnet",
+        "language": "en"
       },
       {
         "name": "mass_spectrometry",
         "label": "Mass Spectrometry",
         "file": "output/college.en/sonnet/html/concept_mass_spectrometry.html",
-        "model": "sonnet"
+        "model": "sonnet",
+        "language": "en"
       },
       {
         "name": "mass_spectrometry_zh",
@@ -748,7 +775,8 @@
         "name": "matter",
         "label": "Matter",
         "file": "output/college.en/sonnet/html/concept_matter.html",
-        "model": "sonnet"
+        "model": "sonnet",
+        "language": "en"
       },
       {
         "name": "matter_zh",
@@ -761,7 +789,8 @@
         "name": "molecular_compound",
         "label": "Molecular Compound",
         "file": "output/college.en/sonnet/html/concept_molecular_compound.html",
-        "model": "sonnet"
+        "model": "sonnet",
+        "language": "en"
       },
       {
         "name": "molecular_compound_zh",
@@ -774,7 +803,8 @@
         "name": "molecular_formula",
         "label": "Molecular Formula",
         "file": "output/college.en/sonnet/html/concept_molecular_formula.html",
-        "model": "sonnet"
+        "model": "sonnet",
+        "language": "en"
       },
       {
         "name": "molecular_formula_zh",
@@ -787,7 +817,8 @@
         "name": "neutron",
         "label": "Neutron",
         "file": "output/college.en/sonnet/html/concept_neutron.html",
-        "model": "sonnet"
+        "model": "sonnet",
+        "language": "en"
       },
       {
         "name": "neutron_zh",
@@ -800,7 +831,8 @@
         "name": "nucleus",
         "label": "Nucleus",
         "file": "output/college.en/sonnet/html/concept_nucleus.html",
-        "model": "sonnet"
+        "model": "sonnet",
+        "language": "en"
       },
       {
         "name": "nucleus_zh",
@@ -813,7 +845,8 @@
         "name": "periodic_law",
         "label": "Periodic Law",
         "file": "output/college.en/sonnet/html/concept_periodic_law.html",
-        "model": "sonnet"
+        "model": "sonnet",
+        "language": "en"
       },
       {
         "name": "periodic_law_zh",
@@ -826,7 +859,8 @@
         "name": "periodic_table",
         "label": "Periodic Table",
         "file": "output/college.en/sonnet/html/concept_periodic_table.html",
-        "model": "sonnet"
+        "model": "sonnet",
+        "language": "en"
       },
       {
         "name": "periodic_table_zh",
@@ -839,7 +873,8 @@
         "name": "polyatomic_ion",
         "label": "Polyatomic Ion",
         "file": "output/college.en/sonnet/html/concept_polyatomic_ion.html",
-        "model": "sonnet"
+        "model": "sonnet",
+        "language": "en"
       },
       {
         "name": "polyatomic_ion_zh",
@@ -852,7 +887,8 @@
         "name": "predicting_ion_formation",
         "label": "Predicting Ion Formation",
         "file": "output/college.en/sonnet/html/concept_predicting_ion_formation.html",
-        "model": "sonnet"
+        "model": "sonnet",
+        "language": "en"
       },
       {
         "name": "predicting_ion_formation_zh",
@@ -865,7 +901,8 @@
         "name": "proton",
         "label": "Proton",
         "file": "output/college.en/sonnet/html/concept_proton.html",
-        "model": "sonnet"
+        "model": "sonnet",
+        "language": "en"
       },
       {
         "name": "proton_zh",
@@ -882,6 +919,13 @@
         "language": "en",
         "model": "sonnet",
         "file": "output/college.en/sonnet/pdf/concept_element.pdf"
+      },
+      {
+        "target": "atom",
+        "level": "college",
+        "language": "en",
+        "model": "sonnet",
+        "file": "output/college.en/sonnet/pdf/concept_atom.pdf"
       }
     ]
   },

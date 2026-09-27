@@ -11,6 +11,8 @@ MathJax = {
 };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
@@ -26,6 +28,12 @@ p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
 footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
       font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
 footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
 .page{max-width:780px;margin:0 auto;padding:40px 32px}
 section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
 section:first-of-type{border-top:none;padding-top:0}
@@ -35,12 +43,11 @@ section:first-of-type{border-top:none;padding-top:0}
 <div class="page">
   <main>
     <h2 id="element">Element</h2>
-<p>An <strong>element</strong> is a substance that cannot be broken down into simpler substances by ordinary chemical means. Each element is defined by its <strong>atomic number</strong>, $Z$, the number of protons in the nucleus of its atoms — change the number of protons and you have a different element entirely. As of the current periodic table, 118 elements are known, arranged by increasing atomic number and organized so that elements with similar chemical behavior fall into the same vertical column, or group.</p>
-<p><strong>Worked example.</strong> Consider carbon ($Z=6$) versus nitrogen ($Z=7$). Both are common in biological molecules, but a carbon atom has 6 protons while a nitrogen atom has 7. Because the number of protons differs, no chemical reaction can convert carbon into nitrogen — that transformation requires nuclear physics (fusion, fission, or radioactive decay), not chemistry. This is the practical test for "elementhood": if a process only rearranges electrons and bonds, the elements present before and after are identical.</p>
-<p><strong>Problem-solving application.</strong> Suppose you are given an unknown pure substance and told it decomposes under heat into two separate gases with different densities. Is it an element? No — by definition, an element cannot decompose into anything simpler. The observation that it split into two distinct substances tells you it was a compound, and the two gases produced are candidates for being elements (or could themselves be further decomposable compounds, which you would test the same way). This decomposition test is exactly how many elements, such as hydrogen and oxygen from water, were historically identified.</p>
-<p>A related problem-solving skill is reading atomic number from context: given that a particle has 11 protons, you can identify it as sodium no matter what else is true about it — whether it has gained or lost electrons, or how many protons pair with it in the nucleus — because protons, and protons alone, define elemental identity. This is why sodium always sits in the same position on the periodic table: its identity as an element is fixed by $Z$, even when its charge or exact mass varies from one sample to another.</p>
+<p>An element is a pure substance made of only one type of atom — meaning every atom in a sample has the same number of protons (its atomic number). Because chemical reactions only rearrange bonds between atoms, not the atoms' internal structure, elements cannot be decomposed into anything simpler by chemical means. This distinguishes elements from compounds (like water, $\text{H}_2\text{O}$), which can be broken into simpler substances (hydrogen and oxygen) through chemical reactions such as electrolysis. There are 118 known elements, organized in the periodic table by atomic number, but only about 25 of these are essential to life — with carbon, hydrogen, oxygen, and nitrogen making up roughly 96% of the mass of most living organisms.</p>
+<p><strong>Worked example:</strong> Suppose you're given a sample of table salt (sodium chloride, NaCl) and a sample of pure copper wire. Which one is an element? Copper is an element — every atom in the wire has 29 protons, and no chemical process can turn copper into a simpler substance. Sodium chloride, by contrast, is a compound: it can be split by electrolysis into sodium metal and chlorine gas, two entirely different substances with different properties from salt itself. This is the practical test for identifying an element: ask whether a chemical reaction (not just a physical process like melting or dissolving) can decompose the substance further. If yes, it's a compound or mixture; if no, it's an element.</p>
+<p><strong>Problem-solving application:</strong> Biologists and chemists use this concept to trace where atoms go during metabolic and environmental processes, since elements are never created or destroyed in chemical reactions — only rearranged (a principle known as conservation of mass). For example, when glucose ($\text{C}_6\text{H}_{12}\text{O}_6$) is broken down during cellular respiration, the carbon, hydrogen, and oxygen atoms aren't destroyed — they're reorganized into carbon dioxide and water. A student analyzing this reaction can verify it's balanced by counting atoms of each element on both sides: 6 carbons, 12 hydrogens, and 18 oxygens must appear on both the reactant and product side. This atom-counting skill, rooted in the definition of an element as an indivisible chemical unit, underlies balancing any chemical equation, from photosynthesis to industrial synthesis.</p>
   </main>
-  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch2: Atoms, Molecules, and Ions (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>
 </body>
 </html>

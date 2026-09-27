@@ -11,6 +11,8 @@ MathJax = {
 };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
@@ -26,6 +28,12 @@ p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
 footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
       font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
 footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
 .page{max-width:780px;margin:0 auto;padding:40px 32px}
 section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
 section:first-of-type{border-top:none;padding-top:0}
@@ -35,11 +43,16 @@ section:first-of-type{border-top:none;padding-top:0}
 <div class="page">
   <main>
     <h2 id="neutron">Neutron</h2>
-<p>A neutron is a subatomic particle found in the nucleus of an atom, carrying no electric charge and a mass slightly greater than that of a proton ($1.675 \times 10^{-27}\text{ kg}$, about 1839 times the mass of an electron). Together with protons, neutrons make up the nucleons that account for nearly all of an atom's mass. The number of protons defines which element an atom is, but the number of neutrons can vary — atoms of the same element with different neutron counts are called isotopes.</p>
-<p><strong>Worked example.</strong> Consider carbon. Every carbon atom has 6 protons, which is what makes it carbon. Carbon-12, the most abundant isotope, has 6 neutrons ($6 + 6 = 12$, matching its mass number). Carbon-14, used in radiocarbon dating, has 8 neutrons ($6 + 8 = 14$). Both are chemically identical — they react the same way, because chemistry is governed by electrons and protons — but Carbon-14 is unstable: its nucleus has an unfavorable proton-to-neutron ratio, so it undergoes radioactive decay over time.</p>
-<p><strong>Applying the concept.</strong> Neutron count explains a wide range of practical phenomena. To find the number of neutrons in any isotope, subtract the atomic number (protons) from the mass number: $N = A - Z$. For example, uranium-235 ($Z=92$) has $235 - 92 = 143$ neutrons, while uranium-238 has 146. This three-neutron difference is enormous in consequence: U-235 is fissile and used in nuclear reactors and weapons, while U-238 is not, because the extra neutrons change how the nucleus responds to an incoming neutron strike. Neutrons also drive nuclear fission itself — when a heavy nucleus absorbs a neutron, it can split, releasing energy and additional neutrons that sustain a chain reaction, the basis of both nuclear power and nuclear bombs. In medicine, neutron counts determine which isotopes are radioactive and therefore useful as medical tracers or radiation therapy sources. Practically, whenever you see an isotope notation like $^{14}_{6}\text{C}$, you can immediately extract both its identity and its neutron count, which is often the first step in predicting whether that isotope is stable or will decay.</p>
+<p>The neutron is a subatomic particle found in the nucleus of every atom (except ordinary hydrogen-1). It carries no electric charge and has a mass of about $1.675 \times 10^{-27}\ \text{kg}$, roughly $1.001$ times the mass of a proton — close enough that the two are often treated as equal in mass for calculation purposes. Because neutrons have mass but no charge, they contribute to an atom's overall mass without affecting its charge or its chemical behavior, which is determined by the number of protons and electrons.</p>
+<p>Neutrons were discovered in 1932 by British physicist James Chadwick. Before his work, scientists knew that the nuclear mass of most atoms was larger than could be explained by protons alone, but a charged particle of that extra mass would have altered the atom's charge — which it didn't. Chadwick resolved this by bombarding beryllium with alpha particles and detecting a highly penetrating, electrically neutral radiation that could knock protons out of paraffin wax. Since the emitted radiation carried no charge yet had mass close to a proton's, Chadwick correctly identified it as a new particle: the neutron.</p>
+<p><strong>Worked example.</strong> Consider carbon-12 ($^{12}\text{C}$), the standard reference isotope for atomic mass. Its mass number (protons + neutrons) is 12, and its atomic number (protons) is 6. The number of neutrons is found by subtraction:</p>
+$$
+\text{neutrons} = \text{mass number} - \text{atomic number} = 12 - 6 = 6
+$$
+<p>So $^{12}\text{C}$ has 6 protons and 6 neutrons.</p>
+<p><strong>Problem-solving application.</strong> This same subtraction is how chemists distinguish <strong>isotopes</strong> — atoms of the same element that carry different numbers of neutrons in the nucleus. Carbon-14 ($^{14}\text{C}$) has the same 6 protons as $^{12}\text{C}$ (so it is still carbon), but $14 - 6 = 8$ neutrons instead of 6. That difference in neutron count is the only thing distinguishing the two, and it is enough to change the nucleus's stability — a detail exploited in techniques like radiocarbon dating. Whenever you're given an isotope's mass number and its element (which fixes the proton count), you can solve for the unknown neutron count using this same relationship, making it a standard first step in any nuclear chemistry problem.</p>
   </main>
-  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch2: Atoms, Molecules, and Ions (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>
 </body>
 </html>

@@ -11,6 +11,8 @@ MathJax = {
 };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
@@ -26,6 +28,12 @@ p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
 footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
       font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
 footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
 .page{max-width:780px;margin:0 auto;padding:40px 32px}
 section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
 section:first-of-type{border-top:none;padding-top:0}
@@ -35,11 +43,18 @@ section:first-of-type{border-top:none;padding-top:0}
 <div class="page">
   <main>
     <h2 id="atom">Atom</h2>
-<p>An atom is the smallest unit of an element that retains that element's chemical identity. It consists of a dense central <strong>nucleus</strong>, made of positively charged <strong>protons</strong> and neutral <strong>neutrons</strong>, surrounded by negatively charged <strong>electrons</strong> occupying the much larger volume of space around the nucleus. The number of protons—the <strong>atomic number</strong>—defines which element an atom is: every carbon atom has 6 protons, every oxygen atom has 8, and changing that number changes the element itself. Neutrons add mass and stability without changing charge, which is why atoms of the same element can exist as different <strong>isotopes</strong> (e.g., carbon-12 and carbon-14) with the same chemical behavior but different masses. Electrons, arranged in energy levels around the nucleus, determine how an atom interacts with other atoms—this is the basis of nearly all chemistry.</p>
-<p>Consider a neutral atom of sodium (Na), atomic number 11. It has 11 protons and, to remain electrically neutral, 11 electrons. Its most common isotope, sodium-23, has 12 neutrons, giving a mass number of 23 (11 protons + 12 neutrons). If this atom loses one electron, it becomes a sodium ion, $\text{Na}^+$, with 11 protons but only 10 electrons—now carrying a net positive charge. Note that losing an electron does not change which element the atom is; identity is fixed by proton count alone.</p>
-<p>This distinction becomes a practical problem-solving tool. Suppose you're told an ion has 17 protons, 18 neutrons, and 18 electrons, and asked to identify it. The proton count alone tells you the element: 17 protons means chlorine. The neutron count gives the isotope: mass number $17 + 18 = 35$, so this is chlorine-35. Comparing electrons (18) to protons (17) reveals a charge imbalance of $17 - 18 = -1$, so the species is the chloride ion, $\text{Cl}^-$. This three-step check—protons for identity, protons plus neutrons for mass, protons versus electrons for charge—applies to any atomic or ionic species you encounter, whether in a chemistry problem set or interpreting data from a mass spectrometer, where measured mass and charge are used to work backward to an atom's exact composition.</p>
+<p>An atom is the smallest unit of an element that retains the chemical identity of that element — the basic building block described in Dalton's atomic theory (1803), which proposed that matter is made of indivisible atoms unique to each element. Modern atomic theory refines "indivisible": every atom is built from three subatomic particles. Protons (positive charge, ~1 atomic mass unit) and neutrons (no charge, ~1 amu) occupy a dense central nucleus, while electrons (negative charge, negligible mass) surround the nucleus in energy levels, or shells. The number of protons, called the atomic number, is what defines the element — every atom with 6 protons is carbon, no matter what else changes about it.</p>
+<p><strong>Worked example.</strong> Consider carbon-12, the standard reference isotope used to define the atomic mass unit. Its atomic number is 6, so it has 6 protons. Its mass number — the total count of protons plus neutrons — is 12, so it has 6 neutrons. A neutral atom always carries an equal number of electrons and protons, so carbon-12 also has 6 electrons balancing the nuclear charge. Note that the proton count alone tells you the element; the neutron count only affects the atom's mass, not its chemical behavior.</p>
+<p><strong>Problem-solving application.</strong> Most atomic-structure problems ask you to reconstruct particle counts from two numbers: the atomic number and the mass number. Given an atom with atomic number 17 and mass number 35: protons = 17 (read directly from the atomic number), neutrons = 35 − 17 = 18 (mass number minus proton count), and electrons = 17, since a neutral atom balances proton and electron counts exactly. This three-step bookkeeping — protons from atomic number, neutrons by subtraction, electrons by charge balance — applies to any atom on the periodic table and is the foundation for everything that follows in later sections: how atoms of the same element can differ in mass, how they can gain or lose charge, and how their electron arrangements drive chemical bonding.</p>
+<pre class="mermaid">graph TD
+    A["Atom"] --> B["Nucleus"]
+    A --> C["Electron shells"]
+    B --> D["Protons (+)<br/>defines element"]
+    B --> E["Neutrons (neutral)<br/>affects mass"]
+    C --> F["Electrons (−)<br/>balances charge"]</pre>
+<p><em>A schematic breakdown of atomic structure: the nucleus holds protons and neutrons, while electrons occupy surrounding shells.</em></p>
   </main>
-  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch2: Atoms, Molecules, and Ions (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>
 </body>
 </html>

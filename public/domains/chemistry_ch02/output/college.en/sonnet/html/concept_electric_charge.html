@@ -11,6 +11,8 @@ MathJax = {
 };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
@@ -26,6 +28,12 @@ p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
 footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
       font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
 footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
 .page{max-width:780px;margin:0 auto;padding:40px 32px}
 section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
 section:first-of-type{border-top:none;padding-top:0}
@@ -35,15 +43,11 @@ section:first-of-type{border-top:none;padding-top:0}
 <div class="page">
   <main>
     <h2 id="electric-charge">Electric Charge</h2>
-<p>Electric charge is a fundamental property of matter that determines how a particle experiences and produces electromagnetic forces. Charge comes in two types, arbitrarily labeled positive and negative, and every observed charge is an integer multiple of the elementary charge $e = 1.602 \times 10^{-19}\ \text{C}$. Protons carry charge $+e$, electrons carry $-e$, and neutrons carry none. Charge is conserved: in any isolated system, the total charge before an interaction equals the total charge after it. Like charges repel, opposite charges attract, and the strength of the interaction between two point charges $q_1$ and $q_2$ separated by distance $r$ is given by Coulomb's law,</p>
-$$F = k_e \frac{|q_1 q_2|}{r^2}, \qquad k_e = 8.99 \times 10^9\ \text{N·m}^2/\text{C}^2.$$
-<p>This inverse-square dependence is essential: it is not a stylistic choice but the mathematical statement that the force falls off as the field from a point charge spreads over a sphere of area $4\pi r^2$.</p>
-<p><strong>Worked example.</strong> Two small spheres, each carrying $2.0\ \mu\text{C}$, sit $0.30\ \text{m}$ apart in air. The force between them is</p>
-$$F = (8.99\times10^9)\frac{(2.0\times10^{-6})^2}{(0.30)^2} \approx 0.40\ \text{N}.$$
-<p>Since both charges are positive, the force is repulsive, directed along the line joining the spheres.</p>
-<p><strong>Problem-solving application.</strong> Coulomb's law becomes a design tool once several charges act on one object at the same time, because each pairwise force still points along the line between the two charges involved, and the net force is just the sum of these individual forces. Suppose a $+3\ \mu\text{C}$ charge sits at the origin and a $-3\ \mu\text{C}$ charge sits $0.20\ \text{m}$ to its right. A third, positive test charge placed further to the right is pulled left toward the negative charge and pushed left away from the positive charge, so both forces point the same direction and simply add — no cancellation is possible on that side. If the test charge is instead placed between the two fixed charges, the pull toward the negative charge and the push away from the positive charge act in opposite directions, and setting the two Coulomb-law expressions equal, $F_1 = F_2$, gives an equation that can be solved for the position where the net force is zero. This same bookkeeping — computing each pairwise force from Coulomb's law and combining the results — is what underlies the design of electrostatic sensors, ion traps, and models of how nearby charges influence a chosen point in a circuit or material.</p>
+<p>Electric charge is a fundamental property of matter that comes in two types, positive and negative, and determines how particles interact through electromagnetic forces. Protons carry a positive charge, electrons carry a negative charge, and neutrons carry no charge. Charge is quantized, meaning it always occurs in whole-number multiples of the elementary charge, $e = 1.602 \times 10^{-19}\ \text{C}$, and it is conserved in every physical process — the total charge before an interaction equals the total charge after it. The rule governing interactions is simple: like charges repel, and opposite charges attract. This single rule underlies chemical bonding, the structure of atoms, and the behavior of circuits.</p>
+<p><strong>Worked example:</strong> Consider a neutral sodium atom (11 protons, 11 electrons) that loses one electron to become $\text{Na}^+$. The atom now has 11 protons (+11) and 10 electrons (–10), giving a net charge of $+1e$, or $+1.602 \times 10^{-19}\ \text{C}$. This is exactly what happens when sodium reacts with chlorine: sodium's outer electron transfers to chlorine, producing $\text{Na}^+$ and $\text{Cl}^-$ ions. Because the two ions carry opposite charges, they attract one another electrostatically, and this attraction is the ionic bond holding table salt together — the closer and more oppositely charged two ions are, the stronger that bond.</p>
+<p><strong>Problem-solving application:</strong> Suppose a biology student needs to determine the net charge on a protein at a given pH. Amino acid side chains can gain or lose a hydrogen ion ($\text{H}^+$) depending on the surrounding pH — for example, an aspartate side chain tends to lose its extra proton in more basic conditions, becoming negatively charged, while a lysine side chain tends to hold onto an extra proton in more acidic conditions, staying positively charged. Each ionizable group on the protein therefore contributes either a $+1$, a $-1$, or a $0$ to the total, and summing these contributions gives the protein's overall net charge at that pH — a direct application of the same charge-counting logic used for the sodium ion above. This calculation matters directly: it predicts how the protein will behave in techniques like gel electrophoresis or ion-exchange chromatography, where molecules separate based on their net charge and its interaction with an applied electric field.</p>
   </main>
-  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch2: Atoms, Molecules, and Ions (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
 </div>
 </body>
 </html>
