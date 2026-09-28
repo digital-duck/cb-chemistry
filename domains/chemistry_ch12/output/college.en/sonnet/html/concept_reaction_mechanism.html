@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reaction Mechanism | Chemistry Ch12</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="reaction-mechanism">Reaction Mechanism</h2>
+<p>A chemical equation like $2\text{H}_2\text{O}_2 \rightarrow 2\text{H}_2\text{O} + \text{O}_2$ tells you the overall inputs and outputs of a reaction, but it hides how the transformation actually happens. A <strong>reaction mechanism</strong> is the step-by-step sequence of elementary reactions — individual molecular collisions or rearrangements — that together add up to the observed overall reaction. Each elementary step has its own rate law determined directly by its molecularity, and the mechanism must satisfy two requirements: the steps must sum to the correct overall equation, and the mechanism must be consistent with the experimentally measured rate law.</p>
+<p>This distinction matters because the overall equation cannot tell you the rate law — only the mechanism can. Consider the reaction of nitrogen dioxide with carbon monoxide: $\text{NO}_2 + \text{CO} \rightarrow \text{NO} + \text{CO}_2$. If this happened in one step, the rate law would be $\text{rate} = k[\text{NO}_2][\text{CO}]$. But experiments show the rate depends only on $[\text{NO}_2]^2$, independent of $[\text{CO}]$. This points to a two-step mechanism:</p>
+<p>Step 1 (slow): $\text{NO}_2 + \text{NO}_2 \rightarrow \text{NO}_3 + \text{NO}$ Step 2 (fast): $\text{NO}_3 + \text{CO} \rightarrow \text{NO}_2 + \text{CO}_2$</p>
+<p>Adding the steps cancels one $\text{NO}_2$ and the intermediate $\text{NO}_3$, regenerating the correct overall equation. Because Step 1 is much slower, it is the <strong>rate-determining step</strong>, and its rate law — $k[\text{NO}_2]^2$ — matches experiment. Species like $\text{NO}_3$ that appear in the mechanism but not in the overall equation are called <strong>reaction intermediates</strong>.</p>
+<p>To apply this in practice, use mechanisms to diagnose unexpected kinetics data. If a proposed rate law doesn't match the stoichiometric coefficients of the overall reaction, don't assume the data is wrong — propose a multi-step mechanism where the slowest step's molecularity matches the observed orders. Chemists test candidate mechanisms by checking whether they predict the correct rate law and by searching for spectroscopic or kinetic evidence of intermediates. This is also why catalysts work: a catalyst opens an alternative mechanism with a lower-energy rate-determining step, speeding up the reaction without appearing in the overall equation itself.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

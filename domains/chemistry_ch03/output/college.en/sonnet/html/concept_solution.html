@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solution | Chemistry Ch03</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="solution">Solution</h2>
+<p>A <strong>solution</strong> is any value, or set of values, that makes an equation, inequality, or system of equations true when substituted for the unknown(s). Solving is the process of finding that value systematically, rather than guessing. Every solution must be verifiable: substituting it back into the original problem should produce a true statement. This verification step is what separates a rigorous solution from a lucky guess.</p>
+<p><strong>Worked example.</strong> Consider the linear equation $3x - 7 = 2x + 5$. To solve, isolate $x$ by performing the same operation on both sides. Subtract $2x$ from both sides: $x - 7 = 5$. Add 7 to both sides: $x = 12$. Check: $3(12) - 7 = 29$ and $2(12) + 5 = 29$. Both sides match, so $x = 12$ is confirmed as the solution.</p>
+<p>Now consider a slightly harder case: the quadratic $x^2 - 5x + 6 = 0$. Factoring gives $(x-2)(x-3) = 0$, so $x = 2$ and $x = 3$ are both solutions — a reminder that a "solution" need not be unique. Substituting each value back confirms both satisfy the original equation.</p>
+<p><strong>Problem-solving application.</strong> In practice, most real problems don't arrive as a clean equation — they arrive as a scenario, and translating the scenario into an equation is the actual skill being tested. Suppose a rectangular garden's length is 3 meters more than its width, and its area is 40 square meters. Let $w$ represent the width; then the length is $w + 3$, and the area equation is $w(w+3) = 40$, or $w^2 + 3w - 40 = 0$. Factoring gives $(w+8)(w-5) = 0$, yielding $w = -8$ or $w = 5$. Here the algebra produces two mathematically valid roots, but only one is a valid <em>solution to the problem</em>: width cannot be negative, so $w = -8$ is rejected on physical grounds, leaving $w = 5$ meters (and length 8 meters) as the answer.</p>
+<p>This distinction — between an equation's roots and a problem's admissible solutions — is central to applied problem-solving. Always check candidate solutions against both the original equation and the real-world constraints (domain restrictions, sign conventions, units) that the equation was built to represent.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

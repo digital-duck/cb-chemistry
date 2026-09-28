@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Energy Level | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="energy-level">Energy Level</h2>
+<p><strong>定义</strong></p>
+<p>能级（energy level）是指原子中电子只能占据的一系列离散的、量子化的能量状态。这一概念的核心在于"离散"二字——电子并非可以拥有任意大小的能量，而只能处于特定的、彼此分立的能量值上，就像楼梯的台阶,而非连续的斜坡。当电子从一个能级跃迁到另一个能级时，它必须吸收或释放恰好等于两能级能量差的一个光子，而不能是任意数值。这正是原子发射光谱和吸收光谱呈现出分立谱线（而非连续光带）的根本原因。</p>
+<p>在最简单的氢原子模型中，电子的能量由如下公式给出：</p>
+$$E_n = -\dfrac{13.6\ \text{eV}}{n^2}$$
+<p>其中 $n = 1, 2, 3, \dots$ 称为主量子数，负号表示电子被原子核束缚（能量低于自由电子）。$n=1$ 对应基态（能量最低、最稳定的状态），$n$ 越大，电子离核越远，能量越接近于零（即接近电离）。</p>
+<p><strong>实例分析</strong></p>
+<p>考虑氢原子电子从 $n=3$ 跃迁到 $n=2$ 的过程。计算两能级的能量：</p>
+$$E_3 = -\dfrac{13.6}{9} = -1.51\ \text{eV}, \qquad E_2 = -\dfrac{13.6}{4} = -3.40\ \text{eV}$$
+<p>跃迁释放的能量为 $\Delta E = E_3 - E_2 = 1.89\ \text{eV}$，这恰好对应可见光谱中的一条红色谱线（巴尔末系的 H-α 线，波长约 656 nm）。这说明宏观可观测的颜色现象，其根源正是电子在离散能级间的量子跃迁。</p>
+<p><strong>解题应用</strong></p>
+<p>能级模型不仅用于解释光谱线的来源，也是分析原子光谱数据、鉴定元素成分（如恒星光谱分析）的基础工具。解题时的一般步骤是：先用能级公式求出跃迁前后的能量，取差值得到光子能量 $\Delta E$，再通过 $\Delta E = hc/\lambda$（其中 $h$ 为普朗克常数，$c$ 为光速）反推波长 $\lambda$，从而预测该跃迁在光谱中对应的具体谱线位置。这一方法广泛应用于化学分析、天文光谱学以及激光技术设计中，是连接微观量子行为与宏观可测信号的关键桥梁。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

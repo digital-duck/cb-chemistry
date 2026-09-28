@@ -1,0 +1,186 @@
+domain: chemistry_2e_ch16
+primitives:
+  enthalpy:
+    defines: The heat content of a system at constant pressure, used as a measure of energy exchanged
+      in chemical and physical processes.
+    tier: 0
+  temperature:
+    defines: A measure of the average kinetic energy of particles in a system, expressed in kelvin for
+      thermodynamic calculations.
+    tier: 0
+  heat_flow:
+    defines: The transfer of thermal energy between objects or between a system and its surroundings driven
+      by a temperature difference.
+    tier: 0
+  state_function:
+    defines: A property whose change depends only on the initial and final states of a system, not on
+      the path taken.
+    tier: 0
+  equilibrium:
+    defines: The condition in which forward and reverse processes occur at equal rates, so macroscopic
+      properties remain constant over time.
+    tier: 0
+  reaction_quotient:
+    defines: The numerical value of the mass-action expression for a system under non-equilibrium conditions,
+      used to predict the direction of reaction.
+    tier: 0
+concepts:
+  spontaneous_process:
+    defines: A process that occurs naturally under a given set of conditions without continuous input
+      of energy from an external source.
+    composed_of:
+    - heat_flow
+    tier: 1
+  matter_and_energy_dispersal:
+    defines: The tendency of matter and energy to spread out to occupy more volume or distribute more
+      uniformly, which drives many spontaneous processes.
+    composed_of:
+    - heat_flow
+    tier: 1
+  microstate:
+    defines: A specific configuration of the locations and energies of all atoms or molecules comprising
+      a system.
+    composed_of:
+    - state_function
+    tier: 1
+  reversible_process:
+    defines: A hypothetical process that occurs infinitely slowly, always at equilibrium, and whose direction
+      can be reversed by an infinitesimally small change in conditions; used to define the entropy change
+      as q_rev / T.
+    composed_of:
+    - equilibrium
+    - heat_flow
+    - temperature
+    tier: 1
+  nonspontaneous_process:
+    defines: A process that will not occur unless continuously driven by energy input from an external
+      source; spontaneous in the reverse direction.
+    composed_of:
+    - spontaneous_process
+    tier: 2
+  entropy:
+    defines: A state function equal to Boltzmann's constant times the natural log of the number of microstates
+      (S = k ln W); a measure of matter and energy dispersal within a system.
+    composed_of:
+    - microstate
+    - state_function
+    tier: 2
+  entropy_phase_dependence:
+    defines: The relationship S_solid < S_liquid < S_gas, arising because each successive phase allows
+      greater freedom of particle motion and more possible microstates.
+    composed_of:
+    - entropy
+    tier: 3
+  entropy_temperature_dependence:
+    defines: Entropy increases with rising temperature because higher temperatures broaden the distribution
+      of kinetic energies, increasing the number of accessible microstates.
+    composed_of:
+    - entropy
+    - temperature
+    tier: 3
+  second_law_of_thermodynamics:
+    defines: All spontaneous processes increase the total entropy of the universe (ΔS_univ > 0); a process
+      with ΔS_univ < 0 is nonspontaneous, and ΔS_univ = 0 indicates equilibrium.
+    composed_of:
+    - entropy
+    - spontaneous_process
+    - equilibrium
+    tier: 3
+  third_law_of_thermodynamics:
+    defines: The entropy of a pure, perfect crystalline substance at absolute zero (0 K) is zero, because
+      only one microstate exists.
+    composed_of:
+    - entropy
+    - temperature
+    - microstate
+    tier: 3
+  gibbs_free_energy:
+    defines: A state function defined as G = H - TS whose change at constant temperature and pressure
+      (ΔG = ΔH - TΔS) predicts spontaneity using system properties alone; ΔG < 0 is spontaneous, ΔG >
+      0 is nonspontaneous, ΔG = 0 is equilibrium.
+    composed_of:
+    - enthalpy
+    - entropy
+    - temperature
+    - state_function
+    tier: 3
+  standard_entropy:
+    defines: The absolute entropy of one mole of a substance at standard conditions (1 bar, 298.15 K),
+      determinable by calorimetry from the third-law zero reference.
+    composed_of:
+    - third_law_of_thermodynamics
+    tier: 4
+  temperature_dependence_of_spontaneity:
+    defines: The way the sign of ΔG = ΔH - TΔS shifts with temperature depending on the signs of ΔH and
+      ΔS, determining whether a process is spontaneous at high temperatures, low temperatures, all temperatures,
+      or no temperatures.
+    composed_of:
+    - gibbs_free_energy
+    - temperature
+    tier: 4
+  standard_entropy_change:
+    defines: The entropy change for a reaction under standard conditions, calculated as the sum of standard
+      entropies of products minus reactants weighted by stoichiometric coefficients.
+    composed_of:
+    - standard_entropy
+    tier: 5
+  standard_free_energy_change:
+    defines: The free energy change for a process in which all reactants and products are in their standard
+      states, computable from standard enthalpies and entropies or from standard free energies of formation.
+    composed_of:
+    - gibbs_free_energy
+    - standard_entropy_change
+    tier: 6
+  standard_free_energy_of_formation:
+    defines: The free energy change accompanying formation of one mole of a substance from its elements
+      in their standard states; zero by definition for pure elements in standard states.
+    composed_of:
+    - standard_free_energy_change
+    tier: 7
+  free_energy_equilibrium_relationship:
+    defines: The quantitative link ΔG° = -RT ln K relating standard free energy change to the equilibrium
+      constant, and ΔG = ΔG° + RT ln Q relating free energy under non-standard conditions to the reaction
+      quotient.
+    composed_of:
+    - standard_free_energy_change
+    - gibbs_free_energy
+    - equilibrium
+    - reaction_quotient
+    tier: 7
+applications:
+  predicting_entropy_sign:
+    defines: Using qualitative rules (phase changes, temperature changes, dissolution, changes in moles
+      of gas) to determine whether a chemical or physical process increases or decreases entropy.
+    needs:
+    - entropy
+    - entropy_phase_dependence
+    - entropy_temperature_dependence
+    tier: 4
+  calculating_delta_s_standard:
+    defines: Computing ΔS° for a reaction by summing tabulated S° values of products minus reactants,
+      weighted by stoichiometric coefficients.
+    needs:
+    - standard_entropy_change
+    tier: 6
+  boiling_point_estimation:
+    defines: Setting ΔG = 0 (equilibrium between liquid and gas phases) and solving T = ΔH° / ΔS° using
+      standard enthalpy and entropy data to estimate normal boiling points.
+    needs:
+    - gibbs_free_energy
+    - standard_entropy_change
+    - enthalpy
+    tier: 6
+  coupled_reactions:
+    defines: The strategy of combining a thermodynamically unfavorable reaction with a favorable one so
+      the overall ΔG° is negative, enabling a nonspontaneous process to proceed.
+    needs:
+    - standard_free_energy_change
+    - gibbs_free_energy
+    - nonspontaneous_process
+    tier: 7
+  equilibrium_constant_from_free_energy:
+    defines: Using ΔG° = -RT ln K to derive equilibrium constants (including Ksp and Kp) from standard
+      free energy data, or vice versa.
+    needs:
+    - free_energy_equilibrium_relationship
+    tier: 8

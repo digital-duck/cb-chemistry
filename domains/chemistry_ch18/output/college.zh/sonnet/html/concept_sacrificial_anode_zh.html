@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sacrificial Anode | Chemistry Ch18</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="sacrificial-anode-牺牲阳极">Sacrificial Anode（牺牲阳极）</h2>
+<p><strong>定义</strong></p>
+<p>牺牲阳极是一种利用电化学腐蚀原理保护金属结构的技术。其核心思想是：将一种比被保护金属更活泼（更易被氧化）的金属连接到被保护结构上，使这块"更活泼"的金属优先发生氧化反应，从而让被保护的金属免于腐蚀。这一方法本质上是人为制造一个原电池（伽伐尼电池），让活泼金属充当阳极，主动"牺牲"自己，被保护金属则成为阴极，只发生还原反应而不被氧化。</p>
+<p>判断哪种金属更活泼，可以参考金属活动性顺序（或标准电极电势表）。常用的牺牲阳极材料包括锌（Zn）、镁（Mg）和铝（Al），因为它们的标准还原电势都比铁（Fe）更负，即更容易失去电子被氧化：</p>
+$$
+\text{Zn} \rightarrow \text{Zn}^{2+} + 2e^- \qquad E^\circ = -0.76\ \text{V}
+$$
+$$
+\text{Fe} \rightarrow \text{Fe}^{2+} + 2e^- \qquad E^\circ = -0.44\ \text{V}
+$$
+<p>锌的电势更负，说明锌更倾向于失去电子，因此会优先被氧化，铁则被保护。</p>
+<p><strong>实例分析</strong></p>
+<p>船体、地下钢制管道和港口码头的钢结构常年浸泡在海水或土壤中，容易发生电化学腐蚀。工程师会在钢结构表面固定若干锌块或镁块，并用金属导线（或直接接触）将其与钢结构相连。海水或潮湿土壤充当电解质，形成完整的电路：锌块作为阳极被氧化溶解，钢结构作为阴极被保护。随着使用时间增长，锌块逐渐消耗变小，需要定期检查和更换，而船体或管道本身几乎不受腐蚀。</p>
+<p><strong>问题解决应用</strong></p>
+<p>在实际工程中，选择牺牲阳极材料需要综合考虑活性、成本和环境。例如，镁的电势比锌更负（约 $-2.37\ \text{V}$），保护能力更强，但消耗速度快，适合短期或高需求场合；锌消耗较慢，适合长期使用的海洋结构。工程师还需通过计算所需阳极的总质量，估算其能提供的保护电流与预期使用寿命，从而合理布置阳极数量和更换周期，确保结构在整个使用期限内持续获得电化学保护。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch18: Representative Metals, Metalloids, and Nonmetals (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

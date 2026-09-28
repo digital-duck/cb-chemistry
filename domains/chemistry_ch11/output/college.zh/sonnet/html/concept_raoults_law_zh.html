@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raoults Law | Chemistry Ch11</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="raoults-law">Raoults Law</h2>
+<p><strong>定义</strong></p>
+<p>拉乌尔定律(Raoult's Law)描述了理想溶液中溶剂的蒸气压如何随溶质的加入而降低。它指出,溶液中某一组分的蒸气分压等于该组分在纯态时的蒸气压乘以它在溶液中的摩尔分数:</p>
+$$P_A = X_A P_A^*$$
+<p>其中 $P_A$ 是组分 A 在溶液上方的蒸气分压,$P_A^*$ 是纯组分 A 在同一温度下的蒸气压,$X_A$ 是 A 在溶液中的摩尔分数。这一关系成立的前提是溶液为"理想溶液",即溶质分子与溶剂分子之间的相互作用力与纯溶剂分子之间的作用力大致相同——换句话说,溶质分子的加入不会显著改变溶剂分子逃逸进入气相的难易程度,只是"稀释"了溶剂分子在液面的比例。</p>
+<p><strong>结果:蒸气压下降</strong></p>
+<p>当溶质是不挥发的(即溶质本身几乎不产生蒸气,如蔗糖溶于水),溶液的总蒸气压就等于溶剂的蒸气分压。由于溶剂的摩尔分数 $X_{溶剂} < 1$,溶液的蒸气压必然低于纯溶剂的蒸气压 $P^*$。蒸气压下降的幅度为:</p>
+$$\Delta P = P^* - P = X_{溶质} \, P^*$$
+<p><strong>例题</strong></p>
+<p>在 25°C 时,纯水的蒸气压为 23.8 mmHg。若将 0.5 mol 蔗糖溶于 4.5 mol 水中,求溶液的蒸气压。</p>
+<p>水的摩尔分数为 $X_{水} = 4.5/(4.5+0.5) = 0.90$。</p>
+<p>代入公式:$P_{水} = 0.90 \times 23.8\ \text{mmHg} = 21.4\ \text{mmHg}$。</p>
+<p>蒸气压下降了 $23.8 - 21.4 = 2.4$ mmHg。</p>
+<p><strong>应用于解题</strong></p>
+<p>拉乌尔定律是解释"依数性"(colligative properties)的基础——沸点升高、凝固点下降、渗透压等现象,本质上都源于溶剂蒸气压的降低。在实际问题中,常见的解题思路是:先由已知的溶质、溶剂摩尔数求出摩尔分数,再代入公式求蒸气压或蒸气压下降值;若题目给出蒸气压下降值反求溶质摩尔质量,则需要先算出溶质的摩尔分数,再结合溶质质量求出摩尔质量。需要注意的是,真实溶液(尤其是浓度较高或组分间存在强氢键、强极性差异的体系)会偏离理想行为,此时拉乌尔定律仅作为近似或参考基准,实验测得的蒸气压可能高于或低于理论预测值。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch11: Solutions and Colloids (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

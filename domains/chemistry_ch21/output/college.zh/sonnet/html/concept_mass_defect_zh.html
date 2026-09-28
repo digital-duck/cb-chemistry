@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mass Defect | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="质量亏损">质量亏损</h2>
+<p>原子核由质子和中子（统称核子）组成，但一个有趣的实验事实是：原子核的实际质量总是<strong>小于</strong>组成它的自由质子和自由中子的质量之和。这个差值被称为<strong>质量亏损</strong>（mass defect），记作 $\Delta m$：</p>
+$$\Delta m = \left[ Z m_p + N m_n \right] - m_{\text{nucleus}}$$
+<p>其中 $Z$ 是质子数，$N$ 是中子数，$m_p$、$m_n$ 分别是质子和中子的静止质量，$m_{\text{nucleus}}$ 是原子核的实际测量质量。根据爱因斯坦的质能关系 $E = mc^2$，这部分"消失"的质量并没有真正消失，而是以能量的形式释放出来，转化为将核子束缚在一起的<strong>结合能</strong>（binding energy）：</p>
+$$E_{\text{binding}} = \Delta m \, c^2$$
+<p><strong>计算实例</strong>：以氦-4（$^4_2\text{He}$）原子核为例，它由 2 个质子和 2 个中子组成。</p>
+<li>$2 m_p = 2 \times 1.007276\ \text{u} = 2.014552\ \text{u}$</li>
+<li>$2 m_n = 2 \times 1.008665\ \text{u} = 2.017330\ \text{u}$</li>
+<li>质子+中子质量之和 $= 4.031882\ \text{u}$</li>
+<li>氦-4 原子核实测质量 $= 4.001506\ \text{u}$</li>
+<p>质量亏损为：</p>
+$$\Delta m = 4.031882\ \text{u} - 4.001506\ \text{u} = 0.030376\ \text{u}$$
+<p>利用 $1\ \text{u} = 931.5\ \text{MeV}/c^2$ 的换算关系，可得结合能：</p>
+$$E_{\text{binding}} = 0.030376 \times 931.5\ \text{MeV} \approx 28.3\ \text{MeV}$$
+<p>这意味着要把氦-4原子核拆散成 2 个自由质子和 2 个自由中子，需要外界输入约 28.3 MeV 的能量；反之，这些核子结合成一个氦核时会释放出同样多的能量。</p>
+<p><strong>应用于问题求解</strong>：质量亏损和结合能是理解核反应能量释放的关键工具。将结合能除以核子总数，得到<strong>每核子结合能</strong>（binding energy per nucleon），这一指标可以比较不同原子核的稳定程度——数值越大，原子核越稳定。铁-56附近的核素每核子结合能最高，这解释了为什么轻核聚变（如氢聚变为氦）和重核裂变（如铀裂变）都能释放能量：两个过程都是朝着"每核子结合能更高"的方向移动，将亏损的质量转化为可利用的能量，这正是核电站和恒星发光发热背后的物理基础。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

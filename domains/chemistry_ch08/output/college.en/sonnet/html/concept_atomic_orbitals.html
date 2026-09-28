@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atomic Orbitals | Chemistry Ch08</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="atomic-orbitals">Atomic Orbitals</h2>
+<p>An atomic orbital is a mathematical function that describes the probability of finding an electron at a given point around an atomic nucleus. Orbitals arise as solutions to the Schrödinger equation for the hydrogen atom, and each solution is labeled by three quantum numbers: the principal quantum number $n$ (energy level and size, $n = 1, 2, 3, \dots$), the angular momentum quantum number $l$ (shape, $l = 0, \dots, n-1$), and the magnetic quantum number $m_l$ (orientation, $m_l = -l, \dots, +l$). The value of $l$ determines the orbital "type": $l=0$ is an $s$ orbital (spherical), $l=1$ is a $p$ orbital (dumbbell-shaped), $l=2$ is a $d$ orbital, and so on. Crucially, an orbital is not a physical orbit — it is a probability density, $|\psi|^2$, describing where an electron is <em>likely</em> to be found, not a fixed trajectory.</p>
+<p><strong>Worked example.</strong> Consider a carbon atom, $Z=6$, with ground-state electron configuration $1s^2\,2s^2\,2p^2$. Electrons fill orbitals following three well-established rules of thumb: lowest-energy orbitals fill first, each orbital holds at most two electrons with opposite spin, and when several orbitals of equal energy are available (here, the three $2p$ orbitals), electrons spread out one per orbital before any pairing occurs. So the two $2p$ electrons go into two different $2p$ orbitals (e.g., $2p_x^1\,2p_y^1$) with parallel spins, rather than both pairing into $2p_x$. This configuration explains carbon's tendency to form four bonds via orbital hybridization ($sp^3$), since one $2s$ electron can be promoted to complete a half-filled set of four singly occupied orbitals.</p>
+<p><strong>Problem-solving application.</strong> Suppose you're asked to predict the ground-state configuration of phosphorus ($Z=15$) and determine how many unpaired electrons it has. Fill orbitals in order of increasing energy: $1s^2\,2s^2\,2p^6\,3s^2\,3p^3$. The $3p$ subshell has three orbitals ($3p_x, 3p_y, 3p_z$) and three electrons; applying the same filling logic, each orbital gets one electron before any pairing, giving three unpaired electrons. This directly predicts phosphorus's paramagnetism and informs its bonding behavior (it commonly forms three covalent bonds, consistent with three singly occupied $p$ orbitals available for pairing with other atoms' electrons). This orbital-filling procedure is the standard toolkit for predicting configurations, magnetic behavior, and valence across the periodic table.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

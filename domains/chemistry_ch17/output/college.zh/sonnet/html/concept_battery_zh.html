@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Battery | Chemistry Ch17</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="电池">电池</h2>
+<p>电池（battery）是一种通过自发的氧化还原反应（redox reaction）将化学能直接转化为电能的装置。每个电池由两个电极和电解质组成：负极（anode）发生氧化反应、失去电子；正极（cathode）发生还原反应、得到电子。电子无法直接穿过电解质，只能通过外部导线从负极流向正极，从而形成电流；与此同时，电解质中的离子在电池内部迁移以维持电荷平衡。电池的电动势（electromotive force, EMF）由两个电极反应的标准还原电位之差决定，通常表示为 $E^\circ_{\text{cell}} = E^\circ_{\text{cathode}} - E^\circ_{\text{anode}}$。</p>
+<p><strong>实例分析：</strong> 以常见的锌—铜伏打电池为例。负极为锌片，发生氧化：$\text{Zn}(s) \rightarrow \text{Zn}^{2+}(aq) + 2e^-$；正极为铜片，发生还原：$\text{Cu}^{2+}(aq) + 2e^- \rightarrow \text{Cu}(s)$。已知 $E^\circ_{\text{Cu}^{2+}/\text{Cu}} = +0.34\ \text{V}$，$E^\circ_{\text{Zn}^{2+}/\text{Zn}} = -0.76\ \text{V}$，代入上式可得 $E^\circ_{\text{cell}} = 0.34 - (-0.76) = 1.10\ \text{V}$，这与实验测得的电压高度吻合，说明该反应确实能自发进行并对外做功。</p>
+<p><strong>问题解决应用：</strong> 判断一对给定的半反应能否组成有效电池，关键在于比较两者的标准还原电位——电位较高的一侧作为正极（还原），电位较低的一侧作为负极（氧化），只要 $E^\circ_{\text{cell}} > 0$，反应即为自发过程，电池便可持续供电。这一原则不仅用于分析伏打电池，也直接指导实际电池（如铅酸电池、锂离子电池）材料的选择：工程师会寻找电位差尽可能大、且电极反应可逆性好的电对组合，以获得更高电压和更长的充放电循环寿命。此外，电池容量还取决于参与反应的活性物质总量，可通过法拉第定律 $Q = nFt$（其中 $F$ 为法拉第常数）估算电池可提供的电荷量，这也是评估电池续航能力的基本工具。理解电极电位与自发性之间的关系，是分析和设计任何电化学储能系统的核心出发点。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch17: Electrochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

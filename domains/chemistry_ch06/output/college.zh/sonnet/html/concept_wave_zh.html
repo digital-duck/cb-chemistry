@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wave | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="wave">Wave</h2>
+<p><strong>定义</strong></p>
+<p>波是一种能量通过介质（或电磁场）传播的方式,其特点是振动或扰动在空间中传递,而介质本身的物质并不随之整体迁移。以水波为例,水分子只是在原地上下振荡,真正向外传播的是能量和波形。波可分为两大类:机械波(如声波、水波)需要介质传播,依靠分子间的相互作用力传递振动;电磁波(如光、无线电波)不需要介质,可在真空中传播。描述波最基本的三个量是波长 $\lambda$(相邻两个波峰之间的距离)、频率 $f$(单位时间内通过某点的波数)和波速 $v$,三者关系为:</p>
+$$v = \lambda f$$
+<p>这一关系式是理解一切波动现象的基础,因为它把空间尺度(波长)、时间尺度(频率)与传播速度联系在一起。</p>
+<p><strong>应用示例</strong></p>
+<p>假设某声波在空气中传播速度为 $340\ \text{m/s}$,频率为 $170\ \text{Hz}$(接近男低音的音高),求其波长。</p>
+<p>由 $v = \lambda f$,可得:</p>
+$$\lambda = \frac{v}{f} = \frac{340}{170} = 2\ \text{m}$$
+<p>这说明低频声音的波长较长,这也解释了为什么低音更容易绕过障碍物传播(衍射效应与波长相关),而高频声音(波长短)更容易被物体阻挡或反射。</p>
+<p><strong>解决问题的应用</strong></p>
+<p>在实际问题中,波速 $v$ 往往由介质本身的性质决定,而非人为设定。例如,声速在空气中约为 $340\ \text{m/s}$,在水中约为 $1480\ \text{m/s}$,在钢铁中可达 $5000\ \text{m/s}$ 以上——介质越致密、弹性越强,声速越快。这意味着,当同一声源(固定频率)在不同介质中传播时,波长会随波速变化而改变,但频率保持不变(因为频率由振动源决定)。</p>
+<p>这一原理在医学超声成像、地震波分析、声呐探测等领域都有重要应用:通过测量波速和已知频率,可以反推波长,进而判断介质的密度或结构特征。掌握 $v = \lambda f$ 这一关系,是理解声学、光学乃至地震学中波传播规律的核心工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

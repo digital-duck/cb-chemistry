@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Critical Point | Chemistry Ch10</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="critical-point">Critical Point</h2>
+<p><strong>定义</strong></p>
+<p>临界点（critical point）是物质相图上气液平衡线的终点，对应一组特定的温度和压强，记为临界温度 $T_c$ 和临界压强 $P_c$。当体系被加热并保持在足够高的压强下，气相和液相的密度会逐渐趋近；到达临界点时，两相密度相等，气液界面消失，物质转变为一种均匀的"超临界流体"（supercritical fluid）。超过临界温度后，无论施加多大压强，都无法通过压缩使气体重新液化——因为已经不存在独立的气相和液相之分。这与普通沸腾不同：沸腾是在固定压强下、温度升到沸点时发生的相变，而临界点是相变现象本身消失的边界。每种纯物质都有其特征性的 $(T_c, P_c)$ 数值，例如水的临界温度约为 $374\,^{\circ}\mathrm{C}$，临界压强约为 $22.1\,\mathrm{MPa}$（约218个大气压）；二氧化碳则低得多，$T_c \approx 31.1\,^{\circ}\mathrm{C}$，$P_c \approx 7.38\,\mathrm{MPa}$。</p>
+<p><strong>实例解析</strong></p>
+<p>以二氧化碳为例说明其应用价值。在常温常压下，$\mathrm{CO_2}$ 是气体；若加压到超过 $7.38\,\mathrm{MPa}$ 且温度维持在 $31.1\,^{\circ}\mathrm{C}$ 以上，它就进入超临界态。超临界 $\mathrm{CO_2}$（scCO₂）兼具气体的低黏度、高扩散性，和液体的高密度、强溶解能力，因此能像液体一样溶解脂类物质，又能像气体一样迅速渗透进固体基质的孔隙中。这正是工业上用它从咖啡豆中脱除咖啡因、从香料中萃取精油的原理：萃取完成后只需降压，$\mathrm{CO_2}$ 便自动变回气体挥发掉，不留化学溶剂残留，产品更纯净、更环保。</p>
+<p><strong>问题解决应用</strong></p>
+<p>判断一个萃取或反应过程是否能利用超临界流体技术，关键是比较操作条件与目标物质的 $(T_c, P_c)$：条件必须同时满足 $T > T_c$ 且 $P > P_c$，二者缺一不可——只升温不加压，物质只是普通气体；只加压不升温，则可能仍处于液相或固相区域。例如设计一套用超临界水氧化法处理有机废水的工艺，工程师必须先查明水的 $T_c = 374\,^{\circ}\mathrm{C}$、$P_c = 22.1\,\mathrm{MPa}$，据此选择耐高温高压的反应釜材料，并核算加热与加压所需的能耗成本，权衡其相对于传统焚烧或生物处理法的经济性。理解临界点，本质上是理解"相变边界为何会消失"，这一原理广泛应用于超临界萃取、增压反应工程以及地质学中解释深部流体（如成矿热液）的行为。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch10: Liquids and Solids (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

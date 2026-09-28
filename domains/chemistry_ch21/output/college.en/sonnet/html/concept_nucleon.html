@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nucleon | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="nucleon">Nucleon</h2>
+<p>A nucleon is a particle found in the nucleus of an atom — specifically, a proton or a neutron. Protons carry a positive electric charge of $+1e$, while neutrons carry no net charge, but the two are nearly identical in mass (roughly $1.67 \times 10^{-27}\,\text{kg}$). The term "nucleon" is simply a convenient label used whenever a calculation or a physical process treats protons and neutrons interchangeably — for instance, when counting the total mass of a nucleus rather than distinguishing which particles carry charge.</p>
+<p><strong>Worked example.</strong> Consider a nucleus of carbon-12, written $^{12}_{6}\text{C}$. The subscript 6 gives the number of protons, and the superscript 12 gives the total nucleon count. The number of neutrons is therefore $12 - 6 = 6$. So carbon-12 contains 6 protons and 6 neutrons — 12 nucleons in total, bound tightly inside a nuclear radius of only a few femtometers ($10^{-15}\,\text{m}$).</p>
+<p><strong>Problem-solving application.</strong> Writing the nucleon count as (protons) + (neutrons) = (total nucleons) gives a simple bookkeeping tool for nuclear reactions: this total, and the total charge, must balance on both sides of any nuclear equation. Suppose uranium-238 ($^{238}_{92}\text{U}$) breaks apart, releasing a small fragment consisting of 2 protons and 2 neutrons (a helium nucleus, $^{4}_{2}\text{He}$). To find the resulting nucleus left behind, apply conservation of nucleon number and charge:</p>
+$$
+\text{nucleons remaining} = 238 - 4 = 234, \qquad \text{protons remaining} = 92 - 2 = 90
+$$
+<p>An atom with 90 protons is thorium, so the leftover nucleus is $^{234}_{90}\text{Th}$. This same nucleon-and-charge bookkeeping applies to any nuclear process — fission, fusion, or the emission of other particles: first identify how many nucleons and how much charge enter and leave, then solve for the unknown quantities on the other side of the equation. Mastering this simple accounting method is often the fastest way to determine an unknown reaction product, without needing to know the detailed physics of the forces that hold the nucleons together in the first place.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lewis Base | Chemistry Ch15</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="lewis-base">Lewis Base</h2>
+<p>A <strong>Lewis base</strong> is any species that donates a pair of electrons to form a new covalent bond. This definition, proposed by Gilbert N. Lewis, is broader than the Brønsted-Lowry framework, which restricts bases to proton acceptors. Every Brønsted-Lowry base is a Lewis base (since accepting a proton requires donating an electron pair to it), but the Lewis definition also captures species with no protons to accept at all — like ammonia coordinating to a metal cation, or fluoride ion bonding to boron trifluoride. What matters is structural: a Lewis base must have an available lone pair, typically on a highly electronegative atom (N, O, F) or a π system, positioned in an orbital accessible for bonding.</p>
+<p><strong>Worked example.</strong> Consider the reaction between boron trifluoride and ammonia:</p>
+$$\text{BF}_3 + :\text{NH}_3 \rightarrow \text{F}_3\text{B}-\text{NH}_3$$
+<p>Boron in $\text{BF}_3$ has only six electrons around it — an empty p-orbital — making it electron-deficient and a strong Lewis acid. Nitrogen in $\text{NH}_3$ has a lone pair pointing outward. The nitrogen lone pair fills boron's empty orbital, forming a new N–B covalent (coordinate/dative) bond. No protons moved; this reaction would be invisible to Brønsted-Lowry analysis, yet it is unmistakably an acid-base reaction under the Lewis definition.</p>
+<p><strong>Problem-solving application.</strong> To identify whether a molecule can act as a Lewis base, work through three checks in sequence: (1) draw the Lewis structure and locate any lone pairs; (2) confirm the lone pair is not already tied up in resonance delocalization that makes it unavailable (compare, for instance, the pyridine nitrogen lone pair, which is available, versus the pyrrole nitrogen lone pair, which is delocalized into the aromatic ring and much less available); (3) check that the atom holding the lone pair is not so electronegative or the pair so tightly held that donation is unfavorable (e.g., F⁻ is a weaker Lewis base than I⁻ in many solvents because of how tightly fluorine holds its electrons). This three-step check is the same reasoning chemists use to predict transition-metal complex formation, catalysis by Lewis acid catalysts (like AlCl₃ in Friedel-Crafts reactions), and even solvent behavior — solvents with strong Lewis basicity, such as DMSO, stabilize cations by donating electron density to them.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>High Temperature Superconductors | Chemistry Ch19</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="high-temperature-superconductors">High Temperature Superconductors</h2>
+<p>A superconductor is a material that, below a critical temperature $T_c$, conducts electricity with exactly zero electrical resistance and expels magnetic fields from its interior (the Meissner effect). "Conventional" superconductors, explained by Bardeen-Cooper-Schrieffer (BCS) theory, require cooling to within a few degrees of absolute zero, because their conduction mechanism relies on electrons pairing through lattice vibrations (phonons), a weak effect that is easily destroyed by thermal energy. High-temperature superconductors (HTS) are a class of materials, discovered starting in 1986, that superconduct at temperatures above 30 K, and in some copper-oxide ("cuprate") compounds above 77 K — the boiling point of liquid nitrogen. This threshold matters enormously: liquid nitrogen is cheap and easy to produce, while liquid helium (needed for conventional superconductors) is expensive and scarce.</p>
+<p>Worked example: Consider $\mathrm{YBa_2Cu_3O_7}$ (YBCO), with $T_c \approx 92\,\text{K}$. A wire made of YBCO, cooled in liquid nitrogen at $77\,\text{K}$, carries current with essentially zero resistive power loss, $P = I^2R \approx 0$, whereas a copper wire at room temperature carrying the same current $I$ dissipates significant power as heat. This is why HTS materials are candidates for lossless power transmission lines and compact, high-field magnets (MRI machines, particle accelerators, and maglev trains) that don't require costly helium cooling infrastructure.</p>
+<p>The mechanism behind HTS is still not fully settled; unlike BCS superconductors, cuprates and related iron-based superconductors involve strong electron correlations that current theory cannot completely explain — it remains an open research problem rather than a closed textbook result, so no single formula captures $T_c$ from first principles.</p>
+<p>Problem-solving application: Engineers selecting a superconductor for a given application must weigh $T_c$ against other constraints — critical current density $J_c$ (how much current the material can carry before losing superconductivity) and critical magnetic field $H_c$ (how strong a magnetic field it can tolerate). A material with a high $T_c$ but low $J_c$ may be useless for a power cable but fine for a sensor. When comparing candidate materials, always check all three critical parameters together, since optimizing for temperature alone can produce a superconductor that fails under realistic current or field loads.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dilution | Chemistry Ch03</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="dilution-稀释">Dilution（稀释）</h2>
+<p><strong>定义</strong></p>
+<p>稀释是指向溶液中加入更多溶剂，从而降低其浓度的过程。稀释操作不改变溶质的物质的量（摩尔数），只改变溶液的总体积，因此浓度随体积增大而按比例下降。这一过程的核心关系由稀释公式给出：</p>
+$$C_1 V_1 = C_2 V_2$$
+<p>其中 $C_1$、$V_1$ 分别是稀释前的浓度与体积，$C_2$、$V_2$ 是稀释后的浓度与体积。该公式成立的本质原因是溶质的量守恒：$n = C_1 V_1 = C_2 V_2$。稀释在实验室、临床医学、环境监测和日常生活（如冲泡浓缩果汁）中都极为常见。</p>
+<p><strong>实例演算</strong></p>
+<p>实验室中有一瓶 12.0 mol/L 的浓盐酸原液，需要配制 500 mL 浓度为 0.100 mol/L 的稀盐酸用于滴定实验。需要量取多少毫升原液？</p>
+<p>将已知量代入稀释公式：</p>
+$$C_1 V_1 = C_2 V_2$$
+$$(12.0\ \text{mol/L})(V_1) = (0.100\ \text{mol/L})(500\ \text{mL})$$
+$$V_1 = \frac{(0.100)(500)}{12.0} = 4.17\ \text{mL}$$
+<p>因此,应量取 4.17 mL 浓盐酸,再加水稀释至总体积 500 mL(注意操作规范:应将酸缓慢加入水中,而不是相反,以避免放热造成的飞溅)。</p>
+<p><strong>问题解决应用</strong></p>
+<p>稀释公式的应用不限于单一步骤,在实际问题中常需要串联多次稀释,或与其他浓度表达方式(如百分比浓度、ppm)结合使用。</p>
+<p><em>练习:</em> 某实验需要用储备液(浓度 2.00 mol/L)配制系列稀释液以绘制标准曲线。若先取 1.00 mL 储备液稀释至 10.0 mL(第一次稀释),再从中取出 1.00 mL 继续稀释至 10.0 mL(第二次稀释),求最终溶液的浓度。</p>
+<p>解法是分两步连续应用稀释公式:第一步,$C_1V_1 = C_2V_2$ 得 $C_2 = (2.00)(1.00)/10.0 = 0.200$ mol/L;第二步,以 0.200 mol/L 为新的初始浓度,重复计算得 $C_3 = (0.200)(1.00)/10.0 = 0.0200$ mol/L。这种连续稀释(serial dilution)是微生物学计数、药理学剂量梯度实验中的标准技术,理解其逐级传递的逻辑,是掌握定量实验设计的关键一步。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch3: Composition of Substances and Solutions (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

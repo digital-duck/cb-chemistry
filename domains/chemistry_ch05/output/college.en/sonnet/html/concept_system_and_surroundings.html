@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>System And Surroundings | Chemistry Ch05</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="system-and-surroundings">System And Surroundings</h2>
+<p>In thermodynamics, every analysis begins with a deliberate choice: you draw an imaginary boundary around the portion of the universe you want to study. Everything inside that boundary is the <strong>system</strong>; everything outside it is the <strong>surroundings</strong>. The boundary itself can be real (the walls of a container) or purely conceptual (an imaginary surface around a parcel of gas). This division matters because energy and matter can cross the boundary, and tracking what crosses — and what doesn't — is the entire basis for applying conservation laws correctly. Later sections will classify systems by exactly what they allow to cross (matter, energy, both, or neither); for now, the key skill is simply learning to draw the boundary itself.</p>
+<p>Consider a cup of hot coffee sitting on a table in a room. If you define the system as just the coffee, the surroundings are the cup, the air, and the table. Heat flows from the coffee (system) to the air (surroundings) until thermal equilibrium is reached — the coffee cools, the room warms imperceptibly. If instead you redefine the system to include the cup and the coffee together, the same physical process now shows heat crossing a different boundary, but the surroundings shrink to just the air and table. Nothing about the physical world changed; only your chosen boundary did.</p>
+<p>This is the practical payoff: choosing the boundary well often turns a hard problem into an easy one. If you want to find the final temperature of coffee left to cool overnight, you could try to track heat flowing out through the cup, into the air, and eventually through the walls of the room — a tangle of unknowns. Instead, draw the boundary around the whole room (coffee, cup, air, and furniture together), and treat heat loss through the room's walls as negligible over the timescale you care about. With that single choice, the heat lost by the coffee must equal the heat gained by everything else inside your boundary, letting you solve directly for the final temperature without ever needing to know what's happening outside the room. The lesson generalizes: before writing any energy balance, ask what boundary makes the bookkeeping simplest — the physics doesn't care where you draw it, but your algebra will.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

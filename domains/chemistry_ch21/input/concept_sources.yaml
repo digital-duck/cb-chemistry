@@ -1,0 +1,298 @@
+domain: chemistry_2e_ch21
+sources:
+  atomic_number:
+    label: Atomic Number
+    sections:
+    - id: ch21_s21_1
+      title: 21.1 Nuclear Structure and Stability
+  mass_number:
+    label: Mass Number
+    sections:
+    - id: ch21_s21_1
+      title: 21.1 Nuclear Structure and Stability
+  proton:
+    label: Proton
+    sections: []
+  neutron:
+    label: Neutron
+    sections: []
+  electron:
+    label: Electron
+    sections: []
+  electromagnetic_radiation:
+    label: Electromagnetic Radiation
+    sections: []
+  first_order_kinetics:
+    label: First-Order Kinetics
+    sections: []
+  nucleon:
+    label: Nucleon
+    sections:
+    - id: ch21_s21_1
+      title: 21.1 Nuclear Structure and Stability
+    - id: ch21_s21_2
+      title: 21.2 Nuclear Equations
+  nuclide:
+    label: Nuclide
+    sections:
+    - id: ch21_s21_1
+      title: 21.1 Nuclear Structure and Stability
+  isotope:
+    label: Isotope
+    sections:
+    - id: ch21_s21_1
+      title: 21.1 Nuclear Structure and Stability
+  nuclear_density:
+    label: Nuclear Density
+    sections:
+    - id: ch21_s21_1
+      title: 21.1 Nuclear Structure and Stability
+  strong_nuclear_force:
+    label: Strong Nuclear Force
+    sections:
+    - id: ch21_s21_1
+      title: 21.1 Nuclear Structure and Stability
+  mass_defect:
+    label: Mass Defect
+    sections:
+    - id: ch21_s21_1
+      title: 21.1 Nuclear Structure and Stability
+  mass_energy_equivalence:
+    label: Mass-Energy Equivalence
+    sections:
+    - id: ch21_s21_1
+      title: 21.1 Nuclear Structure and Stability
+  nuclear_binding_energy:
+    label: Nuclear Binding Energy
+    sections:
+    - id: ch21_s21_1
+      title: 21.1 Nuclear Structure and Stability
+  binding_energy_per_nucleon:
+    label: Binding Energy per Nucleon
+    sections:
+    - id: ch21_s21_1
+      title: 21.1 Nuclear Structure and Stability
+  band_of_stability:
+    label: Band of Stability
+    sections:
+    - id: ch21_s21_1
+      title: 21.1 Nuclear Structure and Stability
+  np_ratio:
+    label: Neutron-to-Proton Ratio
+    sections:
+    - id: ch21_s21_1
+      title: 21.1 Nuclear Structure and Stability
+    - id: ch21_s21_3
+      title: 21.3 Radioactive Decay
+  magic_numbers:
+    label: Magic Numbers
+    sections:
+    - id: ch21_s21_1
+      title: 21.1 Nuclear Structure and Stability
+  nuclear_stability:
+    label: Nuclear Stability
+    sections:
+    - id: ch21_s21_1
+      title: 21.1 Nuclear Structure and Stability
+  alpha_particle:
+    label: Alpha Particle
+    sections:
+    - id: ch21_s21_2
+      title: 21.2 Nuclear Equations
+    - id: ch21_s21_3
+      title: 21.3 Radioactive Decay
+  beta_particle:
+    label: Beta Particle
+    sections:
+    - id: ch21_s21_2
+      title: 21.2 Nuclear Equations
+    - id: ch21_s21_3
+      title: 21.3 Radioactive Decay
+  positron:
+    label: Positron
+    sections:
+    - id: ch21_s21_2
+      title: 21.2 Nuclear Equations
+    - id: ch21_s21_3
+      title: 21.3 Radioactive Decay
+  gamma_ray:
+    label: Gamma Ray
+    sections:
+    - id: ch21_s21_2
+      title: 21.2 Nuclear Equations
+    - id: ch21_s21_3
+      title: 21.3 Radioactive Decay
+  antimatter:
+    label: Antimatter
+    sections:
+    - id: ch21_s21_2
+      title: 21.2 Nuclear Equations
+  nuclear_reaction:
+    label: Nuclear Reaction
+    sections:
+    - id: ch21_s21_2
+      title: 21.2 Nuclear Equations
+  balancing_nuclear_equations:
+    label: Balancing Nuclear Equations
+    sections:
+    - id: ch21_s21_2
+      title: 21.2 Nuclear Equations
+  radioactive_decay:
+    label: Radioactive Decay
+    sections:
+    - id: ch21_s21_3
+      title: 21.3 Radioactive Decay
+  parent_daughter_nuclide:
+    label: Parent and Daughter Nuclides
+    sections:
+    - id: ch21_s21_3
+      title: 21.3 Radioactive Decay
+  alpha_decay:
+    label: Alpha Decay
+    sections:
+    - id: ch21_s21_3
+      title: 21.3 Radioactive Decay
+  beta_decay:
+    label: Beta Decay
+    sections:
+    - id: ch21_s21_3
+      title: 21.3 Radioactive Decay
+  gamma_emission:
+    label: Gamma Emission
+    sections:
+    - id: ch21_s21_3
+      title: 21.3 Radioactive Decay
+  positron_emission:
+    label: Positron Emission
+    sections:
+    - id: ch21_s21_3
+      title: 21.3 Radioactive Decay
+  electron_capture:
+    label: Electron Capture
+    sections:
+    - id: ch21_s21_3
+      title: 21.3 Radioactive Decay
+  radioactive_decay_series:
+    label: Radioactive Decay Series
+    sections:
+    - id: ch21_s21_3
+      title: 21.3 Radioactive Decay
+  half_life:
+    label: Half-Life
+    sections:
+    - id: ch21_s21_3
+      title: 21.3 Radioactive Decay
+  decay_constant:
+    label: Decay Constant
+    sections:
+    - id: ch21_s21_3
+      title: 21.3 Radioactive Decay
+  radioactive_decay_kinetics:
+    label: Radioactive Decay Kinetics
+    sections:
+    - id: ch21_s21_3
+      title: 21.3 Radioactive Decay
+  radiometric_dating:
+    label: Radiometric Dating
+    sections:
+    - id: ch21_s21_3
+      title: 21.3 Radioactive Decay
+  radiocarbon_dating:
+    label: Radiocarbon Dating
+    sections:
+    - id: ch21_s21_3
+      title: 21.3 Radioactive Decay
+  nuclear_transmutation:
+    label: Nuclear Transmutation
+    sections:
+    - id: ch21_s21_4
+      title: 21.4 Transmutation and Nuclear Energy
+  particle_accelerator:
+    label: Particle Accelerator
+    sections:
+    - id: ch21_s21_4
+      title: 21.4 Transmutation and Nuclear Energy
+  transuranium_elements:
+    label: Transuranium Elements
+    sections:
+    - id: ch21_s21_4
+      title: 21.4 Transmutation and Nuclear Energy
+  nuclear_fission:
+    label: Nuclear Fission
+    sections:
+    - id: ch21_s21_4
+      title: 21.4 Transmutation and Nuclear Energy
+  chain_reaction:
+    label: Nuclear Chain Reaction
+    sections:
+    - id: ch21_s21_4
+      title: 21.4 Transmutation and Nuclear Energy
+  critical_mass:
+    label: Critical Mass
+    sections:
+    - id: ch21_s21_4
+      title: 21.4 Transmutation and Nuclear Energy
+  nuclear_fusion:
+    label: Nuclear Fusion
+    sections:
+    - id: ch21_s21_4
+      title: 21.4 Transmutation and Nuclear Energy
+  nuclear_reactor:
+    label: Nuclear Reactor
+    sections:
+    - id: ch21_s21_4
+      title: 21.4 Transmutation and Nuclear Energy
+  ionizing_radiation:
+    label: Ionizing Radiation
+    sections:
+    - id: ch21_s21_6
+      title: 21.6 Biological Effects of Radiation
+  radiation_biological_effects:
+    label: Biological Effects of Radiation
+    sections:
+    - id: ch21_s21_6
+      title: 21.6 Biological Effects of Radiation
+  radiation_units:
+    label: Radiation Measurement Units
+    sections:
+    - id: ch21_s21_6
+      title: 21.6 Biological Effects of Radiation
+  relative_biological_effectiveness:
+    label: Relative Biological Effectiveness (RBE)
+    sections:
+    - id: ch21_s21_6
+      title: 21.6 Biological Effects of Radiation
+  radioactive_tracer:
+    label: Radioactive Tracer
+    sections:
+    - id: ch21_s21_5
+      title: 21.5 Uses of Radioisotopes
+  pet_scan:
+    label: Positron Emission Tomography (PET) Scan
+    sections:
+    - id: ch21_s21_3
+      title: 21.3 Radioactive Decay
+    - id: ch21_s21_5
+      title: 21.5 Uses of Radioisotopes
+  radiation_therapy:
+    label: Radiation Therapy
+    sections:
+    - id: ch21_s21_5
+      title: 21.5 Uses of Radioisotopes
+    - id: ch21_s21_6
+      title: 21.6 Biological Effects of Radiation
+  fission_power_generation:
+    label: Nuclear Fission Power Generation
+    sections:
+    - id: ch21_s21_4
+      title: 21.4 Transmutation and Nuclear Energy
+  uranium_lead_dating:
+    label: Uranium-Lead Radiometric Dating
+    sections:
+    - id: ch21_s21_3
+      title: 21.3 Radioactive Decay
+  radiation_detection:
+    label: Radiation Detection Instruments
+    sections:
+    - id: ch21_s21_6
+      title: 21.6 Biological Effects of Radiation

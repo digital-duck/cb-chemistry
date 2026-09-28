@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hall Heroult Cell | Chemistry Ch18</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="hall-heroult-cell">Hall Heroult Cell</h2>
+<p>铝是地壳中含量最丰富的金属元素，但它从不以单质形式存在——铝对氧的亲和力极强，天然只以氧化铝（$\text{Al}_2\text{O}_3$，存在于铝土矿中）的形式出现。要从氧化铝中还原出金属铝极为困难：氧化铝的熔点高达2050°C，若直接高温熔融电解，能耗将高得不切实际。1886年，霍尔（Charles Hall）与埃鲁（Paul Héroult）几乎同时独立发明了一种巧妙的解决方案，即霍尔-埃鲁法（Hall-Héroult process），使铝从稀有贵金属变成了如今廉价易得的工业材料。</p>
+<p>其核心思路是：将氧化铝溶解在熔融的冰晶石（$\text{Na}_3\text{AlF}_6$）中，而不是单独熔化氧化铝。冰晶石的作用类似溶剂——氧化铝溶于其中后，混合物的熔点大幅降至约950-980°C，比纯氧化铝低了1000多度，从而节省了大量能源。这个电解槽（cell）由碳制成的阳极和阴极构成，通入强大直流电后发生电解反应：</p>
+<p>阴极（还原反应）：</p>
+$$\text{Al}^{3+} + 3e^- \rightarrow \text{Al}(l)$$
+<p>阳极（氧化反应）：</p>
+$$2\text{O}^{2-} + \text{C}(s) \rightarrow \text{CO}_2(g) + 4e^-$$
+<p>熔融铝密度大于电解质，沉积在槽底被定期抽出；碳阳极则在反应中被氧化消耗，需要持续更换。总反应可概括为：</p>
+$$2\text{Al}_2\text{O}_3 + 3\text{C} \rightarrow 4\text{Al} + 3\text{CO}_2$$
+<p><strong>问题解决应用</strong>：这一工艺的核心工程约束是电耗——生产1吨铝大约需要13,000-16,000千瓦时电力，这也是为什么炼铝厂几乎总是建在水电资源丰富、电价低廉的地区（如冰岛、魁北克）。这提示我们，工业化学过程的选址与成本，往往不取决于原料丰富程度，而取决于能量输入的可获得性。理解这一点，可以帮助分析其他电解冶金过程（如钠、镁的提取）为何同样依赖廉价电力，以及为何铝的回收再生（仅需重新熔化，不必电解还原）能节省约95%的能耗——这正是铝制品回收在环保与经济上都极具价值的根本原因。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch18: Representative Metals, Metalloids, and Nonmetals (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

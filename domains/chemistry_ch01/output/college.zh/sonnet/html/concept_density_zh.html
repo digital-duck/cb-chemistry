@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Density | Chemistry Ch01</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="密度">密度</h2>
+<p><strong>定义</strong></p>
+<p>密度（density）是物质的一种基本性质，定义为单位体积内所含的质量，用公式表示为：</p>
+$$\rho = \frac{m}{V}$$
+<p>其中 $\rho$ 表示密度，$m$ 表示质量，$V$ 表示体积。国际单位制中密度常用 $\text{kg/m}^3$ 表示，而在化学与生物实验中更常用 $\text{g/cm}^3$ 或 $\text{g/mL}$（两者数值相等，因为 $1\ \text{cm}^3 = 1\ \text{mL}$）。密度是一种<strong>内含性质</strong>（intensive property），也就是说它不依赖于样品的大小——无论你取一整块金块还是一小片金箔，密度都相同，这与质量、体积这类<strong>外延性质</strong>（extensive property）不同。密度还会随温度和压强变化：多数固体和液体受热膨胀、密度略微下降，而气体的密度对压强和温度都十分敏感。</p>
+<p><strong>范例</strong></p>
+<p>假设某未知金属块的质量为 $54.0\ \text{g}$，将其浸入量筒后水面上升了 $\Delta V = 20.0\ \text{mL}$（即排水法测得的体积）。代入公式：</p>
+$$\rho = \frac{54.0\ \text{g}}{20.0\ \text{mL}} = 2.70\ \text{g/mL}$$
+<p>查表可知，$2.70\ \text{g/mL}$ 正是铝的密度，因此可以初步判断这块金属是铝，而不是密度为 $8.96\ \text{g/mL}$ 的铜或 $19.3\ \text{g/mL}$ 的金。这个例子说明密度可以作为鉴别物质的重要依据，尤其在无法直接观察成分的情况下。</p>
+<p><strong>解题应用</strong></p>
+<p>密度概念在解决实际问题时通常有三类典型任务：（1）已知质量和体积求密度；（2）已知密度和体积求质量，即 $m = \rho V$；（3）已知密度和质量求体积，即 $V = m/\rho$。此外，密度还能预测物体在液体中的浮沉：若固体密度小于液体密度，物体会漂浮（如冰块密度约 $0.92\ \text{g/mL}$，小于水的 $1.00\ \text{g/mL}$，因此冰会浮在水面）；若密度大于液体密度，则物体下沉。混合物的密度问题（如合金或溶液浓度计算）常需结合各成分的质量分数与各自密度进行加权计算，这类应用在化学计量学与材料鉴定中十分常见。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch1: Essential Ideas (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Standing Wave | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="standing-wave-驻波">Standing Wave 驻波</h2>
+<p><strong>定义</strong></p>
+<p>当两列振幅、频率相同的波沿相反方向传播并发生叠加时，会形成一种波形不再向任何方向传播、而是在固定位置振荡的合成波，称为驻波（standing wave）。这种现象最常见于波在有限介质中传播并被边界反射后与自身叠加的情形，例如两端固定的弦、封闭空气柱中的声波，或激光谐振腔中的光波。</p>
+<p>驻波的显著特征是存在若干<strong>波节</strong>（node）——振幅始终为零、介质完全不动的点，以及若干<strong>波腹</strong>（antinode）——振幅达到最大的点。相邻两个波节之间的距离恰好等于半个波长，即 $\dfrac{\lambda}{2}$。只有满足特定波长（或频率）条件的波才能在给定长度的介质中形成稳定的驻波，这些允许的振动模式称为<strong>谐振模式</strong>（harmonic modes）。</p>
+<p><strong>理论关系</strong></p>
+<p>对于两端固定、长度为 $L$ 的弦，两端必须是波节，因此弦长必须是半波长的整数倍：</p>
+$$
+L = n \cdot \frac{\lambda_n}{2}, \quad n = 1, 2, 3, \dots
+$$
+<p>由此可得允许的波长为 $\lambda_n = \dfrac{2L}{n}$。结合波速公式 $v = f\lambda$，对应的振动频率为：</p>
+$$
+f_n = \frac{nv}{2L}
+$$
+<p>其中 $n=1$ 对应基频（第一谐振），$n=2,3,\dots$ 对应更高次谐波。这一关系式是理解乐器发声、共振腔设计的基础。</p>
+<p><strong>应用示例</strong></p>
+<p>一根吉他弦长 $L = 0.65\ \text{m}$，弦上波速为 $v = 260\ \text{m/s}$。求其基频。</p>
+<p>由公式 $f_1 = \dfrac{v}{2L} = \dfrac{260}{2 \times 0.65} = 200\ \text{Hz}$。</p>
+<p>若要弹奏出第三谐波（$n=3$），频率应为 $f_3 = 3 \times 200 = 600\ \text{Hz}$，此时弦上会出现 3 个波腹和 4 个波节（包括两端固定点）。</p>
+<p><strong>问题解决训练</strong></p>
+<p>驻波原理广泛用于解决实际问题：管乐器设计中，通过调节空气柱长度控制共振频率；医学超声成像利用驻波确定组织边界；建筑声学中需避免房间尺寸引发的低频驻波（"驻波效应"导致声音不均匀）。解决此类问题的关键步骤是：先判断边界条件（固定端还是开口端对应波节还是波腹），再套用相应的谐波公式确定允许频率，从而设计出符合要求的系统尺寸或识别潜在的共振问题。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

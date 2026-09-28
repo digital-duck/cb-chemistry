@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Band Theory | Chemistry Ch08</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="能带理论">能带理论</h2>
+<p>原子中的电子只能占据分立的能级，这一点在孤立原子中十分明确——例如氢原子中的电子被限制在 $E_n = -13.6\,\text{eV}/n^2$ 这样的量子化能级上。然而，当大量原子结合成固体（例如晶体中约 $10^{23}$ 个原子每摩尔）时，原子的外层电子轨道彼此重叠，根据泡利不相容原理，每个电子必须占据一个独有的量子态，于是原本简并的能级分裂成一系列彼此靠得极近、几乎连续的能级集合，称为"能带"（energy band）。能带之间可能存在电子不能占据的"禁带"（band gap），也可能相互重叠。</p>
+<p>能带理论最重要的应用是解释材料为何表现为导体、绝缘体或半导体。关键在于两个能带的相对位置和填充情况：价带（valence band，由价电子填充的最高能带）和导带（conduction band，价带之上、电子若跃迁进入便可自由移动形成电流的能带）。</p>
+<p><strong>工作实例</strong>：以硅（半导体）和金刚石（绝缘体）为例。两者都是碳族元素形成的共价晶体，价带都被电子完全填满，但二者的禁带宽度不同：硅约为 $1.1\,\text{eV}$，金刚石约为 $5.5\,\text{eV}$。在室温下（约 $kT \approx 0.025\,\text{eV}$），硅晶体中总有极少数电子因热激发获得足够能量跃过禁带进入导带，从而具备微弱导电性；而金刚石的禁带太宽，室温热能几乎不可能使电子跃迁，因此表现为绝缘体。金属则不同——其价带与导带重叠，电子不需要额外能量即可自由移动，因而具有高导电性。</p>
+<p><strong>解决问题的应用</strong>：能带理论直接指导了半导体器件设计。例如，在光伏电池中，太阳光子的能量必须大于或接近材料的禁带宽度，才能把价带电子激发到导带、产生可用的电子-空穴对；禁带太宽则大部分太阳光谱无法被吸收利用，禁带太窄则光生电压过低，这就是为什么工程师会根据目标能量转换效率去"剪裁"化合物半导体（如砷化镓、碲化镉）的禁带宽度，而不是简单套用硅。理解禁带宽度与温度、掺杂浓度的关系，是设计发光二极管、晶体管和太阳能电池等器件的基础。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch8: Advanced Theories of Covalent Bonding (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

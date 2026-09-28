@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dynamic Equilibrium | Chemistry Ch13</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="dynamic-equilibrium">Dynamic Equilibrium</h2>
+<p><strong>定义</strong></p>
+<p>动态平衡（dynamic equilibrium）是指在一个可逆反应中，正反应速率与逆反应速率相等，使得反应物和生成物的浓度不再随时间变化的状态。需要强调的是，"平衡"并不意味着反应停止了——分子仍在不断地相互转化，只是正向转化的速率恰好等于逆向转化的速率，因此从宏观上看，各组分的浓度保持恒定。这与静态平衡（如天平两端质量相等而不再运动）有本质区别：动态平衡是一种"看似静止、实则不断运动"的状态。</p>
+<p>达到动态平衡的反应必须在<strong>封闭系统</strong>中进行，即没有物质进出反应容器，这样才能保证浓度变化只由正逆反应决定。平衡状态可以用平衡常数 $K_{eq}$ 来定量描述：</p>
+$$aA + bB \rightleftharpoons cC + dD$$
+$$K_{eq} = \frac{[C]^c[D]^d}{[A]^a[B]^b}$$
+<p>$K_{eq}$ 的大小反映了平衡时生成物相对于反应物的比例：$K_{eq} \gg 1$ 表示平衡偏向生成物一侧，$K_{eq} \ll 1$ 表示偏向反应物一侧。</p>
+<p><strong>实例分析</strong></p>
+<p>以合成氨反应为例：</p>
+$$N_2(g) + 3H_2(g) \rightleftharpoons 2NH_3(g)$$
+<p>在一个密闭容器中，起初只有 $N_2$ 和 $H_2$，正反应速率很快，逆反应速率几乎为零。随着 $NH_3$ 不断生成，正反应速率因反应物浓度下降而减慢，逆反应速率因生成物浓度增加而加快。当两者速率相等时，系统达到动态平衡，此后 $N_2$、$H_2$、$NH_3$ 的浓度不再改变，但反应仍在双向持续进行。</p>
+<p><strong>问题解决应用</strong></p>
+<p>当外界条件（浓度、压强、温度）发生变化时，系统会根据勒夏特列原理（Le Chatelier's Principle）做出响应，重新建立平衡。例如，若向上述容器中增加 $N_2$ 的浓度，正反应速率暂时超过逆反应速率，平衡向生成 $NH_3$ 的方向移动，直到建立新的平衡状态。理解动态平衡的核心，在于能够预测系统在受到扰动后如何"重新找回"速率相等的状态，这正是工业合成氨（哈伯法）优化产率、以及生物体内维持内环境稳定（如血液 pH 缓冲）等实际问题的理论基础。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch13: Fundamental Equilibrium Concepts (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

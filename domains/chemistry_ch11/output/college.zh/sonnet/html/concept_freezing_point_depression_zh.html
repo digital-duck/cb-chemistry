@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Freezing Point Depression | Chemistry Ch11</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="freezing-point-depression-凝固点降低">Freezing Point Depression（凝固点降低）</h2>
+<p>当把不挥发的溶质（如盐或糖）溶解到溶剂中时，溶液的凝固点会比纯溶剂更低，这一现象称为凝固点降低。它属于依数性质（colligative properties）之一——即只取决于溶质粒子的数目，而与溶质的种类无关。凝固点降低的定量关系为：</p>
+$$\Delta T_f = i \cdot K_f \cdot m$$
+<p>其中 $\Delta T_f$ 是凝固点下降的度数，$K_f$ 是溶剂的凝固点降低常数（水的 $K_f = 1.86\ ^\circ\text{C·kg/mol}$），$m$ 是溶质的质量摩尔浓度（mol 溶质 / kg 溶剂），$i$ 是范特霍夫因子，表示每个溶质单元在溶液中实际解离出的粒子数（例如蔗糖 $i=1$，NaCl 理论上 $i=2$）。</p>
+<p>其原理可以从微观角度理解：凝固过程需要溶剂分子在固相中规则排列成晶格。溶质粒子的存在会干扰这种排列，降低溶剂分子从液相进入固相的倾向，因此必须把体系冷却到更低的温度，才能让液相与固相重新达到平衡。</p>
+<p><strong>例题</strong>：将 5.00 g 食盐（NaCl，摩尔质量 58.5 g/mol）溶于 200 g 水中，求该溶液的凝固点。</p>
+<p>首先计算质量摩尔浓度：</p>
+$$n = \frac{5.00\ \text{g}}{58.5\ \text{g/mol}} = 0.0855\ \text{mol}$$
+$$m = \frac{0.0855\ \text{mol}}{0.200\ \text{kg}} = 0.427\ \text{mol/kg}$$
+<p>由于 NaCl 在水中完全解离为 $\text{Na}^+$ 和 $\text{Cl}^-$，取 $i=2$：</p>
+$$\Delta T_f = 2 \times 1.86\ ^\circ\text{C·kg/mol} \times 0.427\ \text{mol/kg} \approx 1.59\ ^\circ\text{C}$$
+<p>因此凝固点为 $0\,^\circ\text{C} - 1.59\,^\circ\text{C} = -1.59\,^\circ\text{C}$。</p>
+<p><strong>应用与解题要点</strong>：这一原理正是冬季道路撒盐除冰、汽车防冻液配方以及生物体内细胞液防止结冰机制的科学基础。解题时需注意两个常见易错点：一是要用质量摩尔浓度而不是摩尔浓度（因为凝固点降低与质量而非体积相关）；二是必须根据溶质是否解离、解离出几个离子来正确选取 $i$ 值，若题目未特别说明，通常假设强电解质完全解离、非电解质 $i=1$。掌握这一公式后，还可反过来利用已知的 $\Delta T_f$ 数据推算未知溶质的摩尔质量，这是分子量测定实验中的常见应用。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch11: Solutions and Colloids (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

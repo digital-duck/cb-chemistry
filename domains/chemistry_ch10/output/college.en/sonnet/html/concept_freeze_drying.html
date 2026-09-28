@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Freeze Drying | Chemistry Ch10</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="freeze-drying">Freeze Drying</h2>
+<p><strong>Definition.</strong> Freeze drying, or lyophilization, is a dehydration process that removes water from a material by freezing it and then reducing the surrounding pressure so that the ice sublimates directly into vapor, bypassing the liquid phase entirely. This distinguishes it from conventional drying methods (air drying, heat drying), which pull water out as liquid or drive it off as vapor from a liquid state — both of which can collapse cell structures, denature proteins, or concentrate solutes unevenly. By keeping the material solid throughout, freeze drying preserves the original structure, flavor, and biochemical activity of the product far better than heat-based alternatives.</p>
+<p><strong>Worked example.</strong> Consider a pharmaceutical company that needs to ship a vaccine containing a live attenuated virus to regions without reliable cold-chain refrigeration. The virus is stable frozen but degrades rapidly at room temperature in liquid form. The process runs in three phases. First, the vaccine solution is frozen solid, typically to around $-40\,^\circ\text{C}$, locking the virus particles in place within an ice matrix. Second, in "primary drying," the chamber pressure is dropped well below the vapor pressure of ice at that temperature, and mild heat is applied — just enough to sublimate the ice without melting it. This removes roughly 90–95% of the water. Third, in "secondary drying," temperature is raised further under vacuum to desorb the small fraction of water that was chemically bound rather than frozen, without ever exceeding the temperature at which the virus would denature. The result is a stable, lightweight powder that can be reconstituted with sterile water at the point of use, months later, without refrigeration.</p>
+<p><strong>Problem-solving application.</strong> The core engineering trade-off in freeze drying is time versus product integrity: raising the shelf temperature speeds up sublimation but risks exceeding the material's "collapse temperature," at which the frozen structure softens and the product loses its porous cake structure — ruining reconstitution and shelf stability. A process engineer designing a freeze-drying cycle for a new biologic must therefore determine, for that specific formulation, the maximum shelf temperature that stays safely below collapse temperature while minimizing cycle time. This is a genuine optimization problem: balancing chamber pressure, shelf temperature, and drying duration against measured collapse-temperature data, since a cycle that is too aggressive destroys the batch, while one that is too conservative wastes capacity and cost across an entire production run.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rate Law | Chemistry Ch12</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="rate-law">Rate Law</h2>
+<p><strong>定义</strong></p>
+<p>速率定律（rate law）是描述化学反应速率与反应物浓度之间数量关系的数学表达式。对于一般反应</p>
+$$aA + bB \rightarrow cC + dD$$
+<p>其速率定律的一般形式为：</p>
+$$\text{rate} = k[A]^m[B]^n$$
+<p>其中 $k$ 称为速率常数（rate constant），$m$ 和 $n$ 分别是反应物 A 和 B 的<strong>反应级数</strong>（reaction order）。需要特别注意的是：$m$、$n$ 通常<strong>不等于</strong>化学方程式中的化学计量数 $a$、$b$——它们必须通过实验测定，而不能从平衡方程式直接推导。反应的<strong>总级数</strong>等于 $m+n$。速率常数 $k$ 的数值和单位取决于总级数，并且只随温度变化，不随浓度变化。</p>
+<p><strong>实例解析</strong></p>
+<p>考虑反应 $2\text{NO}(g) + \text{O}_2(g) \rightarrow 2\text{NO}_2(g)$。实验测得其速率定律为：</p>
+$$\text{rate} = k[\text{NO}]^2[\text{O}_2]^1$$
+<p>这说明该反应对 NO 是二级，对 $O_2$ 是一级，总级数为三级——尽管化学计量数是 2 和 1。若将 $[\text{NO}]$ 的浓度加倍而其他条件不变，速率将增大到原来的 $2^2 = 4$ 倍；若将 $[O_2]$ 加倍，速率仅增大 2 倍。</p>
+<p><strong>问题解决应用</strong></p>
+<p>化学家常利用"初始速率法"确定未知反应级数：在若干组实验中固定一种反应物浓度不变，只改变另一种反应物浓度，比较速率变化倍数与浓度变化倍数的关系，从而反推出指数 $m$ 或 $n$。例如，若某实验中 $[A]$ 加倍导致速率变为 4 倍，则 $2^m = 4$，解得 $m = 2$。</p>
+<p>掌握速率定律的核心价值在于工程与工业应用：一旦确定了速率定律和速率常数，就能预测在给定反应物浓度下反应进行的快慢，从而优化反应条件（如控制反应物投料比、设计连续流反应器的停留时间），或诊断某一步骤是否为限速步骤，为后续学习反应机理（reaction mechanism）与速率决定步骤打下基础。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch12: Kinetics (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

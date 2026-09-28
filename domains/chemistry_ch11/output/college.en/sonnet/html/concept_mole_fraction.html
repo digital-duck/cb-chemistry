@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mole Fraction | Chemistry Ch11</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="mole-fraction">Mole Fraction</h2>
+<p>Mole fraction is a way of expressing concentration that compares the number of moles of one component to the total number of moles in a mixture. For a component $i$ in a solution with $n$ total components, the mole fraction $x_i$ is defined as</p>
+$$
+x_i = \frac{n_i}{n_{\text{total}}} = \frac{n_i}{\sum_{j=1}^{n} n_j}
+$$
+<p>where $n_i$ is the number of moles of component $i$. Because every mole in the mixture is accounted for, the mole fractions of all components always sum to 1: $\sum_i x_i = 1$. Unlike molarity or molality, mole fraction has no units — it is a dimensionless ratio — which makes it especially useful in contexts like vapor pressure calculations (Raoult's Law) and gas mixtures, where the underlying physics depends on the relative number of particles rather than volume or mass.</p>
+<p><strong>Worked example.</strong> Suppose you dissolve 2.00 mol of ethanol ($\text{C}_2\text{H}_5\text{OH}$) in 8.00 mol of water. The total moles in solution are $2.00 + 8.00 = 10.00$ mol. The mole fraction of ethanol is</p>
+$$
+x_{\text{ethanol}} = \frac{2.00}{10.00} = 0.200
+$$
+<p>and the mole fraction of water is $x_{\text{water}} = 8.00/10.00 = 0.800$. Notice that $0.200 + 0.800 = 1$, confirming the fractions are self-consistent.</p>
+<p><strong>Problem-solving application.</strong> Mole fraction problems often start from mass rather than moles, so the first step is usually a unit conversion using molar mass. Consider a solution made from 36.0 g of water ($M = 18.0$ g/mol) and 46.0 g of ethanol ($M = 46.0$ g/mol). Converting to moles: $n_{\text{water}} = 36.0/18.0 = 2.00$ mol, and $n_{\text{ethanol}} = 46.0/46.0 = 1.00$ mol. The total is 3.00 mol, giving $x_{\text{water}} = 2.00/3.00 = 0.667$ and $x_{\text{ethanol}} = 1.00/3.00 = 0.333$.</p>
+<p>This same logic extends directly to gas mixtures: in a closed container, the mole fraction of a gas equals its partial pressure divided by the total pressure ($x_i = P_i/P_{\text{total}}$), because at fixed temperature and volume, moles and pressure are proportional. Recognizing this connection lets you solve gas-mixture problems — such as finding the partial pressure of oxygen in air — using the same mole-fraction framework, without needing separate formulas for gases versus liquids.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

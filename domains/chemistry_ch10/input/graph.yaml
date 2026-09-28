@@ -1,0 +1,324 @@
+domain: chemistry_2e_ch10
+primitives:
+  kinetic_molecular_theory:
+    defines: Framework explaining that particle motion and kinetic energy govern the behavior of solids,
+      liquids, and gases.
+    tier: 0
+  electrostatic_force:
+    defines: Attractive or repulsive force arising from electric charge, treated as the underlying cause
+      of all intermolecular attractions.
+    tier: 0
+  polarity_and_dipole_moment:
+    defines: A property of molecules with an asymmetric charge distribution resulting in partial positive
+      and negative ends, assumed from prior bonding chapters.
+    tier: 0
+  electronegativity:
+    defines: A measure of an atom's tendency to attract electrons in a bond, used here as a given property
+      to explain dipole character and hydrogen-bond eligibility.
+    tier: 0
+  specific_heat:
+    defines: The amount of heat required to raise the temperature of one gram of a substance by one degree
+      Celsius, used as a given quantity from thermochemistry.
+    tier: 0
+concepts:
+  intermolecular_forces:
+    defines: Electrostatic attractions between atoms, molecules, or ions that determine physical properties
+      such as phase, boiling point, and viscosity.
+    composed_of:
+    - electrostatic_force
+    tier: 1
+  polarizability:
+    defines: The ease with which an external charge can distort a molecule's electron cloud, determining
+      the magnitude of dispersion forces.
+    composed_of:
+    - electrostatic_force
+    tier: 1
+  dynamic_equilibrium:
+    defines: A state in which two reciprocal processes occur at equal rates so that macroscopic quantities
+      remain constant.
+    composed_of:
+    - kinetic_molecular_theory
+    tier: 1
+  crystalline_solid:
+    defines: A solid in which particles are arranged in a definite, repeating three-dimensional pattern,
+      giving it a sharp melting point.
+    composed_of:
+    - kinetic_molecular_theory
+    tier: 1
+  dispersion_force:
+    defines: A weak IMF arising from temporary instantaneous dipoles in any atom or molecule, increasing
+      in strength with molecular size and polarizability.
+    composed_of:
+    - intermolecular_forces
+    - polarizability
+    tier: 2
+  dipole_dipole_attraction:
+    defines: An IMF between the partially positive end of one polar molecule and the partially negative
+      end of another polar molecule.
+    composed_of:
+    - intermolecular_forces
+    - polarity_and_dipole_moment
+    tier: 2
+  cohesive_forces:
+    defines: IMFs between identical molecules within a liquid that hold it together and drive surface
+      minimization.
+    composed_of:
+    - intermolecular_forces
+    tier: 2
+  adhesive_forces:
+    defines: IMFs between molecules of a liquid and molecules of a different surface with which the liquid
+      is in contact.
+    composed_of:
+    - intermolecular_forces
+    tier: 2
+  viscosity:
+    defines: A liquid's resistance to flow, determined by the strength of IMFs between its molecules and
+      their size and shape.
+    composed_of:
+    - intermolecular_forces
+    tier: 2
+  vapor_pressure:
+    defines: The pressure exerted by a vapor in dynamic equilibrium with its liquid or solid phase at
+      a given temperature, reflecting the ease of vaporization.
+    composed_of:
+    - dynamic_equilibrium
+    - intermolecular_forces
+    tier: 2
+  enthalpy_of_vaporization:
+    defines: The heat required to convert one mole of a substance from liquid to gas, representing the
+      energy needed to fully overcome IMFs.
+    composed_of:
+    - intermolecular_forces
+    tier: 2
+  melting_and_freezing:
+    defines: Phase transitions between solid and liquid states occurring at the melting/freezing point,
+      where IMFs are partially overcome or re-established.
+    composed_of:
+    - intermolecular_forces
+    tier: 2
+  amorphous_solid:
+    defines: A solid lacking long-range ordered particle arrangement, causing it to soften gradually over
+      a range of temperatures rather than melting sharply.
+    composed_of:
+    - crystalline_solid
+    tier: 2
+  ionic_solid:
+    defines: A crystalline solid composed of positive and negative ions held together by strong electrostatic
+      attractions, characterized by high melting points and electrical conductivity only when molten or
+      dissolved.
+    composed_of:
+    - crystalline_solid
+    - electrostatic_force
+    tier: 2
+  metallic_solid:
+    defines: A crystalline solid of metal atoms held together by metallic bonding (delocalized electrons),
+      giving rise to electrical conductivity, malleability, and luster.
+    composed_of:
+    - crystalline_solid
+    tier: 2
+  covalent_network_solid:
+    defines: A crystalline solid in which atoms are linked throughout by a continuous network of covalent
+      bonds, resulting in extreme hardness and very high melting points.
+    composed_of:
+    - crystalline_solid
+    tier: 2
+  molecular_solid:
+    defines: A crystalline solid composed of neutral molecules held together by IMFs, with properties
+      that vary with the type and strength of those forces.
+    composed_of:
+    - crystalline_solid
+    - intermolecular_forces
+    tier: 2
+  crystal_defects:
+    defines: Irregularities in a crystal's repeating pattern—including vacancies, interstitial atoms,
+      and substitutional impurities—that alter physical properties such as electrical conductivity.
+    composed_of:
+    - crystalline_solid
+    tier: 2
+  unit_cell:
+    defines: The smallest repeating structural unit of a crystalline solid whose repetition in three dimensions
+      generates the entire crystal lattice.
+    composed_of:
+    - crystalline_solid
+    tier: 2
+  hydrogen_bonding:
+    defines: An exceptionally strong dipole-dipole attraction occurring when a hydrogen atom bonded to
+      F, O, or N is attracted to another F, O, or N atom.
+    composed_of:
+    - dipole_dipole_attraction
+    - electronegativity
+    tier: 3
+  surface_tension:
+    defines: The energy required to increase the surface area of a liquid, resulting from unbalanced cohesive
+      forces on surface molecules.
+    composed_of:
+    - cohesive_forces
+    tier: 3
+  capillary_action:
+    defines: The flow of a liquid within a porous material or narrow tube driven by the interplay of adhesive
+      forces between liquid and surface and cohesive forces within the liquid.
+    composed_of:
+    - adhesive_forces
+    - cohesive_forces
+    tier: 3
+  boiling_point:
+    defines: The temperature at which a liquid's equilibrium vapor pressure equals the external pressure;
+      at 1 atm this is the normal boiling point.
+    composed_of:
+    - vapor_pressure
+    tier: 3
+  clausius_clapeyron_equation:
+    defines: A mathematical relationship between vapor pressure, temperature, and enthalpy of vaporization
+      used to calculate vapor pressure or boiling point at different conditions.
+    composed_of:
+    - vapor_pressure
+    - enthalpy_of_vaporization
+    tier: 3
+  enthalpy_of_fusion:
+    defines: The heat required to convert one mole of a substance from solid to liquid, always smaller
+      than the enthalpy of vaporization because IMFs are only partially overcome.
+    composed_of:
+    - intermolecular_forces
+    - melting_and_freezing
+    tier: 3
+  sublimation_and_deposition:
+    defines: Direct phase transitions between the solid and gaseous states, bypassing the liquid phase.
+    composed_of:
+    - melting_and_freezing
+    - intermolecular_forces
+    tier: 3
+  triple_point:
+    defines: The unique temperature and pressure at which all three phases of a substance coexist in equilibrium.
+    composed_of:
+    - dynamic_equilibrium
+    - vapor_pressure
+    - melting_and_freezing
+    tier: 3
+  critical_point:
+    defines: The temperature and pressure above which the liquid and gas phases of a substance are indistinguishable
+      and no phase boundary exists.
+    composed_of:
+    - vapor_pressure
+    - intermolecular_forces
+    tier: 3
+  coordination_number:
+    defines: The number of nearest-neighbor particles surrounding a given particle in a crystal structure.
+    composed_of:
+    - unit_cell
+    tier: 3
+  x_ray_crystallography:
+    defines: An experimental technique that uses diffraction of X-rays by crystal planes to determine
+      atomic spacing and crystal structure.
+    composed_of:
+    - unit_cell
+    tier: 3
+  heating_cooling_curves:
+    defines: Graphs depicting temperature changes in a substance as heat is added or removed, with flat
+      plateaus at phase transition temperatures where energy goes into overcoming IMFs rather than raising
+      temperature.
+    composed_of:
+    - specific_heat
+    - melting_and_freezing
+    - boiling_point
+    - enthalpy_of_fusion
+    - enthalpy_of_vaporization
+    tier: 4
+  phase_diagram:
+    defines: A pressure-temperature graph summarizing the conditions under which the solid, liquid, and
+      gaseous phases of a substance are stable and the boundaries between phases.
+    composed_of:
+    - vapor_pressure
+    - boiling_point
+    - melting_and_freezing
+    - triple_point
+    - critical_point
+    tier: 4
+  supercritical_fluid:
+    defines: A state of matter above the critical temperature and pressure that exhibits properties intermediate
+      between those of a liquid and a gas.
+    composed_of:
+    - critical_point
+    tier: 4
+  enthalpy_of_sublimation:
+    defines: The energy required to convert one mole of a solid directly to a gas, approximately equal
+      to the sum of the enthalpies of fusion and vaporization.
+    composed_of:
+    - enthalpy_of_fusion
+    - enthalpy_of_vaporization
+    - sublimation_and_deposition
+    tier: 4
+  simple_cubic_structure:
+    defines: A crystal lattice in which atoms are arranged at the corners of a cube with a coordination
+      number of six and a packing efficiency of about 52%.
+    composed_of:
+    - unit_cell
+    - coordination_number
+    tier: 4
+  body_centered_cubic:
+    defines: A crystal lattice with atoms at all corners and one atom in the center of the cube, giving
+      a coordination number of eight and packing efficiency of about 68%.
+    composed_of:
+    - unit_cell
+    - coordination_number
+    tier: 4
+  face_centered_cubic:
+    defines: A crystal lattice with atoms at all corners and at the center of each face, giving a coordination
+      number of twelve and the highest packing efficiency among cubic structures (~74%).
+    composed_of:
+    - unit_cell
+    - coordination_number
+    tier: 4
+  hexagonal_closest_packing:
+    defines: A closest-packed crystal structure with alternating ABABAB layers of hexagonally arranged
+      atoms, giving a coordination number of twelve.
+    composed_of:
+    - unit_cell
+    - coordination_number
+    tier: 4
+  bragg_equation:
+    defines: The relation nλ = 2d sin θ that connects X-ray wavelength, interplanar spacing, and diffraction
+      angle, enabling calculation of atomic distances from diffraction data.
+    composed_of:
+    - x_ray_crystallography
+    tier: 4
+  ionic_crystal_structure:
+    defines: The arrangement of ionic crystals in which larger anions form a closest-packed array and
+      smaller cations occupy tetrahedral or octahedral holes, with cation-to-anion ratios governed by
+      hole geometry.
+    composed_of:
+    - ionic_solid
+    - face_centered_cubic
+    tier: 5
+applications:
+  capillary_rise_equation:
+    defines: A quantitative relationship giving the height a liquid rises in a capillary tube as a function
+      of surface tension, contact angle, tube radius, liquid density, and gravity.
+    needs:
+    - capillary_action
+    - surface_tension
+    tier: 4
+  dna_hydrogen_bonding:
+    defines: An application of hydrogen bonding in which complementary base pairs in the DNA double helix
+      are held together by two or three hydrogen bonds per pair, enabling replication.
+    needs:
+    - hydrogen_bonding
+    tier: 4
+  freeze_drying:
+    defines: An application of sublimation below the triple point of water in which ice is removed from
+      a material by reducing pressure so that it sublimes directly without melting.
+    needs:
+    - sublimation_and_deposition
+    - triple_point
+    tier: 4
+  semiconductor_doping:
+    defines: An application of intentional crystal defect introduction in which trace impurities are added
+      to silicon to tailor its electrical conductivity for use in computer chips.
+    needs:
+    - crystal_defects
+    tier: 3
+  supercritical_co2_extraction:
+    defines: An industrial application of supercritical fluid properties in which CO₂ above its critical
+      point selectively dissolves and extracts compounds such as caffeine from coffee beans.
+    needs:
+    - supercritical_fluid
+    tier: 5

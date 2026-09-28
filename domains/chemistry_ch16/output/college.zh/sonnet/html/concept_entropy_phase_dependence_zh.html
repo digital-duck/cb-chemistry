@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entropy Phase Dependence | Chemistry Ch16</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="entropy-phase-dependence">Entropy Phase Dependence</h2>
+<p><strong>定义</strong></p>
+<p>熵（entropy，符号 $S$）是描述系统微观粒子排列混乱程度的物理量，单位为 $\text{J/(mol·K)}$。同一种物质在固态、液态、气态之间转变时，熵值会发生显著变化,这就是<strong>熵的相依赖性</strong>。粒子排列越有序、运动自由度越小,熵越低;排列越混乱、可运动的方式越多,熵越高。三种物态的熵大小关系为:</p>
+$$S_{\text{固}} < S_{\text{液}} < S_{\text{气}}$$
+<p>固态中粒子被限制在晶格的固定位置上,只能做微小振动,微观状态数很少,熵最低。液态中粒子可以相对滑动、旋转,排列方式增多,熵中等。气态中粒子几乎不受约束,自由运动、占据整个容器空间,可能的微观状态数目急剧增加,熵最高。</p>
+<p><strong>范例解析</strong></p>
+<p>考虑 1 mol 水在标准压力下发生的相变:</p>
+<li>冰(0 °C)熔化成水:$\Delta S_{fus} \approx +22.0\ \text{J/(mol·K)}$</li>
+<li>水(100 °C)蒸发成水蒸气:$\Delta S_{vap} \approx +109\ \text{J/(mol·K)}$</li>
+<p>可以看到,蒸发过程的熵变远大于熔化过程。这是因为液态到气态时,粒子间的作用力几乎完全被克服,分子获得的平动自由度远超过固态到液态时增加的滑动自由度。这与热力学第二定律相符:相变吸热(熔化、蒸发)通常伴随熵增加,因为体系从更有序的排列转向更混乱的排列。</p>
+<p><strong>解题应用</strong></p>
+<p>在解决相变熵变问题时,可利用关系式:</p>
+$$\Delta S = \frac{q_{rev}}{T} = \frac{\Delta H_{phase}}{T}$$
+<p>其中 $\Delta H_{phase}$ 是相变的焓变(如熔化热或蒸发热),$T$ 是相变发生时的绝对温度(单位 K)。</p>
+<p><strong>例题</strong>:已知苯的熔化热 $\Delta H_{fus} = 9.87\ \text{kJ/mol}$,熔点为 $5.5\ °\text{C}$(即 $278.65\ \text{K}$)。求 1 mol 苯熔化时的熵变。</p>
+<p>解:</p>
+$$\Delta S_{fus} = \frac{9870\ \text{J/mol}}{278.65\ \text{K}} \approx 35.4\ \text{J/(mol·K)}$$
+<p>此正值符合预期:固态转变为液态,粒子排列趋于混乱,熵增加。学生在处理此类题目时,应牢记温度必须换算为绝对温度(K),并注意区分熔化、蒸发、升华各自对应的焓变数值,这是分析生物、化学体系中相变驱动力和自发性判断的基础工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch16: Thermodynamics (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

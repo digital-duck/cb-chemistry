@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atomic Orbitals | Chemistry Ch08</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="atomic-orbitals-原子轨道">Atomic Orbitals（原子轨道)</h2>
+<p><strong>定义</strong></p>
+<p>原子轨道是描述电子在原子核外出现概率分布的数学函数，由量子力学中的薛定谔方程求解氢原子体系得到。每个轨道由三个量子数标定：主量子数 $n$（决定能级和轨道大小）、角量子数 $l$（决定轨道形状，$l=0,1,2,3$ 分别对应 $s, p, d, f$ 轨道）、磁量子数 $m_l$（决定轨道在空间中的取向）。轨道本身不是电子的运行轨迹，而是一个电子云——即电子在空间某处被发现的概率密度分布区域。$s$ 轨道呈球形对称；$p$ 轨道呈哑铃形，沿 $x$、$y$、$z$ 三个方向各有一个，共三个简并轨道；$d$ 轨道形状更复杂，共有五个。根据泡利不相容原理，每个轨道最多容纳两个自旋相反的电子。</p>
+<p><strong>举例说明</strong></p>
+<p>以氮原子（原子序数 7）为例，其电子排布为 $1s^2\,2s^2\,2p^3$。这表示：$1s$ 轨道填满 2 个电子，$2s$ 轨道填满 2 个电子，剩余 3 个电子分布在三个简并的 $2p$ 轨道中。根据洪特规则，这 3 个电子会先各自占据一个 $p$ 轨道（$2p_x^1\,2p_y^1\,2p_z^1$），且自旋方向相同，而不是两两配对挤入同一轨道——这样可以使电子间的排斥能最小化，体系更稳定。</p>
+<p><strong>解决问题的应用</strong></p>
+<p>电子排布规律可以直接用来预测原子的化学行为。以下是求解电子排布的标准步骤：</p>
+<li>确定该原子的电子总数（等于原子序数，若为离子需相应加减电荷数）；</li>
+<li>按照能量由低到高的顺序（$1s, 2s, 2p, 3s, 3p, 4s, 3d, \dots$，即 Aufbau 顺序）依次填充轨道；</li>
+<li>每个轨道最多 2 个电子（泡利原理），简并轨道优先单独占据（洪特规则）。</li>
+<p>例如，判断氧原子（8 个电子）是否具有顺磁性：其排布为 $1s^2\,2s^2\,2p^4$，$2p$ 轨道中 4 个电子按洪特规则排列为 $2p_x^2\,2p_y^1\,2p_z^1$，存在 2 个未成对电子，因此氧气分子具有顺磁性，这一预测已被实验中氧气被磁场吸引的现象所证实。同样地，价电子构型也解释了为什么钠（$3s^1$）容易失去一个电子形成 $\text{Na}^+$，而氯（$3p^5$）倾向于得到一个电子形成 $\text{Cl}^-$，从而理解离子键的形成机制。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch8: Advanced Theories of Covalent Bonding (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

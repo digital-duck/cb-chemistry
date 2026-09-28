@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vapor Pressure Lowering | Chemistry Ch11</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="vapor-pressure-lowering-蒸气压下降">Vapor Pressure Lowering(蒸气压下降)</h2>
+<p><strong>定义</strong></p>
+<p>当把不挥发的溶质（如蔗糖或食盐）溶解到溶剂中时，溶液的蒸气压会低于纯溶剂的蒸气压，这一现象称为蒸气压下降。原因在于溶质分子占据了液面的一部分位置，减少了单位时间内能够逃逸到气相中的溶剂分子数目。这是依数性质（colligative property）之一——其大小只取决于溶质粒子的数目，而与溶质本身的化学性质无关。</p>
+<p>法国化学家拉乌尔（Raoul）总结出的拉乌尔定律定量描述了这一关系：</p>
+$$P_{\text{溶液}} = X_{\text{溶剂}} \cdot P^{\circ}_{\text{溶剂}}$$
+<p>其中 $P^{\circ}_{\text{溶剂}}$ 是纯溶剂的蒸气压，$X_{\text{溶剂}}$ 是溶剂在溶液中的摩尔分数。由于 $X_{\text{溶剂}} < 1$，$P_{\text{溶液}}$ 必然小于 $P^{\circ}_{\text{溶剂}}$。蒸气压下降的幅度可写为：</p>
+$$\Delta P = P^{\circ}_{\text{溶剂}} - P_{\text{溶液}} = X_{\text{溶质}} \cdot P^{\circ}_{\text{溶剂}}$$
+<p><strong>例题</strong></p>
+<p>在 25°C 时，纯水的蒸气压为 23.8 mmHg。将 1.00 mol 蔗糖溶于 9.00 mol 水中，求溶液的蒸气压。</p>
+<p>先计算水的摩尔分数：</p>
+$$X_{\text{水}} = \frac{9.00}{9.00 + 1.00} = 0.900$$
+<p>代入拉乌尔定律：</p>
+$$P_{\text{溶液}} = 0.900 \times 23.8\ \text{mmHg} = 21.4\ \text{mmHg}$$
+<p>蒸气压下降了 $23.8 - 21.4 = 2.4\ \text{mmHg}$，正好等于蔗糖的摩尔分数（0.100）乘以纯水蒸气压。</p>
+<p><strong>应用与解题技巧</strong></p>
+<p>处理这类问题时，第一步永远是把已知物质的量换算成摩尔分数，而不是直接使用质量或体积。若溶质是电解质（如 NaCl），必须考虑其在溶液中解离成的粒子数——1 mol NaCl 理论上产生 2 mol 溶质粒子，因此对蒸气压的下降效应约为非电解质的两倍（范特霍夫因子 $i \approx 2$）。这一原理也解释了为什么海水的沸点略高于淡水、为什么盐水在低温下不易结冰——都是蒸气压下降在不同条件下的延伸表现。掌握摩尔分数计算和粒子数校正，是解决依数性问题的关键技能。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch11: Solutions and Colloids (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

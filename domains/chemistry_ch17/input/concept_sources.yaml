@@ -1,0 +1,201 @@
+domain: chemistry_2e_ch17
+sources:
+  oxidation_number:
+    label: Oxidation Number
+    sections:
+    - id: ch17_s17_1
+      title: 17.1 Review of Redox Chemistry
+  oxidation:
+    label: Oxidation
+    sections:
+    - id: ch17_s17_1
+      title: 17.1 Review of Redox Chemistry
+  reduction:
+    label: Reduction
+    sections:
+    - id: ch17_s17_1
+      title: 17.1 Review of Redox Chemistry
+  gibbs_free_energy:
+    label: Gibbs Free Energy (ΔG)
+    sections:
+    - id: ch17_s17_4
+      title: 17.4 Potential, Free Energy, and Equilibrium
+  equilibrium_constant:
+    label: Equilibrium Constant (K)
+    sections:
+    - id: ch17_s17_4
+      title: 17.4 Potential, Free Energy, and Equilibrium
+  electric_charge:
+    label: Electric Charge
+    sections:
+    - id: ch17_s17_7
+      title: 17.7 Electrolysis
+  electric_current:
+    label: Electric Current
+    sections:
+    - id: ch17_s17_7
+      title: 17.7 Electrolysis
+  redox_reaction:
+    label: Redox Reaction
+    sections:
+    - id: ch17_s17_1
+      title: 17.1 Review of Redox Chemistry
+  half_reaction:
+    label: Half-Reaction
+    sections:
+    - id: ch17_s17_1
+      title: 17.1 Review of Redox Chemistry
+  half_reaction_method:
+    label: Half-Reaction Method
+    sections:
+    - id: ch17_s17_1
+      title: 17.1 Review of Redox Chemistry
+  electrochemical_cell:
+    label: Electrochemical Cell
+    sections:
+    - id: ch17_s17_2
+      title: 17.2 Galvanic Cells
+    - id: ch17_s17_7
+      title: 17.7 Electrolysis
+  half_cell:
+    label: Half-Cell
+    sections:
+    - id: ch17_s17_2
+      title: 17.2 Galvanic Cells
+  anode:
+    label: Anode
+    sections:
+    - id: ch17_s17_2
+      title: 17.2 Galvanic Cells
+  cathode:
+    label: Cathode
+    sections:
+    - id: ch17_s17_2
+      title: 17.2 Galvanic Cells
+  salt_bridge:
+    label: Salt Bridge
+    sections:
+    - id: ch17_s17_2
+      title: 17.2 Galvanic Cells
+  galvanic_cell:
+    label: Galvanic Cell
+    sections:
+    - id: ch17_s17_2
+      title: 17.2 Galvanic Cells
+  active_electrode:
+    label: Active Electrode
+    sections:
+    - id: ch17_s17_2
+      title: 17.2 Galvanic Cells
+  inert_electrode:
+    label: Inert Electrode
+    sections:
+    - id: ch17_s17_2
+      title: 17.2 Galvanic Cells
+  cell_notation:
+    label: Cell Notation (Cell Schematic)
+    sections:
+    - id: ch17_s17_2
+      title: 17.2 Galvanic Cells
+  cell_potential:
+    label: Cell Potential (E_cell)
+    sections:
+    - id: ch17_s17_3
+      title: 17.3 Electrode and Cell Potentials
+  standard_hydrogen_electrode:
+    label: Standard Hydrogen Electrode (SHE)
+    sections:
+    - id: ch17_s17_3
+      title: 17.3 Electrode and Cell Potentials
+  electrode_potential:
+    label: Electrode Potential (E_X)
+    sections:
+    - id: ch17_s17_3
+      title: 17.3 Electrode and Cell Potentials
+  standard_electrode_potential:
+    label: Standard Electrode Potential (E°)
+    sections:
+    - id: ch17_s17_3
+      title: 17.3 Electrode and Cell Potentials
+  standard_cell_potential:
+    label: Standard Cell Potential (E°_cell)
+    sections:
+    - id: ch17_s17_3
+      title: 17.3 Electrode and Cell Potentials
+  faradays_constant:
+    label: Faraday's Constant (F)
+    sections:
+    - id: ch17_s17_4
+      title: 17.4 Potential, Free Energy, and Equilibrium
+    - id: ch17_s17_7
+      title: 17.7 Electrolysis
+  free_energy_potential_relation:
+    label: Free Energy–Cell Potential Relationship
+    sections:
+    - id: ch17_s17_4
+      title: 17.4 Potential, Free Energy, and Equilibrium
+  equilibrium_potential_relation:
+    label: Equilibrium Constant–Cell Potential Relationship
+    sections:
+    - id: ch17_s17_4
+      title: 17.4 Potential, Free Energy, and Equilibrium
+  reaction_quotient:
+    label: Reaction Quotient (Q)
+    sections:
+    - id: ch17_s17_4
+      title: 17.4 Potential, Free Energy, and Equilibrium
+  nernst_equation:
+    label: Nernst Equation
+    sections:
+    - id: ch17_s17_4
+      title: 17.4 Potential, Free Energy, and Equilibrium
+  concentration_cell:
+    label: Concentration Cell
+    sections:
+    - id: ch17_s17_4
+      title: 17.4 Potential, Free Energy, and Equilibrium
+  electrolysis:
+    label: Electrolysis
+    sections:
+    - id: ch17_s17_7
+      title: 17.7 Electrolysis
+  electrolytic_cell:
+    label: Electrolytic Cell
+    sections:
+    - id: ch17_s17_7
+      title: 17.7 Electrolysis
+  electrolysis_stoichiometry:
+    label: Electrolysis Stoichiometry
+    sections:
+    - id: ch17_s17_7
+      title: 17.7 Electrolysis
+  battery:
+    label: Battery
+    sections:
+    - id: ch17_s17_5
+      title: 17.5 Batteries and Fuel Cells
+  fuel_cell:
+    label: Fuel Cell
+    sections:
+    - id: ch17_s17_5
+      title: 17.5 Batteries and Fuel Cells
+  corrosion:
+    label: Corrosion
+    sections:
+    - id: ch17_s17_6
+      title: 17.6 Corrosion
+  galvanization:
+    label: Galvanization
+    sections:
+    - id: ch17_s17_6
+      title: 17.6 Corrosion
+  cathodic_protection:
+    label: Cathodic Protection
+    sections:
+    - id: ch17_s17_6
+      title: 17.6 Corrosion
+  electroplating:
+    label: Electroplating
+    sections:
+    - id: ch17_s17_7
+      title: 17.7 Electrolysis

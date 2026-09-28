@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bohr Model | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="玻尔模型">玻尔模型</h2>
+<p><strong>定义</strong></p>
+<p>1913年，尼尔斯·玻尔在卢瑟福原子核模型的基础上,提出了氢原子的量子化模型,以解决经典物理无法回答的问题:如果电子绕核运动,按经典电磁理论,加速运动的带电粒子会不断辐射能量,电子应在极短时间内螺旋坠入原子核,原子根本不可能稳定存在。玻尔模型通过两条大胆的假设解决了这一矛盾:第一,电子只能在特定的、离散的圆形轨道上运动,这些轨道对应确定的能量值,电子在这些"允许轨道"上运动时不辐射能量,原子保持稳定;第二,电子只有在从一个轨道跃迁到另一个轨道时,才会以光子的形式吸收或释放能量,且光子能量恰好等于两轨道能量之差:</p>
+$$\Delta E = E_{高} - E_{低} = h\nu$$
+<p>其中 $h$ 为普朗克常数,$\nu$ 为光子频率。轨道能量由量子数 $n = 1, 2, 3, \ldots$ 标记,对氢原子有:</p>
+$$E_n = -\frac{13.6\ \text{eV}}{n^2}$$
+<p>$n=1$ 对应能量最低的"基态",$n$ 越大轨道离核越远、能量越高。</p>
+<p><strong>范例</strong></p>
+<p>当氢原子中的电子从 $n=3$ 跃迁到 $n=2$ 时,释放的光子能量为:</p>
+$$\Delta E = E_2 - E_3 = \left(-\frac{13.6}{4}\right) - \left(-\frac{13.6}{9}\right) \approx -1.89\ \text{eV}$$
+<p>负号表示能量被释放。这正是巴耳末系中的一条谱线（波长约656 nm，即氢原子光谱中著名的红色谱线），玻尔模型第一次从理论上准确预测出了氢原子发射光谱的谱线位置,与实验观测高度吻合,这是其最有力的证据。</p>
+<p><strong>解题应用</strong></p>
+<p>玻尔模型的核心应用是解释和计算原子发射/吸收光谱的谱线能量与波长。解题时的基本步骤是:先用能量公式分别求出初态与末态的能量,再求差值得到光子能量,最后通过 $E = hc/\lambda$ 换算出对应波长。需要注意的是,玻尔模型只能准确预测单电子体系（氢原子及类氢离子,如 $\text{He}^+$）,对多电子原子会产生偏差,这也是它后来被量子力学的电子云模型取代的原因——电子并非沿固定轨道运动,而是以概率分布的形式存在。尽管如此,玻尔模型给出的量子化能级概念,至今仍是理解原子光谱、荧光和激光原理最直观、最实用的入门框架。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

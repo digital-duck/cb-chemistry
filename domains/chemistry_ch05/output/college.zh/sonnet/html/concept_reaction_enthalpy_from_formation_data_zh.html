@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reaction Enthalpy From Formation Data | Chemistry Ch05</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="reaction-enthalpy-from-formation-data">Reaction Enthalpy From Formation Data</h2>
+<p><strong>定义</strong></p>
+<p>标准生成焓 $\Delta H_f^\circ$ 是指在标准状态（$298\ \text{K}$，$1\ \text{bar}$）下，由最稳定单质生成 $1\ \text{mol}$ 某化合物时的焓变。按照定义，最稳定单质本身的 $\Delta H_f^\circ = 0$（例如 $\text{O}_2(g)$、$\text{C}(\text{graphite})$）。由于焓是状态函数，任意反应的焓变只取决于反应物与生成物的状态，而与具体反应路径无关（Hess 定律）。因此，只要知道所有物种的标准生成焓，就可以计算任意反应的标准反应焓：</p>
+$$
+\Delta H_{rxn}^\circ = \sum_{\text{products}} n_i \, \Delta H_f^\circ(\text{products}) - \sum_{\text{reactants}} n_j \, \Delta H_f^\circ(\text{reactants})
+$$
+<p>其中 $n_i$、$n_j$ 是配平后化学方程式中各物种的系数。这一关系之所以成立，正是因为可以把每个物种想象成"先分解回单质，再重新组合成产物"的两步过程，中间抵消的路径不影响总焓变。</p>
+<p><strong>实例演示</strong></p>
+<p>计算甲烷燃烧反应的标准反应焓：</p>
+$$
+\text{CH}_4(g) + 2\text{O}_2(g) \rightarrow \text{CO}_2(g) + 2\text{H}_2\text{O}(l)
+$$
+<p>已知：$\Delta H_f^\circ[\text{CH}_4(g)] = -74.8\ \text{kJ/mol}$，$\Delta H_f^\circ[\text{CO}_2(g)] = -393.5\ \text{kJ/mol}$，$\Delta H_f^\circ[\text{H}_2\text{O}(l)] = -285.8\ \text{kJ/mol}$，$\text{O}_2(g)$ 为 $0$。</p>
+$$
+\Delta H_{rxn}^\circ = \left[(-393.5) + 2(-285.8)\right] - \left[(-74.8) + 2(0)\right] = -965.1 - (-74.8) = -890.3\ \text{kJ/mol}
+$$
+<p>负值表明该反应强烈放热，与燃烧释放能量的常识一致。</p>
+<p><strong>解题应用</strong></p>
+<p>处理此类问题时，务必先配平方程式，确认系数正确，因为生成焓是按"每摩尔"计量的，系数错误会直接放大或缩小误差。其次要留意物质的物态标注（$g$、$l$、$s$），同一物质不同状态的生成焓不同（例如水的气态和液态相差约 $44\ \text{kJ/mol}$，对应汽化热）。当题目给出反应焓、要求反推某一物质未知的生成焓时，只需将上式中该项移到等式一侧求解，这也是化学工程中估算未知化合物稳定性的常用手法。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch5: Thermochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

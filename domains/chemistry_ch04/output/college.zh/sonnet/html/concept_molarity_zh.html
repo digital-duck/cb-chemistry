@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Molarity | Chemistry Ch04</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="摩尔浓度">摩尔浓度</h2>
+<p>摩尔浓度（molarity，符号为 $M$）是化学中最常用的浓度表示方式，定义为溶质的物质的量（摩尔数）除以溶液的体积（以升为单位）：</p>
+$$
+c = \frac{n}{V}
+$$
+<p>其中 $c$ 为摩尔浓度（单位 $\text{mol/L}$，常写作 $M$），$n$ 为溶质的摩尔数，$V$ 为溶液的总体积（单位为升）。需要特别注意的是分母是<strong>溶液</strong>的体积，而不是溶剂的体积——溶质本身也占据一定体积，配制溶液时是先加入溶质，再用溶剂定容到指定体积，而不是简单地把溶质加入固定体积的溶剂中。</p>
+<p><strong>例题</strong>：欲配制 $0.500\ \text{L}$ 的 $2.00\ M$ 氯化钠（NaCl）溶液，需要多少克 NaCl？</p>
+<p>第一步，由定义式求出所需摩尔数：</p>
+$$
+n = c \times V = 2.00\ \text{mol/L} \times 0.500\ \text{L} = 1.00\ \text{mol}
+$$
+<p>第二步，利用 NaCl 的摩尔质量（$58.5\ \text{g/mol}$）换算为质量：</p>
+$$
+m = n \times M_{\text{摩尔质量}} = 1.00\ \text{mol} \times 58.5\ \text{g/mol} = 58.5\ \text{g}
+$$
+<p>因此，应称取 $58.5\ \text{g}$ NaCl，溶解后用蒸馏水定容至 $500\ \text{mL}$。</p>
+<p>摩尔浓度在实际问题中最常见的应用是<strong>稀释计算</strong>。由于稀释过程中溶质的摩尔数不变（只是体积增大、浓度降低），可以用稀释公式：</p>
+$$
+c_1 V_1 = c_2 V_2
+$$
+<p>例如，实验室需要 $250\ \text{mL}$ 的 $0.100\ M$ 盐酸，但库存只有 $6.00\ M$ 的浓盐酸，应量取多少毫升浓盐酸？</p>
+$$
+V_1 = \frac{c_2 V_2}{c_1} = \frac{0.100\ M \times 250\ \text{mL}}{6.00\ M} \approx 4.17\ \text{mL}
+$$
+<p>即量取约 $4.17\ \text{mL}$ 浓盐酸，加水稀释定容至 $250\ \text{mL}$ 即可。这类计算是分析化学、生物实验配液以及药物剂量计算中最基础也是最实用的技能之一，掌握摩尔浓度的定义与稀释公式，几乎是所有湿实验操作的前提。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch4: Stoichiometry of Chemical Reactions (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

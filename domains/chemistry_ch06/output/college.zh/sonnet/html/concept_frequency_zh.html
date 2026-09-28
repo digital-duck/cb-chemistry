@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frequency | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="frequency">Frequency</h2>
+<p><strong>定义</strong></p>
+<p>频率（frequency）是描述周期性变化快慢的物理量，指单位时间内某一重复事件发生的次数。对于波动现象（如声波、光波、电磁波）而言，频率特指波源（或介质中某一点）每秒完成振动的次数。频率的国际单位是赫兹（Hz），$1\ \text{Hz}$ 表示每秒发生一次完整的振动或循环。</p>
+<p>频率与周期（period, $T$）互为倒数关系：</p>
+$$
+f = \frac{1}{T}
+$$
+<p>其中 $T$ 是完成一次完整振动所需的时间（单位：秒）。频率越高，周期越短，意味着振动或波动变化得越快。</p>
+<p>在波动中，频率还与波长（$\lambda$）和波速（$v$）相关联：</p>
+$$
+v = f\lambda
+$$
+<p>这一关系式说明：在波速一定的介质中（例如声音在空气中传播），频率越高，波长越短。</p>
+<p><strong>应用实例</strong></p>
+<p>以声音为例，人耳能听到的频率范围大约是 $20\ \text{Hz}$ 到 $20{,}000\ \text{Hz}$。钢琴中央 C 音的频率约为 $261.6\ \text{Hz}$，意味着发声体（琴弦）每秒振动约 261.6 次。若声音在空气中的传播速度约为 $343\ \text{m/s}$，则该音符对应的波长为：</p>
+$$
+\lambda = \frac{v}{f} = \frac{343}{261.6} \approx 1.31\ \text{m}
+$$
+<p>这说明低频声音（如低音鼓）波长较长，能绕过障碍物传播更远；而高频声音（如口哨声）波长短，方向性更强，容易被物体遮挡。</p>
+<p><strong>解决问题的应用</strong></p>
+<p>频率概念在实际问题中十分关键。例如，医学超声成像使用频率约为 $1$–$15\ \text{MHz}$（百万赫兹）的超声波：频率越高，波长越短，分辨率越高，但穿透深度越浅，因此临床上需要根据检查部位（浅表组织还是深部器官）选择合适频率的探头。</p>
+<p>再如，在分析心电图（ECG）或脑电图（EEG）信号时，医生通过测量信号的周期性波动频率（如心率，以次/分钟表示，可换算为赫兹）来判断心脏或大脑的电活动是否正常。掌握 $f = 1/T$ 这一基本关系，是将时间序列数据转化为可诊断信息的第一步，也是理解节律性生命过程（如昼夜节律、呼吸频率）的基础工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

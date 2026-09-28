@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entropy | Chemistry Ch16</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="entropy">Entropy</h2>
+<p><strong>定义</strong></p>
+<p>熵（entropy，符号 $S$）是热力学中衡量体系混乱程度或能量分散程度的状态函数，单位为焦耳每开尔文（$\text{J/K}$）。系统越无序，微观状态数越多，熵值越高。根据热力学第二定律，一个孤立系统的总熵在自发过程中只会增加或保持不变，永不减少：</p>
+$$\Delta S_{\text{universe}} = \Delta S_{\text{system}} + \Delta S_{\text{surroundings}} \geq 0$$
+<p>这解释了为什么某些过程（如冰块融化、气体扩散、燃烧反应）能够自发进行，而其逆过程不会自发发生——即使能量总量守恒，能量分散和无序增加的方向才是自然过程的"箭头"。</p>
+<p><strong>微观视角</strong>：玻尔兹曼公式给出了熵与微观状态数 $W$（系统在给定宏观条件下可能的排列方式数目）的关系：</p>
+$$S = k_B \ln W$$
+<p>其中 $k_B$ 是玻尔兹曼常数。排列方式越多，熵越大。</p>
+<p><strong>例题：判断熵变方向</strong></p>
+<p>考虑反应：$\text{CaCO}_3(s) \rightarrow \text{CaO}(s) + \text{CO}_2(g)$</p>
+<p>反应物是一种固体，生成物中出现了气体分子 $\text{CO}_2$。气体分子的运动自由度远大于固体，微观状态数 $W$ 大幅增加，因此可以预测该反应的 $\Delta S > 0$（熵增加）。这与实验测得的标准熵变 $\Delta S^\circ \approx +160 \text{ J/(mol·K)}$ 一致。</p>
+<p><strong>解题应用</strong></p>
+<p>判断反应熵变符号时，可依据以下经验规则：</p>
+<li>气体摩尔数增加 → 熵增加（$\Delta S > 0$）</li>
+<li>固体或液体溶解成溶液 → 熵增加</li>
+<li>分子数减少或从气态变为液态/固态 → 熵减少（$\Delta S < 0$）</li>
+<li>温度升高 → 系统熵增加（分子运动加剧）</li>
+<p>在结合吉布斯自由能公式 $\Delta G = \Delta H - T\Delta S$ 判断反应自发性时，若反应吸热（$\Delta H > 0$）但熵增显著（$\Delta S > 0$），在高温下 $T\Delta S$ 项可能超过 $\Delta H$，使 $\Delta G < 0$，反应变为自发——这正是理解许多高温分解反应或熵驱动过程（如蛋白质变性、DNA解链）自发性的关键工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch16: Thermodynamics (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

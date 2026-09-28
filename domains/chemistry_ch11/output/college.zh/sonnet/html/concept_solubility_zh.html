@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solubility | Chemistry Ch11</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="solubility">Solubility</h2>
+<p><strong>定义</strong></p>
+<p>溶解度（solubility）是指在特定温度下，某种溶质在一定量溶剂中能够溶解并形成稳定溶液的最大量，通常表示为每 100 克水中溶解的溶质克数（g/100 g H₂O），或以摩尔浓度 $\text{mol/L}$ 表示饱和溶液的浓度。当溶液中溶质的量恰好达到这一上限时，称为<strong>饱和溶液</strong>；若继续加入溶质，多余部分将以固体形式沉淀，不再溶解。溶解度并非固定不变的性质，而是受温度、压强（对气体尤为显著）以及溶质与溶剂分子间相互作用力的共同影响。总体规律是"相似相溶"：极性溶质（如 NaCl）易溶于极性溶剂（如水），而非极性溶质（如油脂）则易溶于非极性溶剂。</p>
+<p><strong>实例解析</strong></p>
+<p>以硝酸钾（KNO₃）为例，其溶解度随温度升高而显著增大：20°C 时约为 32 g/100 g H₂O，60°C 时可达约 110 g/100 g H₂O。若在 60°C 时将 90 g KNO₃ 溶于 100 g 水中制成溶液，此溶液尚未饱和（因为上限是 110 g）。当溶液冷却至 20°C 时，溶解能力下降到 32 g/100 g H₂O，因此约有 $90-32=58$ g 的 KNO₃ 无法继续保持溶解状态，会以晶体形式析出。这一现象正是"重结晶法"提纯固体的原理：先在高温下制成接近饱和的溶液，再缓慢冷却，使杂质少的目标晶体优先析出。</p>
+<p>与固体不同，气体的溶解度通常随温度升高而<strong>降低</strong>，并且与其分压成正比（亨利定律，Henry's Law）：$C = k_H \cdot P$，其中 $C$ 为气体在液体中的溶解浓度，$P$ 为该气体的分压，$k_H$ 为亨利常数。这解释了为什么加热的碳酸饮料会更快"跑气"，也说明了湖泊水温升高时溶解氧减少，可能威胁水生生物的生存。</p>
+<p><strong>解题应用</strong></p>
+<p>面对溶解度问题时，第一步是明确题目给出的是"未饱和""饱和"还是"过饱和"状态，第二步利用溶解度曲线或数据表，按比例换算出实际溶剂量对应的最大溶质量，第三步计算增减溶质或改变温度后析出或还能继续溶解的量。这类计算的核心始终是比较"实际含量"与"该条件下的溶解度上限"之间的差值。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch11: Solutions and Colloids (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

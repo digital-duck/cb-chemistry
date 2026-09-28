@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Significant Figures | Chemistry Ch01</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="significant-figures-有效数字">Significant Figures（有效数字）</h2>
+<p><strong>定义</strong></p>
+<p>有效数字是指测量数据中能够可靠表示的所有数字，包括所有确定的数字加上最后一位存疑（估读）的数字。它反映了测量仪器和方法所能达到的精确程度。判断规则如下：</p>
+<li>所有非零数字都是有效数字；</li>
+<li>数字之间的零（夹在两个非零数字之间的零）总是有效的，例如 $205$ 有三位有效数字；</li>
+<li>小数点后、数字末尾的零是有效的，例如 $2.50$ 有三位有效数字；</li>
+<li>仅用于定位小数点的前导零不是有效数字，例如 $0.0032$ 只有两位有效数字；</li>
+<li>对于没有小数点的整数（如 $1500$），末尾的零是否有效存在歧义，通常用科学记数法消除歧义，例如写作 $1.50 \times 10^{3}$ 表示三位有效数字。</li>
+<p>在计算中，运算结果的有效数字位数不能超过原始测量值的精确度——加减法看小数位数，乘除法看有效数字位数。</p>
+<p><strong>实例分析</strong></p>
+<p>假设某学生用量筒测得一份液体体积为 $12.60\ \text{mL}$（四位有效数字），用天平测得其质量为 $15.2\ \text{g}$（三位有效数字）。计算密度：</p>
+$$\rho = \frac{15.2\ \text{g}}{12.60\ \text{mL}} = 1.2063\ldots\ \text{g/mL}$$
+<p>由于乘除法运算结果的有效数字位数应与参与运算的数值中位数最少的一个保持一致（本例中是质量的三位），因此最终结果应报告为 $\rho = 1.21\ \text{g/mL}$，而不是保留计算器显示的全部数字。</p>
+<p><strong>问题解决应用</strong></p>
+<p>在实验报告和定量分析中，正确处理有效数字直接关系到结论的可信度。例如，若某反应产率计算涉及多步测量与运算，每一步都应先完成完整计算，最后才对最终结果按最低精度的数据进行舍入，避免"中途舍入"造成误差累积。此外，在比较两个测量值是否有显著差异时，若两者的有效数字范围（即测量不确定度）本身就有重叠，就不能仅凭数值大小判断优劣。掌握有效数字规则，能帮助学生在实验设计、数据记录和结果汇报中，准确传达测量的可靠程度，这是化学、生物、地球科学等实验类课程中评估数据质量的基本技能。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch1: Essential Ideas (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

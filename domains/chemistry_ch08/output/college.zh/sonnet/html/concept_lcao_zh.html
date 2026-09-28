@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lcao | Chemistry Ch08</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="lcao">Lcao</h2>
+<p>原子轨道线性组合法（Linear Combination of Atomic Orbitals，LCAO）是分子轨道理论中构建分子轨道的标准数学方法。其核心思想是：当两个原子相互靠近成键时，电子不再只属于单个原子，而是在整个分子范围内运动，因此分子轨道 $\psi$ 可以近似表示为参与成键的原子轨道 $\phi_A, \phi_B$ 的加权线性叠加：</p>
+$$
+\psi = c_A \phi_A + c_B \phi_B
+$$
+<p>其中 $c_A, c_B$ 为组合系数，反映各原子轨道对分子轨道的贡献大小。两个原子轨道相加（同号叠加）会在两核之间形成电子云密度增大的区域，得到能量较低的<strong>成键轨道</strong>；两个原子轨道相减（异号叠加）则在两核间产生节面，得到能量较高的<strong>反键轨道</strong>（记作 $\psi^*$）。轨道数目守恒：$n$ 个原子轨道组合后必得到 $n$ 个分子轨道。</p>
+<p><strong>举例说明</strong>：以氢分子 $H_2$ 为例，两个氢原子各贡献一个 $1s$ 轨道。二者同相叠加得到成键轨道 $\sigma_{1s} = c_A\phi_A + c_B\phi_B$，能量低于原子轨道；反相叠加得到反键轨道 $\sigma_{1s}^{*} = c_A\phi_A - c_B\phi_B$，能量更高。基态时两个电子成对填入能量较低的 $\sigma_{1s}$，使体系总能量下降，这正是共价键形成的量子力学根源。</p>
+<p><strong>问题解决应用</strong>：LCAO 与分子轨道能级图结合，可用来预测分子的键级、磁性和稳定性。键级定义为</p>
+$$
+\text{键级} = \frac{(\text{成键轨道电子数}) - (\text{反键轨道电子数})}{2}
+$$
+<p>例如判断 $He_2$ 是否能稳定存在：两个氦原子共提供 4 个电子，按 LCAO 生成的 $\sigma_{1s}$ 和 $\sigma_{1s}^{*}$ 各填 2 个电子，键级为 $(2-2)/2 = 0$，说明 $He_2$ 分子不具有净成键作用，这与实验观测到氦以单原子形式存在完全吻合。同样地，利用 LCAO 图示可以解释为何 $O_2$ 具有顺磁性（含未成对电子）而 $N_2$ 具有极高的键能（键级为 3）。掌握 LCAO 方法，是理解分子稳定性、光谱跃迁以及化学反应活性差异的重要基础工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch8: Advanced Theories of Covalent Bonding (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

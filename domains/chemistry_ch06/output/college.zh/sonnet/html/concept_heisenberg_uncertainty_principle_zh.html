@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heisenberg Uncertainty Principle | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="heisenberg-uncertainty-principle">Heisenberg Uncertainty Principle</h2>
+<p><strong>定义</strong></p>
+<p>海森堡不确定性原理是量子力学的核心结论之一：对于一个粒子,我们不可能同时精确地知道它的位置和动量(或速度)。这不是仪器精度不够的问题,而是自然界本身的一条基本限制——粒子在微观尺度上不再具有经典意义下"确定的位置"和"确定的速度"这两个同时存在的属性。</p>
+<p>数学上,这一原理表述为:</p>
+$$\Delta x \cdot \Delta p \geq \frac{\hbar}{4\pi}$$
+<p>其中 $\Delta x$ 是位置的不确定度,$\Delta p$ 是动量的不确定度,$\hbar$ 是约化普朗克常数($\hbar \approx 1.055 \times 10^{-34}\ \text{J·s}$)。这个不等式说明:若我们把粒子的位置测得越精确(即 $\Delta x$ 越小),它的动量就必然变得越不确定(即 $\Delta p$ 越大),反之亦然。二者的乘积存在一个不可逾越的最小值。</p>
+<p><strong>实例分析</strong></p>
+<p>考虑一个被限制在原子尺度内的电子,其位置不确定度约为 $\Delta x = 1 \times 10^{-10}\ \text{m}$(即原子的典型大小)。代入不等式,可得电子动量的最小不确定度:</p>
+$$\Delta p \geq \frac{\hbar}{4\pi \Delta x} \approx \frac{1.055 \times 10^{-34}}{4\pi \times 10^{-10}} \approx 8.4 \times 10^{-26}\ \text{kg·m/s}$$
+<p>将其换算为速度不确定度($\Delta v = \Delta p / m_e$,电子质量 $m_e \approx 9.11 \times 10^{-31}\ \text{kg}$),得到 $\Delta v \approx 9.2 \times 10^{4}\ \text{m/s}$——这是一个相当大的速度不确定性,说明电子被束缚在原子内部时,其运动速度天生就无法被精确定义。</p>
+<p><strong>问题解决应用</strong></p>
+<p>这一原理直接解释了为什么原子中的电子不会像行星绕太阳那样沿着确定轨道运行,而只能用"电子云"(概率密度分布)来描述其位置。它也解释了原子的基态为何具有最低但非零的能量(零点能):如果电子完全静止在原子核上,$\Delta x \to 0$,则 $\Delta p$ 将趋于无穷大,这在物理上是不可能的。在实际问题中,不确定性原理常用于估算微观粒子被束缚系统的最小能量,或判断量子效应在何种尺度上变得显著——凡是涉及纳米尺度、原子结构或量子隧穿现象的定量分析,都离不开这一基本约束。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

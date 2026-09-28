@@ -1,0 +1,181 @@
+domain: chemistry_2e_ch5
+sources:
+  energy:
+    label: Energy
+    sections:
+    - id: ch05_s5_1
+      title: 5.1 Energy Basics
+  kinetic_energy:
+    label: Kinetic Energy
+    sections:
+    - id: ch05_s5_1
+      title: 5.1 Energy Basics
+  potential_energy:
+    label: Potential Energy
+    sections:
+    - id: ch05_s5_1
+      title: 5.1 Energy Basics
+  temperature:
+    label: Temperature
+    sections:
+    - id: ch05_s5_1
+      title: 5.1 Energy Basics
+  work:
+    label: Work
+    sections:
+    - id: ch05_s5_1
+      title: 5.1 Energy Basics
+    - id: ch05_s5_3
+      title: 5.3 Enthalpy
+  thermal_energy:
+    label: Thermal Energy
+    sections:
+    - id: ch05_s5_1
+      title: 5.1 Energy Basics
+  heat:
+    label: Heat
+    sections:
+    - id: ch05_s5_1
+      title: 5.1 Energy Basics
+    - id: ch05_s5_2
+      title: 5.2 Calorimetry
+  law_of_conservation_of_energy:
+    label: Law of Conservation of Energy
+    sections:
+    - id: ch05_s5_1
+      title: 5.1 Energy Basics
+  exothermic_process:
+    label: Exothermic Process
+    sections:
+    - id: ch05_s5_1
+      title: 5.1 Energy Basics
+    - id: ch05_s5_2
+      title: 5.2 Calorimetry
+  endothermic_process:
+    label: Endothermic Process
+    sections:
+    - id: ch05_s5_1
+      title: 5.1 Energy Basics
+    - id: ch05_s5_2
+      title: 5.2 Calorimetry
+  heat_capacity:
+    label: Heat Capacity
+    sections:
+    - id: ch05_s5_1
+      title: 5.1 Energy Basics
+  specific_heat_capacity:
+    label: Specific Heat Capacity
+    sections:
+    - id: ch05_s5_1
+      title: 5.1 Energy Basics
+  heat_transfer_equation:
+    label: Heat Transfer Equation
+    sections:
+    - id: ch05_s5_1
+      title: 5.1 Energy Basics
+  system_and_surroundings:
+    label: System and Surroundings
+    sections:
+    - id: ch05_s5_2
+      title: 5.2 Calorimetry
+    - id: ch05_s5_3
+      title: 5.3 Enthalpy
+  thermal_equilibrium:
+    label: Thermal Equilibrium
+    sections:
+    - id: ch05_s5_2
+      title: 5.2 Calorimetry
+  calorimetry:
+    label: Calorimetry
+    sections:
+    - id: ch05_s5_2
+      title: 5.2 Calorimetry
+  coffee_cup_calorimeter:
+    label: Coffee Cup Calorimeter
+    sections:
+    - id: ch05_s5_2
+      title: 5.2 Calorimetry
+  bomb_calorimeter:
+    label: Bomb Calorimeter
+    sections:
+    - id: ch05_s5_2
+      title: 5.2 Calorimetry
+  internal_energy:
+    label: Internal Energy
+    sections:
+    - id: ch05_s5_3
+      title: 5.3 Enthalpy
+  first_law_of_thermodynamics:
+    label: First Law of Thermodynamics
+    sections:
+    - id: ch05_s5_3
+      title: 5.3 Enthalpy
+  expansion_work:
+    label: Expansion Work (Pressure-Volume Work)
+    sections:
+    - id: ch05_s5_3
+      title: 5.3 Enthalpy
+  state_function:
+    label: State Function
+    sections:
+    - id: ch05_s5_3
+      title: 5.3 Enthalpy
+  enthalpy:
+    label: Enthalpy
+    sections:
+    - id: ch05_s5_3
+      title: 5.3 Enthalpy
+  enthalpy_change:
+    label: Enthalpy Change
+    sections:
+    - id: ch05_s5_3
+      title: 5.3 Enthalpy
+  thermochemical_equation:
+    label: Thermochemical Equation
+    sections:
+    - id: ch05_s5_3
+      title: 5.3 Enthalpy
+  standard_state:
+    label: Standard State
+    sections:
+    - id: ch05_s5_3
+      title: 5.3 Enthalpy
+  standard_enthalpy_of_combustion:
+    label: Standard Enthalpy of Combustion
+    sections:
+    - id: ch05_s5_3
+      title: 5.3 Enthalpy
+  standard_enthalpy_of_formation:
+    label: Standard Enthalpy of Formation
+    sections:
+    - id: ch05_s5_3
+      title: 5.3 Enthalpy
+  hess_law:
+    label: Hess's Law
+    sections:
+    - id: ch05_s5_3
+      title: 5.3 Enthalpy
+  nutritional_calorie:
+    label: Nutritional Calorie (Calorie)
+    sections:
+    - id: ch05_s5_2
+      title: 5.2 Calorimetry
+  solar_thermal_energy_storage:
+    label: Solar Thermal Energy Storage
+    sections:
+    - id: ch05_s5_1
+      title: 5.1 Energy Basics
+    - id: ch05_s5_2
+      title: 5.2 Calorimetry
+  metal_identification_by_specific_heat:
+    label: Metal Identification by Specific Heat
+    sections:
+    - id: ch05_s5_1
+      title: 5.1 Energy Basics
+    - id: ch05_s5_2
+      title: 5.2 Calorimetry
+  reaction_enthalpy_from_formation_data:
+    label: Reaction Enthalpy from Formation Data
+    sections:
+    - id: ch05_s5_3
+      title: 5.3 Enthalpy

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Standard Enthalpy Of Formation | Chemistry Ch05</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="standard-enthalpy-of-formation">Standard Enthalpy Of Formation</h2>
+<p>The standard enthalpy of formation, $\Delta H_f^\circ$, is the enthalpy change when one mole of a compound forms from its constituent elements, each in their standard state (most stable form at 1 bar and a specified temperature, usually 298 K). By convention, every element in its standard state has $\Delta H_f^\circ = 0$. This zero point is arbitrary, like sea level for altitude — it doesn't mean elements carry no energy, only that we measure formation enthalpies relative to them. Values are tabulated for thousands of compounds and are the backbone of thermochemical calculations because enthalpy is a state function: the total enthalpy change of a reaction depends only on initial and final states, not the path taken. This state-function property is what makes formation enthalpies additive — you can combine tabulated values for any reaction without ever running it in the lab.</p>
+<p><strong>Worked example.</strong> Consider the combustion of methane: $\text{CH}_4(g) + 2\text{O}_2(g) \rightarrow \text{CO}_2(g) + 2\text{H}_2\text{O}(l)$. The reaction enthalpy is the sum of formation enthalpies of products minus reactants, each weighted by its stoichiometric coefficient:</p>
+$$\Delta H_{rxn}^\circ = \sum n_p \Delta H_f^\circ(\text{products}) - \sum n_r \Delta H_f^\circ(\text{reactants})$$
+<p>With $\Delta H_f^\circ(\text{CH}_4) = -74.8$ kJ/mol, $\Delta H_f^\circ(\text{CO}_2) = -393.5$ kJ/mol, $\Delta H_f^\circ(\text{H}_2\text{O}, l) = -285.8$ kJ/mol, and $\Delta H_f^\circ(\text{O}_2) = 0$:</p>
+$$\Delta H_{rxn}^\circ = [-393.5 + 2(-285.8)] - [-74.8 + 2(0)] = -965.1 - (-74.8) = -890.3 \text{ kJ}$$
+<p>The strongly negative value confirms methane combustion is highly exothermic, consistent with its use as a fuel.</p>
+<p><strong>Problem-solving application.</strong> This additive property lets you predict the enthalpy of reactions too dangerous, slow, or impractical to measure directly — such as explosive decompositions or reactions requiring exotic conditions — by combining tabulated formation values instead of running the experiment. A common exam trap is forgetting to multiply each $\Delta H_f^\circ$ by its stoichiometric coefficient, or misidentifying an element's standard state (e.g., using atomic oxygen instead of $\text{O}_2(g)$, or graphite instead of diamond for carbon). Always double-check that reactants and products are in the states specified by the balanced equation, since $\Delta H_f^\circ$ for water vapor differs from liquid water by the enthalpy of vaporization — a discrepancy of about 44 kJ/mol that can silently corrupt an otherwise correct calculation.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

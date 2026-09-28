@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Equilibrium Constant | Chemistry Ch13</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="equilibrium-constant-平衡常数">Equilibrium Constant（平衡常数）</h2>
+<p><strong>定义</strong></p>
+<p>当一个可逆反应达到化学平衡时，正反应速率与逆反应速率相等，各物质的浓度不再随时间变化，但这并不意味着反应停止，而是动态平衡。平衡常数 $K$ 用来定量描述在给定温度下，平衡时反应物与生成物浓度之间的固定比例关系。</p>
+<p>对于一般反应：</p>
+$$aA + bB \rightleftharpoons cC + dD$$
+<p>平衡常数表达式为：</p>
+$$K = \dfrac{[C]^c[D]^d}{[A]^a[B]^b}$$
+<p>其中方括号表示平衡时物质的摩尔浓度（气体反应也可用分压表示，记作 $K_p$）。纯固体和纯液体的浓度视为常数，不写入表达式。$K$ 的数值只由温度决定：$K \gg 1$ 表示平衡时生成物占优势（反应趋于完全）；$K \ll 1$ 表示反应物占优势（反应几乎不进行）；$K \approx 1$ 表示两者浓度相当。</p>
+<p><strong>实例分析</strong></p>
+<p>以合成氨反应为例：</p>
+$$N_2(g) + 3H_2(g) \rightleftharpoons 2NH_3(g)$$
+<p>在某温度下，若平衡时测得 $[N_2] = 0.20\ \text{mol/L}$，$[H_2] = 0.60\ \text{mol/L}$，$[NH_3] = 0.40\ \text{mol/L}$，则：</p>
+$$K = \dfrac{[NH_3]^2}{[N_2][H_2]^3} = \dfrac{(0.40)^2}{(0.20)(0.60)^3} = \dfrac{0.16}{0.0432} \approx 3.7$$
+<p>这个数值告诉我们，在此温度下平衡时生成物与反应物浓度处于同一数量级，反应既非完全进行也非几乎不发生。</p>
+<p><strong>解题应用</strong></p>
+<p>平衡常数的核心用途是从已知的初始浓度和 $K$ 值反推平衡时各物质的浓度，这通常借助 ICE 表（Initial 初始、Change 变化、Equilibrium 平衡）来组织计算。例如，若已知 $K$ 和初始浓度，需要设变化量为 $x$，将平衡浓度代入 $K$ 表达式，解出 $x$，从而得到各物质的平衡浓度。</p>
+<p>此外，比较反应商 $Q$（用任意时刻的浓度按同样公式计算）与 $K$ 的大小，可以判断反应尚未达到平衡时的移动方向：若 $Q < K$，反应将正向进行以生成更多产物；若 $Q > K$，反应将逆向进行。这一判断方法在工业生产条件优化（如合成氨的最佳压力与温度选择）中具有重要的实际应用价值。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch13: Fundamental Equilibrium Concepts (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

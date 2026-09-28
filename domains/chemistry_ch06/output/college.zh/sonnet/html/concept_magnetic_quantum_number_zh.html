@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Magnetic Quantum Number | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="magnetic-quantum-number">Magnetic Quantum Number</h2>
+<p><strong>定义</strong></p>
+<p>磁量子数（用符号 $m_l$ 表示）描述的是电子轨道在空间中的取向，是原子轨道四个量子数之一。它的取值依赖于角量子数 $l$：对于给定的 $l$，$m_l$ 可以取从 $-l$ 到 $+l$ 之间的所有整数，包括 $0$，即</p>
+$$m_l = -l, -(l-1), \dots, -1, 0, 1, \dots, (l-1), l$$
+<p>共有 $2l+1$ 个可能取值。这个量子数之所以被称为"磁"量子数，是因为这些不同取向的轨道在外加磁场存在时会具有略微不同的能量——这正是原子发射光谱在磁场中发生分裂（塞曼效应）的原因。在没有外磁场时，同一 $l$ 值下的所有轨道能量相同，称为"简并"轨道。</p>
+<p><strong>举例说明</strong></p>
+<p>以 $l=1$（p 轨道）为例，代入公式可得 $m_l = -1, 0, +1$，对应 $3$ 个取值，这与我们熟知的 $p_x$、$p_y$、$p_z$ 三个空间取向的轨道完全吻合——它们形状相同，但在三维空间中分别沿 x、y、z 轴伸展。再看 $l=2$（d 轨道），$m_l$ 可取 $-2, -1, 0, +1, +2$，共 $5$ 个值，对应我们熟悉的 5 个 d 轨道（如 $d_{xy}$、$d_{x^2-y^2}$ 等）。而 $l=0$（s 轨道）时，$m_l$ 只能取 $0$，这解释了为什么每个能级只有一个 s 轨道——它是球对称的，没有方向性可言。</p>
+<p><strong>解题应用</strong></p>
+<p>在实际做题时，磁量子数最常见的用途是判断某一亚层含有多少个轨道，进而确定该亚层最多能容纳多少电子（每个轨道容纳 2 个自旋相反的电子）。例如，判断 $n=3, l=2$（即 3d 亚层）：由 $m_l = -2,-1,0,1,2$ 可知共有 5 个轨道，因此 3d 亚层最多容纳 $5 \times 2 = 10$ 个电子，这与元素周期表中过渡金属区恰好占据 10 列的事实相符。另一类常见题型是判断量子数组合是否合法：若给出 $l=1, m_l=2$，学生应立即识别这是不允许的，因为 $m_l$ 的绝对值不能超过 $l$。掌握这一规则，是理解原子轨道数目、电子排布规律乃至元素周期表结构的关键一步。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

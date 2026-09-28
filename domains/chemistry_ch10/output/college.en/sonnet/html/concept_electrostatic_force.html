@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electrostatic Force | Chemistry Ch10</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="electrostatic-force">Electrostatic Force</h2>
+<p>Electrostatic force is the push or pull between two electrically charged objects, arising from the charges themselves rather than from motion or contact. It is one of the four fundamental forces in nature (a manifestation of the electromagnetic force) and is described quantitatively by Coulomb's law:</p>
+$$F = k_e \frac{|q_1 q_2|}{r^2}$$
+<p>Here $q_1$ and $q_2$ are the magnitudes of the two charges (in coulombs), $r$ is the distance between their centers (in meters), and $k_e \approx 8.99 \times 10^9\ \text{N·m}^2/\text{C}^2$ is Coulomb's constant. Like charges repel; opposite charges attract. The force acts along the line connecting the two charges, and its strength falls off with the square of the distance — the same inverse-square pattern found in gravity, but electrostatic force can be either attractive or repulsive and is vastly stronger for particles like electrons and protons.</p>
+<p><strong>Worked example.</strong> Suppose two small charged spheres carry $q_1 = 2 \times 10^{-6}\,\text{C}$ and $q_2 = -3 \times 10^{-6}\,\text{C}$, separated by $r = 0.5\,\text{m}$. The force magnitude is</p>
+$$F = (8.99 \times 10^9) \frac{(2\times10^{-6})(3\times10^{-6})}{(0.5)^2} \approx 0.216\ \text{N}$$
+<p>Since the charges have opposite signs, the force is attractive: each sphere is pulled toward the other along the line joining them.</p>
+<p><strong>Problem-solving application.</strong> Coulomb's law becomes especially useful when multiple charges interact, because forces from different sources add as vectors (superposition). Consider three charges arranged in a line: $q_1$ and $q_2$ on either side of $q_3$. To find the net force on $q_3$, compute the force from $q_1$ on $q_3$ and the force from $q_2$ on $q_3$ separately using Coulomb's law, then add them as vectors — accounting for direction, not just magnitude. This mirrors the general strategy engineers and physicists use for any field-based problem: isolate the object of interest, compute each pairwise interaction, and sum the contributions vectorially. The same reasoning extends to more complex geometries (charges arranged in a triangle, a ring, or a grid), where breaking the problem into components along $x$- and $y$-axes before summing is essential for getting the correct net force and direction.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

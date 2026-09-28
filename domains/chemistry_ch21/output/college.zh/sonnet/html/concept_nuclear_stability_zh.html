@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nuclear Stability | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="nuclear-stability">Nuclear Stability</h2>
+<p><strong>定义</strong></p>
+<p>原子核由质子和中子（统称核子）构成，它们借助核力紧密束缚在一起。核力是一种短程、强作用力，能克服质子间的库仑斥力。原子核是否稳定，取决于核内质子数（$Z$）与中子数（$N$）的比例。对于轻核（$Z < 20$），稳定核大致满足 $N/Z \approx 1$；随着原子序数增大，质子间的静电斥力迅速增强,需要更多的中子来提供额外的核力"稀释"这种斥力，因此重核的稳定区间逐渐偏向 $N/Z \approx 1.5$。若将已知稳定核素的 $N$ 对 $Z$ 作图，会得到一条被称为"稳定谷"（band of stability）的窄带；落在此带之外的核素或中子过多、或质子过多、或核内质子中子总数过大（超过铅之后几乎没有稳定核素），都会通过放射性衰变（$\alpha$、$\beta^-$、$\beta^+$ 衰变或电子俘获）自发调整比例，直至到达谷内的稳定核素。</p>
+<p><strong>实例解析</strong></p>
+<p>以碳的同位素为例：碳-12（6 个质子，6 个中子，$N/Z=1$）是稳定的；碳-14（6 个质子，8 个中子，$N/Z=1.33$）中子偏多，落在稳定谷之外，因而具有放射性,通过 $\beta^-$ 衰变（中子转化为质子，放出电子和反中微子）转变为氮-14，使 $N/Z$ 回落到氮-14 稳定的 $1.0$。反之,像磷-30 这样质子偏多、中子偏少的核素,则倾向于经由 $\beta^+$ 衰变或电子俘获来减少质子数、增加中子数，同样是朝稳定谷靠拢。</p>
+<p><strong>问题解决应用</strong></p>
+<p>面对一个具体核素，判断并预测其衰变方式是核化学中的常见任务，步骤如下：</p>
+<li>查出该核素的 $Z$ 和 $N$，计算 $N/Z$。</li>
+<li>与同一 $Z$ 值下稳定谷的典型比值比较：若 $N/Z$ 偏高（中子过多），预测 $\beta^-$ 衰变；若偏低（质子过多），预测 $\beta^+$ 衰变或电子俘获；若 $Z > 83$（如铀、钍系），核子总数本身过大，往往优先发生 $\alpha$ 衰变以减小核的整体质量。</li>
+<li>写出衰变后子核的新 $Z$、$N$，确认其是否落入稳定谷；若仍不稳定,则会继续衰变，直至到达稳定核素，形成一条衰变链（如铀-238 衰变链最终止于铅-206）。</li>
+<p>这一分析框架不仅用于解释天然放射性,也是核医学（选择半衰期合适、衰变方式安全的同位素做示踪剂）、核废料处理和考古测年（如碳-14 测年法依赖对稳定谷偏离程度的精确计算）等实际问题的理论基础。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

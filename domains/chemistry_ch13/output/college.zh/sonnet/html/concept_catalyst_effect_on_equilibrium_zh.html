@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catalyst Effect On Equilibrium | Chemistry Ch13</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="catalyst-effect-on-equilibrium">Catalyst Effect On Equilibrium</h2>
+<p><strong>定义</strong></p>
+<p>催化剂是一种能够降低化学反应活化能、从而加快反应速率的物质,但它本身在反应前后不发生净消耗。一个常被误解的问题是:催化剂能否改变化学平衡的位置?答案是不能。催化剂对正反应和逆反应的活化能降低幅度是相同的,因此它会<strong>同等程度地</strong>加快正反应速率 $v_{\text{正}}$ 和逆反应速率 $v_{\text{逆}}$。由于平衡常数 $K_{eq}$ 只取决于反应的热力学性质(即产物与反应物之间的自由能差 $\Delta G^\circ = -RT\ln K_{eq}$),而与反应途径无关,催化剂不会改变 $K_{eq}$ 的数值,也不会改变平衡时各物质的浓度比。它唯一的作用是让体系<strong>更快</strong>达到平衡状态。</p>
+<p><strong>实例分析</strong></p>
+<p>以工业合成氨反应为例:</p>
+$$N_2(g) + 3H_2(g) \rightleftharpoons 2NH_3(g)$$
+<p>在没有催化剂的情况下,该反应在室温下几乎不进行,因为 $N_2$ 分子中的三键需要极高的活化能才能断裂。工业上使用铁基催化剂,大幅降低了反应的活化能垒。加入催化剂后,正反应和逆反应速率都显著提升,体系能在几分钟到几小时内(而非数年)达到平衡,但最终平衡时 $NH_3$、$N_2$、$H_2$ 的浓度比例与不使用催化剂、只是等待足够长时间后所能达到的比例完全相同。这正是催化剂"只影响动力学、不影响热力学"的核心体现。</p>
+<p><strong>解题应用</strong></p>
+<p>常见考题会给出平衡体系,并询问"加入催化剂后,以下哪些量会改变":</p>
+<li><strong>反应速率</strong>——增大(正逆反应同时增大)。</li>
+<li><strong>平衡常数 $K_{eq}$</strong>——不变,因为 $K_{eq}$ 只依赖温度。</li>
+<li><strong>平衡浓度/分压</strong>——不变。</li>
+<li><strong>达到平衡所需时间</strong>——缩短。</li>
+<p>解题技巧:凡题目涉及催化剂,先判断问题问的是"速率"还是"平衡位置/常数"。若问速率或达到平衡所需时间,答案是"改变(加快)";若问平衡浓度、产率或 $K_{eq}$,答案一律是"不变"。这一区分也是勒夏特列原理应用题中最容易混淆、也是最常考的辨析点之一。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch13: Fundamental Equilibrium Concepts (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

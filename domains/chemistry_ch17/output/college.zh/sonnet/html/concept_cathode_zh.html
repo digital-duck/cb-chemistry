@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cathode | Chemistry Ch17</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="cathode-阴极">Cathode（阴极）</h2>
+<p><strong>定义</strong></p>
+<p>阴极是电化学装置中发生<strong>还原反应</strong>（获得电子）的电极。这一定义适用于所有电化学体系，但阴极的电性（带正电还是负电）取决于装置是<strong>原电池</strong>（自发放电，如电池供电时）还是<strong>电解池</strong>（外加电源驱动非自发反应，如电镀、电解水）。在原电池中，阴极是正极；在电解池中，阴极是负极——因为外部电源把电子强行“推”向阴极，使其上的物质被还原。判断阴极的可靠方法不是记住正负号，而是记住：<strong>阴极永远发生还原</strong>（口诀：Red Cat—Reduction at Cathode）。</p>
+<p><strong>实例解析</strong></p>
+<p>以锌—铜原电池为例：锌电极上锌原子失去电子被氧化，是阳极；铜电极上$\text{Cu}^{2+}$离子获得电子被还原为铜原子，是阴极：</p>
+$$\text{Cu}^{2+}(aq) + 2e^- \rightarrow \text{Cu}(s)$$
+<p>电子经外电路从阳极流向阴极，电流方向则相反。此时阴极电势较高，是电池的正极。</p>
+<p>再看电解精炼铜的电解池：外加直流电源迫使$\text{Cu}^{2+}$在阴极上被还原沉积为纯铜，阴极此时接电源负极：</p>
+$$\text{Cu}^{2+}(aq) + 2e^- \rightarrow \text{Cu}(s)$$
+<p>反应式相同，但驱动方式和电极极性完全不同——这正是初学者最容易混淆的地方。</p>
+<p><strong>问题解决应用</strong></p>
+<p>判断任意装置阴极的三步法：</p>
+<li>确认装置类型：是否有外接电源？有则为电解池，无则为原电池。</li>
+<li>找出发生还原反应的电极（写出半反应式，看哪个是"获得电子"）。</li>
+<li>根据装置类型确定极性：原电池阴极为正极，电解池阴极为负极。</li>
+<p><strong>练习</strong>：在电解氯化钠水溶液（制氯气和氢气）的装置中，阴极上发生的半反应是</p>
+$$2\text{H}_2\text{O}(l) + 2e^- \rightarrow \text{H}_2(g) + 2\text{OH}^-(aq)$$
+<p>请判断：该阴极带正电还是负电？（提示：先判断装置类型。）由于此装置为电解池，阴极接电源负极，故阴极带<strong>负电</strong>，而阳极（发生$\text{Cl}^-$氧化生成$\text{Cl}_2$）带正电。这一判断逻辑同样适用于蓄电池充放电、电镀、金属提纯等各类实际场景。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch17: Electrochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

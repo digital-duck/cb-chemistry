@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daltons Law | Chemistry Ch09</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="daltons-law">Daltons Law</h2>
+<p><strong>定义</strong></p>
+<p>道尔顿分压定律（Dalton's Law of Partial Pressures）指出：在温度和体积恒定的条件下，混合气体的总压强等于各组分气体单独存在于同一容器中所产生的分压之和。用公式表示为：</p>
+$$P_{\text{total}} = P_1 + P_2 + P_3 + \cdots + P_n$$
+<p>其中每种气体的分压 $P_i$ 与其摩尔分数 $x_i$ 成正比：</p>
+$$P_i = x_i \cdot P_{\text{total}}, \qquad x_i = \frac{n_i}{n_{\text{total}}}$$
+<p>这一规律成立的前提是理想气体假设——各气体分子彼此不发生化学反应，且分子间相互作用可忽略。分压定律之所以成立，本质上是理想气体状态方程 $PV = nRT$ 的直接推论：在同一体积和温度下，每种气体的压强只取决于其自身的摩尔数，与其他气体是否存在无关。</p>
+<p><strong>实例解析</strong></p>
+<p>假设一个密闭容器中含有 $2.0\ \text{mol}$ 氮气（$\text{N}_2$）和 $1.0\ \text{mol}$ 氧气（$\text{O}_2$），总压强测得为 $3.0\ \text{atm}$。氮气的摩尔分数为：</p>
+$$x_{\text{N}_2} = \frac{2.0}{2.0+1.0} = 0.667$$
+<p>因此氮气的分压为：</p>
+$$P_{\text{N}_2} = 0.667 \times 3.0\ \text{atm} = 2.0\ \text{atm}$$
+<p>同理，氧气的分压为 $1.0\ \text{atm}$。二者相加恰好等于总压 $3.0\ \text{atm}$，验证了定律的正确性。</p>
+<p><strong>问题解决应用</strong></p>
+<p>道尔顿分压定律在实际问题中最常见的用途是<strong>排水集气法</strong>测定气体体积时的校正计算。当气体通过水面收集时，容器内实际是目标气体与水蒸气的混合物，此时：</p>
+$$P_{\text{目标气体}} = P_{\text{大气}} - P_{\text{水蒸气}}$$
+<p>例如，实验室通过排水法收集氧气，若大气压为 $760\ \text{mmHg}$，当日水温对应的水蒸气压为 $24\ \text{mmHg}$，则氧气的真实分压为 $736\ \text{mmHg}$。若不做此项校正，用理想气体方程计算摩尔数或体积时会引入系统误差。这类计算训练学生把"总压强"分解为可加的组分贡献，是后续学习呼吸生理学中肺泡气体交换、血液气体运输等生物医学问题的重要基础。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch9: Gases (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Degenerate Orbitals | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="degenerate-orbitals">Degenerate Orbitals</h2>
+<p><strong>定义</strong></p>
+<p>简并轨道（degenerate orbitals）是指在没有外部电场或磁场干扰的情况下，能量完全相同的一组原子轨道。"简并"一词来自量子力学，表示多个不同的量子态对应同一个能量值。最典型的例子是同一亚层（subshell）内的轨道：例如 $2p$ 亚层包含 $2p_x$、$2p_y$、$2p_z$ 三个轨道，它们的形状相同（都是哑铃形），只是在空间中的伸展方向不同（分别沿 $x$、$y$、$z$ 轴），但能量彼此相等。同理，$3d$ 亚层有五个简并轨道（$d_{xy}$、$d_{yz}$、$d_{xz}$、$d_{x^2-y^2}$、$d_{z^2}$）。</p>
+<p>简并轨道的存在直接决定了电子填充顺序的一条关键规则——<strong>洪德规则（Hund's rule）</strong>：当电子填入一组简并轨道时，会尽量单独占据不同的轨道（自旋方向相同），而不是两两配对挤入同一轨道，因为这样电子间的排斥能最低、体系最稳定。</p>
+<p><strong>实例分析</strong></p>
+<p>以碳原子（原子序数 6）为例，电子排布为 $1s^2\,2s^2\,2p^2$。两个 $2p$ 电子如何分配到三个简并的 $2p_x$、$2p_y$、$2p_z$ 轨道中？根据洪德规则，正确的填法是每个电子占据不同的 $p$ 轨道（如 $2p_x^1\,2p_y^1$），且自旋平行，而不是把两个电子都塞进 $2p_x$ 轨道。这样电子云在空间上分得更开，相互排斥更小，体系能量更低。这一排布可以用轨道图（每个轨道画一个方框，箭头表示电子自旋）直观表示。</p>
+<p><strong>解题应用</strong></p>
+<p>判断简并轨道与电子排布问题时，可按以下步骤操作：</p>
+<li>先确定该原子的总电子数及其所在亚层；</li>
+<li>识别哪些轨道属于同一亚层（即简并轨道组，例如同一 $n$、同一 $l$ 的所有轨道）；</li>
+<li>应用洪德规则填充：先给每个简并轨道各分配一个电子（自旋同向），电子数超过轨道数时再开始配对。</li>
+<p>例如，氮原子（$1s^2\,2s^2\,2p^3$）的三个 $2p$ 电子恰好分别占据 $2p_x$、$2p_y$、$2p_z$，各一个未成对电子，自旋方向相同——这种排布使氮原子具有较高的稳定性，也解释了为什么氮分子中氮原子倾向于形成三重键以配对这些电子。理解简并轨道及洪德规则，是预测原子磁性（顺磁性/反磁性）与化学反应活性的基础工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

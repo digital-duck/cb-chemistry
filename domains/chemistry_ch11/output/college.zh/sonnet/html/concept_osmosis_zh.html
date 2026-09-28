@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Osmosis | Chemistry Ch11</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="osmosis">Osmosis</h2>
+<p><strong>定义</strong></p>
+<p>渗透（osmosis）是水分子通过一层选择性透过膜，从溶质浓度较低的一侧向溶质浓度较高的一侧净移动的过程。膜上的微孔只允许水等小分子自由通过,而蛋白质、糖类等较大或带电的溶质分子无法穿过。水的这种净移动方向,本质上是分子随机运动趋向于消除膜两侧浓度差的结果——水会向"水分子相对稀少"(即溶质相对集中)的一侧扩散,直到达到动态平衡,或者被相反方向的压力所抵消。</p>
+<p>推动这一过程的驱动力可以用渗透压来描述:</p>
+$$\pi = iMRT$$
+<p>其中 $\pi$ 为渗透压,$i$ 为范特霍夫因子（溶质解离后的粒子数）,$M$ 为溶质的摩尔浓度,$R$ 为气体常数,$T$ 为绝对温度。渗透压越大,水分子被"拉入"该溶液的驱动力就越强。</p>
+<p><strong>实例分析</strong></p>
+<p>将一个红细胞分别放入三种溶液中,可以观察到三种不同结果:</p>
+<li>放入<strong>低渗溶液</strong>(溶质浓度低于细胞内部)中,水会净流入细胞,导致细胞膨胀,严重时甚至破裂(溶血)。</li>
+<li>放入<strong>高渗溶液</strong>(溶质浓度高于细胞内部)中,水会净流出细胞,导致细胞皱缩(皱缩现象）。</li>
+<li>放入<strong>等渗溶液</strong>(溶质浓度与细胞内部相同)中,水分子仍在膜两侧穿梭,但净流量为零,细胞形态保持稳定。</li>
+<p>这正是医院静脉输液必须使用与血浆渗透压相匹配的生理盐水(0.9% NaCl)的原因——避免因渗透压失衡而破坏红细胞。</p>
+<p><strong>应用与解题</strong></p>
+<p>面对渗透问题时,可按以下步骤分析:第一,比较膜两侧的溶质总浓度(注意区分能否解离,如 NaCl 的 $i=2$ 而葡萄糖的 $i=1$）;第二,判断水的净流动方向——水总是从低渗侧流向高渗侧;第三,预测细胞或系统的宏观变化(膨胀、皱缩或不变）。</p>
+<p>例如,若细胞内液为 0.3 M 葡萄糖溶液,外部为 0.2 M NaCl 溶液,应先换算成有效粒子浓度：NaCl 溶液的有效浓度约为 $0.2 \times 2 = 0.4\ \text{M}$,高于细胞内的 0.3 M,因此外部溶液对细胞而言是高渗的,水将净流出细胞,导致细胞皱缩。这类计算在生理学、植物细胞水分调节及食品保鲜(如糖渍、盐渍)等实际问题中都十分常见。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch11: Solutions and Colloids (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

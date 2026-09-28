@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Concentration Stress | Chemistry Ch13</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="concentration-stress">Concentration Stress</h2>
+<p><strong>定义</strong></p>
+<p>浓度胁迫（concentration stress）是指反应体系中某一物质的浓度发生改变时，可逆反应的平衡会随之发生移动，直到重新建立新的平衡状态。这是勒夏特列原理（Le Chatelier's Principle）在浓度变量上的具体体现：当体系受到外界扰动（增加或减少某物质的浓度）时，平衡会向能够抵消这一扰动的方向移动。</p>
+<p>具体规律如下：若增大反应物浓度，平衡正向移动（消耗更多反应物，生成更多产物）；若增大产物浓度，平衡逆向移动；反之，减少某物质浓度，平衡会向补充该物质的方向移动。需要注意的是，固体和纯液体不列入浓度变化的考虑范围，因为它们的"浓度"（更准确地说是活度）不随其量的多少而改变。</p>
+<p><strong>实例分析</strong></p>
+<p>考虑经典的可逆反应：</p>
+$$\text{Fe}^{3+}(aq) + \text{SCN}^-(aq) \rightleftharpoons \text{FeSCN}^{2+}(aq)$$
+<p>该反应中 $\text{FeSCN}^{2+}$ 呈深红色，而反应物几乎无色，因此颜色深浅可直观反映平衡移动方向。</p>
+<p>若向平衡体系中加入更多 $\text{SCN}^-$（例如加入 KSCN 溶液），瞬间打破了原有平衡，此时正反应速率大于逆反应速率，平衡正向移动，体系颜色变深，直至建立新的平衡——此时 $\text{FeSCN}^{2+}$ 浓度升高，而 $\text{Fe}^{3+}$ 浓度略有下降（因为部分被消耗）。</p>
+<p><strong>解题应用</strong></p>
+<p>浓度胁迫的分析在实际问题中常需结合平衡常数表达式定量判断。设某反应达到平衡时，反应商 $Q$ 等于平衡常数 $K$。当我们改变某物质浓度后，$Q$ 值偏离 $K$：若 $Q < K$，说明产物"不足"，反应将正向进行以恢复 $Q = K$；若 $Q > K$，则逆向进行。</p>
+<p>例如，对于反应 $\text{N}_2(g) + 3\text{H}_2(g) \rightleftharpoons 2\text{NH}_3(g)$，若在平衡后突然增加 $\text{H}_2$ 浓度，$Q$ 会瞬间小于 $K$（因为分母增大使 $Q$ 减小），系统必然正向移动以重新使 $Q$ 回升至 $K$。这种"计算 $Q$ 与 $K$ 比较，判断移动方向"的方法，是解决浓度胁迫类平衡问题的标准思路，也是工业合成氨（哈伯法）中通过不断移出 $\text{NH}_3$ 来提高转化率的理论基础。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch13: Fundamental Equilibrium Concepts (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

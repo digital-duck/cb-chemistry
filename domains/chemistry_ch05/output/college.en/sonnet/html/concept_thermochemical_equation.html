@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thermochemical Equation | Chemistry Ch05</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="thermochemical-equation">Thermochemical Equation</h2>
+<p>A thermochemical equation is a balanced chemical equation that also reports the enthalpy change, $\Delta H$, accompanying the reaction as written. Because enthalpy is a state function, $\Delta H$ depends only on the initial and final states of the system — not on the pathway — so it can be attached directly to the equation as a quantity of heat exchanged with the surroundings at constant pressure. By convention, $\Delta H < 0$ signals an exothermic reaction (heat released) and $\Delta H > 0$ signals an endothermic one (heat absorbed). The equation must specify physical states (s, l, g, aq) and temperature/pressure conditions, since $\Delta H$ varies with phase — vaporizing water absorbs energy that freezing it would release.</p>
+<p><strong>Worked example.</strong> Consider the combustion of propane:</p>
+$$\mathrm{C_3H_8(g) + 5\,O_2(g) \rightarrow 3\,CO_2(g) + 4\,H_2O(l)} \qquad \Delta H = -2220\ \text{kJ}$$
+<p>This states that burning exactly one mole of propane gas (as written, with the given stoichiometric coefficients) releases 2220 kJ of heat. Two properties of thermochemical equations make them useful for calculation. First, $\Delta H$ scales linearly with the amount of substance: burning 2 mol of propane releases $2 \times (-2220) = -4440$ kJ, and burning 0.5 mol releases $-1110$ kJ. Second, reversing the equation flips the sign of $\Delta H$: decomposing the products back into propane and oxygen would require $+2220$ kJ.</p>
+<p><strong>Problem-solving application.</strong> Suppose a camp stove burns 110 g of propane (molar mass $\approx 44$ g/mol). How much heat does this release, and how does it compare to burning a full 5-lb (2270 g) tank?</p>
+<p>Step 1 — convert mass to moles:</p>
+$$n = \frac{110\ \text{g}}{44\ \text{g/mol}} = 2.5\ \text{mol}$$
+<p>Step 2 — scale $\Delta H$ to that amount, using the linear-scaling property established above:</p>
+$$\Delta H_{rxn} = 2.5 \times (-2220\ \text{kJ}) = -5550\ \text{kJ}$$
+<p>Step 3 — repeat for the full tank ($2270\ \text{g} \div 44\ \text{g/mol} \approx 51.6$ mol):</p>
+$$\Delta H_{tank} = 51.6 \times (-2220\ \text{kJ}) \approx -1.15\times10^5\ \text{kJ}$$
+<p>So a full tank releases roughly 20 times the heat of the 110 g portion — exactly what the mole ratio (51.6 / 2.5) predicts. This mass-to-moles-to-$\Delta H$ pipeline is the essential skill for working with thermochemical equations: any question about heat released or absorbed in a real reaction reduces to finding moles reacted and scaling $\Delta H$ accordingly, which is precisely the tool Hess's law calculations build on next.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

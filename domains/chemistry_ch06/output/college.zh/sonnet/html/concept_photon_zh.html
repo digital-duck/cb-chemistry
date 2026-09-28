@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photon | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="photon">Photon</h2>
+<p>光子(photon)是电磁辐射的基本能量单位,是光的粒子性表现形式。19世纪末,物理学家发现光的某些行为(如波的干涉、衍射)只能用波动理论解释,但另一些现象——特别是光电效应——却无法用连续波动模型说明。1905年,爱因斯坦提出:光并非以连续能量流的形式传播,而是以离散的能量包(即光子)传播。每个光子携带的能量与光的频率成正比,关系式为</p>
+$$E = h\nu$$
+<p>其中 $h$ 是普朗克常数($6.63 \times 10^{-34}\ \text{J·s}$),$\nu$ 是光的频率。这个公式之所以不可或缺,是因为它把"光是波"与"光是粒子"这两种看似矛盾的图像连接起来——频率是波的属性,而能量包则是粒子的属性,光子概念正是这种波粒二象性的核心体现。</p>
+<p><strong>光电效应实例</strong>:当光照射到金属表面时,若光子能量 $h\nu$ 超过金属的功函数(逸出电子所需的最小能量)$W_0$,电子就会被击出,多余能量转化为电子的动能:</p>
+$$KE_{\text{max}} = h\nu - W_0$$
+<p>这一关系解释了一个经典之谜:为什么增强光的强度(增加光子数量)不能使暗淡的红光击出电子,而微弱的紫光却可以——因为能否击出电子取决于单个光子的能量是否足够,而非光子总数。</p>
+<p><strong>问题解决应用</strong>:假设某金属的功函数为 $2.0\ \text{eV}$,用波长为 $400\ \text{nm}$ 的紫光照射该表面,求射出电子的最大动能。</p>
+<p>首先计算光子能量:利用 $E = hc/\lambda$,代入 $c = 3\times10^8\ \text{m/s}$,$\lambda = 400\times10^{-9}\ \text{m}$,得 $E \approx 3.1\ \text{eV}$。</p>
+<p>代入光电效应方程:$KE_{\text{max}} = 3.1\ \text{eV} - 2.0\ \text{eV} = 1.1\ \text{eV}$。</p>
+<p>这类计算在光谱学、太阳能电池设计和天文观测中十分常见——例如,天文学家通过测量恒星发出光子的能量分布来推断其表面温度,化学家则利用光子能量来判断某个波长的光是否足以引发特定的光化学反应(如打断某个化学键)。理解光子能量与频率的关系,是连接光学、量子力学与现代光电技术(如激光器、太阳能电池、数码相机传感器)的关键桥梁。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Second Order Kinetics | Chemistry Ch12</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="second-order-kinetics">Second Order Kinetics</h2>
+<p><strong>定义</strong></p>
+<p>在化学反应动力学中，若反应速率与某一反应物浓度的二次方成正比，或与两种反应物浓度的乘积成正比，则该反应称为二级反应。其速率方程可写作：</p>
+$$
+\text{rate} = -\frac{d[A]}{dt} = k[A]^2
+$$
+<p>或对于两种不同反应物：</p>
+$$
+\text{rate} = k[A][B]
+$$
+<p>其中 $k$ 为二级速率常数，单位为 $\text{M}^{-1}\text{s}^{-1}$（注意与一级反应的 $\text{s}^{-1}$ 不同）。将上式积分可得到二级反应的积分速率定律：</p>
+$$
+\frac{1}{[A]} = \frac{1}{[A]_0} + kt
+$$
+<p>这一关系式的关键特征是：$\frac{1}{[A]}$ 对时间 $t$ 作图为一条直线，斜率为 $k$，截距为 $\frac{1}{[A]_0}$。这也是实验上区分一级与二级反应的常用判据——若 $\ln[A]$ 对 $t$ 不是直线，而 $\frac{1}{[A]}$ 对 $t$ 是直线，则该反应为二级反应。</p>
+<p><strong>实例演算</strong></p>
+<p>某气相分解反应 $2\text{NO}_2 \rightarrow 2\text{NO} + \text{O}_2$ 已知为二级反应，速率常数 $k = 0.543\ \text{M}^{-1}\text{s}^{-1}$（在某一温度下），初始浓度 $[\text{NO}_2]_0 = 0.300\ \text{M}$。求 60 秒后 $\text{NO}_2$ 的浓度。</p>
+<p>代入积分公式：</p>
+$$
+\frac{1}{[A]} = \frac{1}{0.300} + (0.543)(60) = 3.33 + 32.6 = 35.9\ \text{M}^{-1}
+$$
+$$
+[A] = \frac{1}{35.9} \approx 0.0279\ \text{M}
+$$
+<p>可见浓度从 $0.300\ \text{M}$ 迅速降至约 $0.0279\ \text{M}$，反应初期消耗较快，随后逐渐减慢——这正是二级反应区别于一级反应"半衰期依赖初始浓度"的表现：二级反应半衰期为</p>
+$$
+t_{1/2} = \frac{1}{k[A]_0}
+$$
+<p>即初始浓度越高，半衰期越短。</p>
+<p><strong>解题应用</strong></p>
+<p>处理二级反应问题时，核心步骤是：（1）确认反应级数（通常由实验数据或题目给出）；（2）套用积分速率方程求解未知浓度、时间或速率常数；（3）利用半衰期公式反推初始浓度或估算完全反应所需时间。常见易错点是误用一级反应的对数公式，需牢记二级反应对应的是浓度倒数与时间的线性关系，而非浓度对数与时间的线性关系。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch12: Kinetics (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

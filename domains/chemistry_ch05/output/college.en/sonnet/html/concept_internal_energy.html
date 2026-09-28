@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Internal Energy | Chemistry Ch05</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="internal-energy">Internal Energy</h2>
+<p>Internal energy, denoted $U$, is the total microscopic energy stored within a system: the kinetic energy of randomly moving and vibrating molecules, plus the potential energy stored in the bonds and intermolecular forces between them. It excludes any bulk kinetic or potential energy the object has as a whole (a moving block's motion doesn't count; the jostling of its atoms does). Internal energy is a state function — its value depends only on the current state of the system (temperature, phase, pressure), not on the path taken to reach that state. This is why the First Law of Thermodynamics can be written as</p>
+$$\Delta U = Q - W$$
+<p>where $Q$ is heat added to the system and $W$ is work done by the system on its surroundings. Because $U$ is a state function, $\Delta U$ depends only on initial and final states, even though $Q$ and $W$ individually depend on the process.</p>
+<p><strong>Worked example.</strong> A gas in a cylinder absorbs 500 J of heat from a burner while a piston allows it to expand, doing 200 J of work on the surroundings. The change in internal energy is:</p>
+$$\Delta U = Q - W = 500\ \text{J} - 200\ \text{J} = 300\ \text{J}$$
+<p>The gas's internal energy rose by 300 J — some of the absorbed heat went into work, the rest stayed in the gas as increased molecular motion (often reflected as a temperature rise).</p>
+<p><strong>Problem-solving application.</strong> Internal energy bookkeeping lets you solve for missing quantities in multi-step processes, as long as the system returns to a state it has already passed through. Suppose a gas is taken through several steps and ends up back at its starting temperature, pressure, and volume — the same state it began in. Since $U$ is a state function, its value at the end equals its value at the start, so $\Delta U = 0$ over the whole sequence. Plugging this into the First Law gives $Q = W$: the total heat absorbed over all the steps must equal the total work done by the gas. If you know the heat and work for every step except one, you can use this equation to find the missing value without tracking the molecular details of what happened in between — you only need the running totals of $Q$ and $W$. This is the same bookkeeping trick used, step by step, in analyzing real engines and refrigerators, where the working substance is cycled repeatedly through the same sequence of states.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

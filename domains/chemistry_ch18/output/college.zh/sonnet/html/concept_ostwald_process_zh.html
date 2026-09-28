@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ostwald Process | Chemistry Ch18</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="ostwald-process">Ostwald Process</h2>
+<p><strong>定义</strong></p>
+<p>奥斯特瓦尔德法（Ostwald Process）是工业上将氨（$\text{NH}_3$）氧化为硝酸（$\text{HNO}_3$）的核心方法，由德国化学家威廉·奥斯特瓦尔德于1902年发明。该工艺分三步进行：第一步是氨的催化氧化，氨气与过量空气在铂-铑合金催化剂表面、约800–900°C下反应，生成一氧化氮：</p>
+$$4\text{NH}_3(g) + 5\text{O}_2(g) \xrightarrow{\text{Pt/Rh 催化剂}} 4\text{NO}(g) + 6\text{H}_2\text{O}(g)$$
+<p>第二步是一氧化氮在冷却后与更多空气中的氧气进一步反应，生成二氧化氮：</p>
+$$2\text{NO}(g) + \text{O}_2(g) \rightarrow 2\text{NO}_2(g)$$
+<p>第三步是二氧化氮溶于水，生成硝酸并副产一氧化氮（可循环利用）：</p>
+$$3\text{NO}_2(g) + \text{H}_2\text{O}(l) \rightarrow 2\text{HNO}_3(aq) + \text{NO}(g)$$
+<p><strong>工艺实例</strong></p>
+<p>在典型工厂中，氨与空气按约1:9的体积比混合，通过厚度仅几十微米的铂网瞬间完成第一步反应，接触时间控制在千分之几秒以内，以避免氨在无催化剂条件下被过度氧化为氮气这一副反应。生成的热气体经热交换器冷却回收能量后，进入氧化塔完成第二步，再进入吸收塔与水逆流接触，最终得到浓度约60%的硝酸溶液，若需更高浓度可再经脱水浓缩至98%以上。</p>
+<p><strong>问题解决应用</strong></p>
+<p>奥斯特瓦尔德法的经济性高度依赖对催化剂选择性的控制：铂网虽然对生成NO有极高选择性，但会因高温下挥发而逐渐损耗，工程师需定期回收下游钯网上捕集的铂微粒以降低成本。此外，由于反应①是强放热反应而反应②必须在较低温度下才能提高转化率，工艺设计上必须先冷却气体再进行第二步，这体现了化学动力学与热力学在实际生产中的权衡：升高温度虽加快反应速率，却会使平衡不利于NO2的生成。学生在分析此类多步工业流程时，应学会计算各步骤的理论产率、追踪氮原子的物料平衡，并识别限制整体效率的关键因素（如催化剂中毒或副反应），这正是将化学计量学应用于真实工业系统的典型练习。硝酸产品广泛用于制造化肥（如硝酸铵）、炸药及有机合成原料，是现代农业与工业不可或缺的基础化学品。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch18: Representative Metals, Metalloids, and Nonmetals (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

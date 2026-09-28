@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coordination Number | Chemistry Ch19</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="coordination-number">Coordination Number</h2>
+<p><strong>定义</strong></p>
+<p>配位数（coordination number）指在晶体或配合物结构中，与某一给定原子（或离子）直接相邻、以化学键相连的最近邻原子（或离子）的数目。这一概念广泛应用于固体化学的晶体结构描述，以及配位化学中金属离子与配体的成键分析。配位数的大小主要由中心原子与相邻原子的相对尺寸（半径比）以及电荷平衡的几何要求决定。例如，在离子晶体中，阳离子周围能容纳的阴离子数目取决于阳离子与阴离子的半径比 $r_+/r_-$：比值越大，周围能塞入的阴离子越多，配位数也就越高。常见的配位数包括 4（四面体配位）、6（八面体配位）和 8（立方体配位）。</p>
+<p><strong>实例解析</strong></p>
+<p>以氯化钠（NaCl）晶体为例：$\text{Na}^+$ 的半径约为 102 pm，$\text{Cl}^-$ 的半径约为 181 pm，半径比 $r_+/r_- \approx 0.56$。根据半径比规则，当该比值落在 0.414–0.732 之间时，倾向于形成八面体配位，即每个 $\text{Na}^+$ 周围恰好被 6 个 $\text{Cl}^-$ 包围，反之每个 $\text{Cl}^-$ 也被 6 个 $\text{Na}^+$ 包围，故 NaCl 中两种离子的配位数均为 6，写作 (6,6) 配位。再看闪锌矿型结构 ZnS：$\text{Zn}^{2+}$ 与 $\text{S}^{2-}$ 的半径比约为 0.40，接近四面体配位下限，实际配位数为 4，即每个 $\text{Zn}^{2+}$ 被 4 个 $\text{S}^{2-}$ 以四面体方式包围。</p>
+<p><strong>解决问题的应用</strong></p>
+<p>判断配位数的关键工具是半径比规则：$r_+/r_- < 0.414$ 倾向四面体（配位数 4）；$0.414$–$0.732$ 倾向八面体（配位数 6）；$0.732$–$1.0$ 倾向立方体（配位数 8）。在配位化学中，配位数还决定配合物的立体构型——配位数 4 常对应四面体或平面正方形（如 $[\text{Ni(CO)}_4]$ 或 $[\text{PtCl}_4]^{2-}$），配位数 6 则几乎总是八面体（如 $[\text{Fe(CN)}_6]^{4-}$）。练习时，可先由离子半径表算出半径比，再对照规则预测配位数与晶体结构类型；对于配合物，则需结合金属离子的电子构型（如 $d^8$ 金属常取平面正方形四配位）综合判断。这种半定量的推理方法，是连接离子半径这一微观参数与宏观晶体宏观性质（如密度、熔点、导电性）的重要桥梁。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch19: Transition Metals and Coordination Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

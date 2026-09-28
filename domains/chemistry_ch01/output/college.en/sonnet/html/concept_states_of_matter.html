@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>States Of Matter | Chemistry Ch01</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="states-of-matter">States Of Matter</h2>
+<p><strong>Definition.</strong> A <em>state of matter</em> (or <em>phase</em>) is a macroscopically homogeneous form of a physical system, characterized by a distinctive arrangement of constituent particles and a corresponding response to changes in energy, volume, and intermolecular forces. The three classical states—solid, liquid, and gas—are distinguished by the relative magnitude of the average kinetic energy of particles, $\langle E_k \rangle = \tfrac{3}{2}k_BT$, compared to the depth of the intermolecular potential well, $U_0$. When $\langle E_k \rangle \ll U_0$, particles are locked into a rigid lattice (solid); when $\langle E_k \rangle \approx U_0$, particles retain cohesion but move freely past one another (liquid); when $\langle E_k \rangle \gg U_0$, particles escape mutual attraction entirely (gas).</p>
+<p><strong>Worked example.</strong> Consider water at standard atmospheric pressure ($P = 1\,\text{atm}$). Its behavior as a function of temperature $T$ traces a path along the phase diagram: below $273.15\,\text{K}$ it is solid (ice), between $273.15\,\text{K}$ and $373.15\,\text{K}$ it is liquid, and above $373.15\,\text{K}$ it is gaseous (steam). At each transition, added heat $Q$ does not raise $T$ but instead performs the work of overcoming intermolecular bonds, quantified by the latent heat $L$ via $Q = mL$.</p>
+<p><strong>Key theorem (Clausius–Clapeyron relation).</strong> Along any coexistence curve between two phases, the equilibrium pressure and temperature satisfy</p>
+$$
+\frac{dP}{dT} = \frac{L}{T\,\Delta V},
+$$
+<p>where $L$ is the latent heat of transition and $\Delta V$ is the change in molar volume. This differential equation governs the shape of phase boundaries and predicts, for instance, why increased pressure lowers the melting point of ice.</p>
+<p><strong>Lab cell (SymPy).</strong></p>
+<pre><code>import sympy as sp
+
+T, P, L, dV = sp.symbols('T P L dV', positive=True)
+dPdT = L / (T * dV)
+print("Clausius-Clapeyron slope dP/dT =", dPdT)</code></pre>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

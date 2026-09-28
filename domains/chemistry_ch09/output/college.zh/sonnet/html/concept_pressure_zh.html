@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pressure | Chemistry Ch09</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="pressure">Pressure</h2>
+<p><strong>定义</strong></p>
+<p>压强（pressure）是指垂直作用在单位面积上的力，其定义式为</p>
+$$P = \frac{F}{A}$$
+<p>其中 $F$ 为垂直作用力（单位：牛顿，N），$A$ 为受力面积（单位：平方米，$\text{m}^2$）。压强的国际单位是帕斯卡（Pascal, Pa），$1\ \text{Pa} = 1\ \text{N/m}^2$。在化学与地球科学中也常用大气压（atm）、毫米汞柱（mmHg）或巴（bar）表示，其换算关系为 $1\ \text{atm} = 101{,}325\ \text{Pa} = 760\ \text{mmHg}$。</p>
+<p>对气体而言，压强来源于大量气体分子对容器壁的持续碰撞：分子数越多、运动速度越快（即温度越高）、容器体积越小，单位时间内的碰撞频率与力度就越大，压强也就越高。这一微观图像正是理想气体状态方程 $PV = nRT$ 的物理基础。</p>
+<p><strong>实例分析</strong></p>
+<p>考虑一个体积为 $2.00\ \text{L}$ 的密闭容器，内含 $0.100\ \text{mol}$ 理想气体，温度为 $300\ \text{K}$。利用理想气体方程求压强：</p>
+$$P = \frac{nRT}{V} = \frac{(0.100\ \text{mol})(0.0821\ \text{L·atm/(mol·K)})(300\ \text{K})}{2.00\ \text{L}} \approx 1.23\ \text{atm}$$
+<p>若将容器体积压缩至 $1.00\ \text{L}$，温度不变，则根据玻意耳定律 $P_1V_1 = P_2V_2$，压强将增至约 $2.46\ \text{atm}$——体积减半，压强加倍，这与分子碰撞频率随空间受限而增大的微观解释完全吻合。</p>
+<p><strong>问题解决应用</strong></p>
+<p>压强概念在实际问题中常与温度、体积变化联立求解。例如，潜水员在水下每下潜 $10\ \text{m}$，压强约增加 $1\ \text{atm}$（水压叠加大气压）；医用高压氧舱通过提高压强来增大血液中氧气的溶解度（亨利定律）；工业上则利用高压推动可逆反应（如哈伯法合成氨）向气体分子数减少的方向移动，以提高产率。掌握压强的计算与状态方程的联立运用，是理解气体行为、生理适应及化工过程设计的关键工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch9: Gases (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

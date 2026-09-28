@@ -1,0 +1,195 @@
+domain: chemistry_2e_ch19
+sources:
+  electron_configuration:
+    label: Electron Configuration
+    sections:
+    - id: ch19_s19_1
+      title: 19.1 Occurrence, Preparation, and Properties of Transition Metals and Their Compounds
+  oxidation_state:
+    label: Oxidation State
+    sections: []
+  lewis_acid_base_interaction:
+    label: Lewis Acid-Base Interaction
+    sections: []
+  reduction_potential:
+    label: Reduction Potential
+    sections:
+    - id: ch19_s19_1
+      title: 19.1 Occurrence, Preparation, and Properties of Transition Metals and Their Compounds
+  paramagnetism_diamagnetism:
+    label: Paramagnetism and Diamagnetism
+    sections:
+    - id: ch19_s19_3
+      title: 19.3 Spectroscopic and Magnetic Properties of Coordination Compounds
+  transition_metals:
+    label: Transition Metals
+    sections:
+    - id: ch19_s19_1
+      title: 19.1 Occurrence, Preparation, and Properties of Transition Metals and Their Compounds
+  inner_transition_metals:
+    label: Inner Transition Metals
+    sections:
+    - id: ch19_s19_1
+      title: 19.1 Occurrence, Preparation, and Properties of Transition Metals and Their Compounds
+  transition_metal_oxidation_states:
+    label: Variable Oxidation States of Transition Metals
+    sections:
+    - id: ch19_s19_1
+      title: 19.1 Occurrence, Preparation, and Properties of Transition Metals and Their Compounds
+  transition_metal_compounds:
+    label: Transition Metal Compounds
+    sections:
+    - id: ch19_s19_1
+      title: 19.1 Occurrence, Preparation, and Properties of Transition Metals and Their Compounds
+  metal_extraction:
+    label: Metal Extraction and Refining
+    sections:
+    - id: ch19_s19_1
+      title: 19.1 Occurrence, Preparation, and Properties of Transition Metals and Their Compounds
+  hydrometallurgy:
+    label: Hydrometallurgy
+    sections:
+    - id: ch19_s19_1
+      title: 19.1 Occurrence, Preparation, and Properties of Transition Metals and Their Compounds
+  coordinate_covalent_bond:
+    label: Coordinate Covalent Bond
+    sections:
+    - id: ch19_s19_2
+      title: 19.2 Coordination Chemistry of Transition Metals
+  coordination_compound:
+    label: Coordination Compound
+    sections:
+    - id: ch19_s19_2
+      title: 19.2 Coordination Chemistry of Transition Metals
+  central_metal_ion:
+    label: Central Metal Ion
+    sections:
+    - id: ch19_s19_2
+      title: 19.2 Coordination Chemistry of Transition Metals
+  ligand:
+    label: Ligand
+    sections:
+    - id: ch19_s19_2
+      title: 19.2 Coordination Chemistry of Transition Metals
+  coordination_number:
+    label: Coordination Number
+    sections:
+    - id: ch19_s19_2
+      title: 19.2 Coordination Chemistry of Transition Metals
+  coordination_sphere:
+    label: Coordination Sphere
+    sections:
+    - id: ch19_s19_2
+      title: 19.2 Coordination Chemistry of Transition Metals
+  monodentate_ligand:
+    label: Monodentate Ligand
+    sections:
+    - id: ch19_s19_2
+      title: 19.2 Coordination Chemistry of Transition Metals
+  polydentate_ligand:
+    label: Polydentate Ligand
+    sections:
+    - id: ch19_s19_2
+      title: 19.2 Coordination Chemistry of Transition Metals
+  chelate:
+    label: Chelate
+    sections:
+    - id: ch19_s19_2
+      title: 19.2 Coordination Chemistry of Transition Metals
+  nomenclature_of_complexes:
+    label: Nomenclature of Coordination Compounds
+    sections:
+    - id: ch19_s19_2
+      title: 19.2 Coordination Chemistry of Transition Metals
+  complex_geometry:
+    label: Geometry of Coordination Complexes
+    sections:
+    - id: ch19_s19_2
+      title: 19.2 Coordination Chemistry of Transition Metals
+  geometric_isomers:
+    label: Geometric Isomers
+    sections:
+    - id: ch19_s19_2
+      title: 19.2 Coordination Chemistry of Transition Metals
+  optical_isomers:
+    label: Optical Isomers (Enantiomers)
+    sections:
+    - id: ch19_s19_2
+      title: 19.2 Coordination Chemistry of Transition Metals
+  linkage_isomers:
+    label: Linkage Isomers
+    sections:
+    - id: ch19_s19_2
+      title: 19.2 Coordination Chemistry of Transition Metals
+  ionization_isomers:
+    label: Ionization Isomers
+    sections:
+    - id: ch19_s19_2
+      title: 19.2 Coordination Chemistry of Transition Metals
+  crystal_field_theory:
+    label: Crystal Field Theory
+    sections:
+    - id: ch19_s19_3
+      title: 19.3 Spectroscopic and Magnetic Properties of Coordination Compounds
+  d_orbital_splitting:
+    label: d-Orbital Splitting
+    sections:
+    - id: ch19_s19_3
+      title: 19.3 Spectroscopic and Magnetic Properties of Coordination Compounds
+  crystal_field_splitting:
+    label: Crystal Field Splitting Energy (Δoct)
+    sections:
+    - id: ch19_s19_3
+      title: 19.3 Spectroscopic and Magnetic Properties of Coordination Compounds
+  spectrochemical_series:
+    label: Spectrochemical Series
+    sections:
+    - id: ch19_s19_3
+      title: 19.3 Spectroscopic and Magnetic Properties of Coordination Compounds
+  pairing_energy:
+    label: Pairing Energy (P)
+    sections:
+    - id: ch19_s19_3
+      title: 19.3 Spectroscopic and Magnetic Properties of Coordination Compounds
+  high_spin_low_spin_complexes:
+    label: High-Spin and Low-Spin Complexes
+    sections:
+    - id: ch19_s19_3
+      title: 19.3 Spectroscopic and Magnetic Properties of Coordination Compounds
+  magnetic_moment_of_complexes:
+    label: Magnetic Moment of Coordination Complexes
+    sections:
+    - id: ch19_s19_3
+      title: 19.3 Spectroscopic and Magnetic Properties of Coordination Compounds
+  color_of_complexes:
+    label: Color of Coordination Complexes
+    sections:
+    - id: ch19_s19_3
+      title: 19.3 Spectroscopic and Magnetic Properties of Coordination Compounds
+  hemoglobin_oxygen_transport:
+    label: Hemoglobin and Oxygen Transport
+    sections:
+    - id: ch19_s19_2
+      title: 19.2 Coordination Chemistry of Transition Metals
+    - id: ch19_s19_3
+      title: 19.3 Spectroscopic and Magnetic Properties of Coordination Compounds
+  cisplatin_anticancer:
+    label: Cisplatin as an Anticancer Agent
+    sections:
+    - id: ch19_s19_2
+      title: 19.2 Coordination Chemistry of Transition Metals
+  chelation_therapy:
+    label: Chelation Therapy
+    sections:
+    - id: ch19_s19_2
+      title: 19.2 Coordination Chemistry of Transition Metals
+  transition_metal_catalysts:
+    label: Transition Metal Catalysts
+    sections:
+    - id: ch19_s19_2
+      title: 19.2 Coordination Chemistry of Transition Metals
+  high_temperature_superconductors:
+    label: High-Temperature Superconductors
+    sections:
+    - id: ch19_s19_1
+      title: 19.1 Occurrence, Preparation, and Properties of Transition Metals and Their Compounds

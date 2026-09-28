@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ice Table Method | Chemistry Ch13</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="ice-table-method">Ice Table Method</h2>
+<p>The ICE table (Initial, Change, Equilibrium) is a bookkeeping tool for solving equilibrium problems in chemistry. Rather than a theorem, it is a structured way to organize the algebra behind the equilibrium constant expression, $K$, so that unknown concentrations can be solved for systematically instead of by guesswork.</p>
+<p><strong>Definition.</strong> For a reaction with known stoichiometry, an ICE table has one row for each stage: the <em>Initial</em> concentrations (before any reaction occurs), the <em>Change</em> each species undergoes as the reaction proceeds toward equilibrium (expressed as a multiple of an unknown extent of reaction, $x$, scaled by stoichiometric coefficients), and the resulting <em>Equilibrium</em> concentrations (Initial $+$ Change). These equilibrium expressions are then substituted into the mass-action expression for $K$, producing a single algebraic equation in $x$.</p>
+<p><strong>Worked example.</strong> Consider $\mathrm{N_2O_4(g) \rightleftharpoons 2\,NO_2(g)}$, with $K_c = 4.63 \times 10^{-3}$ at a given temperature, starting from $0.0500\ \text{M}$ $\mathrm{N_2O_4}$ and no $\mathrm{NO_2}$.</p>
+<p>| | $\mathrm{N_2O_4}$ | $\mathrm{NO_2}$ | |---|---|---| | I | $0.0500$ | $0$ | | C | $-x$ | $+2x$ | | E | $0.0500 - x$ | $2x$ |</p>
+<p>Substituting into $K_c = \dfrac{[\mathrm{NO_2}]^2}{[\mathrm{N_2O_4}]}$ gives</p>
+$$4.63\times 10^{-3} = \frac{(2x)^2}{0.0500 - x}.$$
+<p>Expanding yields a quadratic, $4x^2 + 4.63\times10^{-3}x - 2.315\times10^{-4} = 0$, solved by the quadratic formula to give $x \approx 0.00716\ \text{M}$. Equilibrium concentrations follow: $[\mathrm{N_2O_4}] \approx 0.0428\ \text{M}$, $[\mathrm{NO_2}] \approx 0.0143\ \text{M}$.</p>
+<p><strong>Problem-solving application.</strong> The same three-row logic applies without modification to weak acid/base dissociation, buffer calculations, and gas-phase equilibria involving more than two species — only the stoichiometric coefficients and the mass-action expression change. When $K$ is very small compared with the initial concentration, students often try dropping $x$ from the equilibrium expression (e.g., approximating $0.0500 - x \approx 0.0500$) to avoid solving a quadratic. This is only a shortcut, not a separate method: after solving for $x$ under the approximation, always plug the resulting equilibrium concentrations back into the original $K$ expression and confirm they still reproduce $K$ to reasonable accuracy. If they don't, discard the shortcut and solve the full quadratic (or refine by substituting the approximate $x$ back into the equation and iterating). Building this check into every ICE-table solution — not just trusting the simplified arithmetic — is the core problem-solving discipline the method is meant to teach.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

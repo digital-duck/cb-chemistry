@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Predicting Ion Formation | Chemistry Ch02</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="预测离子的形成">预测离子的形成</h2>
+<p><strong>定义</strong></p>
+<p>原子形成离子的驱动力是<strong>稳定的电子排布</strong>——通常是达到与最近的稀有气体相同的电子层结构（即"八电子规则"，价电子层达到8个电子，氢和锂等例外则趋向2个电子）。金属原子价电子少、电离能低,容易失去价电子形成<strong>阳离子</strong>（cation）；非金属原子价电子接近8个、电子亲和能大，容易获得电子形成<strong>阴离子</strong>（anion）。判断一个元素倾向形成哪种离子及其电荷数,关键在于看它在周期表中的位置：主族元素失去或获得的电子数,通常等于使其价电子数达到0或8所需的最少电子变化。例如,第IA族元素失去1个电子成为+1价阳离子;第VIIA族元素获得1个电子成为−1价阴离子。</p>
+<p><strong>范例解析</strong></p>
+<p>以钙（Ca）和氧（O）为例。钙的电子排布为 $1s^2 2s^2 2p^6 3s^2 3p^6 4s^2$,价电子层只有2个电子。若失去这2个电子,钙将获得与氩（Ar）相同的电子排布,能量上更稳定，因此钙倾向形成 $\text{Ca}^{2+}$。氧的电子排布为 $1s^2 2s^2 2p^4$,价电子层有6个电子,只需再获得2个电子即可达到与氖（Ne）相同的稳定排布,因此氧倾向形成 $\text{O}^{2-}$。两者结合时,电荷必须相互抵消,得到化合物 $\text{CaO}$。</p>
+<p>对于<strong>过渡金属</strong>,情况更复杂：它们的电离能相近,可能失去不同数目的电子,形成多种氧化态（如铁可形成 $\text{Fe}^{2+}$ 或 $\text{Fe}^{3+}$）,这类元素的离子电荷需结合实验数据或化合物的整体电中性来确定,而非单纯依赖周期表位置。</p>
+<p><strong>解题应用</strong></p>
+<p>预测离子电荷的实用步骤是：（1）确定该元素属于主族还是过渡金属；（2）若为主族元素,计算其价电子数,判断是失去电子（金属,电子数≤4通常失去）还是获得电子（非金属,电子数>4通常获得），使其达到最近的稀有气体排布；（3）写出离子符号并核对总电荷是否与该元素在周期表中的族数吻合。例如,预测铝（Al,第IIIA族,3个价电子）与硫（S,第VIA族,6个价电子）形成化合物时的离子形式：铝失去3个电子成为 $\text{Al}^{3+}$,硫获得2个电子成为 $\text{S}^{2-}$，两者以最小公倍数比例结合,形成电中性化合物 $\text{Al}_2\text{S}_3$。这种"先定离子电荷,再配平化合价"的方法,是书写离子化合物化学式的基础技能。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch2: Atoms, Molecules, and Ions (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

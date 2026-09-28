@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electron Shielding | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="electron-shielding">Electron Shielding</h2>
+<p><strong>定义</strong></p>
+<p>原子核带正电荷，理论上对核外每个电子的吸引力应等于核电荷数 $Z$。但实际上，内层电子会"挡在"外层电子与原子核之间，部分抵消了核对外层电子的吸引力，这种现象称为电子屏蔽（electron shielding）。外层电子实际感受到的净正电荷称为<strong>有效核电荷</strong>（effective nuclear charge），记作 $Z_{eff}$，可近似表示为：</p>
+$$Z_{eff} = Z - S$$
+<p>其中 $Z$ 是原子核中的质子数，$S$ 是屏蔽常数（内层电子对核电荷的抵消量）。一般来说，同一能层内的电子之间屏蔽作用较弱，而内层（更靠近核）电子对外层电子的屏蔽作用较强。</p>
+<p><strong>举例说明</strong></p>
+<p>以钠原子（Na，$Z=11$）为例。其电子排布为 $1s^2\,2s^2\,2p^6\,3s^1$。最外层的 $3s^1$ 电子并不能感受到全部 11 个正电荷的吸引，因为内层 10 个电子（$1s^2\,2s^2\,2p^6$）几乎完全屏蔽了核电荷。粗略估算，$Z_{eff} \approx 11 - 10 = 1$，也就是说这个 $3s$ 电子实际感受到的引力大致相当于氢原子中电子受到的引力。这就是为什么钠原子很容易失去这一个外层电子形成 $Na^+$——它离核"名义"距离较远，且几乎不受屏蔽外的净核电荷强烈束缚。</p>
+<p><strong>解决问题的应用</strong></p>
+<p>电子屏蔽是解释周期表中多项周期性趋势的关键工具。例如，同一周期从左到右，原子半径逐渐减小：虽然电子数和质子数都在增加，但新增电子进入同一能层，相互屏蔽效果弱，而 $Z$ 的增加更为显著，导致 $Z_{eff}$ 增大，电子被拉得更近。相反，同一族从上到下，尽管 $Z$ 增大，但每增加一层电子层，都会为最外层电子增加显著的屏蔽，使得 $Z_{eff}$ 变化不大，而电子层数增多导致原子半径反而增大。</p>
+<p>在实际解题中，可用斯莱特规则（Slater's rules）粗略计算 $S$，从而估算 $Z_{eff}$，进而比较不同元素或同一元素不同电子的电离能高低、原子半径大小等趋势。理解屏蔽效应也能解释为什么第一电离能在同一周期内并非严格单调递增（例如硼的第一电离能低于铍），因为电子进入不同形状的轨道（$s$ 与 $p$）所受的屏蔽和穿透效应不同。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

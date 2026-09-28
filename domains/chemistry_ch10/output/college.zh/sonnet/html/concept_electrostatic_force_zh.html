@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electrostatic Force | Chemistry Ch10</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="electrostatic-force">Electrostatic Force</h2>
+<p><strong>定义</strong></p>
+<p>静电力（electrostatic force）是两个带电体之间由于电荷相互作用而产生的力，是自然界四种基本相互作用之一（电磁力）在静止或近似静止电荷情形下的表现。其大小由库仑定律（Coulomb's Law）描述：</p>
+$$F = k_e \frac{|q_1 q_2|}{r^2}$$
+<p>其中 $q_1$、$q_2$ 为两电荷的电荷量（单位：库仑，C），$r$ 为两电荷之间的距离（单位：米），$k_e \approx 8.99 \times 10^9 \ \text{N·m}^2/\text{C}^2$ 为库仑常数。若两电荷同号（同为正或同为负），力表现为排斥力；若异号，则表现为吸引力。这个平方反比关系与万有引力定律在数学形式上相似，但电荷可正可负，而质量恒为正，这是二者本质的区别。</p>
+<p><strong>例题</strong></p>
+<p>设两个点电荷 $q_1 = +2.0 \times 10^{-6}\ \text{C}$ 与 $q_2 = -3.0 \times 10^{-6}\ \text{C}$，相距 $r = 0.10\ \text{m}$。求它们之间的静电力大小与方向。</p>
+<p>代入公式：</p>
+$$F = (8.99 \times 10^9) \times \frac{(2.0 \times 10^{-6})(3.0 \times 10^{-6})}{(0.10)^2}$$
+$$F = (8.99 \times 10^9) \times \frac{6.0 \times 10^{-12}}{0.01} \approx 5.4\ \text{N}$$
+<p>由于两电荷异号，该力为吸引力，方向沿两电荷连线，指向彼此。</p>
+<p><strong>问题解决应用</strong></p>
+<p>在实际问题中，常需要处理多个电荷同时作用于某一点电荷的情形。此时静电力遵循<strong>叠加原理</strong>：先分别计算每对电荷之间的库仑力（大小与方向），再将这些力作为矢量相加，得到合力。例如，在DNA双螺旋结构中，磷酸骨架上的负电荷之间存在相互排斥的静电力，这一效应需要被细胞内的阳离子（如 $\text{Mg}^{2+}$）或组蛋白中和，否则DNA链会因静电斥力而失稳。类似地，蛋白质折叠、离子通道的选择性、以及细胞膜表面电荷分布等生物学过程，都依赖于对多电荷体系静电力的定量分析。解题时应注意统一单位、明确各电荷符号，并利用对称性简化矢量合成的计算。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch10: Liquids and Solids (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

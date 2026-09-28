@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Specific Heat Capacity | Chemistry Ch05</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="specific-heat-capacity">Specific Heat Capacity</h2>
+<p><strong>Definition.</strong> Specific heat capacity, $c$, is the amount of heat energy required to raise the temperature of one unit of mass of a substance by one degree (Celsius or Kelvin). It is an intensive property — it depends on what the material is, not how much of it you have. Water has $c = 4.184 \text{ J/(g·°C)}$; iron has $c \approx 0.45 \text{ J/(g·°C)}$, meaning iron heats up (and cools down) roughly nine times faster than water for the same energy input. This is why a metal spoon left in hot soup burns your hand almost instantly while the soup itself stays warm for a long time.</p>
+<p>The relationship connecting heat, mass, specific heat, and temperature change is:</p>
+$$
+Q = mc\Delta T
+$$
+<p>where $Q$ is heat energy (joules), $m$ is mass, $c$ is specific heat capacity, and $\Delta T = T_{\text{final}} - T_{\text{initial}}$.</p>
+<p><strong>Worked example.</strong> Suppose you heat 250 g of water from 20°C to 80°C. How much energy is required?</p>
+$$
+Q = mc\Delta T = (250\text{ g})(4.184\text{ J/(g·°C)})(60\text{°C}) = 62{,}760\text{ J} \approx 62.8\text{ kJ}
+$$
+<p>Now compare: heating 250 g of iron through the same 60°C rise requires only $Q = (250)(0.45)(60) = 6{,}750\text{ J}$ — about one-ninth as much energy. Water's unusually high specific heat is why coastal climates are milder than inland ones: large bodies of water absorb and release enormous amounts of heat with only modest temperature swings.</p>
+<p><strong>Problem-solving application.</strong> A common and practically important use of this concept is finding an unknown final temperature when two substances at different temperatures reach thermal equilibrium — the basis of calorimetry. If a hot object transfers heat to a cooler one with no loss to the surroundings, energy conservation says that the heat lost by the hot object equals the heat gained by the cool one. Writing this out using the $Q = mc\Delta T$ formula for each substance:</p>
+$$
+m_1 c_1 (T_1 - T_f) = m_2 c_2 (T_f - T_2)
+$$
+<p>Here $T_1$ and $T_2$ are the starting temperatures of the two substances, and $T_f$ is their shared final temperature. Solving for $T_f$ lets you predict the equilibrium temperature of, say, a hot metal block dropped into cool water — a technique used to measure the specific heat of unknown materials experimentally: measure $m$, $\Delta T$, and $Q$ for a known reference substance (usually water), then solve the equation for the unknown $c$.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

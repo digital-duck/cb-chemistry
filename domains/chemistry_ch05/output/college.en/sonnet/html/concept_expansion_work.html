@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expansion Work | Chemistry Ch05</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="expansion-work">Expansion Work</h2>
+<p>When a gas expands or is compressed, it can transfer energy to or from its surroundings by pushing against an external pressure. This transfer is called expansion work (or pressure–volume work), and it is one of the two main channels — alongside heat — by which energy moves in and out of a thermodynamic system.</p>
+<p>Consider a gas confined in a cylinder by a movable piston, with external pressure $P_{ext}$ pushing on the piston. If the gas expands by a small volume $dV$, it pushes the piston outward against $P_{ext}$, doing work on the surroundings. The work done <em>by</em> the gas is:</p>
+$$dw = -P_{ext}\, dV$$
+<p>The negative sign follows the convention that work done by the system (expansion, $dV > 0$) removes energy from the system, while work done on the system (compression, $dV < 0$) adds energy to it. Integrating over a finite change in volume:</p>
+$$w = -\int_{V_1}^{V_2} P_{ext}\, dV$$
+<p>For expansion against a <em>constant</em> external pressure, this simplifies to $w = -P_{ext}(V_2 - V_1)$.</p>
+<p><strong>Worked example.</strong> A gas expands from $V_1 = 2.0\ \text{L}$ to $V_2 = 5.0\ \text{L}$ against a constant external pressure of $1.0\ \text{atm}$. The work done is:</p>
+$$w = -(1.0\ \text{atm})(5.0 - 2.0\ \text{L}) = -3.0\ \text{L·atm} \approx -304\ \text{J}$$
+<p>The negative sign confirms the gas loses energy to the surroundings as it expands.</p>
+<p>Now compare this to a <em>reversible</em> expansion, where $P_{ext}$ is adjusted at every instant to nearly match the internal pressure $P$ of the gas (using the ideal gas law, $P = nRT/V$). For an isothermal reversible expansion:</p>
+$$w = -nRT \ln\left(\frac{V_2}{V_1}\right)$$
+<p>This reversible path always extracts <em>more</em> work from the gas than any single-step irreversible expansion between the same two volumes — a result you can verify by comparing the area under the $P$–$V$ curve in each case. This distinction matters in practical problem-solving: engineers designing engines or turbines care about how close a real (irreversible) process comes to the theoretical reversible maximum, since that gap represents lost potential work. Recognizing which type of process a problem describes — constant external pressure versus reversible, quasi-static change — is the key first step in correctly calculating $w$.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

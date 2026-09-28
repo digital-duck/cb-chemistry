@@ -1,0 +1,288 @@
+domain: chemistry_2e
+primitives:
+  matter:
+    defines: Anything that occupies space and has mass, existing as solids, liquids, gases, or plasma.
+    tier: 0
+  mass:
+    defines: A fundamental property indicating the amount of matter in an object, independent of gravity.
+    tier: 0
+  atom:
+    defines: The smallest particle of an element that retains the properties of that element and can enter
+      into chemical combinations.
+    tier: 0
+  energy:
+    defines: A primitive quantity whose interactions with matter drive physical and chemical changes;
+      assumed as background knowledge in this chapter.
+    tier: 0
+  hypothesis:
+    defines: A tentative explanation of observations that acts as a guide for gathering and checking information.
+    tier: 0
+  measurement:
+    defines: A quantitative determination that provides a number, a unit of comparison, and an indication
+      of uncertainty.
+    tier: 0
+  scientific_notation:
+    defines: A method of representing numbers as a coefficient multiplied by a power of ten, used to express
+      very large or very small quantities.
+    tier: 0
+concepts:
+  chemistry:
+    defines: The study of the composition, properties, and interactions of matter.
+    composed_of:
+    - matter
+    tier: 1
+  macroscopic_domain:
+    defines: The realm of everyday things large enough to be sensed directly by human sight or touch,
+      where physical and chemical properties are observed and measured.
+    composed_of:
+    - matter
+    tier: 1
+  states_of_matter:
+    defines: The distinct physical forms matter takes—solid, liquid, and gas—each with characteristic
+      shape and volume behavior.
+    composed_of:
+    - matter
+    tier: 1
+  weight:
+    defines: The force that gravity exerts on an object, directly proportional to its mass but varying
+      with gravitational field strength.
+    composed_of:
+    - mass
+    tier: 1
+  molecule:
+    defines: A bonded collection of two or more atoms of the same or different elements that move as a
+      unit.
+    composed_of:
+    - atom
+    tier: 1
+  physical_property:
+    defines: A characteristic of matter not associated with a change in its chemical composition, such
+      as density, color, or melting point.
+    composed_of:
+    - matter
+    tier: 1
+  chemical_property:
+    defines: A characteristic related to a substance's ability or inability to change into a different
+      kind of matter, such as flammability or reactivity.
+    composed_of:
+    - matter
+    tier: 1
+  pure_substance:
+    defines: Matter with a constant, uniform composition throughout; classified as either an element or
+      a compound.
+    composed_of:
+    - matter
+    tier: 1
+  scientific_law:
+    defines: A statement that summarizes a vast number of experimental observations and describes or predicts
+      some facet of the natural world.
+    composed_of:
+    - hypothesis
+    tier: 2
+  microscopic_domain:
+    defines: The realm of entities too small to sense directly, including atoms, ions, electrons, and
+      molecules.
+    composed_of:
+    - atom
+    - molecule
+    tier: 2
+  plasma:
+    defines: A fourth state of matter consisting of a gas that contains appreciable numbers of electrically
+      charged particles, found in stars and high-temperature environments.
+    composed_of:
+    - states_of_matter
+    tier: 2
+  element:
+    defines: A pure substance composed of a single type of atom that cannot be broken down into simpler
+      substances by chemical changes.
+    composed_of:
+    - atom
+    - pure_substance
+    tier: 2
+  mixture:
+    defines: Matter composed of two or more types of substances that can be present in varying amounts
+      and separated by physical means.
+    composed_of:
+    - matter
+    - pure_substance
+    tier: 2
+  physical_change:
+    defines: A change in the state or properties of matter that does not involve any change in the chemical
+      identities of the substances present.
+    composed_of:
+    - matter
+    - physical_property
+    tier: 2
+  chemical_change:
+    defines: A change that always produces one or more types of matter that differ from the matter present
+      before the change.
+    composed_of:
+    - matter
+    - chemical_property
+    tier: 2
+  extensive_property:
+    defines: A property of matter whose value depends on the amount of matter present, such as mass or
+      volume.
+    composed_of:
+    - physical_property
+    - mass
+    tier: 2
+  intensive_property:
+    defines: A property of matter that is independent of the amount of matter present, such as temperature
+      or density.
+    composed_of:
+    - physical_property
+    tier: 2
+  si_units:
+    defines: The International System of Units, a set of seven base units fixed by international agreement
+      used as standards for scientific measurement.
+    composed_of:
+    - measurement
+    tier: 2
+  exact_number:
+    defines: A number derived by counting or by definition that carries no measurement uncertainty.
+    composed_of:
+    - measurement
+    tier: 2
+  measurement_uncertainty:
+    defines: The estimate of the amount by which a measured value may differ from the true value, inherent
+      in all non-counting measurements.
+    composed_of:
+    - measurement
+    tier: 2
+  accuracy:
+    defines: The closeness of a measurement to the true or accepted value of the quantity being measured.
+    composed_of:
+    - measurement
+    tier: 2
+  precision:
+    defines: The degree to which repeated measurements of the same quantity yield similar results.
+    composed_of:
+    - measurement
+    tier: 2
+  scientific_theory:
+    defines: A well-substantiated, comprehensive, testable explanation of a particular aspect of nature
+      developed from confirmed hypotheses.
+    composed_of:
+    - hypothesis
+    - scientific_law
+    tier: 3
+  symbolic_domain:
+    defines: The specialized language of chemistry—symbols, formulas, equations, and calculations—used
+      to represent components of the macroscopic and microscopic domains.
+    composed_of:
+    - macroscopic_domain
+    - microscopic_domain
+    tier: 3
+  compound:
+    defines: A pure substance composed of two or more elements chemically combined in fixed ratios, decomposable
+      by chemical changes.
+    composed_of:
+    - element
+    - pure_substance
+    tier: 3
+  heterogeneous_mixture:
+    defines: A mixture whose composition varies from point to point throughout the sample.
+    composed_of:
+    - mixture
+    tier: 3
+  homogeneous_mixture:
+    defines: A mixture that exhibits a uniform composition and appears visually the same throughout.
+    composed_of:
+    - mixture
+    tier: 3
+  law_of_conservation_of_matter:
+    defines: The principle stating that the total quantity of matter present does not change detectably
+      when matter converts between types or physical states.
+    composed_of:
+    - matter
+    - scientific_law
+    tier: 3
+  volume:
+    defines: A derived SI quantity measuring the amount of three-dimensional space occupied by an object,
+      expressed in cubic meters or liters.
+    composed_of:
+    - measurement
+    - si_units
+    tier: 3
+  temperature:
+    defines: An intensive property representing the hotness or coldness of matter, measured in kelvin
+      (SI), Celsius, or Fahrenheit.
+    composed_of:
+    - intensive_property
+    - si_units
+    tier: 3
+  si_prefixes:
+    defines: Standardized prefix modifiers (e.g., kilo-, milli-, micro-) that denote powers of ten applied
+      to SI base units.
+    composed_of:
+    - si_units
+    - scientific_notation
+    tier: 3
+  significant_figures:
+    defines: All of the measured digits in a quantity, including the last uncertain digit, used to convey
+      the precision of a measurement.
+    composed_of:
+    - measurement_uncertainty
+    - precision
+    tier: 3
+  dimensional_analysis:
+    defines: A mathematical approach in which units are treated as algebraic quantities enabling unit
+      conversions and multi-step calculations.
+    composed_of:
+    - measurement
+    - si_units
+    tier: 3
+  scientific_method:
+    defines: The path of discovery from question and observation through hypothesis and theory, combined
+      with experimental verification.
+    composed_of:
+    - hypothesis
+    - scientific_law
+    - scientific_theory
+    tier: 4
+  density:
+    defines: An intensive property defined as the ratio of a substance's mass to its volume.
+    composed_of:
+    - mass
+    - volume
+    - intensive_property
+    tier: 4
+  rounding:
+    defines: A procedure applied to calculated results to ensure the reported value reflects the uncertainty
+      of the least certain measurement used.
+    composed_of:
+    - significant_figures
+    - measurement_uncertainty
+    tier: 4
+  unit_conversion_factor:
+    defines: A ratio of two equivalent quantities expressed in different units, used to convert a measurement
+      from one unit to another via dimensional analysis.
+    composed_of:
+    - dimensional_analysis
+    tier: 4
+applications:
+  temperature_scale_conversion:
+    defines: The application of linear equations (derived from reference points) to convert temperature
+      values among the Celsius, Fahrenheit, and kelvin scales.
+    needs:
+    - temperature
+    - dimensional_analysis
+    tier: 4
+  periodic_table:
+    defines: A tabular arrangement of elements organized so that elements with similar chemical and physical
+      properties appear close together.
+    needs:
+    - element
+    - compound
+    - physical_property
+    - chemical_property
+    tier: 4
+  density_calculation:
+    defines: The application of the density formula and dimensional analysis to determine an object's
+      density from measured mass and volume, or to find mass or volume given the other two quantities.
+    needs:
+    - density
+    - dimensional_analysis
+    - significant_figures
+    tier: 5

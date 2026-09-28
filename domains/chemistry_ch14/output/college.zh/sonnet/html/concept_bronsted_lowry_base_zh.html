@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bronsted Lowry Base | Chemistry Ch14</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="bronsted-lowry-base">Bronsted Lowry Base</h2>
+<p><strong>定义</strong></p>
+<p>1923年，丹麦化学家布朗斯特（Brønsted）和英国化学家劳里（Lowry）各自独立提出了一个比阿伦尼乌斯理论更普适的酸碱定义：<strong>布朗斯特-劳里碱（Brønsted-Lowry base）是能够接受质子（$\text{H}^+$）的物质</strong>。相应地，能够给出质子的物质称为布朗斯特-劳里酸。这一定义的关键突破在于，它不要求碱必须含有 $\text{OH}^-$ 离子——只要一个分子或离子上有孤对电子可以与 $\text{H}^+$ 结合，它就能充当碱。例如，氨（$\text{NH}_3$）本身不含羟基，但氮原子上的孤对电子可以接受一个质子，生成铵根离子：</p>
+$$\text{NH}_3 + \text{H}_2\text{O} \rightleftharpoons \text{NH}_4^+ + \text{OH}^-$$
+<p>在这个反应中，水分子把一个质子转移给了 $\text{NH}_3$，因此水是酸，$\text{NH}_3$ 是布朗斯特-劳里碱。反应生成的 $\text{NH}_4^+$ 和 $\text{OH}^-$ 分别是原碱和原酸的<strong>共轭酸</strong>与<strong>共轭碱</strong>——这种"酸碱共轭对"的概念是布朗斯特-劳里理论的核心工具，用于分析质子转移反应中各物种的角色。</p>
+<p><strong>范例解析</strong></p>
+<p>考虑碳酸氢根离子 $\text{HCO}_3^-$ 与水的反应：</p>
+$$\text{HCO}_3^-(aq) + \text{H}_2\text{O}(l) \rightleftharpoons \text{H}_2\text{CO}_3(aq) + \text{OH}^-(aq)$$
+<p>这里 $\text{HCO}_3^-$ 接受了水提供的质子，转变为 $\text{H}_2\text{CO}_3$，因此 $\text{HCO}_3^-$ 是布朗斯特-劳里碱，$\text{H}_2\text{CO}_3$ 是它的共轭酸。值得注意的是，$\text{HCO}_3^-$ 在另一个反应中也可以作为酸给出质子（生成 $\text{CO}_3^{2-}$），这说明它是<strong>两性物质（amphiprotic species）</strong>——能否充当碱取决于它所处的具体反应环境和搭档物种。</p>
+<p><strong>解决问题的应用</strong></p>
+<p>判断一种物质是否为布朗斯特-劳里碱，实用的方法是检查其结构中是否存在孤对电子或带负电荷的位点（如 $\text{N}$、$\text{O}$ 原子），并写出质子转移的完整反应式，标出共轭酸碱对。例如，判断醋酸根 $\text{CH}_3\text{COO}^-$ 能否作碱：它带负电，氧原子有孤对电子，与 $\text{H}_3\text{O}^+$ 反应生成 $\text{CH}_3\text{COOH}$ 和 $\text{H}_2\text{O}$，证实其碱性。这种"识别质子受体—写出配对反应"的思路，是解决滴定、缓冲溶液及多元酸碱平衡问题的基础技能。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch14: Acid-Base Equilibria (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Molar Concentration | Chemistry Ch12</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="molar-concentration">Molar Concentration</h2>
+<p>Molar concentration, denoted $c$ or $[X]$, measures how much of a substance is dissolved in a given volume of solution. It is defined as</p>
+$$c = \frac{n}{V}$$
+<p>where $n$ is the amount of solute in moles and $V$ is the volume of solution in liters, giving units of mol/L, commonly written as M (molar). This definition is a ratio, not merely a label — it lets chemists convert freely between the amount of a substance and the volume needed to deliver it, which is the basis of every titration, dilution, and reaction-stoichiometry calculation in the laboratory.</p>
+<p><strong>Worked example.</strong> Suppose 5.85 g of sodium chloride (NaCl, molar mass 58.5 g/mol) is dissolved in enough water to make 500 mL of solution. First convert mass to moles:</p>
+$$n = \frac{5.85\ \text{g}}{58.5\ \text{g/mol}} = 0.100\ \text{mol}$$
+<p>Then convert volume to liters ($500\ \text{mL} = 0.500\ \text{L}$) and divide:</p>
+$$c = \frac{0.100\ \text{mol}}{0.500\ \text{L}} = 0.200\ \text{M}$$
+<p>The solution is 0.200 M NaCl.</p>
+<p><strong>Problem-solving application.</strong> Molar concentration becomes especially powerful when solutions are diluted or mixed, since the moles of solute stay fixed even as volume changes. This gives the dilution relation</p>
+$$c_1 V_1 = c_2 V_2$$
+<p>For instance, a chemist has 100 mL of a 6.0 M HCl stock solution and needs to prepare 1.0 L of 0.50 M HCl for a titration. Solving for the required stock volume:</p>
+$$V_1 = \frac{c_2 V_2}{c_1} = \frac{(0.50\ \text{M})(1.0\ \text{L})}{6.0\ \text{M}} = 0.083\ \text{L} = 83\ \text{mL}$$
+<p>So 83 mL of the concentrated stock is measured out and diluted with water up to 1.0 L. This same logic — tracking moles as the invariant quantity while volume and concentration trade off — underlies buffer preparation, serial dilutions in microbiology, and dosage calculations in pharmacology, making molar concentration one of the most practically load-bearing quantities in quantitative chemistry.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

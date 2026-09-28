@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Precipitation Prediction | Chemistry Ch15</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="precipitation-prediction-降水预测">Precipitation Prediction 降水预测</h2>
+<p><strong>定义</strong></p>
+<p>降水预测是指利用气象观测数据、大气物理规律和数值模式,估算未来某一地区、某一时段内降雨、降雪等降水事件发生的概率及可能强度的过程。现代降水预测主要依赖数值天气预报(NWP, Numerical Weather Prediction)模式:将大气看作连续流体,用一组描述质量、动量、能量守恒的偏微分方程,结合当前观测状态作为初始条件,通过超级计算机数值求解,推算未来的大气状态。由于初始观测存在误差,且大气本身是混沌系统(微小初始误差会随时间指数放大),单次确定性预报的可信度会随预报时长迅速下降。因此,现代业务预报普遍采用集合预报(ensemble forecasting)方法:对初始条件施加多组微小扰动,运行几十甚至上百次模式,得到一组预报结果的分布,再统计出某地某时段"降水概率"这一核心产品——例如天气预报中常见的"降水概率60%"。</p>
+<p><strong>实例分析</strong></p>
+<p>假设气象台对某城市明天下午发布降水概率预报。集合预报系统运行了50个成员(即50次独立模拟),其中30个成员在该时段预测出降水,20个成员未预测出降水。降水概率即用出现降水的成员数除以总成员数:</p>
+$$P(\text{降水}) = \frac{30}{50} = 0.60 = 60\%$$
+<p>这个概率不是"60%的地区会下雨"或"下雨的确定性是60%",而是对大气不确定性的定量表达:在与当前大气状态相近的所有可能演化路径中,有60%导向降水。预报员还会结合雷达回波外推(短时临近预报,0—6小时)、卫星云图、地面观测站的湿度与气压趋势,对模式输出进行订正,因为数值模式对局地对流性降水(如夏季雷暴)的分辨能力有限。</p>
+<p><strong>问题解决应用</strong></p>
+<p>在防灾决策中,降水概率必须与降水量估计结合使用。例如,若预报显示未来24小时该地区60%概率出现降水,且集合成员给出的降水量中位数为25毫米、部分成员高达80毫米,水利部门需要评估:该流域土壤是否已接近饱和、河道是否有防洪余量。这类决策通常采用"概率×后果"的风险评估框架,而非仅依赖单一确定性数字。练习时可尝试:给定某地10次历史集合预报的降水量数据,计算其算术平均值与标准差,判断预报的一致性(标准差越小,说明各集合成员越趋同,预报可信度相对越高)。这种基于集合统计量做决策的思路,也是理解气候模式、地震预测等其他自然科学不确定性预测问题的通用方法。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch15: Equilibria of Other Reaction Classes (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

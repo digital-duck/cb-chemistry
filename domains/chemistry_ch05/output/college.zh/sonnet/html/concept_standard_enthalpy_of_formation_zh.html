@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Standard Enthalpy Of Formation | Chemistry Ch05</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="standard-enthalpy-of-formation">Standard Enthalpy Of Formation</h2>
+<p><strong>定义</strong></p>
+<p>标准生成焓（standard enthalpy of formation），记作 $\Delta H_f^\circ$，是指在标准状态（通常取 $25°C$、$1\ \text{atm}$）下，由最稳定单质生成 $1\ \text{mol}$ 某化合物时所伴随的焓变。按照定义，任何最稳定单质自身的标准生成焓为零，例如 $\Delta H_f^\circ(\text{O}_2, g) = 0$，$\Delta H_f^\circ(\text{C, 石墨}) = 0$。这一"零点"约定使得不同化合物的生成焓可以在同一基准下相互比较，就像海拔高度都以海平面为零点一样。</p>
+<p>标准生成焓的核心用途在于计算反应焓变。根据盖斯定律（Hess's Law），任意反应的标准反应焓等于生成物生成焓之和减去反应物生成焓之和：</p>
+$$\Delta H_{rxn}^\circ = \sum n_p \Delta H_f^\circ(\text{生成物}) - \sum n_r \Delta H_f^\circ(\text{反应物})$$
+<p>这个关系式之所以成立，是因为焓是状态函数——无论反应经过怎样的路径，只要始态和终态相同，总焓变就相同。我们可以设想一条"迂回路径"：先把所有反应物分解回各自的最稳定单质，再由这些单质重新组合成生成物，两步焓变之和必然等于直接反应的焓变。</p>
+<p><strong>实例演算</strong></p>
+<p>计算丙烷燃烧反应的标准焓变：</p>
+$$\text{C}_3\text{H}_8(g) + 5\text{O}_2(g) \rightarrow 3\text{CO}_2(g) + 4\text{H}_2\text{O}(l)$$
+<p>已知：$\Delta H_f^\circ(\text{C}_3\text{H}_8) = -103.8\ \text{kJ/mol}$，$\Delta H_f^\circ(\text{CO}_2) = -393.5\ \text{kJ/mol}$，$\Delta H_f^\circ(\text{H}_2\text{O}, l) = -285.8\ \text{kJ/mol}$，$\Delta H_f^\circ(\text{O}_2) = 0$。</p>
+$$\Delta H_{rxn}^\circ = [3(-393.5) + 4(-285.8)] - [(-103.8) + 5(0)]$$
+$$= [-1180.5 - 1143.2] - (-103.8) = -2219.9\ \text{kJ/mol}$$
+<p>负值表明该反应强烈放热，与燃烧释放能量的实际经验一致。</p>
+<p><strong>问题解决应用</strong></p>
+<p>标准生成焓表使化学家无需实际测量每一个反应的焓变——许多反应难以在量热计中直接、安全地进行（如爆炸性反应或极缓慢反应）。只要查表获得各物质的 $\Delta H_f^\circ$，就能通过代数运算预测反应的热效应，这在工业过程设计（如判断反应是否需要外部加热）、燃料能量密度比较，以及环境科学中评估温室气体转化的能量代价等场景中都至关重要。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch5: Thermochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

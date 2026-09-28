@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hess Law | Chemistry Ch05</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="hess-law">Hess Law</h2>
+<p><strong>Definition</strong></p>
+<p>Enthalpy is a state function — its value depends only on the current state of a system (composition, temperature, pressure), not on the path taken to get there. Hess's Law is the direct consequence of this fact applied to chemical reactions: the total enthalpy change for a reaction is the same whether it occurs in one step or through a series of intermediate steps. Practically, this means you can add up the enthalpy changes of known reactions — algebraically, like equations — to find the enthalpy change of a reaction you cannot measure directly.</p>
+<p><strong>Worked example</strong></p>
+<p>Suppose you want $\Delta H$ for:</p>
+$$\text{C(s)} + \text{O}_2\text{(g)} \rightarrow \text{CO}_2\text{(g)} \quad \Delta H = ?$$
+<p>This reaction is hard to isolate experimentally, because burning carbon tends to produce a mixture of CO and CO$_2$. But you can measure two related reactions cleanly:</p>
+<li>$\text{C(s)} + \tfrac{1}{2}\text{O}_2\text{(g)} \rightarrow \text{CO(g)}$, $\Delta H_1 = -110.5\ \text{kJ}$</li>
+<li>$\text{CO(g)} + \tfrac{1}{2}\text{O}_2\text{(g)} \rightarrow \text{CO}_2\text{(g)}$, $\Delta H_2 = -283.0\ \text{kJ}$</li>
+<p>Adding reactions (1) and (2), the CO produced in step 1 is consumed in step 2, so it cancels out, leaving exactly the target reaction. By Hess's Law:</p>
+$$\Delta H = \Delta H_1 + \Delta H_2 = -110.5 + (-283.0) = -393.5\ \text{kJ}$$
+<p><strong>Problem-solving application</strong></p>
+<p>The general strategy is: treat thermochemical equations like algebraic equations. You can reverse a reaction (flip the sign of $\Delta H$), multiply a reaction by a coefficient (scale $\Delta H$ by the same factor), and add or cancel species that appear on both sides. The goal is always to manipulate a set of given reactions so that, when summed, all intermediates cancel and only the reactants and products of the target reaction remain.</p>
+<p>A systematic approach: first write the target equation, then identify which given reaction contains each target reactant/product, and reverse or scale each one so those species end up on the correct side. Sum the equations, verify all extra species cancel, then sum the corresponding $\Delta H$ values. Hess's Law also underlies the standard method of computing $\Delta H_{rxn}$ from tabulated standard enthalpies of formation:</p>
+$$\Delta H_{rxn} = \sum n_p \Delta H_f^\circ(\text{products}) - \sum n_r \Delta H_f^\circ(\text{reactants})$$
+<p>This formula is itself just a compact bookkeeping shortcut for Hess's Law, since formation reactions are the "known steps" from which any reaction can, in principle, be constructed.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

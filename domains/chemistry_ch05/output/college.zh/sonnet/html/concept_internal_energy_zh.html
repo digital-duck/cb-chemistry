@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Internal Energy | Chemistry Ch05</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="internal-energy">Internal Energy</h2>
+<p><strong>定义</strong></p>
+<p>内能（internal energy，符号 $U$）是一个系统内部所有微观粒子运动与相互作用能量的总和，包括分子的平动、转动、振动动能，以及分子间作用力和化学键所储存的势能。内能是状态函数——它只取决于系统当前的状态（如温度、压强、物质的量），而与系统如何达到这个状态的路径无关。这一点与热（heat, $Q$）和功（work, $W$）不同，后两者是过程量，描述能量在系统边界上的传递方式，而非系统本身拥有的能量。</p>
+<p>热力学第一定律把这三者联系起来：</p>
+$$\Delta U = Q - W$$
+<p>其中 $Q$ 为系统吸收的热量，$W$ 为系统对外做的功。这一定律本质上是能量守恒定律在热力学系统中的表述：能量既不能凭空产生，也不能凭空消失，只能在系统与环境之间转移或转化形式。</p>
+<p><strong>实例分析</strong></p>
+<p>考虑一个密闭气缸中的理想气体被加热而膨胀，推动活塞对外做功。假设系统吸收热量 $Q = 500\ \text{J}$，同时对外做功 $W = 200\ \text{J}$，那么</p>
+$$\Delta U = 500\ \text{J} - 200\ \text{J} = 300\ \text{J}$$
+<p>内能增加了 300 J，这部分能量以气体分子平均动能升高（即温度上升）的形式储存下来。若换成活塞固定不动的等容过程（$W = 0$），同样吸收 500 J 热量，则内能变化为 $\Delta U = 500\ \text{J}$，全部热量转化为内能，温度升高幅度会更大。</p>
+<p><strong>问题解决应用</strong></p>
+<p>内能概念的核心价值在于让我们能对能量收支做定量核算，无论过程细节如何复杂。例如，在生物体的细胞呼吸中，葡萄糖氧化释放的化学能一部分转化为 ATP 中的化学势能（内能的一种储存形式），一部分以热的形式散失到环境中；只要测得反应释放的总能量与做功（如离子泵运输）部分，就能反推内能变化，评估代谢效率。同理，在实验室量热法中，通过测量反应前后温度变化和已知的热容，可计算 $Q$，再结合是否存在体积变化做功，求出反应的 $\Delta U$，这是分析燃烧热、溶解热等实验数据的标准方法。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch5: Thermochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nuclide | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="核素">核素</h2>
+<p><strong>定义</strong></p>
+<p>核素（nuclide）是指原子核中具有特定质子数（$Z$）和特定中子数（$N$）的一类原子。任何核素都可以用符号 $^{A}_{Z}\text{X}$ 表示，其中 $X$ 是元素符号，$Z$ 是质子数（原子序数），质量数 $A = Z + N$，表示核内核子（质子加中子）的总数。需要注意区分"核素"与"同位素"：同位素特指质子数相同、中子数不同的一组核素（同一元素的不同"版本"），而核素是一个更一般的概念，涵盖所有元素、所有质子—中子组合的原子核，无论它们是否属于同一元素。例如，$^{12}_{6}\text{C}$ 和 $^{14}_{6}\text{C}$ 是碳的两种核素，彼此互为同位素；而 $^{14}_{6}\text{C}$ 和 $^{14}_{7}\text{N}$ 则是质量数相同但元素不同的两个核素，彼此互为"同量异位素"（isobar），并非同位素。</p>
+<p><strong>实例解析</strong></p>
+<p>以碳元素为例，自然界中碳主要以三种核素形式存在：$^{12}_{6}\text{C}$（6 个质子、6 个中子，稳定，丰度约 98.9%）、$^{13}_{6}\text{C}$（6 个质子、7 个中子，稳定，丰度约 1.1%）以及 $^{14}_{6}\text{C}$（6 个质子、8 个中子，具放射性，半衰期约 5730 年）。这三者质子数相同，因此化学性质几乎一致，但由于中子数不同，原子质量和核稳定性各异——这正是核素分类比"元素"分类更精细之处：元素只由 $Z$ 决定，而核素由 $(Z, N)$ 这一对数字共同决定。</p>
+<p><strong>问题解决应用</strong></p>
+<p>判定两个核符号是否代表同一核素，只需比较 $(Z, N)$ 是否完全一致。例如，某样品中测得一种核的 $Z=8$、$A=17$，问它与 $^{16}_{8}\text{O}$ 是否为同一核素？计算可得 $N = A - Z = 17 - 8 = 9$，而 $^{16}_{8}\text{O}$ 的 $N = 16-8=8$，二者中子数不同，故并非同一核素，而是氧的两个不同同位素（$^{17}_{8}\text{O}$ 与 $^{16}_{8}\text{O}$）。这种"由 $A$、$Z$ 求 $N$"的方法，是核医学、放射性年代测定和核反应配平中判断产物核素身份的基本操作：例如在放射性衰变方程中，反应前后 $Z$ 与 $A$ 必须分别守恒，据此可推算出衰变产物具体是哪一种核素。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

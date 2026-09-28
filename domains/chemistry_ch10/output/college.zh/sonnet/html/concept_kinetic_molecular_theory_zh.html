@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kinetic Molecular Theory | Chemistry Ch10</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="kinetic-molecular-theory-分子动理论">Kinetic Molecular Theory 分子动理论</h2>
+<p><strong>定义</strong></p>
+<p>分子动理论（Kinetic Molecular Theory, KMT）是解释气体宏观性质（压强、温度、体积）如何从微观分子运动中产生的理论框架。其核心假设包括：(1) 气体由大量不断做无规则直线运动的微小粒子组成，粒子本身体积相对于容器体积可忽略不计；(2) 分子间除碰撞瞬间外不存在相互作用力；(3) 分子间及分子与器壁间的碰撞是完全弹性的，即碰撞前后总动能不变；(4) 气体的绝对温度与分子平均平动动能成正比，关系式为：</p>
+$$
+\bar{E}_k = \frac{3}{2}k_BT
+$$
+<p>其中 $k_B$ 为玻尔兹曼常数，$T$ 为开尔文温度。压强则源于分子持续撞击器壁所产生的冲量效应。理想气体定律 $PV = nRT$ 正是这一微观图像在宏观上的统计体现。</p>
+<p><strong>实例分析</strong></p>
+<p>考虑一个密闭钢瓶中的氮气，从 300 K 加热到 600 K，体积不变。根据 KMT，温度翻倍意味着分子平均动能翻倍，因此分子的均方根速率增加为原来的 $\sqrt{2}$ 倍（因为 $E_k \propto v^2$）。分子撞击器壁更频繁且撞击力更强，宏观上表现为压强增大。用理想气体定律验证：温度加倍、体积不变，压强也应加倍，二者结论一致——这正说明分子层面的运动学解释与宏观气体定律并不矛盾，而是互为因果。</p>
+<p><strong>问题解决应用</strong></p>
+<p>KMT 的实用价值在于解释和预测偏离理想行为的情况。例如，为什么在低温或高压下真实气体偏离理想气体定律？答案在于 KMT 的两个假设在此条件下失效：分子体积不再可忽略（分子间距缩小），且分子间的范德华引力开始显著影响碰撞行为，导致实际压强略低于理想预测值。</p>
+<p>另一类应用是解释扩散与渗透现象：分子量较小的气体（如 $H_2$）在相同温度下平均速率更高（因为 $\bar{E}_k$ 相同而质量小），因此扩散速率更快，符合格拉罕姆扩散定律 $\dfrac{r_1}{r_2} = \sqrt{\dfrac{M_2}{M_1}}$。掌握 KMT 使学生能够从分子尺度出发，定性甚至定量地预测温度、压强、气体种类变化对宏观行为的影响，而不必依赖死记硬背气体定律的表面公式。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch10: Liquids and Solids (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

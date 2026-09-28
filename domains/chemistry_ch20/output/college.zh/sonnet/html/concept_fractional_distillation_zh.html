@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fractional Distillation | Chemistry Ch20</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="fractional-distillation">Fractional Distillation</h2>
+<p><strong>定义</strong></p>
+<p>分馏（fractional distillation）是一种利用混合物中各组分<strong>沸点差异</strong>，通过反复的气化—冷凝过程将其分离的技术。当两种或多种液体的沸点相差较小（通常小于25°C）、无法用简单蒸馏有效分开时，分馏就显得尤为重要。其核心装置是<strong>分馏柱</strong>——一根内部填充有玻璃珠、螺旋填料或设有多层塔板的竖直柱子，安装在蒸馏烧瓶与冷凝器之间。</p>
+<p>分馏之所以有效，是因为分馏柱在垂直方向上建立了一个<strong>温度梯度</strong>：柱底温度较高、柱顶温度较低。上升的蒸气在填料表面不断冷凝，冷凝液又被后续上升的热蒸气重新加热气化。每一次这样的"气化—冷凝"循环，都相当于完成一次简单蒸馏，使蒸气中低沸点组分的比例进一步提高。经过柱内多次循环后，到达柱顶、进入冷凝器的蒸气几乎是纯净的低沸点组分。这一过程可以理解为<strong>多级平衡分离</strong>：柱内每一段填料都近似对应一个"理论塔板"，塔板数越多，分离效果越好。</p>
+<p><strong>实例分析</strong></p>
+<p>以工业上分离原油为例：原油是烃类的复杂混合物，沸点范围从低于30°C（如液化石油气）到高于400°C（如沥青）不等。在炼油厂的分馏塔中，原油被加热至气化后送入塔底，蒸气沿塔上升，温度逐级降低。汽油、煤油、柴油、润滑油等馏分依照各自沸点范围，在塔的不同高度冷凝并被分别收集，实现"一炉多用"的高效分离。</p>
+<p>再如实验室中分离乙醇（沸点78°C）与水（沸点100°C）的混合物：简单蒸馏难以获得高纯度乙醇，因为两者沸点接近，蒸气中会夹带较多水蒸气。使用分馏柱后，经过多次气化—冷凝循环，馏出液中乙醇浓度显著提高，但由于二者能形成共沸物（乙醇-水在约95.6%浓度处共沸，沸点78.2°C），普通分馏无法得到无水乙醇，这也说明了分馏技术存在的物理极限。</p>
+<p><strong>解决问题的应用</strong></p>
+<p>在设计分离方案时，需要综合评估：组分沸点差、混合物是否形成共沸物、以及所需纯度。若沸点差大（>25°C），简单蒸馏已足够，无需分馏柱；若差值小，则需选用填料更密、塔板更多的分馏柱以提高分离效率；若存在共沸现象，则需结合共沸蒸馏、萃取或分子筛脱水等辅助手段才能达到高纯度目标。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch20: Organic Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

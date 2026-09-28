@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daltons Law | Chemistry Ch09</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="daltons-law">Daltons Law</h2>
+<p>When you mix several gases in one container, each gas behaves as though it alone occupies the entire volume, and the total pressure is simply the sum of what each gas would contribute on its own. This is Dalton's Law of Partial Pressures, formalized by John Dalton in 1801: for a mixture of non-reacting gases, the total pressure $P_{total}$ equals the sum of the partial pressures $P_i$ of each component:</p>
+$$P_{total} = P_1 + P_2 + \cdots + P_n = \sum_{i=1}^{n} P_i$$
+<p>The partial pressure of a gas is the pressure it would exert if it occupied the container alone at the same temperature. Because each gas in an ideal mixture behaves independently, this additive relationship follows directly from the ideal gas law: $P_i = n_i RT / V$, where $n_i$ is the number of moles of gas $i$. Since $R$, $T$, and $V$ are shared by all components, the partial pressure of each gas is proportional to its mole fraction, $x_i = n_i / n_{total}$, giving $P_i = x_i P_{total}$.</p>
+<p><strong>Worked example</strong>: A scuba tank contains a mixture of oxygen and nitrogen at a total pressure of 3000 kPa. If the mixture is 21% oxygen by mole fraction, what is the partial pressure of oxygen? Using $P_{O_2} = x_{O_2} P_{total}$: $P_{O_2} = 0.21 \times 3000 \text{ kPa} = 630 \text{ kPa}$. The nitrogen supplies the remaining $2370$ kPa.</p>
+<p><strong>Problem-solving application</strong>: Dalton's Law is essential wherever gas mixtures matter — respiratory physiology, deep-sea diving, atmospheric science, and industrial gas handling. A classic application is collecting gas over water in a lab: when hydrogen gas is collected by displacing water in an inverted tube, the gas trapped is not pure hydrogen but a mixture of hydrogen and water vapor, since water evaporates into the empty space. To find the true pressure of the dry hydrogen, you must subtract the water vapor's pressure (read from a vapor pressure table at the given temperature) from the total measured pressure: $P_{H_2} = P_{total} - P_{H_2O}$. This correction step — recognizing that a measured pressure is often a composite that must be decomposed into contributing parts — is the practical skill Dalton's Law trains: any time you measure a mixture, ask what independent contributions summed to produce that number, and whether the quantity you actually want is one of those parts rather than the whole.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

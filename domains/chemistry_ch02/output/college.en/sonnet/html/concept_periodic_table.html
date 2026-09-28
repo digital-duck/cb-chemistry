@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Periodic Table | Chemistry Ch02</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="periodic-table">Periodic Table</h2>
+<p>The periodic table arranges all known elements in order of increasing atomic number, organized into horizontal rows called <strong>periods</strong> and vertical columns called <strong>groups</strong> (or families). Its power lies in a simple observation: chemical behavior repeats periodically as atomic number increases, because elements in the same group share the same number of valence electrons — the outermost electrons involved in bonding. Elements in Group 1 (alkali metals), for example, each have one valence electron and react vigorously with water; Group 18 (noble gases) have full outer shells and are chemically inert. Periods reflect the filling of successive electron shells: period number equals the highest principal energy level occupied by valence electrons.</p>
+<p><strong>Worked example.</strong> Consider chlorine (Cl, atomic number 17) and fluorine (F, atomic number 9). Both sit in Group 17 (halogens). Fluorine's electron configuration is $1s^2 2s^2 2p^5$; chlorine's is $1s^2 2s^2 2p^6 3s^2 3p^5$. Each has seven valence electrons and needs one more to complete an octet, so both readily gain an electron to form a $-1$ ion and both react with alkali metals to form ionic salts (NaF, NaCl). Their shared valence structure — not their differing atomic mass or shell count — explains their nearly identical reactivity patterns.</p>
+<p><strong>Problem-solving application.</strong> The periodic table lets you predict properties without memorizing them element by element. Suppose you need to predict whether an unknown element X, located directly below potassium (K) in Group 1, will be more or less reactive than potassium. Since reactivity in Group 1 increases going down the group (larger atomic radius means the valence electron is farther from the nucleus and more easily lost), X should be more reactive than potassium. This same logic — locate the group, apply the known trend — lets you estimate atomic radius, ionization energy, and electronegativity trends across periods and down groups, which is the core problem-solving skill the table is designed to support.</p>
+<pre class="mermaid">graph TD
+    A[Periodic Table] --> B[Periods: rows]
+    A --> C[Groups: columns]
+    B --> D[Shells filled: period = highest energy level]
+    C --> E[Valence electrons shared within group]
+    E --> F[Similar chemical reactivity]
+    D --> G[Trends across a period: electronegativity, radius]
+    C --> H[Trends down a group: reactivity, atomic radius]</pre>
+<p><em>The organizing logic of the periodic table: periods track electron shell filling, groups track shared valence electron count, and both give rise to predictable trends.</em></p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch2: Atoms, Molecules, and Ions (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

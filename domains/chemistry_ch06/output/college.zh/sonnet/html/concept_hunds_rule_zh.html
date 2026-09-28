@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hunds Rule | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="hunds-rule">Hunds Rule</h2>
+<p><strong>定义</strong></p>
+<p>洪特规则（Hund's Rule，全称"最大自旋多重态规则"）描述了电子如何填充能量简并的原子轨道，例如同一亚层中的三个 $p$ 轨道、五个 $d$ 轨道或七个 $f$ 轨道。规则指出：电子在填入简并轨道时，会尽可能分占不同的轨道，并保持自旋方向相同（平行），只有当每个简并轨道都已占据一个电子后，才会开始出现自旋成对的填充。这一现象的物理根源在于电子间的排斥作用与"交换能"：占据不同空间轨道的电子彼此距离更远，库仑排斥更小；而自旋相同的电子由于泡利不相容原理被强制在空间上进一步分离，从而降低体系的总能量。因此，最大化平行自旋数的排布方式对应最低能量、最稳定的电子组态。</p>
+<p><strong>范例演算</strong></p>
+<p>以氮原子（原子序数 7）为例，其电子组态为 $1s^2\,2s^2\,2p^3$。三个电子填入 $2p_x, 2p_y, 2p_z$ 三个简并轨道时，依洪特规则各占一个轨道且自旋方向相同：</p>
+$$2p_x^{\uparrow}\; 2p_y^{\uparrow}\; 2p_z^{\uparrow}$$
+<p>而不是把两个电子挤进同一个轨道、留一个轨道空着。这样安排使三个电子的自旋两两平行，交换能最大化，体系最稳定。</p>
+<p><strong>解题应用</strong></p>
+<p>在实际做题时，洪特规则常与泡利不相容原理和构造原理（Aufbau Principle）配合使用，用来正确写出中性原子或离子的电子排布，并据此判断顺磁性（含未成对电子）或抗磁性（无未成对电子）。例如判断 $\mathrm{Fe}^{2+}$（$3d^6$）的磁性时，先将五个 $d$ 轨道各填一个电子（自旋向上），第六个电子必须与其中一个轨道配对（自旋向下），最终得到 4 个未成对电子，因此 $\mathrm{Fe}^{2+}$ 具有顺磁性。这类题目要求学生先确定亚层简并轨道数，再逐一分配电子、检验是否已用完"单占"名额，最后统计未成对电子数以判断磁学性质——这是化学与材料科学中预测分子磁性、催化活性及光谱行为的基础技能。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

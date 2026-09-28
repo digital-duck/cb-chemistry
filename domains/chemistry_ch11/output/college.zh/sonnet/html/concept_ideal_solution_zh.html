@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ideal Solution | Chemistry Ch11</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="ideal-solution-理想溶液">Ideal Solution（理想溶液）</h2>
+<p><strong>定义</strong></p>
+<p>理想溶液是指溶质与溶剂分子之间的相互作用力，与纯溶质分子之间、纯溶剂分子之间的相互作用力几乎相等的溶液。换句话说，当把两种液体混合时，分子"感觉不到"自己身边换了邻居——A分子与B分子之间的吸引力，和A—A、B—B之间的吸引力几乎一样强。这种"零感觉差异"带来两个重要后果：混合过程中体积不发生变化（$\Delta V_{mix} = 0$），混合过程中也不释放或吸收热量（$\Delta H_{mix} = 0$）。</p>
+<p>理想溶液的蒸气压行为遵循<strong>拉乌尔定律（Raoult's Law）</strong>：溶液中每种组分的蒸气压等于该组分纯态时的蒸气压乘以它在溶液中的摩尔分数：</p>
+$$P_A = X_A P_A^{\circ}$$
+<p>其中 $P_A^{\circ}$ 是纯组分A的蒸气压，$X_A$ 是A在溶液中的摩尔分数。溶液的总蒸气压则是各组分分压之和：$P_{total} = P_A + P_B$。</p>
+<p><strong>举例说明</strong></p>
+<p>苯和甲苯是化学结构和分子间作用力（都是弱的诱导偶极力）非常相似的两种液体，是理想溶液的经典例子。假设25°C时纯苯的蒸气压为96 mmHg，纯甲苯的蒸气压为28 mmHg。若混合溶液中苯的摩尔分数为0.60，甲苯为0.40，则：</p>
+$$P_{苯} = 0.60 \times 96 = 57.6 \text{ mmHg}$$
+$$P_{甲苯} = 0.40 \times 28 = 11.2 \text{ mmHg}$$
+$$P_{total} = 57.6 + 11.2 = 68.8 \text{ mmHg}$$
+<p>实验测得的总蒸气压若与此计算值高度吻合，就说明该溶液接近理想行为。</p>
+<p><strong>问题解决应用</strong></p>
+<p>理想溶液模型的价值在于它是一个"基准"——现实中的大多数溶液或多或少偏离理想行为，而偏离的方向和大小恰恰揭示了分子间相互作用的信息。若实际测得的蒸气压<strong>高于</strong>拉乌尔定律的预测值，说明A—B之间的吸引力比A—A、B—B弱（正偏差，如乙醇与己烷混合）；若<strong>低于</strong>预测值，说明A—B之间存在更强的吸引（负偏差，如丙酮与氯仿因氢键而互相"黏"得更紧）。因此，在实际工业分离过程（如蒸馏设计）中，工程师会先假设理想行为进行初步计算，再依据实测蒸气压偏差修正模型，从而更准确地预测混合物的沸点组成关系。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch11: Solutions and Colloids (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

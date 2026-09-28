@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capillary Action | Chemistry Ch10</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="capillary-action">Capillary Action</h2>
+<p>Capillary action is the ability of a liquid to flow through a narrow space — a thin tube, a gap between fibers, or the pores of a porous material — without help from gravity, and sometimes directly against it. It happens because of a competition between two forces: adhesion, the attraction between liquid molecules and the surface of the tube, and cohesion, the attraction between liquid molecules and each other. When adhesion to the tube walls is stronger than cohesion within the liquid, the liquid "wets" the surface and climbs; when cohesion dominates, the liquid resists the surface and is pushed down, as mercury does in a glass tube.</p>
+<p>The height a liquid rises in a narrow tube can be predicted quantitatively, because the phenomenon is a genuine force balance. The upward pull comes from surface tension acting around the inner circumference of the tube, while the downward pull is the weight of the risen liquid column. Setting these equal gives the Jurin's law relation:</p>
+$$h = \frac{2\gamma \cos\theta}{\rho g r}$$
+<p>where $\gamma$ is the liquid's surface tension, $\theta$ is the contact angle between the liquid and the tube wall, $\rho$ is the liquid density, $g$ is gravitational acceleration, and $r$ is the tube's inner radius. The key insight is the inverse relationship with $r$: halving the radius doubles the rise height. This is why capillary action is negligible in a drinking straw but dramatic in the microscopic vessels of a plant stem or the tiny gaps of a paper towel.</p>
+<p><strong>Worked example.</strong> A glass capillary tube with radius $r = 0.10\text{ mm}$ is dipped in water at $20^\circ\text{C}$, where $\gamma = 0.0728\text{ N/m}$, $\rho = 1000\text{ kg/m}^3$, and the contact angle with clean glass is nearly $0^\circ$ ($\cos\theta \approx 1$). Then:</p>
+$$h = \frac{2(0.0728)(1)}{(1000)(9.8)(0.0001)} \approx 0.149\text{ m} \approx 15\text{ cm}$$
+<p><strong>Problem-solving application.</strong> This formula lets engineers and biologists reason quantitatively about real systems: estimating the maximum height water can passively rise in xylem vessels of a given diameter, sizing wick channels in fuel gauges or diagnostic test strips (as in lateral-flow assays), or predicting whether a soil's pore size will retain moisture against gravity during drought. Given any three of $\gamma$, $\theta$, $\rho$, or $r$, students can solve for the fourth — for instance, determining the maximum pore radius soil must have to wick water to a 30 cm root depth.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

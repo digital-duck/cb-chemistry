@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solubility Product Constant | Chemistry Ch15</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="solubility-product-constant-溶度积常数">Solubility Product Constant（溶度积常数）</h2>
+<p><strong>定义</strong></p>
+<p>大多数盐并非绝对不溶，而是在水中溶解到一个很小的、固定的程度就会达到平衡。对于微溶盐 $\text{A}_m\text{B}_n$，其在水中的溶解平衡可写为：</p>
+$$\text{A}_m\text{B}_n(s) \rightleftharpoons m\,\text{A}^{n+}(aq) + n\,\text{B}^{m-}(aq)$$
+<p>由于固体的"浓度"是常数，不出现在平衡表达式中，因此该平衡对应的平衡常数被称为<strong>溶度积常数</strong>（$K_{sp}$）：</p>
+$$K_{sp} = [\text{A}^{n+}]^m[\text{B}^{m-}]^n$$
+<p>$K_{sp}$ 的数值越小，说明该盐在水中的溶解能力越弱。它是温度的函数，通常在 25 °C 下测定和列表。需要注意，$K_{sp}$ 只反映"纯水中"达到饱和时离子浓度的乘积关系，并不直接等于该盐的溶解度（molar solubility），二者需要通过化学计量关系换算。</p>
+<p><strong>实例演算</strong></p>
+<p>以氟化钙 $\text{CaF}_2$ 为例，其 $K_{sp} = 3.9 \times 10^{-11}$（25 °C）。设其摩尔溶解度为 $s$，则：</p>
+$$\text{CaF}_2(s) \rightleftharpoons \text{Ca}^{2+}(aq) + 2\text{F}^-(aq)$$
+<p>平衡时 $[\text{Ca}^{2+}] = s$，$[\text{F}^-] = 2s$，代入表达式：</p>
+$$K_{sp} = (s)(2s)^2 = 4s^3$$
+<p>解得：</p>
+$$s = \sqrt[3]{\dfrac{K_{sp}}{4}} = \sqrt[3]{\dfrac{3.9\times10^{-11}}{4}} \approx 2.1\times10^{-4}\ \text{mol/L}$$
+<p>由此可见，$K_{sp}$ 虽小，但换算出的溶解度依然是一个可测量的具体数值。</p>
+<p><strong>应用于解题：判断是否生成沉淀</strong></p>
+<p>$K_{sp}$ 最实用的场景是预测混合两种溶液后是否会生成沉淀。此时需先计算<strong>离子积（$Q$）</strong>——用实际（非平衡）浓度代入同样的表达式，再与 $K_{sp}$ 比较：</p>
+<li>若 $Q < K_{sp}$：溶液未饱和，不会沉淀；</li>
+<li>若 $Q = K_{sp}$：恰好饱和；</li>
+<li>若 $Q > K_{sp}$：溶液过饱和，沉淀会生成，直至 $Q$ 降回 $K_{sp}$。</li>
+<p>例如，将等体积的 $2\times10^{-4}\ \text{M}$ $\text{CaCl}_2$ 与 $2\times10^{-4}\ \text{M}$ $\text{NaF}$ 混合后，各离子浓度减半为 $1\times10^{-4}\ \text{M}$，代入得 $Q = (1\times10^{-4})(1\times10^{-4})^2 = 1\times10^{-12}$，小于 $K_{sp}=3.9\times10^{-11}$，因此不会产生沉淀。这种 $Q$ 与 $K_{sp}$ 的比较方法，是分析选择性沉淀、水质硬度控制乃至肾结石形成机制等实际问题的核心工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch15: Equilibria of Other Reaction Classes (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,212 @@
+domain: chemistry_2e_ch9
+sources:
+  force:
+    label: Force
+    sections:
+    - id: ch09_s9_1
+      title: 9.1 Gas Pressure
+  area:
+    label: Area
+    sections: []
+  temperature_kelvin:
+    label: Temperature and the Kelvin Scale
+    sections:
+    - id: ch09_s9_2
+      title: '9.2 Relating Pressure, Volume, Amount, and Temperature: The Ideal Gas Law'
+  volume:
+    label: Volume
+    sections: []
+  amount_of_substance:
+    label: Amount of Substance (Moles)
+    sections: []
+  molar_mass:
+    label: Molar Mass
+    sections: []
+  density:
+    label: Density
+    sections: []
+  molecular_volume:
+    label: Finite Molecular Volume
+    sections:
+    - id: ch09_s9_6
+      title: 9.6 Non-Ideal Gas Behavior
+  intermolecular_forces:
+    label: Intermolecular Attractive Forces
+    sections:
+    - id: ch09_s9_6
+      title: 9.6 Non-Ideal Gas Behavior
+  pressure:
+    label: Gas Pressure
+    sections:
+    - id: ch09_s9_1
+      title: 9.1 Gas Pressure
+  pressure_units:
+    label: Pressure Units and Conversions
+    sections:
+    - id: ch09_s9_1
+      title: 9.1 Gas Pressure
+  atmospheric_pressure:
+    label: Atmospheric Pressure
+    sections:
+    - id: ch09_s9_1
+      title: 9.1 Gas Pressure
+  hydrostatic_pressure:
+    label: Hydrostatic Pressure
+    sections:
+    - id: ch09_s9_1
+      title: 9.1 Gas Pressure
+  amontons_law:
+    label: Amontons's Law (Gay-Lussac's Law)
+    sections:
+    - id: ch09_s9_2
+      title: '9.2 Relating Pressure, Volume, Amount, and Temperature: The Ideal Gas Law'
+  charles_law:
+    label: Charles's Law
+    sections:
+    - id: ch09_s9_2
+      title: '9.2 Relating Pressure, Volume, Amount, and Temperature: The Ideal Gas Law'
+  boyle_law:
+    label: Boyle's Law
+    sections:
+    - id: ch09_s9_2
+      title: '9.2 Relating Pressure, Volume, Amount, and Temperature: The Ideal Gas Law'
+  avogadros_law:
+    label: Avogadro's Law
+    sections:
+    - id: ch09_s9_2
+      title: '9.2 Relating Pressure, Volume, Amount, and Temperature: The Ideal Gas Law'
+  ideal_gas:
+    label: Ideal Gas
+    sections:
+    - id: ch09_s9_2
+      title: '9.2 Relating Pressure, Volume, Amount, and Temperature: The Ideal Gas Law'
+  ideal_gas_law:
+    label: Ideal Gas Law
+    sections:
+    - id: ch09_s9_2
+      title: '9.2 Relating Pressure, Volume, Amount, and Temperature: The Ideal Gas Law'
+  combined_gas_law:
+    label: Combined Gas Law
+    sections:
+    - id: ch09_s9_2
+      title: '9.2 Relating Pressure, Volume, Amount, and Temperature: The Ideal Gas Law'
+  standard_conditions_stp:
+    label: Standard Temperature and Pressure (STP)
+    sections:
+    - id: ch09_s9_2
+      title: '9.2 Relating Pressure, Volume, Amount, and Temperature: The Ideal Gas Law'
+  standard_molar_volume:
+    label: Standard Molar Volume
+    sections:
+    - id: ch09_s9_2
+      title: '9.2 Relating Pressure, Volume, Amount, and Temperature: The Ideal Gas Law'
+  gas_density:
+    label: Gas Density
+    sections:
+    - id: ch09_s9_3
+      title: 9.3 Stoichiometry of Gaseous Substances, Mixtures, and Reactions
+  partial_pressure:
+    label: Partial Pressure
+    sections:
+    - id: ch09_s9_3
+      title: 9.3 Stoichiometry of Gaseous Substances, Mixtures, and Reactions
+  mole_fraction:
+    label: Mole Fraction
+    sections:
+    - id: ch09_s9_3
+      title: 9.3 Stoichiometry of Gaseous Substances, Mixtures, and Reactions
+  daltons_law:
+    label: Dalton's Law of Partial Pressures
+    sections:
+    - id: ch09_s9_3
+      title: 9.3 Stoichiometry of Gaseous Substances, Mixtures, and Reactions
+  vapor_pressure_of_water:
+    label: Vapor Pressure of Water
+    sections:
+    - id: ch09_s9_3
+      title: 9.3 Stoichiometry of Gaseous Substances, Mixtures, and Reactions
+  diffusion:
+    label: Diffusion
+    sections:
+    - id: ch09_s9_4
+      title: 9.4 Effusion and Diffusion of Gases
+  mean_free_path:
+    label: Mean Free Path
+    sections:
+    - id: ch09_s9_4
+      title: 9.4 Effusion and Diffusion of Gases
+  effusion:
+    label: Effusion
+    sections:
+    - id: ch09_s9_4
+      title: 9.4 Effusion and Diffusion of Gases
+  grahams_law:
+    label: Graham's Law of Effusion
+    sections:
+    - id: ch09_s9_4
+      title: 9.4 Effusion and Diffusion of Gases
+  kinetic_molecular_theory:
+    label: Kinetic-Molecular Theory (KMT)
+    sections:
+    - id: ch09_s9_5
+      title: 9.5 The Kinetic-Molecular Theory
+  maxwell_boltzmann_distribution:
+    label: Maxwell-Boltzmann Speed Distribution
+    sections:
+    - id: ch09_s9_5
+      title: 9.5 The Kinetic-Molecular Theory
+  average_kinetic_energy:
+    label: Average Kinetic Energy of Gas Molecules
+    sections:
+    - id: ch09_s9_5
+      title: 9.5 The Kinetic-Molecular Theory
+  root_mean_square_speed:
+    label: Root Mean Square Speed (u_rms)
+    sections:
+    - id: ch09_s9_5
+      title: 9.5 The Kinetic-Molecular Theory
+  compressibility_factor:
+    label: Compressibility Factor (Z)
+    sections:
+    - id: ch09_s9_6
+      title: 9.6 Non-Ideal Gas Behavior
+  non_ideal_gas_behavior:
+    label: Non-Ideal Gas Behavior
+    sections:
+    - id: ch09_s9_6
+      title: 9.6 Non-Ideal Gas Behavior
+  van_der_waals_equation:
+    label: Van der Waals Equation
+    sections:
+    - id: ch09_s9_6
+      title: 9.6 Non-Ideal Gas Behavior
+  barometer:
+    label: Barometer
+    sections:
+    - id: ch09_s9_1
+      title: 9.1 Gas Pressure
+  manometer:
+    label: Manometer
+    sections:
+    - id: ch09_s9_1
+      title: 9.1 Gas Pressure
+  molar_mass_determination:
+    label: Molar Mass Determination from Gas Data
+    sections:
+    - id: ch09_s9_3
+      title: 9.3 Stoichiometry of Gaseous Substances, Mixtures, and Reactions
+  gas_collection_over_water:
+    label: Gas Collection Over Water
+    sections:
+    - id: ch09_s9_3
+      title: 9.3 Stoichiometry of Gaseous Substances, Mixtures, and Reactions
+  gas_stoichiometry:
+    label: Gas-Phase Reaction Stoichiometry
+    sections:
+    - id: ch09_s9_3
+      title: 9.3 Stoichiometry of Gaseous Substances, Mixtures, and Reactions
+  uranium_enrichment_by_diffusion:
+    label: Uranium Enrichment by Gaseous Diffusion
+    sections:
+    - id: ch09_s9_4
+      title: 9.4 Effusion and Diffusion of Gases

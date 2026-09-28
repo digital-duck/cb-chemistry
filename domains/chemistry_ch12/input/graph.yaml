@@ -1,0 +1,215 @@
+domain: chemistry_2e_ch12
+primitives:
+  molar_concentration:
+    defines: The amount of a substance expressed in moles per liter of solution, used as the primary measure
+      of reactant and product quantities in kinetics.
+    tier: 0
+  stoichiometry:
+    defines: The quantitative ratio between reactants and products in a balanced chemical equation, assumed
+      known from prior study.
+    tier: 0
+  temperature:
+    defines: A thermodynamic measure of average kinetic energy of molecules, treated as a given experimental
+      variable.
+    tier: 0
+concepts:
+  reaction_rate:
+    defines: The change in concentration of a reactant or product per unit time, expressed as a positive
+      quantity by convention.
+    composed_of:
+    - molar_concentration
+    tier: 1
+  average_rate:
+    defines: The reaction rate computed as the ratio of a measured change in concentration to the time
+      interval over which it occurred.
+    composed_of:
+    - reaction_rate
+    tier: 2
+  instantaneous_rate:
+    defines: The reaction rate at a specific moment in time, equal to the negative slope of the tangent
+      line to a concentration-versus-time curve.
+    composed_of:
+    - reaction_rate
+    tier: 2
+  stoichiometric_rate_relations:
+    defines: The mathematical relationships between the rates of consumption of reactants and formation
+      of products, derived directly from stoichiometric coefficients.
+    composed_of:
+    - reaction_rate
+    - stoichiometry
+    tier: 2
+  factors_affecting_rates:
+    defines: 'Five parameters that influence reaction rate: chemical nature of reactants, physical state
+      and surface area, temperature, reactant concentration, and presence of a catalyst.'
+    composed_of:
+    - reaction_rate
+    tier: 2
+  collision_theory:
+    defines: A kinetic model stating that reactions occur only when reactant molecules collide with both
+      sufficient energy and proper orientation.
+    composed_of:
+    - reaction_rate
+    - temperature
+    tier: 2
+  rate_law:
+    defines: A mathematical expression relating the rate of a chemical reaction to the rate constant and
+      the concentrations of reactants raised to experimentally determined exponents.
+    composed_of:
+    - reaction_rate
+    - molar_concentration
+    tier: 2
+  initial_rate:
+    defines: The instantaneous rate of a reaction at time zero, immediately after the reaction commences.
+    composed_of:
+    - instantaneous_rate
+    tier: 3
+  rate_constant:
+    defines: The proportionality constant k in a rate law, specific to a given reaction at a given temperature
+      and independent of reactant concentrations.
+    composed_of:
+    - rate_law
+    tier: 3
+  reaction_order:
+    defines: The exponent on a reactant's concentration term in the rate law, indicating how strongly
+      that reactant's concentration affects the reaction rate.
+    composed_of:
+    - rate_law
+    tier: 3
+  integrated_rate_law:
+    defines: A mathematical equation, derived by integrating the differential rate law, that relates reactant
+      concentration directly to elapsed reaction time.
+    composed_of:
+    - rate_law
+    tier: 3
+  activation_energy:
+    defines: The minimum energy that colliding reactant molecules must possess for a reaction to occur
+      and products to form.
+    composed_of:
+    - collision_theory
+    tier: 3
+  elementary_reaction:
+    defines: A single-step reaction that occurs exactly as depicted in its equation, for which the rate
+      law can be written directly from the stoichiometry.
+    composed_of:
+    - rate_law
+    - stoichiometry
+    tier: 3
+  overall_reaction_order:
+    defines: The sum of the individual reaction orders for all reactants appearing in the rate law.
+    composed_of:
+    - reaction_order
+    tier: 4
+  method_of_initial_rates:
+    defines: An experimental technique for determining rate laws by measuring initial reaction rates across
+      trials with systematically varied reactant concentrations.
+    composed_of:
+    - initial_rate
+    - rate_law
+    tier: 4
+  first_order_kinetics:
+    defines: Reaction behavior in which the rate is directly proportional to the concentration of one
+      reactant, yielding a linear plot of ln[A] versus time.
+    composed_of:
+    - integrated_rate_law
+    tier: 4
+  second_order_kinetics:
+    defines: Reaction behavior in which the rate depends on the square of a reactant's concentration,
+      yielding a linear plot of 1/[A] versus time.
+    composed_of:
+    - integrated_rate_law
+    tier: 4
+  zero_order_kinetics:
+    defines: Reaction behavior in which the rate is constant and independent of reactant concentration,
+      yielding a linear plot of [A] versus time.
+    composed_of:
+    - integrated_rate_law
+    tier: 4
+  activated_complex:
+    defines: The unstable, short-lived species formed when reactants collide with sufficient energy and
+      proper orientation, representing the energy maximum along the reaction pathway.
+    composed_of:
+    - collision_theory
+    - activation_energy
+    tier: 4
+  arrhenius_equation:
+    defines: The mathematical relationship k = Ae^(−Ea/RT) that quantifies how the rate constant depends
+      on activation energy, temperature, and a frequency factor.
+    composed_of:
+    - rate_constant
+    - activation_energy
+    - temperature
+    tier: 4
+  reaction_mechanism:
+    defines: The stepwise sequence of elementary reactions that describes the precise molecular pathway
+      by which reactants are converted into products.
+    composed_of:
+    - elementary_reaction
+    - stoichiometry
+    tier: 4
+  molecularity:
+    defines: The number of reactant entities involved in an elementary reaction step, classified as unimolecular,
+      bimolecular, or termolecular.
+    composed_of:
+    - elementary_reaction
+    tier: 4
+  catalyst:
+    defines: A substance that increases the rate of a chemical reaction by providing an alternative mechanism
+      with a lower activation energy, without itself being consumed.
+    composed_of:
+    - reaction_rate
+    - activation_energy
+    tier: 4
+  half_life:
+    defines: The time required for the concentration of a reactant to decrease by one-half; for first-order
+      reactions it is constant, while for zero- and second-order reactions it depends on concentration.
+    composed_of:
+    - first_order_kinetics
+    - second_order_kinetics
+    - zero_order_kinetics
+    tier: 5
+  frequency_factor:
+    defines: The pre-exponential constant A in the Arrhenius equation, reflecting the frequency of collisions
+      with the correct orientation to produce a reaction.
+    composed_of:
+    - arrhenius_equation
+    tier: 5
+  reaction_intermediate:
+    defines: A species produced in one elementary step of a mechanism and consumed in a subsequent step,
+      not appearing in the overall balanced equation.
+    composed_of:
+    - reaction_mechanism
+    - elementary_reaction
+    tier: 5
+  rate_determining_step:
+    defines: The slowest elementary reaction in a mechanism, which controls the rate of the overall reaction.
+    composed_of:
+    - reaction_mechanism
+    - elementary_reaction
+    tier: 5
+  homogeneous_catalyst:
+    defines: A catalyst that is present in the same phase as the reactants, forming a transient intermediate
+      before regenerating and yielding product.
+    composed_of:
+    - catalyst
+    tier: 5
+  heterogeneous_catalyst:
+    defines: A catalyst present in a different phase than the reactants, functioning by adsorbing reactants
+      onto its surface to activate and facilitate the reaction.
+    composed_of:
+    - catalyst
+    tier: 5
+applications:
+  enzyme_catalysis:
+    defines: Biological catalysis by protein molecules that bind specific substrates at an active site
+      to accelerate metabolic reactions, modeled by lock-and-key or induced-fit mechanisms.
+    needs:
+    - catalyst
+    - reaction_mechanism
+    tier: 5
+  radioactive_decay_kinetics:
+    defines: The application of first-order integrated rate laws and half-life calculations to the decay
+      of radioactive isotopes such as iodine-131 and carbon-14.
+    needs:
+    - first_order_kinetics
+    - half_life
+    tier: 6

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heat Capacity | Chemistry Ch05</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="heat-capacity-热容">Heat Capacity（热容）</h2>
+<p><strong>定义</strong></p>
+<p>热容（heat capacity）描述一个物体或一定量物质吸收热量后温度升高的难易程度，其定义为使物质温度升高单位温度所需吸收的热量。对于质量为 $m$ 的物质，温度从 $T_1$ 升高到 $T_2$ 所吸收的热量 $q$ 满足：</p>
+$$q = m c \Delta T$$
+<p>其中 $c$ 是<strong>比热容</strong>（specific heat capacity），单位通常为 $\mathrm{J/(g\cdot ^\circ C)}$，表示单位质量物质升高 $1^\circ C$ 所需的热量；$\Delta T = T_2 - T_1$。若以摩尔数 $n$ 代替质量，则对应的是<strong>摩尔热容</strong>，单位为 $\mathrm{J/(mol\cdot ^\circ C)}$。比热容是物质的内禀属性，取决于分子结构和分子间作用力——水的比热容高达 $4.18\ \mathrm{J/(g\cdot ^\circ C)}$，远高于金属（如铁约 $0.45\ \mathrm{J/(g\cdot ^\circ C)}$），这正是水能有效调节地球和生物体温度的原因。</p>
+<p><strong>例题</strong></p>
+<p>将 $250\ \mathrm{g}$ 水从 $20^\circ C$ 加热到 $80^\circ C$，需要多少热量？</p>
+$$q = m c \Delta T = 250\ \mathrm{g} \times 4.18\ \mathrm{J/(g\cdot ^\circ C)} \times 60^\circ C = 62{,}700\ \mathrm{J} \approx 62.7\ \mathrm{kJ}$$
+<p>这个计算过程正是量热法（calorimetry）的核心：通过测量已知比热容物质的温度变化，反推出体系吸收或释放的热量。</p>
+<p><strong>问题解决应用</strong></p>
+<p>热容概念在实验和实际问题中最常见的应用是<strong>量热计实验</strong>，用于测定未知物质的比热容或反应热。例如，将一块 $50\ \mathrm{g}$、温度为 $100^\circ C$ 的金属放入 $100\ \mathrm{g}$、$25^\circ C$ 的水中，若最终平衡温度为 $30^\circ C$，可利用能量守恒——金属放出的热量等于水吸收的热量：</p>
+$$m_{金属} c_{金属} (100 - 30) = m_{水} c_{水} (30 - 25)$$
+<p>代入水的比热容和已知质量，即可解出该金属的比热容 $c_{金属}$，进而推测金属种类。这类"热量守恒"问题是化学与生物实验中量热法的基础，也是理解细胞代谢产热、体温调节乃至工业散热设计的出发点。掌握比热容的差异，还能解释为何海边地区昼夜温差小（水体热容大，缓冲温度波动），而沙漠地区温差剧烈（沙石热容小）。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch5: Thermochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

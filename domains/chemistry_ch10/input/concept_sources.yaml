@@ -1,0 +1,250 @@
+domain: chemistry_2e_ch10
+sources:
+  kinetic_molecular_theory:
+    label: Kinetic Molecular Theory
+    sections:
+    - id: ch10_s10_1
+      title: 10.1 Intermolecular Forces
+  electrostatic_force:
+    label: Electrostatic Force
+    sections: []
+  polarity_and_dipole_moment:
+    label: Polarity and Dipole Moment
+    sections:
+    - id: ch10_s10_1
+      title: 10.1 Intermolecular Forces
+  electronegativity:
+    label: Electronegativity
+    sections:
+    - id: ch10_s10_1
+      title: 10.1 Intermolecular Forces
+  specific_heat:
+    label: Specific Heat
+    sections:
+    - id: ch10_s10_3
+      title: 10.3 Phase Transitions
+  intermolecular_forces:
+    label: Intermolecular Forces (IMF)
+    sections:
+    - id: ch10_s10_1
+      title: 10.1 Intermolecular Forces
+  dispersion_force:
+    label: London Dispersion Force
+    sections:
+    - id: ch10_s10_1
+      title: 10.1 Intermolecular Forces
+  polarizability:
+    label: Polarizability
+    sections:
+    - id: ch10_s10_1
+      title: 10.1 Intermolecular Forces
+  dipole_dipole_attraction:
+    label: Dipole-Dipole Attraction
+    sections:
+    - id: ch10_s10_1
+      title: 10.1 Intermolecular Forces
+  hydrogen_bonding:
+    label: Hydrogen Bonding
+    sections:
+    - id: ch10_s10_1
+      title: 10.1 Intermolecular Forces
+  cohesive_forces:
+    label: Cohesive Forces
+    sections:
+    - id: ch10_s10_2
+      title: 10.2 Properties of Liquids
+  adhesive_forces:
+    label: Adhesive Forces
+    sections:
+    - id: ch10_s10_2
+      title: 10.2 Properties of Liquids
+  viscosity:
+    label: Viscosity
+    sections:
+    - id: ch10_s10_2
+      title: 10.2 Properties of Liquids
+  surface_tension:
+    label: Surface Tension
+    sections:
+    - id: ch10_s10_2
+      title: 10.2 Properties of Liquids
+  capillary_action:
+    label: Capillary Action
+    sections:
+    - id: ch10_s10_2
+      title: 10.2 Properties of Liquids
+  capillary_rise_equation:
+    label: Capillary Rise Equation
+    sections:
+    - id: ch10_s10_2
+      title: 10.2 Properties of Liquids
+  dynamic_equilibrium:
+    label: Dynamic Equilibrium
+    sections:
+    - id: ch10_s10_3
+      title: 10.3 Phase Transitions
+  vapor_pressure:
+    label: Vapor Pressure
+    sections:
+    - id: ch10_s10_3
+      title: 10.3 Phase Transitions
+  boiling_point:
+    label: Boiling Point
+    sections:
+    - id: ch10_s10_3
+      title: 10.3 Phase Transitions
+  enthalpy_of_vaporization:
+    label: Enthalpy of Vaporization
+    sections:
+    - id: ch10_s10_3
+      title: 10.3 Phase Transitions
+  clausius_clapeyron_equation:
+    label: Clausius-Clapeyron Equation
+    sections:
+    - id: ch10_s10_3
+      title: 10.3 Phase Transitions
+  melting_and_freezing:
+    label: Melting and Freezing
+    sections:
+    - id: ch10_s10_3
+      title: 10.3 Phase Transitions
+  enthalpy_of_fusion:
+    label: Enthalpy of Fusion
+    sections:
+    - id: ch10_s10_3
+      title: 10.3 Phase Transitions
+  sublimation_and_deposition:
+    label: Sublimation and Deposition
+    sections:
+    - id: ch10_s10_3
+      title: 10.3 Phase Transitions
+  enthalpy_of_sublimation:
+    label: Enthalpy of Sublimation
+    sections:
+    - id: ch10_s10_3
+      title: 10.3 Phase Transitions
+  heating_cooling_curves:
+    label: Heating and Cooling Curves
+    sections:
+    - id: ch10_s10_3
+      title: 10.3 Phase Transitions
+  phase_diagram:
+    label: Phase Diagram
+    sections:
+    - id: ch10_s10_4
+      title: 10.4 Phase Diagrams
+  triple_point:
+    label: Triple Point
+    sections:
+    - id: ch10_s10_4
+      title: 10.4 Phase Diagrams
+  critical_point:
+    label: Critical Point
+    sections:
+    - id: ch10_s10_4
+      title: 10.4 Phase Diagrams
+  supercritical_fluid:
+    label: Supercritical Fluid
+    sections:
+    - id: ch10_s10_4
+      title: 10.4 Phase Diagrams
+  crystalline_solid:
+    label: Crystalline Solid
+    sections:
+    - id: ch10_s10_5
+      title: 10.5 The Solid State of Matter
+  amorphous_solid:
+    label: Amorphous Solid
+    sections:
+    - id: ch10_s10_5
+      title: 10.5 The Solid State of Matter
+  ionic_solid:
+    label: Ionic Solid
+    sections:
+    - id: ch10_s10_5
+      title: 10.5 The Solid State of Matter
+  metallic_solid:
+    label: Metallic Solid
+    sections:
+    - id: ch10_s10_5
+      title: 10.5 The Solid State of Matter
+  covalent_network_solid:
+    label: Covalent Network Solid
+    sections:
+    - id: ch10_s10_5
+      title: 10.5 The Solid State of Matter
+  molecular_solid:
+    label: Molecular Solid
+    sections:
+    - id: ch10_s10_5
+      title: 10.5 The Solid State of Matter
+  crystal_defects:
+    label: Crystal Defects
+    sections:
+    - id: ch10_s10_5
+      title: 10.5 The Solid State of Matter
+  unit_cell:
+    label: Unit Cell
+    sections:
+    - id: ch10_s10_6
+      title: 10.6 Lattice Structures in Crystalline Solids
+  coordination_number:
+    label: Coordination Number
+    sections:
+    - id: ch10_s10_6
+      title: 10.6 Lattice Structures in Crystalline Solids
+  simple_cubic_structure:
+    label: Simple Cubic Structure
+    sections:
+    - id: ch10_s10_6
+      title: 10.6 Lattice Structures in Crystalline Solids
+  body_centered_cubic:
+    label: Body-Centered Cubic (BCC) Structure
+    sections:
+    - id: ch10_s10_6
+      title: 10.6 Lattice Structures in Crystalline Solids
+  face_centered_cubic:
+    label: Face-Centered Cubic (FCC) / Cubic Closest Packing
+    sections:
+    - id: ch10_s10_6
+      title: 10.6 Lattice Structures in Crystalline Solids
+  hexagonal_closest_packing:
+    label: Hexagonal Closest Packing (HCP)
+    sections:
+    - id: ch10_s10_6
+      title: 10.6 Lattice Structures in Crystalline Solids
+  ionic_crystal_structure:
+    label: Ionic Crystal Structure and Hole Occupancy
+    sections:
+    - id: ch10_s10_6
+      title: 10.6 Lattice Structures in Crystalline Solids
+  x_ray_crystallography:
+    label: X-Ray Crystallography
+    sections:
+    - id: ch10_s10_6
+      title: 10.6 Lattice Structures in Crystalline Solids
+  bragg_equation:
+    label: Bragg Equation
+    sections:
+    - id: ch10_s10_6
+      title: 10.6 Lattice Structures in Crystalline Solids
+  dna_hydrogen_bonding:
+    label: Hydrogen Bonding in DNA
+    sections:
+    - id: ch10_s10_1
+      title: 10.1 Intermolecular Forces
+  supercritical_co2_extraction:
+    label: Supercritical CO₂ Extraction
+    sections:
+    - id: ch10_s10_4
+      title: 10.4 Phase Diagrams
+  freeze_drying:
+    label: Freeze-Drying
+    sections:
+    - id: ch10_s10_4
+      title: 10.4 Phase Diagrams
+  semiconductor_doping:
+    label: Semiconductor Doping
+    sections:
+    - id: ch10_s10_5
+      title: 10.5 The Solid State of Matter

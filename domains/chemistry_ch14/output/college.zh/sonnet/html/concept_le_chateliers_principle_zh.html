@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Chateliers Principle | Chemistry Ch14</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="le-chateliers-principle">Le Chateliers Principle</h2>
+<p><strong>定义</strong></p>
+<p>当一个处于平衡状态的化学反应体系受到外界条件（浓度、压强、温度）的扰动时，平衡会向着能够部分抵消这种扰动的方向移动，直到建立新的平衡——这就是勒夏特列原理（Le Chatelier's Principle）。需要强调的是，这条原理描述的是平衡<em>位置</em>的移动方向，而不改变平衡常数 $K$ 的数值（温度变化除外，因为 $K$ 本身是温度的函数）。理解这一原理的关键在于：系统并不会"主动预判"扰动，而是通过正、逆反应速率的相对变化，被动地重新分配反应物与产物的浓度。</p>
+<p><strong>实例分析</strong></p>
+<p>考虑合成氨反应（工业上的哈伯法）：</p>
+$$
+N_2(g) + 3H_2(g) \rightleftharpoons 2NH_3(g) \quad \Delta H = -92\ \text{kJ/mol}
+$$
+<p>这是一个放热、且气体分子数减少（4 mol 反应物 → 2 mol 产物）的反应。若在平衡体系中增大压强（即压缩体积），系统会向气体分子数较少的一侧移动，即正向移动，生成更多 $NH_3$。若升高温度，由于正反应放热，平衡会向吸热方向（逆反应）移动，$NH_3$ 产率下降。若不断移走生成的 $NH_3$，则平衡持续正向移动以补充消耗。这也是工业生产中控制温度（约 400–450°C，兼顾速率与产率）、高压（150–300 atm）并及时分离产物的理论依据。</p>
+<p><strong>问题解决应用</strong></p>
+<p>勒夏特列原理的真正价值在于预测与优化。给定反应</p>
+$$
+2SO_2(g) + O_2(g) \rightleftharpoons 2SO_3(g) \quad \Delta H < 0
+$$
+<p>若要提高 $SO_3$ 的产率，可分析三类扰动：（1）增大 $O_2$ 浓度——平衡右移，消耗多余 $O_2$；（2）降低温度——虽然产率提高，但反应速率下降，故工业上采用中等温度折中；（3）增大压强——由于左侧气体分子数（3 mol）大于右侧（2 mol），平衡右移。解题时应遵循三步法：先确定扰动类型，再判断系统将如何"抵消"该扰动，最后据此推断浓度或产率的变化方向。这种定性推理方法广泛应用于工业催化过程设计、血液中 $CO_2$/$O_2$/$H^+$ 平衡的生理调节，乃至海洋酸化对碳酸盐平衡影响的环境分析中。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch14: Acid-Base Equilibria (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

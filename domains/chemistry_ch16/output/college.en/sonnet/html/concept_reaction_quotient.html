@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reaction Quotient | Chemistry Ch16</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="reaction-quotient">Reaction Quotient</h2>
+<p>For any reaction $aA + bB \rightleftharpoons cC + dD$, the reaction quotient $Q$ has the same algebraic form as the equilibrium constant expression:</p>
+$$Q = \frac{[C]^c[D]^d}{[A]^a[B]^b}$$
+<p>The critical difference is <em>when</em> you evaluate it. $K$ is calculated only from concentrations measured once a system has reached equilibrium — it is a fixed number for a given temperature. $Q$ can be calculated from concentrations at <em>any</em> moment, whether the system is at equilibrium, just starting out, or somewhere in between. Comparing $Q$ to $K$ tells you which direction a reaction must shift to reach equilibrium: if $Q < K$, the ratio of products to reactants is too small, so the forward reaction proceeds to make more product; if $Q > K$, the reverse reaction proceeds; if $Q = K$, the system is already at equilibrium and there is no net change.</p>
+<p><strong>Worked example.</strong> Consider $N_2(g) + 3H_2(g) \rightleftharpoons 2NH_3(g)$, with $K = 0.50$ at a given temperature. Suppose a reaction vessel initially contains $[N_2] = 1.0\ \text{M}$, $[H_2] = 1.0\ \text{M}$, and $[NH_3] = 2.0\ \text{M}$. Then</p>
+$$Q = \frac{[NH_3]^2}{[N_2][H_2]^3} = \frac{(2.0)^2}{(1.0)(1.0)^3} = 4.0$$
+<p>Since $Q(4.0) > K(0.50)$, the system has too much product relative to reactants for equilibrium. The reaction will shift in reverse, consuming $NH_3$ and producing more $N_2$ and $H_2$, until $Q$ decreases to match $K$.</p>
+<p><strong>Problem-solving application.</strong> $Q$ is the tool chemists use to predict the direction of a reaction before it happens, which matters in industrial processes where you want to push a reaction toward a desired product without waiting to observe it directly. For example, in optimizing ammonia synthesis (the Haber process), engineers monitor gas concentrations and use $Q$ versus $K$ to decide whether adding more $N_2$ or removing $NH_3$ will drive the reaction forward. More generally, whenever you are given non-equilibrium concentrations and asked "which way will this reaction go," the procedure is always the same: write the $Q$ expression from the balanced equation, substitute the given concentrations, and compare the result to $K$. This turns a qualitative question about equilibrium shifts into a straightforward numerical comparison.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

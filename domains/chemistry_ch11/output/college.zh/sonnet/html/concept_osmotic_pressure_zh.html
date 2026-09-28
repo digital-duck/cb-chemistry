@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Osmotic Pressure | Chemistry Ch11</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="osmotic-pressure">Osmotic Pressure</h2>
+<p><strong>定义</strong></p>
+<p>渗透压是指为了阻止溶剂分子通过半透膜净流入溶液一侧,所必须施加于溶液的最小外部压强。半透膜只允许溶剂(通常是水)分子自由通过,而不允许溶质分子通过。由于膜两侧水分子的"有效浓度"不同——纯溶剂一侧水分子更密集,溶液一侧水分子被溶质稀释——水会自发地从纯溶剂一侧扩散到溶液一侧,这个过程叫作渗透。渗透压 $\Pi$ 的大小由范托夫方程给出:</p>
+$$\Pi = MRT$$
+<p>其中 $M$ 是溶液的摩尔浓度(mol/L),$R$ 是气体常数($0.0821\ \text{L·atm/(mol·K)}$),$T$ 是绝对温度(K)。这个公式的形式与理想气体状态方程 $PV=nRT$ 非常相似,这不是巧合——溶质分子在溶剂中的"扩散冲动"与气体分子对容器壁的碰撞在数学上遵循同样的统计规律。</p>
+<p><strong>例题</strong></p>
+<p>计算体温($37^\circ\text{C}$,即 $310\ \text{K}$)下,浓度为 $0.30\ \text{mol/L}$ 的葡萄糖溶液的渗透压。</p>
+$$\Pi = MRT = (0.30)(0.0821)(310) \approx 7.6\ \text{atm}$$
+<p>这个数值远大于大气压,说明细胞膜两侧即使浓度差很小,也能产生相当可观的压强——这正是植物细胞保持挺立、红细胞维持形态的关键机制。</p>
+<p><strong>应用与解题</strong></p>
+<p>在处理电解质溶液(如 NaCl)时,必须引入范特霍夫因子 $i$,表示溶质解离出的粒子数:</p>
+$$\Pi = iMRT$$
+<p>例如 $0.10\ \text{mol/L}$ 的 NaCl 溶液,理论上 $i=2$(解离为 Na⁺ 和 Cl⁻),渗透压约为完全相同浓度非电解质溶液的两倍。</p>
+<p>在生物医学情境中,渗透压决定了细胞的命运:将红细胞放入低渗溶液(渗透压低于细胞内液)中,水会流入细胞导致其膨胀甚至破裂(溶血);放入高渗溶液中,水则流出细胞使其皱缩。只有等渗溶液(如生理盐水,0.9% NaCl)才能维持细胞正常形态,这也是静脉输液必须使用等渗液的原因。解题时,关键步骤是:先确定溶质是否解离及解离数目 $i$,再代入范托夫方程计算 $\Pi$,最后比较两侧溶液渗透压高低来判断水流动方向。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch11: Solutions and Colloids (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

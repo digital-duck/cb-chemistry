@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hydrostatic Pressure | Chemistry Ch09</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="hydrostatic-pressure">Hydrostatic Pressure</h2>
+<p><strong>定义</strong></p>
+<p>静水压力(hydrostatic pressure)是指静止流体(液体或气体)内部由于自身重量而产生的压力。在任意深度 $h$ 处,流体施加的压力由下式给出:</p>
+$$P = P_0 + \rho g h$$
+<p>其中 $P_0$ 是流体表面上方的大气压力,$\rho$ 是流体密度,$g$ 是重力加速度($9.8\ \text{m/s}^2$),$h$ 是测量点到流体表面的垂直深度。这个公式说明了一个关键事实:压力只取决于深度、密度和重力,而与容器的形状或流体的总体积无关。这就是为什么无论水池是圆形、方形还是不规则形状,只要深度相同,水底所承受的压力就相同。</p>
+<p>静水压力在生物体内也具有重要意义。例如,人体循环系统中血压会随身体位置变化——站立时脚部血管所承受的压力远高于头部血管,这正是由血液的重量在垂直方向上累积造成的。深海生物则必须适应随深度剧增的压力,这也解释了为什么大多数深海鱼类没有充气的鱼鳔,并具有特殊的细胞膜结构以抵抗高压。</p>
+<p><strong>实例分析</strong></p>
+<p>假设某湖泊深度为 $10\ \text{m}$,水的密度约为 $1000\ \text{kg/m}^3$,大气压力 $P_0 \approx 1.01 \times 10^5\ \text{Pa}$。求湖底所受的总压力。</p>
+$$P = 1.01\times10^5 + (1000)(9.8)(10) = 1.01\times10^5 + 9.8\times10^4 \approx 1.99\times10^5\ \text{Pa}$$
+<p>可见,仅 $10\ \text{米}$的水深就使压力几乎翻倍——这说明水的密度远大于空气,压力随深度增加非常迅速。</p>
+<p><strong>应用于问题解决</strong></p>
+<p>在实际问题中,静水压力常用于计算潜水安全深度、设计水塔与灌溉系统,或分析植物体内水分运输(如木质部中的压力梯度如何驱动水分从根部上升至树冠)。解题时,关键步骤是:先确定基准点(通常取流体表面, $P_0$),再计算目标点的垂直深度 $h$,最后代入公式求解。若涉及不同密度的分层流体(如油与水),则需分段计算各层压力并累加,而不能直接套用单一密度值。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch9: Gases (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

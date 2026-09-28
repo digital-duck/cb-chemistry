@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cathodic Protection | Chemistry Ch17</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="cathodic-protection-阴极保护">Cathodic Protection（阴极保护）</h2>
+<p><strong>定义</strong></p>
+<p>金属腐蚀本质上是一个电化学过程：铁在潮湿或含盐环境中失去电子被氧化，即</p>
+$$\text{Fe} \rightarrow \text{Fe}^{2+} + 2e^-$$
+<p>这一反应发生在金属表面充当"阳极"的区域，而失去的电子随后与水和氧气结合生成氢氧根离子，发生在"阴极"区域：</p>
+$$\text{O}_2 + 2\text{H}_2\text{O} + 4e^- \rightarrow 4\text{OH}^-$$
+<p>阴极保护（cathodic protection）的核心思路是：既然腐蚀源于金属被迫充当阳极而失去电子，那么只要人为地持续向被保护金属提供电子，使其电位维持在阴极状态，它就不会再被氧化。换句话说，工程师"贿赂"这块金属，让它免于氧化，代价由别的材料或外部电源承担。</p>
+<p><strong>工作实例</strong></p>
+<p>最常见的做法是"牺牲阳极法"：在埋地钢管或船体上焊接一块比铁更活泼的金属，如锌（Zn）或镁（Mg）。由于锌的标准还原电位（约 $-0.76\ \text{V}$）远低于铁（约 $-0.44\ \text{V}$），当两者用导线连通并置于同一电解质环境（如潮湿土壤或海水）中时，锌会优先失去电子被氧化：</p>
+$$\text{Zn} \rightarrow \text{Zn}^{2+} + 2e^-$$
+<p>这些电子沿导线流向钢管，使钢管表面持续获得电子而保持还原态，阳极反应被抑制。锌块逐渐被消耗、"牺牲"，因此得名。当锌块耗尽后需要定期更换，这也是输油管道和船舶龙骨检修的常规项目。</p>
+<p>第二种方法是"外加电流法"：用直流电源的负极连接被保护金属，正极连接一个惰性辅助阳极（如石墨或高硅铸铁），强制电子从外部电源流入金属结构。此法适用于保护大型或电阻较高的结构，如桥梁桩基和地下储罐，保护电流可通过整流器精确调节。</p>
+<p><strong>问题解决应用</strong></p>
+<p>工程师在设计阴极保护系统时，需要根据待保护金属表面积、周围电解质的导电性（如土壤含水量、盐度）以及预期使用寿命，计算所需牺牲阳极的总质量或外加电流的电流密度，以确保保护电位始终维持在铁不被氧化的范围内（通常低于 $-0.85\ \text{V}$ 相对于标准参比电极）。若阳极选择不当（例如误用比铁更不活泼的金属），则电子流向反而会加速铁的腐蚀，这也是选材时必须依据活泼性顺序（活动性序列）严格判断的原因。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch17: Electrochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

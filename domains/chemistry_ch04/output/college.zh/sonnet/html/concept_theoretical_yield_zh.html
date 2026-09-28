@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Theoretical Yield | Chemistry Ch04</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="theoretical-yield">Theoretical Yield</h2>
+<p><strong>定义</strong></p>
+<p>在化学反应中，<strong>理论产量</strong>是指假设反应完全按照化学方程式进行、没有任何损耗时，某一产物能够生成的最大量。它由<strong>限量试剂</strong>（反应中最先耗尽、从而限制产物生成量的试剂）通过化学方程式中的摩尔比计算得出。理论产量是一个理想化的上限，实际实验中获得的产量（称为<strong>实际产量</strong>）通常低于理论产量，两者的比值即为<strong>产率</strong>（yield percentage）：</p>
+$$
+\text{产率} (\%) = \frac{\text{实际产量}}{\text{理论产量}} \times 100\%
+$$
+<p><strong>计算示例</strong></p>
+<p>考虑反应：</p>
+$$
+2\,\text{H}_2(g) + \text{O}_2(g) \rightarrow 2\,\text{H}_2\text{O}(l)
+$$
+<p>假设实验中使用 4.0 g 氢气（$\text{H}_2$，摩尔质量 2.0 g/mol）和 20.0 g 氧气（$\text{O}_2$，摩尔质量 32.0 g/mol）反应。</p>
+<p>第一步，将质量换算为摩尔数： $4.0\,\text{g} \div 2.0\,\text{g/mol} = 2.0\,\text{mol H}_2$ $20.0\,\text{g} \div 32.0\,\text{g/mol} = 0.625\,\text{mol O}_2$</p>
+<p>第二步，判断限量试剂。根据方程式，2 mol $\text{H}_2$ 需要 1 mol $\text{O}_2$。现有 2.0 mol $\text{H}_2$ 理论上只需 1.0 mol $\text{O}_2$，但实际只有 0.625 mol $\text{O}_2$，因此 $\text{O}_2$ 是限量试剂，$\text{H}_2$ 过量。</p>
+<p>第三步，以限量试剂计算理论产量： $0.625\,\text{mol O}_2 \times \dfrac{2\,\text{mol H}_2\text{O}}{1\,\text{mol O}_2} = 1.25\,\text{mol H}_2\text{O}$</p>
+<p>换算为质量（摩尔质量 18.0 g/mol）： $1.25\,\text{mol} \times 18.0\,\text{g/mol} = 22.5\,\text{g}$</p>
+<p>即理论产量为 22.5 g 水。</p>
+<p><strong>解决问题的应用</strong></p>
+<p>理论产量的计算是实验设计与工业生产中评估效率的核心工具。例如，若某次实验实际只收集到 18.0 g 水，则产率为：</p>
+$$
+\frac{18.0}{22.5} \times 100\% \approx 80\%
+$$
+<p>产率低于100%的原因可能包括副反应、产物分离过程中的损失，或反应未能完全进行。在实际应用中，化学家会先确定限量试剂、计算理论产量，再通过产率评估反应条件（如温度、催化剂、反应时间）是否需要优化，从而在成本与效率之间做出权衡。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch4: Stoichiometry of Chemical Reactions (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

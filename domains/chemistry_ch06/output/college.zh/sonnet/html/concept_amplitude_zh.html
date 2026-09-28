@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amplitude | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="amplitude">Amplitude</h2>
+<p><strong>定义</strong></p>
+<p>振幅（amplitude）是描述波动或振动强度的物理量，指振动物体离开平衡位置的最大位移。对于一个沿时间变化的波，若其位移可表示为</p>
+$$y(t) = A\sin(\omega t + \varphi)$$
+<p>其中 $A$ 就是振幅，$\omega$ 为角频率，$\varphi$ 为初相位。振幅始终取正值，单位与位移相同（如米、厘米），它决定了波所携带能量的大小——对机械波和电磁波而言，能量（或强度）通常正比于振幅的平方，即 $I \propto A^2$。这一点在声波、光波、地震波等多种波动现象中都成立，是理解"响度""亮度""震级"等感知量背后物理本质的关键。</p>
+<p><strong>实例解析</strong></p>
+<p>以简单的弹簧振子为例：一个质量为 $m$ 的物体连接弹簧，被拉离平衡位置 $5\ \text{cm}$ 后释放，做简谐振动。此时振幅 $A = 5\ \text{cm}$，物体在振动过程中离开平衡点的位移始终不超过这个值。若之后系统受到阻力（如空气摩擦），振幅会随时间逐渐减小，这种现象称为阻尼振动——振幅衰减的快慢反映了能量耗散的速率。</p>
+<p>再看声波的例子：拨动吉他弦时用力越大，弦的振幅越大，产生的声音就越响；音调（频率）保持不变，但响度随振幅平方增大而增大。这说明振幅和频率是描述波的两个独立参数，前者关乎"强度"，后者关乎"音高"或"颜色"。</p>
+<p><strong>问题解决应用</strong></p>
+<p>假设两列振幅分别为 $A_1 = 3\ \text{cm}$ 和 $A_2 = 4\ \text{cm}$ 的声波在同一介质中传播，且强度正比于振幅平方，求二者强度之比。</p>
+<p>由 $I \propto A^2$，可得</p>
+$$\frac{I_1}{I_2} = \frac{A_1^2}{A_2^2} = \frac{9}{16}$$
+<p>即第一列波的强度是第二列波的 $9/16$ 倍。这类计算在声学工程（如噪声控制、扬声器设计）、地震学（震级与地面运动振幅的对数关系）以及光学（激光功率与电场振幅的关系）中都十分常见，是量化"波有多强"这一直观感受的标准方法。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

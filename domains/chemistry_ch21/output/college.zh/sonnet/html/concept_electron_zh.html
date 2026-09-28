@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electron | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="electron">Electron</h2>
+<p><strong>定义</strong></p>
+<p>电子是一种带负电的亚原子粒子,电荷量为 $-1.6 \times 10^{-19}\,\text{C}$（记为基本电荷 $-e$),质量约为质子的 $1/1836$,可视为原子中质量几乎可忽略的组分。在原子结构中,电子并不像行星绕太阳那样沿固定轨道运动,而是以"电子云"的形式分布在原子核外的特定能级(shell)和亚能级(subshell、orbital)中,其位置只能用概率描述。每个原子的电子按照能量由低到高依次填入能级,填充顺序遵循能量最低原理、泡利不相容原理(每个轨道最多容纳 2 个自旋相反的电子)和洪特规则(同一亚层内电子尽量分占不同轨道)。最外层的电子称为价电子(valence electron),它们直接决定了原子的化学性质——包括原子如何与其他原子结合形成化学键。</p>
+<p><strong>实例解析</strong></p>
+<p>以钠原子(Na,原子序数 11)为例,其电子排布为 $1s^2\,2s^2\,2p^6\,3s^1$。前 10 个电子填满了内层(共 10 个,对应氖的稳定结构),只剩 1 个电子孤零零地位于第三层的 $3s$ 轨道。这个价电子结合得很松,钠原子容易失去它形成 $\text{Na}^+$ 离子,从而达到与氖相同的稳定电子结构。这正是钠金属化学性质活泼、极易与氯反应生成氯化钠(NaCl)的根本原因。</p>
+<p><strong>问题解决应用</strong></p>
+<p>判断一种元素的化学行为,关键一步就是写出并分析其电子排布,尤其是价电子数目。例如,氯(Cl,原子序数 17)的电子排布为 $1s^2\,2s^2\,2p^6\,3s^2\,3p^5$,最外层有 7 个价电子,只需再获得 1 个电子即可填满至 8 个(八电子规则),因此氯倾向于夺取电子形成 $\text{Cl}^-$。当钠遇到氯时,钠失去的那 1 个电子恰好被氯接收,二者通过静电吸引结合成离子化合物。类似地,分析碳(2p 亚层有 4 个价电子,既不易得也不易失)可以解释它为何倾向于与其他原子共享电子形成共价键,而不是形成离子。掌握电子排布规律,便能预测元素在化学反应中的行为,理解元素周期表的整体结构逻辑。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

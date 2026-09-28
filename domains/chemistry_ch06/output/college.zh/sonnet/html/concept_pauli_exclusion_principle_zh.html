@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pauli Exclusion Principle | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="pauli-exclusion-principle">Pauli Exclusion Principle</h2>
+<p><strong>定义</strong></p>
+<p>泡利不相容原理由沃尔夫冈·泡利于1925年提出，其核心表述为：在同一个原子中，任何两个电子都不能拥有完全相同的四个量子数 $(n, l, m_l, m_s)$。换言之，每一个原子轨道最多只能容纳两个电子，且这两个电子的自旋方向必须相反（自旋量子数 $m_s = +\frac{1}{2}$ 和 $m_s = -\frac{1}{2}$）。这一原理不仅适用于原子中的电子，也适用于所有属于费米子（自旋为半整数的粒子）的粒子，例如质子和中子。泡利不相容原理是理解原子结构、元素周期表规律以及化学键形成的基础，它解释了为什么电子不会全部"塌陷"到能量最低的轨道中，而是按照特定的规则逐层填充。</p>
+<p><strong>范例解析</strong></p>
+<p>以氧原子（原子序数为8）为例。氧原子的电子排布为 $1s^2 2s^2 2p^4$。根据泡利不相容原理，$1s$ 轨道最多容纳2个电子（自旋相反），$2s$ 轨道同样容纳2个电子。而 $2p$ 轨道包含三个简并的子轨道（$2p_x$、$2p_y$、$2p_z$），根据洪特规则，4个电子会先各自占据一个子轨道（自旋平行），第四个电子才与其中一个已占据的子轨道配对（自旋相反）。这样，$2p_x$ 轨道中的两个电子虽然占据相同的空间轨道，但自旋方向相反，从而满足泡利不相容原理——它们的第四个量子数不同。</p>
+<p><strong>解题应用</strong></p>
+<p>泡利不相容原理是预测原子电子排布和推导元素周期表结构的核心工具。例如，判断某元素基态电子排布是否合理时，需检查每个轨道容纳的电子数是否超过其上限（$s$ 轨道2个，$p$ 轨道6个，$d$ 轨道10个，$f$ 轨道14个）。若给出电子排布 $1s^2 2s^2 2p^6 3s^1$（钠原子），可以验证：$1s$、$2s$ 各2个电子，$2p$ 恰好6个电子（三个子轨道各2个，自旋配对），$3s$ 有1个未配对电子，符合原理要求。此外，该原理也解释了为何过渡金属的 $d$ 轨道最多容纳10个电子，以及为何某些元素（如铬、铜）会出现"反常"电子排布——电子倾向于使半满或全满的 $d$ 轨道更稳定。掌握这一原理，学生便能系统地推导任意元素的电子排布，进而理解其化学性质与周期性规律的内在联系。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

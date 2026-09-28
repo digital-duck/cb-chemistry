@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Element | Chemistry Ch01</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="element">Element</h2>
+<p>An <strong>element</strong> (also called a <em>member</em>) is any single object that belongs to a set. If $S = \{2, 4, 6, 8\}$, then $6$ is an element of $S$, written $6 \in S$. The symbol $\notin$ means "is not an element of": $7 \notin S$. Elements can be numbers, strings, functions, other sets — anything. What matters is only whether an object is inside the collection or not; there is no concept of duplicates or order at this level.</p>
+<p>Formally, a set is entirely defined by its elements. Two sets are equal if and only if they contain exactly the same elements:</p>
+$$A = B \iff (\forall x,\; x \in A \Leftrightarrow x \in B)$$
+<p>This is called the <strong>axiom of extensionality</strong>. It means $\{1, 2, 3\} = \{3, 1, 2\}$ — order is irrelevant — and $\{1, 1, 2\} = \{1, 2\}$ — repetition is irrelevant.</p>
+<p><strong>Worked example.</strong> Let $P$ be the set of prime numbers less than 20:</p>
+$$P = \{2, 3, 5, 7, 11, 13, 17, 19\}$$
+<p>Is $15 \in P$? Since $15 = 3 \times 5$, it is composite, so $15 \notin P$. Is $\sqrt{4} \in P$? $\sqrt{4} = 2$, and $2 \in P$, so yes. The check is always the same: evaluate the object, then test membership against the defining rule or list.</p>
+<p><strong>Problem-solving application.</strong> Membership testing is the foundation of filtering in code. Given a list of user-submitted values, you want only the valid options:</p>
+<pre><code>VALID_GRADES = {"A", "B", "C", "D", "F"}
+
+submissions = ["A", "Z", "B", "Pass", "C"]
+clean = [g for g in submissions if g in VALID_GRADES]
+# clean → ["A", "B", "C"]</code></pre>
+<p>Here <code>VALID_GRADES</code> is a Python <code>set</code>, and <code>g in VALID_GRADES</code> is exactly the mathematical test $g \in S$ — executed in $O(1)$ average time because sets use hashing. Swapping the container from a list to a set doesn't change the concept; it just makes the membership test fast. Recognizing "is this object in this collection?" as an element-membership question lets you choose the right data structure — set for fast lookup, list when order or duplicates matter — and reason clearly about correctness before writing a single line.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

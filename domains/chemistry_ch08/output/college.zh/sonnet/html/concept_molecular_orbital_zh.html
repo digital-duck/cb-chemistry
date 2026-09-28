@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Molecular Orbital | Chemistry Ch08</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="molecular-orbital">Molecular Orbital</h2>
+<p><strong>定义</strong></p>
+<p>分子轨道理论认为，当两个原子相互靠近成键时，它们各自的原子轨道会重新组合，形成属于整个分子、而不再属于单个原子的新轨道，称为分子轨道（molecular orbital, MO）。这与更简单的价键理论（认为电子被"定域"在两个原子之间的一根键上）不同：分子轨道理论把电子看作在整个分子范围内离域运动的波函数。</p>
+<p>两个原子轨道组合时，遵循"轨道数目守恒"原则：$n$ 个原子轨道线性组合，必然生成 $n$ 个分子轨道。以最简单的氢分子 $H_2$ 为例，两个氢原子的 $1s$ 轨道以同相位叠加，形成一个能量更低的<strong>成键轨道</strong>（bonding orbital，记作 $\sigma_{1s}$）；若以反相位叠加，则形成能量更高的<strong>反键轨道</strong>（antibonding orbital，记作 $\sigma_{1s}^*$）。电子优先填入能量较低的成键轨道，从而使体系总能量下降，这正是化学键形成的本质原因。</p>
+<p><strong>成键级数：键的稳定性判据</strong></p>
+<p>分子轨道理论最实用的工具是<strong>键级（bond order）</strong>的计算：</p>
+$$
+\text{键级} = \frac{(\text{成键轨道电子数}) - (\text{反键轨道电子数})}{2}
+$$
+<p>以 $H_2$ 为例：两个电子都进入 $\sigma_{1s}$，键级 $=(2-0)/2=1$，对应一个稳定的单键。若考虑假想的 $He_2$：四个电子必须分别填满 $\sigma_{1s}$ 和 $\sigma_{1s}^*$，键级 $=(2-2)/2=0$，说明 $He_2$ 分子不能稳定存在——这与实验观测完全一致，也是分子轨道理论优于简单价键理论的关键证据。</p>
+<p><strong>问题解决应用</strong></p>
+<p>分子轨道理论能解释价键理论无法解释的现象，其中最经典的是<strong>氧分子 $O_2$ 的顺磁性</strong>。价键理论预测 $O_2$ 所有电子成对、应为抗磁性，但实验证明液态氧能被磁铁吸引，即含有未成对电子。用分子轨道能级图分析 $O_2$ 的 16 个价电子填充顺序，会发现最高能量的两个电子分别占据一对简并的 $\pi^*$ 反键轨道（洪特规则），每个轨道各一个未成对电子，键级为 $(8-4)/2=2$，与双键实验值吻合，同时正确预测了顺磁性。这类分析训练的核心技能是：写出分子轨道能级排布、计算键级、并据此判断分子的稳定性、键长与磁性——这是理解从 $O_2$、$N_2$ 到过渡金属配合物成键性质的通用方法。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch8: Advanced Theories of Covalent Bonding (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

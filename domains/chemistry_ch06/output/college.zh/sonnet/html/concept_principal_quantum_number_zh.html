@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Principal Quantum Number | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="principal-quantum-number">Principal Quantum Number</h2>
+<p><strong>定义</strong></p>
+<p>主量子数（principal quantum number），符号为 $n$，是描述原子中电子所处能级的量子数，取值为正整数：$n = 1, 2, 3, \dots$。$n$ 的大小决定了电子所在电子层（shell）与该电子的平均能量及其离核的平均距离：$n$ 越大，电子层离原子核越远，电子的能量越高，也越不稳定（更容易被移走或参与化学反应）。对于氢原子及类氢离子，电子的能量可以精确地表示为</p>
+$$E_n = -\dfrac{13.6\ \text{eV}}{n^2}$$
+<p>负号表示电子被束缚在原子核附近，能量为负值；随着 $n$ 增大，$E_n$ 越来越接近于零，代表电子逐渐脱离原子核的束缚（电离）。需要注意的是，对于多电子原子，由于电子间的相互排斥作用，实际能量还与角量子数 $l$ 有关，但 $n$ 始终是决定能级"层级"的主要因素。</p>
+<p><strong>实例分析</strong></p>
+<p>以氢原子为例：当电子处于 $n=1$（基态）时，$E_1 = -13.6\ \text{eV}$，这是氢原子最稳定的状态。若电子吸收能量跃迁到 $n=2$，则 $E_2 = -13.6/4 = -3.4\ \text{eV}$。跃迁所需吸收的能量为</p>
+$$\Delta E = E_2 - E_1 = -3.4 - (-13.6) = 10.2\ \text{eV}$$
+<p>这正是氢原子光谱中莱曼系（Lyman series）谱线之一的能量来源：电子从高能级跃迁回 $n=1$ 时,会以光子形式释放出这部分能量。</p>
+<p><strong>问题解决应用</strong></p>
+<p>利用上述公式，可以计算任意两个能级间跃迁所吸收或释放的能量，进而推算出对应光子的波长，这是天文学家通过恒星光谱判断其化学组成的基础方法之一。例如,若某氢原子电子从 $n=3$ 跃迁至 $n=2$（巴耳末系的一部分），可先分别求出 $E_3 = -13.6/9 \approx -1.51\ \text{eV}$ 与 $E_2 = -3.4\ \text{eV}$,再求差值 $\Delta E \approx 1.89\ \text{eV}$，对应可见光中的红色谱线（波长约 656 nm）。掌握 $n$ 与能量的关系，是理解原子发射光谱、吸收光谱以及元素周期表电子排布规律的关键起点。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

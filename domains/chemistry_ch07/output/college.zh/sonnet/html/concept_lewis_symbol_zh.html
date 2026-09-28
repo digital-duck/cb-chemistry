@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lewis Symbol | Chemistry Ch07</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="lewis-符号">Lewis 符号</h2>
+<p><strong>定义</strong></p>
+<p>Lewis 符号（路易斯符号，Lewis symbol）是用元素符号加上周围的点来表示原子最外层电子（价电子）数目的一种简便记法，由美国化学家 Gilbert N. Lewis 于 1916 年提出。书写规则很简单：先写出元素符号,再在其上、下、左、右四个方位依次画点,每个方位最多放两个点,先单独占位再配对。价电子数等于该元素在周期表中所在的主族族号（对于主族元素）。例如碳（第 IVA 族）有 4 个价电子，写成碳原子四周各有一个点；氧（第 VIA 族）有 6 个价电子，四个方位中有两个方位是成对的点，两个方位是单点。Lewis 符号的价值在于，它把电子排布中最活跃、决定化学性质的那一部分——价电子——从内层电子中抽取出来，让我们能直观地"看见"原子在成键时会得到、失去或共享多少个电子。</p>
+<p><strong>范例</strong></p>
+<p>以钠（Na, 第 IA 族，1 个价电子）和氯（Cl, 第 VIIA 族，7 个价电子）为例。钠的 Lewis 符号是 "Na" 旁边一个点；氯的 Lewis 符号是 "Cl" 四周共有七个点，即三对加一个单点。当钠与氯反应时，钠失去那一个价电子（形成 Na⁺，无点），氯获得这个电子把单点补成对（形成 Cl⁻，四对点，即八个电子），从而两者都达到稀有气体的稳定电子结构——这正是"八电子规则"（octet rule）的图像化体现。</p>
+<p><strong>解题应用</strong></p>
+<p>Lewis 符号最实用的地方是快速判断一个原子在成键中会扮演什么角色，而不需要死记电子排布式。做题时可以遵循三步：</p>
+<li>根据主族族号确定价电子数（例如硫在 VIA 族，有 6 个价电子）。</li>
+<li>画出点的分布，找出未成对的点——它们就是可以形成共价键或被转移的电子。</li>
+<li>判断该原子倾向于失去电子（点数少，接近 0，如碱金属）还是获得/共享电子（点数多，接近 8，如卤素、氧族）以达到 8 电子稳定结构。</li>
+<p>例如判断 $\text{MgCl}_2$ 的形成：镐（Mg, IIA 族）有 2 个价电子，两个氯原子各需要 1 个电子来补满八电子。Lewis 符号立刻显示：Mg 失去 2 个点，恰好供两个 Cl 各补一个点，得到 $\text{Mg}^{2+}$ 与 $2\,\text{Cl}^-$。这种"数点、配点"的直观方法，是预测离子化合物化学式比例的基础工具，后续学习 Lewis 结构式（分子中的共价键与孤对电子）也由此展开。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch7: Chemical Bonding and Molecular Geometry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

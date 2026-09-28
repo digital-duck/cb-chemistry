@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Titration Analysis | Chemistry Ch04</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="滴定分析">滴定分析</h2>
+<p><strong>定义</strong></p>
+<p>滴定分析（Titration Analysis）是一种通过精确添加已知浓度的溶液（标准液）与未知浓度的溶液反应，直到反应恰好完全（即达到"化学计量点"）为止，从而计算出未知溶液浓度的定量分析方法。最常见的类型是酸碱滴定：用已知浓度的强碱（如 NaOH）滴入未知浓度的酸中，通过指示剂颜色变化或 pH 计判断反应终点。核心关系式为</p>
+$$
+c_{\text{酸}} \, V_{\text{酸}} = c_{\text{碱}} \, V_{\text{碱}}
+$$
+<p>该式仅适用于酸碱恰好按 1:1 摩尔比反应的情形；若反应比例不同，需引入化学方程式中的系数进行调整。</p>
+<p><strong>实例演示</strong></p>
+<p>某学生用 0.100 mol/L 的 NaOH 溶液滴定 25.0 mL 未知浓度的 HCl 溶液，当加入 NaOH 至 18.4 mL 时，指示剂（酚酞）刚好变色，标志到达终点。由于 HCl 与 NaOH 按 1:1 反应：</p>
+$$
+n_{\text{NaOH}} = c \times V = 0.100 \ \text{mol/L} \times 0.0184 \ \text{L} = 1.84 \times 10^{-3} \ \text{mol}
+$$
+<p>因此 $n_{\text{HCl}} = 1.84 \times 10^{-3}$ mol，未知盐酸浓度为：</p>
+$$
+c_{\text{HCl}} = \frac{1.84 \times 10^{-3} \ \text{mol}}{0.0250 \ \text{L}} = 0.0736 \ \text{mol/L}
+$$
+<p><strong>解题应用</strong></p>
+<p>滴定的关键在于正确识别"终点"与"化学计量点"的区别——前者是我们通过指示剂观察到的信号，后者是反应真正完全时的理论点，两者之间可能存在微小误差（滴定误差）。解题时应遵循三步流程：</p>
+<li>写出配平的化学方程式，确定反应物的摩尔比；</li>
+<li>由已知溶液的浓度和体积计算其摩尔数；</li>
+<li>按比例换算未知物的摩尔数，再除以其体积得到浓度。</li>
+<p>例如，若滴定反应为 $\text{H}_2\text{SO}_4 + 2\text{NaOH} \rightarrow \text{Na}_2\text{SO}_4 + 2\text{H}_2\text{O}$，则 NaOH 与硫酸的摩尔比为 2:1，计算时必须除以 2 才能得到硫酸的真实摩尔数——遗漏这一步是学生最常见的错误。滴定分析广泛应用于水质检测、食品酸度测定和药物纯度分析等实际场景，是定量化学中最基础也最实用的技能之一。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch4: Stoichiometry of Chemical Reactions (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

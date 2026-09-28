@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Energy Level | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="energy-level">Energy Level</h2>
+<p>An energy level is one of a discrete set of allowed total energies that a bound quantum system — such as an electron in an atom, a molecule vibrating, or a nucleus — is permitted to have. This is a departure from classical intuition: a classical object like a planet in orbit or a mass on a spring can carry any energy value along a continuous range, but a quantum system confined by a potential (bound) can only occupy specific, quantized values. The system cannot exist between these levels; it must "jump" from one to another, absorbing or emitting energy — typically as a photon — equal to exactly the difference between the two levels.</p>
+<p><strong>Worked example.</strong> The clearest illustration is the hydrogen atom. Quantum mechanics predicts (and experiment confirms) that its allowed energies are</p>
+$$E_n = -\frac{13.6\ \text{eV}}{n^2}, \qquad n = 1, 2, 3, \dots$$
+<p>where $n$ is the principal quantum number and eV (electron-volt) is a convenient energy unit at the atomic scale. The lowest level, $n=1$, gives $E_1 = -13.6$ eV — the ground state. As $n$ increases, the levels rise and crowd closer together, approaching $E=0$ (the electron becomes unbound) as $n \to \infty$. The negative sign simply reflects that the electron is bound: energy must be added to free it.</p>
+<p><strong>Problem-solving application.</strong> Suppose an electron drops from $n=3$ to $n=2$. The energy released is</p>
+$$\Delta E = E_3 - E_2 = \left(-\frac{13.6}{9}\right) - \left(-\frac{13.6}{4}\right) \approx 1.89\ \text{eV}.$$
+<p>This energy is carried away by a single photon. A useful rule of thumb at this scale is that a 1240 eV·nm photon has wavelength $\lambda = 1240/\Delta E$ (in nm), which for $\Delta E \approx 1.89$ eV gives $\lambda \approx 656$ nm — the red line of hydrogen's visible spectrum. This is exactly how astronomers identify elements in distant stars: each element has a unique ladder of energy levels, producing a unique fingerprint of spectral lines. The same reasoning — compute $\Delta E$ between two allowed levels, then convert to wavelength — is the standard problem-solving pattern used across atomic, molecular, and nuclear spectroscopy.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heat | Chemistry Ch05</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="heat-热量">Heat（热量）</h2>
+<p><strong>定义</strong></p>
+<p>热（heat，符号 $q$）是由于温度差异而在两个物体或系统之间传递的能量，传递方向总是从高温物体流向低温物体，直到两者达到热平衡。热不是物质本身含有的东西——我们不能说一个物体"含有多少热"，只能说系统在某个过程中"吸收"或"放出"了多少热量。这一点与内能（internal energy）不同：内能是系统本身具有的能量总和，而热和功一样，只是能量转移的一种方式。热量的国际单位是焦耳（J），常用单位还有卡路里（cal），$1\text{ cal} = 4.184\text{ J}$。</p>
+<p>物质吸收或放出热量时，若不发生相变，温度变化与热量的关系由比热容公式给出：</p>
+$$q = mc\Delta T$$
+<p>其中 $m$ 是质量，$c$ 是比热容（specific heat capacity，单位 $\text{J/(g·°C)}$），$\Delta T$ 是温度变化量。比热容反映了某种物质"吸热而不易升温"的能力，水的比热容很高（$c = 4.184\text{ J/(g·°C)}$），这也是为什么海洋能调节沿海地区气候的原因。</p>
+<p><strong>例题</strong></p>
+<p>将 50.0 g 的铁块（$c = 0.449\text{ J/(g·°C)}$）从 25°C 加热到 100°C，需要吸收多少热量？</p>
+$$q = mc\Delta T = 50.0 \times 0.449 \times (100 - 25) = 1684\text{ J}$$
+<p><strong>应用与解题练习</strong></p>
+<p>在量热法（calorimetry）实验中，常利用能量守恒来求未知的比热容或最终温度：一个高温物体放出的热量等于低温物体吸收的热量，即 $q_{放} = -q_{吸}$。例如，将一块温度未知的金属投入已知质量和温度的水中，测出混合后的平衡温度，就可以反推金属的比热容。这类问题的关键在于正确设定系统边界、区分"放热为负、吸热为正"的符号约定，并假设系统与外界没有热量损失（绝热理想化）。掌握这一思路是理解化学反应热效应（如燃烧热、反应焓变测定）的基础。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch5: Thermochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

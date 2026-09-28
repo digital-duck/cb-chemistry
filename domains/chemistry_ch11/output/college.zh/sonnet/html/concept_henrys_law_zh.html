@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Henrys Law | Chemistry Ch11</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="henrys-law">Henrys Law</h2>
+<p><strong>定义</strong></p>
+<p>亨利定律描述了气体在液体中的溶解度与该气体在液面上方分压之间的关系。在恒定温度下，一种气体溶解于溶剂中的量与该气体的分压成正比：</p>
+$$C = k_H \cdot P$$
+<p>其中 $C$ 是气体在溶液中的浓度（通常以 $\text{mol/L}$ 表示），$P$ 是该气体在液面上方的分压（通常以 $\text{atm}$ 表示），$k_H$ 是亨利常数，其数值取决于气体种类、溶剂种类和温度。$k_H$ 越大，表示该气体越容易溶解。亨利定律只适用于稀溶液，且气体与溶剂之间不发生化学反应的情形——例如 $O_2$、$N_2$、$CO_2$ 溶于水，但不适用于 $NH_3$ 或 $HCl$ 这类会与水发生反应的气体。</p>
+<p><strong>例题</strong></p>
+<p>已知氧气在水中的亨利常数约为 $k_H = 1.3 \times 10^{-3}\ \text{mol/(L·atm)}$（25°C）。若大气中氧气分压约为 $0.21\ \text{atm}$，求水中溶解氧的平衡浓度。</p>
+<p>代入公式：</p>
+$$C = k_H \cdot P = 1.3 \times 10^{-3} \times 0.21 \approx 2.7 \times 10^{-4}\ \text{mol/L}$$
+<p>换算为常用单位约为 $8.7\ \text{mg/L}$，这与实际测得的地表水溶解氧浓度（通常 $8$–$10\ \text{mg/L}$）相符。</p>
+<p><strong>应用于问题求解</strong></p>
+<p>亨利定律在生理学与环境科学中有重要应用。潜水员上浮过快会患减压病：深水高压下，血液中溶解的氮气浓度按亨利定律升高；若快速上浮使外部压力骤降，血液中过饱和的氮气会形成气泡，堵塞血管，引发疼痛甚至危及生命。这解释了为何潜水手册要求分级减压上浮。</p>
+<p>另一个应用是水体富营养化后的鱼类死亡：水温升高会使气体的 $k_H$ 减小（多数气体溶解度随温度升高而降低），导致水中溶解氧浓度下降，鱼类因缺氧窒息。工程师在设计曝气池或计算温排水对水生生态的影响时，需要用亨利定律定量估算不同温度、压力条件下的溶解氧含量，从而判断是否需要额外充氧或降温处理。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch11: Solutions and Colloids (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

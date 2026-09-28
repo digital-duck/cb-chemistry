@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ph Scale | Chemistry Ch14</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="ph-scale">Ph Scale</h2>
+<p><strong>定义</strong></p>
+<p>pH 值是用来衡量水溶液酸碱性强弱的指标，其定义为氢离子浓度的负对数：</p>
+$$\text{pH} = -\log_{10}[\text{H}^+]$$
+<p>其中 $[\text{H}^+]$ 表示溶液中氢离子的摩尔浓度（单位：mol/L）。纯水在 25°C 时会发生微弱的自电离：</p>
+$$\text{H}_2\text{O} \rightleftharpoons \text{H}^+ + \text{OH}^-$$
+<p>此时 $[\text{H}^+] = [\text{OH}^-] = 10^{-7}$ mol/L，对应 pH = 7，称为中性。pH 小于 7 的溶液为酸性，$[\text{H}^+]$ 较高；pH 大于 7 的溶液为碱性，$[\text{H}^+]$ 较低。由于该量表是对数尺度，pH 每变化 1 个单位，氢离子浓度就变化 10 倍——这是理解酸碱强度差异的关键，也是必须引入对数运算的原因：线性尺度无法有效表示跨越十几个数量级的浓度范围（从 $10^0$ 到 $10^{-14}$ mol/L）。</p>
+<p><strong>范例演示</strong></p>
+<p>假设某柠檬汁样品的氢离子浓度为 $[\text{H}^+] = 2 \times 10^{-2}$ mol/L，求其 pH 值。</p>
+$$\text{pH} = -\log_{10}(2 \times 10^{-2}) = -(\log_{10}2 + \log_{10}10^{-2}) = -(0.30 - 2) = 1.70$$
+<p>因此该柠檬汁的 pH 约为 1.7，属于强酸性，这与柠檬汁中富含柠檬酸的事实相符。</p>
+<p><strong>解决问题的应用</strong></p>
+<p>pH 概念的实际价值在于反向推算与比较。例如，某血液样本的正常 pH 约为 7.4，若某患者血液 pH 降至 7.1（酸中毒），氢离子浓度增加了多少倍？</p>
+$$\frac{[\text{H}^+]_{7.1}}{[\text{H}^+]_{7.4}} = 10^{-7.1 - (-7.4)} = 10^{0.3} \approx 2.0$$
+<p>即氢离子浓度大约增加了 2 倍——尽管 pH 数值仅下降 0.3，但这在生理上是极其显著的变化，足以干扰酶的功能和细胞代谢。这一计算展示了为什么医学、环境科学和化学实验中即使是很小的 pH 波动也必须严肃对待：对数尺度会放大看似微小数值差异背后的真实浓度变化。掌握 pH 与氢离子浓度之间的换算，是分析缓冲溶液、评估水质、诊断代谢性疾病等实际问题的基础工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch14: Acid-Base Equilibria (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

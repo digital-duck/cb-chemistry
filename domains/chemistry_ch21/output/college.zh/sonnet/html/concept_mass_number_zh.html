@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mass Number | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="mass-number">Mass Number</h2>
+<p><strong>定义</strong></p>
+<p>质量数（mass number），符号为 $A$，是原子核中质子数与中子数之和：</p>
+$$A = Z + N$$
+<p>其中 $Z$ 为原子序数（质子数，决定元素种类），$N$ 为中子数。质量数是一个整数，因为它是核子（质子和中子）的计数，而不是原子的实际质量——原子的真实质量（以原子质量单位 u 表示）会因结合能和质子、中子的微小质量差异而略低于 $A$。质量数通常写在元素符号的左上角，如 $^{14}_{6}\text{C}$ 表示碳的一种同位素，$A=14$，$Z=6$，因此 $N = 14-6 = 8$。</p>
+<p>同一元素的原子必须具有相同的 $Z$，但可以拥有不同的 $N$，从而形成不同的<strong>同位素（isotopes）</strong>。例如氢的三种同位素：氕 $^{1}_{1}\text{H}$（$N=0$）、氘 $^{2}_{1}\text{H}$（$N=1$）、氚 $^{3}_{1}\text{H}$（$N=2$），它们化学性质几乎相同，但核内中子数不同，导致质量和稳定性（是否具放射性）不同。</p>
+<p><strong>实例演算</strong></p>
+<p>已知铀的一种同位素质量数 $A = 238$，其原子序数 $Z = 92$。求中子数 $N$。</p>
+<p>利用 $N = A - Z$：</p>
+$$N = 238 - 92 = 146$$
+<p>所以铀-238 的原子核含有 92 个质子和 146 个中子。</p>
+<p><strong>解题应用</strong></p>
+<p>化学与核物理中常需要从符号反推粒子组成，或判断两个核素是否为同位素。</p>
+<p>练习：某核素表示为 $^{35}_{17}\text{Cl}$。</p>
+<li>求其质子数、中子数、电子数（中性原子）。</li>
+<li>若另一核素为 $^{37}_{17}\text{Cl}$，两者是否为同位素？为什么？</li>
+<p>解答思路：</p>
+<li>$Z=17$，故质子数 = 17，中性原子电子数也为 17。</li>
+<li>$N = A - Z = 35 - 17 = 18$。</li>
+<li>两者 $Z$ 相同（均为 17）但 $A$ 不同（35 与 37），中子数分别为 18 和 20，因此二者互为<strong>同位素</strong>——化学行为相同，但质量与核稳定性不同（氯-37 略重）。</li>
+<p>这种"由 $A$、$Z$ 反推 $N$"的技巧，是理解同位素丰度计算、放射性衰变链以及核反应中质量数守恒（$A$ 在核反应前后总和不变）的基础工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

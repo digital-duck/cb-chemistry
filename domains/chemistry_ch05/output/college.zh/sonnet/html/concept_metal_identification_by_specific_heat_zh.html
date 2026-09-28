@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metal Identification By Specific Heat | Chemistry Ch05</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="金属比热容鉴定法">金属比热容鉴定法</h2>
+<p><strong>定义</strong></p>
+<p>比热容(specific heat capacity, $c$)是指单位质量的物质温度每升高 $1°C$（或 $1\text{ K}$）所需吸收的热量，单位通常为 $\text{J/(g·°C)}$。不同金属的比热容是其固有的物理性质，几乎不随样品大小改变，因此可以像"指纹"一样用来区分未知金属。这一现象背后的物理解释是：比热容主要取决于原子的摩尔质量和晶格振动方式——根据杜隆-珀替定律(Dulong-Petit law)，多数固态金属的摩尔热容近似相同（约 $25\ \text{J/(mol·°C)}$），因此原子量越大的金属，其质量比热容越小。这就是为什么铅（原子量大）比热容很低，而铝（原子量小）比热容较高。</p>
+<p><strong>热量守恒与计算</strong></p>
+<p>鉴定实验通常借助量热法：将已知质量、已知初始温度的金属块投入盛有已知质量水的量热计中，待系统达到热平衡后测得混合温度。假设量热计本身吸热可忽略，则金属放出的热量等于水吸收的热量：</p>
+$$
+m_{\text{金属}} \, c_{\text{金属}} \, (T_{\text{初,金属}} - T_f) = m_{\text{水}} \, c_{\text{水}} \, (T_f - T_{\text{初,水}})
+$$
+<p>由此可解出未知金属的比热容 $c_{\text{金属}}$，再与标准比热容表比对，确定金属种类。</p>
+<p><strong>实例应用</strong></p>
+<p>某学生将质量为 $50.0\ \text{g}$、温度为 $95.0°C$ 的金属块投入 $100.0\ \text{g}$、初温为 $22.0°C$ 的水中，混合后平衡温度为 $27.4°C$。已知水的比热容为 $4.18\ \text{J/(g·°C)}$，代入公式：</p>
+$$
+c_{\text{金属}} = \frac{100.0 \times 4.18 \times (27.4-22.0)}{50.0 \times (95.0-27.4)} \approx 0.446\ \text{J/(g·°C)}
+$$
+<p>将结果与已知数据比对（铁约 $0.449\ \text{J/(g·°C)}$，铜约 $0.385$，铝约 $0.897$），可判断该金属最接近铁。</p>
+<p><strong>问题解决要点</strong></p>
+<p>实际操作中误差主要来自热量散失到空气或量热计壁——若忽略这部分吸热，会使计算出的比热容偏低，可能导致误判为比热容更小的重金属。因此实验设计上常采用绝热量热计，或对量热计热容进行校正，以提高鉴定的准确性。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch5: Thermochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

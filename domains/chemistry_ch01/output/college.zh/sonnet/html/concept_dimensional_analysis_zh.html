@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dimensional Analysis | Chemistry Ch01</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="dimensional-analysis-量纲分析">Dimensional Analysis（量纲分析）</h2>
+<p><strong>定义</strong></p>
+<p>量纲分析（也称因子标签法，factor-label method）是一种通过系统追踪计量单位来进行换算和验证计算结果的方法。其核心原理是：任何物理量都可以表示为"数值 × 单位"的形式，而任意等于 1 的比值（如 $\dfrac{1\ \text{km}}{1000\ \text{m}}$）都可以作为换算因子，乘入原式而不改变其实际大小。计算时只需保证单位能够像代数量一样相互约去，最终留下所需的目标单位，即可确认换算路径正确。这种方法尤其适用于化学、生物和地球科学中常见的多步单位换算，例如浓度、速率与剂量的计算。</p>
+<p><strong>范例演示</strong></p>
+<p>假设某患者需要按照 $0.15\ \text{mg/kg}$ 体重的剂量服用某药物，患者体重为 $70\ \text{kg}$，药液浓度为 $5\ \text{mg/mL}$。求应给药的体积（mL）。</p>
+<p>按照量纲分析的思路，将已知量依次相乘，使不需要的单位相互约去：</p>
+$$
+70\ \text{kg} \times \frac{0.15\ \text{mg}}{1\ \text{kg}} \times \frac{1\ \text{mL}}{5\ \text{mg}} = 2.1\ \text{mL}
+$$
+<p>可以看到，"kg" 与 "mg" 依次被约去，最终只剩下目标单位 "mL"。这正是量纲分析的价值所在：只要单位能正确抵消，计算路径在逻辑上就是自洽的，这为检查计算错误提供了一道独立于数值本身的"保险丝"。</p>
+<p><strong>问题解决应用</strong></p>
+<p>量纲分析真正的威力体现在多步、跨单位体系的复杂计算中。例如在生态学中估算某种群每年消耗的能量，需要将个体数量、单只日均摄食量（g/day）、食物的能量密度（kJ/g）逐层换算为年总能量（kJ/year）；在化学中将反应物的质量换算为摩尔数，再换算为生成物的质量，同样依赖于换算因子的连续相乘。解题时的通用策略是：（1）明确目标单位；（2）列出已知量及其单位；（3）寻找能够把已知单位逐步转化为目标单位的换算因子链；（4）核对最终单位是否与目标一致。若单位不匹配，几乎可以确定计算过程中存在错误——这使量纲分析不仅是一种计算工具，更是科学推理中自我校验的重要习惯。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch1: Essential Ideas (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semiconductor Doping | Chemistry Ch10</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="半导体掺杂">半导体掺杂</h2>
+<p><strong>定义</strong></p>
+<p>纯净的硅或锗晶体是本征半导体：原子以共价键结合成规则的晶格,室温下只有极少数电子能获得足够能量挣脱共价键、跃迁为自由电子,同时留下一个"空穴"。这种自由载流子(电子和空穴)浓度太低,导电能力介于导体和绝缘体之间,难以直接用于制造实用的电子器件。<strong>掺杂</strong>是指有意向纯净半导体晶体中掺入微量杂质原子(通常百万分之一到十万分之一的比例),从而大幅提高其导电能力,并控制其导电类型。</p>
+<p>掺杂分两种。若掺入的杂质原子(如磷、砷)价电子数比硅(4个价电子)多一个,即5个价电子,该原子与周围硅原子形成共价键后仍多出一个电子,这个电子很容易被激发为自由电子。这类杂质称为<strong>施主</strong>,掺杂后的材料以电子为多数载流子,称为<strong>N型半导体</strong>。若掺入的杂质原子(如硼、镓)只有3个价电子,与硅成键时会缺少一个电子,形成一个空穴,这类杂质称为<strong>受主</strong>,掺杂后的材料以空穴为多数载流子,称为<strong>P型半导体</strong>。</p>
+<p><strong>举例说明</strong></p>
+<p>以磷掺杂硅为例:硅晶体中每十万个硅原子掺入一个磷原子。磷的5个价电子中有4个与相邻硅原子形成共价键,第5个电子只受到微弱束缚,在室温下几乎全部电离为自由电子。这样,原本本征硅中每立方厘米约$1.5\times10^{10}$个自由电子,经掺杂后可提升到每立方厘米$10^{15}$个以上——导电能力提高了数万倍。</p>
+<p><strong>解决实际问题</strong></p>
+<p>掺杂技术的核心价值在于:通过控制掺杂浓度和区域,工程师可以在同一块晶体上精确"雕刻"出N型区、P型区及其交界(PN结),从而构建二极管、晶体管乃至整个集成电路。例如,制造一个二极管时,需要在硅片一侧扩散磷(形成N区),另一侧扩散硼(形成P区),两者交界处产生的PN结正是电流单向导通的物理基础。现代芯片制造中,离子注入技术可将掺杂浓度控制在百万分之几的精度,直接决定晶体管的开关速度和功耗。因此,理解掺杂不仅是理解半导体导电机制的关键,也是理解现代微电子器件如何被"设计"出特定电学行为的起点。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch10: Liquids and Solids (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

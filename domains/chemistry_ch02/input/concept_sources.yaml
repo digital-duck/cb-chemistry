@@ -1,0 +1,199 @@
+domain: chemistry_2e_ch2
+sources:
+  matter:
+    label: Matter
+    sections: []
+  element:
+    label: Element
+    sections:
+    - id: ch02_s2_1
+      title: 2.1 Early Ideas in Atomic Theory
+  electric_charge:
+    label: Electric Charge
+    sections: []
+  mass:
+    label: Mass
+    sections: []
+  daltons_atomic_theory:
+    label: Dalton's Atomic Theory
+    sections:
+    - id: ch02_s2_1
+      title: 2.1 Early Ideas in Atomic Theory
+  atom:
+    label: Atom
+    sections:
+    - id: ch02_s2_1
+      title: 2.1 Early Ideas in Atomic Theory
+  law_of_definite_proportions:
+    label: Law of Definite Proportions
+    sections:
+    - id: ch02_s2_1
+      title: 2.1 Early Ideas in Atomic Theory
+  law_of_multiple_proportions:
+    label: Law of Multiple Proportions
+    sections:
+    - id: ch02_s2_1
+      title: 2.1 Early Ideas in Atomic Theory
+  law_of_conservation_of_matter:
+    label: Law of Conservation of Matter
+    sections:
+    - id: ch02_s2_1
+      title: 2.1 Early Ideas in Atomic Theory
+  electron:
+    label: Electron
+    sections:
+    - id: ch02_s2_2
+      title: 2.2 Evolution of Atomic Theory
+  proton:
+    label: Proton
+    sections:
+    - id: ch02_s2_2
+      title: 2.2 Evolution of Atomic Theory
+  neutron:
+    label: Neutron
+    sections:
+    - id: ch02_s2_2
+      title: 2.2 Evolution of Atomic Theory
+  nucleus:
+    label: Nucleus
+    sections:
+    - id: ch02_s2_2
+      title: 2.2 Evolution of Atomic Theory
+  atomic_number:
+    label: Atomic Number (Z)
+    sections:
+    - id: ch02_s2_3
+      title: 2.3 Atomic Structure and Symbolism
+  mass_number:
+    label: Mass Number (A)
+    sections:
+    - id: ch02_s2_3
+      title: 2.3 Atomic Structure and Symbolism
+  atomic_mass_unit:
+    label: Atomic Mass Unit (amu)
+    sections:
+    - id: ch02_s2_3
+      title: 2.3 Atomic Structure and Symbolism
+  isotope:
+    label: Isotope
+    sections:
+    - id: ch02_s2_2
+      title: 2.2 Evolution of Atomic Theory
+    - id: ch02_s2_3
+      title: 2.3 Atomic Structure and Symbolism
+  average_atomic_mass:
+    label: Average Atomic Mass
+    sections:
+    - id: ch02_s2_3
+      title: 2.3 Atomic Structure and Symbolism
+  chemical_symbol:
+    label: Chemical Symbol
+    sections:
+    - id: ch02_s2_3
+      title: 2.3 Atomic Structure and Symbolism
+  ion:
+    label: Ion
+    sections:
+    - id: ch02_s2_3
+      title: 2.3 Atomic Structure and Symbolism
+    - id: ch02_s2_6
+      title: 2.6 Ionic and Molecular Compounds
+  cation:
+    label: Cation
+    sections:
+    - id: ch02_s2_3
+      title: 2.3 Atomic Structure and Symbolism
+    - id: ch02_s2_6
+      title: 2.6 Ionic and Molecular Compounds
+  anion:
+    label: Anion
+    sections:
+    - id: ch02_s2_3
+      title: 2.3 Atomic Structure and Symbolism
+    - id: ch02_s2_6
+      title: 2.6 Ionic and Molecular Compounds
+  molecular_formula:
+    label: Molecular Formula
+    sections:
+    - id: ch02_s2_4
+      title: 2.4 Chemical Formulas
+  empirical_formula:
+    label: Empirical Formula
+    sections:
+    - id: ch02_s2_4
+      title: 2.4 Chemical Formulas
+  structural_formula:
+    label: Structural Formula
+    sections:
+    - id: ch02_s2_4
+      title: 2.4 Chemical Formulas
+  chemical_bond:
+    label: Chemical Bond
+    sections:
+    - id: ch02_s2_4
+      title: 2.4 Chemical Formulas
+  isomers:
+    label: Isomers
+    sections:
+    - id: ch02_s2_4
+      title: 2.4 Chemical Formulas
+  periodic_law:
+    label: Periodic Law
+    sections:
+    - id: ch02_s2_5
+      title: 2.5 The Periodic Table
+  periodic_table:
+    label: Periodic Table
+    sections:
+    - id: ch02_s2_5
+      title: 2.5 The Periodic Table
+  element_classification:
+    label: Element Classification (Metals, Nonmetals, Metalloids)
+    sections:
+    - id: ch02_s2_5
+      title: 2.5 The Periodic Table
+  element_families:
+    label: Element Families (Groups)
+    sections:
+    - id: ch02_s2_5
+      title: 2.5 The Periodic Table
+  ionic_bond:
+    label: Ionic Bond
+    sections:
+    - id: ch02_s2_6
+      title: 2.6 Ionic and Molecular Compounds
+  covalent_bond:
+    label: Covalent Bond
+    sections:
+    - id: ch02_s2_6
+      title: 2.6 Ionic and Molecular Compounds
+  ionic_compound:
+    label: Ionic Compound
+    sections:
+    - id: ch02_s2_6
+      title: 2.6 Ionic and Molecular Compounds
+  molecular_compound:
+    label: Molecular (Covalent) Compound
+    sections:
+    - id: ch02_s2_6
+      title: 2.6 Ionic and Molecular Compounds
+  polyatomic_ion:
+    label: Polyatomic Ion
+    sections:
+    - id: ch02_s2_6
+      title: 2.6 Ionic and Molecular Compounds
+  chemical_nomenclature:
+    label: Chemical Nomenclature
+    sections:
+    - id: ch02_s2_7
+      title: 2.7 Chemical Nomenclature
+  predicting_ion_formation:
+    label: Predicting Ion Formation from Periodic Table Position
+    sections:
+    - id: ch02_s2_6
+      title: 2.6 Ionic and Molecular Compounds
+  mass_spectrometry:
+    label: Mass Spectrometry
+    sections:
+    - id: ch02_s2_3
+      title: 2.3 Atomic Structure and Symbolism

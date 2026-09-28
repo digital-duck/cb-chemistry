@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Critical Mass | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="critical-mass">Critical Mass</h2>
+<p><strong>Definition.</strong> Critical mass is the minimum amount of fissile material—such as uranium-235 or plutonium-239—needed to sustain a nuclear chain reaction at a constant rate. Below this threshold, too many neutrons escape the material's surface before they can strike another nucleus, and the reaction fizzles out. At or above critical mass, each fission event triggers, on average, at least one more fission event, so the reaction sustains itself (or grows, in a supercritical state).</p>
+<p>The physical intuition is a competition between volume and surface area. Fissioning nuclei release neutrons throughout the material's volume, but neutrons only escape through its surface. As a chunk of fissile material grows, its volume increases as the cube of its radius while its surface area increases only as the square. So a larger mass has relatively less surface through which neutrons can leak out, making it more likely that each released neutron causes another fission before escaping.</p>
+<p><strong>Worked example.</strong> Consider a roughly spherical mass of material with radius $r$. Volume scales as $r^3$, surface area as $r^2$, so the ratio of surface to volume is proportional to $1/r$. As $r$ increases, this ratio shrinks, meaning neutron leakage (proportional to surface area) becomes small relative to neutron production (proportional to volume). A bare sphere of weapons-grade uranium-235 has a critical mass of about 52 kg, corresponding to a sphere roughly 17 cm in diameter—about the size of a grapefruit.</p>
+<p><strong>Problem-solving application.</strong> Engineers exploit the surface-to-volume relationship to control reactions without needing huge quantities of material. A <em>neutron reflector</em>—a shell of material like beryllium surrounding the fissile core—bounces escaping neutrons back inward, effectively reducing the critical mass needed. Similarly, compressing the same mass into a smaller radius (as implosion-type weapons do) increases density and reduces surface-to-volume ratio, pushing a subcritical mass into a supercritical state. Conversely, reactor designers deliberately keep fuel arrangements below critical mass during handling and storage, using neutron-absorbing control rods to suppress the chain reaction. Understanding critical mass as a geometric and material property—not a fixed magic number—lets you reason about why reflectors, shape, density, and purity all shift the threshold, and why reactor safety depends on always staying on the correct side of it.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

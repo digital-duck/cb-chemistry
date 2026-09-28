@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hydronium Ion | Chemistry Ch14</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="hydronium-ion">Hydronium Ion</h2>
+<p><strong>定义</strong></p>
+<p>在纯水或水溶液中，几乎不存在裸露的质子（$\text{H}^+$）。一个质子的电荷密度极高，会立即与附近水分子中氧原子的孤对电子结合，形成水合氢离子（hydronium ion），记作 $\text{H}_3\text{O}^+$。这个反应可写为：</p>
+$$\text{H}^+ + \text{H}_2\text{O} \rightarrow \text{H}_3\text{O}^+$$
+<p>因此，当我们讨论"酸性溶液中质子浓度升高"时，实际指的是 $\text{H}_3\text{O}^+$ 浓度升高。水的自解离反应更准确的写法是：</p>
+$$2\text{H}_2\text{O} \rightleftharpoons \text{H}_3\text{O}^+ + \text{OH}^-$$
+<p>其平衡常数 $K_w = [\text{H}_3\text{O}^+][\text{OH}^-] = 1.0 \times 10^{-14}$（25°C）。pH 的定义 $\text{pH} = -\log[\text{H}_3\text{O}^+]$ 正是基于水合氢离子浓度，而非假想的自由质子浓度。</p>
+<p><strong>举例说明</strong></p>
+<p>将盐酸（HCl）溶于水时，反应实际是：</p>
+$$\text{HCl} + \text{H}_2\text{O} \rightarrow \text{H}_3\text{O}^+ + \text{Cl}^-$$
+<p>HCl 分子的质子并非"脱落"到溶液中游荡，而是直接转移给水分子，生成水合氢离子。这也是为什么酸碱反应被称为"质子转移反应"——本质上是质子从一个物种（酸）转移到另一个物种（碱，此处是水）。</p>
+<p><strong>解题应用</strong></p>
+<p>已知某溶液的 $[\text{H}_3\text{O}^+] = 2.5 \times 10^{-4}\ \text{mol/L}$，求该溶液的 pH，并判断酸碱性。</p>
+<p>第一步，代入定义式：</p>
+$$\text{pH} = -\log(2.5 \times 10^{-4}) \approx 3.60$$
+<p>第二步，pH 小于 7，说明溶液呈酸性，即 $\text{H}_3\text{O}^+$ 浓度显著高于纯水中的 $1.0 \times 10^{-7}\ \text{mol/L}$。</p>
+<p>第三步，利用 $K_w$ 反推 $[\text{OH}^-]$：</p>
+$$[\text{OH}^-] = \dfrac{K_w}{[\text{H}_3\text{O}^+]} = \dfrac{1.0 \times 10^{-14}}{2.5 \times 10^{-4}} = 4.0 \times 10^{-11}\ \text{mol/L}$$
+<p>这类计算的关键在于：始终以 $\text{H}_3\text{O}^+$ 而非孤立的 $\text{H}^+$ 作为反应物种去平衡化学方程式和配平电荷，这样才能正确处理涉及酸碱滴定、缓冲溶液和电离常数的问题。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch14: Acid-Base Equilibria (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

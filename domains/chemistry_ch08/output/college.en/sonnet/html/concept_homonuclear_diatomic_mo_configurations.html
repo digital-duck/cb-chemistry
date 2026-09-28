@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Homonuclear Diatomic Mo Configurations | Chemistry Ch08</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="homonuclear-diatomic-mo-configurations">Homonuclear Diatomic Mo Configurations</h2>
+<p><strong>Definition</strong></p>
+<p>When two identical atoms bond, their atomic orbitals combine to form molecular orbitals (MOs) that extend over both nuclei. For homonuclear diatomics (like $\text{H}_2$, $\text{N}_2$, $\text{O}_2$), each pair of atomic orbitals combines in two ways: constructively, lowering energy (bonding orbital), and destructively, raising energy (antibonding orbital, marked with an asterisk). For second-row elements, the relevant $2s$ and $2p$ orbitals produce the sequence:</p>
+$$\sigma_{2s} < \sigma_{2s}^* < \sigma_{2p} < \pi_{2p} \ (\text{doubly degenerate}) < \pi_{2p}^* \ (\text{doubly degenerate}) < \sigma_{2p}^*$$
+<p>(Note: for $\text{B}_2$, $\text{C}_2$, and $\text{N}_2$, the $\pi_{2p}$ orbitals sit <em>below</em> $\sigma_{2p}$ due to $s$-$p$ mixing — an experimentally confirmed reordering, not an exception to memorize blindly.)</p>
+<p>Electrons fill these MOs following the same rules as atomic orbitals: Aufbau (lowest energy first), Pauli exclusion (two electrons per orbital, opposite spins), and Hund's rule (degenerate orbitals fill singly before pairing).</p>
+<p><strong>Worked example</strong></p>
+<p>Consider $\text{O}_2$, with 12 valence electrons (6 from each oxygen). Filling in order:</p>
+$$\sigma_{2s}^2 \, \sigma_{2s}^{*2} \, \sigma_{2p}^2 \, \pi_{2p}^4 \, \pi_{2p}^{*2}$$
+<p>The last two electrons enter the degenerate $\pi_{2p}^*$ pair singly, one in each orbital, by Hund's rule — leaving $\text{O}_2$ with two unpaired electrons. This is the classic case where MO theory succeeds where Lewis structures fail: a simple Lewis diagram shows all electrons paired, but $\text{O}_2$ is experimentally paramagnetic (attracted to magnetic fields), confirming unpaired electrons.</p>
+<p><strong>Problem-solving application</strong></p>
+<p>MO configurations let you predict bond order and stability directly:</p>
+$$\text{Bond order} = \frac{(\text{bonding electrons}) - (\text{antibonding electrons})}{2}$$
+<p>For $\text{O}_2$: bonding electrons = 8 ($\sigma_{2s}^2, \sigma_{2p}^2, \pi_{2p}^4$), antibonding = 4 ($\sigma_{2s}^{<em>2}, \pi_{2p}^{</em>2}$), giving bond order $= (8-4)/2 = 2$, consistent with the O=O double bond.</p>
+<p>Try this: predict whether $\text{O}_2^+$ (remove one electron from the $\pi^*$ set) has a stronger or weaker bond than neutral $\text{O}_2$. Removing an antibonding electron raises bond order to 2.5 — so $\text{O}_2^+$ has a shorter, stronger bond, a prediction confirmed by measured bond lengths.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

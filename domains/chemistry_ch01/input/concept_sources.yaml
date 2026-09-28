@@ -1,0 +1,239 @@
+domain: chemistry_2e
+sources:
+  matter:
+    label: Matter
+    sections:
+    - id: ch01_s1_2
+      title: 1.2 Phases and Classification of Matter
+  mass:
+    label: Mass
+    sections:
+    - id: ch01_s1_2
+      title: 1.2 Phases and Classification of Matter
+  atom:
+    label: Atom
+    sections:
+    - id: ch01_s1_2
+      title: 1.2 Phases and Classification of Matter
+  energy:
+    label: Energy
+    sections: []
+  chemistry:
+    label: Chemistry
+    sections:
+    - id: ch01_s1_1
+      title: 1.1 Chemistry in Context
+  scientific_method:
+    label: Scientific Method
+    sections:
+    - id: ch01_s1_1
+      title: 1.1 Chemistry in Context
+  hypothesis:
+    label: Hypothesis
+    sections:
+    - id: ch01_s1_1
+      title: 1.1 Chemistry in Context
+  scientific_law:
+    label: Scientific Law
+    sections:
+    - id: ch01_s1_1
+      title: 1.1 Chemistry in Context
+  scientific_theory:
+    label: Scientific Theory
+    sections:
+    - id: ch01_s1_1
+      title: 1.1 Chemistry in Context
+  macroscopic_domain:
+    label: Macroscopic Domain
+    sections:
+    - id: ch01_s1_1
+      title: 1.1 Chemistry in Context
+  microscopic_domain:
+    label: Microscopic Domain
+    sections:
+    - id: ch01_s1_1
+      title: 1.1 Chemistry in Context
+  symbolic_domain:
+    label: Symbolic Domain
+    sections:
+    - id: ch01_s1_1
+      title: 1.1 Chemistry in Context
+  states_of_matter:
+    label: States of Matter
+    sections:
+    - id: ch01_s1_2
+      title: 1.2 Phases and Classification of Matter
+  plasma:
+    label: Plasma
+    sections:
+    - id: ch01_s1_2
+      title: 1.2 Phases and Classification of Matter
+  weight:
+    label: Weight
+    sections:
+    - id: ch01_s1_2
+      title: 1.2 Phases and Classification of Matter
+  law_of_conservation_of_matter:
+    label: Law of Conservation of Matter
+    sections:
+    - id: ch01_s1_2
+      title: 1.2 Phases and Classification of Matter
+  pure_substance:
+    label: Pure Substance
+    sections:
+    - id: ch01_s1_2
+      title: 1.2 Phases and Classification of Matter
+  element:
+    label: Element
+    sections:
+    - id: ch01_s1_2
+      title: 1.2 Phases and Classification of Matter
+  compound:
+    label: Compound
+    sections:
+    - id: ch01_s1_2
+      title: 1.2 Phases and Classification of Matter
+  mixture:
+    label: Mixture
+    sections:
+    - id: ch01_s1_2
+      title: 1.2 Phases and Classification of Matter
+  heterogeneous_mixture:
+    label: Heterogeneous Mixture
+    sections:
+    - id: ch01_s1_2
+      title: 1.2 Phases and Classification of Matter
+  homogeneous_mixture:
+    label: Homogeneous Mixture (Solution)
+    sections:
+    - id: ch01_s1_2
+      title: 1.2 Phases and Classification of Matter
+  molecule:
+    label: Molecule
+    sections:
+    - id: ch01_s1_2
+      title: 1.2 Phases and Classification of Matter
+  physical_property:
+    label: Physical Property
+    sections:
+    - id: ch01_s1_3
+      title: 1.3 Physical and Chemical Properties
+  chemical_property:
+    label: Chemical Property
+    sections:
+    - id: ch01_s1_3
+      title: 1.3 Physical and Chemical Properties
+  physical_change:
+    label: Physical Change
+    sections:
+    - id: ch01_s1_3
+      title: 1.3 Physical and Chemical Properties
+  chemical_change:
+    label: Chemical Change
+    sections:
+    - id: ch01_s1_3
+      title: 1.3 Physical and Chemical Properties
+  extensive_property:
+    label: Extensive Property
+    sections:
+    - id: ch01_s1_3
+      title: 1.3 Physical and Chemical Properties
+  intensive_property:
+    label: Intensive Property
+    sections:
+    - id: ch01_s1_3
+      title: 1.3 Physical and Chemical Properties
+  measurement:
+    label: Measurement
+    sections:
+    - id: ch01_s1_4
+      title: 1.4 Measurements
+  si_units:
+    label: SI Units
+    sections:
+    - id: ch01_s1_4
+      title: 1.4 Measurements
+  si_prefixes:
+    label: SI Prefixes
+    sections:
+    - id: ch01_s1_4
+      title: 1.4 Measurements
+  scientific_notation:
+    label: Scientific Notation
+    sections:
+    - id: ch01_s1_4
+      title: 1.4 Measurements
+  volume:
+    label: Volume
+    sections:
+    - id: ch01_s1_4
+      title: 1.4 Measurements
+  density:
+    label: Density
+    sections:
+    - id: ch01_s1_4
+      title: 1.4 Measurements
+  temperature:
+    label: Temperature
+    sections:
+    - id: ch01_s1_4
+      title: 1.4 Measurements
+  exact_number:
+    label: Exact Number
+    sections:
+    - id: ch01_s1_5
+      title: 1.5 Measurement Uncertainty, Accuracy, and Precision
+  measurement_uncertainty:
+    label: Measurement Uncertainty
+    sections:
+    - id: ch01_s1_5
+      title: 1.5 Measurement Uncertainty, Accuracy, and Precision
+  significant_figures:
+    label: Significant Figures
+    sections:
+    - id: ch01_s1_5
+      title: 1.5 Measurement Uncertainty, Accuracy, and Precision
+  accuracy:
+    label: Accuracy
+    sections:
+    - id: ch01_s1_5
+      title: 1.5 Measurement Uncertainty, Accuracy, and Precision
+  precision:
+    label: Precision
+    sections:
+    - id: ch01_s1_5
+      title: 1.5 Measurement Uncertainty, Accuracy, and Precision
+  rounding:
+    label: Rounding
+    sections:
+    - id: ch01_s1_5
+      title: 1.5 Measurement Uncertainty, Accuracy, and Precision
+  dimensional_analysis:
+    label: Dimensional Analysis
+    sections:
+    - id: ch01_s1_6
+      title: 1.6 Mathematical Treatment of Measurement Results
+  unit_conversion_factor:
+    label: Unit Conversion Factor
+    sections:
+    - id: ch01_s1_6
+      title: 1.6 Mathematical Treatment of Measurement Results
+  temperature_scale_conversion:
+    label: Temperature Scale Conversion
+    sections:
+    - id: ch01_s1_6
+      title: 1.6 Mathematical Treatment of Measurement Results
+  density_calculation:
+    label: Density Calculation
+    sections:
+    - id: ch01_s1_4
+      title: 1.4 Measurements
+    - id: ch01_s1_5
+      title: 1.5 Measurement Uncertainty, Accuracy, and Precision
+    - id: ch01_s1_6
+      title: 1.6 Mathematical Treatment of Measurement Results
+  periodic_table:
+    label: Periodic Table
+    sections:
+    - id: ch01_s1_3
+      title: 1.3 Physical and Chemical Properties

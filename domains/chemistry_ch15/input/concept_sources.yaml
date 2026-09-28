@@ -1,0 +1,102 @@
+domain: chemistry_2e_ch15
+sources:
+  chemical_equilibrium:
+    label: Chemical Equilibrium
+    sections: []
+  reaction_quotient:
+    label: Reaction Quotient (Q)
+    sections: []
+  le_chateliers_principle:
+    label: Le Chatelier's Principle
+    sections: []
+  ionic_dissolution:
+    label: Ionic Dissolution
+    sections: []
+  ion_concentration:
+    label: Ion Concentration (Molarity)
+    sections: []
+  solubility_equilibrium:
+    label: Solubility Equilibrium
+    sections:
+    - id: ch15_s15_1
+      title: 15.1 Precipitation and Dissolution
+  solubility_product_constant:
+    label: Solubility Product Constant (Ksp)
+    sections:
+    - id: ch15_s15_1
+      title: 15.1 Precipitation and Dissolution
+  molar_solubility:
+    label: Molar Solubility
+    sections:
+    - id: ch15_s15_1
+      title: 15.1 Precipitation and Dissolution
+  precipitation_prediction:
+    label: Precipitation Prediction (Qsp vs Ksp)
+    sections:
+    - id: ch15_s15_1
+      title: 15.1 Precipitation and Dissolution
+  selective_precipitation:
+    label: Selective Precipitation
+    sections:
+    - id: ch15_s15_1
+      title: 15.1 Precipitation and Dissolution
+  common_ion_effect:
+    label: Common Ion Effect
+    sections:
+    - id: ch15_s15_1
+      title: 15.1 Precipitation and Dissolution
+  coordinate_covalent_bond:
+    label: Coordinate Covalent Bond
+    sections:
+    - id: ch15_s15_2
+      title: 15.2 Lewis Acids and Bases
+  lewis_acid:
+    label: Lewis Acid
+    sections:
+    - id: ch15_s15_2
+      title: 15.2 Lewis Acids and Bases
+  lewis_base:
+    label: Lewis Base
+    sections:
+    - id: ch15_s15_2
+      title: 15.2 Lewis Acids and Bases
+  lewis_acid_base_adduct:
+    label: Lewis Acid-Base Adduct
+    sections:
+    - id: ch15_s15_2
+      title: 15.2 Lewis Acids and Bases
+  complex_ion:
+    label: Complex Ion
+    sections:
+    - id: ch15_s15_2
+      title: 15.2 Lewis Acids and Bases
+  ligand:
+    label: Ligand
+    sections:
+    - id: ch15_s15_2
+      title: 15.2 Lewis Acids and Bases
+  formation_constant:
+    label: Formation Constant (Kf)
+    sections:
+    - id: ch15_s15_2
+      title: 15.2 Lewis Acids and Bases
+  dissociation_constant:
+    label: Dissociation Constant (Kd)
+    sections:
+    - id: ch15_s15_2
+      title: 15.2 Lewis Acids and Bases
+  coupled_equilibria:
+    label: Coupled Equilibria
+    sections:
+    - id: ch15_s15_3
+      title: 15.3 Coupled Equilibria
+  acid_enhanced_dissolution:
+    label: Acid-Enhanced Dissolution
+    sections:
+    - id: ch15_s15_3
+      title: 15.3 Coupled Equilibria
+  complex_ion_enhanced_dissolution:
+    label: Complex-Ion-Enhanced Dissolution
+    sections:
+    - id: ch15_s15_3
+      title: 15.3 Coupled Equilibria

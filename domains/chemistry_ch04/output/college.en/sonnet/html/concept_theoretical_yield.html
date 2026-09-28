@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Theoretical Yield | Chemistry Ch04</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="theoretical-yield">Theoretical Yield</h2>
+<p>In a chemical reaction, the <strong>theoretical yield</strong> is the maximum amount of product that could form if the reaction went to completion exactly as the balanced equation predicts, with no losses. It is calculated from stoichiometry — the mole ratios between reactants and products — not from what actually happens on the lab bench.</p>
+<p><strong>Worked example.</strong> Consider the synthesis of ammonia:</p>
+$$
+N_2 + 3H_2 \rightarrow 2NH_3
+$$
+<p>Suppose a reaction starts with 2.0 mol of $N_2$ and 3.0 mol of $H_2$. First, identify the <strong>limiting reactant</strong> — the one that runs out first and caps product formation. The stoichiometric ratio requires 3 mol $H_2$ for every 1 mol $N_2$; with 2.0 mol $N_2$, we'd need 6.0 mol $H_2$, but only 3.0 mol is available. So $H_2$ is limiting.</p>
+<p>Using the mole ratio $3H_2 : 2NH_3$, the 3.0 mol of $H_2$ can produce:</p>
+$$
+3.0 \text{ mol } H_2 \times \frac{2 \text{ mol } NH_3}{3 \text{ mol } H_2} = 2.0 \text{ mol } NH_3
+$$
+<p>Converting to mass using the molar mass of $NH_3$ (17.0 g/mol):</p>
+$$
+2.0 \text{ mol} \times 17.0 \text{ g/mol} = 34.0 \text{ g } NH_3
+$$
+<p>This 34.0 g is the theoretical yield.</p>
+<p><strong>Problem-solving application.</strong> Because real reactions rarely reach this maximum — due to side reactions, incomplete conversion, or product lost during purification — chemists compare the theoretical yield to the <strong>actual yield</strong> (what is really recovered) using the percent yield:</p>
+$$
+\%\text{ yield} = \frac{\text{actual yield}}{\text{theoretical yield}} \times 100
+$$
+<p>If the lab actually recovers 28.9 g of $NH_3$, the percent yield is:</p>
+$$
+\frac{28.9}{34.0} \times 100 \approx 85\%
+$$
+<p>This number is diagnostic: a chemist expects some loss, but a percent yield far below 85% signals a procedural problem — perhaps incomplete reaction, a spill, or an unaccounted side reaction — while a value over 100% usually means the product isn't pure (it contains leftover solvent or unreacted starting material). Always identify the limiting reactant <em>before</em> computing theoretical yield; using the wrong reactant's quantity is the most common source of error in these calculations.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

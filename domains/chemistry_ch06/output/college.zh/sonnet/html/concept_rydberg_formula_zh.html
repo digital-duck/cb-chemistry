@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rydberg Formula | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="rydberg-formula">Rydberg Formula</h2>
+<p><strong>定义</strong></p>
+<p>氢原子光谱由一系列分立的谱线组成,这一现象最早由巴尔末等人通过实验总结出经验公式,后来瑞典物理学家里德伯将其推广为通用公式。里德伯公式给出氢原子发射或吸收光的波长的倒数:</p>
+$$
+\frac{1}{\lambda} = R_H \left( \frac{1}{n_1^2} - \frac{1}{n_2^2} \right)
+$$
+<p>其中 $\lambda$ 是谱线波长,$R_H \approx 1.097 \times 10^7\ \text{m}^{-1}$ 是里德伯常数,$n_1$ 和 $n_2$ 为正整数且 $n_2 > n_1$,分别对应电子跃迁的终态和初态能级。这个公式之所以必须用数学形式表达,是因为它描述的是量子化能级之间跃迁所产生的精确波长关系——玻尔模型进一步揭示了 $n_1$、$n_2$ 正是电子所处的量子化轨道编号,能级能量为 $E_n = -13.6\ \text{eV}/n^2$。</p>
+<p><strong>例题</strong></p>
+<p>计算莱曼系(Lyman series)中电子从 $n_2=2$ 跃迁到 $n_1=1$ 时发出光的波长。</p>
+<p>代入公式:</p>
+$$
+\frac{1}{\lambda} = R_H\left(\frac{1}{1^2} - \frac{1}{2^2}\right) = 1.097\times10^7 \times \left(1 - 0.25\right) = 8.228\times10^6\ \text{m}^{-1}
+$$
+<p>于是 $\lambda = 1/(8.228\times10^6) \approx 1.216\times10^{-7}\ \text{m} = 121.6\ \text{nm}$,落在紫外区,这与实验观测到的莱曼系谱线完全吻合。</p>
+<p><strong>解题应用</strong></p>
+<p>里德伯公式的实际价值在于反向推断:给定观测到的谱线波长,可以确定电子跃迁涉及的具体能级,从而验证原子结构模型。解题时应遵循三个步骤:(1) 确定谱线属于哪一系列(莱曼系 $n_1=1$、巴尔末系 $n_1=2$、帕邢系 $n_1=3$ 等,均对应不同波段);(2) 将已知波长代入公式求出 $1/\lambda$ 的数值;(3) 解出对应的 $n_2$ 值,通常需要尝试整数直至等式成立。例如,若测得某谱线波长为 $656.3\ \text{nm}$,代入巴尔末系公式($n_1=2$)可解出 $n_2=3$,这正是氢原子光谱中著名的 $H_\alpha$ 红线。这类计算是理解原子发射光谱、恒星成分分析以及激光原理的基础。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

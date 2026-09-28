@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ice Table Method | Chemistry Ch13</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="ice-table-method">Ice Table Method</h2>
+<p><strong>定义</strong></p>
+<p>ICE 表(Initial-Change-Equilibrium,即"起始-变化-平衡"表)是求解化学平衡问题的标准计算工具。对于任意可逆反应,ICE 表把反应过程中各物质浓度(或分压)的变化组织成三行:第一行 I 记录反应开始时各物质的初始浓度;第二行 C 记录达到平衡前浓度的变化量,变化量之间按化学计量比联系,并用同一个未知数 $x$ 表示;第三行 E 是初始值与变化量相加得到的平衡浓度。把 E 行代入平衡常数表达式 $K_c$,即可解出 $x$,从而求得所有物质的平衡浓度。这个方法的核心价值在于把一个容易混乱的多变量问题,转化为一个结构清晰、可以直接代数求解的方程。</p>
+<p><strong>范例</strong></p>
+<p>考虑反应 $\text{N}_2\text{O}_4(g) \rightleftharpoons 2\text{NO}_2(g)$,已知 $K_c = 4.63 \times 10^{-3}$,初始时容器中只有 $[\text{N}_2\text{O}_4] = 0.800\ \text{M}$,$[\text{NO}_2] = 0$。</p>
+<p>| | $\text{N}_2\text{O}_4$ | $\text{NO}_2$ | |---|---|---| | I | $0.800$ | $0$ | | C | $-x$ | $+2x$ | | E | $0.800-x$ | $2x$ |</p>
+<p>代入平衡常数表达式:</p>
+$$K_c = \frac{[\text{NO}_2]^2}{[\text{N}_2\text{O}_4]} = \frac{(2x)^2}{0.800-x} = 4.63\times10^{-3}$$
+<p>由于 $K_c$ 很小,可近似 $0.800 - x \approx 0.800$,解得 $x \approx 0.0304\ \text{M}$。代回检验:$x/0.800 \approx 3.8\%$,小于 5%,近似有效。因此平衡时 $[\text{N}_2\text{O}_4] \approx 0.770\ \text{M}$,$[\text{NO}_2] \approx 0.0608\ \text{M}$。</p>
+<p><strong>解题应用</strong></p>
+<p>使用 ICE 表解题时需注意三点:第一,C 行的系数必须与化学方程式的计量数一致,方向(生成为正、消耗为负)不能弄反;第二,若初始时正、逆两个方向都有反应物存在(如既有 $\text{N}_2\text{O}_4}$又有 $\text{NO}_2}$),需先比较反应商 $Q$ 与 $K$,判断反应净方向,才能正确设定 $x$ 的符号;第三,当方程为二次或更高次时,若 $K$ 值很小可尝试简化近似,但必须验证近似是否满足 5% 规则,否则需用求根公式精确求解。掌握 ICE 表不仅能求解经典的气相平衡问题,也是处理弱酸弱碱电离平衡、溶度积平衡等后续内容的通用框架。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch13: Fundamental Equilibrium Concepts (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

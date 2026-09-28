@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Core Electrons | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="core-electrons">Core Electrons</h2>
+<p><strong>定义</strong></p>
+<p>原子中的电子并非均匀分布在原子核外，而是按能层（电子层）排布。<strong>内层电子（core electrons）</strong>是指位于原子最外层（价层）以下的所有内部电子层中的电子，它们被前一个稀有气体的完整电子构型所占据。与之相对的是<strong>价电子（valence electrons）</strong>——最外层的电子，负责化学键的形成。内层电子的关键特征是：它们被原子核强烈吸引，同时又受到内部电子的相互排斥，通常不参与化学反应。</p>
+<p>以钠（Na，原子序数 11）为例，其电子构型为 $1s^2\,2s^2\,2p^6\,3s^1$。其中 $1s^2\,2s^2\,2p^6$（共 10 个电子）即为内层电子，其排布与氖（Ne）完全相同；而 $3s^1$ 中的这一个电子则是价电子。内层电子紧密围绕原子核，平均距核更近，结合能远高于价电子。</p>
+<p><strong>举例说明</strong></p>
+<p>比较钠原子的第一电离能（约 496 kJ/mol，移走 $3s^1$ 价电子）与移走一个内层电子所需的能量（约 4560 kJ/mol，对应 $2p$ 电子）。二者相差近十倍，这正是因为价电子受到内层电子的<strong>屏蔽效应</strong>——内层电子部分抵消了原子核正电荷对价电子的吸引力，使价电子感受到的"有效核电荷"远小于实际核电荷数。</p>
+<p><strong>解决问题的应用</strong></p>
+<p>理解内层电子的作用，可以帮助我们解释和预测多种化学现象：</p>
+<li><strong>有效核电荷的估算</strong>：利用斯莱特规则（Slater's rules），可以估算价电子所感受到的有效核电荷 $Z_{\text{eff}} = Z - S$，其中 $Z$ 为核电荷数，$S$ 为屏蔽常数（主要由内层电子贡献）。这解释了为什么同一周期内原子半径逐渐减小——尽管核电荷增加，但内层电子数不变，屏蔽效果相近，有效核电荷增大使价电子被拉得更近。</li>
+<li><strong>原子半径与电离能趋势</strong>：由于内层电子数目在同一族中随周期增加而增多，屏蔽作用增强，使得同族元素从上到下原子半径增大、电离能减小。</li>
+<li><strong>化学惰性的判断</strong>：判断某电子是否参与反应（如配位化学中的过渡金属），首先要确认哪些是内层电子（不参与）、哪些是价电子（参与成键），这是书写电子构型、预测化合价和离子电荷的基础技能。</li>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

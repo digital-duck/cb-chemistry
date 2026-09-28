@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electrolytic Cell | Chemistry Ch17</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="electrolytic-cell-电解池">Electrolytic Cell（电解池）</h2>
+<p><strong>定义</strong></p>
+<p>电解池是利用外部电源提供电能，强制驱动非自发氧化还原反应发生的装置。这与原电池（伽伐尼电池）恰好相反：原电池依靠自发反应产生电能,而电解池则消耗电能来推动反应逆向进行。电解池由两个电极（阳极和阴极）插入电解质溶液或熔融电解质中,并与直流电源相连组成。需要特别注意的是,在电解池中阳极是正极(氧化反应发生处),阴极是负极(还原反应发生处),这与原电池中的极性正好相反。外接电源迫使电子从阴极流向阳极,从而驱动电解质中的离子发生氧化还原反应。</p>
+<p><strong>实例分析:水的电解</strong></p>
+<p>以水的电解为例。纯水几乎不导电,因此通常加入少量电解质(如 $\text{Na}_2\text{SO}_4$)以提供导电离子。通电后,在阴极发生还原反应:</p>
+$$2\text{H}_2\text{O}(l) + 2e^- \rightarrow \text{H}_2(g) + 2\text{OH}^-(aq)$$
+<p>在阳极发生氧化反应:</p>
+$$2\text{H}_2\text{O}(l) \rightarrow \text{O}_2(g) + 4\text{H}^+(aq) + 4e^-$$
+<p>总反应为 $2\text{H}_2\text{O}(l) \rightarrow 2\text{H}_2(g) + \text{O}_2(g)$,可以观察到阴极产生的氢气体积恰好是阳极产生氧气体积的两倍,这与化学方程式中的系数比一致。</p>
+<p><strong>问题解决应用:法拉第电解定律的定量计算</strong></p>
+<p>电解池的实际应用(如电镀、金属精炼、铝的工业冶炼)都需要计算通电一定时间后能沉积或析出多少物质。这就要用到法拉第电解定律,其核心关系式为:</p>
+$$n = \frac{Q}{zF} = \frac{It}{zF}$$
+<p>其中 $Q$ 为通过的电荷量(库仑), $I$ 为电流(安培), $t$ 为通电时间(秒), $z$ 为该离子还原或氧化所需转移的电子数, $F$ 为法拉第常数($96500\ \text{C/mol}$)。</p>
+<p>例如,若用 $2.00\ \text{A}$ 的电流电解 $\text{CuSO}_4$ 溶液,持续 $1930\ \text{s}$,求阴极上沉积的铜的质量。铜离子还原反应为 $\text{Cu}^{2+} + 2e^- \rightarrow \text{Cu}$,故 $z=2$。先求电荷量 $Q = It = 2.00 \times 1930 = 3860\ \text{C}$,再求摩尔数 $n = Q/(zF) = 3860/(2\times 96500) = 0.02\ \text{mol}$,最后质量 $m = n \times M_{\text{Cu}} = 0.02 \times 63.5 = 1.27\ \text{g}$。这类计算是电镀、电解精炼等工业过程设计的基础。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch17: Electrochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

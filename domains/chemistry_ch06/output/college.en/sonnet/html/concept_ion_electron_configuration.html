@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ion Electron Configuration | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="ion-electron-configuration">Ion Electron Configuration</h2>
+<p>When an atom gains or loses electrons to form an ion, its electron configuration changes in a predictable way — but the rule is not simply "add or remove electrons from wherever they last went in." For anions (negatively charged ions), added electrons fill the next available orbital following the standard order, extending the neutral atom's configuration. For cations (positively charged ions), electrons are always removed first from the orbital with the highest principal quantum number $n$, and among orbitals with the same $n$, from the one with the highest energy — which for transition metals means $ns$ electrons are lost before $(n-1)d$ electrons, even though $4s$ filled before $3d$.</p>
+<p><strong>Worked example.</strong> Consider iron, $\text{Fe}$, with neutral configuration $[\text{Ar}]3d^{6}4s^{2}$. To form $\text{Fe}^{2+}$, iron loses two electrons. A common mistake is to remove them from $3d$ because it was filled last in the building-up order. But the correct rule is: remove electrons from the highest $n$ shell first. Since $4s$ has $n=4$ and $3d$ has $n=3$, the two $4s$ electrons leave first, giving $\text{Fe}^{2+}: [\text{Ar}]3d^{6}$. Forming $\text{Fe}^{3+}$ removes one more electron, this time from $3d$ (since $4s$ is now empty), giving $[\text{Ar}]3d^{5}$ — a configuration with five unpaired electrons in five separate $d$ orbitals, which is unusually stable and explains why $\text{Fe}^{3+}$ is a common, robust oxidation state.</p>
+<p>For an anion example, oxygen ($[\text{He}]2s^{2}2p^{4}$) gains two electrons to fill its $2p$ subshell completely, forming $\text{O}^{2-}: [\text{He}]2s^{2}2p^{6}$, isoelectronic with neon.</p>
+<p><strong>Problem-solving application.</strong> This rule matters whenever you need to predict magnetic behavior, color, or reactivity of transition-metal ions. To determine the configuration of any cation: (1) write the neutral atom's configuration in filling order, (2) identify the electrons with the highest $n$, (3) remove electrons starting there, working down in $n$ if needed. Try it for $\text{Cu}^{2+}$: neutral copper is $[\text{Ar}]3d^{10}4s^{1}$, so removing two electrons takes the single $4s$ electron and one $3d$ electron, giving $[\text{Ar}]3d^{9}$ — not $3d^{10}4s^{-1}$, which is nonsensical, and not $3d^{8}4s^{2}$, which violates the highest-$n$-first rule.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

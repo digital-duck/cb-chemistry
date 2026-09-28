@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lone Pair | Chemistry Ch07</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="lone-pair">Lone Pair</h2>
+<p><strong>定义</strong></p>
+<p>在路易斯结构（Lewis structure）中，原子的价电子分为两类：一类参与形成化学键，被两个原子共享，称为成键电子对；另一类只属于某一个原子，不参与成键，称为孤对电子（lone pair），有时也叫非成键电子对。孤对电子仍然占据一个杂化轨道或价层轨道，因此在判断分子的电子几何构型和分子几何构型时，必须把它计算在内——这正是价层电子对互斥理论（VSEPR，Valence Shell Electron Pair Repulsion）的核心思想。孤对电子由于没有被"拉向"另一个原子核，电子云更集中、更靠近中心原子，因此对周围其他电子对的排斥力略强于成键电子对之间的排斥力。这一差异解释了为什么含有孤对电子的分子，其键角往往会偏离理想的对称角度。</p>
+<p><strong>实例分析</strong></p>
+<p>以水分子 $\text{H}_2\text{O}$ 为例。中心原子氧有 6 个价电子，与两个氢原子各形成一对共用电子对（共 2 对成键电子），剩下 2 对电子以孤对形式存在。氧原子周围共有 4 对电子（2 对成键 + 2 对孤对），电子几何构型为四面体形，理想键角应为 $109.5^\circ$。但由于孤对电子排斥力更强，把两个 O–H 键"压"得更靠近，实测键角约为 $104.5^\circ$。同样的道理可以解释氨分子 $\text{NH}_3$：氮原子有 1 对孤对、3 对成键电子对，键角约为 $107^\circ$，介于四面体理想角与水的键角之间——孤对数目越多，压缩效应越明显。</p>
+<p><strong>解题应用</strong></p>
+<p>判断分子形状时,标准步骤是:先画出路易斯结构,数出中心原子的成键电子对数（记为 $X$）与孤对电子数（记为 $E$）,二者之和决定电子几何构型,再依据 $E$ 的数量对基础形状进行"修剪"得到分子几何构型。例如 $\text{PCl}_3$ 中心原子磷有 3 对成键电子对和 1 对孤对（$X=3, E=1$），电子对总数为 4，对应四面体电子几何，但因 1 对孤对占据一个顶点位置,分子实际呈现三角锥形,键角略小于 $109.5^\circ$。掌握"先数电子对、再分类、后判形"这一流程，是解答几乎所有分子几何题目的通用方法，也是理解分子极性、反应活性乃至氢键形成能力的基础。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch7: Chemical Bonding and Molecular Geometry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

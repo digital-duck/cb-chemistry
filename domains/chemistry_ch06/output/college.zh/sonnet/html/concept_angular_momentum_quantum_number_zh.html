@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Angular Momentum Quantum Number | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="angular-momentum-quantum-number">Angular Momentum Quantum Number</h2>
+<p><strong>定义</strong></p>
+<p>角量子数（用符号 $l$ 表示）是描述原子中电子所处原子轨道形状的量子数，它由薛定谔方程求解氢原子体系时自然产生，是主量子数 $n$ 之外的第二个量子数。对于给定的主量子数 $n$，$l$ 的取值为从 $0$ 到 $n-1$ 的整数，即</p>
+$$l = 0, 1, 2, \dots, (n-1)$$
+<p>每一个 $l$ 值对应一类特定形状的轨道，并用字母标记：$l=0$ 为 $s$ 轨道（球形）、$l=1$ 为 $p$ 轨道（哑铃形）、$l=2$ 为 $d$ 轨道（花瓣形）、$l=3$ 为 $f$ 轨道（更复杂的多裂瓣形）。角量子数还决定了电子轨道角动量的大小，其数值由 $L = \sqrt{l(l+1)}\,\hbar$ 给出，但对于化学与一般物理课程而言，更重要的是记住 $l$ 决定轨道"亚层"的形状与能量顺序，而不必深入这一公式的推导。</p>
+<p><strong>范例分析</strong></p>
+<p>以 $n=3$ 为例。根据规则，$l$ 可取 $0, 1, 2$，分别对应 $3s$、$3p$、$3d$ 三个亚层。可以看到，$n$ 越大，允许的亚层种类越多——这解释了为什么第三周期元素（如硫、氯）能够利用 $3d$ 轨道形成扩展的八隅体（如 $\text{SF}_6$ 中硫的成键），而第二周期元素（$n=2$，$l$ 只能取 $0,1$，无 $d$ 轨道）则不能。</p>
+<p><strong>解题应用</strong></p>
+<p>判断某原子轨道是否存在，关键在于检验 $l$ 是否满足 $0 \le l \le n-1$。例如，"$2d$ 轨道"是否存在？由于 $n=2$ 时 $l$ 最大只能取 $1$（即 $2s, 2p$），$l=2$（$d$ 轨道）不被允许，因此 $2d$ 轨道不存在。同理，判断电子排布式（如 $3p^4$、$4d^{10}$）是否合理时，第一步就是核对角量子数与主量子数的对应关系是否符合上述规则，这是书写电子排布、预测轨道形状与推断元素化学性质（如成键能力、颜色、磁性）的基础工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

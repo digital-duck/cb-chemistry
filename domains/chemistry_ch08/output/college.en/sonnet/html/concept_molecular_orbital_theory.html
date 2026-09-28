@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Molecular Orbital Theory | Chemistry Ch08</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="molecular-orbital-theory">Molecular Orbital Theory</h2>
+<p>When atoms bond, their atomic orbitals do not simply overlap and stay put — they combine mathematically to form new orbitals that belong to the molecule as a whole. Molecular orbital (MO) theory treats bonding as a quantum mechanical mixing process: atomic orbitals of similar energy and symmetry combine, via linear combination of atomic orbitals (LCAO), to produce molecular orbitals that can extend over two or more nuclei. Each combination of $n$ atomic orbitals produces $n$ molecular orbitals — some bonding (lower energy, electron density concentrated between nuclei) and some antibonding (higher energy, with a node between nuclei, marked with an asterisk, e.g., $\sigma^*$). Electrons fill these molecular orbitals following the same rules as atomic orbitals: lowest energy first, Pauli exclusion, Hund's rule for degenerate orbitals.</p>
+<p><strong>Worked example</strong>: Consider $\text{H}_2$. Each hydrogen atom contributes one 1s orbital. Combining them in phase gives a bonding orbital, $\sigma_{1s}$, lower in energy than the original atomic orbitals; combining them out of phase gives an antibonding orbital, $\sigma_{1s}^<em>$, higher in energy. With two electrons total, both occupy $\sigma_{1s}$, leaving $\sigma_{1s}^</em>$ empty. Bond order, defined as</p>
+$$\text{Bond order} = \frac{1}{2}(\text{bonding electrons} - \text{antibonding electrons}),$$
+<p>equals $\frac{1}{2}(2-0) = 1$, consistent with the single bond we already know exists in $\text{H}_2$.</p>
+<p><strong>Problem-solving application</strong>: MO theory earns its keep by explaining cases where simpler bonding pictures fail. Take $\text{He}_2$: each helium atom brings two electrons, four total, filling both $\sigma_{1s}$ and $\sigma_{1s}^<em>$. Bond order $= \frac{1}{2}(2-2) = 0$, correctly predicting that $\text{He}_2$ does not exist as a stable molecule — a result Lewis structures alone cannot produce, since they offer no mechanism for "canceling" a bond. MO theory also predicts magnetic behavior: for $\text{O}_2$, filling molecular orbitals in order of energy leaves two electrons unpaired in degenerate antibonding $\pi^</em>$ orbitals (by Hund's rule), correctly predicting that $\text{O}_2$ is paramagnetic — a fact that classical Lewis dot structures, which pair all valence electrons, fail to explain. When asked to compare bond strength or stability across related species (e.g., $\text{O}_2$ versus $\text{O}_2^+$ versus $\text{O}_2^-$), compute bond order for each: removing an antibonding electron increases bond order and strengthens the bond, while adding one weakens it.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

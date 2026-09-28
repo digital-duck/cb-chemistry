@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>First Order Kinetics | Chemistry Ch12</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="first-order-kinetics">First Order Kinetics</h2>
+<p><strong>定义</strong></p>
+<p>一级反应（first-order reaction）是指反应速率仅与反应物浓度的一次方成正比的反应。若反应物为 $A$，其速率方程为：</p>
+$$
+\text{rate} = -\frac{d[A]}{dt} = k[A]
+$$
+<p>其中 $k$ 为一级速率常数，单位为 $\text{s}^{-1}$（或 $\text{min}^{-1}$ 等时间的倒数）。对该微分方程积分，可得到一级反应的积分速率方程：</p>
+$$
+\ln[A]_t = \ln[A]_0 - kt \quad \text{或等价地} \quad [A]_t = [A]_0 e^{-kt}
+$$
+<p>这个方程告诉我们：$\ln[A]$ 对时间 $t$ 作图应为一条直线，斜率为 $-k$。这是判断反应是否为一级反应的标准实验方法。</p>
+<p>一级反应还有一个重要特征——半衰期 $t_{1/2}$（浓度降至初始值一半所需的时间）与初始浓度无关，恒为常数：</p>
+$$
+t_{1/2} = \frac{\ln 2}{k} \approx \frac{0.693}{k}
+$$
+<p>放射性衰变、许多药物在体内的代谢过程，都遵循一级动力学，正是因为其半衰期恒定，才能用于定年或制定给药方案。</p>
+<p><strong>例题</strong></p>
+<p>某放射性同位素的衰变常数 $k = 0.0231\ \text{day}^{-1}$。若初始质量为 $80\ \text{g}$，求经过 $60$ 天后剩余的质量。</p>
+<p>代入积分方程：</p>
+$$
+[A]_t = 80 \times e^{-0.0231 \times 60} = 80 \times e^{-1.386} \approx 80 \times 0.250 = 20\ \text{g}
+$$
+<p>验证：$t_{1/2} = 0.693 / 0.0231 \approx 30$ 天，60 天恰好经过两个半衰期，$80 \to 40 \to 20\ \text{g}$，结果一致。</p>
+<p><strong>解决问题的应用</strong></p>
+<p>在实际问题中，一级动力学常用于：（1）由实验测得的 $[A]$-$t$ 数据，通过 $\ln[A]$ vs. $t$ 作图求出 $k$；（2）已知 $k$ 与初始浓度，预测任意时刻的残留量；（3）利用 $t_{1/2}$ 反推 $k$，或估算达到某一浓度所需的时间。解题的关键在于识别题目给出的是哪两个变量（$[A]_0$、$[A]_t$、$t$、$k$ 或 $t_{1/2}$ 中的两个），再选用合适形式的方程求解未知量。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch12: Kinetics (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

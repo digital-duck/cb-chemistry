@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atomic Orbital | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="atomic-orbital">Atomic Orbital</h2>
+<p><strong>定义</strong></p>
+<p>原子轨道（atomic orbital）是描述原子核外电子在空间中出现概率分布的数学函数，它是薛定谔方程应用于氢原子体系所得到的解。与玻尔模型中电子沿固定圆形轨道运动的图像不同，量子力学告诉我们无法同时精确知道电子的位置和动量，因此我们只能用"电子云"来表示电子在某处出现的概率密度。每个原子轨道由三个量子数确定：主量子数 $n$（决定轨道的能级和大小，$n=1,2,3,\dots$）、角量子数 $l$（决定轨道的形状，取值 $0$ 到 $n-1$，分别对应 s、p、d、f 轨道）、磁量子数 $m_l$（决定轨道在空间中的取向）。s 轨道呈球形对称；p 轨道呈哑铃形，沿 x、y、z 三个方向各有一个；d 轨道形状更复杂，通常有四瓣或环形结构。每个轨道最多可容纳 2 个自旋相反的电子，这是泡利不相容原理的直接结果。</p>
+<p><strong>实例解析</strong></p>
+<p>以氮原子（原子序数 7）为例，其电子排布为 $1s^2\,2s^2\,2p^3$。这表示：1s 轨道填满 2 个电子，2s 轨道填满 2 个电子，剩余 3 个电子分布在三个能量简并的 2p 轨道（$2p_x, 2p_y, 2p_z$）中。根据洪特规则，这 3 个电子会先各自占据一个 2p 轨道并保持自旋方向相同，而不是先配对填满同一轨道——这样可以使体系能量最低、电子间排斥最小。这也解释了为什么氮原子在成键时倾向于形成三个共价键（如 $NH_3$ 中氮与三个氢原子结合）。</p>
+<p><strong>解决问题的应用</strong></p>
+<p>理解原子轨道排布是预测元素化学性质与成键行为的基础工具。给定一个原子序数，你应能依据构造原理（Aufbau principle：电子按能量从低到高依次填充）、泡利不相容原理和洪特规则，写出正确的电子排布式，并进一步判断价电子数目。例如，判断硫（S，原子序数 16）的电子排布为 $1s^2\,2s^2\,2p^6\,3s^2\,3p^4$，其中 3p 轨道有 4 个价电子（两对一个未成对，一个轨道有 2 个电子，另两个轨道各 1 个未成对电子），据此可预测硫倾向于获得 2 个电子以达到稳定的八电子结构，从而形成 $S^{2-}$ 离子或与两个原子形成共价键（如 $H_2S$）。掌握这一分析方法，是理解元素周期表规律、化学键类型及分子几何结构的关键起点。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

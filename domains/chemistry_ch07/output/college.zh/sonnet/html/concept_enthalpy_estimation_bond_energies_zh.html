@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enthalpy Estimation Bond Energies | Chemistry Ch07</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="enthalpy-estimation-bond-energies">Enthalpy Estimation Bond Energies</h2>
+<p><strong>定义</strong></p>
+<p>化学反应中能量的变化本质上是化学键断裂和形成过程中能量得失的净结果。断开一个化学键需要吸收能量，而形成一个化学键则会释放能量。<strong>键能</strong>（bond energy，记作 $BE$）是指气态分子中断开某一特定共价键、使其变为两个气态原子所需吸收的平均能量，单位通常为 $\text{kJ/mol}$。由于同一种键在不同分子环境中略有差异，键能表中给出的数值是对大量类似分子测得数据的平均值，因此用键能估算的反应热是近似值，而非精确值。</p>
+<p>利用键能估算反应焓变 $\Delta H$ 的基本思路是：反应过程可以看作先把反应物中所有的键全部打断（吸热），再重新组合形成生成物的键（放热）。由此得到估算公式：</p>
+$$\Delta H \approx \sum BE(\text{断裂的键，反应物}) - \sum BE(\text{形成的键，生成物})$$
+<p>即"断键耗能之和"减去"成键放能之和"。若结果为负，说明成键释放的能量大于断键所需能量，反应为放热；若为正，则为吸热。</p>
+<p><strong>范例</strong></p>
+<p>以氢气与氯气反应生成氯化氢为例：</p>
+$$H_2(g) + Cl_2(g) \rightarrow 2HCl(g)$$
+<p>反应物中需断开的键：$1 \times BE(H-H) = 436\ \text{kJ/mol}$，$1 \times BE(Cl-Cl) = 243\ \text{kJ/mol}$，合计 $679\ \text{kJ/mol}$。生成物中需形成的键：$2 \times BE(H-Cl) = 2 \times 431 = 862\ \text{kJ/mol}$。代入公式：</p>
+$$\Delta H \approx 679 - 862 = -183\ \text{kJ/mol}$$
+<p>结果为负值，说明该反应是放热反应，与实验测得的 $\Delta H = -184.6\ \text{kJ/mol}$ 非常接近，误差主要来自键能取的是平均值而非该分子的实测值。</p>
+<p><strong>解题应用</strong></p>
+<p>使用此方法解题时，关键步骤是：先画出反应物和生成物的结构式，逐一列出每种键的类型与数量，再对照键能表求和代入公式。需特别注意双键、三键的键能远大于相应单键（例如 $C=C$ 约 $614\ \text{kJ/mol}$，而 $C-C$ 约 $347\ \text{kJ/mol}$），计算时不能按单键数值简单折算；同时该方法仅适用于气态分子间的反应，对于涉及固态、液态物质或离子化合物的反应，还需额外考虑相变热或晶格能，键能估算法在此时会产生较大偏差。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch7: Chemical Bonding and Molecular Geometry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

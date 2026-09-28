@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solar Thermal Energy Storage | Chemistry Ch05</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="solar-thermal-energy-storage">Solar Thermal Energy Storage</h2>
+<p>Solar thermal energy storage captures heat collected from sunlight and holds it for use when the sun isn't shining — at night, during cloudy periods, or to smooth out demand spikes. Unlike photovoltaic systems, which convert sunlight directly into electricity, solar thermal systems concentrate or absorb sunlight to heat a working fluid (often water, oil, or molten salt), and that thermal energy is what gets stored. The stored heat can later be used directly (space heating, industrial process heat) or converted to electricity by driving a steam turbine.</p>
+<p>The amount of energy a storage medium can hold depends on its mass, its specific heat capacity, and the temperature change it undergoes:</p>
+$$Q = mc\Delta T$$
+<p>where $Q$ is the stored thermal energy (joules), $m$ is the mass of the storage medium (kg), $c$ is its specific heat capacity ($\text{J/(kg·°C)}$), and $\Delta T$ is the temperature change (°C). This equation matters here because it explains directly why engineers choose specific materials: a medium with a high $c$ stores more energy per kilogram for the same temperature swing, reducing the size and cost of the storage tank.</p>
+<p><strong>Worked example:</strong> Consider a concentrated solar power (CSP) plant using molten salt as its storage medium, with $c \approx 1500 \text{ J/(kg·°C)}$. Suppose the plant heats 10,000 kg of salt from 290°C to 565°C during the day ($\Delta T = 275°C$). The stored energy is:</p>
+$$Q = (10{,}000)(1500)(275) = 4.125 \times 10^9 \text{ J} \approx 1146 \text{ kWh}$$
+<p>This stored heat can then release power steadily overnight by running the salt through a heat exchanger to generate steam.</p>
+<p><strong>Problem-solving application:</strong> Suppose a plant needs to supply 500 kWh overnight ($1.8 \times 10^9$ J) and uses water instead ($c \approx 4186 \text{ J/(kg·°C)}$), heated through the same $\Delta T = 275°C$. Since $Q = mc\Delta T$, the required mass is whatever value of $m$ makes that product equal $1.8 \times 10^9$ J: dividing $1.8 \times 10^9$ by $(4186)(275)$ gives $m \approx 1564$ kg — far less mass than molten salt would need for the same task. But water can't be heated to 565°C at atmospheric pressure without vaporizing, which is precisely why molten salt, despite its lower specific heat, is preferred in high-temperature CSP: it stays liquid at these temperatures and permits a wide, safe $\Delta T$.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

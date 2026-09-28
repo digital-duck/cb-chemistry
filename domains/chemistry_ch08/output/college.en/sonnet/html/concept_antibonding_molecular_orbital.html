@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Antibonding Molecular Orbital | Chemistry Ch08</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="antibonding-molecular-orbital">Antibonding Molecular Orbital</h2>
+<p>When two atomic orbitals combine, they don't just add together to form one bonding orbital — quantum mechanics requires that the number of orbitals is conserved. Combining two atomic orbitals produces two molecular orbitals: one bonding, one antibonding. The bonding orbital results from constructive overlap of the atomic wavefunctions, concentrating electron density between the nuclei and lowering the system's energy. The antibonding orbital results from destructive overlap: the wavefunctions subtract rather than add, creating a node — a region of zero electron density — directly between the nuclei. Because electrons in this orbital are pushed away from the internuclear region, they leave the nuclei more exposed to each other's repulsion, raising the system's energy above that of the separated atoms. Antibonding orbitals are typically marked with an asterisk, such as $\sigma^<em>$ or $\pi^</em>$, to distinguish them from their bonding counterparts.</p>
+<p>Consider the hydrogen molecule, $H_2$. Each hydrogen atom contributes one electron in a 1s orbital. When the two 1s orbitals combine, they form a bonding $\sigma_{1s}$ orbital (lower energy) and an antibonding $\sigma_{1s}^<em>$ orbital (higher energy). Both electrons occupy the lower-energy bonding orbital, so $H_2$ is stable — the antibonding orbital stays empty. Now compare this to the hypothetical $He_2$ molecule. Helium has two electrons per atom, so four electrons total must be placed. Two fill the bonding $\sigma_{1s}$ orbital, but the remaining two must occupy the antibonding $\sigma_{1s}^</em>$ orbital. The energy gained from the bonding pair is canceled by the energy lost from the antibonding pair, so $He_2$ is not stable — this is exactly why helium exists as isolated atoms rather than diatomic molecules.</p>
+<p>This logic gives you a direct problem-solving tool: bond order. Bond order is calculated as</p>
+$$\text{Bond order} = \frac{(\text{electrons in bonding orbitals}) - (\text{electrons in antibonding orbitals})}{2}$$
+<p>For $H_2$: $(2-0)/2 = 1$, a single bond. For $He_2$: $(2-2)/2 = 0$, no bond at all. Try this yourself with the $He_2^+$ ion, which has only three electrons total (two bonding, one antibonding): the bond order works out to $0.5$, predicting a weak but real bond — a result confirmed experimentally. Whenever you're asked whether a diatomic species can exist, filling the molecular orbital diagram and computing bond order this way is the standard method.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

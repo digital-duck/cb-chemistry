@@ -1,0 +1,241 @@
+domain: chemistry_2e_ch7
+primitives:
+  valence_electrons:
+    defines: The electrons in the outermost shell of an atom that participate in chemical bonding.
+    tier: 0
+  electron_configuration:
+    defines: The distribution of electrons among the orbitals of an atom, written using subshell notation.
+    tier: 0
+  ionization_energy:
+    defines: The energy required to remove an electron from a neutral gaseous atom.
+    tier: 0
+  electron_affinity:
+    defines: The energy released or absorbed when a neutral gaseous atom gains an electron.
+    tier: 0
+  noble_gas_configuration:
+    defines: A filled valence shell electron arrangement, used as the stable reference state for ion and
+      bond formation.
+    tier: 0
+  periodic_table_trends:
+    defines: Systematic variation of atomic properties across periods and down groups.
+    tier: 0
+  electrostatic_force:
+    defines: The force of attraction or repulsion between electrically charged particles, governed by
+      Coulomb's law.
+    tier: 0
+concepts:
+  ion:
+    defines: An atom or molecule that has gained or lost electrons to carry a net electrical charge, forming
+      a cation or anion.
+    composed_of:
+    - valence_electrons
+    - electron_configuration
+    tier: 1
+  electronegativity:
+    defines: A dimensionless measure of an atom's tendency to attract the shared electrons in a chemical
+      bond toward itself, increasing across a period and decreasing down a group.
+    composed_of:
+    - electron_configuration
+    - periodic_table_trends
+    tier: 1
+  covalent_bond:
+    defines: A bond formed when two atoms share one or more pairs of electrons, stabilized by the attraction
+      of both nuclei to the shared electrons.
+    composed_of:
+    - valence_electrons
+    - electrostatic_force
+    tier: 1
+  lewis_symbol:
+    defines: An elemental symbol surrounded by dots representing each valence electron of the atom or
+      monatomic ion.
+    composed_of:
+    - valence_electrons
+    tier: 1
+  ionic_bond:
+    defines: A strong electrostatic force of attraction between oppositely charged cations and anions
+      formed by electron transfer between a metal and a nonmetal.
+    composed_of:
+    - ion
+    - electrostatic_force
+    tier: 2
+  bond_polarity:
+    defines: The degree of charge asymmetry in a covalent bond, determined by the electronegativity difference
+      between the two bonded atoms.
+    composed_of:
+    - covalent_bond
+    - electronegativity
+    tier: 2
+  lone_pair:
+    defines: A pair of valence electrons on an atom that is not involved in bonding with another atom.
+    composed_of:
+    - valence_electrons
+    - covalent_bond
+    tier: 2
+  single_bond:
+    defines: A covalent bond formed by the sharing of one pair of electrons between two atoms.
+    composed_of:
+    - covalent_bond
+    tier: 2
+  double_bond:
+    defines: A covalent bond formed by the sharing of two pairs of electrons between two atoms, shorter
+      and stronger than a single bond between the same atoms.
+    composed_of:
+    - covalent_bond
+    tier: 2
+  triple_bond:
+    defines: A covalent bond formed by the sharing of three pairs of electrons between two atoms, the
+      shortest and strongest bond order between the same two atoms.
+    composed_of:
+    - covalent_bond
+    tier: 2
+  bond_length:
+    defines: The equilibrium internuclear distance between two bonded atoms at which potential energy
+      is minimized, decreasing as bond order increases.
+    composed_of:
+    - covalent_bond
+    tier: 2
+  ionic_compound:
+    defines: A compound composed of cations and anions held together by ionic bonds, arranged in a three-dimensional
+      crystal lattice.
+    composed_of:
+    - ion
+    - ionic_bond
+    tier: 3
+  pure_covalent_bond:
+    defines: A covalent bond between identical atoms in which the bonding electrons are shared equally
+      and no charge separation occurs.
+    composed_of:
+    - covalent_bond
+    - bond_polarity
+    tier: 3
+  polar_covalent_bond:
+    defines: A covalent bond between atoms of different electronegativities in which bonding electrons
+      are shared unequally, creating partial positive and negative charges.
+    composed_of:
+    - covalent_bond
+    - bond_polarity
+    tier: 3
+  lewis_structure:
+    defines: A diagram depicting the arrangement of bonding pairs and lone pairs of valence electrons
+      in a molecule or polyatomic ion.
+    composed_of:
+    - lewis_symbol
+    - lone_pair
+    - covalent_bond
+    tier: 3
+  bond_energy:
+    defines: The energy required to break one mole of a specific covalent bond in gaseous molecules, which
+      increases with bond order and decreases with bond length.
+    composed_of:
+    - covalent_bond
+    - bond_length
+    tier: 3
+  octet_rule:
+    defines: The tendency of main-group atoms to form bonds until they are surrounded by eight valence
+      electrons, achieving a noble gas configuration.
+    composed_of:
+    - valence_electrons
+    - noble_gas_configuration
+    - lewis_structure
+    tier: 4
+  formal_charge:
+    defines: A hypothetical charge assigned to each atom in a Lewis structure by assuming bonding electrons
+      are split equally, used to identify the most reasonable structure.
+    composed_of:
+    - lewis_structure
+    - valence_electrons
+    tier: 4
+  lattice_energy:
+    defines: The energy required to separate one mole of an ionic solid into its gaseous component ions,
+      a measure of ionic bond strength that increases with higher ionic charges and smaller ionic radii.
+    composed_of:
+    - ionic_compound
+    - electrostatic_force
+    tier: 4
+  vsepr_theory:
+    defines: A model predicting the three-dimensional geometry around a central atom by placing all electron
+      pairs as far apart as possible to minimize electrostatic repulsion.
+    composed_of:
+    - lewis_structure
+    - lone_pair
+    - electrostatic_force
+    tier: 4
+  bond_dipole_moment:
+    defines: The vector quantity representing the charge separation in a polar covalent bond, with magnitude
+      proportional to the partial charge and bond length, directed from the less to the more electronegative
+      atom.
+    composed_of:
+    - polar_covalent_bond
+    - bond_length
+    tier: 4
+  octet_rule_exceptions:
+    defines: Cases where the central atom has fewer than eight electrons, more than eight, or an odd number
+      in its valence shell.
+    composed_of:
+    - octet_rule
+    - lewis_structure
+    tier: 5
+  resonance:
+    defines: A description of electron delocalization in which the true electronic structure of a molecule
+      is represented as an average of two or more valid Lewis structures with the same atomic arrangement.
+    composed_of:
+    - lewis_structure
+    - formal_charge
+    tier: 5
+  electron_pair_geometry:
+    defines: The three-dimensional arrangement of all regions of electron density around a central atom,
+      independent of whether those regions contain atoms.
+    composed_of:
+    - vsepr_theory
+    - lewis_structure
+    tier: 5
+  resonance_hybrid:
+    defines: The actual, averaged electronic structure of a molecule that cannot be adequately represented
+      by a single Lewis structure, intermediate among all resonance forms.
+    composed_of:
+    - resonance
+    tier: 6
+  molecular_structure:
+    defines: The three-dimensional arrangement of only the atoms in a molecule, which may differ from
+      the electron-pair geometry when lone pairs are present on the central atom.
+    composed_of:
+    - electron_pair_geometry
+    - lone_pair
+    tier: 6
+  bond_angle:
+    defines: The angle between any two bonds sharing a common atom, determined by the electron-pair geometry
+      and modified by the relative repulsion strengths of lone pairs versus bonding pairs.
+    composed_of:
+    - electron_pair_geometry
+    - lone_pair
+    tier: 6
+  molecular_dipole_moment:
+    defines: The net vector sum of all bond dipole moments in a molecule, which is nonzero only when the
+      bond dipoles do not cancel due to molecular geometry.
+    composed_of:
+    - bond_dipole_moment
+    - molecular_structure
+    tier: 7
+applications:
+  enthalpy_estimation_bond_energies:
+    defines: An approximation method for calculating the enthalpy change of a reaction by summing the
+      energies of bonds broken minus the energies of bonds formed.
+    needs:
+    - bond_energy
+    tier: 4
+  born_haber_cycle:
+    defines: An application of Hess's law that constructs a thermochemical cycle from sublimation, ionization,
+      bond dissociation, electron affinity, and formation enthalpies to calculate lattice energies indirectly.
+    needs:
+    - lattice_energy
+    - ionization_energy
+    - electron_affinity
+    - bond_energy
+    tier: 5
+  polar_molecule:
+    defines: A molecule with a nonzero net dipole moment resulting from polar bonds arranged asymmetrically,
+      causing it to interact with electric fields.
+    needs:
+    - molecular_dipole_moment
+    - molecular_structure
+    tier: 8

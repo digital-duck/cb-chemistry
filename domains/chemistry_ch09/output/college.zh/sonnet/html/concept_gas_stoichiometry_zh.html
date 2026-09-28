@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gas Stoichiometry | Chemistry Ch09</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="gas-stoichiometry-气体化学计量学">Gas Stoichiometry(气体化学计量学)</h2>
+<p><strong>定义</strong></p>
+<p>气体化学计量学是将化学反应方程式中的摩尔比关系与气体的体积、压强、温度联系起来的计算方法。其核心工具是理想气体方程 $PV = nRT$,其中 $P$ 为压强,$V$ 为体积,$n$ 为物质的量(摩尔数),$T$ 为绝对温度(单位:K),$R$ 为理想气体常数($R = 0.0821\ \text{L·atm/(mol·K)}$)。由于反应方程式中的系数给出的是摩尔比,而实验中我们通常测量的是气体的体积,因此需要先用 $PV = nRT$ 把体积换算成摩尔数,再套用化学方程式的摩尔比,最后再换算回所需的体积、质量或摩尔数。在标准状况(STP,$0^\circ\text{C}$、$1\ \text{atm}$)下,1 摩尔任何理想气体的体积恒为 $22.4\ \text{L}$,这一数值可作为换算的捷径。</p>
+<p><strong>例题</strong></p>
+<p>镁与盐酸反应生成氢气:</p>
+$$\text{Mg}(s) + 2\text{HCl}(aq) \rightarrow \text{MgCl}_2(aq) + \text{H}_2(g)$$
+<p>若 $6.00\ \text{g}$ 镁完全反应,求在 $25^\circ\text{C}$、$1.00\ \text{atm}$ 条件下生成氢气的体积。</p>
+<p>第一步,求镁的摩尔数:$n(\text{Mg}) = 6.00\ \text{g} \div 24.3\ \text{g/mol} = 0.247\ \text{mol}$。</p>
+<p>第二步,由方程式摩尔比 $1:1$,得 $n(\text{H}_2) = 0.247\ \text{mol}$。</p>
+<p>第三步,代入理想气体方程求体积:</p>
+$$V = \dfrac{nRT}{P} = \dfrac{(0.247\ \text{mol})(0.0821\ \text{L·atm/(mol·K)})(298\ \text{K})}{1.00\ \text{atm}} \approx 6.04\ \text{L}$$
+<p><strong>解题应用</strong></p>
+<p>处理这类问题时,建议按固定顺序进行:①写出并配平化学方程式;②将已知量(质量、体积、压强等)统一换算成摩尔数;③利用方程式系数比求出目标物质的摩尔数;④再换算成题目要求的单位(体积、质量或分子数)。若反应中气体是反应物而非生成物,同样的四步流程照常适用,只是换算方向相反。掌握这一流程后,即可处理如"消耗多少体积的氧气可燃烧完全某质量的燃料"或"密闭容器中反应后压强如何变化"等更复杂的综合问题。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch9: Gases (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

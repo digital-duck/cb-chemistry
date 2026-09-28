@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Si Units | Chemistry Ch01</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="si-units">Si Units</h2>
+<p><strong>定义</strong></p>
+<p>国际单位制（Système International d'Unités，简称SI）是科学界通用的标准化计量体系，由七个基本单位构成，其余所有物理量的单位都可由这七个基本单位组合导出。这七个基本单位分别是：长度的<strong>米</strong>（m）、质量的<strong>千克</strong>（kg）、时间的<strong>秒</strong>（s）、电流的<strong>安培</strong>（A）、热力学温度的<strong>开尔文</strong>（K）、物质的量的<strong>摩尔</strong>（mol）以及发光强度的<strong>坎德拉</strong>（cd）。自2019年起，这些单位不再依赖实物原器（如曾经的国际千克原器），而是通过固定的物理常数（如普朗克常数、光速、阿伏加德罗常数）来定义，从而保证了测量的长期稳定性与全球一致性。</p>
+<p>导出单位则是基本单位的组合，例如速度的单位是米每秒（$\text{m/s}$），力的单位牛顿（N）等价于 $\text{kg}\cdot\text{m/s}^2$，能量的单位焦耳（J）等价于 $\text{kg}\cdot\text{m}^2/\text{s}^2$。理解这种组合关系，是正确进行单位换算与量纲分析的基础。</p>
+<p><strong>实例解析</strong></p>
+<p>假设某反应消耗了 0.500 mol 的葡萄糖（$C_6H_{12}O_6$，摩尔质量约为 180 g/mol）。要计算所需葡萄糖的质量，需要将摩尔数转换为质量：</p>
+$$
+m = n \times M = 0.500\ \text{mol} \times 180\ \text{g/mol} = 90.0\ \text{g}
+$$
+<p>这里，摩尔（SI基本单位）通过摩尔质量这一导出量，与质量单位克建立了联系。若题目要求以千克为单位报告结果，则需进一步换算：$90.0\ \text{g} = 0.0900\ \text{kg}$。</p>
+<p><strong>解题应用</strong></p>
+<p>在跨单位计算中，最可靠的方法是<strong>量纲分析法</strong>：将已知量的单位视为可以像代数变量一样相乘、相消的量，通过设置换算因子使不需要的单位相互抵消，只留下目标单位。例如，将反应速率 $2.5\ \text{mmol/(L·min)}$ 换算为 $\text{mol/(L·s)}$ 时，依次乘以换算因子 $\dfrac{1\ \text{mol}}{1000\ \text{mmol}}$ 与 $\dfrac{1\ \text{min}}{60\ \text{s}}$，即可得到 $4.2\times 10^{-5}\ \text{mol/(L·s)}$。掌握SI单位及其换算，是实验数据记录、公式应用与跨学科交流中避免误差与歧义的基本前提。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch1: Essential Ideas (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

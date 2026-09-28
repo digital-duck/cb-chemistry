@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reaction Rate | Chemistry Ch13</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="reaction-rate">Reaction Rate</h2>
+<p><strong>定义</strong></p>
+<p>反应速率描述的是化学反应中反应物消耗或生成物生成的快慢程度，通常定义为浓度随时间的变化率。对于反应 $aA + bB \rightarrow cC + dD$，速率可表示为：</p>
+$$
+\text{rate} = -\frac{1}{a}\frac{\Delta[A]}{\Delta t} = -\frac{1}{b}\frac{\Delta[B]}{\Delta t} = \frac{1}{c}\frac{\Delta[C]}{\Delta t} = \frac{1}{d}\frac{\Delta[D]}{\Delta t}
+$$
+<p>其中方括号表示物质的摩尔浓度，负号用于反应物是因为它们的浓度随时间减小，而速率本身被约定为正值。除以化学计量数是为了保证无论用哪种物质来衡量，得到的速率数值一致。</p>
+<p>许多反应的速率还可以用实验测定的<strong>速率定律</strong>表示为 $\text{rate} = k[A]^m[B]^n$，其中 $k$ 是速率常数，$m$、$n$ 是反应级数，二者都必须通过实验数据确定，而不能仅凭化学计量系数推断。</p>
+<p><strong>实例分析</strong></p>
+<p>考虑气相反应 $2\text{N}_2\text{O}_5 \rightarrow 4\text{NO}_2 + \text{O}_2$。实验测得当 $\text{N}_2\text{O}_5$ 浓度从 $0.020\ \text{mol/L}$ 在 100 秒内降至 $0.014\ \text{mol/L}$，则</p>
+$$
+\text{rate} = -\frac{1}{2}\cdot\frac{0.014 - 0.020}{100} = 3.0\times10^{-5}\ \text{mol/(L·s)}
+$$
+<p>由此可推算 $\text{O}_2$ 的生成速率为同一数值（系数为 1），而 $\text{NO}_2$ 的生成速率则是该值的 4 倍。</p>
+<p><strong>问题解决应用</strong></p>
+<p>在实际问题中，学生常需要根据某一物质的速率求出另一物质的速率，或由浓度—时间数据求平均速率。解题步骤为：先写出配平方程，确认各物质的化学计量数；再用测得的 $\Delta[\text{X}]/\Delta t$ 除以（或乘以）相应系数比，换算到目标物质。此外，理解速率会随反应进行而减小（因为反应物浓度不断降低）有助于区分"平均速率"与"瞬时速率"——后者是浓度—时间曲线在某一时刻的切线斜率，工程和药代动力学中常用瞬时速率评估系统在特定时刻的响应速度。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch13: Fundamental Equilibrium Concepts (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

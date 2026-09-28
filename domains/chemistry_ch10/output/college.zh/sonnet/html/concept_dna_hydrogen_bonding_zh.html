@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dna Hydrogen Bonding | Chemistry Ch10</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="dna-hydrogen-bonding">Dna Hydrogen Bonding</h2>
+<p><strong>定义</strong></p>
+<p>DNA双螺旋的两条链依靠碱基之间的氢键（hydrogen bond）配对连接在一起。氢键是一种较弱的非共价相互作用,发生在一个电负性原子(如氮N或氧O)上带部分负电荷的位点,与另一个连接在电负性原子上、带部分正电荷的氢原子之间。DNA中的四种碱基——腺嘌呤(A)、胸腺嘧啶(T)、胞嘧啶(C)、鸟嘌呤(G)——按照严格的互补规则配对:A与T之间形成2条氢键,C与G之间形成3条氢键。这种配对规则称为碱基互补配对原则(complementary base pairing),是沃森和克里克(Watson & Crick)在1953年提出DNA双螺旋结构模型的核心依据。氢键的方向性和碱基的分子形状共同决定了A只能与T配对、C只能与G配对,而不会出现A与C或G与T这样的错配。</p>
+<p><strong>举例说明</strong></p>
+<p>考虑一段DNA单链:5'-ATCGGCTA-3'。根据互补配对原则,其互补链必须是3'-TAGCCGAT-5'。逐位配对时,每一个A对应一个T(2条氢键),每一个C对应一个G(3条氢键)。这条八个碱基长的双链片段总共包含的氢键数目为:4个A-T对贡献 $4 \times 2 = 8$ 条氢键,4个C-G对贡献 $4 \times 3 = 12$ 条氢键,合计20条氢键将两条链稳定地连接在一起。正是这些氢键的总和(而非共价键)使双螺旋既足够稳定以保存遗传信息,又能够在DNA复制或转录时被解旋酶(helicase)等蛋白质相对容易地打开。</p>
+<p><strong>问题解决应用</strong></p>
+<p>氢键数目的差异直接影响DNA片段的热稳定性,这一原理被广泛应用于分子生物学实验设计,例如PCR引物的退火温度(annealing temperature, $T_m$)估算。一个常用的经验公式(适用于较短引物)是:</p>
+$$T_m = 4(G+C) + 2(A+T)$$
+<p>其中$G+C$和$A+T$分别代表引物中G-C对和A-T对的碱基数目。这个公式之所以给G-C对赋予更高权重,正是因为G-C配对拥有3条氢键而A-T配对只有2条,使G-C含量高的序列需要更高温度才能解开双链。例如,若某引物含8个G/C碱基和12个A/T碱基,估算的$T_m = 4(8) + 2(12) = 56^\circ\text{C}$。实验人员据此设定PCR退火步骤的温度,确保引物既能与模板特异性结合,又不会因温度过高而无法退火。理解氢键强度与碱基组成的关系,是设计引物、判断DNA片段稳定性以及解读变性/复性实验结果的基础工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch10: Liquids and Solids (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

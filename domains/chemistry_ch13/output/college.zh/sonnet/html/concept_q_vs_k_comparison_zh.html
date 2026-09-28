@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q Vs K Comparison | Chemistry Ch13</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="q-vs-k-comparison">Q Vs K Comparison</h2>
+<p><strong>定义</strong></p>
+<p>反应商 $Q$ 和平衡常数 $K$ 使用完全相同的表达式——生成物浓度（或分压）的幂次方之积除以反应物浓度的幂次方之积——但它们回答的是不同的问题。对于反应</p>
+$$aA + bB \rightleftharpoons cC + dD$$
+$$Q = \frac{[C]^c[D]^d}{[A]^a[B]^b}$$
+<p>$K$ 是<strong>平衡时</strong>这个比值的数值，它在给定温度下是固定的；$Q$ 则可以在反应过程中<strong>任意时刻</strong>计算，用来描述系统当前所处的状态。换句话说，$K$ 是终点的坐标，$Q$ 是系统此刻所在的位置。比较 $Q$ 与 $K$ 的大小，就能判断反应将朝哪个方向进行才能达到平衡：</p>
+<li>若 $Q < K$，生成物相对不足，反应将<strong>正向</strong>进行（消耗反应物、生成更多产物）；</li>
+<li>若 $Q > K$，生成物过量，反应将<strong>逆向</strong>进行；</li>
+<li>若 $Q = K$，系统已处于平衡，净反应速率为零。</li>
+<p><strong>实例分析</strong></p>
+<p>考虑合成氨反应 $N_2(g) + 3H_2(g) \rightleftharpoons 2NH_3(g)$，某温度下 $K = 0.50$。若某时刻测得 $[N_2] = 0.10\ \text{M}$，$[H_2] = 0.30\ \text{M}$，$[NH_3] = 0.20\ \text{M}$，则</p>
+$$Q = \frac{(0.20)^2}{(0.10)(0.30)^3} = \frac{0.040}{0.0027} \approx 14.8$$
+<p>由于 $Q \gg K$，说明氨的浓度相对过高，系统会向<strong>逆反应方向</strong>移动，即 $NH_3$ 分解为 $N_2$ 和 $H_2$，直到比值降回 $0.50$。</p>
+<p><strong>解题应用</strong></p>
+<p>处理这类问题时的标准步骤是：先写出与平衡常数表达式完全一致的 $Q$ 表达式，代入题目给出的初始或瞬时浓度（注意单位与状态要与 $K$ 值对应的条件一致，比如都用摩尔浓度或都用分压）；再计算出 $Q$ 的数值，与已知的 $K$ 相比较；最后根据大小关系判断移动方向。这一判断常与 ICE 表（Initial-Change-Equilibrium）结合使用：先用 $Q$ 与 $K$ 确定反应移动方向，再设变化量 $x$ 为正或负，代入 ICE 表求解平衡浓度。掌握 $Q$ 与 $K$ 的比较，是连接"反应是否达到平衡"与"如何定量求解平衡组成"这两类问题的关键桥梁。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch13: Fundamental Equilibrium Concepts (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

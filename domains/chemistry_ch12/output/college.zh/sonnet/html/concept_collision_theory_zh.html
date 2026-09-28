@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collision Theory | Chemistry Ch12</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="collision-theory-碰撞理论">Collision Theory（碰撞理论）</h2>
+<p><strong>定义</strong></p>
+<p>碰撞理论用于解释化学反应为何会发生、以及反应速率为何会随条件变化。其核心观点是：反应物粒子(分子、离子或原子)必须相互碰撞才可能发生反应，但并非每次碰撞都会导致产物生成。一次碰撞要真正引发反应，必须同时满足两个条件：第一，粒子的碰撞能量必须达到或超过一个最低阈值，称为<strong>活化能</strong>（activation energy，记作 $E_a$）；第二，粒子碰撞时必须具备合适的<strong>取向</strong>（orientation），使得能够发生化学键断裂与重组的原子部位彼此接触。满足这两个条件的碰撞称为"有效碰撞"，其余绝大多数碰撞都是"无效碰撞"，粒子只是弹开而不发生反应。</p>
+<p><strong>应用实例</strong></p>
+<p>以气相反应 $NO_2(g) + CO(g) \rightarrow NO(g) + CO_2(g)$ 为例。实验测得该反应的活化能约为 $132\ \text{kJ/mol}$。即使 $NO_2$ 与 $CO$ 分子在容器中高频率碰撞，只有那些相对动能超过 $132\ \text{kJ/mol}$、并且 $CO$ 分子中的碳原子恰好撞向 $NO_2$ 中氧原子一侧的碰撞，才能促成氧原子转移、生成 $NO$ 和 $CO_2$。若碳原子撞向氮原子一侧，即使能量足够，反应也不会发生——这说明取向因素的独立重要性。</p>
+<p><strong>解决问题的应用</strong></p>
+<p>碰撞理论直接解释了影响反应速率的四大因素，是分析和预测反应速率变化的实用工具：</p>
+<li><strong>温度升高</strong>：根据麦克斯韦-玻尔兹曼分子速率分布，温度上升会使更大比例的分子具备超过 $E_a$ 的动能，有效碰撞比例增加，反应速率显著加快（通常温度每升高 $10\,^{\circ}\text{C}$，速率大致翻倍）。</li>
+<li><strong>浓度或压强增大</strong>：单位体积内粒子数增多，碰撞总频率上升，有效碰撞次数随之增加。</li>
+<li><strong>表面积增大</strong>（用于固体反应物）：破碎成粉末后暴露的反应位点增多，接触碰撞机会增加。</li>
+<li><strong>催化剂的使用</strong>：催化剂通过提供替代反应路径降低活化能 $E_a$，使更多碰撞的能量超过新的（更低的）阈值，从而在不改变温度的情况下提高有效碰撞比例。</li>
+<p>掌握这一理论，学生可以根据反应条件的变化，定性预测速率将如何改变，并理解速率方程中各因素的物理来源。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch12: Kinetics (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

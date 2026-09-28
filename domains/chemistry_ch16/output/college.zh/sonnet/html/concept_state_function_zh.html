@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>State Function | Chemistry Ch16</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="state-function">State Function</h2>
+<p><strong>定义</strong></p>
+<p>状态函数（state function）是指其数值只取决于系统当前的状态，而与系统如何到达这个状态的路径无关的物理量。常见的状态函数包括温度 $T$、压强 $P$、体积 $V$、内能 $U$、焓 $H$、熵 $S$ 和自由能 $G$。与之相对的是路径函数（path function），例如热量 $q$ 和功 $w$，它们的数值依赖于变化过程中所经历的具体路径。判断一个量是否为状态函数的关键标准是：只要系统从同一个初始状态变到同一个终止状态，该量的变化 $\Delta X = X_{\text{终}} - X_{\text{始}}$ 就是固定的，无论中间经历了怎样的升降温、加压减压或多步反应。</p>
+<p><strong>举例说明</strong></p>
+<p>以内能变化 $\Delta U$ 为例。假设 1 mol 理想气体从状态 A（$T_1 = 300\ \text{K}$，$V_1 = 10\ \text{L}$）变化到状态 B（$T_2 = 400\ \text{K}$，$V_2 = 20\ \text{L}$）。无论是先恒容加热再恒温膨胀，还是先恒温膨胀再恒容加热，只要初末温度相同（理想气体的 $U$ 只是温度的函数），$\Delta U$ 都是同一个数值。但热量 $q$ 和功 $w$ 在这两条路径中会不同——因为膨胀发生在不同温度下，气体对外做的功不同，根据热力学第一定律 $\Delta U = q + w$，$q$ 也必须相应改变以保持 $\Delta U$ 不变。这正体现了状态函数与路径函数的本质区别。</p>
+<p><strong>解决问题中的应用</strong></p>
+<p>在化学反应热效应的计算中，状态函数性质是 Hess 定律（盖斯定律）的理论基础：反应的焓变 $\Delta H$ 只取决于反应物和生成物的状态，而与反应是一步完成还是分成多步进行无关。因此，即使某个反应无法直接测量，也可以通过设计一系列已知焓变的中间反应，把它们相加（必要时改变方向或系数）来求出目标反应的 $\Delta H$。解题时的关键技巧是：把目标反应拆解为若干个已知反应的线性组合，使反应物、生成物和中间体正好抵消，最终得到目标方程；对应的焓变则按同样的系数相加或反转符号求和。这种"路径无关、只看始末态"的思想，是热力学计算中最常用、最实用的解题工具之一。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch16: Thermodynamics (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

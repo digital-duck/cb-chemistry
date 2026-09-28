@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Limiting Reactant | Chemistry Ch04</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="limiting-reactant">Limiting Reactant</h2>
+<p>In any chemical reaction, reactants combine in fixed proportions dictated by the balanced equation. Rarely, however, do the substances mixed together in a lab or industrial reactor happen to be present in exactly those proportions. When reactants are combined in arbitrary amounts, one of them will run out first, halting the reaction and capping the amount of product that can form. This reactant is called the <strong>limiting reactant</strong>; the other is the <strong>excess reactant</strong>, some of which remains unreacted when the reaction stops.</p>
+<p><strong>Worked example.</strong> Consider the synthesis of ammonia:</p>
+$$\text{N}_2 + 3\text{H}_2 \rightarrow 2\text{NH}_3$$
+<p>Suppose you have 4.0 mol of $\text{N}_2$ and 9.0 mol of $\text{H}_2$. The stoichiometry requires 3 mol $\text{H}_2$ for every 1 mol $\text{N}_2$. To find the limiting reactant, calculate how much product each reactant could produce alone, then compare.</p>
+<p>From $\text{N}_2$: $4.0 \text{ mol N}_2 \times \dfrac{2 \text{ mol NH}_3}{1 \text{ mol N}_2} = 8.0 \text{ mol NH}_3$</p>
+<p>From $\text{H}_2$: $9.0 \text{ mol H}_2 \times \dfrac{2 \text{ mol NH}_3}{3 \text{ mol H}_2} = 6.0 \text{ mol NH}_3$</p>
+<p>Hydrogen predicts the smaller yield, so $\text{H}_2$ is the limiting reactant, and only 6.0 mol of $\text{NH}_3$ can actually form. Nitrogen is in excess: only $6.0 \text{ mol NH}_3 \times \dfrac{1 \text{ mol N}_2}{2 \text{ mol NH}_3} = 3.0 \text{ mol N}_2$ is consumed, leaving 1.0 mol of $\text{N}_2$ unreacted.</p>
+<p><strong>Problem-solving application.</strong> The general strategy — compute the product yield predicted by <em>each</em> reactant independently and take the smaller value — works regardless of how many reactants are involved. This matters practically wherever cost, safety, or efficiency is at stake: a chemical engineer scaling up a reaction wants to know which raw material to order more of, and how much of the other will be left over. A common error is to compare the raw <em>mole amounts</em> of reactants directly rather than their amounts relative to the stoichiometric ratio; always work through the balanced equation, as in the worked example above, before concluding which reactant is limiting.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

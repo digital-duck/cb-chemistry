@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photon Energy | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="photon-energy-光子能量">Photon Energy 光子能量</h2>
+<p><strong>定义</strong></p>
+<p>光是一种电磁波,但在与物质相互作用时(例如被原子吸收或发射),它表现出粒子性,这种能量的最小单位称为<strong>光子(photon)</strong>。每个光子携带的能量并非任意大小,而是由光的频率决定,遵循普朗克关系:</p>
+$$E = h\nu$$
+<p>其中 $E$ 是单个光子的能量(单位:焦耳,J),$h$ 是普朗克常数($h = 6.626 \times 10^{-34}\ \text{J·s}$),$\nu$ 是光的频率(单位:赫兹,Hz)。由于频率与波长通过 $c = \lambda \nu$ 相联系($c$ 为光速,$3.00 \times 10^8\ \text{m/s}$),该关系也常写作:</p>
+$$E = \frac{hc}{\lambda}$$
+<p>这个公式揭示了一个关键规律:<strong>波长越短,频率越高,光子能量越大</strong>。这正是紫外线能破坏DNA、而无线电波无害的物理原因——高能光子能够打断化学键,低能光子则不能。</p>
+<p><strong>例题</strong></p>
+<p>计算波长为 $450\ \text{nm}$(蓝光)的一个光子的能量。</p>
+<p>将 $\lambda = 450 \times 10^{-9}\ \text{m}$ 代入公式:</p>
+$$E = \frac{(6.626 \times 10^{-34}\ \text{J·s})(3.00 \times 10^8\ \text{m/s})}{450 \times 10^{-9}\ \text{m}} \approx 4.42 \times 10^{-19}\ \text{J}$$
+<p>这个数值虽然极小,但对于单个原子或分子而言已足够引发电子跃迁。</p>
+<p><strong>应用与解题</strong></p>
+<p>在光合作用中,叶绿素分子吸收特定波长的光子来驱动电子跃迁,启动能量转化的第一步。若已知某光反应需要至少 $3.0 \times 10^{-19}\ \text{J}$ 的能量才能激发电子,我们可以反推所需光的最大波长:</p>
+$$\lambda = \frac{hc}{E} = \frac{(6.626 \times 10^{-34})(3.00 \times 10^8)}{3.0 \times 10^{-19}} \approx 6.63 \times 10^{-7}\ \text{m} = 663\ \text{nm}$$
+<p>这意味着波长短于约663 nm(即能量更高)的光子才能驱动该反应,而波长更长的红外光则无法提供足够能量。这类计算在解释光合作用的"作用光谱"、紫外线致癌机制,以及激光医疗设备的波长选择时都至关重要——理解光子能量与波长的反比关系,是连接物理原理与生物、化学实际应用的桥梁。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

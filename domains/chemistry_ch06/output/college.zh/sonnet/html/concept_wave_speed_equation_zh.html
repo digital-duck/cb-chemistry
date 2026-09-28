@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wave Speed Equation | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="wave-speed-equation">Wave Speed Equation</h2>
+<p><strong>定义</strong></p>
+<p>波速方程描述了波在介质中传播的速度与其频率、波长之间的关系。对于任意一种周期性波动——无论是水面波、声波还是电磁波——波速 $v$ 都满足：</p>
+$$v = f\lambda$$
+<p>其中 $f$ 是频率（单位：赫兹，Hz，表示每秒振动的次数），$\lambda$ 是波长（单位：米，表示一个完整波形所占的空间距离）。这个关系来源于一个简单的物理事实：波每振动一次（一个周期 $T$），就前进一个波长的距离。由于 $f = 1/T$，波速也可以写成 $v = \lambda / T$。</p>
+<p>需要强调的是，波速通常由介质本身的物理性质决定（如介质的密度、弹性、温度或电磁属性），而不是由波源决定。这意味着当波从一种介质进入另一种介质时，波速会改变，但频率保持不变（因为频率由波源振动决定），因此波长必须随之改变，以满足 $v = f\lambda$。</p>
+<p><strong>实例分析</strong></p>
+<p>以声波在空气中传播为例：常温下（约20°C），声速约为 $343 \text{ m/s}$。若某音叉振动频率为 $440\text{ Hz}$（标准音高A4），则对应波长为：</p>
+$$\lambda = \frac{v}{f} = \frac{343 \text{ m/s}}{440 \text{ Hz}} \approx 0.78 \text{ m}$$
+<p>再考虑光波从空气进入水中：光速从约 $3.0\times10^8 \text{ m/s}$ 降至约 $2.25\times10^8 \text{ m/s}$，而光的频率不变，因此波长必然缩短，这正是光在水中发生折射现象的根本原因。</p>
+<p><strong>问题解决应用</strong></p>
+<p>在实际问题中，波速方程常用于反推未知量。例如，已知某地震纵波（P波）在地壳中的传播速度约为 $6.0\text{ km/s}$，若地震仪测得某频率成分周期为 $0.5\text{ s}$，可求得对应波长：</p>
+$$\lambda = vT = 6.0 \text{ km/s} \times 0.5 \text{ s} = 3.0 \text{ km}$$
+<p>这类计算在地震学、声学诊断（如医学超声成像）、以及通信工程（如确定天线尺寸与信号波长的匹配关系）中都有直接应用。掌握 $v = f\lambda$ 不仅是记忆公式，更是建立"介质决定速度、波源决定频率、二者共同决定波长"这一因果链条的关键。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

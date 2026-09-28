@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Temperature | Chemistry Ch12</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="temperature">Temperature</h2>
+<p><strong>定义</strong></p>
+<p>温度是描述物体内部粒子（原子、分子）平均平动动能大小的物理量，反映的是物质的"热运动剧烈程度"，而不是物体所含热量的多少。从微观角度看，构成物质的粒子始终在做无规则运动（热运动），温度越高，粒子运动的平均速率越大，平均动能也越大。需要区分的是"温度"和"热"：热（heat）是由于温度差而在两个系统之间转移的能量，而温度是决定热量流动方向的状态量——热总是自发地从高温物体传向低温物体，直至两者达到热平衡（thermal equilibrium），即温度相等、不再有净热量交换的状态。</p>
+<p>常用的温度标度有三种：摄氏温标（$^\circ\text{C}$）、华氏温标（$^\circ\text{F}$）和开尔文温标（K，绝对温标）。开尔文温标以绝对零度（理论上分子热运动完全停止的温度）为零点，是科学研究中的标准单位。三者换算关系为：</p>
+$$T(\text{K}) = T(^\circ\text{C}) + 273.15$$
+$$T(^\circ\text{F}) = \frac{9}{5}T(^\circ\text{C}) + 32$$
+<p><strong>实例解析</strong></p>
+<p>例如，人体正常体温约为 $37^\circ\text{C}$，换算为开尔文温标为 $37 + 273.15 = 310.15\ \text{K}$；换算为华氏温标为 $\frac{9}{5}\times 37 + 32 = 98.6^\circ\text{F}$。这也解释了为什么发烧时体温升高 $1$–$2^\circ\text{C}$，看似微小,但对应的分子热运动能量变化足以显著影响酶的活性和代谢速率——多数人体酶在超过 $40^\circ\text{C}$ 后会因蛋白质结构被破坏（变性）而丧失功能。</p>
+<p><strong>问题解决应用</strong></p>
+<p>在实验设计和生物、化学过程分析中，温度常作为需要精确控制或换算的变量。例如：某细菌培养实验要求将培养箱设定在 $310\ \text{K}$，技术人员需将其换算为普通温度计可读的摄氏度：$310 - 273.15 = 36.85^\circ\text{C}$，从而正确设置仪器。再如，比较不同国家发表的气候数据（华氏度）与国内实验记录（摄氏度）时，必须先统一标度才能进行有效比较，避免因单位混淆导致实验结论错误。掌握温度标度换算与热平衡原理，是后续学习反应速率、酶动力学和热力学定律的基础。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch12: Kinetics (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amidation | Chemistry Ch20</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="amidation">Amidation</h2>
+<p>酰胺化反应是指羧酸（或其活化形式，如酰氯、酸酐、酯）与胺发生反应，脱去一分子水或其他小分子，生成酰胺键（$-CO-NH-$）的过程。酰胺键是生命化学中最重要的共价键之一——蛋白质的主链正是由氨基酸之间反复发生酰胺化（在生物化学中称为"肽键形成"）连接而成。理解酰胺化，就是理解蛋白质是如何从氨基酸这些基本单元被"组装"出来的。</p>
+<p><strong>反应本质</strong>：羧酸的羰基碳带部分正电荷，容易受到胺分子中氮原子孤对电子的亲核进攻。若直接用游离羧酸与胺混合，室温下反应极慢，因为羧酸的羟基（$-OH$）不是一个好的离去基团，且酸碱中和会先生成不反应的铵盐。要让反应顺利进行，必须先"活化"羧酸——把 $-OH$ 换成更容易离去的基团，例如在细胞内，ATP 将氨基酸的羧基转化为高能的氨酰-AMP 中间体，再让氨基发起进攻，释放 AMP，形成肽键。</p>
+<p><strong>实例演示</strong>：以甘氨酸与丙氨酸缩合为二肽为例。甘氨酸的羧基（$-COOH$）与丙氨酸的氨基（$-NH_2$）反应：</p>
+$$\text{R-COOH} + \text{H}_2\text{N-R'} \longrightarrow \text{R-CO-NH-R'} + \text{H}_2\text{O}$$
+<p>产物中的 $-CO-NH-$ 即为肽键（酰胺键）。核糖体正是利用 tRNA 携带的活化氨基酸，在肽基转移酶中心催化数千次这样的酰胺化反应，将20种氨基酸按 mRNA 指定的顺序逐一连接，合成出完整蛋白质。</p>
+<p><strong>问题解决应用</strong>：面对一条多肽链，你应能反向推理——数出肽键数目即可推知氨基酸残基数（残基数 = 肽键数 + 1），并预测水解（酰胺化的逆反应）需要加入的水分子数目与肽键数相等。这一"计数"技能在计算蛋白质分子量、设计肽段合成路线（如实验室中使用DCC等偶联剂模拟细胞的活化机制）时非常实用。此外，理解酰胺化的可逆性也解释了为什么胃蛋白酶、胰蛋白酶等消化酶能通过催化水解将蛋白质重新拆解为氨基酸——它们是在方向上"反向"利用同一个化学平衡。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch20: Organic Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

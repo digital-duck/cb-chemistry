@@ -1,0 +1,214 @@
+domain: chemistry_2e_ch11
+sources:
+  intermolecular_forces:
+    label: Intermolecular Forces
+    sections: []
+  polarity:
+    label: Molecular Polarity
+    sections: []
+  ions:
+    label: Ions
+    sections: []
+  vapor_pressure:
+    label: Vapor Pressure
+    sections: []
+  molarity:
+    label: Molarity
+    sections: []
+  partial_pressure:
+    label: Partial Pressure
+    sections: []
+  solution:
+    label: Solution
+    sections:
+    - id: ch11_s11_1
+      title: 11.1 The Dissolution Process
+  solvent_and_solute:
+    label: Solvent and Solute
+    sections:
+    - id: ch11_s11_1
+      title: 11.1 The Dissolution Process
+  solvation:
+    label: Solvation
+    sections:
+    - id: ch11_s11_1
+      title: 11.1 The Dissolution Process
+  dissolution_process:
+    label: Dissolution Process
+    sections:
+    - id: ch11_s11_1
+      title: 11.1 The Dissolution Process
+  ideal_solution:
+    label: Ideal Solution
+    sections:
+    - id: ch11_s11_1
+      title: 11.1 The Dissolution Process
+  like_dissolves_like:
+    label: Like Dissolves Like
+    sections:
+    - id: ch11_s11_1
+      title: 11.1 The Dissolution Process
+    - id: ch11_s11_3
+      title: 11.3 Solubility
+  ion_dipole_attraction:
+    label: Ion-Dipole Attraction
+    sections:
+    - id: ch11_s11_2
+      title: 11.2 Electrolytes
+  dissociation:
+    label: Dissociation
+    sections:
+    - id: ch11_s11_2
+      title: 11.2 Electrolytes
+    - id: ch11_s11_3
+      title: 11.3 Solubility
+  electrolyte:
+    label: Electrolyte
+    sections:
+    - id: ch11_s11_2
+      title: 11.2 Electrolytes
+  strong_electrolyte:
+    label: Strong Electrolyte
+    sections:
+    - id: ch11_s11_2
+      title: 11.2 Electrolytes
+  weak_electrolyte:
+    label: Weak Electrolyte
+    sections:
+    - id: ch11_s11_2
+      title: 11.2 Electrolytes
+  nonelectrolyte:
+    label: Nonelectrolyte
+    sections:
+    - id: ch11_s11_2
+      title: 11.2 Electrolytes
+  solubility:
+    label: Solubility
+    sections:
+    - id: ch11_s11_3
+      title: 11.3 Solubility
+  saturated_solution:
+    label: Saturated Solution
+    sections:
+    - id: ch11_s11_3
+      title: 11.3 Solubility
+  supersaturated_solution:
+    label: Supersaturated Solution
+    sections:
+    - id: ch11_s11_3
+      title: 11.3 Solubility
+  henrys_law:
+    label: Henry's Law
+    sections:
+    - id: ch11_s11_3
+      title: 11.3 Solubility
+  temperature_effect_on_solubility:
+    label: Temperature Effect on Solubility
+    sections:
+    - id: ch11_s11_3
+      title: 11.3 Solubility
+  miscibility:
+    label: Miscibility
+    sections:
+    - id: ch11_s11_3
+      title: 11.3 Solubility
+  mole_fraction:
+    label: Mole Fraction
+    sections:
+    - id: ch11_s11_4
+      title: 11.4 Colligative Properties
+  molality:
+    label: Molality
+    sections:
+    - id: ch11_s11_4
+      title: 11.4 Colligative Properties
+  colligative_property:
+    label: Colligative Property
+    sections:
+    - id: ch11_s11_4
+      title: 11.4 Colligative Properties
+  raoults_law:
+    label: Raoult's Law
+    sections:
+    - id: ch11_s11_4
+      title: 11.4 Colligative Properties
+  vapor_pressure_lowering:
+    label: Vapor Pressure Lowering
+    sections:
+    - id: ch11_s11_4
+      title: 11.4 Colligative Properties
+  boiling_point_elevation:
+    label: Boiling Point Elevation
+    sections:
+    - id: ch11_s11_4
+      title: 11.4 Colligative Properties
+  freezing_point_depression:
+    label: Freezing Point Depression
+    sections:
+    - id: ch11_s11_4
+      title: 11.4 Colligative Properties
+  osmosis:
+    label: Osmosis
+    sections:
+    - id: ch11_s11_4
+      title: 11.4 Colligative Properties
+  osmotic_pressure:
+    label: Osmotic Pressure
+    sections:
+    - id: ch11_s11_4
+      title: 11.4 Colligative Properties
+  vant_hoff_factor:
+    label: van't Hoff Factor
+    sections:
+    - id: ch11_s11_4
+      title: 11.4 Colligative Properties
+  colloid:
+    label: Colloid
+    sections:
+    - id: ch11_s11_5
+      title: 11.5 Colloids
+  tyndall_effect:
+    label: Tyndall Effect
+    sections:
+    - id: ch11_s11_5
+      title: 11.5 Colloids
+  emulsion:
+    label: Emulsion
+    sections:
+    - id: ch11_s11_5
+      title: 11.5 Colloids
+  amphiphilic_molecule:
+    label: Amphiphilic Molecule
+    sections:
+    - id: ch11_s11_5
+      title: 11.5 Colloids
+  distillation:
+    label: Distillation
+    sections:
+    - id: ch11_s11_4
+      title: 11.4 Colligative Properties
+  molar_mass_determination:
+    label: Molar Mass Determination via Colligative Properties
+    sections:
+    - id: ch11_s11_4
+      title: 11.4 Colligative Properties
+  decompression_sickness:
+    label: Decompression Sickness (The Bends)
+    sections:
+    - id: ch11_s11_3
+      title: 11.3 Solubility
+  deicing:
+    label: De-icing with Solutes
+    sections:
+    - id: ch11_s11_4
+      title: 11.4 Colligative Properties
+  reverse_osmosis:
+    label: Reverse Osmosis
+    sections:
+    - id: ch11_s11_4
+      title: 11.4 Colligative Properties
+  soap_detergent_action:
+    label: Soap and Detergent Cleaning Action
+    sections:
+    - id: ch11_s11_5
+      title: 11.5 Colloids

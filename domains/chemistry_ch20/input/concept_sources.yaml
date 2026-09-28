@@ -1,0 +1,178 @@
+domain: chemistry_2e_ch20
+sources:
+  organic_compound:
+    label: Organic Compound
+    sections:
+    - id: ch20_s20_1
+      title: 20.1 Hydrocarbons
+  carbon_tetravalence:
+    label: Carbon Tetravalence
+    sections:
+    - id: ch20_s20_1
+      title: 20.1 Hydrocarbons
+  hybridization:
+    label: Orbital Hybridization
+    sections:
+    - id: ch20_s20_1
+      title: 20.1 Hydrocarbons
+  oxidation_number:
+    label: Oxidation Number
+    sections:
+    - id: ch20_s20_3
+      title: 20.3 Aldehydes, Ketones, Carboxylic Acids, and Esters
+  resonance_structure:
+    label: Resonance Structure
+    sections:
+    - id: ch20_s20_1
+      title: 20.1 Hydrocarbons
+  hydrocarbon:
+    label: Hydrocarbon
+    sections:
+    - id: ch20_s20_1
+      title: 20.1 Hydrocarbons
+  alkane:
+    label: Alkane
+    sections:
+    - id: ch20_s20_1
+      title: 20.1 Hydrocarbons
+  condensed_structural_formula:
+    label: Condensed Structural Formula
+    sections:
+    - id: ch20_s20_1
+      title: 20.1 Hydrocarbons
+  skeletal_structure:
+    label: Skeletal Structure
+    sections:
+    - id: ch20_s20_1
+      title: 20.1 Hydrocarbons
+  structural_isomer:
+    label: Structural Isomer
+    sections:
+    - id: ch20_s20_1
+      title: 20.1 Hydrocarbons
+  iupac_nomenclature:
+    label: IUPAC Nomenclature
+    sections:
+    - id: ch20_s20_1
+      title: 20.1 Hydrocarbons
+    - id: ch20_s20_2
+      title: 20.2 Alcohols and Ethers
+    - id: ch20_s20_3
+      title: 20.3 Aldehydes, Ketones, Carboxylic Acids, and Esters
+    - id: ch20_s20_4
+      title: 20.4 Amines and Amides
+  alkyl_group:
+    label: Alkyl Group
+    sections:
+    - id: ch20_s20_1
+      title: 20.1 Hydrocarbons
+  functional_group:
+    label: Functional Group
+    sections:
+    - id: ch20_s20_1
+      title: 20.1 Hydrocarbons
+  substitution_reaction:
+    label: Substitution Reaction
+    sections:
+    - id: ch20_s20_1
+      title: 20.1 Hydrocarbons
+  alkene:
+    label: Alkene
+    sections:
+    - id: ch20_s20_1
+      title: 20.1 Hydrocarbons
+  geometric_isomer:
+    label: Geometric Isomer
+    sections:
+    - id: ch20_s20_1
+      title: 20.1 Hydrocarbons
+  addition_reaction:
+    label: Addition Reaction
+    sections:
+    - id: ch20_s20_1
+      title: 20.1 Hydrocarbons
+  alkyne:
+    label: Alkyne
+    sections:
+    - id: ch20_s20_1
+      title: 20.1 Hydrocarbons
+  aromatic_hydrocarbon:
+    label: Aromatic Hydrocarbon
+    sections:
+    - id: ch20_s20_1
+      title: 20.1 Hydrocarbons
+  alcohol:
+    label: Alcohol
+    sections:
+    - id: ch20_s20_2
+      title: 20.2 Alcohols and Ethers
+  ether:
+    label: Ether
+    sections:
+    - id: ch20_s20_2
+      title: 20.2 Alcohols and Ethers
+  carbonyl_group:
+    label: Carbonyl Group
+    sections:
+    - id: ch20_s20_3
+      title: 20.3 Aldehydes, Ketones, Carboxylic Acids, and Esters
+  aldehyde:
+    label: Aldehyde
+    sections:
+    - id: ch20_s20_3
+      title: 20.3 Aldehydes, Ketones, Carboxylic Acids, and Esters
+  ketone:
+    label: Ketone
+    sections:
+    - id: ch20_s20_3
+      title: 20.3 Aldehydes, Ketones, Carboxylic Acids, and Esters
+  oxidation_reduction_organic:
+    label: Oxidation and Reduction in Organic Chemistry
+    sections:
+    - id: ch20_s20_3
+      title: 20.3 Aldehydes, Ketones, Carboxylic Acids, and Esters
+  carboxylic_acid:
+    label: Carboxylic Acid
+    sections:
+    - id: ch20_s20_3
+      title: 20.3 Aldehydes, Ketones, Carboxylic Acids, and Esters
+  ester:
+    label: Ester
+    sections:
+    - id: ch20_s20_3
+      title: 20.3 Aldehydes, Ketones, Carboxylic Acids, and Esters
+  amine:
+    label: Amine
+    sections:
+    - id: ch20_s20_4
+      title: 20.4 Amines and Amides
+  amide:
+    label: Amide
+    sections:
+    - id: ch20_s20_4
+      title: 20.4 Amines and Amides
+  combustion_of_alkanes:
+    label: Combustion of Alkanes
+    sections:
+    - id: ch20_s20_1
+      title: 20.1 Hydrocarbons
+  polymerization:
+    label: Polymerization
+    sections:
+    - id: ch20_s20_1
+      title: 20.1 Hydrocarbons
+  fractional_distillation:
+    label: Fractional Distillation of Crude Oil
+    sections:
+    - id: ch20_s20_1
+      title: 20.1 Hydrocarbons
+  esterification:
+    label: Esterification
+    sections:
+    - id: ch20_s20_3
+      title: 20.3 Aldehydes, Ketones, Carboxylic Acids, and Esters
+  amidation:
+    label: Amidation
+    sections:
+    - id: ch20_s20_4
+      title: 20.4 Amines and Amides

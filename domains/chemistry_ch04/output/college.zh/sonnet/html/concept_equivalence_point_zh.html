@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Equivalence Point | Chemistry Ch04</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="equivalence-point">Equivalence Point</h2>
+<p><strong>定义</strong></p>
+<p>在酸碱中和滴定中，等量点（equivalence point）是指加入的滴定剂（titrant）的物质的量恰好与被滴定的分析物（analyte）完全反应所需的物质的量相等的那一点。用摩尔数表示，对于一元酸与一元强碱的反应：</p>
+$$n_{\text{酸}} = n_{\text{碱}}$$
+<p>即 $C_a V_a = C_b V_b$，其中 $C$ 为浓度，$V$ 为体积。需要注意的是，等量点是一个基于反应物质的量关系定义的理论点，它不一定等于溶液 pH = 7 的那一点——这一区别是初学者最容易混淆的地方。对于强酸与强碱的滴定，等量点确实在 pH = 7 附近；但若是弱酸被强碱滴定（如醋酸被 NaOH 滴定），等量点处生成的是弱酸的共轭碱（如乙酸钠），该盐会发生水解使溶液略偏碱性，因此等量点的 pH 大于 7。相反，弱碱被强酸滴定时，等量点的 pH 小于 7。</p>
+<p><strong>实例分析</strong></p>
+<p>设有 25.00 mL、浓度为 0.100 mol/L 的醋酸（$K_a = 1.8\times10^{-5}$）用 0.100 mol/L 的 NaOH 溶液滴定。计算达到等量点所需 NaOH 体积：</p>
+$$n_{\text{CH}_3\text{COOH}} = 0.02500\ \text{L} \times 0.100\ \text{mol/L} = 2.50\times10^{-3}\ \text{mol}$$
+<p>由于反应为 1:1，所需 NaOH 的量也是 $2.50\times10^{-3}$ mol，对应体积：</p>
+$$V_{\text{NaOH}} = \frac{2.50\times10^{-3}\ \text{mol}}{0.100\ \text{mol/L}} = 25.00\ \text{mL}$$
+<p>此时生成的乙酸钠会部分水解，使等量点 pH 略高于 7（约为 8.7），而非恰好为 7。</p>
+<p><strong>解题应用</strong></p>
+<p>在实际滴定曲线分析中，等量点常通过图形法确定：在 pH 对滴入体积的曲线上，等量点位于曲线斜率最大、S 形拐点（inflection point）处。判断题型常要求：（1）根据已知浓度与体积计算达到等量点所需滴定剂体积；（2）判断等量点处 pH 是酸性、中性还是碱性，依据是分析物及产物的强弱性质；（3）选择合适的指示剂，其变色范围应与等量点 pH 相匹配，而非机械地假设为中性。掌握这些判断，是滴定实验设计与数据解读的核心技能。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch4: Stoichiometry of Chemical Reactions (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

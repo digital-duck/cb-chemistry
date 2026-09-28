@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Standard State | Chemistry Ch05</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="standard-state">Standard State</h2>
+<p>The <strong>standard state</strong> of a substance is a precisely defined reference condition used to tabulate thermodynamic data so that values from different sources can be compared and combined consistently. By convention, the standard state for a pure gas is the hypothetical ideal gas at exactly 1 bar of pressure; for a pure liquid or solid, it is the most stable form of the substance at 1 bar; and for a solute in solution, it is a hypothetical 1 mol/L (1 M) concentration behaving ideally. Temperature is <em>not</em> fixed by the standard state itself—it must be specified separately, though 298.15 K (25 °C) is the most common reference temperature used in tables. Properties measured under these conditions carry a superscript degree symbol, such as $\Delta H^\circ$, $\Delta G^\circ$, or $S^\circ$.</p>
+<p><strong>Worked example.</strong> Suppose you want the standard enthalpy change for the reaction $\text{CH}_4(g) + 2\text{O}_2(g) \rightarrow \text{CO}_2(g) + 2\text{H}_2\text{O}(l)$. Standard formation enthalpies from a table (all at 1 bar, 298.15 K) give: $\Delta H_f^\circ[\text{CH}_4(g)] = -74.8$ kJ/mol, $\Delta H_f^\circ[\text{CO}_2(g)] = -393.5$ kJ/mol, $\Delta H_f^\circ[\text{H}_2\text{O}(l)] = -285.8$ kJ/mol, and $\Delta H_f^\circ[\text{O}_2(g)] = 0$ (elements in their standard state are defined as zero). Summing product values and subtracting reactant values gives:</p>
+$$\Delta H_{rxn}^\circ = \left[-393.5 + 2(-285.8)\right] - \left[-74.8 + 2(0)\right] = -890.3 \text{ kJ/mol}$$
+<p>This calculation only works because every value came from the <em>same</em> reference condition—mixing data measured at different pressures or physical states would give a meaningless answer.</p>
+<p><strong>Problem-solving application.</strong> The practical value of standard states is that they let you build a universal lookup table instead of remeasuring every possible reaction. Whenever you combine thermodynamic data from a table—whether for enthalpy, entropy, or Gibbs free energy—check three things: (1) that all species are in their stated standard states (gas, liquid, aqueous solution, etc.), (2) that all values use the same reference temperature, and (3) that elements in their natural standard-state form are assigned zero for formation quantities. A common student error is forgetting that water's standard state depends on the reaction context—liquid water $(l)$ and water vapor $(g)$ have different formation enthalpies, and using the wrong one will introduce an error of tens of kilojoules per mole.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

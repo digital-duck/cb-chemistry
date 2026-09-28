@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bond Order | Chemistry Ch08</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="bond-order">Bond Order</h2>
+<p>Bond order is a number that tells you how many chemical bonds are shared between two atoms — essentially, how much "glue" holds them together. A bond order of 1 corresponds to a single bond (one shared pair of electrons), 2 to a double bond, and 3 to a triple bond. The concept matters because bond order correlates directly with two measurable properties: bond length and bond energy. Higher bond order means a shorter, stronger bond, because more electron density is packed between the two nuclei, pulling them closer together and requiring more energy to pull apart.</p>
+<p>For simple molecules built from Lewis structures, bond order is just the number of shared electron pairs between two specific atoms. Consider the nitrogen molecule, $N_2$. Its Lewis structure shows a triple bond: $:N \equiv N:$. Between the two nitrogen atoms there are three shared pairs, so the bond order is 3. Compare this to oxygen, $O_2$, with a double bond ($O=O$), bond order 2, and to fluorine, $F_2$, with a single bond ($F-F$), bond order 1. Measured bond lengths confirm the pattern: $N_2$ is about 110 pm, $O_2$ about 121 pm, and $F_2$ about 142 pm — bond order and bond length move in opposite directions.</p>
+<p>Bond order becomes especially useful — and slightly more involved — when electrons are delocalized across more than two atoms, as in molecular orbital (MO) theory or resonance structures. In MO theory, bond order is calculated as:</p>
+$$
+\text{Bond order} = \frac{(\text{number of bonding electrons}) - (\text{number of antibonding electrons})}{2}
+$$
+<p>Apply this to the diatomic ion $O_2^{+}$. Removing one electron from $O_2$ removes it from an antibonding orbital, giving 10 bonding and 5 antibonding electrons: bond order $= (10-5)/2 = 2.5$. This fractional value is a real, testable prediction — it means the O–O bond in $O_2^{+}$ should be shorter and stronger than in neutral $O_2$ (bond order 2), which is exactly what experiments show.</p>
+<p>This formula is a genuine problem-solving tool: given an electron configuration, you can predict relative bond strength, bond length, and even magnetic behavior (unpaired electrons in antibonding orbitals make a species paramagnetic) without needing to draw every orbital diagram from scratch.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

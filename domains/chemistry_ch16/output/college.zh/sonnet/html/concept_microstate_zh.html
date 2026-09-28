@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Microstate | Chemistry Ch16</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="microstate">Microstate</h2>
+<p><strong>定义</strong></p>
+<p>在统计力学中，微观状态（microstate）指的是构成一个系统的所有粒子在某一瞬间的完整、精确描述——包括每个粒子的位置和动量（或量子力学中每个粒子所处的具体量子态）。与之相对的是宏观状态（macrostate），后者只描述系统整体的可观测性质，如温度 $T$、压强 $P$、体积 $V$ 和总能量 $E$。关键的一点是：同一个宏观状态几乎总是对应着极其庞大数量的微观状态，因为无数种粒子排列方式都能产生完全相同的宏观测量结果。系统的熵 $S$ 正是通过统计与某宏观状态对应的微观状态数目 $\Omega$ 来定义的，即玻尔兹曼公式：</p>
+$$S = k_B \ln \Omega$$
+<p>其中 $k_B$ 是玻尔兹曼常数。这个公式把看似抽象的"无序程度"与一个可以计数的量联系了起来。</p>
+<p><strong>举例说明</strong></p>
+<p>考虑一个简化模型：4 个可区分的气体分子分布在容器左右两个等大的隔间中。宏观状态由"左边有几个分子"这一变量描述，可能取值为 0、1、2、3 或 4。而微观状态则是具体说明"哪几个分子"在左边。例如宏观状态"左边 2 个分子"对应的微观状态数为 $\binom{4}{2} = 6$ 种排列方式，而宏观状态"左边 4 个分子（即全部分子都聚集在左侧）"只对应 1 种微观状态。由于对应"2 个分子在左"的微观状态数目最多，系统在自然演化中最可能停留在这个宏观状态附近——这正是热力学第二定律（熵倾向于增大）在分子层面的直观体现。</p>
+<p><strong>问题解决应用</strong></p>
+<p>理解微观状态数目与熵的关系，可以帮助我们预测和分析真实的物理与化学过程。例如，判断一个反应或过程是否会自发进行，一个重要线索是：产物的微观状态数目（$\Omega_{\text{后}}$）是否远大于反应物的微观状态数目（$\Omega_{\text{前}}$）。冰融化成水时，水分子从固定在晶格中的有序排列，变为可以自由平移、旋转的液态排列，可及的微观状态数急剧增加，因此熵增大，这也解释了为什么该过程在常温下能自发发生。在解决具体问题时，可以先计数系统在给定宏观约束（如总能量、总粒子数）下所有可能的微观排列方式，再通过比较不同宏观状态对应的 $\Omega$ 值，判断系统演化的方向和平衡点所在。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch16: Thermodynamics (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

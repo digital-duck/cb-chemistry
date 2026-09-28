@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chemical Equation | Chemistry Ch04</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="chemical-equation">Chemical Equation</h2>
+<p><strong>定义</strong></p>
+<p>化学方程式（chemical equation）是用化学式表示化学反应的简写方式，清楚地列出反应物（reactants）如何转化为生成物（products）。一个正确的化学方程式必须满足质量守恒定律：反应前后每种元素的原子总数必须相等。为了让方程式满足这一要求，我们需要在化学式前面添加合适的系数（coefficient），这一调整过程称为配平（balancing）。需要特别注意：配平只能改变系数，绝不能改变化学式下标，因为下标一旦改变就代表了完全不同的物质。方程式中还常用符号标注物质状态：固态 $(s)$、液态 $(l)$、气态 $(g)$、水溶液 $(aq)$，并用箭头 $\rightarrow$ 表示反应进行的方向。</p>
+<p><strong>实例演示</strong></p>
+<p>以甲烷燃烧为例，未配平的方程式为：</p>
+$$\text{CH}_4 + \text{O}_2 \rightarrow \text{CO}_2 + \text{H}_2\text{O}$$
+<p>先配平碳原子：两边各 1 个，已平衡。再配平氢原子：左边有 4 个氢（来自 $\text{CH}_4$），右边只有 2 个（来自一个 $\text{H}_2\text{O}$），因此在 $\text{H}_2\text{O}$ 前加系数 2：</p>
+$$\text{CH}_4 + \text{O}_2 \rightarrow \text{CO}_2 + 2\text{H}_2\text{O}$$
+<p>最后配平氧原子：右边共有 $2 + 2 = 4$ 个氧原子（$\text{CO}_2$ 提供 2 个，$2\text{H}_2\text{O}$ 提供 2 个），因此左边 $\text{O}_2$ 前需加系数 2：</p>
+$$\text{CH}_4 + 2\text{O}_2 \rightarrow \text{CO}_2 + 2\text{H}_2\text{O}$$
+<p>检验：碳 $1=1$，氢 $4=4$，氧 $4=4$，方程式已配平。</p>
+<p><strong>解题应用</strong></p>
+<p>配平的关键在于按顺序逐一处理每种元素，并且每次调整系数后都要重新核对所有元素的原子数，直到全部相等为止。一个实用的小技巧是：优先配平只出现在一个反应物和一个生成物中的元素（如本例中的碳和氢），把同时出现在多个物质中的元素（如氧）留到最后处理，这样可以减少反复调整的次数。多练习不同类型的反应方程式——化合、分解、置换——能帮助你熟悉这一技能。配平后的方程式是后续所有定量计算（如反应物用量、生成物产量的计算）的出发点，因此扎实掌握配平是学好化学计算的第一步。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch4: Stoichiometry of Chemical Reactions (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

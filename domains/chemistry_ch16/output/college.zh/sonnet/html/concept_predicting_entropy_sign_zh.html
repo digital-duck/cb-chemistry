@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Predicting Entropy Sign | Chemistry Ch16</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="predicting-entropy-sign">Predicting Entropy Sign</h2>
+<p><strong>定义</strong></p>
+<p>熵（entropy，$S$）是系统微观无序程度的量度：系统可能的微观排列方式越多，熵越高。一个化学或物理过程发生后，熵变 $\Delta S = S_\text{终态} - S_\text{始态}$ 可以是正值（熵增，$\Delta S > 0$）或负值（熵减，$\Delta S < 0$）。要预测 $\Delta S$ 的符号，不需要计算具体数值,只需判断系统的"混乱程度"或可能状态数在过程前后如何变化。三个最实用的判据是：</p>
+<li><strong>物态变化</strong>：气体的熵远大于液体，液体的熵又大于固体（$S_\text{气} \gg S_\text{液} > S_\text{固}$），因为气体分子运动自由度最大。</li>
+<li><strong>气体分子数变化</strong>：反应前后气体摩尔数增加，$\Delta S > 0$；气体摩尔数减少，$\Delta S < 0$。</li>
+<li><strong>物质的复杂度或分散程度</strong>：大分子分解为多个小分子、固体溶解于水、纯物质混合成溶液，都倾向于使熵增加。</li>
+<p><strong>实例分析</strong></p>
+<p>考虑反应：</p>
+$$\text{CaCO}_3(s) \rightarrow \text{CaO}(s) + \text{CO}_2(g)$$
+<p>反应前只有固体，反应后生成了 1 mol 气体，气体分子数从 0 增加到 1，且固体分解为两种物质、体系更分散。根据判据 1 和 2，可以直接预测 $\Delta S > 0$，无需查表计算。</p>
+<p>再看反应：</p>
+$$\text{N}_2(g) + 3\text{H}_2(g) \rightarrow 2\text{NH}_3(g)$$
+<p>反应物气体总摩尔数为 4，产物气体摩尔数为 2，气体分子数减少，体系变得更"有序"（分子间碰撞组合的方式减少），因此预测 $\Delta S < 0$。这与实验测得的标准熵变 $\Delta S^\circ = -198.7~\text{J/(mol·K)}$ 一致。</p>
+<p><strong>解题应用</strong></p>
+<p>在实际解题中，熵符号预测常与吉布斯自由能公式 $\Delta G = \Delta H - T\Delta S$ 联用，用来判断反应在高温或低温下是否自发。例如，若某反应 $\Delta H < 0$（放热）且预测 $\Delta S < 0$（如上述合成氨反应），则该反应在低温下自发，高温下则可能变为非自发——因为 $-T\Delta S$ 项随温度升高而变得更加不利。</p>
+<p>练习时，建议按以下步骤操作：先统计反应物与生成物中气体、液体、固体的种类和摩尔数；再比较气体分子数变化；最后结合物质是否被"打散"（如溶解、分解）综合判断符号。这种定性判断法在没有热力学数据表的情况下尤为重要，是普通化学考试和实验设计中的常用技能。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch16: Thermodynamics (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Balanced Equation | Chemistry Ch04</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="balanced-equation">Balanced Equation</h2>
+<p><strong>定义</strong></p>
+<p>化学反应遵循质量守恒定律：反应前后原子的种类和数目不变。<strong>配平方程式</strong>（balanced equation）就是在化学反应式中为各物质配上恰当的化学计量数（coefficient），使等号两边每种元素的原子总数相等。需要注意的是，只能调整化学式前面的系数，绝不能改变化学式本身的下标——改变下标会把物质变成完全不同的化合物。例如，把 $\text{H}_2\text{O}$ 写成 $\text{H}_2\text{O}_2$，就不再是水，而是过氧化氢。</p>
+<p><strong>实例讲解</strong></p>
+<p>以甲烷燃烧为例：</p>
+$$\text{CH}_4 + \text{O}_2 \rightarrow \text{CO}_2 + \text{H}_2\text{O}$$
+<p>先看碳：左边 1 个，右边 1 个，已配平。再看氢：左边 4 个，右边只有 2 个，需要在 $\text{H}_2\text{O}$ 前加系数 2：</p>
+$$\text{CH}_4 + \text{O}_2 \rightarrow \text{CO}_2 + 2\text{H}_2\text{O}$$
+<p>最后核对氧原子：右边现有 $2 + 2 = 4$ 个氧原子，左边 $\text{O}_2$ 需配上系数 2 才能提供 4 个氧原子：</p>
+$$\text{CH}_4 + 2\text{O}_2 \rightarrow \text{CO}_2 + 2\text{H}_2\text{O}$$
+<p>此时碳、氢、氧三种元素两边均相等，方程式配平完成。</p>
+<p><strong>解题应用</strong></p>
+<p>配平方程式最实用的技巧是<strong>按顺序逐一核对元素</strong>：通常先配平只出现在一种反应物和一种生成物中的元素（如上例中的碳），再处理氢，最后处理氧，因为氧往往出现在多个物质中，牵涉的系数最多，放在最后调整最省力。</p>
+<p>配平后的方程式是定量计算的基础：系数比就是<strong>摩尔比</strong>（mole ratio），可用于计算反应物用量或产物产率。例如，若要燃烧 3 摩尔甲烷，根据上述配平方程式的比例 $1:2:1:2$，需要 $3 \times 2 = 6$ 摩尔氧气，生成 3 摩尔 $\text{CO}_2$ 和 6 摩尔 $\text{H}_2\text{O}$。</p>
+<p>练习时可采用"试凑法"：从原子数最多或最复杂的化学式入手，逐步调整系数，并随时用一张表格记录每种元素两边的原子数，直至全部相等。对于较复杂的氧化还原反应，还可结合电子转移数目（得失电子守恒）来辅助配平，但基本原则始终是原子守恒。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch4: Stoichiometry of Chemical Reactions (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

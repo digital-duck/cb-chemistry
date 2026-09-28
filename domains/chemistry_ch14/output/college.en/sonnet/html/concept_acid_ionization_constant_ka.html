@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acid Ionization Constant Ka | Chemistry Ch14</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="acid-ionization-constant-ka">Acid Ionization Constant Ka</h2>
+<p>When a weak acid $\text{HA}$ dissolves in water, it does not fully dissociate. Instead, it establishes an equilibrium:</p>
+$$\text{HA}(aq) + \text{H}_2\text{O}(l) \rightleftharpoons \text{H}_3\text{O}^+(aq) + \text{A}^-(aq)$$
+<p>The <strong>acid ionization constant</strong>, $K_a$, quantifies the position of this equilibrium:</p>
+$$K_a = \frac{[\text{H}_3\text{O}^+][\text{A}^-]}{[\text{HA}]}$$
+<p>Water is omitted because its concentration is treated as constant in dilute solution. A larger $K_a$ means the equilibrium favors products — the acid ionizes more extensively and is therefore stronger. Because $K_a$ values span many orders of magnitude, chemists often report $\text{p}K_a = -\log_{10}K_a$; smaller $\text{p}K_a$ corresponds to a stronger acid.</p>
+<p><strong>Worked example.</strong> Acetic acid ($\text{CH}_3\text{COOH}$) has $K_a = 1.8 \times 10^{-5}$. Suppose we prepare a 0.10 M solution and let $x$ be the equilibrium concentration of $\text{H}_3\text{O}^+$ produced. Then $[\text{A}^-] = x$ and $[\text{HA}] \approx 0.10 - x$. Substituting:</p>
+$$1.8 \times 10^{-5} = \frac{x^2}{0.10 - x}$$
+<p>Since $K_a$ is small, ionization is minor, so $0.10 - x \approx 0.10$:</p>
+$$x^2 = (1.8\times 10^{-5})(0.10) = 1.8\times 10^{-6} \implies x \approx 1.34\times 10^{-3}\ \text{M}$$
+<p>This gives $\text{pH} = -\log(1.34\times 10^{-3}) \approx 2.87$. Checking the approximation, $x/0.10 = 1.3\%$, well under the usual 5% tolerance, so the simplification is valid.</p>
+<p><strong>Problem-solving application.</strong> $K_a$ lets you predict pH from concentration, or work backward: if you measure the pH of an unknown weak acid solution, you can solve for $K_a$ and identify the acid or assess its purity. It also governs buffer behavior — the Henderson–Hasselbalch equation, $\text{pH} = \text{p}K_a + \log([\text{A}^-]/[\text{HA}])$, is derived directly from the $K_a$ expression. When solving these problems, always set up an ICE (Initial–Change–Equilibrium) table first, check whether the small-$x$ approximation is valid, and use the quadratic formula instead when $K_a$ is not small relative to the initial concentration.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

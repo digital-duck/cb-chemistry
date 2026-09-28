@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Complex Geometry | Chemistry Ch19</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="复数的几何表示">复数的几何表示</h2>
+<p><strong>定义</strong>：复数 $z = a + bi$ 可以用平面上的点 $(a, b)$ 表示，这个平面称为复平面（Argand 平面），实部对应横轴，虚部对应纵轴。复数的<strong>模</strong> $|z| = \sqrt{a^2 + b^2}$ 表示该点到原点的距离；<strong>辐角</strong> $\theta = \arg(z)$ 表示该点与原点的连线相对于正实轴的夹角。任何非零复数都可以写成极坐标形式：</p>
+$$z = r(\cos\theta + i\sin\theta) = re^{i\theta}$$
+<p>其中 $r = |z|$，这就是欧拉公式给出的极坐标表示。</p>
+<p>复数运算的几何意义十分直观：<strong>加法</strong>对应向量相加，遵循平行四边形法则；<strong>乘法</strong>则同时涉及“缩放”与“旋转”——两个复数相乘时，模相乘、辐角相加：</p>
+$$z_1 z_2 = r_1 r_2\, e^{i(\theta_1+\theta_2)}$$
+<p>这一结论可由欧拉公式直接证明，是理解复数几何意义的核心定理：乘以一个复数，就是对平面上的向量做一次“旋转 + 缩放”的复合变换。</p>
+<p><strong>例题</strong>：设 $z_1 = 1+i$，$z_2 = \sqrt{3}+i$。化为极坐标：$z_1 = \sqrt{2}(\cos45^\circ+i\sin45^\circ)$，$z_2 = 2(\cos30^\circ+i\sin30^\circ)$。于是</p>
+$$z_1 z_2 = 2\sqrt{2}\,(\cos75^\circ+i\sin75^\circ)$$
+<p>几何上看，乘以 $z_2$ 相当于把 $z_1$ 对应的向量放大 2 倍，并逆时针旋转 $30^\circ$。</p>
+<p><strong>应用</strong>：这一几何直觉在工程与物理中广泛使用。交流电路分析中，阻抗和电压用复数表示，乘以 $e^{i\theta}$ 相当于引入一个相位延迟，无需重新展开三角恒等式；信号处理中的相量（phasor）旋转同样依赖复平面的几何图像，而不是代数运算本身。</p>
+<p><strong>练习</strong>：求满足 $|z-2| = |z+2i|$ 的所有点 $z$ 构成的图形。（提示：这是复平面上到两个定点 $2$ 与 $-2i$ 距离相等的点的集合，其几何轨迹是连接这两点线段的垂直平分线。）</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch19: Transition Metals and Coordination Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

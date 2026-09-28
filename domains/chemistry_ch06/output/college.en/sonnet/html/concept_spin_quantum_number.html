@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spin Quantum Number | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="spin-quantum-number">Spin Quantum Number</h2>
+<p>Every electron in an atom carries a fourth quantum number, $m_s$, that describes an intrinsic property called spin. Unlike the principal quantum number $n$, angular momentum quantum number $l$, or magnetic quantum number $m_l$ — which together describe the size, shape, and orientation of an orbital — spin has nothing to do with an electron's spatial location. Instead, it describes an intrinsic angular momentum the electron possesses simply by existing, as if it were spinning on an axis (though this is a classical analogy, not a literal picture). The spin quantum number takes only two possible values: $m_s = +\tfrac{1}{2}$ or $m_s = -\tfrac{1}{2}$, often visualized as "spin-up" and "spin-down." This two-valued nature is a genuine quantum mechanical result — spin is quantized, and no orientation between these two states is observable.</p>
+<p>Spin becomes essential through the Pauli exclusion principle: no two electrons in the same atom can share all four quantum numbers. Because a given orbital already fixes $n$, $l$, and $m_l$, the only way two electrons can occupy that same orbital is if they have opposite spins. This is why every orbital holds a maximum of two electrons.</p>
+<p><strong>Worked example.</strong> Consider the $2p$ subshell, which has three orbitals ($m_l = -1, 0, +1$). If we place four electrons into this subshell, how are they distributed? Following Hund's rule (electrons fill orbitals singly before pairing) together with the exclusion principle, the first three electrons each occupy a separate $2p$ orbital with parallel spin ($m_s = +\tfrac{1}{2}$ each). The fourth electron must pair up in one orbital, and by the exclusion principle it must take the opposite spin, $m_s = -\tfrac{1}{2}$.</p>
+<p><strong>Problem-solving application.</strong> Spin assignments let you predict an atom's magnetic behavior. An atom with unpaired electrons (mismatched spins across orbitals) is paramagnetic — weakly attracted to a magnetic field — while an atom with all electrons paired is diamagnetic. To classify oxygen ($1s^2 2s^2 2p^4$), write out the $2p$ orbital filling: two electrons pair in one orbital, leaving two unpaired electrons in the other two. Because unpaired electrons remain, oxygen is paramagnetic — a prediction confirmed experimentally by liquid oxygen's attraction to a magnet.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

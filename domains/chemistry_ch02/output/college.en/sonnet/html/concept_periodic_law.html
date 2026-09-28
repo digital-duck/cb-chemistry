@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Periodic Law | Chemistry Ch02</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="periodic-law">Periodic Law</h2>
+<p>The periodic law states that when elements are arranged in order of increasing atomic number, their chemical and physical properties recur at regular intervals. This periodicity is not a coincidence — it reflects the repeating pattern in which electrons fill successive energy shells and subshells. Elements in the same column (group) of the periodic table have the same number of valence electrons, which is why they show similar bonding behavior, reactivity, and typical ion charges. Elements in the same row (period) show a smooth gradation in properties as electrons are added to the same outer shell, until that shell is full and a new period begins.</p>
+<p>Consider atomic radius as a worked example. Moving left to right across period 3 (Na, Mg, Al, Si, P, S, Cl, Ar), atomic radius steadily shrinks — from about 186 pm for sodium down to about 71 pm for chlorine — even though each atom has more electrons. The reason is that each added electron enters the same outer shell while the nuclear charge (number of protons) also increases, pulling all outer electrons in more tightly. Moving down a group, such as from lithium to sodium to potassium, radius increases instead, because each step adds a whole new occupied shell farther from the nucleus. The same periodic logic explains ionization energy (a zigzag increase across a period, decrease down a group) and electronegativity (increases across a period, decreases down a group).</p>
+<p>This regularity makes the periodic table a genuine predictive tool, not just a filing system. Given only an element's position, you can estimate unmeasured properties. For instance, before germanium was discovered, Mendeleev used the periodic law to predict the density, atomic mass, and reactivity of "eka-silicon," and his predictions matched germanium closely once it was isolated. In practice, the periodic law lets a chemist reason about an unfamiliar element — say, predicting that francium (below cesium) should be an extremely reactive, low-melting metal, or that astatine (below iodine) should behave as a reactive nonmetal — purely from its position, without needing to run the experiment first.</p>
+<pre class="mermaid">graph LR
+    A["Increasing atomic number →"] --> B[Period 3: Na to Ar]
+    B --> C["Atomic radius decreases"]
+    B --> D["Ionization energy increases"]
+    B --> E["Electronegativity increases"]
+    F["Down a group: Li → Na → K"] --> G["Atomic radius increases"]
+    F --> H["Ionization energy decreases"]</pre>
+<p><em>How atomic radius, ionization energy, and electronegativity trend across a period versus down a group, illustrating the periodicity underlying the periodic law.</em></p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch2: Atoms, Molecules, and Ions (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

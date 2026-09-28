@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fuel Cell | Chemistry Ch17</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="fuel-cell-燃料电池">Fuel Cell（燃料电池）</h2>
+<p><strong>定义</strong></p>
+<p>燃料电池是一种通过电化学反应将燃料的化学能直接转化为电能的装置，不经过燃烧过程，因此能量转换效率远高于传统内燃机。最常见的类型是氢氧燃料电池：氢气在阳极被氧化，氧气在阴极被还原，整体反应为</p>
+$$2H_2 + O_2 \rightarrow 2H_2O$$
+<p>与普通电池不同，燃料电池不储存能量，而是只要持续供给燃料（如氢气）和氧化剂（通常是空气中的氧气），就能持续发电。其核心结构包括阳极、阴极和中间的电解质膜（常见的是质子交换膜，即PEM）。电解质膜只允许特定离子（如 $H^+$）通过，从而迫使电子经外部电路流动，形成电流。</p>
+<p><strong>工作原理示例</strong></p>
+<p>在质子交换膜燃料电池（PEMFC）中：</p>
+<li>阳极反应：$2H_2 \rightarrow 4H^+ + 4e^-$</li>
+<li>阴极反应：$O_2 + 4H^+ + 4e^- \rightarrow 2H_2O$</li>
+<p>氢气分子在阳极的催化剂（通常是铂）作用下分解为质子和电子。质子穿过电解质膜到达阴极，而电子则被迫经外部导线流动，驱动外部电路做功（如点亮灯泡或驱动电机），最终在阴极与质子、氧气结合生成水。整个过程唯一的排放物是水，这也是氢燃料电池被视为清洁能源技术的重要原因。</p>
+<p><strong>问题解决应用</strong></p>
+<p>假设某氢燃料电池系统消耗了 $4\ \text{mol}$ 的氢气，问：理论上产生了多少摩尔的电子转移，以及消耗了多少摩尔的氧气？</p>
+<p>根据阳极反应，每摩尔 $H_2$ 释放 2摩尔电子，因此 $4\ \text{mol}\ H_2$ 释放 $8\ \text{mol}$ 电子。根据总反应式的化学计量比（$2H_2 : O_2$），消耗的 $O_2$ 为 $4 \div 2 = 2\ \text{mol}$。</p>
+<p>这类计算在实际工程中至关重要：工程师需要根据电池的功率需求，反推所需的氢气和氧气供给速率，从而设计燃料储存系统与供气管道。此外，燃料电池的效率评估也涉及理论电压（约 $1.23\ \text{V}$）与实际输出电压之间的差异分析，这一差异主要源于电极反应中的能量损耗（过电位），是提升燃料电池实际应用性能的关键研究方向。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch17: Electrochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

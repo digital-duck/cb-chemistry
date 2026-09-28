@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Temperature Scale Conversion | Chemistry Ch01</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="temperature-scale-conversion">Temperature Scale Conversion</h2>
+<p><strong>定义</strong></p>
+<p>温度是衡量物质内部粒子平均动能大小的物理量,但历史上不同地区、不同应用场景发展出了不同的温度标度。目前最常用的三种标度是摄氏度($^\circ\text{C}$)、华氏度($^\circ\text{F}$)和开尔文($\text{K}$)。摄氏标度以水的凝固点为 $0^\circ\text{C}$、沸点为 $100^\circ\text{C}$ 定义;华氏标度则以水的凝固点为 $32^\circ\text{F}$、沸点为 $212^\circ\text{F}$ 定义,主要在美国日常生活中使用;开尔文标度是国际单位制(SI)中的绝对温标,以绝对零度(理论上分子热运动完全停止的温度)为 $0\text{ K}$,不使用"度"这一说法,是科学研究中的标准单位。</p>
+<p>三种标度之间的换算关系为:</p>
+$$T(^\circ\text{F}) = \frac{9}{5}T(^\circ\text{C}) + 32$$
+$$T(\text{K}) = T(^\circ\text{C}) + 273.15$$
+<p><strong>例题</strong></p>
+<p>实验室测得某反应体系温度为 $37^\circ\text{C}$(人体体温),求其对应的华氏度和开尔文温度。</p>
+<p>代入公式:</p>
+$$T(^\circ\text{F}) = \frac{9}{5}(37) + 32 = 66.6 + 32 = 98.6^\circ\text{F}$$
+$$T(\text{K}) = 37 + 273.15 = 310.15\text{ K}$$
+<p>可见人体体温约为 $98.6^\circ\text{F}$,与常见体温计读数一致;换算为开尔文后为 $310.15\text{ K}$,这是生物化学反应速率计算(如阿伦尼乌斯方程)中必须使用的单位。</p>
+<p><strong>问题解决应用</strong></p>
+<p>在实际科学工作中,温标换算不仅是数学练习,更关系到实验安全与数据准确性。例如,某气象站报告华氏温度为 $-40^\circ\text{F}$,若误将其当作摄氏度输入到某化学反应动力学模型中,会导致计算结果严重偏差——因为 $-40^\circ\text{F}$ 换算为摄氏度恰好也是 $-40^\circ\text{C}$(这是两个标度唯一重合的点),但若继续换算为开尔文,则为 $233.15\text{ K}$,远高于绝对零度,说明该温度在物理上是可实现的。</p>
+<p>练习:某冷冻实验要求样品维持在 $-80^\circ\text{C}$(超低温冰箱常见设定),求其对应的开尔文温度,并判断该温度下水是否仍可能以液态形式存在(常压下,水的凝固点为 $273.15\text{ K}$)。通过换算($193.15\text{ K}$)可知远低于凝固点,样品应完全处于固态。掌握标度换算,是跨学科交流与精确数据记录的基本功。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch1: Essential Ideas (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

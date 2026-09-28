@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solution | Chemistry Ch11</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="solution">Solution</h2>
+<p><strong>溶液</strong>是由两种或两种以上物质均匀混合而成的单相体系,其中含量较多的组分称为<strong>溶剂</strong>(solvent),含量较少的组分称为<strong>溶质</strong>(solute)。溶质以分子或离子形式均匀分散于溶剂中,整个体系在宏观上不可用肉眼或普通显微镜区分出各组分——这正是溶液与悬浊液、胶体的本质区别。描述溶质在溶剂中相对含量的方式有多种,其中化学实验中最常用的是<strong>摩尔浓度</strong>(molar concentration,记作 $c$,单位 mol/L),其定义为</p>
+$$
+c = \frac{n_{\text{solute}}}{V_{\text{solution}}}
+$$
+<p>其中 $n_{\text{solute}}$ 为溶质的物质的量(mol),$V_{\text{solution}}$ 为溶液体积(L)。</p>
+<p><strong>实例演练</strong>:配制 500 mL 浓度为 0.200 mol/L 的 NaCl 溶液,需要称取多少克 NaCl?</p>
+<p>首先计算所需 NaCl 的物质的量:</p>
+$$
+n = c \times V = 0.200\ \text{mol/L} \times 0.500\ \text{L} = 0.100\ \text{mol}
+$$
+<p>NaCl 的摩尔质量为 58.5 g/mol,因此所需质量为</p>
+$$
+m = n \times M = 0.100\ \text{mol} \times 58.5\ \text{g/mol} = 5.85\ \text{g}
+$$
+<p>操作上,将 5.85 g NaCl 固体溶于适量蒸馏水中搅拌至完全溶解,再用容量瓶定容至 500 mL 刻度线,即可得到目标溶液。</p>
+<p><strong>问题解决应用</strong>:溶液浓度计算在实验室配制试剂、临床输液配比、环境水质检测等场景中极为常见,核心技巧是通过 $c = n/V$ 在"物质的量—体积—浓度"三者间灵活换算。当需要从浓储备液配制稀溶液时,关键在于把握一个事实:加水稀释只增大体积,并不增加或减少溶质本身的量。因此,只要先用目标浓度和目标体积算出所需溶质的物质的量,再反推出应从储备液中取用的体积,就能直接量取、加水定容,而无需重新称量固体溶质。例如,要用 1.00 mol/L 的储备液配制 100 mL、0.100 mol/L 的稀释液,先算出目标溶液中溶质为 0.0100 mol,再除以储备液浓度 1.00 mol/L,即知应量取 10.0 mL 储备液,加水稀释至 100 mL 即可。这种"先定终态所需溶质量,再倒推起始体积"的思路,是稀释类问题的通用解法。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch11: Solutions and Colloids (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

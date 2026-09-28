@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pet Scan | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="pet-scan">Pet Scan</h2>
+<p><strong>定义</strong></p>
+<p>正电子发射断层扫描（Positron Emission Tomography，简称 PET）是一种利用放射性示踪剂显示人体内部代谢活动的医学影像技术。与 CT、MRI 主要展示解剖结构不同，PET 展示的是功能与代谢信息——哪些组织正在活跃地消耗能量。最常用的示踪剂是氟代脱氧葡萄糖（$^{18}\text{F-FDG}$），一种被放射性同位素氟-18标记的葡萄糖类似物。由于癌细胞、脑活跃区域、心肌等代谢旺盛的组织会大量摄取葡萄糖，注入体内的示踪剂会优先聚集在这些区域。</p>
+<p>氟-18 是一种发射正电子（$\beta^+$粒子）的放射性核素，半衰期约为 110 分钟。正电子在组织中运动极短距离后，会与体内的一个电子发生湮灭（annihilation）反应，将质量转化为能量，同时释放出两个能量均为 511 keV、方向几乎完全相反（约 180°）的伽马光子。PET 扫描仪由环绕患者身体的一圈探测器组成，通过"符合探测"（coincidence detection）——即同时接收到两个方向相反的光子——来精确定位湮灭事件发生的位置。计算机将成千上万个这样的事件重建为一幅三维代谢活动图像。</p>
+<p><strong>应用实例</strong></p>
+<p>假设一名患者被怀疑患有肺癌复发。医生为其注射 $^{18}\text{F-FDG}$，等待约一小时使示踪剂在体内分布，然后进行全身 PET 扫描。图像上出现一个异常明亮的"热点"，说明该区域葡萄糖代谢速率远高于周围正常组织，提示可能存在活跃增殖的肿瘤细胞。医生常将 PET 图像与同机获得的 CT 图像融合（PET-CT），既知道"哪里代谢异常"，又知道"该处的具体解剖结构是什么"。</p>
+<p><strong>问题解决训练</strong></p>
+<p>PET 检查需要在医院现场或附近生产示踪剂，因为氟-18 的半衰期只有约 110 分钟：若示踪剂需要运输 3 个半衰期的时间才能到达医院，其放射性活度将衰减为初始值的 $(1/2)^3 = 1/8$，即约 12.5%。这解释了为什么 PET 中心通常需要配备回旋加速器（cyclotron）就近生产示踪剂，也说明了为什么 PET 检查成本较高、可及性不如 CT——这是评估一项医学影像技术实际应用价值时需要考虑的现实限制因素。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

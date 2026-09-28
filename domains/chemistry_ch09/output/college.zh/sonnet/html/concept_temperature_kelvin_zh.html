@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Temperature Kelvin | Chemistry Ch09</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="temperature-kelvin">Temperature Kelvin</h2>
+<p><strong>定义</strong></p>
+<p>开尔文温度（Kelvin temperature）是国际单位制（SI）中的绝对温度标度，符号为 $\text{K}$，以绝对零度 $0\ \text{K}$ 为起点——这是理论上分子平动能达到最小值、物质内部运动趋于停止的温度。与摄氏温标不同，开尔文标度没有负值,因为它直接反映分子的平均动能:动能越低,温度越低,而动能不可能为负。开尔文与摄氏度的换算关系为</p>
+$$T(\text{K}) = T(^\circ\text{C}) + 273.15$$
+<p>两种标度的刻度间距相同(温差 $1\ \text{K} = 1^\circ\text{C}$),区别仅在于零点位置。之所以科学计算——尤其是气体定律和反应速率——必须使用开尔文,是因为这些公式中温度与能量、体积或速率成正比,而比例关系只有在以绝对零度为基准时才成立。</p>
+<p><strong>例题</strong></p>
+<p>理想气体定律 $PV = nRT$ 中的 $T$ 必须以开尔文表示。设某密闭容器内气体在 $27^\circ\text{C}$、压强为 $1.0\ \text{atm}$ 时体积为 $2.0\ \text{L}$。若将温度升高到 $127^\circ\text{C}$,体积不变,求新压强。</p>
+<p>先换算温度:</p>
+$$T_1 = 27 + 273.15 = 300.15\ \text{K},\qquad T_2 = 127 + 273.15 = 400.15\ \text{K}$$
+<p>由 $P_1/T_1 = P_2/T_2$(体积、物质的量不变),得</p>
+$$P_2 = P_1 \times \frac{T_2}{T_1} = 1.0\ \text{atm} \times \frac{400.15}{300.15} \approx 1.33\ \text{atm}$$
+<p>若误用摄氏度直接代入比例式,会得到 $127/27 \approx 4.7$ 倍的错误压强增幅——这正是开尔文标度不可替代的原因。</p>
+<p><strong>解题应用</strong></p>
+<p>在处理气体定律、反应速率(如阿伦尼乌斯方程 $k = A e^{-E_a/RT}$)或热力学计算时,第一步永远是检查温度单位:若题目给出摄氏度,先加 $273.15$ 转换为开尔文,再代入公式运算。生物与地球科学中,细菌代谢速率、酶活性、大气层温度剖面等数据也常以开尔文表示,便于与能量单位(焦耳)直接建立比例关系,避免因零点偏移导致的计算错误。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch9: Gases (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

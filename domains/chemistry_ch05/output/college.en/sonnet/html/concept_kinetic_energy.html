@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kinetic Energy | Chemistry Ch05</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="kinetic-energy">Kinetic Energy</h2>
+<p>Kinetic energy is the energy an object possesses because of its motion. For an object of mass $m$ moving at speed $v$ (with $v$ much less than the speed of light), the kinetic energy is</p>
+$$KE = \frac{1}{2}mv^2$$
+<p>Because kinetic energy depends on the square of velocity, doubling an object's speed quadruples its kinetic energy, a fact with serious real-world consequences (a car crash at 60 mph does four times the damage of one at 30 mph, not twice). This same relationship is why kinetic energy is so useful for tracking energy changes: whenever a force speeds an object up or slows it down, the amount of energy transferred equals the change in $\frac{1}{2}mv^2$, whether that energy comes from an engine, gravity, or friction.</p>
+<p><strong>Worked example.</strong> A 1200 kg car accelerates from rest to 20 m/s (about 45 mph). How much kinetic energy does it gain?</p>
+$$KE = \frac{1}{2}(1200\,\text{kg})(20\,\text{m/s})^2 = \frac{1}{2}(1200)(400) = 240{,}000\ \text{J}$$
+<p>That energy came from the engine converting chemical energy in fuel into motion. If the car then brakes to a stop, all 240,000 J must go somewhere — it's converted to heat in the brake pads and tires, not destroyed.</p>
+<p><strong>Problem-solving application.</strong> Kinetic energy lets us track motion without dealing with acceleration or time directly, since the energy an object loses to a resisting force is just that force multiplied by the distance over which it acts. Suppose a 0.5 kg ball is thrown and reaches a speed of 15 m/s. A constant braking force of 10 N is applied by air resistance until the ball stops. How far does it travel before stopping?</p>
+<p>Start from the ball's kinetic energy: $KE = \frac{1}{2}(0.5)(15)^2 = 56.25\ \text{J}$. This entire amount must be drained away by the resistive force acting over the stopping distance $d$, so $10\ \text{N} \times d = 56.25\ \text{J}$, giving</p>
+$$d = \frac{56.25\ \text{J}}{10\ \text{N}} = 5.625\ \text{m}$$
+<p>Notice we solved this without ever computing acceleration or time. Whenever a problem asks "how far" or "how fast" in terms of forces and distances rather than time, consider tracking kinetic energy directly — it often shortcuts several algebra steps.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

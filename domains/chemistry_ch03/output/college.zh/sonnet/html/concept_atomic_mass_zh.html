@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atomic Mass | Chemistry Ch03</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="atomic-mass">Atomic Mass</h2>
+<p><strong>定义</strong></p>
+<p>原子质量（atomic mass）是指一个原子的质量，通常以"原子质量单位"（atomic mass unit, u，也称为 dalton, Da）来表示。这个单位的定义方式很巧妙：科学家规定碳-12（$^{12}\text{C}$）原子的质量恰好等于 $12\ \text{u}$，其他所有原子的质量都以此为基准进行比较。也就是说，$1\ \text{u} \approx 1.6605 \times 10^{-24}\ \text{g}$，大约相当于一个质子或一个中子的质量。</p>
+<p>需要区分两个密切相关但不完全相同的概念：<strong>原子质量</strong>指某一特定同位素（isotope）的实际质量；而<strong>原子量</strong>（atomic weight，也叫相对原子质量，元素周期表上给出的数值）则是该元素所有天然同位素质量的<strong>加权平均值</strong>，权重就是各同位素在自然界中的丰度（abundance）。例如氯元素有两种主要同位素：$^{35}\text{Cl}$（质量约 $34.97\ \text{u}$，丰度 $75.76\%$）和 $^{37}\text{Cl}$（质量约 $36.97\ \text{u}$，丰度 $24.24\%$）。周期表上氯的原子量 $35.45$，正是这两个数值按丰度加权平均后的结果。</p>
+<p><strong>计算实例</strong></p>
+<p>加权平均的计算方法是：</p>
+$$\text{原子量} = \sum_i (\text{同位素}_i\text{的质量} \times \text{丰度}_i)$$
+<p>对氯元素代入数值：</p>
+$$34.97 \times 0.7576 + 36.97 \times 0.2424 = 26.49 + 8.96 = 35.45\ \text{u}$$
+<p>这与周期表上标注的数值完全吻合。</p>
+<p><strong>解决问题的应用</strong></p>
+<p>这一概念在实际计算中非常实用。例如，已知镓（Ga）有两种同位素：$^{69}\text{Ga}$（质量 $68.93\ \text{u}$，丰度 $60.11\%$）和 $^{71}\text{Ga}$（质量 $70.92\ \text{u}$，丰度 $39.89\%$），可以反过来验证或推算周期表上镓的原子量：</p>
+$$68.93 \times 0.6011 + 70.92 \times 0.3989 \approx 41.43 + 28.29 = 69.72\ \text{u}$$
+<p>这类计算不仅用于验证周期表数据，还广泛应用于同位素地质年代测定、法医学中的同位素比值分析，以及在未知丰度时通过已知原子量反推某同位素的天然丰度。掌握原子质量与原子量的区别及其加权平均计算方法，是理解摩尔质量（molar mass）和化学计量学（stoichiometry）的重要基础。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch3: Composition of Substances and Solutions (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nuclear Reactor | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="nuclear-reactor">Nuclear Reactor</h2>
+<p>A nuclear reactor is an engineered system that sustains and controls a nuclear fission chain reaction to produce heat, which is then converted into electricity or used directly for propulsion and research. The core process is fission: a heavy nucleus such as uranium-235 absorbs a neutron, splits into two lighter nuclei, and releases energy plus two or three additional neutrons. If, on average, exactly one of those neutrons goes on to cause another fission, the reaction is self-sustaining but stable — a condition called criticality. A reactor's entire design revolves around managing this neutron population.</p>
+<p>Three components make criticality controllable rather than explosive. Fuel (typically uranium enriched to 3–5% U-235 for power reactors) provides fissile material. A moderator (commonly water or graphite) slows fast neutrons to "thermal" speeds, since slow neutrons are far more likely to trigger further fission in U-235. Control rods, made of neutron-absorbing materials like boron or cadmium, are inserted or withdrawn to fine-tune the neutron population — pushing the reactor toward, at, or away from criticality.</p>
+<p>Consider a simplified accounting: define the multiplication factor $k$ as the ratio of neutrons produced in one fission "generation" to neutrons produced in the previous generation. If $k = 1$, the reactor is critical and power output is steady. If $k > 1$, it is supercritical and power rises; if $k < 1$, it is subcritical and the reaction dies out. Operators use control rods to hold $k$ at essentially 1 during normal operation, and to drive $k$ below 1 (a "SCRAM" or emergency shutdown) if temperature, pressure, or radiation readings exceed safe limits.</p>
+<p>This framework turns reactor operation into a problem-solving exercise: given a reading of $k = 1.002$, an operator must decide how far to insert control rods to bring $k$ back to 1 before power output climbs to unsafe levels — a real-time balancing act between the heat needed for electricity generation and the safety margin required to prevent a runaway reaction. Modern reactors also rely on negative feedback effects, such as fuel and coolant temperature coefficients that automatically reduce $k$ as temperature rises, adding a passive layer of safety atop active control.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

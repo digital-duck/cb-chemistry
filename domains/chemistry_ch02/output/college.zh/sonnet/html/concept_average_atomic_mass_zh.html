@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Average Atomic Mass | Chemistry Ch02</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="average-atomic-mass-平均原子质量">Average Atomic Mass（平均原子质量）</h2>
+<p><strong>定义</strong></p>
+<p>大多数元素在自然界中以多种<strong>同位素</strong>（isotope）的形式存在——它们拥有相同的质子数，但中子数不同，因此质量不同。例如氯元素主要有两种天然同位素：氯-35（约占75.77%）和氯-37（约占24.23%）。周期表上标注的原子质量，并不是某一个原子的质量，而是<strong>按自然丰度加权平均后</strong>得到的数值，称为平均原子质量。</p>
+<p>其计算公式为：</p>
+$$
+\bar{m} = \sum_{i} f_i \times m_i
+$$
+<p>其中 $m_i$ 是第 $i$ 种同位素的质量（通常以原子质量单位 amu 表示），$f_i$ 是该同位素在自然界中的<strong>丰度分数</strong>（所有 $f_i$ 之和为1）。</p>
+<p><strong>例题</strong></p>
+<p>已知氯元素的两种同位素：氯-35，质量为34.969 amu，丰度75.77%；氯-37，质量为36.966 amu，丰度24.23%。求氯的平均原子质量。</p>
+$$
+\bar{m} = (0.7577 \times 34.969) + (0.2423 \times 36.966)
+$$
+$$
+\bar{m} = 26.500 + 8.958 = 35.458 \text{ amu}
+$$
+<p>这与周期表上氯的原子质量35.45 amu高度吻合，说明加权平均法准确反映了自然界中氯原子的真实质量分布。</p>
+<p><strong>解题应用</strong></p>
+<p>这类问题常以"反推丰度"的形式出现：已知平均原子质量和两种同位素的精确质量，求各自的丰度。设一种同位素丰度为 $x$，另一种为 $1-x$，列方程求解即可。</p>
+<p>例如，硼元素平均原子质量为10.81 amu，同位素硼-10质量为10.01 amu，硼-11质量为11.01 amu。设硼-10丰度为 $x$：</p>
+$$
+10.81 = 10.01x + 11.01(1-x)
+$$
+<p>解得 $x \approx 0.20$，即硼-10约占20%，硼-11约占80%。</p>
+<p>这种计算不仅是化学计量的基础技能，也说明了一个重要概念：周期表上的原子质量是统计平均值，而非任何单个原子的真实质量。在处理涉及摩尔计算、化学反应配平或质谱分析（mass spectrometry）数据时，理解这一区别至关重要——质谱仪测得的正是各同位素的相对丰度峰，而这些数据正是计算平均原子质量的原始依据。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch2: Atoms, Molecules, and Ions (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>
