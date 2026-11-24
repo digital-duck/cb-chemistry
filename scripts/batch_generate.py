@@ -37,8 +37,10 @@ Usage examples:
     # Skip specific targets
     python scripts/batch_generate.py --exclude arima,hipaa
 
+    # Defaults: --domain all --level college --language en
+    #           --llm claude_cli:claude-sonnet-5-5 --n-targets 2
     # Override level (single or comma-separated for multi-level runs)
-    python scripts/batch_generate.py --level college --llm claude_cli:claude-opus-4-8
+    python scripts/batch_generate.py --level college --llm claude_cli:claude-opus-5-5
     python scripts/batch_generate.py --level intro,core,college,research
 
     # Language accepts ISO codes or friendly names (case-insensitive)
@@ -111,9 +113,9 @@ from level_style import LEVEL_TO_STYLE as _LEVEL_TO_STYLE, resolve_style as _res
 _LLM_TO_MODEL: dict[str, str] = {
     "ollama:gemma3":                    "gemma3",
     "ollama:gemma4":                    "gemma4",
-    "claude_cli:claude-sonnet-5":     "sonnet",
-    "claude_cli:claude-haiku-4-5-20251001": "haiku",
-    "claude_cli:claude-opus-4-8":       "opus",
+    "claude_cli:claude-sonnet-5-5":     "sonnet",
+    "claude_cli:claude-haiku-5-5":      "haiku",
+    "claude_cli:claude-opus-5-5":       "opus",
 }
 
 
@@ -198,6 +200,12 @@ def _mark_generated(domain_id: str, target: str, level: str, language: str, mode
 # remaining job in the batch would hit the same limit and print the same
 # traceback again.
 _SESSION_LIMIT_MARKERS = ("session limit", "rate limit", "quota", "usage limit", "modeloverloaded")
+
+
+# Distinct exit status (EX_TEMPFAIL) so wrapper scripts such as
+# concept-book/scripts/run_all_cb_books.sh can tell "LLM limit hit, stop
+# everything" apart from an ordinary failure (exit 1).
+EXIT_SESSION_LIMIT = 75
 
 
 class SessionLimitHit(Exception):
@@ -323,6 +331,16 @@ def _expand_domain_spec(spec: str) -> list[str]:
     return ids
 
 
+def _resolve_domains(raw_values: tuple) -> tuple:
+    """Expand --domain values; an empty tuple means "all domains"."""
+    ids = tuple(dict.fromkeys(
+        expanded for raw in raw_values for expanded in _expand_domain_spec(raw)
+    ))
+    if any(i.lower() == "all" for i in ids):
+        return ()
+    return ids
+
+
 CONTEXT_SETTINGS = dict(help_option_names=["-h", "--help"])
 
 
@@ -337,25 +355,25 @@ def cli() -> None:
 
 @cli.command("generate", context_settings=CONTEXT_SETTINGS)
 @click.option(
-    "--domain", "domains", multiple=True,
+    "--domain", "domains", multiple=True, default=("all",),
     help="Domain ID to generate (repeatable). Each value may also be a "
          "comma-separated list, and/or a range of two same-prefix "
          "zero-padded ids joined by '-' (e.g. "
          "'chemistry_ch05-chemistry_ch10,chemistry_ch21'). "
-         "Default: all domains in catalog.",
+         "Use 'all' for every domain in the catalog. Default: all.",
 )
 @click.option(
-    "--n-targets", default=None, type=int,
-    help="Cap the number of applications generated per domain (default: all of them).",
+    "--n-targets", default=2, type=int,
+    help="Cap the number of applications generated per domain (default: 2).",
 )
 @click.option(
-    "--level", default=None,
+    "--level", default="college", show_default=True,
     help="Comma-separated content level(s) to generate (intro/core/college/research). "
-         "Default: each domain's default_level. Multiple levels run all combinations.",
+         "Multiple levels run all combinations.",
 )
 @click.option("--language", default="en", show_default=True, help="Output language code.")
 @click.option(
-    "--llm", default="claude_cli:claude-sonnet-5", show_default=True,
+    "--llm", default="claude_cli:claude-sonnet-5-5", show_default=True,
     envvar="CB_LLM", help="LLM backend string passed to spl3.",
 )
 @click.option(
@@ -397,9 +415,7 @@ def generate(
     stop_on_error: bool,
 ) -> None:
     """Batch pre-generate concept books for multiple domains."""
-    domains = tuple(dict.fromkeys(
-        expanded for raw in domains for expanded in _expand_domain_spec(raw)
-    ))
+    domains = _resolve_domains(domains)
     if spl_dir is None:
         spl_dir = Path.home() / "projects" / "digital-duck" / "SPL.py"
 
@@ -478,7 +494,7 @@ def generate(
                 f"{remaining} not attempted.",
                 err=True,
             )
-            sys.exit(1)
+            sys.exit(EXIT_SESSION_LIMIT)
 
         if ok:
             _mark_generated(did, target, eff_level, language, model)
@@ -498,7 +514,7 @@ def generate(
 
 @cli.command("status", context_settings=CONTEXT_SETTINGS)
 @click.option(
-    "--domain", "domains", multiple=True,
+    "--domain", "domains", multiple=True, default=("all",),
     help="Restrict to these domain ids (same comma-list/range syntax as "
          "'generate --domain'). Default: all domains in catalog.json.",
 )
@@ -508,9 +524,7 @@ def generate(
 )
 def status(domains: tuple, verbose: bool) -> None:
     """Show, per domain, how many application targets have been generated."""
-    domains = tuple(dict.fromkeys(
-        expanded for raw in domains for expanded in _expand_domain_spec(raw)
-    ))
+    domains = _resolve_domains(domains)
     catalog = _load_catalog()
     domain_map = {d["id"]: d for d in catalog}
     if domains:
