@@ -86,19 +86,19 @@
       },
       {
         "target": "temperature_scale_conversion",
-        "file": "output/college.zh/sonnet/html/book_temperature_scale_conversion.html",
+        "file": "output/college.zh/sonnet/html/book_temperature_scale_conversion_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "periodic_table",
-        "file": "output/college.zh/sonnet/html/book_periodic_table.html",
+        "file": "output/college.zh/sonnet/html/book_periodic_table_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "density_calculation",
-        "file": "output/college.zh/sonnet/html/book_density_calculation.html",
+        "file": "output/college.zh/sonnet/html/book_density_calculation_zh.html",
         "model": "sonnet",
         "language": "zh"
       }
@@ -466,19 +466,19 @@
       },
       {
         "target": "mass_spectrometry",
-        "file": "output/college.zh/sonnet/html/book_mass_spectrometry.html",
+        "file": "output/college.zh/sonnet/html/book_mass_spectrometry_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "chemical_nomenclature",
-        "file": "output/college.zh/sonnet/html/book_chemical_nomenclature.html",
+        "file": "output/college.zh/sonnet/html/book_chemical_nomenclature_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "predicting_ion_formation",
-        "file": "output/college.zh/sonnet/html/book_predicting_ion_formation.html",
+        "file": "output/college.zh/sonnet/html/book_predicting_ion_formation_zh.html",
         "model": "sonnet",
         "language": "zh"
       }
@@ -967,13 +967,13 @@
       },
       {
         "target": "mass_mole_conversion",
-        "file": "output/college.zh/sonnet/html/book_mass_mole_conversion.html",
+        "file": "output/college.zh/sonnet/html/book_mass_mole_conversion_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "dilution_equation",
-        "file": "output/college.zh/sonnet/html/book_dilution_equation.html",
+        "file": "output/college.zh/sonnet/html/book_dilution_equation_zh.html",
         "model": "sonnet",
         "language": "zh"
       }
@@ -1198,31 +1198,31 @@
       },
       {
         "target": "gravimetric_analysis",
-        "file": "output/college.zh/sonnet/html/book_gravimetric_analysis.html",
+        "file": "output/college.zh/sonnet/html/book_gravimetric_analysis_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "titration_analysis",
-        "file": "output/college.zh/sonnet/html/book_titration_analysis.html",
+        "file": "output/college.zh/sonnet/html/book_titration_analysis_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "combustion_reaction",
-        "file": "output/college.zh/sonnet/html/book_combustion_reaction.html",
+        "file": "output/college.zh/sonnet/html/book_combustion_reaction_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "atom_economy",
-        "file": "output/college.zh/sonnet/html/book_atom_economy.html",
+        "file": "output/college.zh/sonnet/html/book_atom_economy_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "combustion_analysis",
-        "file": "output/college.zh/sonnet/html/book_combustion_analysis.html",
+        "file": "output/college.zh/sonnet/html/book_combustion_analysis_zh.html",
         "model": "sonnet",
         "language": "zh"
       }
@@ -1553,25 +1553,25 @@
       },
       {
         "target": "solar_thermal_energy_storage",
-        "file": "output/college.zh/sonnet/html/book_solar_thermal_energy_storage.html",
+        "file": "output/college.zh/sonnet/html/book_solar_thermal_energy_storage_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "metal_identification_by_specific_heat",
-        "file": "output/college.zh/sonnet/html/book_metal_identification_by_specific_heat.html",
+        "file": "output/college.zh/sonnet/html/book_metal_identification_by_specific_heat_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "nutritional_calorie",
-        "file": "output/college.zh/sonnet/html/book_nutritional_calorie.html",
+        "file": "output/college.zh/sonnet/html/book_nutritional_calorie_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "reaction_enthalpy_from_formation_data",
-        "file": "output/college.zh/sonnet/html/book_reaction_enthalpy_from_formation_data.html",
+        "file": "output/college.zh/sonnet/html/book_reaction_enthalpy_from_formation_data_zh.html",
         "model": "sonnet",
         "language": "zh"
       }
@@ -1972,25 +1972,25 @@
       },
       {
         "target": "periodic_table_blocks",
-        "file": "output/college.zh/sonnet/html/book_periodic_table_blocks.html",
+        "file": "output/college.zh/sonnet/html/book_periodic_table_blocks_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "ion_electron_configuration",
-        "file": "output/college.zh/sonnet/html/book_ion_electron_configuration.html",
+        "file": "output/college.zh/sonnet/html/book_ion_electron_configuration_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "isoelectronic_species",
-        "file": "output/college.zh/sonnet/html/book_isoelectronic_species.html",
+        "file": "output/college.zh/sonnet/html/book_isoelectronic_species_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "periodic_trends",
-        "file": "output/college.zh/sonnet/html/book_periodic_trends.html",
+        "file": "output/college.zh/sonnet/html/book_periodic_trends_zh.html",
         "model": "sonnet",
         "language": "zh"
       }
@@ -2665,19 +2665,19 @@
       },
       {
         "target": "enthalpy_estimation_bond_energies",
-        "file": "output/college.zh/sonnet/html/book_enthalpy_estimation_bond_energies.html",
+        "file": "output/college.zh/sonnet/html/book_enthalpy_estimation_bond_energies_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "born_haber_cycle",
-        "file": "output/college.zh/sonnet/html/book_born_haber_cycle.html",
+        "file": "output/college.zh/sonnet/html/book_born_haber_cycle_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "polar_molecule",
-        "file": "output/college.zh/sonnet/html/book_polar_molecule.html",
+        "file": "output/college.zh/sonnet/html/book_polar_molecule_zh.html",
         "model": "sonnet",
         "language": "zh"
       }
@@ -3100,19 +3100,19 @@
       },
       {
         "target": "homonuclear_diatomic_mo_configurations",
-        "file": "output/college.zh/sonnet/html/book_homonuclear_diatomic_mo_configurations.html",
+        "file": "output/college.zh/sonnet/html/book_homonuclear_diatomic_mo_configurations_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "band_theory",
-        "file": "output/college.zh/sonnet/html/book_band_theory.html",
+        "file": "output/college.zh/sonnet/html/book_band_theory_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "computational_chemistry_drug_design",
-        "file": "output/college.zh/sonnet/html/book_computational_chemistry_drug_design.html",
+        "file": "output/college.zh/sonnet/html/book_computational_chemistry_drug_design_zh.html",
         "model": "sonnet",
         "language": "zh"
       }
@@ -3385,37 +3385,37 @@
       },
       {
         "target": "barometer",
-        "file": "output/college.zh/sonnet/html/book_barometer.html",
+        "file": "output/college.zh/sonnet/html/book_barometer_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "manometer",
-        "file": "output/college.zh/sonnet/html/book_manometer.html",
+        "file": "output/college.zh/sonnet/html/book_manometer_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "molar_mass_determination",
-        "file": "output/college.zh/sonnet/html/book_molar_mass_determination.html",
+        "file": "output/college.zh/sonnet/html/book_molar_mass_determination_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "gas_stoichiometry",
-        "file": "output/college.zh/sonnet/html/book_gas_stoichiometry.html",
+        "file": "output/college.zh/sonnet/html/book_gas_stoichiometry_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "uranium_enrichment_by_diffusion",
-        "file": "output/college.zh/sonnet/html/book_uranium_enrichment_by_diffusion.html",
+        "file": "output/college.zh/sonnet/html/book_uranium_enrichment_by_diffusion_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "gas_collection_over_water",
-        "file": "output/college.zh/sonnet/html/book_gas_collection_over_water.html",
+        "file": "output/college.zh/sonnet/html/book_gas_collection_over_water_zh.html",
         "model": "sonnet",
         "language": "zh"
       }
@@ -3864,31 +3864,31 @@
       },
       {
         "target": "capillary_rise_equation",
-        "file": "output/college.zh/sonnet/html/book_capillary_rise_equation.html",
+        "file": "output/college.zh/sonnet/html/book_capillary_rise_equation_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "dna_hydrogen_bonding",
-        "file": "output/college.zh/sonnet/html/book_dna_hydrogen_bonding.html",
+        "file": "output/college.zh/sonnet/html/book_dna_hydrogen_bonding_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "freeze_drying",
-        "file": "output/college.zh/sonnet/html/book_freeze_drying.html",
+        "file": "output/college.zh/sonnet/html/book_freeze_drying_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "semiconductor_doping",
-        "file": "output/college.zh/sonnet/html/book_semiconductor_doping.html",
+        "file": "output/college.zh/sonnet/html/book_semiconductor_doping_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "supercritical_co2_extraction",
-        "file": "output/college.zh/sonnet/html/book_supercritical_co2_extraction.html",
+        "file": "output/college.zh/sonnet/html/book_supercritical_co2_extraction_zh.html",
         "model": "sonnet",
         "language": "zh"
       }
@@ -4301,37 +4301,37 @@
       },
       {
         "target": "reverse_osmosis",
-        "file": "output/college.zh/sonnet/html/book_reverse_osmosis.html",
+        "file": "output/college.zh/sonnet/html/book_reverse_osmosis_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "distillation",
-        "file": "output/college.zh/sonnet/html/book_distillation.html",
+        "file": "output/college.zh/sonnet/html/book_distillation_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "decompression_sickness",
-        "file": "output/college.zh/sonnet/html/book_decompression_sickness.html",
+        "file": "output/college.zh/sonnet/html/book_decompression_sickness_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "molar_mass_determination",
-        "file": "output/college.zh/sonnet/html/book_molar_mass_determination.html",
+        "file": "output/college.zh/sonnet/html/book_molar_mass_determination_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "deicing",
-        "file": "output/college.zh/sonnet/html/book_deicing.html",
+        "file": "output/college.zh/sonnet/html/book_deicing_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "soap_detergent_action",
-        "file": "output/college.zh/sonnet/html/book_soap_detergent_action.html",
+        "file": "output/college.zh/sonnet/html/book_soap_detergent_action_zh.html",
         "model": "sonnet",
         "language": "zh"
       }
@@ -4874,13 +4874,13 @@
       },
       {
         "target": "enzyme_catalysis",
-        "file": "output/college.zh/sonnet/html/book_enzyme_catalysis.html",
+        "file": "output/college.zh/sonnet/html/book_enzyme_catalysis_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "radioactive_decay_kinetics",
-        "file": "output/college.zh/sonnet/html/book_radioactive_decay_kinetics.html",
+        "file": "output/college.zh/sonnet/html/book_radioactive_decay_kinetics_zh.html",
         "model": "sonnet",
         "language": "zh"
       }
@@ -5163,19 +5163,19 @@
       },
       {
         "target": "haber_bosch_process",
-        "file": "output/college.zh/sonnet/html/book_haber_bosch_process.html",
+        "file": "output/college.zh/sonnet/html/book_haber_bosch_process_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "carbonated_beverage_equilibrium",
-        "file": "output/college.zh/sonnet/html/book_carbonated_beverage_equilibrium.html",
+        "file": "output/college.zh/sonnet/html/book_carbonated_beverage_equilibrium_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "pharmaceutical_equilibrium",
-        "file": "output/college.zh/sonnet/html/book_pharmaceutical_equilibrium.html",
+        "file": "output/college.zh/sonnet/html/book_pharmaceutical_equilibrium_zh.html",
         "model": "sonnet",
         "language": "zh"
       }
@@ -5528,19 +5528,19 @@
       },
       {
         "target": "ph_measurement_tools",
-        "file": "output/college.zh/sonnet/html/book_ph_measurement_tools.html",
+        "file": "output/college.zh/sonnet/html/book_ph_measurement_tools_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "acid_rain",
-        "file": "output/college.zh/sonnet/html/book_acid_rain.html",
+        "file": "output/college.zh/sonnet/html/book_acid_rain_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "blood_buffer_system",
-        "file": "output/college.zh/sonnet/html/book_blood_buffer_system.html",
+        "file": "output/college.zh/sonnet/html/book_blood_buffer_system_zh.html",
         "model": "sonnet",
         "language": "zh"
       }
@@ -5851,19 +5851,19 @@
       },
       {
         "target": "acid_enhanced_dissolution",
-        "file": "output/college.zh/sonnet/html/book_acid_enhanced_dissolution.html",
+        "file": "output/college.zh/sonnet/html/book_acid_enhanced_dissolution_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "selective_precipitation",
-        "file": "output/college.zh/sonnet/html/book_selective_precipitation.html",
+        "file": "output/college.zh/sonnet/html/book_selective_precipitation_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "complex_ion_enhanced_dissolution",
-        "file": "output/college.zh/sonnet/html/book_complex_ion_enhanced_dissolution.html",
+        "file": "output/college.zh/sonnet/html/book_complex_ion_enhanced_dissolution_zh.html",
         "model": "sonnet",
         "language": "zh"
       }
@@ -6172,31 +6172,31 @@
       },
       {
         "target": "predicting_entropy_sign",
-        "file": "output/college.zh/sonnet/html/book_predicting_entropy_sign.html",
+        "file": "output/college.zh/sonnet/html/book_predicting_entropy_sign_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "calculating_delta_s_standard",
-        "file": "output/college.zh/sonnet/html/book_calculating_delta_s_standard.html",
+        "file": "output/college.zh/sonnet/html/book_calculating_delta_s_standard_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "boiling_point_estimation",
-        "file": "output/college.zh/sonnet/html/book_boiling_point_estimation.html",
+        "file": "output/college.zh/sonnet/html/book_boiling_point_estimation_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "coupled_reactions",
-        "file": "output/college.zh/sonnet/html/book_coupled_reactions.html",
+        "file": "output/college.zh/sonnet/html/book_coupled_reactions_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "equilibrium_constant_from_free_energy",
-        "file": "output/college.zh/sonnet/html/book_equilibrium_constant_from_free_energy.html",
+        "file": "output/college.zh/sonnet/html/book_equilibrium_constant_from_free_energy_zh.html",
         "model": "sonnet",
         "language": "zh"
       }
@@ -6581,37 +6581,37 @@
       },
       {
         "target": "battery",
-        "file": "output/college.zh/sonnet/html/book_battery.html",
+        "file": "output/college.zh/sonnet/html/book_battery_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "fuel_cell",
-        "file": "output/college.zh/sonnet/html/book_fuel_cell.html",
+        "file": "output/college.zh/sonnet/html/book_fuel_cell_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "corrosion",
-        "file": "output/college.zh/sonnet/html/book_corrosion.html",
+        "file": "output/college.zh/sonnet/html/book_corrosion_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "galvanization",
-        "file": "output/college.zh/sonnet/html/book_galvanization.html",
+        "file": "output/college.zh/sonnet/html/book_galvanization_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "cathodic_protection",
-        "file": "output/college.zh/sonnet/html/book_cathodic_protection.html",
+        "file": "output/college.zh/sonnet/html/book_cathodic_protection_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "electroplating",
-        "file": "output/college.zh/sonnet/html/book_electroplating.html",
+        "file": "output/college.zh/sonnet/html/book_electroplating_zh.html",
         "model": "sonnet",
         "language": "zh"
       }
@@ -6930,49 +6930,49 @@
       },
       {
         "target": "sacrificial_anode",
-        "file": "output/college.zh/sonnet/html/book_sacrificial_anode.html",
+        "file": "output/college.zh/sonnet/html/book_sacrificial_anode_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "hall_heroult_cell",
-        "file": "output/college.zh/sonnet/html/book_hall_heroult_cell.html",
+        "file": "output/college.zh/sonnet/html/book_hall_heroult_cell_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "haber_process",
-        "file": "output/college.zh/sonnet/html/book_haber_process.html",
+        "file": "output/college.zh/sonnet/html/book_haber_process_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "frasch_process",
-        "file": "output/college.zh/sonnet/html/book_frasch_process.html",
+        "file": "output/college.zh/sonnet/html/book_frasch_process_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "downs_cell",
-        "file": "output/college.zh/sonnet/html/book_downs_cell.html",
+        "file": "output/college.zh/sonnet/html/book_downs_cell_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "pidgeon_process",
-        "file": "output/college.zh/sonnet/html/book_pidgeon_process.html",
+        "file": "output/college.zh/sonnet/html/book_pidgeon_process_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "chlor_alkali_process",
-        "file": "output/college.zh/sonnet/html/book_chlor_alkali_process.html",
+        "file": "output/college.zh/sonnet/html/book_chlor_alkali_process_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "ostwald_process",
-        "file": "output/college.zh/sonnet/html/book_ostwald_process.html",
+        "file": "output/college.zh/sonnet/html/book_ostwald_process_zh.html",
         "model": "sonnet",
         "language": "zh"
       }
@@ -7407,31 +7407,31 @@
       },
       {
         "target": "transition_metal_catalysts",
-        "file": "output/college.zh/sonnet/html/book_transition_metal_catalysts.html",
+        "file": "output/college.zh/sonnet/html/book_transition_metal_catalysts_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "high_temperature_superconductors",
-        "file": "output/college.zh/sonnet/html/book_high_temperature_superconductors.html",
+        "file": "output/college.zh/sonnet/html/book_high_temperature_superconductors_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "hemoglobin_oxygen_transport",
-        "file": "output/college.zh/sonnet/html/book_hemoglobin_oxygen_transport.html",
+        "file": "output/college.zh/sonnet/html/book_hemoglobin_oxygen_transport_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "chelation_therapy",
-        "file": "output/college.zh/sonnet/html/book_chelation_therapy.html",
+        "file": "output/college.zh/sonnet/html/book_chelation_therapy_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "cisplatin_anticancer",
-        "file": "output/college.zh/sonnet/html/book_cisplatin_anticancer.html",
+        "file": "output/college.zh/sonnet/html/book_cisplatin_anticancer_zh.html",
         "model": "sonnet",
         "language": "zh"
       }
@@ -7782,31 +7782,31 @@
       },
       {
         "target": "combustion_of_alkanes",
-        "file": "output/college.zh/sonnet/html/book_combustion_of_alkanes.html",
+        "file": "output/college.zh/sonnet/html/book_combustion_of_alkanes_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "fractional_distillation",
-        "file": "output/college.zh/sonnet/html/book_fractional_distillation.html",
+        "file": "output/college.zh/sonnet/html/book_fractional_distillation_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "polymerization",
-        "file": "output/college.zh/sonnet/html/book_polymerization.html",
+        "file": "output/college.zh/sonnet/html/book_polymerization_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "esterification",
-        "file": "output/college.zh/sonnet/html/book_esterification.html",
+        "file": "output/college.zh/sonnet/html/book_esterification_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "amidation",
-        "file": "output/college.zh/sonnet/html/book_amidation.html",
+        "file": "output/college.zh/sonnet/html/book_amidation_zh.html",
         "model": "sonnet",
         "language": "zh"
       }
@@ -8191,37 +8191,37 @@
       },
       {
         "target": "radioactive_tracer",
-        "file": "output/college.zh/sonnet/html/book_radioactive_tracer.html",
+        "file": "output/college.zh/sonnet/html/book_radioactive_tracer_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "radiation_therapy",
-        "file": "output/college.zh/sonnet/html/book_radiation_therapy.html",
+        "file": "output/college.zh/sonnet/html/book_radiation_therapy_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "pet_scan",
-        "file": "output/college.zh/sonnet/html/book_pet_scan.html",
+        "file": "output/college.zh/sonnet/html/book_pet_scan_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "fission_power_generation",
-        "file": "output/college.zh/sonnet/html/book_fission_power_generation.html",
+        "file": "output/college.zh/sonnet/html/book_fission_power_generation_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "radiation_detection",
-        "file": "output/college.zh/sonnet/html/book_radiation_detection.html",
+        "file": "output/college.zh/sonnet/html/book_radiation_detection_zh.html",
         "model": "sonnet",
         "language": "zh"
       },
       {
         "target": "uranium_lead_dating",
-        "file": "output/college.zh/sonnet/html/book_uranium_lead_dating.html",
+        "file": "output/college.zh/sonnet/html/book_uranium_lead_dating_zh.html",
         "model": "sonnet",
         "language": "zh"
       }
