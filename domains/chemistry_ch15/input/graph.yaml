@@ -1,0 +1,136 @@
+domain: chemistry_2e_ch15
+primitives:
+  chemical_equilibrium:
+    defines: A dynamic state in which the rates of forward and reverse reactions are equal, described
+      by an equilibrium constant expression involving concentrations of gases and solutes.
+    tier: 0
+  reaction_quotient:
+    defines: A ratio of product to reactant concentrations at any point in a reaction, used to determine
+      the direction a reaction must proceed to reach equilibrium.
+    tier: 0
+  le_chateliers_principle:
+    defines: A principle stating that a system at equilibrium will shift to counteract any imposed change
+      in conditions.
+    tier: 0
+  ionic_dissolution:
+    defines: The process by which an ionic solid dissociates into its constituent ions when placed in
+      a solvent.
+    tier: 0
+  ion_concentration:
+    defines: The amount of dissolved ions expressed in moles per liter of solution.
+    tier: 0
+  coordinate_covalent_bond:
+    defines: A covalent bond in which both electrons of the shared pair are donated by the same atom.
+    tier: 0
+concepts:
+  solubility_equilibrium:
+    defines: A dynamic equilibrium established when the rate of dissolution of a sparingly soluble ionic
+      solid equals the rate of precipitation of its ions from solution.
+    composed_of:
+    - chemical_equilibrium
+    - ionic_dissolution
+    tier: 1
+  lewis_acid:
+    defines: Any species that can accept an electron pair from a donor to form a coordinate covalent bond.
+    composed_of:
+    - coordinate_covalent_bond
+    tier: 1
+  lewis_base:
+    defines: Any species that can donate an electron pair to an acceptor to form a coordinate covalent
+      bond.
+    composed_of:
+    - coordinate_covalent_bond
+    tier: 1
+  coupled_equilibria:
+    defines: A system in which two or more separate chemical equilibria share one or more reactant or
+      product, so that the position of each equilibrium influences the others.
+    composed_of:
+    - chemical_equilibrium
+    tier: 1
+  solubility_product_constant:
+    defines: The equilibrium constant for the dissolution of a sparingly soluble ionic compound, equal
+      to the product of the equilibrium concentrations of its ions each raised to the power of their stoichiometric
+      coefficients.
+    composed_of:
+    - solubility_equilibrium
+    - ion_concentration
+    tier: 2
+  common_ion_effect:
+    defines: The decrease in solubility of an ionic compound caused by the presence in solution of an
+      ion that the compound shares, which shifts the dissolution equilibrium toward the solid.
+    composed_of:
+    - solubility_equilibrium
+    - le_chateliers_principle
+    tier: 2
+  lewis_acid_base_adduct:
+    defines: The compound or ion formed when a Lewis acid and a Lewis base combine through a coordinate
+      covalent bond.
+    composed_of:
+    - lewis_acid
+    - lewis_base
+    tier: 2
+  ligand:
+    defines: A molecule or ion that acts as a Lewis base and bonds to the central metal atom of a complex
+      ion by donating an electron pair.
+    composed_of:
+    - lewis_base
+    tier: 2
+  molar_solubility:
+    defines: The number of moles of a sparingly soluble compound that dissolve per liter of saturated
+      solution, calculated from the Ksp using an ICE table.
+    composed_of:
+    - solubility_product_constant
+    tier: 3
+  precipitation_prediction:
+    defines: The comparison of the ion product reaction quotient Qsp to Ksp to determine whether a precipitate
+      will form; precipitation occurs when Qsp exceeds Ksp.
+    composed_of:
+    - reaction_quotient
+    - solubility_product_constant
+    tier: 3
+  complex_ion:
+    defines: An ion consisting of a central metal atom or ion bonded to surrounding molecules or ions
+      (ligands) via coordinate covalent bonds; a specific type of Lewis acid-base adduct.
+    composed_of:
+    - lewis_acid_base_adduct
+    - ligand
+    tier: 3
+  formation_constant:
+    defines: The equilibrium constant for the reaction in which a metal ion combines with ligands to form
+      a complex ion; a large Kf indicates a very stable complex.
+    composed_of:
+    - chemical_equilibrium
+    - complex_ion
+    tier: 4
+  dissociation_constant:
+    defines: The equilibrium constant for the decomposition of a complex ion into its central metal ion
+      and ligands; equal to the mathematical inverse of the formation constant.
+    composed_of:
+    - formation_constant
+    tier: 5
+applications:
+  acid_enhanced_dissolution:
+    defines: The increase in solubility of a sparingly soluble salt with a basic anion when placed in
+      acidic solution, because the acid consumes the basic anion and drives the dissolution equilibrium
+      to the right.
+    needs:
+    - solubility_equilibrium
+    - le_chateliers_principle
+    - coupled_equilibria
+    tier: 2
+  selective_precipitation:
+    defines: A technique for separating ions in solution by incrementally raising the concentration of
+      a counter-ion so that compounds precipitate one at a time in order of their Ksp values.
+    needs:
+    - precipitation_prediction
+    - le_chateliers_principle
+    tier: 4
+  complex_ion_enhanced_dissolution:
+    defines: The increase in solubility of a sparingly soluble salt when ligands present in solution form
+      a stable complex ion with the dissolved metal cation, reducing its free concentration and driving
+      further dissolution.
+    needs:
+    - solubility_equilibrium
+    - complex_ion
+    - coupled_equilibria
+    tier: 4

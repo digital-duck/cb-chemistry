@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bond Polarity | Chemistry Ch07</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="bond-polarity-键的极性">Bond Polarity 键的极性</h2>
+<p>当两个不同的原子通过共价键结合时,它们对共用电子对的吸引力往往并不相等,这种不均等的电子分布就产生了<strong>键的极性(bond polarity)</strong>。衡量原子吸引电子能力的物理量叫做<strong>电负性(electronegativity)</strong>,常用鲍林标度(Pauling scale)表示,数值越大,该原子拉拽电子的能力越强。当两个成键原子的电负性差 $\Delta\chi$ 较大时,电子云会偏向电负性更强的一方,使该原子带部分负电荷($\delta^-$),另一原子带部分正电荷($\delta^+$),这样的键称为<strong>极性共价键(polar covalent bond)</strong>;若 $\Delta\chi \approx 0$,电子对称分布,称为<strong>非极性共价键(nonpolar covalent bond)</strong>;若 $\Delta\chi$ 很大(通常大于 1.7),电子几乎完全转移,形成<strong>离子键(ionic bond)</strong>。这三者并非截然分开的类别,而是一个连续的电负性差谱系。</p>
+<p><strong>实例分析</strong>:比较 H–H、H–Cl 和 Na–Cl 三种键。H–H 中两原子电负性相同($\Delta\chi = 0$),电子对称分布,是非极性键。H–Cl 中,Cl 的电负性(3.16)远大于 H(2.20),$\Delta\chi \approx 0.96$,电子偏向 Cl,形成极性共价键,Cl 端带 $\delta^-$,H 端带 $\delta^+$,这正是 HCl 分子具有偶极矩、能在水中电离的根本原因。Na–Cl 中 $\Delta\chi \approx 2.23$,电子几乎完全转移给 Cl,形成 Na$^+$ 和 Cl$^-$ 离子,这就是离子键。</p>
+<p><strong>问题解决应用</strong>:判断键的极性不仅是理论练习,更是预测分子行为的关键工具。例如,判断一个未知化合物是否易溶于水,第一步就是分析其内部化学键的极性——极性键通常构成极性分子(如水、氨),能与水分子形成氢键或偶极相互作用,因而易溶;而由非极性键构成的分子(如 O$_2$、CO$_2$ 的整体,尽管 C=O 本身有极性但分子对称使偶极抵消)则难溶于水。因此,面对新的分子结构时,你应当先查出各原子的电负性,计算成键原子间的差值,判断每个键的极性类型,再结合分子的几何构型判断整体极性——这是理解溶解性、反应活性乃至生物大分子(如蛋白质氢键网络)行为的第一步。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch7: Chemical Bonding and Molecular Geometry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lewis Structure | Chemistry Ch07</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="lewis-structure">Lewis Structure</h2>
+<p>A Lewis structure is a diagram that shows how atoms in a molecule share or hold electrons, using dots for unshared (lone-pair) electrons and lines for shared pairs (bonds). Only valence electrons — those in the outermost shell — appear in the diagram, because these are the electrons involved in bonding. The goal of most Lewis structures is to give each main-group atom a full outer shell, typically eight electrons (the octet rule), with hydrogen satisfied by just two.</p>
+<p><strong>Worked example.</strong> Consider carbon dioxide, $\text{CO}_2$. Carbon has 4 valence electrons, and each oxygen has 6, giving a total of $4 + 2(6) = 16$ valence electrons to place. Carbon is the central atom (it's the least electronegative and can form multiple bonds). Start with single bonds: $\text{O–C–O}$, using 4 electrons. Distribute the remaining 12 electrons as lone pairs on the oxygens first, filling each to an octet — that uses all 12, but carbon then has only 4 electrons around it, short of an octet. The fix is to convert one lone pair on each oxygen into a second bond to carbon, forming two double bonds: $\text{O=C=O}$. Now carbon has 8 electrons (from two double bonds), and each oxygen has 8 (one double bond plus two lone pairs). The total electron count is still 16, just rearranged — this adjustment step, moving lone pairs into bonding pairs until every atom reaches an octet, is the core problem-solving skill.</p>
+<p><strong>Problem-solving application.</strong> Lewis structures let you predict a molecule's shape, polarity, and reactivity before doing any experiment. For a new molecule, follow this procedure: (1) count total valence electrons; (2) arrange atoms with the least electronegative (non-hydrogen) atom central; (3) connect atoms with single bonds; (4) distribute remaining electrons as lone pairs, outer atoms first; (5) if the central atom lacks an octet, convert lone pairs into double or triple bonds. Try this on ammonia, $\text{NH}_3$ ($5 + 3(1) = 8$ electrons): three N–H bonds use 6 electrons, leaving one lone pair on nitrogen — no double bonds needed, and the resulting lone pair explains why ammonia is a base and has a bent (pyramidal) shape rather than a flat one. Mastering this stepwise electron-counting procedure is the foundation for later topics like molecular geometry (VSEPR theory) and predicting chemical reactivity.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

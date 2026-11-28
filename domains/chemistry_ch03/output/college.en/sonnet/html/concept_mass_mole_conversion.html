@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mass Mole Conversion | Chemistry Ch03</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="mass-mole-conversion">Mass Mole Conversion</h2>
+<p>A mole is a counting unit, exactly $6.02214076 \times 10^{23}$ particles, chosen so that the mass of one mole of a substance in grams equals its molar mass in atomic mass units. Molar mass ($M$) is the sum of the atomic masses of every atom in a formula, expressed in grams per mole (g/mol). This single equivalence — that molar mass acts as a conversion factor between the mass of a sample and the number of moles it contains — lets chemists move between the lab-scale world of grams, which a balance can measure, and the particle-scale world of moles, which chemical equations actually describe. The relationship is:</p>
+$$n = \frac{m}{M}$$
+<p>where $n$ is the number of moles, $m$ is the mass in grams, and $M$ is the molar mass in g/mol. Rearranged, $m = n \times M$ lets you go the other direction.</p>
+<p><strong>Worked example.</strong> Suppose you have 18.0 g of water, $\text{H}_2\text{O}$. The molar mass is $2(1.008) + 16.00 = 18.02$ g/mol. Dividing mass by molar mass:</p>
+$$n = \frac{18.0\ \text{g}}{18.02\ \text{g/mol}} \approx 0.999\ \text{mol}$$
+<p>So 18.0 g of water is almost exactly one mole — no coincidence, since water's molar mass was chosen by nature to land near 18.</p>
+<p><strong>Problem-solving application.</strong> Mass-mole conversion becomes essential once a reaction is involved, because balanced equations give mole ratios, not mass ratios. Consider the combustion of methane: $\text{CH}_4 + 2\text{O}_2 \rightarrow \text{CO}_2 + 2\text{H}_2\text{O}$. If you burn 8.00 g of methane ($M = 16.04$ g/mol), the strategy is: (1) convert mass to moles, (2) use the equation's mole ratio to find moles of product, (3) convert back to mass.</p>
+<p>Step 1: $n_{\text{CH}_4} = 8.00 / 16.04 = 0.499$ mol. Step 2: the ratio of $\text{CH}_4$ to $\text{CO}_2$ is 1:1, so $n_{\text{CO}_2} = 0.499$ mol. Step 3: mass of $\text{CO}_2$ produced $= 0.499 \times 44.01\ \text{g/mol} \approx 22.0$ g.</p>
+<p>This three-step pattern — mass → moles → (stoichiometry) → moles → mass — is the backbone of nearly every quantitative chemistry problem, from calculating reactant yields to determining limiting reagents in industrial and laboratory settings.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

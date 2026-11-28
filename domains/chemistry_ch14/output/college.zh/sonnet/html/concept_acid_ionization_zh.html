@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acid Ionization | Chemistry Ch14</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="acid-ionization-酸的电离">Acid Ionization（酸的电离）</h2>
+<p><strong>定义</strong></p>
+<p>酸电离是指酸分子在水中释放出氢离子（$H^+$，实际以水合形式 $H_3O^+$ 存在）的过程。根据电离程度的不同，酸分为强酸和弱酸。强酸（如盐酸 $HCl$、硫酸 $H_2SO_4$）在水中几乎完全电离，反应可视为单向进行：</p>
+$$HCl \rightarrow H^+ + Cl^-$$
+<p>弱酸（如醋酸 $CH_3COOH$）只有一小部分分子电离，体系中同时存在未电离的酸分子和电离产物，达到动态平衡：</p>
+$$CH_3COOH \rightleftharpoons H^+ + CH_3COO^-$$
+<p>这种平衡用酸电离常数 $K_a$ 描述：</p>
+$$K_a = \dfrac{[H^+][CH_3COO^-]}{[CH_3COOH]}$$
+<p>$K_a$ 越大，说明电离程度越高，酸性越强。由于 $K_a$ 数值范围跨度很大，通常用 $pK_a = -\log K_a$ 表示，$pK_a$ 越小，酸性越强。</p>
+<p><strong>实例演算</strong></p>
+<p>已知醋酸的 $K_a = 1.8 \times 10^{-5}$，求 0.10 mol/L 醋酸溶液的 $pH$。</p>
+<p>设电离出的 $[H^+] = x$，则：</p>
+$$K_a = \dfrac{x^2}{0.10 - x} \approx \dfrac{x^2}{0.10}$$
+<p>（因为 $x \ll 0.10$，可近似忽略分母中的 $x$）</p>
+<p>解得：</p>
+$$x^2 = 1.8 \times 10^{-6} \implies x = 1.3 \times 10^{-3}\ \text{mol/L}$$
+$$pH = -\log(1.3 \times 10^{-3}) \approx 2.89$$
+<p>对比：若是 0.10 mol/L 的强酸（如 $HCl$），则 $[H^+] = 0.10$，$pH = 1.00$。可见弱酸的电离不完全使溶液的酸性明显弱于同浓度的强酸。</p>
+<p><strong>应用与解题技巧</strong></p>
+<p>判断一道题该用强酸公式还是弱酸平衡公式，关键看题目是否给出 $K_a$ 值——给出 $K_a$ 就必须用平衡法求解，而不能直接假设完全电离。此外，"近似忽略 $x$"的方法只在 $x$ 远小于初始浓度（通常要求 $K_a$ 值小、初始浓度不太稀）时有效；若近似解出的 $x$ 与初始浓度之比超过 5%，需改用求根公式精确求解二次方程，避免误差过大。这类计算是分析血液缓冲体系、工业废水处理及药物溶解性等实际问题的基础。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch14: Acid-Base Equilibria (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

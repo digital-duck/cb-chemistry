@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uranium Lead Dating | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="uranium-lead-dating">Uranium Lead Dating</h2>
+<p><strong>定义</strong></p>
+<p>铀铅测年法是利用铀（U）经过一系列放射性衰变最终转变为铅（Pb）这一过程来测定岩石和矿物年龄的方法，是地质学中最精确、应用最广泛的绝对定年技术之一。自然界中的铀有两种主要同位素：铀-238（$^{238}\text{U}$）和铀-235（$^{235}\text{U}$），它们各自沿着独立的衰变链，经过多次$\alpha$衰变和$\beta$衰变，分别最终稳定为铅-206（$^{206}\text{Pb}$）和铅-207（$^{207}\text{Pb}$）。这两条衰变链的半衰期已被精确测定：$^{238}\text{U}$的半衰期约为44.7亿年，$^{235}\text{U}$的半衰期约为7.04亿年。放射性衰变遵循指数规律，可以写成</p>
+$$N(t) = N_0 e^{-\lambda t}$$
+<p>其中$N_0$为初始母体原子数，$N(t)$为经过时间$t$后剩余的母体原子数，$\lambda$为衰变常数，与半衰期的关系为$\lambda = \ln 2 / t_{1/2}$。</p>
+<p><strong>应用实例</strong></p>
+<p>锆石（zircon，$\text{ZrSiO}_4$）晶体在结晶时会将铀原子纳入晶格，但几乎完全排斥铅原子，这使它成为理想的"天然计时器"：晶体形成时铅含量近似为零，此后测得的所有铅都来自铀的衰变。若测得某锆石样品中$^{206}\text{Pb}/^{238}\text{U}$的原子数比值为0.10，则可由衰变公式反推年龄。设初始$^{238}\text{U}$原子数为$N_0$，现存为$N$，则生成的$^{206}\text{Pb}$原子数为$N_0 - N$，比值为</p>
+$$\frac{N_0 - N}{N} = e^{\lambda t} - 1$$
+<p>代入0.10并结合$^{238}\text{U}$的$\lambda \approx 1.55\times10^{-10}\,\text{yr}^{-1}$，可解得$t \approx 6.2$亿年。</p>
+<p><strong>问题解决实践</strong></p>
+<p>铀铅法的关键优势在于"双链交叉验证"：由于$^{238}\text{U}$和$^{235}\text{U}$具有不同的半衰期，同一颗锆石中同时测得的$^{206}\text{Pb}/^{238}\text{U}$年龄与$^{207}\text{Pb}/^{235}\text{U}$年龄若彼此吻合（称为"一致"，concordant），则可高度确信该年龄未受后期热事件或铅丢失的干扰；若两者出现偏差（不一致，discordant），地质学家会利用一致图（concordia diagram）分析偏差模式，反推出岩石经历的多期地质事件时间。正是这种交叉检验能力，使铀铅法能够测定地球上最古老的岩石（如40多亿年前的锆石），并成为校准地质年代表的基石方法。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

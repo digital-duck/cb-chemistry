@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photon | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="photon">Photon</h2>
+<p>A photon is the smallest possible packet of light — a discrete quantum of electromagnetic energy that also carries momentum, even though it has no mass. Light behaves like a continuous wave in many situations (it diffracts and interferes), but when it interacts with matter — striking an electron in a metal, being absorbed by a molecule, or triggering a pixel in a camera sensor — it does so one indivisible unit at a time. That unit is the photon.</p>
+<p>The one new idea to master here is that a photon's energy depends only on the light's frequency $f$: $E = hf$, where $h = 6.626 \times 10^{-34}\ \text{J·s}$ is Planck's constant. Since frequency and wavelength $\lambda$ are related by $c = f\lambda$, the same energy can be written as $E = hc/\lambda$ — shorter wavelength means higher energy per photon. This is not two separate facts to learn, just one relationship expressed two ways.</p>
+<p>This relationship explains why light of low enough frequency simply cannot eject an electron from a metal surface, no matter how bright the light is (the photoelectric effect). Every metal has a minimum energy an electron needs to escape its surface. Brightness (intensity) only controls how many photons arrive per second — it does not change how much energy each individual photon delivers. If a single photon doesn't carry enough energy to free an electron, piling on more low-energy photons doesn't help, because each interaction happens one photon at a time, not cumulatively.</p>
+<p><strong>Worked example.</strong> Suppose a metal requires at least $2.3\ \text{eV}$ to release an electron, and it's illuminated with violet light of wavelength $\lambda = 400\ \text{nm}$. Each photon's energy is</p>
+$$E = \frac{hc}{\lambda} = \frac{(6.626\times10^{-34})(3\times10^8)}{400\times10^{-9}} \approx 4.97\times10^{-19}\ \text{J} \approx 3.1\ \text{eV}.$$
+<p>Since $3.1\ \text{eV}$ exceeds the $2.3\ \text{eV}$ needed, each absorbed photon ejects an electron, and the leftover energy, about $0.8\ \text{eV}$, becomes the electron's kinetic energy.</p>
+<p><strong>Problem-solving takeaway.</strong> When a problem gives you a threshold frequency, a minimum release energy, or "light of wavelength X causes/does not cause an effect," convert wavelength to photon energy with $E = hc/\lambda$ and compare it directly to that threshold. Intensity is irrelevant to whether the effect starts at all — it only affects how much the effect produces once the energy threshold is met.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radiometric Dating | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="radiometric-dating">Radiometric Dating</h2>
+<p><strong>定义</strong></p>
+<p>放射性同位素测年法（radiometric dating）是利用放射性同位素按固定速率衰变的特性来测定岩石、矿物或有机物质年龄的技术。任何放射性同位素（母同位素，parent isotope）都会以恒定的<strong>半衰期</strong>（half-life，记作 $t_{1/2}$）衰变为稳定的子同位素（daughter isotope），半衰期指母同位素数量衰减到初始值一半所需的时间，与温度、压力、化学环境无关，只取决于原子核本身。这种恒定性使放射性衰变成为天然的"时钟"。衰变过程遵循指数规律：</p>
+$$N(t) = N_0 \left(\frac{1}{2}\right)^{t/t_{1/2}}$$
+<p>其中 $N_0$ 是初始母同位素量，$N(t)$ 是经过时间 $t$ 后剩余的母同位素量。只要测出样品中母子同位素的比例，并知道该同位素的半衰期，就可以反推出样品形成以来经过的时间。</p>
+<p><strong>实例讲解</strong></p>
+<p>碳-14 测年法是最常用于测定生物遗骸年龄的方法，其半衰期约为 5730 年。生物体存活时通过呼吸和摄食不断与大气交换碳，体内 $^{14}\text{C}$ 与 $^{12}\text{C}$ 的比例与大气保持一致；生物死亡后不再交换碳，$^{14}\text{C}$ 便开始按半衰期衰变。假设某古木样本中测得的 $^{14}\text{C}$ 含量为初始值的 25%，即 $N(t)/N_0 = 0.25 = (1/2)^2$，说明已经历了 2 个半衰期，年龄约为 $2 \times 5730 = 11460$ 年。碳-14 法适用于数万年内的有机物；对于更古老的岩石（如数十亿年的地层），则需改用半衰期更长的同位素体系，如铀-铅法（半衰期约 45 亿年）或钾-氩法。</p>
+<p><strong>问题解决应用</strong></p>
+<p>放射性测年是重建地球历史、校准演化时间线、确定化石年代的核心工具。解题的关键步骤是：先确定样品中母子同位素比值，再换算成经过了多少个半衰期，最后乘以半衰期数值得到年龄。例如，若某矿物中母同位素仅剩 12.5%（即 $1/8$），则经过了 3 个半衰期（$2^3 = 8$）。选择测年方法时需匹配同位素半衰期与样品预期年龄的量级——半衰期过短则母同位素早已衰变殆尽无法测量，半衰期过长则变化量太小难以精确检测，这是野外与实验室工作中选择测年手段的实际考量。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

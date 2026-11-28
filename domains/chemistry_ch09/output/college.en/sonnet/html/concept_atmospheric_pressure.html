@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atmospheric Pressure | Chemistry Ch09</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="atmospheric-pressure">Atmospheric Pressure</h2>
+<p>Atmospheric pressure is the force per unit area exerted by the weight of the air column above a given point. At sea level, this averages about $101{,}325\ \text{Pa}$ (equivalently $1\ \text{atm}$, $760\ \text{mmHg}$, or roughly $14.7\ \text{psi}$). Because air is a fluid, this pressure acts equally in all directions, pushing on every surface it touches — your skin, a piston, a mountain lake.</p>
+<p>The key relationship governing atmospheric pressure is that it decreases with altitude, because there is progressively less air above you to weigh down on that point. This isn't linear: the atmosphere thins exponentially, following the barometric formula</p>
+$$P(h) = P_0 e^{-h/H}$$
+<p>where $P_0$ is sea-level pressure, $h$ is altitude, and $H \approx 8{,}500\ \text{m}$ is the scale height (the altitude over which pressure drops by a factor of $e$). This exponential form matters practically: pressure falls fast near sea level and more slowly at high altitude, which is why the first few kilometers of climbing a mountain affect your breathing more noticeably per meter than the next few.</p>
+<p><strong>Worked example.</strong> Suppose a weather balloon rises to $5{,}500\ \text{m}$ (roughly the summit of a tall mountain). Using $H = 8{,}500\ \text{m}$:</p>
+$$P = 101{,}325 \times e^{-5500/8500} = 101{,}325 \times e^{-0.647} \approx 101{,}325 \times 0.524 \approx 53{,}100\ \text{Pa}$$
+<p>That's about 52% of sea-level pressure — consistent with the common mountaineering fact that at that altitude there's roughly half as much oxygen available per breath, since oxygen is a fixed fraction of the air mixture.</p>
+<p><strong>Problem-solving application.</strong> Atmospheric pressure calculations underlie real engineering and safety decisions. A commercial jet cruising at 11,000 m must pressurize its cabin, because unpressurized air there is under 25 kPa — too thin to sustain consciousness. Engineers use the barometric formula to size pressurization systems and set cabin altitude limits (typically pressurized to a simulated 2,400 m, around 75 kPa). Similarly, altimeters in aircraft and hiking GPS units invert this formula: by measuring local pressure and comparing it to a known sea-level reference, they solve for $h$, giving an estimate of altitude. Try it yourself: if a sensor reads $70{,}000\ \text{Pa}$, solve $h = -H \ln(P/P_0)$ to estimate your elevation — you should get roughly 3,100 m, close to Denver's "mile-high" pressure baseline scaled up.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amontons Law | Chemistry Ch09</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="amontons-定律">Amontons 定律</h2>
+<p><strong>定义</strong></p>
+<p>Amontons 定律（阿蒙顿定律，也称压强定律）描述了在<strong>定容</strong>条件下，一定量气体的压强与温度之间的关系：当气体的体积和物质的量保持不变时，压强与热力学温度（开尔文温度）成正比。用公式表示为：</p>
+$$\frac{P}{T} = k \quad \text{或} \quad \frac{P_1}{T_1} = \frac{P_2}{T_2}$$
+<p>其中 $P$ 为压强，$T$ 为热力学温度（单位必须是开尔文，K），$k$ 为常数。这一规律的微观解释来自气体分子动理论：温度升高意味着气体分子的平均动能增大，分子撞击容器壁的频率和力度都随之增加，因此在体积不变的情况下，压强必然上升。这也是 Amontons 定律不同于波义耳定律（恒温下压强与体积成反比）和查理定律（恒压下体积与温度成正比）的关键——它锁定的变量是体积。</p>
+<p><strong>例题</strong></p>
+<p>一个刚性钢瓶中封闭着气体，在 27°C（300 K）时压强为 2.00 atm。若将钢瓶加热到 127°C（400 K），瓶内压强变为多少？</p>
+<p>解：由于是刚性容器，体积恒定，可直接应用 Amontons 定律：</p>
+$$\frac{P_1}{T_1} = \frac{P_2}{T_2} \implies P_2 = P_1 \times \frac{T_2}{T_1} = 2.00 \text{ atm} \times \frac{400 \text{ K}}{300 \text{ K}} = 2.67 \text{ atm}$$
+<p><strong>应用与解题练习</strong></p>
+<p>Amontons 定律在实际生活和工业中有重要的安全含义。例如，汽车轮胎在长途高速行驶后温度升高，胎内压强随之上升，这就是为什么轮胎标注的"冷胎压"要在清晨或行驶前测量。再如，气溶胶罐（如喷雾罐）标签上常有"请勿置于高温或阳光下"的警告——罐体体积固定，一旦罐内气体因高温而压强骤增，就有爆炸风险。</p>
+<p>解题时要牢记两个易错点：第一，温度必须换算为开尔文（K = °C + 273），绝不能直接代入摄氏度，否则会得到错误甚至负值的结果；第二，该定律只适用于<strong>定容</strong>过程，若题目中容器可膨胀（如活塞或气球），则应改用理想气体状态方程 $PV = nRT$ 综合处理压强、体积、温度三者的变化。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch9: Gases (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

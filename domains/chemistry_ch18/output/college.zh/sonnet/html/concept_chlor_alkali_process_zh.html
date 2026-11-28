@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chlor Alkali Process | Chemistry Ch18</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="chlor-alkali-process-氯碱工艺">Chlor Alkali Process 氯碱工艺</h2>
+<p><strong>定义</strong></p>
+<p>氯碱工艺是指通过电解饱和食盐水（$\text{NaCl}$ 水溶液，俗称卤水）同时制取氯气（$\text{Cl}_2$）、氢气（$\text{H}_2$）和氢氧化钠（$\text{NaOH}$）的工业电解过程。整个反应体系依靠外接电源驱动非自发的氧化还原反应，是电解在化学工业中最重要的应用之一。阳极上氯离子被氧化生成氯气：</p>
+$$2\text{Cl}^- \rightarrow \text{Cl}_2(g) + 2e^-$$
+<p>阴极上水被还原生成氢气，同时留下氢氧根离子：</p>
+$$2\text{H}_2\text{O} + 2e^- \rightarrow \text{H}_2(g) + 2\text{OH}^-$$
+<p>阴极区域因此不断累积 $\text{Na}^+$ 和 $\text{OH}^-$，形成氢氧化钠溶液。现代工厂普遍采用离子交换膜法：一张只允许 $\text{Na}^+$ 通过、阻挡 $\text{Cl}^-$ 与 $\text{OH}^-$ 的阳离子交换膜，把电解槽分隔为阳极室与阴极室，防止 $\text{Cl}_2$ 与 $\text{NaOH}$ 直接接触发生副反应，同时确保产物纯度。</p>
+<p><strong>工作实例</strong></p>
+<p>设某工厂每天需要生产 1000 kg 纯 $\text{NaOH}$。$\text{NaOH}$ 摩尔质量约为 40 g/mol，故所需摩尔数为 $1000\,000\,\text{g} / 40\,\text{g/mol} = 25{,}000$ mol。根据阴极反应，每生成 2 mol $\text{OH}^-$ 需要 2 mol 电子，即摩尔比为 1:1，因此需转移约 25,000 mol 电子。由法拉第常数 $F \approx 96{,}500\,\text{C/mol}$，所需电荷量为 $25{,}000 \times 96{,}500 \approx 2.41 \times 10^9\,\text{C}$。若电解槽以 50,000 A 的电流连续运行，所需时间为 $2.41 \times 10^9 / 50{,}000 \approx 48{,}200\,\text{s}$，约合 13.4 小时。这类计算体现了法拉第电解定律在工业规模生产中的直接应用。</p>
+<p><strong>问题解决应用</strong></p>
+<p>工程师在设计或诊断氯碱装置时，常需处理以下实际问题：为何离子交换膜法逐步取代了早期的水银法与隔膜法？答案在于水银法存在汞污染风险，隔膜法产物纯度较低，而膜法兼顾环保与产品质量。另一类常见问题是能耗核算：电解过程电压通常需克服理论分解电压加上过电位与电阻损耗，工程师需通过测量实际电压与电流计算能耗效率，并据此优化电极材料与膜的性能，降低单位产品的电力成本。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch18: Representative Metals, Metalloids, and Nonmetals (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

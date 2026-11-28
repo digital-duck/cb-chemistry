@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Standard Free Energy Change | Chemistry Ch16</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="standard-free-energy-change">Standard Free Energy Change</h2>
+<p>The standard free energy change, $\Delta G^\circ$, tells you whether a reaction is thermodynamically favorable when all reactants and products are in their standard states — typically 1 M concentration for solutes, 1 atm for gases, and 25°C. It combines two competing tendencies in nature: the drive toward lower enthalpy (energy released as heat, $\Delta H$) and the drive toward higher entropy (increased disorder, $\Delta S$). Gibbs defined the relationship as:</p>
+$$\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$$
+<p>where $T$ is temperature in kelvin. A negative $\Delta G^\circ$ means the reaction is spontaneous (exergonic) under standard conditions; a positive value means it is nonspontaneous (endergonic) and requires energy input to proceed.</p>
+<p><strong>Worked example.</strong> Consider the reaction $\text{N}_2\text{O}_4(g) \rightarrow 2\text{NO}_2(g)$, with $\Delta H^\circ = +58.0\ \text{kJ/mol}$ and $\Delta S^\circ = +176\ \text{J/(mol·K)}$ at 298 K. Converting entropy to kJ: $0.176\ \text{kJ/(mol·K)}$. Then:</p>
+$$\Delta G^\circ = 58.0 - (298)(0.176) = 58.0 - 52.4 = +5.6\ \text{kJ/mol}$$
+<p>Since $\Delta G^\circ$ is positive, the reaction is nonspontaneous at 298 K — the enthalpy cost of breaking the N–N bond outweighs the entropy gain from producing two gas molecules from one.</p>
+<p><strong>Problem-solving application.</strong> A key skill is finding the temperature at which a reaction switches from nonspontaneous to spontaneous, which happens when $\Delta G^\circ = 0$. Setting the Gibbs equation to zero and solving for $T$ gives $T = \Delta H^\circ / \Delta S^\circ$.</p>
+<p>For the example above: $T = 58{,}000\ \text{J/mol} \div 176\ \text{J/(mol·K)} \approx 330\ \text{K}$ (about 57°C). Above this temperature, the $T\Delta S^\circ$ term dominates and the reaction becomes spontaneous — this is why $\text{N}_2\text{O}_4$ decomposes more readily on heating.</p>
+<p>This same reasoning is what chemical engineers use to choose operating temperatures for industrial reactions: by finding the crossover temperature, they can predict the conditions under which a desired reaction becomes thermodynamically favorable, without needing to run costly trial experiments across a range of temperatures. A reaction with a large positive $\Delta H^\circ$ but also a large positive $\Delta S^\circ$, for instance, is a strong candidate for a high-temperature process, since heating pushes $\Delta G^\circ$ toward negative values. Knowing this crossover point in advance lets engineers design efficient, energy-conscious processes rather than guessing at operating conditions.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electron Pair Geometry | Chemistry Ch07</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="electron-pair-geometry-电子对几何构型">Electron Pair Geometry（电子对几何构型）</h2>
+<p><strong>定义</strong></p>
+<p>电子对几何构型描述的是中心原子周围所有电子对——包括成键电子对和孤对电子——在三维空间中的排列方式。这一概念是价层电子对互斥理论（VSEPR，Valence Shell Electron Pair Repulsion Theory）的核心：由于电子对之间带负电荷，彼此排斥，它们会尽可能地远离彼此，从而使整个体系的排斥能最小化。需要区分的是电子对几何构型（考虑所有电子对，包括孤对）与分子几何构型（只考虑原子核的排列，孤对电子不计入"形状"）。当中心原子周围有 2 个电子对时，几何构型为直线形（键角 $180^\circ$）；3 个电子对为平面三角形（键角 $120^\circ$）；4 个电子对为四面体形（键角 $109.5^\circ$）；5 个电子对为三角双锥形；6 个电子对为八面体形。</p>
+<p><strong>范例解析</strong></p>
+<p>以甲烷（$\text{CH}_4$）和氨（$\text{NH}_3$）为例。甲烷的中心碳原子周围有 4 个成键电子对，没有孤对电子，因此电子对几何构型与分子几何构型一致，均为四面体形，键角约 $109.5^\circ$。而氨的中心氮原子周围同样有 4 个电子对，但其中 3 个是成键电子对（与氢结合），1 个是孤对电子。电子对几何构型仍是四面体形，但由于孤对电子不显现为可见的原子位置，分子几何构型被描述为三角锥形。更关键的是，孤对电子的排斥力强于成键电子对，会将成键角"压缩"，使氨分子的实际键角约为 $107^\circ$，略小于理想的四面体角。</p>
+<p><strong>解题应用</strong></p>
+<p>判断电子对几何构型的标准流程是：先画出路易斯结构式，计算中心原子的价层电子对总数（成键对数加孤对数），再依据该总数查对应的基本几何构型；最后根据孤对电子的存在与否，确定分子几何构型及键角是否发生偏移。例如水分子（$\text{H}_2\text{O}$）中心氧原子有 2 个成键对和 2 个孤对，电子对几何构型为四面体形,但分子几何构型为角形（弯曲形),因两对孤对电子的强排斥作用,键角进一步压缩至约 $104.5^\circ$。掌握这一分析步骤，能帮助预测分子的极性、反应活性以及分子间作用力的强弱,是理解结构决定性质这一化学核心思想的基础工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch7: Chemical Bonding and Molecular Geometry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

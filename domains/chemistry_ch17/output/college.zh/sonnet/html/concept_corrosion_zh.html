@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Corrosion | Chemistry Ch17</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="corrosion">Corrosion</h2>
+<p><strong>定义</strong></p>
+<p>腐蚀（corrosion）是金属材料与周围环境（通常是氧气和水）发生自发的氧化还原反应，从而逐渐转变为更稳定的化合物（如氧化物、氢氧化物）的过程。以铁的生锈为例，本质上是一个电化学过程：铁表面不同区域因微小的成分或应力差异，形成无数个微型原电池。在阳极区，铁被氧化：</p>
+$$\text{Fe}(s) \rightarrow \text{Fe}^{2+}(aq) + 2e^-$$
+<p>电子通过金属传导到阴极区，与溶解在水膜中的氧气和水结合，发生还原反应：</p>
+$$\text{O}_2(g) + 2\text{H}_2\text{O}(l) + 4e^- \rightarrow 4\text{OH}^-(aq)$$
+<p>生成的 $\text{Fe}^{2+}$ 与 $\text{OH}^-$ 进一步反应，并被空气中的氧气继续氧化，最终形成疏松多孔的水合氧化铁 $\text{Fe}_2\text{O}_3\cdot x\text{H}_2\text{O}$，也就是铁锈。铁锈不能像铝表面的氧化铝那样形成致密保护层，因此腐蚀会持续向金属内部推进。</p>
+<p><strong>实例解析</strong></p>
+<p>想象一辆汽车的底盘在冬季道路上行驶。撒盐融雪后，路面积水中含有大量 $\text{Na}^+$ 和 $\text{Cl}^-$ 离子。这些离子本身不参与氧化还原反应，但极大提高了水膜的导电性，相当于给原电池装上了更高效的"电解质桥梁"，使电子和离子迁移速度加快，腐蚀反应显著加速。这就是为什么潮湿多盐地区的车辆比干燥内陆地区的车辆更容易生锈。</p>
+<p><strong>问题解决应用</strong></p>
+<p>理解腐蚀的电化学本质，才能设计出有效的防护策略，常见方法可分为三类：</p>
+<li><strong>物理隔绝</strong>：涂漆、镀锌、涂油，阻止水和氧气接触金属表面。</li>
+<li><strong>牺牲阳极保护法</strong>：在被保护金属（如船体钢铁）上连接一块更活泼的金属（如锌或镁）。由于锌的还原电位更负，锌优先被氧化成 $\text{Zn}^{2+}$，而铁则作为阴极被保护，不参与被氧化。当锌逐渐消耗殆尽后需定期更换。</li>
+<li><strong>改变环境条件</strong>：降低湿度、控制 pH、使用缓蚀剂减少氧气或电解质与金属的接触。</li>
+<p>工程师在选择防护方案时，需要综合考虑成本、环境（如是否接触盐水或工业废气）以及维护周期。例如，海洋钢结构常用牺牲阳极法，而家用工具则更依赖表面涂层，这体现了将化学原理转化为实际工程决策的过程。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch17: Electrochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

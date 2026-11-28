@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Effective Nuclear Charge | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="effective-nuclear-charge-有效核电荷">Effective Nuclear Charge（有效核电荷）</h2>
+<p><strong>定义</strong></p>
+<p>原子核带正电荷 $+Ze$，理应对核外每个电子都施加强大的静电吸引力。然而,实际作用在某个电子上的核电荷,远小于核的真实电荷数 $Z$。原因在于:其他电子分布在该电子与核之间(或与之共享同一区域),对核电荷产生了屏蔽(shielding)。于是,某个电子实际感受到的净正电荷,称为有效核电荷,记作:</p>
+$$Z_{eff} = Z - S$$
+<p>其中 $Z$ 为核内质子数,$S$ 为屏蔽常数(由其余电子贡献的屏蔽效应之和)。屏蔽效应并非人人均等:内层电子对外层电子的屏蔽效率高;同层电子之间屏蔽效率较低;外层电子几乎不屏蔽内层电子。这正是理解原子半径、电离能、电负性等周期性趋势的核心工具。</p>
+<p><strong>实例解析</strong></p>
+<p>以钠原子(Na, $Z=11$)的价电子(3s¹)为例。若不考虑屏蔽,该电子应感受到 $+11e$ 的吸引力。但内层的10个电子(1s²2s²2p⁶)几乎完全屏蔽了核电荷,用斯莱特规则(Slater's rules)估算,屏蔽常数 $S \approx 8.8$,于是:</p>
+$$Z_{eff} \approx 11 - 8.8 = 2.2$$
+<p>这解释了为何钠原子半径较大、第一电离能较低——价电子只感受到约 $+2.2e$ 的净吸引力,较易被移走。相比之下,同周期的氯原子($Z=17$)价电子的 $Z_{eff}$ 约为 6.1,因为同层电子间屏蔽效率低,核电荷增量大部分未被抵消,故氯原子半径更小、电离能更高。</p>
+<p><strong>解决问题的应用</strong></p>
+<p>有效核电荷是预测和解释周期表趋势的定量工具。同一周期从左到右,$Z$ 递增而同层屏蔽增幅有限,故 $Z_{eff}$ 增大,导致原子半径减小、电离能与电负性增大。同一族从上到下,新增的电子层使内层屏蔽显著增强,$Z_{eff}$ 增幅很小,但电子距核更远,原子半径仍增大、电离能降低。</p>
+<p>在解题时,可用斯莱特规则快速估算 $Z_{eff}$:同组电子间屏蔽系数取 0.35(1s 组取 0.30),次内层取 0.85,更内层取 1.00。例如比较 Mg 与 Mg²⁺ 的半径差异,或预测 Fe²⁺ 与 Fe³⁺ 何者半径更小,都可通过计算价电子的 $Z_{eff}$ 得出结论——去掉外层电子后,剩余电子的屏蔽减少,$Z_{eff}$ 上升,离子半径随之收缩。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

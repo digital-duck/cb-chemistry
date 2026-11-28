@@ -1,0 +1,383 @@
+domain: chemistry_2e_ch21
+primitives:
+  atomic_number:
+    defines: The number of protons in an atomic nucleus, which defines the element's identity.
+    tier: 0
+  mass_number:
+    defines: The total count of protons and neutrons (nucleons) in an atomic nucleus.
+    tier: 0
+  proton:
+    defines: A positively charged subatomic particle found in the nucleus; its count determines the element.
+    tier: 0
+  neutron:
+    defines: An electrically neutral subatomic particle found in the nucleus alongside protons.
+    tier: 0
+  electron:
+    defines: A negatively charged subatomic particle that orbits the nucleus and participates in chemical
+      bonding.
+    tier: 0
+  electromagnetic_radiation:
+    defines: Energy propagated as oscillating electric and magnetic fields across a spectrum of wavelengths
+      and frequencies.
+    tier: 0
+  first_order_kinetics:
+    defines: A reaction rate law in which rate is directly proportional to the concentration (or amount)
+      of one reactant.
+    tier: 0
+  mass_energy_equivalence:
+    defines: Einstein's relation E = mc² expressing that mass and energy are interconvertible, used to
+      calculate energy released in nuclear processes from mass defect.
+    tier: 0
+concepts:
+  nucleon:
+    defines: The collective term for protons and neutrons as constituents of an atomic nucleus.
+    composed_of:
+    - proton
+    - neutron
+    tier: 1
+  isotope:
+    defines: Atoms of the same element (same atomic number) that differ in the number of neutrons and
+      therefore in mass number.
+    composed_of:
+    - atomic_number
+    - mass_number
+    - neutron
+    tier: 1
+  gamma_ray:
+    defines: High-energy electromagnetic radiation emitted when a nucleus transitions from an excited
+      state to a lower energy state; has no mass or charge.
+    composed_of:
+    - electromagnetic_radiation
+    tier: 1
+  beta_particle:
+    defines: A high-energy electron emitted from a nucleus when a neutron is converted into a proton during
+      beta decay.
+    composed_of:
+    - electron
+    - neutron
+    - proton
+    tier: 1
+  positron:
+    defines: The antiparticle of the electron; a positively charged particle of equal mass emitted during
+      positron emission (β⁺ decay).
+    composed_of:
+    - electron
+    tier: 1
+  nuclide:
+    defines: A nucleus characterized by a specific number of protons and neutrons, identified by nuclide
+      notation (symbol, mass number, atomic number).
+    composed_of:
+    - atomic_number
+    - mass_number
+    - nucleon
+    tier: 2
+  alpha_particle:
+    defines: A high-energy helium-4 nucleus (two protons, two neutrons) emitted during certain nuclear
+      decay reactions.
+    composed_of:
+    - nucleon
+    tier: 2
+  strong_nuclear_force:
+    defines: The short-range attractive force between nucleons that overcomes electrostatic repulsion
+      among protons and holds the nucleus together.
+    composed_of:
+    - nucleon
+    - proton
+    tier: 2
+  magic_numbers:
+    defines: Specific nucleon counts (2, 8, 20, 28, 50, 82, 126) that complete nuclear shells, conferring
+      exceptional stability against radioactive decay.
+    composed_of:
+    - nucleon
+    tier: 2
+  antimatter:
+    defines: Particles with the same mass as their ordinary counterparts but with opposite properties
+      (e.g., charge); annihilates with ordinary matter to produce energy.
+    composed_of:
+    - positron
+    - mass_energy_equivalence
+    tier: 2
+  np_ratio:
+    defines: The ratio of neutrons to protons in a nucleus; stable lighter nuclei have a ratio near 1:1,
+      while heavier stable nuclei require increasing neutron excess.
+    composed_of:
+    - nuclide
+    tier: 3
+  mass_defect:
+    defines: The difference between the calculated mass of a nucleus's constituent nucleons and the experimentally
+      measured mass of the nucleus, representing mass converted to binding energy.
+    composed_of:
+    - nucleon
+    - nuclide
+    tier: 3
+  nuclear_density:
+    defines: The extremely high mass per unit volume of an atomic nucleus, averaging approximately 1.8
+      × 10¹⁴ g/cm³.
+    composed_of:
+    - nucleon
+    - nuclide
+    tier: 3
+  nuclear_reaction:
+    defines: A process that changes a nucleus's atomic number, mass number, or energy state, conserving
+      both total mass number and total charge across reactants and products.
+    composed_of:
+    - nuclide
+    - atomic_number
+    - mass_number
+    tier: 3
+  ionizing_radiation:
+    defines: Radiation (alpha, beta, gamma particles, X-rays) energetic enough to eject electrons from
+      atoms or molecules, capable of breaking chemical bonds and damaging biological systems.
+    composed_of:
+    - alpha_particle
+    - beta_particle
+    - gamma_ray
+    tier: 3
+  balancing_nuclear_equations:
+    defines: The method of writing nuclear reactions such that the sum of mass numbers and the sum of
+      atomic numbers are each equal on both sides of the equation.
+    composed_of:
+    - nuclear_reaction
+    - atomic_number
+    - mass_number
+    tier: 4
+  nuclear_binding_energy:
+    defines: The energy released when nucleons are bound together to form a nucleus, equal to the energy
+      required to break the nucleus into its constituent protons and neutrons.
+    composed_of:
+    - mass_defect
+    - mass_energy_equivalence
+    tier: 4
+  band_of_stability:
+    defines: The narrow region on a plot of neutron number versus proton number that contains all known
+      stable nuclides, reflecting favorable neutron-to-proton ratios.
+    composed_of:
+    - nuclide
+    - np_ratio
+    tier: 4
+  nuclear_transmutation:
+    defines: The conversion of one nuclide into another by bombarding it with nuclei, neutrons, or other
+      high-speed particles, often using a particle accelerator.
+    composed_of:
+    - nuclear_reaction
+    tier: 4
+  radiation_biological_effects:
+    defines: The damage to living organisms caused by ionizing radiation through direct ionization of
+      biomolecules or indirect generation of reactive hydroxyl radicals, affecting rapidly dividing cells
+      most severely.
+    composed_of:
+    - ionizing_radiation
+    tier: 4
+  binding_energy_per_nucleon:
+    defines: The total nuclear binding energy divided by the number of nucleons, used as a measure of
+      nuclear stability; peaks near mass number 56.
+    composed_of:
+    - nuclear_binding_energy
+    - nucleon
+    tier: 5
+  nuclear_fission:
+    defines: The splitting of a heavy nucleus into two or more lighter nuclei of intermediate mass, accompanied
+      by release of neutrons and a very large amount of energy due to mass-to-energy conversion.
+    composed_of:
+    - nuclear_reaction
+    - mass_energy_equivalence
+    - nuclear_binding_energy
+    tier: 5
+  nuclear_fusion:
+    defines: The combination of very light nuclei into a heavier nucleus at extremely high temperatures,
+      releasing large amounts of energy from mass-to-energy conversion.
+    composed_of:
+    - nuclear_reaction
+    - mass_energy_equivalence
+    - nuclear_binding_energy
+    tier: 5
+  particle_accelerator:
+    defines: A device that uses electric and magnetic fields to accelerate charged nuclear particles to
+      the kinetic energies needed to initiate transmutation reactions.
+    composed_of:
+    - nuclear_transmutation
+    tier: 5
+  transuranium_elements:
+    defines: Synthetic elements with atomic numbers greater than 92 (uranium), all produced by nuclear
+      transmutation reactions and not found naturally on Earth.
+    composed_of:
+    - nuclear_transmutation
+    - atomic_number
+    tier: 5
+  relative_biological_effectiveness:
+    defines: A dimensionless factor that weights radiation dose by the type of radiation to reflect differing
+      biological damage; alpha particles carry RBE ≈ 20, beta and gamma carry RBE ≈ 1.
+    composed_of:
+    - ionizing_radiation
+    - radiation_biological_effects
+    tier: 5
+  nuclear_stability:
+    defines: The resistance of a nucleus to spontaneous transformation, correlated with even nucleon numbers,
+      magic numbers, and high binding energy per nucleon.
+    composed_of:
+    - magic_numbers
+    - np_ratio
+    - binding_energy_per_nucleon
+    tier: 6
+  chain_reaction:
+    defines: A self-propagating series of fission events in which neutrons released by each fission event
+      induce fission in additional nuclei, sustaining or amplifying the reaction.
+    composed_of:
+    - nuclear_fission
+    tier: 6
+  radioactive_decay:
+    defines: The spontaneous transformation of an unstable nuclide (parent) into a more stable nuclide
+      (daughter) with the emission of radiation.
+    composed_of:
+    - nuclide
+    - nuclear_stability
+    - nuclear_reaction
+    tier: 7
+  critical_mass:
+    defines: The minimum amount of fissile material needed to sustain a self-sustaining nuclear chain
+      reaction, dependent on material purity, geometry, and neutron control.
+    composed_of:
+    - chain_reaction
+    tier: 7
+  parent_daughter_nuclide:
+    defines: The parent nuclide is the unstable nucleus that undergoes radioactive decay; the daughter
+      nuclide is the product nucleus formed, which may itself be stable or radioactive.
+    composed_of:
+    - nuclide
+    - radioactive_decay
+    tier: 8
+  alpha_decay:
+    defines: A mode of radioactive decay in which a nucleus emits an alpha particle, decreasing its mass
+      number by 4 and atomic number by 2; occurs primarily in heavy nuclei (A > 200).
+    composed_of:
+    - radioactive_decay
+    - alpha_particle
+    tier: 8
+  beta_decay:
+    defines: A mode of radioactive decay in which a neutron is converted to a proton with emission of
+      a beta particle, increasing atomic number by 1 without changing mass number.
+    composed_of:
+    - radioactive_decay
+    - beta_particle
+    tier: 8
+  gamma_emission:
+    defines: The release of a gamma-ray photon when an excited-state nucleus relaxes to its ground state,
+      without changing mass number or atomic number.
+    composed_of:
+    - radioactive_decay
+    - gamma_ray
+    tier: 8
+  positron_emission:
+    defines: A mode of radioactive decay in which a proton is converted to a neutron with emission of
+      a positron, decreasing atomic number by 1 without changing mass number; occurs in proton-rich nuclei.
+    composed_of:
+    - radioactive_decay
+    - positron
+    tier: 8
+  electron_capture:
+    defines: A mode of radioactive decay in which an inner-shell electron combines with a nuclear proton
+      to form a neutron, decreasing atomic number by 1 with no mass number change and emitting an X-ray.
+    composed_of:
+    - radioactive_decay
+    - electron
+    tier: 8
+  half_life:
+    defines: The characteristic time required for exactly half the atoms in a radioactive sample to decay,
+      a constant for each radioisotope governed by first-order kinetics.
+    composed_of:
+    - radioactive_decay
+    - first_order_kinetics
+    tier: 8
+  nuclear_reactor:
+    defines: A controlled environment for sustained nuclear fission consisting of nuclear fuel, a moderator
+      to slow neutrons, control rods to regulate reaction rate, a coolant, and a containment shield.
+    composed_of:
+    - chain_reaction
+    - nuclear_fission
+    - critical_mass
+    tier: 8
+  radiation_units:
+    defines: Standardized units for quantifying radioactive decay (becquerel, curie), absorbed dose (gray,
+      rad), and biologically effective dose (sievert, rem, using the RBE weighting factor).
+    composed_of:
+    - radioactive_decay
+    - ionizing_radiation
+    - relative_biological_effectiveness
+    tier: 8
+  decay_constant:
+    defines: The proportionality constant λ in the first-order decay rate law (decay rate = λN), related
+      to half-life by λ = ln 2 / t½.
+    composed_of:
+    - half_life
+    tier: 9
+  radioactive_decay_series:
+    defines: A chain of successive radioactive decays starting from a long-lived parent nuclide and proceeding
+      through multiple daughter nuclides until a stable end-product (typically a stable lead isotope)
+      is reached.
+    composed_of:
+    - radioactive_decay
+    - parent_daughter_nuclide
+    tier: 9
+  radioactive_decay_kinetics:
+    defines: The mathematical description of nuclear decay as a first-order process, yielding Nt = N0·e^(−λt)
+      and allowing calculation of remaining activity over time.
+    composed_of:
+    - decay_constant
+    - first_order_kinetics
+    tier: 10
+  radiometric_dating:
+    defines: A technique for determining the age of materials by measuring the ratio of a radioactive
+      parent nuclide to its stable decay products and applying known half-life values.
+    composed_of:
+    - radioactive_decay_kinetics
+    - parent_daughter_nuclide
+    tier: 11
+  radiocarbon_dating:
+    defines: A radiometric dating method using the known half-life of carbon-14 (5730 years) and the C-14:C-12
+      ratio in a formerly living sample to estimate its age (accurate to ~50,000 years).
+    composed_of:
+    - radiometric_dating
+    - isotope
+    tier: 12
+applications:
+  radioactive_tracer:
+    defines: A radioisotope incorporated into a compound to track its movement, distribution, or metabolic
+      pathway in biological or chemical systems by detecting emitted radiation.
+    needs:
+    - radioactive_decay
+    - ionizing_radiation
+    tier: 8
+  radiation_therapy:
+    defines: Medical treatment of cancer using high-energy ionizing radiation (delivered externally or
+      via internal radioisotopes) to damage cancer cell DNA and prevent their proliferation.
+    needs:
+    - ionizing_radiation
+    - radiation_biological_effects
+    tier: 5
+  pet_scan:
+    defines: A medical imaging technique that uses a positron-emitting radioisotope attached to a metabolically
+      active molecule to produce three-dimensional functional images of tissues and organs.
+    needs:
+    - positron_emission
+    - radioactive_tracer
+    tier: 9
+  fission_power_generation:
+    defines: The application of controlled fission chain reactions in a nuclear reactor to generate heat,
+      produce steam, and drive turbines for electricity production.
+    needs:
+    - nuclear_reactor
+    tier: 9
+  radiation_detection:
+    defines: Devices including Geiger counters, scintillation counters, and dosimeters that detect and
+      quantify ionizing radiation by measuring ionization events or emitted light.
+    needs:
+    - ionizing_radiation
+    - radiation_units
+    tier: 9
+  uranium_lead_dating:
+    defines: A radiometric dating method using the known decay of U-238 to Pb-206 (half-life 4.5 × 10⁹
+      years) to determine the age of rocks and minerals on geological timescales.
+    needs:
+    - radiometric_dating
+    - isotope
+    tier: 12

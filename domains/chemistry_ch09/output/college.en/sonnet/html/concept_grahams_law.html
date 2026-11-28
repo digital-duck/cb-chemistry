@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grahams Law | Chemistry Ch09</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="grahams-law">Grahams Law</h2>
+<p>Graham's Law of Effusion describes how the rate at which a gas escapes through a tiny opening (effusion) or spreads through another gas (diffusion) depends on its molar mass. Lighter gas particles move faster on average at a given temperature, so they escape through a pinhole more quickly than heavier ones. Thomas Graham formalized this relationship in 1848:</p>
+$$\frac{\text{rate}_1}{\text{rate}_2} = \sqrt{\frac{M_2}{M_1}}$$
+<p>where $\text{rate}_1$ and $\text{rate}_2$ are the effusion rates of two gases and $M_1$, $M_2$ are their molar masses. This inverse-square-root relationship follows directly from kinetic molecular theory: average kinetic energy depends only on temperature ($\tfrac{1}{2}mv^2 \propto T$), so at the same temperature, a lighter particle must move faster to have the same average kinetic energy as a heavier one.</p>
+<p><strong>Worked example.</strong> Compare the effusion rates of hydrogen ($M = 2.0$ g/mol) and oxygen ($M = 32.0$ g/mol) at the same temperature.</p>
+$$\frac{\text{rate}_{H_2}}{\text{rate}_{O_2}} = \sqrt{\frac{32.0}{2.0}} = \sqrt{16} = 4$$
+<p>Hydrogen effuses four times faster than oxygen. This is why a helium balloon deflates noticeably faster than one filled with air — helium (4.0 g/mol) is much lighter than the average air molecule (~29 g/mol).</p>
+<p><strong>Problem-solving application.</strong> Graham's Law is a practical tool for identifying unknown gases and designing separation processes. Suppose an unknown gas effuses 0.462 times as fast as oxygen gas under identical conditions. To find its molar mass, rearrange the law:</p>
+$$M_{unknown} = M_{O_2} \left(\frac{\text{rate}_{O_2}}{\text{rate}_{unknown}}\right)^2 = 32.0 \times \left(\frac{1}{0.462}\right)^2 \approx 150 \text{ g/mol}$$
+<p>This technique — comparing an unknown gas's effusion rate to a known reference — is a standard method for molar mass determination in introductory chemistry labs. On an industrial scale, the same principle underlies uranium enrichment: gaseous $^{235}\text{UF}_6$ diffuses very slightly faster than $^{238}\text{UF}_6$ because of their small mass difference, and repeated passes through porous barriers gradually concentrate the lighter isotope. The key problem-solving skill is recognizing that Graham's Law relates <em>ratios</em> of rates and masses, so it can be applied even without knowing absolute effusion rates.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conjugate Acid Base Pair | Chemistry Ch14</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="conjugate-acid-base-pair">Conjugate Acid Base Pair</h2>
+<p><strong>定义</strong></p>
+<p>在布朗斯特-劳里（Brønsted-Lowry）酸碱理论中，酸是质子（$H^+$）的给体，碱是质子的受体。当一个酸给出一个质子后，剩下的部分仍然具有接受质子的能力，因此成为一个碱；反之，当一个碱接受一个质子后，就变成了一个酸。这两个仅相差一个 $H^+$ 的物种，互称为<strong>共轭酸碱对</strong>。酸失去质子后生成的物种叫做该酸的<strong>共轭碱</strong>；碱接受质子后生成的物种叫做该碱的<strong>共轭酸</strong>。判断是否为共轭对的关键很简单：化学式相差且仅相差一个 $H^+$。</p>
+<p><strong>范例解析</strong></p>
+<p>以醋酸（$CH_3COOH$）在水中的解离为例：</p>
+$$CH_3COOH + H_2O \rightleftharpoons CH_3COO^- + H_3O^+$$
+<p>在这个反应中，$CH_3COOH$ 给出一个质子，变成 $CH_3COO^-$（乙酸根离子），所以 $CH_3COOH$ 与 $CH_3COO^-$ 是一对共轭酸碱对，$CH_3COO^-$ 是 $CH_3COOH$ 的共轭碱。同时，水（$H_2O$）接受质子变成 $H_3O^+$（水合氢离子），所以 $H_2O$ 与 $H_3O^+$ 也是一对共轭酸碱对，$H_3O^+$ 是 $H_2O$ 的共轭酸。注意，一个可逆反应中通常同时存在两对共轭酸碱对，这也是为什么水既能作为酸也能作为碱（两性物质）。</p>
+<p><strong>解题应用</strong></p>
+<p>共轭酸碱对的强弱关系遵循一条重要规律：<strong>酸越强，其共轭碱越弱；酸越弱，其共轭碱越强</strong>。例如，盐酸（$HCl$）是强酸，几乎完全解离，其共轭碱 $Cl^-$ 几乎不与水反应，是极弱的碱。而醋酸是弱酸，其共轭碱 $CH_3COO^-$ 具有一定的碱性，能够部分从水中夺取质子。</p>
+<p>这一规律在解题中非常实用：给定一个酸的解离常数 $K_a$，其共轭碱的碱式解离常数 $K_b$ 满足关系式</p>
+$$K_a \times K_b = K_w = 1.0 \times 10^{-14} \;(25^\circ C)$$
+<p>利用此公式，只需知道酸的 $K_a$，即可直接算出其共轭碱的 $K_b$，从而判断该共轭碱溶液的酸碱性强弱，这在缓冲溶液配制和滴定曲线分析中是核心计算工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch14: Acid-Base Equilibria (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

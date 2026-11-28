@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photoelectric Effect | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="photoelectric-effect">Photoelectric Effect</h2>
+<p>When light shines on a metal surface, it can eject electrons from that surface — a phenomenon called the photoelectric effect. Classical wave theory predicted that brighter light (more energy delivered over time) should always eject electrons, regardless of color, and that dimmer light should simply take longer to accumulate enough energy to do so. Experiments showed the opposite: below a certain frequency of light, no electrons are ejected no matter how intense the beam is, while above that frequency, electrons are ejected instantly, even from very dim light. This contradiction could only be resolved by treating light as a stream of discrete energy packets, or photons, each carrying energy $E = hf$, where $h$ is Planck's constant and $f$ is the frequency of the light.</p>
+<p>Einstein's explanation, which earned him the Nobel Prize, is captured in one equation:</p>
+$$KE_{max} = hf - \phi$$
+<p>Here $\phi$ (the work function) is the minimum energy needed to free an electron from a particular metal, and $KE_{max}$ is the maximum kinetic energy of the ejected electron. A single photon transfers all its energy to a single electron in one interaction — energy doesn't accumulate from multiple photons. If $hf < \phi$, no single photon carries enough energy to free an electron, so nothing happens, regardless of intensity.</p>
+<p><strong>Worked example:</strong> Sodium has a work function of $\phi = 2.3\text{ eV}$. Suppose ultraviolet light with frequency $f = 7.5 \times 10^{14}\text{ Hz}$ strikes a sodium surface. Using $h = 4.14 \times 10^{-15}\text{ eV·s}$, the photon energy is $hf = (4.14 \times 10^{-15})(7.5 \times 10^{14}) \approx 3.11\text{ eV}$. Since this exceeds $\phi$, electrons are ejected with maximum kinetic energy $KE_{max} = 3.11 - 2.3 = 0.81\text{ eV}$.</p>
+<p><strong>Problem-solving application:</strong> This relationship lets you predict experimental outcomes: doubling the light's intensity (more photons per second) increases the <em>number</em> of ejected electrons (photocurrent) but not their individual kinetic energy — only increasing the frequency does that. This distinction — intensity controls quantity, frequency controls energy — is the diagnostic tool for solving photoelectric problems and for identifying whether a phenomenon is behaving classically or quantum mechanically.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Positron | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="positron">Positron</h2>
+<p>正电子（positron，符号 $e^+$ 或 $\beta^+$）是电子的反粒子：它的质量与电子完全相同，但带有一个单位的正电荷（$+1e$）。正电子是人类发现的第一种反物质粒子，1932年由物理学家安德森（Carl Anderson）在宇宙射线径迹中观测到——他看到一条与电子完全相同的弯曲轨迹，但弯曲方向相反，说明它带正电。正电子最常见的来源是放射性核素的<strong>正电子衰变</strong>（$\beta^+$ 衰变）：原子核中的一个质子转变为中子，同时放出一个正电子和一个中微子：</p>
+$$p \rightarrow n + e^+ + \nu_e$$
+<p>这类衰变发生在质子相对过多的原子核中，例如碳-11、氮-13、氟-18 等人工放射性同位素。</p>
+<p><strong>应用实例：正电子发射断层扫描（PET）</strong>。医学上利用氟-18标记的葡萄糖类似物（FDG）注入人体，代谢活跃的组织（如肿瘤或大脑）会优先摄取它。氟-18经 $\beta^+$ 衰变放出正电子后，正电子在组织中飞行极短距离（约1毫米）就会与周围环境中的一个电子相遇。由于正反粒子相遇会发生<strong>湮灭（annihilation）</strong>，两者的静止质量按爱因斯坦质能关系 $E=mc^2$ 完全转化为能量，生成两个方向相反、能量各为511 keV的伽马光子：</p>
+$$e^+ + e^- \rightarrow 2\gamma$$
+<p>PET扫描仪环绕病人一周布置探测器，同时捕捉到这两个几乎背对背发射的光子，通过符合计数（coincidence detection）反推出湮灭发生的位置，从而绘制出体内代谢活跃区域的三维图像。</p>
+<p><strong>解决问题的应用</strong>：给定某放射性同位素的半衰期和初始活度，可以计算特定时刻体内残余的放射性水平，这是选择示踪剂、安排扫描时间窗口、评估病人辐射剂量的关键依据。例如，氟-18半衰期约110分钟，若某剂量在注射后220分钟（两个半衰期）扫描，则体内残留活度约为初始值的 $\left(\tfrac12\right)^2 = 25\%$。这类计算将放射性衰变的指数规律与实际临床操作直接联系起来。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

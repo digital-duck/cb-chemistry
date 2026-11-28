@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charles Law | Chemistry Ch09</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="charles-law">Charles Law</h2>
+<p><strong>定义</strong></p>
+<p>查理定律（Charles's Law）描述了在压强恒定的条件下，一定量气体的体积与其绝对温度成正比的关系。用公式表示为：</p>
+$$\frac{V_1}{T_1} = \frac{V_2}{T_2} \quad (P \text{ 恒定})$$
+<p>其中 $V$ 表示气体体积，$T$ 必须是以开尔文（K）为单位的绝对温度，而不能用摄氏度。这是因为查理定律的物理本质是：温度升高使气体分子的平均动能增大，分子运动更剧烈、碰撞容器壁更频繁且更用力，若要维持压强不变，容器体积就必须相应膨胀。开尔文温标从绝对零度（分子动能理论上为零）算起，才能保证体积与温度的正比关系成立；用摄氏度计算会得到荒谬的负体积或不成比例的结果。查理定律是理想气体定律 $PV = nRT$ 在压强和物质的量不变时的特例。</p>
+<p><strong>例题</strong></p>
+<p>一个氦气球在 27°C（即 300 K）时体积为 2.50 L。若将气球带到室外，气温降至 -3°C（270 K），压强保持不变，求气球的新体积。</p>
+<p>先将温度换算为开尔文：$T_1 = 300\text{ K}$，$T_2 = 270\text{ K}$。代入公式：</p>
+$$V_2 = V_1 \times \frac{T_2}{T_1} = 2.50\text{ L} \times \frac{270\text{ K}}{300\text{ K}} = 2.25\text{ L}$$
+<p>气球体积从 2.50 L 缩小到 2.25 L，这与日常观察一致：冬天户外的气球会比室内的显得更瘪。</p>
+<p><strong>解题应用</strong></p>
+<p>处理查理定律问题时，务必先检查温度单位：任何摄氏度数值都要加 273（或更精确地加 273.15）转换为开尔文，这是最常见的出错来源。其次，要确认题目中压强和气体量确实保持恒定，否则应改用理想气体定律或联合气体定律。实际应用包括：解释高空气球随温度变化膨胀或收缩、工业气体储罐的温度安全设计、以及活塞式发动机中气体受热膨胀推动做功的原理。掌握查理定律，也为后续学习盖-吕萨克定律（压强与温度关系）和综合气体定律打下基础。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch9: Gases (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uranium Enrichment By Diffusion | Chemistry Ch09</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="uranium-enrichment-by-diffusion">Uranium Enrichment By Diffusion</h2>
+<p>天然铀中仅含约0.7%的铀-235（可裂变同位素），其余为铀-238。大多数反应堆和武器应用需要将铀-235的比例提高——即"浓缩"。气体扩散法（gaseous diffusion）是历史上最早实现工业规模浓缩的技术，其原理基于分子运动论：将铀转化为气态化合物六氟化铀（$\text{UF}_6$），利用同质异位素分子因质量差异而产生的扩散速率差，逐步分离铀-235与铀-238。</p>
+<p><strong>基本原理</strong>：格拉姆定律（Graham's law）指出，气体分子通过多孔膜的扩散速率与其分子质量的平方根成反比：</p>
+$$\frac{r_1}{r_2} = \sqrt{\frac{M_2}{M_1}}$$
+<p>对于$^{235}\text{UF}_6$（分子质量约349）与$^{238}\text{UF}_6$（分子质量约352），单级分离系数为：</p>
+$$\alpha = \sqrt{\frac{352}{349}} \approx 1.0043$$
+<p>这意味着含铀-235的较轻分子扩散速率仅比含铀-238的分子快约0.43%。分离效果极其微弱，因此工业浓缩需要将气体反复通过成千上万级多孔屏障，逐级累积富集效果，这种串联结构称为"级联"（cascade）。</p>
+<p><strong>工程应用</strong>：假设某级联需要将铀-235含量从0.7%提升到3%（低浓缩铀，用于核电燃料），由于单级分离系数接近1，工程师需计算所需级数。设每级理论富集因子为$\alpha$，若忽略实际损耗，达到目标丰度所需级数$n$近似满足：</p>
+$$\left(\frac{\alpha - 1}{2}\right) \times n \approx \ln\left(\frac{y}{1-y} \cdot \frac{1-x}{x}\right)$$
+<p>其中$x$为初始丰度、$y$为目标丰度。代入数值可知，实现3%丰度大约需要上千级串联，说明气体扩散工厂占地巨大、能耗极高——这正是历史上该技术逐渐被离心分离法取代的核心原因：离心法利用质量差产生的离心力分离，单级分离系数远高于扩散法，所需级数大幅减少，能耗随之降低。</p>
+<p><strong>解题应用</strong>：在实际问题中，学生常需比较不同分离技术的效率,或估算达到某丰度所需的级联规模。关键思路是：先用格拉姆定律求单级分离系数，再结合级联级数公式估算总分离能力，最后评估能耗与设备规模的现实约束。这类计算也是理解核不扩散核查中"丰度限制"为何具有实际意义的基础——丰度每提高一个百分点，所需工业投入都呈非线性增长。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch9: Gases (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

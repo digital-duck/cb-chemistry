@@ -1,0 +1,278 @@
+domain: chemistry_2e_ch6
+sources:
+  wave:
+    label: Wave
+    sections:
+    - id: ch06_s6_1
+      title: 6.1 Electromagnetic Energy
+  wavelength:
+    label: Wavelength
+    sections:
+    - id: ch06_s6_1
+      title: 6.1 Electromagnetic Energy
+  frequency:
+    label: Frequency
+    sections:
+    - id: ch06_s6_1
+      title: 6.1 Electromagnetic Energy
+  amplitude:
+    label: Amplitude
+    sections:
+    - id: ch06_s6_1
+      title: 6.1 Electromagnetic Energy
+  speed_of_light:
+    label: Speed of Light
+    sections:
+    - id: ch06_s6_1
+      title: 6.1 Electromagnetic Energy
+  planck_constant:
+    label: Planck's Constant
+    sections:
+    - id: ch06_s6_1
+      title: 6.1 Electromagnetic Energy
+  electromagnetic_radiation:
+    label: Electromagnetic Radiation
+    sections:
+    - id: ch06_s6_1
+      title: 6.1 Electromagnetic Energy
+  wave_speed_equation:
+    label: Wave Speed Equation
+    sections:
+    - id: ch06_s6_1
+      title: 6.1 Electromagnetic Energy
+  electromagnetic_spectrum:
+    label: Electromagnetic Spectrum
+    sections:
+    - id: ch06_s6_1
+      title: 6.1 Electromagnetic Energy
+  interference:
+    label: Wave Interference
+    sections:
+    - id: ch06_s6_1
+      title: 6.1 Electromagnetic Energy
+  standing_wave:
+    label: Standing Wave
+    sections:
+    - id: ch06_s6_1
+      title: 6.1 Electromagnetic Energy
+  quantization:
+    label: Quantization
+    sections:
+    - id: ch06_s6_1
+      title: 6.1 Electromagnetic Energy
+    - id: ch06_s6_2
+      title: 6.2 The Bohr Model
+  blackbody_radiation:
+    label: Blackbody Radiation
+    sections:
+    - id: ch06_s6_1
+      title: 6.1 Electromagnetic Energy
+  photon:
+    label: Photon
+    sections:
+    - id: ch06_s6_1
+      title: 6.1 Electromagnetic Energy
+  photon_energy:
+    label: Photon Energy
+    sections:
+    - id: ch06_s6_1
+      title: 6.1 Electromagnetic Energy
+  photoelectric_effect:
+    label: Photoelectric Effect
+    sections:
+    - id: ch06_s6_1
+      title: 6.1 Electromagnetic Energy
+  wave_particle_duality:
+    label: Wave–Particle Duality
+    sections:
+    - id: ch06_s6_1
+      title: 6.1 Electromagnetic Energy
+    - id: ch06_s6_3
+      title: 6.3 Development of Quantum Theory
+  continuous_spectrum:
+    label: Continuous Spectrum
+    sections:
+    - id: ch06_s6_1
+      title: 6.1 Electromagnetic Energy
+  line_spectrum:
+    label: Line Spectrum
+    sections:
+    - id: ch06_s6_1
+      title: 6.1 Electromagnetic Energy
+  rydberg_formula:
+    label: Rydberg Formula
+    sections:
+    - id: ch06_s6_1
+      title: 6.1 Electromagnetic Energy
+    - id: ch06_s6_2
+      title: 6.2 The Bohr Model
+  bohr_model:
+    label: Bohr Model of the Hydrogen Atom
+    sections:
+    - id: ch06_s6_2
+      title: 6.2 The Bohr Model
+  energy_level:
+    label: Electron Energy Level
+    sections:
+    - id: ch06_s6_2
+      title: 6.2 The Bohr Model
+    - id: ch06_s6_3
+      title: 6.3 Development of Quantum Theory
+  ground_state:
+    label: Ground State
+    sections:
+    - id: ch06_s6_2
+      title: 6.2 The Bohr Model
+  excited_state:
+    label: Excited State
+    sections:
+    - id: ch06_s6_2
+      title: 6.2 The Bohr Model
+  electronic_transition:
+    label: Electronic Transition
+    sections:
+    - id: ch06_s6_2
+      title: 6.2 The Bohr Model
+    - id: ch06_s6_3
+      title: 6.3 Development of Quantum Theory
+  de_broglie_wavelength:
+    label: de Broglie Wavelength
+    sections:
+    - id: ch06_s6_3
+      title: 6.3 Development of Quantum Theory
+  heisenberg_uncertainty_principle:
+    label: Heisenberg Uncertainty Principle
+    sections:
+    - id: ch06_s6_3
+      title: 6.3 Development of Quantum Theory
+  wavefunction:
+    label: Wavefunction (ψ)
+    sections:
+    - id: ch06_s6_3
+      title: 6.3 Development of Quantum Theory
+  atomic_orbital:
+    label: Atomic Orbital
+    sections:
+    - id: ch06_s6_3
+      title: 6.3 Development of Quantum Theory
+  principal_quantum_number:
+    label: Principal Quantum Number (n)
+    sections:
+    - id: ch06_s6_3
+      title: 6.3 Development of Quantum Theory
+  angular_momentum_quantum_number:
+    label: Angular Momentum Quantum Number (l)
+    sections:
+    - id: ch06_s6_3
+      title: 6.3 Development of Quantum Theory
+  magnetic_quantum_number:
+    label: Magnetic Quantum Number (mₗ)
+    sections:
+    - id: ch06_s6_3
+      title: 6.3 Development of Quantum Theory
+  spin_quantum_number:
+    label: Spin Quantum Number (mₛ)
+    sections:
+    - id: ch06_s6_3
+      title: 6.3 Development of Quantum Theory
+  orbital_shapes:
+    label: Orbital Shapes (s, p, d, f)
+    sections:
+    - id: ch06_s6_3
+      title: 6.3 Development of Quantum Theory
+  radial_nodes:
+    label: Radial Nodes
+    sections:
+    - id: ch06_s6_3
+      title: 6.3 Development of Quantum Theory
+  pauli_exclusion_principle:
+    label: Pauli Exclusion Principle
+    sections:
+    - id: ch06_s6_3
+      title: 6.3 Development of Quantum Theory
+  degenerate_orbitals:
+    label: Degenerate Orbitals
+    sections:
+    - id: ch06_s6_3
+      title: 6.3 Development of Quantum Theory
+    - id: ch06_s6_4
+      title: 6.4 Electronic Structure of Atoms (Electron Configurations)
+  electron_shielding:
+    label: Electron Shielding
+    sections:
+    - id: ch06_s6_4
+      title: 6.4 Electronic Structure of Atoms (Electron Configurations)
+    - id: ch06_s6_5
+      title: 6.5 Periodic Variations in Element Properties
+  effective_nuclear_charge:
+    label: Effective Nuclear Charge (Zeff)
+    sections:
+    - id: ch06_s6_5
+      title: 6.5 Periodic Variations in Element Properties
+  electron_configuration:
+    label: Electron Configuration
+    sections:
+    - id: ch06_s6_4
+      title: 6.4 Electronic Structure of Atoms (Electron Configurations)
+  aufbau_principle:
+    label: Aufbau Principle
+    sections:
+    - id: ch06_s6_4
+      title: 6.4 Electronic Structure of Atoms (Electron Configurations)
+  hunds_rule:
+    label: Hund's Rule
+    sections:
+    - id: ch06_s6_4
+      title: 6.4 Electronic Structure of Atoms (Electron Configurations)
+  valence_electrons:
+    label: Valence Electrons
+    sections:
+    - id: ch06_s6_4
+      title: 6.4 Electronic Structure of Atoms (Electron Configurations)
+  core_electrons:
+    label: Core Electrons
+    sections:
+    - id: ch06_s6_4
+      title: 6.4 Electronic Structure of Atoms (Electron Configurations)
+  covalent_radius:
+    label: Covalent Radius
+    sections:
+    - id: ch06_s6_5
+      title: 6.5 Periodic Variations in Element Properties
+  ionic_radius:
+    label: Ionic Radius
+    sections:
+    - id: ch06_s6_5
+      title: 6.5 Periodic Variations in Element Properties
+  ionization_energy:
+    label: Ionization Energy
+    sections:
+    - id: ch06_s6_5
+      title: 6.5 Periodic Variations in Element Properties
+  electron_affinity:
+    label: Electron Affinity
+    sections:
+    - id: ch06_s6_5
+      title: 6.5 Periodic Variations in Element Properties
+  periodic_trends:
+    label: Periodic Trends in Element Properties
+    sections:
+    - id: ch06_s6_5
+      title: 6.5 Periodic Variations in Element Properties
+  isoelectronic_species:
+    label: Isoelectronic Species
+    sections:
+    - id: ch06_s6_5
+      title: 6.5 Periodic Variations in Element Properties
+  ion_electron_configuration:
+    label: Ion Electron Configurations
+    sections:
+    - id: ch06_s6_4
+      title: 6.4 Electronic Structure of Atoms (Electron Configurations)
+    - id: ch06_s6_5
+      title: 6.5 Periodic Variations in Element Properties
+  periodic_table_blocks:
+    label: Periodic Table Block Organization
+    sections:
+    - id: ch06_s6_4
+      title: 6.4 Electronic Structure of Atoms (Electron Configurations)

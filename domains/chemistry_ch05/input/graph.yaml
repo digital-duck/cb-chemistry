@@ -1,0 +1,208 @@
+domain: chemistry_2e_ch5
+primitives:
+  energy:
+    defines: The capacity to supply heat or do work, existing as either potential or kinetic energy.
+    tier: 0
+  kinetic_energy:
+    defines: Energy that an object possesses because of its motion, equal to one-half the product of mass
+      and the square of velocity.
+    tier: 0
+  potential_energy:
+    defines: Energy an object has because of its relative position, composition, or condition.
+    tier: 0
+  temperature:
+    defines: An intensive property of matter that is a quantitative measure of hotness and coldness, reflecting
+      the average kinetic energy of atoms and molecules.
+    tier: 0
+  work:
+    defines: Energy transfer caused by a force moving matter against an opposing force, or by changes
+      in macroscopic variables such as pressure and volume.
+    tier: 0
+concepts:
+  thermal_energy:
+    defines: Kinetic energy associated with the random motion of atoms and molecules in a substance.
+    composed_of:
+    - kinetic_energy
+    tier: 1
+  law_of_conservation_of_energy:
+    defines: During any chemical or physical change, energy can be neither created nor destroyed, only
+      converted from one form to another.
+    composed_of:
+    - energy
+    tier: 1
+  system_and_surroundings:
+    defines: The conceptual division of the universe into the portion of matter undergoing change (system)
+      and all other matter that can exchange energy with it (surroundings).
+    composed_of:
+    - energy
+    tier: 1
+  heat:
+    defines: The transfer of thermal energy between two bodies at different temperatures, flowing spontaneously
+      from the hotter body to the cooler one.
+    composed_of:
+    - thermal_energy
+    - temperature
+    tier: 2
+  internal_energy:
+    defines: The total of all possible kinds of energy present in a substance, including translational,
+      vibrational, and rotational kinetic energy of its atoms and molecules.
+    composed_of:
+    - thermal_energy
+    tier: 2
+  expansion_work:
+    defines: Work done when a system expands or contracts against an external pressure, equal in magnitude
+      but opposite in sign to the product PΔV.
+    composed_of:
+    - work
+    - system_and_surroundings
+    tier: 2
+  exothermic_process:
+    defines: A chemical reaction or physical change that releases heat to the surroundings, giving a negative
+      heat value (q < 0).
+    composed_of:
+    - heat
+    tier: 3
+  endothermic_process:
+    defines: A chemical reaction or physical change that absorbs heat from the surroundings, giving a
+      positive heat value (q > 0).
+    composed_of:
+    - heat
+    tier: 3
+  heat_capacity:
+    defines: An extensive property representing the quantity of heat a body of matter absorbs or releases
+      when its temperature changes by 1 degree Celsius.
+    composed_of:
+    - heat
+    - temperature
+    tier: 3
+  thermal_equilibrium:
+    defines: The state reached when two bodies in thermal contact arrive at the same temperature and net
+      heat flow between them ceases.
+    composed_of:
+    - heat
+    - temperature
+    tier: 3
+  first_law_of_thermodynamics:
+    defines: The internal energy of a system changes according to ΔU = q + w, where energy is conserved
+      across all heat flow and work exchanges with surroundings.
+    composed_of:
+    - internal_energy
+    - heat
+    - work
+    - law_of_conservation_of_energy
+    tier: 3
+  state_function:
+    defines: A property whose value depends only on the current state of a system and not on the path
+      taken to reach that state.
+    composed_of:
+    - internal_energy
+    tier: 3
+  specific_heat_capacity:
+    defines: An intensive property representing the quantity of heat required to raise the temperature
+      of 1 gram of a substance by 1 degree Celsius.
+    composed_of:
+    - heat_capacity
+    tier: 4
+  calorimetry:
+    defines: The experimental technique of measuring the amount of heat transferred in a chemical or physical
+      process by recording temperature changes in a calibrated device.
+    composed_of:
+    - heat_capacity
+    - thermal_equilibrium
+    tier: 4
+  enthalpy:
+    defines: A state function defined as H = U + PV that equals the heat exchanged during a process occurring
+      at constant pressure with only expansion work.
+    composed_of:
+    - internal_energy
+    - state_function
+    - expansion_work
+    tier: 4
+  heat_transfer_equation:
+    defines: The mathematical relationship q = mcΔT that quantifies heat absorbed or released by a substance
+      from its mass, specific heat, and temperature change.
+    composed_of:
+    - specific_heat_capacity
+    tier: 5
+  coffee_cup_calorimeter:
+    defines: A simple constant-pressure calorimeter constructed from insulating cups used to measure heat
+      flow in solution-phase reactions.
+    composed_of:
+    - calorimetry
+    tier: 5
+  bomb_calorimeter:
+    defines: A constant-volume calorimeter consisting of a sealed steel vessel submerged in water, used
+      to measure heat released by combustion reactions.
+    composed_of:
+    - calorimetry
+    tier: 5
+  enthalpy_change:
+    defines: The heat absorbed or released by a system at constant pressure (ΔH = qp), negative for exothermic
+      and positive for endothermic processes.
+    composed_of:
+    - enthalpy
+    - heat
+    tier: 5
+  thermochemical_equation:
+    defines: A balanced chemical equation that includes the associated enthalpy change (ΔH) for the reaction
+      as written, with physical states of all species specified.
+    composed_of:
+    - enthalpy_change
+    tier: 6
+  standard_state:
+    defines: A reference set of conditions (1 bar pressure, 1 M for solutions, typically 298.15 K) used
+      to report thermodynamic properties consistently.
+    composed_of:
+    - enthalpy_change
+    tier: 6
+  standard_enthalpy_of_combustion:
+    defines: The enthalpy change when exactly 1 mole of a substance undergoes complete combustion under
+      standard state conditions.
+    composed_of:
+    - enthalpy_change
+    - standard_state
+    tier: 7
+  standard_enthalpy_of_formation:
+    defines: The enthalpy change for a reaction in which exactly 1 mole of a pure substance is formed
+      from its elements in their most stable standard states.
+    composed_of:
+    - enthalpy_change
+    - standard_state
+    tier: 7
+  hess_law:
+    defines: The principle that the total enthalpy change of a process equals the sum of enthalpy changes
+      of any series of steps that produce the same overall change, because enthalpy is a state function.
+    composed_of:
+    - enthalpy_change
+    - state_function
+    - thermochemical_equation
+    tier: 7
+applications:
+  solar_thermal_energy_storage:
+    defines: The application of high-heat-capacity materials (such as molten salts) to store solar heat
+      and release it as electricity after sunlight is unavailable.
+    needs:
+    - heat_capacity
+    - specific_heat_capacity
+    tier: 5
+  metal_identification_by_specific_heat:
+    defines: The application of calorimetry to determine an unknown metal's specific heat and compare
+      it to tabulated values to infer the metal's identity.
+    needs:
+    - calorimetry
+    - specific_heat_capacity
+    tier: 5
+  nutritional_calorie:
+    defines: The unit of food energy equal to 1 kilocalorie (1000 cal or 4184 J), determined experimentally
+      by bomb calorimetry of food samples.
+    needs:
+    - bomb_calorimeter
+    - heat
+    tier: 6
+  reaction_enthalpy_from_formation_data:
+    defines: The application of Hess's law to calculate the standard enthalpy of any reaction as the sum
+      of product formation enthalpies minus the sum of reactant formation enthalpies.
+    needs:
+    - hess_law
+    - standard_enthalpy_of_formation
+    tier: 8

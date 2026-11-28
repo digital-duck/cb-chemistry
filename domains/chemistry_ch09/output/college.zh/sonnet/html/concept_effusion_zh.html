@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Effusion | Chemistry Ch09</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="effusion">Effusion</h2>
+<p><strong>定义</strong></p>
+<p>效应（effusion）是指气体分子在没有整体气流的情况下，通过一个比分子平均自由程小得多的微小孔洞，从高压区逸出到真空或低压区的过程。这与扩散（diffusion，气体分子在另一种气体中的混合）不同——效应强调的是气体分子单独、无碰撞地"穿孔而出"。1846年，苏格兰化学家托马斯·格雷厄姆（Thomas Graham）通过实验发现，在相同温度和压强下，气体的效应速率与其摩尔质量的平方根成反比，这就是<strong>格雷厄姆效应定律</strong>：</p>
+$$
+\frac{r_1}{r_2} = \sqrt{\frac{M_2}{M_1}}
+$$
+<p>其中 $r_1, r_2$ 分别是气体1和气体2的效应速率，$M_1, M_2$ 是它们的摩尔质量。这个规律的物理根源在于：在同一温度下，所有气体分子的平均动能相同（$\tfrac{1}{2}Mv^2$ 相等），因此质量较小的分子必须运动得更快，从而更容易穿过小孔逸出。</p>
+<p><strong>范例分析</strong></p>
+<p>比较氢气（$M = 2\ \text{g/mol}$）和氧气（$M = 32\ \text{g/mol}$）的效应速率：</p>
+$$
+\frac{r_{H_2}}{r_{O_2}} = \sqrt{\frac{32}{2}} = \sqrt{16} = 4
+$$
+<p>也就是说，在相同条件下，氢气逸出的速度是氧气的4倍。这正是气球中的氦气会比空气逸出得更快、导致气球逐渐变瘪变小的原因。</p>
+<p><strong>问题解决应用</strong></p>
+<p>效应定律不仅能比较速率，还能用于测定未知气体的摩尔质量。例如，若某未知气体通过小孔逸出的速率是甲烷（$M = 16\ \text{g/mol}$）的0.5倍，则：</p>
+$$
+0.5 = \sqrt{\frac{16}{M_x}} \quad\Rightarrow\quad 0.25 = \frac{16}{M_x} \quad\Rightarrow\quad M_x = 64\ \text{g/mol}
+$$
+<p>这一原理曾被用于铀同位素的分离（气体扩散法），通过反复效应过程将 $^{235}\text{UF}_6$ 与较重的 $^{238}\text{UF}_6$ 逐步分离，尽管两者摩尔质量差异极小，速率比仅约为1.0043，但经过成千上万级级联处理后仍能实现有效分离。这说明效应定律不仅是理论工具，也是工业与核化学中实际可操作的分离技术基础。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch9: Gases (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

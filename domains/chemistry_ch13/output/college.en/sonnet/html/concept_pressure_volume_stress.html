@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pressure Volume Stress | Chemistry Ch13</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="pressure-volume-stress">Pressure Volume Stress</h2>
+<p>Pressure, volume, and stress describe how a material or fluid responds to forces distributed over an area rather than applied at a single point. Pressure is defined as force per unit area, $P = F/A$, measured in pascals ($\text{Pa} = \text{N/m}^2$). Stress is the same quantity applied to solids: internal force per unit cross-sectional area that a material experiences when deformed, whether by stretching, compression, or shear. Volume enters the picture because for gases and liquids, pressure and volume are tightly linked — squeezing a fluid into a smaller volume increases the internal pressure it exerts on its container, all else being equal. For an ideal gas at constant temperature, this relationship is captured by Boyle's Law: $P_1 V_1 = P_2 V_2$.</p>
+<p><strong>Worked example.</strong> A sealed syringe contains 60 mL of air at atmospheric pressure (101.3 kPa). If you push the plunger until the volume drops to 20 mL, keeping temperature constant, what is the new pressure? Using Boyle's Law:</p>
+$$P_2 = \frac{P_1 V_1}{V_2} = \frac{(101.3\ \text{kPa})(60\ \text{mL})}{20\ \text{mL}} = 303.9\ \text{kPa}$$
+<p>The pressure roughly triples because the gas molecules now collide with the syringe walls three times as often per unit time, in the same enclosed space.</p>
+<p><strong>Problem-solving application.</strong> Engineers use this relationship constantly when designing pressure vessels, scuba tanks, and hydraulic systems. Consider a hydraulic car jack: a small force applied to a narrow piston creates a certain pressure, and since pressure transmits equally throughout an enclosed fluid (Pascal's principle), that same pressure acts on a much larger piston, producing a much larger force — $F_2 = P \cdot A_2 = (F_1/A_1)\cdot A_2$. This is why a person can lift a car with modest hand force: the area ratio between the two pistons amplifies the output force, at the cost of moving the large piston a proportionally smaller distance.</p>
+<p>For solids, stress analysis matters when materials fail under load. A bridge cable under tension experiences stress $\sigma = F/A$; if that stress exceeds the material's yield strength, permanent deformation or fracture occurs. Engineers use pressure-volume-stress relationships to size components correctly: a thicker cable (larger $A$) lowers stress for the same load, just as a larger piston lowers required force for the same pressure. Recognizing that "spread the force over more area" is the common thread across gases, hydraulics, and structural materials lets you transfer intuition from one physical system to another.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

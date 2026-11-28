@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amount Of Substance | Chemistry Ch09</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="amount-of-substance">Amount Of Substance</h2>
+<p><strong>定义</strong></p>
+<p>物质的量（amount of substance,符号 $n$)是国际单位制(SI)中的七个基本量之一,专门用来计量微观粒子(原子、分子、离子、电子等)的数目,单位是摩尔(mole,符号 $\text{mol}$)。根据 2019 年修订的 SI 定义,1 摩尔精确包含 $N_A = 6.02214076 \times 10^{23}$ 个基本粒子,这个常数称为阿伏伽德罗常数(Avogadro constant)。也就是说,"摩尔"就像"打"(12个)或"箱"(若干个)一样,是一种计数单位,只不过它计数的对象极其微小、数量极其庞大,直接数个数不现实,所以化学家用称量宏观质量来间接确定粒子数目。</p>
+<p>物质的量、质量 $m$ 与摩尔质量 $M$(单位 $\text{g/mol}$,数值上等于该物质的相对原子质量或相对分子质量)之间的关系是:</p>
+$$n = \frac{m}{M}$$
+<p>而物质的量与粒子数 $N$ 的关系是:</p>
+$$n = \frac{N}{N_A}$$
+<p><strong>实例解析</strong></p>
+<p>计算 18.0 g 水中含有多少摩尔水分子,以及具体的分子个数。水的摩尔质量 $M(\text{H}_2\text{O}) = 2(1.0) + 16.0 = 18.0\ \text{g/mol}$。代入公式:</p>
+$$n = \frac{18.0\ \text{g}}{18.0\ \text{g/mol}} = 1.00\ \text{mol}$$
+<p>对应的分子数为 $N = n \times N_A = 1.00 \times 6.022 \times 10^{23} \approx 6.02 \times 10^{23}$ 个水分子。</p>
+<p><strong>问题解决应用</strong></p>
+<p>物质的量是连接"看不见的原子世界"与"可称量的宏观实验室世界"的桥梁,在化学计量学(stoichiometry)中至关重要。例如,已知反应 $2\text{H}_2 + \text{O}_2 \rightarrow 2\text{H}_2\text{O}$,若要计算 4.0 g 氢气完全反应需要多少克氧气,步骤是:先将质量换算为摩尔数($n(\text{H}_2) = 4.0/2.0 = 2.0\ \text{mol}$),再依据反应方程式的化学计量比(2:1)求出 $n(\text{O}_2) = 1.0\ \text{mol}$,最后换算回质量($m = 1.0 \times 32.0 = 32.0\ \text{g}$)。这种"质量 → 摩尔 → 摩尔 → 质量"的三步转换,是解决几乎所有定量化学问题的通用思路,也是理解溶液浓度(摩尔浓度 $c = n/V$)、气体摩尔体积等后续概念的基础。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch9: Gases (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

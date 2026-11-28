@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boiling Point Elevation | Chemistry Ch11</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="boiling-point-elevation">Boiling Point Elevation</h2>
+<p><strong>定义</strong></p>
+<p>当我们把不挥发性溶质（例如食盐或蔗糖）溶解在水中时，溶液的沸点会比纯水更高，这一现象称为沸点升高（boiling point elevation）。原因在于：沸腾发生的条件是液体的蒸气压等于外界大气压。溶质分子占据了部分液面位置，降低了溶剂分子逃逸到气相的比例，从而使溶液的蒸气压低于同温度下纯溶剂的蒸气压（即蒸气压下降，vapor pressure depression）。要使蒸气压重新达到 1 atm（沸腾条件），就必须把溶液加热到更高的温度。</p>
+<p>沸点升高的大小只取决于溶液中溶质粒子的数目浓度，而与溶质的种类无关——这类性质统称为“依数性质”（colligative properties）。其定量关系为：</p>
+$$\Delta T_b = K_b \, m \, i$$
+<p>其中 $\Delta T_b$ 是沸点升高的度数，$K_b$ 是溶剂的沸点升高常数（水的 $K_b = 0.512\ ^\circ\text{C·kg/mol}$），$m$ 是溶质的质量摩尔浓度（mol 溶质 / kg 溶剂），$i$ 是范特霍夫因子，表示溶质在溶液中实际拆分成的粒子数（例如 NaCl 完全电离时 $i \approx 2$，蔗糖不电离 $i = 1$）。</p>
+<p><strong>例题</strong></p>
+<p>将 34.2 g 蔗糖（$M = 342\ \text{g/mol}$，不电离）溶于 500 g 水中，求该溶液的沸点。</p>
+<p>先求摩尔数：$34.2/342 = 0.100\ \text{mol}$。 质量摩尔浓度：$m = 0.100\ \text{mol} / 0.500\ \text{kg} = 0.200\ \text{mol/kg}$。 由于蔗糖不电离，$i = 1$，代入公式：</p>
+$$\Delta T_b = (0.512)(0.200)(1) = 0.102\ ^\circ\text{C}$$
+<p>因此沸点为 $100.00 + 0.102 = 100.10\ ^\circ\text{C}$。</p>
+<p><strong>解题应用</strong></p>
+<p>若把溶质换成同样质量摩尔浓度的 NaCl，由于其在水中几乎完全电离为 $\text{Na}^+$ 和 $\text{Cl}^-$，$i \approx 2$，沸点升高将近似翻倍，达到约 $0.204\ ^\circ\text{C}$。这提示我们在实际问题中，第一步必须先判断溶质是否电离、电离产生几个粒子，再代入公式计算，否则极易漏算范特霍夫因子而得出错误结果。工程与烹饪中常利用此原理：向水中加盐可略微提高沸点，但更重要的应用是防冻液原理——同样的依数性原理反过来用于降低凝固点（沸点升高与凝固点降低是同一机制的两个表现）。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch11: Solutions and Colloids (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

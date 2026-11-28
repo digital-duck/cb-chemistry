@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stoichiometry | Chemistry Ch04</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="stoichiometry">Stoichiometry</h2>
+<p>Stoichiometry is the quantitative relationship between reactants and products in a chemical reaction, based on the conservation of mass and the fixed ratios encoded in a balanced chemical equation. A balanced equation tells you not just what substances react, but exactly how many moles of each are involved. Because atoms are neither created nor destroyed in ordinary chemical reactions, the mole ratios in a balanced equation act like a conversion recipe: they let you predict how much product forms from a given amount of reactant, or how much reactant you need to make a target amount of product.</p>
+<p><strong>Worked example.</strong> Consider the combustion of propane:</p>
+$$
+\text{C}_3\text{H}_8 + 5\,\text{O}_2 \rightarrow 3\,\text{CO}_2 + 4\,\text{H}_2\text{O}
+$$
+<p>Suppose you burn 22 grams of propane ($M = 44.1\ \text{g/mol}$) completely. First convert mass to moles:</p>
+$$
+n_{\text{C}_3\text{H}_8} = \frac{22\ \text{g}}{44.1\ \text{g/mol}} \approx 0.499\ \text{mol}
+$$
+<p>The balanced equation shows a 1:3 ratio between propane and $\text{CO}_2$, so:</p>
+$$
+n_{\text{CO}_2} = 0.499\ \text{mol} \times 3 \approx 1.497\ \text{mol}
+$$
+<p>Converting back to mass using $M_{\text{CO}_2} = 44.0\ \text{g/mol}$ gives about 65.9 grams of carbon dioxide produced.</p>
+<p><strong>Problem-solving application.</strong> Real laboratory and industrial calculations rarely involve one reactant alone — you must identify the <em>limiting reactant</em>, the substance that runs out first and therefore caps how much product can form. Rather than introducing a new formula, apply the same three-step conversion from the worked example to each reactant in turn: convert its given mass to moles, then use the balanced equation's coefficients to see how far it could carry the reaction. Concretely, divide each reactant's mole amount by its own coefficient in the equation; whichever result is smallest is limiting, and all product calculations must be based on it, not on whichever reactant happens to be present in greater mass. For example, if you mix 10 g of propane with 20 g of oxygen, converting both to moles and dividing by their coefficients (1 and 5) reveals that oxygen — not propane — is exhausted first, so the actual $\text{CO}_2$ yield is smaller than the propane-only calculation would suggest. This limiting-reactant analysis underlies practical tasks such as optimizing reagent purchases, minimizing chemical waste, and scaling a reaction from a test tube to an industrial batch, where reactant costs and yields must be balanced precisely.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pharmaceutical Equilibrium | Chemistry Ch13</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="pharmaceutical-equilibrium">Pharmaceutical Equilibrium</h2>
+<p><strong>定义</strong></p>
+<p>药物在体内的吸收、分布、代谢与排泄过程，本质上是药物分子在不同区室（如血浆与组织、胃肠道与血液）之间的可逆转运。当药物进入某一区室的速率与离开的速率相等时，该区室达到<strong>药物平衡</strong>（pharmaceutical equilibrium），此时药物浓度在两侧保持稳定的比例关系，而非停止运动。这一比例由化学平衡常数决定：对于药物分子在血浆（plasma）与组织（tissue）之间的分配，</p>
+$$K_p = \frac{C_{tissue}}{C_{plasma}}$$
+<p>其中 $C_{tissue}$、$C_{plasma}$ 分别为达到稳态后组织与血浆中的药物浓度。$K_p$ 值越大，说明药物越倾向于蓄积在组织中（如脂溶性药物在脂肪组织中富集）。同样的平衡逻辑也支配药物与血浆蛋白的结合：</p>
+$$K_d = \frac{[D][P]}{[DP]}$$
+<p>$K_d$ 为解离常数，$[D]$、$[P]$、$[DP]$ 分别是游离药物、游离蛋白与药物-蛋白复合物的浓度。$K_d$ 越小，结合越紧密，游离（具有药理活性）的药物比例就越低。</p>
+<p><strong>实例分析</strong></p>
+<p>以华法林（warfarin）为例，该药约 99% 与血浆白蛋白结合，仅 1% 呈游离态发挥抗凝作用。若患者同时服用另一种也高度结合白蛋白的药物（如阿司匹林），两者竞争同一结合位点，会使华法林从蛋白上被置换出来，游离浓度骤增，$K_d$ 表面上不变，但复合物 $[DP]$ 减少、$[D]$ 增多，导致出血风险显著上升——这正是药物相互作用（drug-drug interaction）中最常见的机制之一。</p>
+<p><strong>问题解决应用</strong></p>
+<p>临床药师在评估联合用药安全性时，需要判断：若某新药的蛋白结合率为 95%，且其 $K_d$ 已知，加入置换剂后游离药物浓度会如何变化？利用平衡关系式重新代入质量守恒方程（总药量 $= [D] + [DP]$），可以定量预测游离浓度的升高幅度，从而决定是否需要调整给药剂量或监测频率。这类计算是药代动力学（pharmacokinetics）课程与临床药学实践中评估药物安全窗（therapeutic window）的核心工具，也解释了为什么说明书中常常特别标注"高蛋白结合率药物慎用联合用药"。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch13: Fundamental Equilibrium Concepts (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

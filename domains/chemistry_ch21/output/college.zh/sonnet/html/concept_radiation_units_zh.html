@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radiation Units | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="radiation-units">Radiation Units</h2>
+<p><strong>定义</strong></p>
+<p>辐射剂量学中有四个核心物理量，分别回答不同的问题："放出了多少能量？""身体吸收了多少？""生物损伤有多大？""对特定组织的风险如何？"</p>
+<p><strong>放射性活度</strong>衡量放射源本身每秒发生多少次衰变，单位是贝可勒尔（Becquerel, Bq），$1\ \text{Bq} = 1$ 次衰变/秒；旧单位居里（Ci）为 $1\ \text{Ci} = 3.7 \times 10^{10}\ \text{Bq}$。</p>
+<p><strong>吸收剂量</strong>衡量单位质量物质吸收的辐射能量，单位是戈瑞（Gray, Gy），定义为</p>
+$$
+1\ \text{Gy} = 1\ \frac{\text{J}}{\text{kg}}
+$$
+<p>旧单位拉德（rad）满足 $1\ \text{Gy} = 100\ \text{rad}$。吸收剂量是纯物理量，不区分辐射种类，也不考虑生物效应差异。</p>
+<p><strong>当量剂量</strong>在吸收剂量基础上引入了"辐射权重因子" $w_R$，因为同样能量的 $\alpha$ 粒子比 $\gamma$ 射线造成的细胞损伤严重得多（电离密度更高）：</p>
+$$
+H_T = w_R \times D
+$$
+<p>单位是希沃特（Sievert, Sv）。例如 $\alpha$ 粒子的 $w_R = 20$，而 $\gamma/\beta$ 射线的 $w_R = 1$。</p>
+<p><strong>有效剂量</strong>进一步考虑不同器官对辐射的敏感度不同（组织权重因子 $w_T$），将全身各器官的当量剂量加权求和，得到反映整体致癌风险的单一数值，单位同样是希沃特。</p>
+<p><strong>实例分析</strong></p>
+<p>一次胸部 X 光检查，肺部吸收剂量约为 $0.1\ \text{mGy}$。因为 X 射线的 $w_R = 1$，当量剂量同样是 $0.1\ \text{mSv}$。相比之下，若某工人误吸入放出 $\alpha$ 粒子的氡气衰变产物，肺部吸收剂量若同为 $0.1\ \text{mGy}$，其当量剂量则为</p>
+$$
+H_T = 20 \times 0.1\ \text{mGy} = 2\ \text{mSv}
+$$
+<p>——是 X 光检查的 20 倍生物损伤，尽管吸收的能量完全相同。</p>
+<p><strong>问题解决应用</strong></p>
+<p>假设某核医学扫描使某患者全身均匀吸收剂量为 $5\ \text{mGy}$ 的 $\gamma$ 射线（$w_R=1$），并且甲状腺额外吸收 $8\ \text{mGy}$ 的 $\beta$ 粒子（$w_R=1$）。要评估整体癌症风险，需先求出各组织当量剂量（此处均等于吸收剂量，因 $w_R=1$），再乘以对应组织权重因子 $w_T$（甲状腺 $w_T \approx 0.04$，其余组织之和 $\approx 0.96$），加权求和得到有效剂量。这种分层计算方法正是辐射防护标准（如年剂量限值 $20\ \text{mSv}$）制定的基础，也是医生权衡影像检查必要性与辐射风险时的定量依据。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

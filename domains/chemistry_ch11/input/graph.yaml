@@ -1,0 +1,286 @@
+domain: chemistry_2e_ch11
+primitives:
+  intermolecular_forces:
+    defines: Attractive forces between molecules (dispersion, dipole-dipole, hydrogen bonding) that govern
+      whether substances mix and how much energy dissolution requires.
+    tier: 0
+  polarity:
+    defines: The uneven distribution of electron density in a molecule, determining its ability to interact
+      with ions and other polar molecules.
+    tier: 0
+  ions:
+    defines: Charged atomic or molecular species formed by gain or loss of electrons, treated as given
+      entities throughout this chapter.
+    tier: 0
+  vapor_pressure:
+    defines: The equilibrium pressure exerted by a substance's vapor above its liquid phase, introduced
+      from a prior chapter as a baseline concept.
+    tier: 0
+  molarity:
+    defines: A concentration unit defined as moles of solute per liter of solution, introduced in a prior
+      chapter and used here as a starting point.
+    tier: 0
+  partial_pressure:
+    defines: The pressure exerted by a single gas component in a mixture, used as a given quantity when
+      applying Henry's law.
+    tier: 0
+concepts:
+  solution:
+    defines: A homogeneous mixture in which solute particles are dispersed at the molecular scale throughout
+      a solvent and do not settle out over time.
+    composed_of:
+    - intermolecular_forces
+    tier: 1
+  ion_dipole_attraction:
+    defines: The electrostatic attraction between an ion and the oppositely charged end of a polar molecule,
+      the primary force driving dissolution of ionic compounds in water.
+    composed_of:
+    - ions
+    - polarity
+    tier: 1
+  amphiphilic_molecule:
+    defines: A molecule possessing both a nonpolar (hydrophobic) end and a polar (hydrophilic) end, enabling
+      it to bridge polar and nonpolar phases.
+    composed_of:
+    - polarity
+    - intermolecular_forces
+    tier: 1
+  solvent_and_solute:
+    defines: The solvent is the component present in greatest concentration that determines the physical
+      state of the solution; solutes are the other components dissolved within it.
+    composed_of:
+    - solution
+    tier: 2
+  mole_fraction:
+    defines: A dimensionless concentration unit giving the ratio of moles of one component to the total
+      moles of all components in a solution.
+    composed_of:
+    - solution
+    tier: 2
+  molality:
+    defines: A temperature-independent concentration unit defined as the number of moles of solute per
+      kilogram of solvent.
+    composed_of:
+    - solution
+    tier: 2
+  like_dissolves_like:
+    defines: The empirical rule that polar solutes dissolve in polar solvents and nonpolar solutes dissolve
+      in nonpolar solvents, based on matching intermolecular force strengths.
+    composed_of:
+    - intermolecular_forces
+    - polarity
+    - solution
+    tier: 2
+  colloid:
+    defines: A mixture in which particles larger than typical dissolved molecules but small enough not
+      to settle (roughly 1-1000 nm) are dispersed uniformly throughout a continuous medium.
+    composed_of:
+    - solution
+    tier: 2
+  solvation:
+    defines: The exothermic process by which solvent molecules establish intermolecular attractive forces
+      with solute particles, stabilizing them in solution.
+    composed_of:
+    - intermolecular_forces
+    - solvent_and_solute
+    tier: 3
+  colligative_property:
+    defines: A solution property (vapor pressure lowering, boiling point elevation, freezing point depression,
+      osmotic pressure) that depends only on the total concentration of solute particles, not their chemical
+      identity.
+    composed_of:
+    - solution
+    - molality
+    tier: 3
+  tyndall_effect:
+    defines: The scattering of visible light by colloidal-sized particles, making colloidal dispersions
+      appear cloudy or opaque and distinguishing them from true solutions.
+    composed_of:
+    - colloid
+    tier: 3
+  dissolution_process:
+    defines: The spontaneous formation of a solution driven by a balance of endothermic solute-solute
+      and solvent-solvent bond breaking and exothermic solvation, with matter dispersal always increasing.
+    composed_of:
+    - solvation
+    - solution
+    tier: 4
+  ideal_solution:
+    defines: A solution that forms with no net change in energy because solute-solvent interactions are
+      identical in strength to the pure-component interactions.
+    composed_of:
+    - solution
+    - solvation
+    tier: 4
+  dissociation:
+    defines: The physical process by which an ionic compound separates into its constituent solvated ions
+      upon dissolving in water.
+    composed_of:
+    - solvation
+    - ion_dipole_attraction
+    tier: 4
+  osmosis:
+    defines: The net diffusion of solvent molecules through a semipermeable membrane from a region of
+      lower solute concentration to a region of higher solute concentration.
+    composed_of:
+    - solution
+    - colligative_property
+    tier: 4
+  electrolyte:
+    defines: A substance that produces freely mobile ions when dissolved in water, enabling the solution
+      to conduct electricity.
+    composed_of:
+    - dissociation
+    - solution
+    tier: 5
+  solubility:
+    defines: The maximum concentration of a solute that can be dissolved in a given solvent at a specified
+      temperature and pressure when the dissolution process is at equilibrium.
+    composed_of:
+    - dissolution_process
+    tier: 5
+  raoults_law:
+    defines: The relationship stating that the partial vapor pressure of each volatile component of an
+      ideal solution equals its pure-component vapor pressure multiplied by its mole fraction.
+    composed_of:
+    - vapor_pressure
+    - mole_fraction
+    - ideal_solution
+    tier: 5
+  osmotic_pressure:
+    defines: The pressure that must be applied to a solution to halt the net transfer of solvent through
+      a semipermeable membrane, given by Pi = MRT for dilute solutions.
+    composed_of:
+    - osmosis
+    - colligative_property
+    - molarity
+    tier: 5
+  strong_electrolyte:
+    defines: A substance that dissociates or ionizes essentially completely when dissolved, yielding maximum
+      ion concentration.
+    composed_of:
+    - electrolyte
+    tier: 6
+  weak_electrolyte:
+    defines: A substance that only partially ionizes in water, producing a relatively low concentration
+      of ions in solution.
+    composed_of:
+    - electrolyte
+    tier: 6
+  nonelectrolyte:
+    defines: A substance that dissolves in water without producing ions and therefore does not conduct
+      electricity.
+    composed_of:
+    - electrolyte
+    tier: 6
+  saturated_solution:
+    defines: A solution in which the solute concentration equals its solubility, representing the equilibrium
+      state between dissolved and undissolved solute.
+    composed_of:
+    - solubility
+    tier: 6
+  henrys_law:
+    defines: The proportional relationship between the concentration of a dissolved gas and the partial
+      pressure of that gas above the solution, expressed as Cg = kPg.
+    composed_of:
+    - solubility
+    - partial_pressure
+    tier: 6
+  temperature_effect_on_solubility:
+    defines: The dependence of solubility on temperature — gas solubility typically decreases with increasing
+      temperature, while most solid solubilities increase with temperature.
+    composed_of:
+    - solubility
+    tier: 6
+  miscibility:
+    defines: The degree to which two liquids dissolve in each other; miscible liquids mix in all proportions,
+      immiscible liquids have negligible mutual solubility, and partially miscible liquids fall between.
+    composed_of:
+    - solubility
+    - like_dissolves_like
+    tier: 6
+  vapor_pressure_lowering:
+    defines: The reduction in a solvent's vapor pressure caused by the presence of a nonvolatile solute,
+      quantified by Raoult's law as proportional to the solute mole fraction.
+    composed_of:
+    - raoults_law
+    - colligative_property
+    tier: 6
+  vant_hoff_factor:
+    defines: The experimentally measured ratio of moles of particles in solution to moles of formula units
+      dissolved, used to correct colligative property calculations for electrolytes that do not fully
+      dissociate.
+    composed_of:
+    - electrolyte
+    - colligative_property
+    tier: 6
+  supersaturated_solution:
+    defines: A nonequilibrium solution in which the dissolved solute concentration exceeds its solubility,
+      typically prepared by cooling a hot saturated solution.
+    composed_of:
+    - saturated_solution
+    tier: 7
+  boiling_point_elevation:
+    defines: The increase in a solution's boiling point relative to the pure solvent, directly proportional
+      to solute molality via the ebullioscopic constant Kb.
+    composed_of:
+    - vapor_pressure_lowering
+    - molality
+    tier: 7
+  freezing_point_depression:
+    defines: The decrease in a solution's freezing point relative to the pure solvent, directly proportional
+      to solute molality via the cryoscopic constant Kf.
+    composed_of:
+    - vapor_pressure_lowering
+    - molality
+    tier: 7
+  emulsion:
+    defines: A colloidal dispersion of one immiscible liquid as droplets throughout another liquid, typically
+      stabilized by an amphiphilic emulsifying agent.
+    composed_of:
+    - colloid
+    - miscibility
+    tier: 7
+applications:
+  reverse_osmosis:
+    defines: A water-purification process in which pressure exceeding the osmotic pressure is applied
+      to a solution, forcing solvent through a semipermeable membrane and leaving solutes behind.
+    needs:
+    - osmotic_pressure
+    tier: 6
+  distillation:
+    defines: A separation technique that exploits differences in component vapor pressures to selectively
+      vaporize, condense, and collect the more volatile component of a solution.
+    needs:
+    - vapor_pressure_lowering
+    - raoults_law
+    tier: 7
+  decompression_sickness:
+    defines: A physiological hazard in which gases dissolved in a diver's blood at high pressure form
+      bubbles upon rapid ascent, explained by Henry's law.
+    needs:
+    - henrys_law
+    tier: 7
+  molar_mass_determination:
+    defines: The use of measured boiling point elevation, freezing point depression, or osmotic pressure
+      of a solution of known solute mass to calculate the solute's molar mass.
+    needs:
+    - boiling_point_elevation
+    - freezing_point_depression
+    - osmotic_pressure
+    tier: 8
+  deicing:
+    defines: The practical use of ionic solutes (NaCl, CaCl2) to lower the freezing point of water on
+      roads and aircraft surfaces, exploiting freezing point depression.
+    needs:
+    - freezing_point_depression
+    - electrolyte
+    tier: 8
+  soap_detergent_action:
+    defines: The mechanism by which amphiphilic soap or detergent molecules orient at the oil-water interface,
+      suspending nonpolar dirt as colloidal particles that are rinsed away.
+    needs:
+    - amphiphilic_molecule
+    - colloid
+    - emulsion
+    tier: 8

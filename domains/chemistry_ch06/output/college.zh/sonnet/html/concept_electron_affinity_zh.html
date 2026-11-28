@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electron Affinity | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="electron-affinity">Electron Affinity</h2>
+<p><strong>定义</strong></p>
+<p>电子亲和能（electron affinity, $EA$）是指一个气态原子获得一个电子形成气态负离子时所释放或吸收的能量：</p>
+$$X(g) + e^- \rightarrow X^-(g)$$
+<p>按照现代热力学惯例，电子亲和能通常以<strong>释放能量为负值</strong>来表示——这与电离能的符号习惯相反。也就是说，$EA$ 越负，说明原子越"渴望"得到这个电子，形成的负离子越稳定。例如，氯原子的电子亲和能约为 $-349\ \text{kJ/mol}$，表示氯原子结合一个电子会放出 349 kJ/mol 的能量。</p>
+<p>电子亲和能的大小取决于两个因素：核对外层电子的有效吸引力（即有效核电荷 $Z_{eff}$）以及原子半径。在周期表中，同一周期从左到右，$Z_{eff}$ 增大、原子半径减小，电子亲和能通常变得更负（即更容易结合电子）；同一族从上到下，由于原子半径增大、屏蔽效应增强，电子亲和能的负值一般减小。但这一趋势并非严格单调：例如氟的电子亲和能（$-328\ \text{kJ/mol}$）反而略小于氯（$-349\ \text{kJ/mol}$），原因是氟原子体积过小，新加入的电子与已有的电子云之间排斥作用较强，抵消了部分核吸引力带来的优势。</p>
+<p><strong>实例分析</strong></p>
+<p>比较氧族元素：氧的电子亲和能为 $-141\ \text{kJ/mol}$，硫为 $-200\ \text{kJ/mol}$。硫的原子半径更大，按趋势本应亲和能较小，但硫的最外层电子占据的是 3p 轨道，电子间排斥小于氧紧凑的 2p 轨道，因此实际数值反而更负。这说明电子亲和能的周期性趋势必须结合具体电子排布来解释，不能只套用"半径越小亲和能越负"的简单规则。</p>
+<p><strong>解题应用</strong></p>
+<p>在预测化学反应活性时，电子亲和能是判断非金属元素得电子能力的重要依据。例如，比较 F、Cl、Br、I 与金属反应生成卤化物的倾向时，需综合考虑电子亲和能与晶格能：虽然 Cl 的电子亲和能比 F 更负，但 F 因半径小、晶格能更高，NaF 的生成焓仍比预期更负。解题时应遵循步骤：先查出目标原子的电子亲和能数值判断得电子难易，再结合原子半径、有效核电荷及电子排布（尤其是半满、全满亚层的稳定性）综合评估，避免仅凭周期表位置做出片面判断。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

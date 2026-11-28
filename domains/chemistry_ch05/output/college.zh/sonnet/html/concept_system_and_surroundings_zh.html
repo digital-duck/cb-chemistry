@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>System And Surroundings | Chemistry Ch05</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="system-and-surroundings">System And Surroundings</h2>
+<p><strong>定义</strong></p>
+<p>在热力学中，我们研究能量如何在物质之间转移，因此首先需要明确观察的对象是什么。<strong>系统（system）</strong>是指我们选定用来研究的那一部分物质或空间区域——它可以是一杯热水、一个反应烧瓶，甚至是整个地球的大气层。<strong>环境（surroundings）</strong>则是系统之外、能与系统发生能量或物质交换的一切。系统与环境之间的分界称为<strong>边界（boundary）</strong>，边界可以是真实的（如烧杯壁），也可以是假想的（如划定的一片空气区域）。</p>
+<p>根据系统与边界允许交换的内容，我们把系统分为三类：<strong>开放系统</strong>（既能交换能量又能交换物质，例如敞口的热汤）、<strong>封闭系统</strong>（只能交换能量，不能交换物质，例如密封的金属罐）、<strong>孤立系统</strong>（既不交换能量也不交换物质，理想化的保温瓶可近似看作孤立系统）。</p>
+<p><strong>实例分析</strong></p>
+<p>设想在一个带塞子的烧瓶中进行碳酸钙分解反应：$\text{CaCO}_3(s) \rightarrow \text{CaO}(s) + \text{CO}_2(g)$。如果烧瓶敞口，生成的二氧化碳气体会逸出到空气中，同时反应放出的热量也会散失——这是一个<strong>开放系统</strong>。如果我们把烧瓶密封（但仍能通过瓶壁传热），气体被限制在瓶内，但热量仍可与周围空气交换，这就是<strong>封闭系统</strong>。只有当我们用绝热材料把烧瓶完全隔绝，才能近似实现<strong>孤立系统</strong>。</p>
+<p><strong>应用于解题</strong></p>
+<p>判断系统类型，是分析能量守恒问题的第一步。例如，在计算某反应的焓变 $\Delta H$ 时，我们通常假设反应容器与外界只交换热量、不交换物质，即视为封闭系统；这样才能应用能量守恒定律 $\Delta U = q + w$，把系统内能的变化完全归因于热量 $q$ 与做功 $w$。</p>
+<p>解题时，先问自己三个问题：（1）边界画在哪里？（2）物质能否穿过边界？（3）能量能否穿过边界？例如,在人体新陈代谢的研究中，若把"人体"定义为系统，那么食物摄入、呼吸排出的$\text{CO}_2$都属于跨越边界的物质流动，因此人体是一个开放系统。正确划定系统与环境，能避免在计算能量平衡时遗漏或重复计入某些能量流动路径。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch5: Thermochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

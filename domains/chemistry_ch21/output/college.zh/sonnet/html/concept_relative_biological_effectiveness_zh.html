@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Relative Biological Effectiveness | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="relative-biological-effectiveness">Relative Biological Effectiveness</h2>
+<p><strong>定义</strong></p>
+<p>不同类型的电离辐射即使沉积相同的物理剂量，对生物组织造成的损伤程度也可能截然不同。相对生物效能（Relative Biological Effectiveness, RBE）就是用来量化这种差异的指标。它的定义是：产生某一特定生物学终点（如细胞死亡、染色体畸变或肿瘤诱发率达到某一水平）所需要的参考辐射（通常是250 kVp X射线或$^{60}$Co $\gamma$射线）的剂量，除以待测辐射产生同等效应所需要的剂量：</p>
+$$
+\text{RBE} = \frac{D_{\text{参考辐射}}}{D_{\text{待测辐射}}}\bigg|_{\text{相同生物效应}}
+$$
+<p>RBE 之所以存在，根本原因在于辐射的传能线密度（Linear Energy Transfer, LET）不同。$\alpha$粒子、质子和重离子属于高LET辐射，能量沉积密集，沿径迹造成的DNA双链断裂更集中、更难修复；而X射线、$\gamma$射线属于低LET辐射，能量沉积稀疏，损伤多为单链断裂，细胞有更充分的机会修复。因此，高LET辐射通常具有更高的RBE。</p>
+<p><strong>实例计算</strong></p>
+<p>假设某实验中，产生50%细胞存活率所需要的参考X射线剂量为4 Gy，而用中子辐照达到同样50%存活率只需要1 Gy。则：</p>
+$$
+\text{RBE} = \frac{4\ \text{Gy}}{1\ \text{Gy}} = 4
+$$
+<p>这意味着中子的生物破坏力是X射线的4倍——达到同等杀伤效果所需的中子剂量只需X射线的四分之一。</p>
+<p><strong>应用于剂量评估</strong></p>
+<p>在辐射防护和放疗计划中，RBE 被用来将不同辐射类型的物理剂量换算为具有统一生物学意义的"当量剂量"（以希沃特Sv为单位）：</p>
+$$
+H = D \times w_R
+$$
+<p>其中 $w_R$ 是辐射权重因子，是基于大量实验RBE数据为不同辐射类型指定的标准化数值（例如光子和电子取1，$\alpha$粒子取20）。</p>
+<p>需要注意的是，RBE本身并非一个固定常数，它依赖于剂量大小、剂量率、细胞或组织类型，以及所选择的生物学终点。例如同一种中子束在低剂量下的RBE可能明显高于高剂量下的RBE，这是因为低LET参考辐射的剂量-效应曲线在低剂量区更为平坦（存在"肩区"），而高LET辐射的曲线更接近线性。因此在实际应用中，RBE值必须针对具体的实验条件报告，不能简单套用于所有情境。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thermochemical Equation | Chemistry Ch05</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="thermochemical-equation-热化学方程式">Thermochemical Equation（热化学方程式）</h2>
+<p><strong>定义</strong></p>
+<p>热化学方程式是在普通化学方程式的基础上，标明反应物和生成物聚集状态，并给出反应焓变 $\Delta H$ 数值的方程式。它把"物质变化"和"能量变化"合并在同一个表达式中，使我们既能看到原子如何重新组合，也能看到这一过程吸收或释放了多少热量。书写时必须遵守三条规则：（1）每种物质都要标出状态（$s$、$l$、$g$、$aq$）；（2）$\Delta H$ 的符号表示方向——放热为负，吸热为正；（3）$\Delta H$ 的数值与方程式中的化学计量数严格对应，若方程式两边同时乘以某个系数，$\Delta H$ 也要按相同倍数缩放。反应逆向进行时，$\Delta H$ 变号但数值不变。</p>
+<p><strong>范例</strong></p>
+<p>甲烷燃烧的热化学方程式为：</p>
+$$
+\text{CH}_4(g) + 2\text{O}_2(g) \rightarrow \text{CO}_2(g) + 2\text{H}_2\text{O}(l) \qquad \Delta H = -890\ \text{kJ}
+$$
+<p>这表示：1 mol 气态甲烷与 2 mol 气态氧气完全反应，生成 1 mol 气态二氧化碳和 2 mol 液态水，同时向外释放 890 kJ 热量。注意水的状态是液态而非气态——如果生成气态水，$\Delta H$ 会因为少了水蒸气凝结放出的热量而数值变小（放热更少）。这说明状态标注不是形式要求，而是直接影响能量数值的关键信息。</p>
+<p><strong>解题应用</strong></p>
+<p>热化学方程式最常见的用途是按比例换算能量。例如，若某工艺只燃烧 0.25 mol 甲烷，释放的热量为：</p>
+$$
+0.25\ \text{mol} \times \frac{890\ \text{kJ}}{1\ \text{mol}} = 222.5\ \text{kJ}
+$$
+<p>这种"化学计量数—能量"的比例关系，与普通方程式中"化学计量数—物质的量"的比例关系完全类似，只是把摩尔数换成了千焦数。掌握这一点后，还可以利用盖斯定律（Hess's Law）：把多个热化学方程式像代数式一样相加或相减，抵消中间产物，从而求出难以直接测量的反应焓变。这是热化学方程式在实际问题中最有力的应用——不需要重新做实验，只需对已知的热化学方程式进行代数组合。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch5: Thermochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Corrosion | Chemistry Ch17</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="corrosion">Corrosion</h2>
+<p>Corrosion is the gradual degradation of a material, usually a metal, through chemical or electrochemical reaction with its environment. The most familiar case is the rusting of iron, in which iron reacts with oxygen and moisture to form hydrated iron oxide. Corrosion is fundamentally an electrochemical process: it involves oxidation, in which a metal atom loses electrons and becomes a positively charged ion, and reduction, in which those electrons are consumed elsewhere in the system, typically by oxygen and water. Because it requires an electron flow between two sites on a material, corrosion can be understood using the same principles that govern batteries — a fact that also explains how corrosion can be controlled.</p>
+<p>Consider a steel ship hull sitting in seawater. At microscopic regions on the metal surface called anodic sites, iron atoms give up electrons: $\text{Fe} \rightarrow \text{Fe}^{2+} + 2e^-$. Those electrons travel through the metal to nearby cathodic sites, where they reduce dissolved oxygen: $\text{O}_2 + 2\text{H}_2\text{O} + 4e^- \rightarrow 4\text{OH}^-$. The $\text{Fe}^{2+}$ and $\text{OH}^-$ ions combine and further oxidize to form rust, $\text{Fe(OH)}_3$. Seawater's dissolved salts make it an excellent electrolyte, which is why ships corrode faster than the same steel would in dry air.</p>
+<p>This electrochemical view leads directly to a practical engineering solution: cathodic protection. If corrosion depends on a metal losing electrons at an anodic site, engineers can prevent that loss by attaching a more reactive metal — such as zinc or magnesium — to the structure. Because zinc gives up electrons more readily than iron, it becomes the anode instead, sacrificing itself while forcing the iron to act as the protected cathode. This is why ship hulls, pipelines, and bridge supports are often fitted with replaceable zinc blocks called sacrificial anodes.</p>
+<p>When solving a corrosion-protection problem, the key steps are: (1) identify which metal is more reactive using a standard reduction potential table, (2) confirm that an electrolyte pathway exists between the metals, and (3) select a sacrificial material reactive enough to protect the target structure but not so reactive that it depletes too quickly, since sacrificial anodes must be inspected and replaced periodically as part of routine maintenance.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

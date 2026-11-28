@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ideal Solution | Chemistry Ch11</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="ideal-solution">Ideal Solution</h2>
+<p>An <strong>ideal solution</strong> is a hypothetical mixture in which the interactions between different molecules are essentially identical to the interactions between molecules of the same kind. If you mix substance A and substance B, an ideal solution requires that an A–B interaction feels, energetically, just like an A–A or B–B interaction. Because nothing is gained or lost energetically by mixing, the process involves no heat exchange ($\Delta H_{\text{mix}} = 0$) and no change in total volume ($\Delta V_{\text{mix}} = 0$) beyond simply adding the components together.</p>
+<p>This behavior is captured quantitatively by <strong>Raoult's Law</strong>, which states that the partial vapor pressure of each component above the solution is proportional to its mole fraction in the liquid:</p>
+$$P_A = X_A P_A^*$$
+<p>where $P_A^*$ is the vapor pressure of pure A and $X_A$ is its mole fraction in solution. This relationship is intrinsically mathematical — you cannot predict how a mixture's vapor pressure changes without it — so it earns its place as a working formula here, unlike purely procedural concepts.</p>
+<p><strong>Worked example:</strong> Suppose you mix benzene and toluene, a classic near-ideal pair, in a 1:1 mole ratio. At a given temperature, pure benzene has $P^<em>_{\text{benzene}} = 100$ torr and pure toluene has $P^</em>_{\text{toluene}} = 40$ torr. With $X_{\text{benzene}} = X_{\text{toluene}} = 0.5$:</p>
+$$P_{\text{benzene}} = 0.5 \times 100 = 50 \text{ torr}, \quad P_{\text{toluene}} = 0.5 \times 40 = 20 \text{ torr}$$
+<p>The total vapor pressure above the solution is $P_{\text{total}} = 70$ torr — a simple weighted average, exactly what ideality predicts.</p>
+<p><strong>Problem-solving application:</strong> The real payoff of this concept is diagnostic. If you measure a solution's actual vapor pressure and it's <em>higher</em> than Raoult's Law predicts, the components are interacting more weakly with each other than with themselves (positive deviation — think water and ethanol, where hydrogen bonding is disrupted). If it's <em>lower</em>, unusually strong A–B attractions are suppressing evaporation (negative deviation — acetone and chloroform, which form hydrogen bonds). Chemists use this gap between predicted and observed pressure to infer molecular-level interactions without ever directly "seeing" them — the ideal solution model serves as the baseline against which real chemical behavior is measured.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Equilibrium | Chemistry Ch16</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="equilibrium">Equilibrium</h2>
+<p>An equilibrium is a state in which the forces, quantities, or influences acting on a system are balanced, so that the system has no net tendency to change over time. This does not mean nothing is happening — it means opposing changes cancel out. In a chemical reaction at equilibrium, molecules are still reacting forward and backward, but at equal rates, so concentrations stay constant. In economics, a market at equilibrium still has buyers and sellers trading, but the price has settled where quantity supplied equals quantity demanded. In physics, an object in mechanical equilibrium may have several forces acting on it, but their vector sum is zero, so it doesn't accelerate. The unifying idea is a balance point where the net effect of competing processes is zero, and the system, left alone, stays there.</p>
+<p><strong>Worked example.</strong> Consider a simple supply-and-demand market for coffee. Demand is $Q_d = 100 - 4P$ and supply is $Q_s = 10 + 6P$, where $P$ is price in dollars and $Q$ is quantity in hundreds of cups. Equilibrium occurs where $Q_d = Q_s$:</p>
+$$100 - 4P = 10 + 6P \implies 90 = 10P \implies P = 9$$
+<p>Substituting back, $Q = 100 - 4(9) = 64$. So the equilibrium price is \$9, with 6,400 cups traded. At any price above \$9, sellers offer more than buyers want, creating a surplus that pushes price down; below \$9, a shortage pushes price up. Equilibrium is the one price where these pressures vanish.</p>
+<p><strong>Problem-solving application.</strong> Equilibrium reasoning is useful whenever you need to find a "settling point" without tracking the full dynamics. A common technique: identify the two competing quantities (inflow/outflow, forces, reaction rates, supply/demand), write an expression for each, and set them equal. This works for population models (birth rate = death rate gives a stable population size), circuits (current in = current out at a node), and negotiation problems (each party's minimum acceptable terms coincide). A useful diagnostic question is whether the equilibrium is <em>stable</em>: if a small disturbance pushes the system away, does it return, or drift further? In the coffee market, a temporary price spike triggers a shortage-correcting mechanism that pulls price back toward \$9 — a stable equilibrium. Recognizing instability matters too, since some equilibria (like an unstable chemical intermediate) tip over at the slightest perturbation rather than restoring themselves.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

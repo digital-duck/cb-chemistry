@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Osmotic Pressure | Chemistry Ch11</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="osmotic-pressure">Osmotic Pressure</h2>
+<p>Osmotic pressure is the pressure that must be applied to a solution to stop the net inward flow of solvent across a semipermeable membrane separating it from pure solvent (or a more dilute solution). A semipermeable membrane allows small solvent molecules, usually water, to pass through while blocking larger solute particles. Because the solute cannot cross, water tends to move from the side with lower solute concentration to the side with higher solute concentration, diluting the more concentrated solution. This movement, called osmosis, continues until the pressure difference across the membrane balances the concentration difference driving the flow.</p>
+<p>The relationship is captured by the van't Hoff equation, which treats a dilute solution's osmotic behavior as analogous to an ideal gas:</p>
+$$\Pi = i M R T$$
+<p>where $\Pi$ is osmotic pressure, $i$ is the van't Hoff factor (number of particles the solute dissociates into), $M$ is molarity, $R$ is the gas constant, and $T$ is absolute temperature. This formalism is justified because osmotic pressure is fundamentally a statistical/thermodynamic quantity tied to particle concentration, not a mechanical or procedural concept.</p>
+<p><strong>Worked example.</strong> Suppose a 0.150 M solution of glucose (a nonelectrolyte, so $i = 1$) is separated from pure water by a semipermeable membrane at $37°C$ (310 K), body temperature. Using $R = 0.0821 \text{ L·atm/(mol·K)}$:</p>
+$$\Pi = (1)(0.150\text{ mol/L})(0.0821\text{ L·atm/mol·K})(310\text{ K}) \approx 3.82\text{ atm}$$
+<p>This is a substantial pressure — roughly 3.8 times atmospheric pressure — explaining why cells must tightly regulate internal solute concentrations to avoid swelling or shrinking.</p>
+<p><strong>Problem-solving application.</strong> Osmotic pressure calculations are essential in biology and medicine, particularly for determining whether an IV solution is isotonic (safe), hypotonic (causes cell swelling/lysis), or hypertonic (causes cell shrinkage). For example, if a saline solution has a lower osmotic pressure than blood plasma (roughly 7.7 atm), infusing it intravenously would cause red blood cells to absorb water and potentially rupture. Pharmaceutical scientists use the van't Hoff equation to formulate IV fluids and eye drops that match the body's osmotic pressure, and food scientists use osmosis principles to design preservation methods, since high solute concentrations (as in salting or sugaring) draw water out of microbial cells, inhibiting spoilage.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

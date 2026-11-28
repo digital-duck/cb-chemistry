@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Positron Emission | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="positron-emission-正电子发射">Positron Emission（正电子发射）</h2>
+<p><strong>定义</strong></p>
+<p>正电子发射（$\beta^+$ 衰变）是一种放射性衰变方式，发生在原子核中质子数相对中子数过多、核内质子—中子比例失衡时。在这种衰变中，原子核内的一个质子转变为一个中子，同时释放出一个正电子（$e^+$，电子的反粒子，质量相同但带正电荷）和一个电子中微子（$\nu_e$）。反应可表示为：</p>
+$$p^+ \rightarrow n^0 + e^+ + \nu_e$$
+<p>对于原子核整体，正电子发射使原子序数 $Z$ 减少 1，质量数 $A$ 保持不变，因此生成的子核在元素周期表中向左移动一位。通式为：</p>
+$$_{Z}^{A}X \rightarrow \,_{Z-1}^{\ \ A}Y + e^+ + \nu_e$$
+<p>正电子发射与电子俘获（核捕获一个内层电子，效果同样是质子转变为中子）是"互补"过程——两者常出现在同一批缺中子核素中，具体走哪条路径取决于母核与子核之间的质量能差是否足够大（正电子发射要求这一差值超过 $2m_ec^2 \approx 1.022\ \text{MeV}$，即需要克服生成正电子所需的静质量能）。</p>
+<p><strong>实例分析</strong></p>
+<p>碳-11 是医学影像中常用的核素，它通过正电子发射衰变为硼-11：</p>
+$$_{6}^{11}C \rightarrow \,_{5}^{11}B + e^+ + \nu_e$$
+<p>放出的正电子在组织中运行极短距离后，会与周围物质中的一个电子发生湮灭，两者质量完全转化为能量，产生两个方向相反、能量各为 511 keV 的伽马光子。这正是正电子发射断层扫描（PET）成像的物理基础：将碳-11、氟-18 等发射正电子的核素标记在生物活性分子（如葡萄糖类似物 FDG）上注入人体，探测器捕捉湮灭产生的成对伽马光子，即可重建出示踪剂在体内的分布图像，用于肿瘤、脑功能等诊断。</p>
+<p><strong>问题解决应用</strong></p>
+<p>判断某核素是否可能发生正电子发射，可从核素图（中子数 $N$ 对质子数 $Z$）入手：凡位于稳定带上方（即偏向质子过剩、$Z$ 相对偏大）的核素，都是正电子发射或电子俘获的候选者。解题时，先写出衰变方程配平 $A$ 与 $Z$，再核对生成物是否比母核更接近稳定带；若题目给出核素质量数据，还应验证母子核质量差是否超过 $1.022\ \text{MeV}$，以确认正电子发射（而非仅电子俘获）在能量上是否允许发生。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Energy Equilibrium Relationship | Chemistry Ch16</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="free-energy-equilibrium-relationship">Free Energy Equilibrium Relationship</h2>
+<p>At equilibrium, a chemical reaction has stopped shifting net composition, but it has not stopped for lack of energy — it has reached the point where the change in Gibbs free energy for the reaction is zero. This single fact connects thermodynamics (energy) to equilibrium chemistry (concentrations) through one of the most useful equations in physical chemistry:</p>
+$$\Delta G^\circ = -RT \ln K$$
+<p>Here $\Delta G^\circ$ is the standard free energy change of the reaction, $R$ is the gas constant ($8.314\ \text{J/mol·K}$), $T$ is absolute temperature, and $K$ is the equilibrium constant. This is a genuine theoretical result — it comes directly from the definition $\Delta G = \Delta G^\circ + RT\ln Q$, combined with the equilibrium condition $\Delta G = 0$ (where $Q$ becomes $K$). Because the relationship links a measurable thermodynamic quantity to a measurable equilibrium constant, it deserves its formal notation rather than a purely qualitative description.</p>
+<p><strong>Worked example.</strong> Suppose a reaction has $\Delta G^\circ = -10.0\ \text{kJ/mol}$ at $298\ \text{K}$. Solving for $K$:</p>
+$$K = e^{-\Delta G^\circ / RT} = e^{-(-10000)/(8.314 \times 298)} = e^{4.03} \approx 56.3$$
+<p>A negative $\Delta G^\circ$ produces $K > 1$, meaning products are favored at equilibrium — consistent with the reaction being spontaneous under standard conditions. If instead $\Delta G^\circ$ were positive, the exponent would be negative, giving $K < 1$ and a reactant-favored equilibrium.</p>
+<p><strong>Problem-solving application.</strong> This relationship is most useful when you need to predict how equilibrium shifts with temperature, using the van't Hoff form derived from combining $\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$ with the equation above:</p>
+$$\ln K = -\frac{\Delta H^\circ}{RT} + \frac{\Delta S^\circ}{R}$$
+<p>For example, if you measure $K$ at two temperatures for an industrial synthesis (say, ammonia production), you can extract $\Delta H^\circ$ from the slope of $\ln K$ versus $1/T$, then predict $K$ — and thus product yield — at a third, untested temperature. This is exactly how chemical engineers choose operating conditions: rather than running expensive trial reactions at every possible temperature, they use two or three data points and this equation to forecast equilibrium behavior across a range, balancing yield against reaction rate and cost.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

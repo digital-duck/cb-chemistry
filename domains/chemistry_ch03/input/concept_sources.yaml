@@ -1,0 +1,120 @@
+domain: chemistry_2e_ch3
+sources:
+  atomic_mass:
+    label: Atomic Mass
+    sections: []
+  mole:
+    label: Mole
+    sections:
+    - id: ch03_s3_1
+      title: 3.1 Formula Mass and the Mole Concept
+  avogadros_number:
+    label: Avogadro's Number
+    sections:
+    - id: ch03_s3_1
+      title: 3.1 Formula Mass and the Mole Concept
+  formula_mass:
+    label: Formula Mass
+    sections:
+    - id: ch03_s3_1
+      title: 3.1 Formula Mass and the Mole Concept
+  molecular_mass:
+    label: Molecular Mass
+    sections:
+    - id: ch03_s3_1
+      title: 3.1 Formula Mass and the Mole Concept
+  molar_mass:
+    label: Molar Mass
+    sections:
+    - id: ch03_s3_1
+      title: 3.1 Formula Mass and the Mole Concept
+  mass_mole_conversion:
+    label: Mass–Mole Conversion
+    sections:
+    - id: ch03_s3_1
+      title: 3.1 Formula Mass and the Mole Concept
+  percent_composition:
+    label: Percent Composition
+    sections:
+    - id: ch03_s3_2
+      title: 3.2 Determining Empirical and Molecular Formulas
+  empirical_formula:
+    label: Empirical Formula
+    sections:
+    - id: ch03_s3_2
+      title: 3.2 Determining Empirical and Molecular Formulas
+  empirical_formula_mass:
+    label: Empirical Formula Mass
+    sections:
+    - id: ch03_s3_2
+      title: 3.2 Determining Empirical and Molecular Formulas
+  molecular_formula:
+    label: Molecular Formula
+    sections:
+    - id: ch03_s3_2
+      title: 3.2 Determining Empirical and Molecular Formulas
+  solution:
+    label: Solution
+    sections:
+    - id: ch03_s3_3
+      title: 3.3 Molarity
+  solvent:
+    label: Solvent
+    sections:
+    - id: ch03_s3_3
+      title: 3.3 Molarity
+  solute:
+    label: Solute
+    sections:
+    - id: ch03_s3_3
+      title: 3.3 Molarity
+  aqueous_solution:
+    label: Aqueous Solution
+    sections:
+    - id: ch03_s3_3
+      title: 3.3 Molarity
+  concentration:
+    label: Concentration
+    sections:
+    - id: ch03_s3_3
+      title: 3.3 Molarity
+  molarity:
+    label: Molarity
+    sections:
+    - id: ch03_s3_3
+      title: 3.3 Molarity
+  dilution:
+    label: Dilution
+    sections:
+    - id: ch03_s3_3
+      title: 3.3 Molarity
+  dilution_equation:
+    label: Dilution Equation
+    sections:
+    - id: ch03_s3_3
+      title: 3.3 Molarity
+  mass_percentage:
+    label: Mass Percentage
+    sections:
+    - id: ch03_s3_4
+      title: 3.4 Other Units for Solution Concentrations
+  volume_percentage:
+    label: Volume Percentage
+    sections:
+    - id: ch03_s3_4
+      title: 3.4 Other Units for Solution Concentrations
+  mass_volume_percentage:
+    label: Mass-Volume Percentage
+    sections:
+    - id: ch03_s3_4
+      title: 3.4 Other Units for Solution Concentrations
+  parts_per_million:
+    label: Parts per Million (ppm)
+    sections:
+    - id: ch03_s3_4
+      title: 3.4 Other Units for Solution Concentrations
+  parts_per_billion:
+    label: Parts per Billion (ppb)
+    sections:
+    - id: ch03_s3_4
+      title: 3.4 Other Units for Solution Concentrations

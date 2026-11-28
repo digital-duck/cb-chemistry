@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Precipitation Prediction | Chemistry Ch15</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="precipitation-prediction">Precipitation Prediction</h2>
+<p>Precipitation prediction is the process of estimating whether, when, and how much rain, snow, or other moisture will fall in a given location, based on observed atmospheric conditions. Meteorologists don't forecast precipitation as a simple yes/no event; instead, they produce a <strong>probability of precipitation (PoP)</strong> — the likelihood that measurable precipitation will occur at a specific point during a specific time window, given the current state of the atmosphere. This probabilistic framing matters because the atmosphere is a chaotic system: small uncertainties in initial measurements (temperature, humidity, wind, pressure) grow over time, making exact outcomes unpredictable beyond a few days even with powerful models.</p>
+<p><strong>Worked example.</strong> Suppose a weather model runs 100 slightly different simulations of tomorrow's atmosphere over your city, each simulation nudged with tiny variations in starting conditions (a technique called <em>ensemble forecasting</em>). If 30 of those 100 simulations produce rain at 3 PM, the forecast reports a 30% chance of rain at that time. This is not a statement about how much it will rain, or a guess weighted by "confidence" — it is a direct frequency count across model runs. If instead 80 of 100 simulations agree, the forecaster reports 80%, reflecting genuine model consensus rather than intuition.</p>
+<p><strong>Problem-solving application.</strong> Consider a farmer deciding whether to harvest today or wait, given a forecast of 40% precipitation with an expected $2,000 loss if crops sit out in the rain, versus a $500 cost of paying workers overtime to harvest early regardless of weather. Using expected value: harvesting now costs a certain $500. Waiting has an expected cost of $0.40 \times \$2{,}000 + 0.60 \times \$0 = \$800$. Since $800 > 500$, the rational choice is to harvest now despite the "more likely than not" dry forecast — because the <em>cost</em> of being wrong outweighs the <em>probability</em> of being wrong. This illustrates a general principle in applied forecasting: decisions should weigh probability against consequence, not treat any threshold (like "50%") as an automatic cutoff. Students can practice this by varying the PoP and payoff values to find the break-even probability at which the two choices cost the same, reinforcing how probabilistic forecasts feed directly into real-world risk management rather than standing alone as predictions to be right or wrong about.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

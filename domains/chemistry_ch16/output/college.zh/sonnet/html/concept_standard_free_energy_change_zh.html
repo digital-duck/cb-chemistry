@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Standard Free Energy Change | Chemistry Ch16</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="standard-free-energy-change">Standard Free Energy Change</h2>
+<p><strong>定义</strong></p>
+<p>标准自由能变（$\Delta G^\circ$）是指反应物与生成物均处于标准状态(浓度为 $1\ \text{mol/L}$、气体分压为 $1\ \text{atm}$、温度通常取 $298\ \text{K}$）下,一个化学反应所伴随的吉布斯自由能变化。它衡量反应在标准条件下驱动力的大小与方向:</p>
+$$
+\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ
+$$
+<p>其中 $\Delta H^\circ$ 为标准焓变,$\Delta S^\circ$ 为标准熵变,$T$ 为绝对温度。当 $\Delta G^\circ < 0$ 时,反应在标准条件下自发进行(放能);当 $\Delta G^\circ > 0$ 时,反应非自发,需要外部能量输入才能进行;$\Delta G^\circ = 0$ 表示体系处于平衡。</p>
+<p>需要强调的是,$\Delta G^\circ$ 描述的是标准条件下的情形,而细胞内实际浓度往往远离标准状态,因此实际自由能变 $\Delta G$ 可能与 $\Delta G^\circ$ 方向相反——这正是许多"非自发"反应能在细胞中进行的原因。</p>
+<p><strong>举例说明</strong></p>
+<p>ATP 水解是生物化学中最常引用的例子:</p>
+$$
+\text{ATP} + \text{H}_2\text{O} \rightarrow \text{ADP} + \text{P}_i \qquad \Delta G^\circ{}' = -30.5\ \text{kJ/mol}
+$$
+<p>（$\Delta G^\circ{}'$ 表示生化标准状态,即 $\text{pH} = 7$ 下的修正值）。负值说明该反应在标准条件下自发释放能量,这也是细胞用 ATP 驱动耗能过程(如肌肉收缩、主动运输)的化学基础。</p>
+<p><strong>解决问题的应用</strong></p>
+<p>标准自由能变还与平衡常数 $K_{eq}$ 直接相关:</p>
+$$
+\Delta G^\circ = -RT\ln K_{eq}
+$$
+<p>其中 $R = 8.314\ \text{J/(mol·K)}$。这一关系让我们能从实验测得的平衡常数反推反应的能量特征,或反过来预测反应偏向生成物还是反应物的程度。</p>
+<p>在解决实际问题时,常见思路是:先查表获得反应物与生成物的标准生成自由能 $\Delta G_f^\circ$,用生成物总和减去反应物总和求出反应的 $\Delta G^\circ$;再据此判断反应方向,或利用上述公式计算 $K_{eq}$,评估反应进行的完全程度。这种"由能量推平衡、由平衡推能量"的双向应用,是代谢途径分析和酶促反应可行性判断的核心工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch16: Thermodynamics (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

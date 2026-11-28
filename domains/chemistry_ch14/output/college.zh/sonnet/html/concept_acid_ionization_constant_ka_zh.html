@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acid Ionization Constant Ka | Chemistry Ch14</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="acid-ionization-constant-ka">Acid Ionization Constant Ka</h2>
+<p><strong>定义</strong></p>
+<p>弱酸在水中并不完全解离，而是建立一个动态平衡。以通式弱酸 $\text{HA}$ 为例：</p>
+$$\text{HA}(aq) + \text{H}_2\text{O}(l) \rightleftharpoons \text{H}_3\text{O}^+(aq) + \text{A}^-(aq)$$
+<p>这个平衡的平衡常数被称为<strong>酸解离常数</strong>（acid ionization constant），记作 $K_a$：</p>
+$$K_a = \frac{[\text{H}_3\text{O}^+][\text{A}^-]}{[\text{HA}]}$$
+<p>由于水是溶剂，其浓度视为恒定，不出现在表达式中。$K_a$ 的数值大小直接反映了酸的强弱：$K_a$ 越大，说明平衡越偏向产物一侧，酸解离得越彻底，酸性越强。强酸（如 $\text{HCl}$）的 $K_a$ 极大（远大于1），因此通常被视为完全解离，不再讨论其 $K_a$ 值；而弱酸（如乙酸 $\text{CH}_3\text{COOH}$）的 $K_a$ 较小，说明大部分分子仍以未解离形式存在。为了方便比较和书写，化学中常用 $\text{p}K_a = -\log K_a$ 来表示，$\text{p}K_a$ 越小，酸性越强。</p>
+<p><strong>例题</strong></p>
+<p>已知乙酸的 $K_a = 1.8 \times 10^{-5}$。求 0.10 mol/L 乙酸溶液中 $[\text{H}_3\text{O}^+]$ 及 pH。</p>
+<p>设解离出的 $[\text{H}_3\text{O}^+] = [\text{CH}_3\text{COO}^-] = x$，未解离的 $[\text{CH}_3\text{COOH}] \approx 0.10 - x \approx 0.10$（因 $K_a$ 很小，近似成立）。</p>
+$$K_a = \frac{x^2}{0.10} = 1.8 \times 10^{-5}$$
+<p>解得 $x = \sqrt{1.8 \times 10^{-6}} \approx 1.3 \times 10^{-3}\ \text{mol/L}$</p>
+<p>因此 $\text{pH} = -\log(1.3 \times 10^{-3}) \approx 2.89$。</p>
+<p><strong>应用与解题策略</strong></p>
+<p>处理 $K_a$ 相关问题时，关键步骤是：写出解离方程式、建立 ICE 表（初始、变化、平衡浓度）、代入平衡表达式求解。当 $K_a$ 远小于初始浓度（通常相差 1000 倍以上）时，可用近似法简化计算，避免解二次方程；若近似导致误差超过5%，则需用求根公式精确求解。此外，比较不同酸的 $K_a$ 值可以预测反应方向：$K_a$ 较大的酸会将质子转移给 $K_a$ 较小的酸的共轭碱，这一原理广泛应用于缓冲溶液配制和滴定终点的预测中。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch14: Acid-Base Equilibria (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

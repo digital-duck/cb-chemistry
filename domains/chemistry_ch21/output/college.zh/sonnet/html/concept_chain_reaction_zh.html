@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chain Reaction | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="chain-reaction-链式反应">Chain Reaction 链式反应</h2>
+<p><strong>定义</strong></p>
+<p>链式反应是指一个反应事件释放出的产物或能量能够直接引发下一个相同类型的反应事件，从而使反应能够自我维持甚至指数级增长的过程。最典型的例子是核裂变链式反应：一个中子撞击铀-235原子核，使其分裂，同时释放出2到3个新的中子；如果这些新中子中至少有一个继续撞击其他铀原子核，反应就会持续下去。这个过程也广泛出现在化学领域，例如自由基聚合反应和某些燃烧反应中，一个活性中间体（自由基）不断生成新的活性中间体，使反应持续传播。</p>
+<p><strong>举例说明</strong></p>
+<p>以铀-235裂变为例：</p>
+$$
+{}^{235}_{92}\text{U} + n \rightarrow {}^{141}_{56}\text{Ba} + {}^{92}_{36}\text{Kr} + 3n + \text{能量}
+$$
+<p>一个中子引发裂变后产生了3个新中子。若平均每次裂变释放的中子中恰好有1个继续引发新的裂变，反应保持稳定（称为"临界"状态）；若超过1个引发新裂变，反应中子数会随时间呈指数增长（"超临界"），这正是核反应堆维持稳定功率输出、或原子弹瞬间释放巨大能量的原理差异所在——反应堆通过控制棒吸收多余中子，把增殖系数精确控制在1附近。</p>
+<p><strong>问题解决应用</strong></p>
+<p>理解链式反应的关键在于分析"增殖因子"（每次反应产生的下一代反应事件数量）如何决定系统的宏观行为。当增殖因子小于1时，反应逐渐熄灭；等于1时反应维持恒定速率；大于1时反应迅速失控。这个框架不仅适用于核反应，也能帮助分析其他自我维持的过程，例如：</p>
+<li><strong>传染病传播</strong>：基本再生数 $R_0$ 类似于增殖因子，$R_0 < 1$ 疫情消退，$R_0 > 1$ 疫情扩散。</li>
+<li><strong>化学燃烧</strong>：自由基链反应中，若链终止速率高于链传播速率，火焰会熄灭；反之则可能失控（爆炸）。</li>
+<p>在实际工程设计中（如核反应堆安全系统或化工厂防爆装置），工程师会主动引入"链终止"机制——例如控制棒吸收中子，或化学反应中加入自由基捕获剂——将增殖因子精确控制在1或以下，从而在获得所需能量输出的同时避免失控风险。这种"控制反馈"的思路，是安全利用任何链式反应过程的核心策略。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

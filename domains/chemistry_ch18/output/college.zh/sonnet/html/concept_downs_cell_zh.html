@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Downs Cell | Chemistry Ch18</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="downs-cell">Downs Cell</h2>
+<p><strong>定义</strong></p>
+<p>道恩斯电解池（Downs Cell）是工业上大规模制备金属钠的电解装置，其原理是对熔融氯化钠（NaCl）进行电解。由于钠是活泼金属，无法通过水溶液电解得到（水会优先在阴极被还原生成氢气），因此必须将 NaCl 加热熔融（约 $801\,^{\circ}\text{C}$），再对熔融盐进行电解。为了降低操作温度、减少能耗，工业上通常加入氯化钙（$\text{CaCl}_2$）作为熔点降低剂，使混合物的熔点降至约 $600\,^{\circ}\text{C}$ 左右即可进行电解。</p>
+<p>电解池的核心反应为：</p>
+<p>阴极（还原）：$\text{Na}^{+} + e^{-} \rightarrow \text{Na}(l)$</p>
+<p>阳极（氧化）：$2\text{Cl}^{-} \rightarrow \text{Cl}_2(g) + 2e^{-}$</p>
+<p>总反应：$2\text{NaCl}(l) \xrightarrow{\text{电解}} 2\text{Na}(l) + \text{Cl}_2(g)$</p>
+<p>道恩斯电解池的结构设计十分巧妙：阴极呈环形，围绕在中心的阳极外侧，二者之间用铁网隔板隔开，防止生成的钠与氯气重新反应。液态钠密度小于熔融盐，会上浮并被收集到集钠室中；氯气则从阳极上方逸出，被单独收集。</p>
+<p><strong>应用实例</strong></p>
+<p>假设某道恩斯电解池以 $50000\,\text{A}$ 的电流连续运行 $24$ 小时，估算可生产多少千克金属钠。</p>
+<p>根据法拉第电解定律，通过的电荷量为：</p>
+$$Q = I \times t = 50000\,\text{A} \times 86400\,\text{s} = 4.32 \times 10^{9}\,\text{C}$$
+<p>由于每个 $\text{Na}^{+}$ 需要 1 个电子还原，摩尔电子数为：</p>
+$$n_{e^-} = \frac{Q}{F} = \frac{4.32\times10^{9}}{96485} \approx 44780\,\text{mol}$$
+<p>对应生成钠的物质的量与电子相同，即约 $44780\,\text{mol}$，质量为：</p>
+$$m = n \times M = 44780\,\text{mol} \times 22.99\,\text{g/mol} \approx 1.03\times10^{6}\,\text{g} \approx 1030\,\text{kg}$$
+<p><strong>解决问题的应用</strong></p>
+<p>这类计算体现了电解工业中"电流—时间—产量"之间的定量关系，是化学与化工设计相结合的典型问题。学生在处理时应牢记：法拉第常数 $F$ 连接了电荷量与物质的量，而反应的电子转移数（此处为 1）决定了产物摩尔数与电子摩尔数的比例。掌握这一方法后，可推广至电解精炼铜、电镀锌等工业过程的产率估算。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch18: Representative Metals, Metalloids, and Nonmetals (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

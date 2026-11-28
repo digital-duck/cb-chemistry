@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atom Economy | Chemistry Ch04</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="atom-economy-原子经济性">Atom Economy（原子经济性）</h2>
+<p><strong>定义</strong></p>
+<p>原子经济性（atom economy）是评价化学反应"绿色程度"的定量指标，由 Barry Trost 于 1991 年提出。它衡量反应物中有多少质量最终转化为目标产物，而不是变成废弃的副产物。计算公式为：</p>
+$$
+\text{原子经济性} = \frac{M_{\text{目标产物}}}{\sum M_{\text{反应物}}} \times 100\%
+$$
+<p>其中 $M$ 表示以化学计量比配平后各物质的摩尔质量之和。原子经济性与"产率（yield）"不同：产率衡量的是实际得到产物与理论产物之比（反应进行得是否完全），而原子经济性衡量的是反应本身在设计上是否高效——即使产率达到 100%，如果反应生成大量副产物，原子经济性仍然很低。加成反应（addition）、重排反应通常原子经济性高，而取代反应、消去反应因生成小分子副产物（如 HCl、H₂O）而效率较低。</p>
+<p><strong>实例分析</strong></p>
+<p>以工业上生产环氧丙烷的两种路线为例。氯醇法：</p>
+$$
+\text{CH}_2=\text{CHCH}_3 + \text{Cl}_2 + \text{H}_2\text{O} \rightarrow \text{C}_3\text{H}_6\text{O} + 2\text{HCl}
+$$
+<p>反应物总摩尔质量约为 42 + 71 + 18 = 131 g/mol，目标产物环氧丙烷为 58 g/mol，原子经济性仅为 $58/131 \times 100\% \approx 44\%$，一半以上质量变成 HCl 废物。而催化环氧化路线直接用氧化剂将丙烯氧化，副产物极少，原子经济性可达 90% 以上。这说明即使两条路线产率相近，其环境代价和原料成本差异巨大。</p>
+<p><strong>解题应用</strong></p>
+<p>在实际计算中，需先写出配平的化学方程式，确定唯一的目标产物，再用相对分子质量之和求比值。例如，比较阿司匹林合成中乙酰化反应（水杨酸 + 乙酸酐 → 阿司匹林 + 乙酸）与其他酰化方法的原子经济性，可以帮助判断哪种试剂选择更符合绿色化学原则。企业在工艺路线选择、催化剂设计时，常将原子经济性与产率、原子利用率共同作为筛选标准，以降低废物处理成本并减少环境负担。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch4: Stoichiometry of Chemical Reactions (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

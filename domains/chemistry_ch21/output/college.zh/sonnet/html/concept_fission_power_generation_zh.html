@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fission Power Generation | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="fission-power-generation">Fission Power Generation</h2>
+<p><strong>定义</strong></p>
+<p>核裂变发电是利用重原子核（通常是铀-235或钚-239）吸收一个中子后分裂成两个较轻原子核的反应，将释放的能量转化为电能的过程。裂变发生时，原子核质量的极小部分转化为能量，依据爱因斯坦质能关系 $E = mc^2$，即使损失的质量 $\Delta m$ 极小，释放的能量也十分巨大。每次铀-235裂变还会释放2到3个新中子，这些中子若被其他铀核吸收，便可引发新的裂变，形成链式反应。核电站通过控制棒吸收多余中子，将链式反应维持在稳定（临界）状态，而不是失控（超临界）状态。裂变释放的能量以热的形式加热冷却剂（通常是水），产生蒸汽推动汽轮机旋转，进而带动发电机产生电力——本质上仍是一种"烧开水发电"的技术，只是热源换成了原子核而非化石燃料。</p>
+<p><strong>实例解析</strong></p>
+<p>以典型的压水反应堆为例：铀-235核吸收一个热中子后分裂，生成两个较轻的裂变产物（如钡-141和氪-92），并释放约200 MeV的能量，外加2到3个中子。反应式可简写为：</p>
+$$^{235}_{92}\text{U} + n \rightarrow \, ^{141}_{56}\text{Ba} + \, ^{92}_{36}\text{Kr} + 3n + \text{能量}$$
+<p>这200 MeV能量看似微小，但1克铀-235完全裂变释放的能量相当于约3吨煤燃烧释放的能量，这体现了核燃料极高的能量密度。反应堆堆芯中，燃料棒排列在冷却剂中，控制棒插入深度决定被吸收的中子数量，从而精确调节反应速率，使有效增殖因子 $k$ 维持在1附近（$k=1$为临界，链式反应速率恒定）。</p>
+<p><strong>问题解决应用</strong></p>
+<p>工程师和政策制定者需要运用裂变原理解决实际问题：例如，如何设计控制系统以防止堆芯过热（如三里岛、切尔诺贝尔事故的教训）；如何处理具有长半衰期的放射性废料；以及如何评估核电相对于风能、太阳能等低碳能源在能量密度、稳定性（不受天气影响）和退役成本上的权衡。此外，理解链式反应的自持条件，也有助于分析核安全法规为何要求多重独立的安全屏障（如安全壳、应急堆芯冷却系统），以应对中子通量失控的风险。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

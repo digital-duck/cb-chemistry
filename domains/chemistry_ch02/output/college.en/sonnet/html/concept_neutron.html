@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neutron | Chemistry Ch02</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="neutron">Neutron</h2>
+<p>The neutron is an electrically neutral particle residing in the atomic nucleus alongside protons. Its mass, $1.675 \times 10^{-27}\text{ kg}$ (about $1.0087$ atomic mass units), is slightly greater than that of the proton, and its existence explains a puzzle that troubled early 20th-century physicists: why do atoms of the same element sometimes have different masses? Ernest Rutherford had proposed in 1920 that the nucleus might contain a neutral particle to account for the "missing" mass beyond what protons alone could supply, but no one could detect it directly, since detectors of the era relied on charge to register particles. James Chadwick resolved this in 1932 by bombarding beryllium with alpha particles and observing a radiation that could knock protons out of paraffin wax yet left no trace in a charge-sensitive detector. He correctly interpreted this as a neutral particle with roughly the mass of a proton — the neutron — earning him the 1935 Nobel Prize in Physics.</p>
+<p><strong>Worked example.</strong> Consider carbon: every carbon atom has 6 protons (defining it as carbon), but the number of neutrons can vary. Carbon-12 has 6 neutrons ($6p + 6n = 12$ mass units), while carbon-14 has 8 neutrons ($6p + 8n = 14$). These are isotopes — same element, different neutron count, different mass and different nuclear stability. Carbon-14 is unstable and undergoes radioactive decay at a known rate, which is exactly why it is used in radiocarbon dating.</p>
+<p><strong>Problem-solving application.</strong> Given an isotope notation like $^{23}_{11}\text{Na}$, you can find the neutron count directly: mass number ($A = 23$) minus atomic number ($Z = 11$) gives $N = A - Z = 12$ neutrons. This simple subtraction is a standard tool for identifying isotopes, predicting nuclear stability (nuclei with neutron-to-proton ratios far from typical values tend to be radioactive), and balancing nuclear equations in fission and fusion reactions, where the total number of protons and neutrons must be conserved on both sides.</p>
+<p>Because neutrons carry no charge, they are not repelled by the positively charged nucleus, making them effective projectiles for inducing nuclear reactions — a property later exploited in nuclear fission reactors and weapons research.</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch2: Atoms, Molecules, and Ions (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Concept Graph — graph</title>
+<script src="https://unpkg.com/vis-network@9.1.9/standalone/umd/vis-network.min.js"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,sans-serif;background:#f0f2f5;overflow:hidden;height:100vh}
+.app{
+  display:grid;
+  grid-template-columns:230px 1fr 210px;
+  grid-template-rows:60vh 40vh;
+  height:100vh;
+  gap:0;
+}
+/* ── Left sidebar: learning path ── */
+#path-sidebar{
+  grid-column:1;grid-row:1/3;
+  background:#f5f6f8;color:#2a2a2a;
+  display:flex;flex-direction:column;
+  overflow:hidden;
+  border-right:1px solid #dde0e6;
+}
+#path-header{
+  padding:14px 14px 10px;
+  border-bottom:1px solid #dde0e6;
+  flex-shrink:0;
+}
+#path-header h1{font-size:13px;letter-spacing:.05em;text-transform:uppercase;color:#888;margin-bottom:2px;font-weight:700}
+#path-header .domain-name{font-size:11px;color:#555;margin-top:4px}
+#path-steps{flex:1;overflow-y:auto;padding:8px 0}
+#path-steps .hint{color:#aaa;font-size:12px;text-align:center;padding:24px 12px;line-height:1.5}
+.step-item{
+  display:flex;align-items:flex-start;gap:8px;
+  padding:7px 12px;cursor:pointer;
+  border-left:3px solid transparent;
+  transition:background .15s;
+}
+.step-item:hover{background:#ebebf0}
+.step-item.active{background:#e8eef8;border-left-color:#4a90d9}
+.step-item.target{background:#eaf5ea;border-left-color:#4caf50}
+.step-num{min-width:20px;font-size:10px;font-weight:700;color:#bbb;padding-top:2px;flex-shrink:0}
+.step-item.target .step-num{color:#4caf50}
+.step-label{font-size:12px;font-weight:600;color:#333;line-height:1.4}
+.step-def{font-size:10px;color:#888;margin-top:2px;line-height:1.4}
+.step-kind{display:inline-block;padding:0 5px;border-radius:8px;font-size:9px;font-weight:700;margin-left:4px}
+#path-count{font-size:10px;color:#aaa;margin-top:3px}
+/* ── Graph panel ── */
+#graph-panel{
+  grid-column:2;grid-row:1;
+  position:relative;background:#fff;
+  border-bottom:2px solid #dde;
+}
+#graph-container{width:100%;height:100%}
+.graph-recenter-btn{
+  position:absolute;right:16px;bottom:16px;z-index:50;
+  padding:6px 14px;border-radius:6px;
+  border:1px solid #1e3a5f;background:#1e3a5f;color:#fff;
+  font-size:12px;font-weight:600;font-family:system-ui,sans-serif;
+  box-shadow:0 1px 4px rgba(0,0,0,.25);cursor:pointer;
+}
+.graph-recenter-btn:hover{background:#28496f;border-color:#28496f}
+/* ── Explanation panel ── */
+#explain-panel{
+  grid-column:2;grid-row:2;
+  background:#fff;overflow-y:auto;
+  padding:16px 20px;
+}
+#explain-panel .empty{color:#aaa;font-size:13px;padding:20px 0;text-align:center}
+#explain-panel .node-title{
+  display:flex;align-items:center;gap:8px;margin-bottom:10px;
+}
+#explain-panel .node-title h2{font-size:16px;color:#1e3a5f}
+.badge{
+  display:inline-block;padding:2px 8px;border-radius:10px;
+  font-size:11px;font-weight:700;
+}
+.badge.primitive{background:#e8f5e9;color:#2e7d32}
+.badge.concept{background:#e3f2fd;color:#1565c0}
+.badge.application{background:#fff3e0;color:#ef6c00}
+.tier-tag{font-size:11px;color:#999;margin-left:auto}
+#explain-panel .defines{
+  font-size:14px;color:#333;line-height:1.6;margin-bottom:12px;
+  padding:10px 12px;background:#f8f9fb;border-radius:6px;
+  border-left:3px solid #90b4e8;
+}
+#explain-panel .section-label{
+  font-size:10px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.08em;color:#999;margin-bottom:6px;
+}
+#explain-panel .prereq-list{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.prereq-chip{
+  padding:3px 9px;border-radius:12px;font-size:11px;
+  background:#e3f2fd;color:#1565c0;cursor:pointer;
+  border:1px solid #90caf9;transition:background .12s;
+}
+.prereq-chip:hover{background:#bbdefb}
+#explain-panel .meta-row{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:10px}
+.meta-item{font-size:12px;color:#555}
+.meta-item b{color:#1e3a5f}
+#explain-panel .play-hint{
+  font-size:12px;color:#5a5a5a;line-height:1.6;
+  padding:8px 12px;background:#fffde7;border-radius:6px;
+  border-left:3px solid #ffd54f;margin-bottom:8px;
+}
+/* ── Notes sidebar ── */
+#notes-sidebar{
+  grid-column:3;grid-row:1/3;
+  background:#fafaf8;
+  border-left:2px solid #e8e8e0;
+  display:flex;flex-direction:column;
+  overflow:hidden;
+}
+#notes-header{
+  padding:10px 12px 8px;
+  border-bottom:1px solid #e0e0d8;
+  flex-shrink:0;
+}
+#notes-header-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:2px}
+#notes-header h2{font-size:12px;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.06em;margin:0}
+#notes-node-label{font-size:11px;color:#999;margin-top:2px}
+.nb-btn{font-size:10px;padding:2px 7px;border-radius:3px;
+  border:1px solid #ddd;background:#f0f0ea;cursor:pointer;color:#777;
+  font-family:system-ui,sans-serif}
+.nb-btn:hover{background:#e0e0d8;color:#444}
+#notes-textarea{
+  flex:0 0 auto;height:100px;border:none;resize:none;
+  padding:12px;font-size:12px;line-height:1.6;
+  font-family:inherit;background:#fafaf8;color:#333;
+  outline:none;
+}
+#notes-with-entries{
+  border-top:1px solid #e8e8e0;flex:1;min-height:0;overflow-y:auto;
+}
+.note-entry{
+  padding:6px 12px;cursor:pointer;
+  border-bottom:1px solid #f0f0e8;
+  font-size:11px;
+}
+.note-entry:hover{background:#f0efe8}
+.note-entry .note-node{font-weight:600;color:#555;display:flex;justify-content:space-between;align-items:center}
+.note-entry .note-ts{font-weight:400;color:#bbb;font-size:10px}
+.note-entry .note-preview{color:#999;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* ── kind badge colours in sidebar ── */
+.primitive-k{background:#e8f5e9;color:#2e7d32}
+.concept-k{background:#e3f2fd;color:#1565c0}
+.application-k{background:#fff3e0;color:#ef6c00}
+/* ── concept detail panel ── */
+#concept-detail{margin-top:14px;border-top:1px solid #e8e8e0;padding-top:10px;}
+#concept-iframe{width:100%;height:500px;border:1px solid #e0e0d8;border-radius:4px;margin-top:6px;display:block;}
+.concept-not-found{color:#e57373;font-size:12px;padding:6px 0;font-style:italic;}
+</style>
+</head>
+<body>
+<div class="app">
+
+<!-- LEFT: learning path sidebar -->
+<aside id="path-sidebar">
+  <div id="path-header">
+    <h1>Learning Path</h1>
+    <div class="domain-name">graph</div>
+    <div id="path-count"></div>
+  </div>
+  <div id="path-steps">
+    <div class="hint">Click any node in the graph<br>to see its learning path</div>
+  </div>
+</aside>
+
+<!-- CENTRE TOP: concept graph -->
+<div id="graph-panel">
+  <div id="graph-container"></div>
+  <button class="graph-recenter-btn" onclick="reCenterGraph()" title="Re-fit the graph to the viewport">Re-Center</button>
+</div>
+
+<!-- CENTRE BOTTOM: explanation panel -->
+<div id="explain-panel">
+  <div class="empty">Select a node to see its definition, prerequisites, and learning context.</div>
+</div>
+
+<!-- RIGHT: notes sidebar -->
+<aside id="notes-sidebar">
+  <div id="notes-header">
+    <div id="notes-header-top">
+      <h2>Notes</h2>
+      <div>
+        <button class="nb-btn" id="nb-clear-btn" onclick="clearNote()">Clear</button>
+        <button class="nb-btn" onclick="exportNotes()">Export</button>
+      </div>
+    </div>
+    <div id="notes-node-label">no node selected</div>
+  </div>
+  <textarea id="notes-textarea" placeholder="Type notes here&#10;(auto-saved per node)"></textarea>
+  <div id="notes-with-entries"></div>
+</aside>
+
+</div><!-- .app -->
+
+<script>
+const RAW = {"nodes": [{"id": "electron_configuration", "label": "electron configuration", "kind": "primitive", "tier": 0, "defines": "The arrangement of electrons in atomic orbitals, including the rule that s electrons are removed before d or f electrons when forming transition metal ions.", "prereqs": [], "verifier": "", "lab": "", "play": "", "color": {"background": "#fffde7", "border": "#795548"}, "font": {"size": 13}}, {"id": "oxidation_state", "label": "oxidation state", "kind": "primitive", "tier": 0, "defines": "A number assigned to an element in a compound indicating the degree of oxidation, used to track electron transfer in chemical reactions.", "prereqs": [], "verifier": "", "lab": "", "play": "", "color": {"background": "#fffde7", "border": "#795548"}, "font": {"size": 13}}, {"id": "lewis_acid_base_interaction", "label": "lewis acid base interaction", "kind": "primitive", "tier": 0, "defines": "A chemical interaction in which a Lewis base donates an electron pair to a Lewis acid acceptor.", "prereqs": [], "verifier": "", "lab": "", "play": "", "color": {"background": "#fffde7", "border": "#795548"}, "font": {"size": 13}}, {"id": "reduction_potential", "label": "reduction potential", "kind": "primitive", "tier": 0, "defines": "A measure of the tendency of a chemical species to be reduced, used to predict the relative reactivity and oxidizing power of transition metal ions.", "prereqs": [], "verifier": "", "lab": "", "play": "", "color": {"background": "#fffde7", "border": "#795548"}, "font": {"size": 13}}, {"id": "paramagnetism_diamagnetism", "label": "paramagnetism diamagnetism", "kind": "primitive", "tier": 0, "defines": "Paramagnetism is the attraction of a substance to a magnetic field due to unpaired electrons; diamagnetism is the slight repulsion of a substance with no unpaired electrons.", "prereqs": [], "verifier": "", "lab": "", "play": "", "color": {"background": "#fffde7", "border": "#795548"}, "font": {"size": 13}}, {"id": "transition_metals", "label": "transition metals", "kind": "concept", "tier": 1, "defines": "Elements with partially filled d orbitals located in groups 3–11 of the periodic table, organized into first, second, third, and fourth transition series.", "prereqs": ["electron_configuration"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "inner_transition_metals", "label": "inner transition metals", "kind": "concept", "tier": 1, "defines": "The f-block elements—lanthanides (atomic numbers 57–71) and actinides (atomic numbers 89–103)—which have valence electrons in f orbitals.", "prereqs": ["electron_configuration"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "coordinate_covalent_bond", "label": "coordinate covalent bond", "kind": "concept", "tier": 1, "defines": "A covalent bond in which both electrons are donated by a single atom (the Lewis base) to an electron acceptor (the Lewis acid).", "prereqs": ["lewis_acid_base_interaction"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "pairing_energy", "label": "pairing energy", "kind": "concept", "tier": 1, "defines": "The energy required to place two electrons with opposite spins into the same orbital, which competes with crystal field splitting in determining electron arrangement in d orbitals.", "prereqs": ["electron_configuration"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "transition_metal_oxidation_states", "label": "transition metal oxidation states", "kind": "concept", "tier": 2, "defines": "The ability of transition metals to exist in multiple stable oxidation states due to the availability of both s and d valence electrons for removal.", "prereqs": ["transition_metals", "oxidation_state"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "ligand", "label": "ligand", "kind": "concept", "tier": 2, "defines": "An ion or neutral molecule that donates one or more lone pairs of electrons to a central metal ion to form a coordination compound.", "prereqs": ["coordinate_covalent_bond"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "central_metal_ion", "label": "central metal ion", "kind": "concept", "tier": 2, "defines": "The metal atom or ion at the core of a coordination complex that acts as a Lewis acid and accepts electron pairs from ligands.", "prereqs": ["lewis_acid_base_interaction", "transition_metals"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "metal_extraction", "label": "metal extraction", "kind": "concept", "tier": 2, "defines": "The three-stage process of preliminary treatment, smelting, and refining used to isolate transition metals from their ores, illustrated by iron, copper, and silver.", "prereqs": ["transition_metals", "oxidation_state"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "transition_metal_compounds", "label": "transition metal compounds", "kind": "concept", "tier": 3, "defines": "Binary and polyatomic compounds of transition metals—including halides, oxides, hydroxides, and carbonates—whose bonding character shifts from ionic at low oxidation states to covalent at high oxidation states.", "prereqs": ["transition_metal_oxidation_states"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "coordination_compound", "label": "coordination compound", "kind": "concept", "tier": 3, "defines": "A stable compound in which a central metal atom or ion acts as a Lewis acid and accepts one or more pairs of electrons from surrounding ligands via coordinate covalent bonds.", "prereqs": ["central_metal_ion", "ligand"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "monodentate_ligand", "label": "monodentate ligand", "kind": "concept", "tier": 3, "defines": "A ligand that attaches to the central metal through a single coordinate covalent bond from one donor atom.", "prereqs": ["ligand"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "polydentate_ligand", "label": "polydentate ligand", "kind": "concept", "tier": 3, "defines": "A ligand that bonds to a central metal ion through two or more donor atoms simultaneously, classified by the number of donor sites (bidentate, tridentate, etc.).", "prereqs": ["ligand"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "hydrometallurgy", "label": "hydrometallurgy", "kind": "concept", "tier": 3, "defines": "A metal separation process in which the metal is first converted into soluble ions, extracted from the ore mixture, and then reduced to precipitate the pure metal.", "prereqs": ["metal_extraction"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "coordination_number", "label": "coordination number", "kind": "concept", "tier": 4, "defines": "The number of donor atoms bonded to the central metal ion in a coordination complex, with two, four, and six being the most common values.", "prereqs": ["coordination_compound"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "coordination_sphere", "label": "coordination sphere", "kind": "concept", "tier": 4, "defines": "The central metal ion or atom together with all directly attached ligands, enclosed in brackets in the chemical formula.", "prereqs": ["coordination_compound"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "chelate", "label": "chelate", "kind": "concept", "tier": 4, "defines": "A coordination complex formed when one or more polydentate ligands bond to a central metal ion through multiple donor atoms, creating ring-like structures.", "prereqs": ["polydentate_ligand", "coordination_compound"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "nomenclature_of_complexes", "label": "nomenclature of complexes", "kind": "concept", "tier": 4, "defines": "The systematic naming rules for coordination compounds based on Werner's system, specifying ligand names and counts, metal identity, and oxidation state.", "prereqs": ["coordination_compound", "oxidation_state"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "linkage_isomers", "label": "linkage isomers", "kind": "concept", "tier": 4, "defines": "Coordination isomers that arise when an ambidentate ligand (such as CN⁻ or SCN⁻) can bind to the metal through either of two different donor atoms.", "prereqs": ["coordination_compound", "monodentate_ligand"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "crystal_field_theory", "label": "crystal field theory", "kind": "concept", "tier": 4, "defines": "An electrostatic model that explains the colors, magnetic behavior, and structures of coordination compounds by treating ligands as point charges that split the energies of the central metal's d orbitals.", "prereqs": ["coordination_compound"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "complex_geometry", "label": "complex geometry", "kind": "concept", "tier": 5, "defines": "The spatial arrangement of ligands around the central metal ion, determined by coordination number, with octahedral (CN=6), square planar and tetrahedral (CN=4), and linear (CN=2) being most common.", "prereqs": ["coordination_compound", "coordination_number"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "ionization_isomers", "label": "ionization isomers", "kind": "concept", "tier": 5, "defines": "Coordination isomers in which an anionic ligand inside the coordination sphere is exchanged with the counter-ion outside the sphere.", "prereqs": ["coordination_sphere"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "d_orbital_splitting", "label": "d orbital splitting", "kind": "concept", "tier": 5, "defines": "The separation of the five d orbitals into sets of different energies caused by electrostatic repulsion from ligands, yielding t2g and eg sets in octahedral complexes.", "prereqs": ["crystal_field_theory"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "geometric_isomers", "label": "geometric isomers", "kind": "concept", "tier": 6, "defines": "Isomers of coordination complexes that have the same atoms connected by the same bond types but differ in spatial orientation, exemplified by cis and trans configurations.", "prereqs": ["complex_geometry"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "optical_isomers", "label": "optical isomers", "kind": "concept", "tier": 6, "defines": "Pairs of coordination complexes that are nonsuperimposable mirror images of each other, differing only in their interaction with polarized light and other chiral molecules.", "prereqs": ["complex_geometry"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "crystal_field_splitting", "label": "crystal field splitting", "kind": "concept", "tier": 6, "defines": "The energy difference between the eg and t2g orbital sets in an octahedral complex, whose magnitude depends on the identity of the ligands, the metal charge, and the d-orbital period.", "prereqs": ["d_orbital_splitting"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "spectrochemical_series", "label": "spectrochemical series", "kind": "concept", "tier": 7, "defines": "A ranking of ligands in order of the magnitude of crystal field splitting they produce, from weak-field ligands (small Δoct) to strong-field ligands (large Δoct).", "prereqs": ["crystal_field_splitting"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "high_spin_low_spin_complexes", "label": "high spin low spin complexes", "kind": "concept", "tier": 7, "defines": "Octahedral complexes in which electrons maximize unpaired spins by occupying all d orbitals before pairing (high-spin, Δoct < P) or minimize unpaired spins by filling lower t2g orbitals first (low-spin, Δoct > P).", "prereqs": ["crystal_field_splitting", "pairing_energy"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "color_of_complexes", "label": "color of complexes", "kind": "concept", "tier": 7, "defines": "The visible color exhibited by coordination compounds when d-d electron transitions absorb photons in the visible spectrum, with the observed color being complementary to the absorbed wavelengths.", "prereqs": ["crystal_field_splitting"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "magnetic_moment_of_complexes", "label": "magnetic moment of complexes", "kind": "concept", "tier": 8, "defines": "The experimentally measured magnetic property of a complex that reflects the number of unpaired electrons, used to confirm high-spin or low-spin assignments predicted by crystal field theory.", "prereqs": ["high_spin_low_spin_complexes", "paramagnetism_diamagnetism"], "verifier": "", "lab": "", "play": "", "color": {"background": "#e8f5e9", "border": "#2e7d32"}, "font": {"size": 13}}, {"id": "transition_metal_catalysts", "label": "transition metal catalysts", "kind": "application", "tier": 4, "defines": "The industrial application of transition metals as catalysts in manufacturing processes, enabled by their ability to adopt multiple oxidation states and bind ligands.", "prereqs": ["transition_metal_oxidation_states", "coordination_compound"], "verifier": "", "lab": "", "play": "", "color": {"background": "#fce4ec", "border": "#c62828"}, "font": {"size": 13}}, {"id": "high_temperature_superconductors", "label": "high temperature superconductors", "kind": "application", "tier": 4, "defines": "Transition metal oxide compounds, such as YBa2Cu3O7, that conduct electricity with zero resistance at temperatures achievable with liquid nitrogen cooling.", "prereqs": ["transition_metal_compounds"], "verifier": "", "lab": "", "play": "", "color": {"background": "#fce4ec", "border": "#c62828"}, "font": {"size": 13}}, {"id": "hemoglobin_oxygen_transport", "label": "hemoglobin oxygen transport", "kind": "application", "tier": 5, "defines": "The biological application of coordination chemistry in which iron(II) within the heme chelate of hemoglobin reversibly binds oxygen for transport in the blood.", "prereqs": ["chelate", "crystal_field_theory"], "verifier": "", "lab": "", "play": "", "color": {"background": "#fce4ec", "border": "#c62828"}, "font": {"size": 13}}, {"id": "chelation_therapy", "label": "chelation therapy", "kind": "application", "tier": 5, "defines": "The medical use of polydentate ligands such as BAL, enterobactin, and DMSA to form water-soluble chelates with toxic heavy metals or excess iron, enabling their elimination from the body.", "prereqs": ["chelate"], "verifier": "", "lab": "", "play": "", "color": {"background": "#fce4ec", "border": "#c62828"}, "font": {"size": 13}}, {"id": "cisplatin_anticancer", "label": "cisplatin anticancer", "kind": "application", "tier": 7, "defines": "The square-planar cis-diamminedichloroplatinum(II) coordination compound used to treat cancer by inhibiting cell division, with only the cis isomer being therapeutically active.", "prereqs": ["geometric_isomers"], "verifier": "", "lab": "", "play": "", "color": {"background": "#fce4ec", "border": "#c62828"}, "font": {"size": 13}}], "edges": [{"from": "electron_configuration", "to": "transition_metals"}, {"from": "electron_configuration", "to": "inner_transition_metals"}, {"from": "electron_configuration", "to": "pairing_energy"}, {"from": "oxidation_state", "to": "transition_metal_oxidation_states"}, {"from": "oxidation_state", "to": "metal_extraction"}, {"from": "oxidation_state", "to": "nomenclature_of_complexes"}, {"from": "lewis_acid_base_interaction", "to": "coordinate_covalent_bond"}, {"from": "lewis_acid_base_interaction", "to": "central_metal_ion"}, {"from": "paramagnetism_diamagnetism", "to": "magnetic_moment_of_complexes"}, {"from": "transition_metals", "to": "transition_metal_oxidation_states"}, {"from": "transition_metals", "to": "central_metal_ion"}, {"from": "transition_metals", "to": "metal_extraction"}, {"from": "coordinate_covalent_bond", "to": "ligand"}, {"from": "pairing_energy", "to": "high_spin_low_spin_complexes"}, {"from": "transition_metal_oxidation_states", "to": "transition_metal_compounds"}, {"from": "transition_metal_oxidation_states", "to": "transition_metal_catalysts"}, {"from": "ligand", "to": "coordination_compound"}, {"from": "ligand", "to": "monodentate_ligand"}, {"from": "ligand", "to": "polydentate_ligand"}, {"from": "central_metal_ion", "to": "coordination_compound"}, {"from": "metal_extraction", "to": "hydrometallurgy"}, {"from": "transition_metal_compounds", "to": "high_temperature_superconductors"}, {"from": "coordination_compound", "to": "coordination_number"}, {"from": "coordination_compound", "to": "coordination_sphere"}, {"from": "coordination_compound", "to": "chelate"}, {"from": "coordination_compound", "to": "nomenclature_of_complexes"}, {"from": "coordination_compound", "to": "linkage_isomers"}, {"from": "coordination_compound", "to": "crystal_field_theory"}, {"from": "coordination_compound", "to": "complex_geometry"}, {"from": "coordination_compound", "to": "transition_metal_catalysts"}, {"from": "monodentate_ligand", "to": "linkage_isomers"}, {"from": "polydentate_ligand", "to": "chelate"}, {"from": "coordination_number", "to": "complex_geometry"}, {"from": "coordination_sphere", "to": "ionization_isomers"}, {"from": "chelate", "to": "hemoglobin_oxygen_transport"}, {"from": "chelate", "to": "chelation_therapy"}, {"from": "crystal_field_theory", "to": "d_orbital_splitting"}, {"from": "crystal_field_theory", "to": "hemoglobin_oxygen_transport"}, {"from": "complex_geometry", "to": "geometric_isomers"}, {"from": "complex_geometry", "to": "optical_isomers"}, {"from": "d_orbital_splitting", "to": "crystal_field_splitting"}, {"from": "geometric_isomers", "to": "cisplatin_anticancer"}, {"from": "crystal_field_splitting", "to": "spectrochemical_series"}, {"from": "crystal_field_splitting", "to": "high_spin_low_spin_complexes"}, {"from": "crystal_field_splitting", "to": "color_of_complexes"}, {"from": "high_spin_low_spin_complexes", "to": "magnetic_moment_of_complexes"}]};
+const DOMAIN_KEY = "graph";
+
+// ── index ──────────────────────────────────────────────────────────────────
+const nodeIndex = {};
+RAW.nodes.forEach(n => nodeIndex[n.id] = n);
+
+const prereqOf  = {};  // id → ids that are direct prerequisites OF id
+const dependsOn = {};  // id → ids that id feeds into
+RAW.nodes.forEach(n => { prereqOf[n.id] = []; dependsOn[n.id] = []; });
+RAW.edges.forEach(e => {
+  prereqOf[e.to].push(e.from);
+  dependsOn[e.from].push(e.to);
+});
+
+// ── BFS longest-path levels (fixes application nodes at wrong tier) ─────────
+const bfsLevels = (() => {
+  const levels = {};
+  const successors = {};
+  RAW.nodes.forEach(n => { levels[n.id] = -1; successors[n.id] = []; });
+  RAW.edges.forEach(e => successors[e.from].push(e.to));
+  const sources = RAW.nodes.filter(n => !RAW.edges.some(e => e.to === n.id));
+  const queue = sources.map(n => n.id);
+  queue.forEach(n => levels[n] = 0);
+  let i = 0;
+  while (i < queue.length) {
+    const cur = queue[i++];
+    for (const succ of successors[cur]) {
+      const nl = levels[cur] + 1;
+      if (levels[succ] < nl) { levels[succ] = nl; queue.push(succ); }
+    }
+  }
+  return levels;
+})();
+
+// ── graph algorithms ────────────────────────────────────────────────────────
+function getAncestors(targetId) {
+  const visited = new Set();
+  const queue = [targetId];
+  while (queue.length) {
+    const cur = queue.shift();
+    for (const p of prereqOf[cur])
+      if (!visited.has(p)) { visited.add(p); queue.push(p); }
+  }
+  return visited;
+}
+
+function topoSort(nodeSet) {
+  const inDeg = {};
+  nodeSet.forEach(n => inDeg[n] = 0);
+  nodeSet.forEach(n => { for (const p of prereqOf[n]) if (nodeSet.has(p)) inDeg[n]++; });
+  const reach = {};
+  nodeSet.forEach(n => {
+    let r = 0;
+    nodeSet.forEach(m => { if (m !== n && getAncestors(m).has(n)) r++; });
+    reach[n] = r;
+  });
+  const heap = [];
+  nodeSet.forEach(n => { if (inDeg[n] === 0) heap.push(n); });
+  heap.sort((a, b) => (reach[b] - reach[a]) || a.localeCompare(b));
+  const result = [];
+  while (heap.length) {
+    const node = heap.shift();
+    result.push(node);
+    for (const succ of dependsOn[node]) {
+      if (!nodeSet.has(succ)) continue;
+      if (--inDeg[succ] === 0) {
+        heap.push(succ);
+        heap.sort((a, b) => (reach[b] - reach[a]) || a.localeCompare(b));
+      }
+    }
+  }
+  return result;
+}
+
+// ── vis.js network ──────────────────────────────────────────────────────────
+const container = document.getElementById('graph-container');
+const visNodes = new vis.DataSet(RAW.nodes.map(n => ({
+  id: n.id,
+  label: n.label.replace(/ /g, '\n'),
+  level: bfsLevels[n.id] !== undefined ? bfsLevels[n.id] : n.tier,
+  color: n.color,
+  font: n.font,
+  shape: n.kind === 'concept' ? 'ellipse' : 'box',
+})));
+const visEdges = new vis.DataSet(RAW.edges.map((e, i) => ({
+  id: i, from: e.from, to: e.to,
+  arrows: 'to', color: {color: '#c8ccd4'}, width: 1,
+})));
+const network = new vis.Network(container, {nodes: visNodes, edges: visEdges}, {
+  layout: { hierarchical: {
+    enabled: true, direction: 'UD',
+    sortMethod: 'directed', levelSeparation: 85, nodeSpacing: 130,
+  } },
+  physics: { enabled: false },
+  interaction: { hover: true, tooltipDelay: 150 },
+  edges: { smooth: { type: 'cubicBezier', forceDirection: 'vertical' } },
+});
+
+// Compact layout: group by tier, sort alphabetically, left-align all nodes.
+network.once('afterDrawing', function() {
+  const pos = network.getPositions();
+  const spacing = 140;
+
+  // Group nodes by their BFS tier
+  const byTier = {};
+  RAW.nodes.forEach(n => {
+    const tier = bfsLevels[n.id] ?? n.tier ?? 0;
+    if (!byTier[tier]) byTier[tier] = [];
+    byTier[tier].push(n.id);
+  });
+
+  // Sort each tier alphabetically, assign X starting from 0
+  const tiers = Object.keys(byTier).map(Number).sort((a, b) => a - b);
+  const tierSep = 85;
+  tiers.forEach((tier, ti) => {
+    const ids = byTier[tier].sort();
+    const y = ti * tierSep;
+    ids.forEach((id, i) => {
+      network.moveNode(id, i * spacing, y);
+    });
+  });
+
+  network.fit({ animation: false });
+});
+
+function reCenterGraph() {
+  network.fit({ animation: true });
+}
+
+const C_PATH   = {background: '#fff9c4', border: '#f9a825'};
+const C_TARGET = {background: '#ffe082', border: '#e65100'};
+
+function resetColors() {
+  visNodes.update(RAW.nodes.map(n => ({id: n.id, color: n.color})));
+  visEdges.update(RAW.edges.map((e, i) => ({id: i, color: {color: '#c8ccd4'}, width: 1})));
+}
+
+// ── explanation panel ───────────────────────────────────────────────────────
+function renderExplanation(node) {
+  const kclass = node.kind;
+  const prereqChips = (node.prereqs || []).map(p =>
+    `<span class="prereq-chip" onclick="selectNode('${p}')">${p.replace(/_/g,' ')}</span>`
+  ).join('');
+  const metaItems = [
+    node.verifier ? `<span class="meta-item"><b>Verifier:</b> ${node.verifier}</span>` : '',
+    node.lab      ? `<span class="meta-item"><b>Lab:</b> ${node.lab}</span>` : '',
+  ].filter(Boolean).join('');
+  const playHtml = node.play
+    ? `<div class="section-label">Try it</div><div class="play-hint">${node.play}</div>`
+    : '';
+
+  const panel = document.getElementById('explain-panel');
+  panel.innerHTML = `
+    <div class="node-title">
+      <h2>${node.label}</h2>
+      <span class="badge ${kclass}">${kclass}</span>
+      <span class="tier-tag">BFS level ${bfsLevels[node.id] ?? node.tier}</span>
+    </div>
+    ${node.defines ? `<div class="defines">${node.defines}</div>` : ''}
+    ${prereqChips ? `<div class="section-label">Prerequisites</div><div class="prereq-list">${prereqChips}</div>` : ''}
+    ${metaItems ? `<div class="meta-row">${metaItems}</div>` : ''}
+    ${playHtml}
+  `;
+
+  // ── concept HTML detail ──
+  const conceptsBase = window.__cb_CONCEPTS_BASE;
+  const conceptUrls = window.__cb_CONCEPT_URLS || {};
+  const mappedUrl = conceptUrls[node.id];
+  if (mappedUrl || conceptsBase) {
+    const conceptUrl = mappedUrl || (conceptsBase + 'concept_' + encodeURIComponent(node.id) + '.html');
+    const detail = document.createElement('div');
+    detail.id = 'concept-detail';
+    detail.innerHTML = '<div class="section-label">Concept Detail</div><div class="concept-loading" style="color:#aaa;font-size:12px;padding:6px 0">Loading…</div>';
+    panel.appendChild(detail);
+    fetch(conceptUrl)
+      .then(r => {
+        if (!r.ok) throw new Error('not found');
+        return r.text();
+      })
+      .then(html => {
+        const slot = detail.querySelector('.concept-loading');
+        if (!slot) return;
+        // Vite dev server returns the SPA index.html (200) for missing static files.
+        // Verify we got a real concept page by checking for a known marker.
+        if (html.includes('spl-credit') || html.includes('Powered by')) {
+          const iframe = document.createElement('iframe');
+          iframe.id = 'concept-iframe';
+          iframe.src = conceptUrl;
+          slot.replaceWith(iframe);
+        } else {
+          slot.className = 'concept-not-found';
+          slot.textContent = 'Content not found — generate it first.';
+        }
+      })
+      .catch(() => {
+        const slot = detail.querySelector('.concept-loading');
+        if (slot) { slot.className = 'concept-not-found'; slot.textContent = 'Content not found — generate it first.'; }
+      });
+  }
+}
+
+// ── learning path sidebar ───────────────────────────────────────────────────
+function renderPathSidebar(orderedPath, targetId) {
+  const stepsEl = document.getElementById('path-steps');
+  const countEl = document.getElementById('path-count');
+  countEl.textContent = orderedPath.length
+    ? `${orderedPath.length} step${orderedPath.length !== 1 ? 's' : ''} to learn first`
+    : 'Root concept — no prerequisites';
+
+  const target = nodeIndex[targetId];
+  const kc = k => `${k.charAt(0).toUpperCase() + k.slice(1)}`;
+
+  stepsEl.innerHTML = orderedPath.map((n, i) => {
+    const nd = nodeIndex[n];
+    return `<div class="step-item" onclick="selectNode('${n}')">
+      <span class="step-num">${i + 1}.</span>
+      <div>
+        <div class="step-label">${nd.label}
+          <span class="step-kind ${nd.kind}-k">${nd.kind}</span>
+        </div>
+        ${nd.defines ? `<div class="step-def">${nd.defines}</div>` : ''}
+      </div>
+    </div>`;
+  }).join('') + `<div class="step-item target">
+    <span class="step-num">▶</span>
+    <div>
+      <div class="step-label">${target.label}
+        <span class="step-kind ${target.kind}-k">${target.kind}</span>
+      </div>
+      ${target.defines ? `<div class="step-def">${target.defines}</div>` : ''}
+    </div>
+  </div>`;
+}
+
+// ── notes (localStorage) ────────────────────────────────────────────────────
+let currentNodeId = null;
+
+function noteKey(nodeId) { return `concept_notes_${DOMAIN_KEY}_${nodeId}`; }
+
+function loadNote(nodeId) {
+  const parsed = _parseNote(localStorage.getItem(noteKey(nodeId)));
+  return parsed ? parsed.text : '';
+}
+
+function saveNote(nodeId, text) {
+  if (text.trim()) {
+    const data = JSON.stringify({ text, ts: new Date().toISOString() });
+    localStorage.setItem(noteKey(nodeId), data);
+  } else {
+    localStorage.removeItem(noteKey(nodeId));
+  }
+  renderNotesList();
+}
+
+function _parseNote(raw) {
+  if (!raw) return null;
+  try { const d = JSON.parse(raw); return { text: d.text || '', ts: d.ts || '' }; }
+  catch (_) { return { text: raw, ts: '' }; }
+}
+
+function _fmtTs(iso) {
+  if (!iso) return '';
+  const d = new Date(iso);
+  const yy = d.getFullYear();
+  const mm = String(d.getMonth()+1).padStart(2,'0');
+  const dd = String(d.getDate()).padStart(2,'0');
+  const hh = String(d.getHours()).padStart(2,'0');
+  const mi = String(d.getMinutes()).padStart(2,'0');
+  return `${yy}-${mm}-${dd} ${hh}:${mi}`;
+}
+
+function renderNotesList() {
+  const container = document.getElementById('notes-with-entries');
+  const entries = RAW.nodes
+    .filter(n => localStorage.getItem(noteKey(n.id)))
+    .map(n => {
+      const parsed = _parseNote(localStorage.getItem(noteKey(n.id)));
+      return {id: n.id, label: n.label, preview: (parsed?.text || '').slice(0, 60), ts: parsed?.ts || ''};
+    });
+  if (!entries.length) { container.innerHTML = ''; return; }
+  container.innerHTML = entries.map(e =>
+    `<div class="note-entry" onclick="selectNode('${e.id}')">
+      <div class="note-node">${e.label}<span class="note-ts">${_fmtTs(e.ts)}</span></div>
+      <div class="note-preview">${e.preview}</div>
+    </div>`
+  ).join('');
+}
+
+function switchNotes(nodeId) {
+  if (currentNodeId !== null) {
+    saveNote(currentNodeId, document.getElementById('notes-textarea').value);
+  }
+  currentNodeId = nodeId;
+  document.getElementById('notes-textarea').value = loadNote(nodeId);
+  document.getElementById('notes-node-label').textContent =
+    nodeIndex[nodeId]?.label || nodeId;
+}
+
+function clearNote() {
+  if (!currentNodeId) return;
+  document.getElementById('notes-textarea').value = '';
+  saveNote(currentNodeId, '');
+  const btn = document.getElementById('nb-clear-btn');
+  if (btn) { btn.textContent = 'Cleared!'; setTimeout(() => { btn.textContent = 'Clear'; }, 1000); }
+}
+
+function exportNotes() {
+  const notes = {};
+  RAW.nodes.forEach(n => {
+    const v = localStorage.getItem(noteKey(n.id));
+    if (v) notes[n.id] = v;
+  });
+  const blob = new Blob([JSON.stringify(notes, null, 2)], {type: 'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `${DOMAIN_KEY}_notes.json`;
+  a.click();
+}
+
+document.getElementById('notes-textarea').addEventListener('input', () => {
+  if (currentNodeId) saveNote(currentNodeId, document.getElementById('notes-textarea').value);
+});
+
+// ── unified node select ─────────────────────────────────────────────────────
+function selectNode(nodeId) {
+  if (!nodeIndex[nodeId]) return;
+  network.selectNodes([nodeId]);
+  handleSelect(nodeId);
+}
+
+function handleSelect(targetId) {
+  const node = nodeIndex[targetId];
+
+  renderExplanation(node);
+  switchNotes(targetId);
+
+  const ancestors = getAncestors(targetId);
+  const pathSet = new Set([...ancestors]);
+  const orderedPath = topoSort(pathSet);
+
+  renderPathSidebar(orderedPath, targetId);
+
+  resetColors();
+  visNodes.update(orderedPath.map(n => ({id: n, color: C_PATH})));
+  visNodes.update([{id: targetId, color: C_TARGET}]);
+  visEdges.update(RAW.edges.map((e, i) => {
+    const inPath = pathSet.has(e.from) && (pathSet.has(e.to) || e.to === targetId);
+    return {id: i, color: {color: inPath ? '#f9a825' : '#c8ccd4'}, width: inPath ? 2 : 1};
+  }));
+}
+
+network.on('click', params => {
+  if (params.nodes.length) handleSelect(params.nodes[0]);
+});
+
+// initialise notes list on load
+renderNotesList();
+
+// When viewed directly (not in an iframe), inject a back link next to the
+// "Learning Path" heading so it doesn't look like a title-bar element.
+if (window.parent === window) {
+  var h1 = document.querySelector('#path-header h1');
+  if (h1) {
+    var backLink = document.createElement('a');
+    backLink.href = '../../';
+    backLink.textContent = '← App';
+    backLink.style.cssText = [
+      'font-size:10px','color:#2563eb','font-family:system-ui,sans-serif',
+      'text-decoration:none','font-weight:400','letter-spacing:normal',
+      'text-transform:none','white-space:nowrap','flex-shrink:0'
+    ].join(';');
+    var row = document.createElement('div');
+    row.style.cssText = 'display:flex;align-items:baseline;gap:8px;';
+    h1.parentNode.insertBefore(row, h1);
+    row.appendChild(h1);
+    row.appendChild(backLink);
+  }
+}
+</script>
+</body>
+</html>

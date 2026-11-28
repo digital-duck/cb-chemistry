@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Isotope | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="同位素">同位素</h2>
+<p>同位素（isotope）是指质子数相同、中子数不同的同一种元素的不同原子形式。由于质子数决定了元素的化学身份，同位素在化学性质上几乎完全相同；但由于中子数不同，它们的原子质量和原子核的稳定性存在差异。原子核记法通常写作 $^{A}_{Z}X$，其中 $Z$ 是质子数（原子序数），$A$ 是质量数（质子数加中子数）。例如碳元素最常见的同位素是 $^{12}_{6}\text{C}$（6个质子、6个中子），而 $^{14}_{6}\text{C}$ 则多了2个中子，质量数为14。</p>
+<p><strong>举例说明</strong>：氢元素有三种天然同位素——氕（$^{1}_{1}\text{H}$，无中子）、氘（$^{2}_{1}\text{H}$，1个中子）和氚（$^{3}_{1}\text{H}$，2个中子）。三者都表现出氢的化学行为（例如都能与氧结合生成水），但氚的原子核不稳定，会自发发生放射性衰变，而氕和氘则是稳定的。这说明：决定化学性质的是质子数，而决定原子核稳定性的是中子与质子的比例。</p>
+<p>同位素的概念在实际问题中应用广泛，其中最重要的是<strong>放射性测年</strong>。不稳定的同位素会以固定的速率衰变为其他核素，这个速率用"半衰期"（half-life，记作 $t_{1/2}$）描述，即样品中一半原子核衰变所需的时间。例如碳-14的半衰期约为5730年，被广泛用于测定含碳有机物（如化石、木炭）的年代。其衰变遵循指数规律：</p>
+$$N(t) = N_0 \left(\frac{1}{2}\right)^{t/t_{1/2}}$$
+<p>其中 $N_0$ 是初始的放射性原子数，$N(t)$ 是经过时间 $t$ 后剩余的原子数。</p>
+<p><strong>问题解决练习</strong>：假设某考古样本中碳-14的含量剩余为初始值的25%，试估算该样本的年代。由于 $25\% = \left(\frac{1}{2}\right)^2$，说明经过了两个半衰期，即 $2 \times 5730 \approx 11460$ 年。这类计算是地质学、考古学和环境科学中判断样本年代的核心方法，体现了同位素概念从"原子结构"延伸到"实际测年工具"的应用价值。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

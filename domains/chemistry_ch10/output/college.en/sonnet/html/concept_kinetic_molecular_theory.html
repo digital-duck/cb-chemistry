@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kinetic Molecular Theory | Chemistry Ch10</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="kinetic-molecular-theory">Kinetic Molecular Theory</h2>
+<p>The kinetic molecular theory (KMT) explains the macroscopic behavior of gases—pressure, temperature, volume—as consequences of the motion of countless individual particles too small to see. Its core postulates: gas particles are in constant, random motion; the volume of the particles themselves is negligible compared to the space between them; collisions between particles (and with container walls) are perfectly elastic, meaning no kinetic energy is lost; there are no significant attractive or repulsive forces between particles; and the average kinetic energy of the particles is directly proportional to the absolute temperature (in kelvin) of the gas.</p>
+<p>This last point is the theory's payoff: temperature is not some separate mysterious quantity—it <em>is</em> a measure of average molecular motion. Formally, average translational kinetic energy per molecule is $\overline{KE} = \tfrac{3}{2}k_BT$, where $k_B$ is Boltzmann's constant and $T$ is absolute temperature. This relationship is unavoidably quantitative because it defines what temperature means at the molecular level—there's no way to state it correctly in prose alone.</p>
+<p><strong>Worked example.</strong> Suppose a sealed rigid container of gas is heated from 300 K to 600 K. Since average kinetic energy scales linearly with $T$, doubling the temperature doubles the average kinetic energy of the molecules, meaning root-mean-square speed increases by a factor of $\sqrt{2}$ (since $KE \propto v^2$). Molecules strike the walls more frequently and with greater force, so pressure rises—consistent with the ideal gas law $PV = nRT$, which KMT actually derives from first principles rather than merely describing.</p>
+<p><strong>Problem-solving application.</strong> KMT explains phenomena that a purely empirical law like $PV=nRT$ cannot on its own. Why does a gas deviate from ideal behavior at high pressure or low temperature? Because the postulates start to break down: particle volume becomes non-negligible when molecules are packed close together, and intermolecular attractions become significant when molecules move slowly enough (low $T$) for those forces to matter. This is precisely why real gases condense into liquids under sufficient cooling or compression—an outcome the ideal-gas assumptions forbid. When solving problems involving gas behavior at extreme conditions, KMT tells you <em>which</em> assumption is failing, guiding you toward corrected models like the van der Waals equation rather than leaving you to memorize exceptions as isolated facts.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

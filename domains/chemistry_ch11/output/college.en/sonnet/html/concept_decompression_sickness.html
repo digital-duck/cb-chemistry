@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Decompression Sickness | Chemistry Ch11</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="decompression-sickness">Decompression Sickness</h2>
+<p>Decompression sickness (DCS), commonly called "the bends," occurs when a diver or aviator experiences a drop in ambient pressure fast enough that inert gas dissolved in their tissues — mainly nitrogen — comes out of solution and forms bubbles inside the body. It is fundamentally a physics-and-physiology problem, not just a diving hazard: the same principle governs why a soda fizzes when you open the cap. Under pressure, more gas dissolves into a liquid (or tissue) than at normal pressure; when pressure drops abruptly, the excess gas escapes as bubbles rather than diffusing out gradually. In a diver's body, these bubbles can lodge in joints, the spinal cord, or the bloodstream, causing pain, numbness, paralysis, or in severe cases death.</p>
+<p><strong>Worked example.</strong> Consider a diver at 30 meters depth, where ambient pressure is about 4 atmospheres (1 atm at the surface plus roughly 1 atm per 10 meters of seawater). At this pressure, nitrogen dissolves into the diver's tissues at four times the concentration it would at the surface. If the diver ascends directly to the surface — dropping to 1 atm in seconds — the tissues are now supersaturated with nitrogen by a factor of four, and bubbles can form the way they do in a shaken soda can. This is why divers ascend slowly and pause at intermediate depths, called "decompression stops": each stop gives dissolved nitrogen time to diffuse out through the lungs and be exhaled, rather than escaping catastrophically as bubbles.</p>
+<p><strong>Problem-solving application.</strong> Dive planning uses tables or dive computers that model tissue nitrogen loading and calculate a safe ascent rate — typically no faster than about 9–18 meters per minute — plus required stop times at specific depths. Suppose a diver has been at 30 meters for 25 minutes; a dive table might specify a 3-minute stop at 5 meters before surfacing. The underlying logic is a rate problem: the body absorbs and releases nitrogen at a bounded rate depending on tissue type and blood flow, so the diver must budget ascent time so that the <em>rate</em> of pressure decrease never outpaces the <em>rate</em> at which nitrogen can safely diffuse out. This reframes DCS prevention as a scheduling problem — allocating time against a physiological constraint — the same logic engineers use when designing safe pressure-release protocols for industrial systems like pipelines or spacecraft airlocks, where rapid depressurization risks analogous failures.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

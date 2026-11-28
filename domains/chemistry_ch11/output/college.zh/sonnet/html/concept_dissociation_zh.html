@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dissociation | Chemistry Ch11</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="dissociation-解离-电离">Dissociation（解离/电离）</h2>
+<p><strong>定义</strong></p>
+<p>解离（dissociation）是指离子化合物在溶解于水（或其他极性溶剂）时，其晶体中的正负离子彼此分开、分散到溶液中的过程。例如氯化钠溶于水：</p>
+$$\text{NaCl}(s) \xrightarrow{\text{H}_2\text{O}} \text{Na}^+(aq) + \text{Cl}^-(aq)$$
+<p>需要区分的是，解离（dissociation）针对的是原本就以离子形式存在的化合物（离子键化合物），水分子只是把已有的离子"拆散"并包裹（水合）；而电离（ionization）则是描述某些共价化合物（如弱酸）在水中通过化学反应生成离子的过程，例如醋酸：</p>
+$$\text{CH}_3\text{COOH}(aq) \rightleftharpoons \text{CH}_3\text{COO}^-(aq) + \text{H}^+(aq)$$
+<p>两者常被笼统地统称为"电解质在水中生成离子"，但严格来说前者是物理拆分，后者是化学反应。</p>
+<p><strong>举例说明</strong></p>
+<p>强电解质（如 NaCl、KBr、MgCl₂）在水中几乎完全解离。以 $0.10\ \text{mol/L}$ 的 MgCl₂ 溶液为例，每一个 MgCl₂ 单元解离出一个 Mg²⁺ 和两个 Cl⁻：</p>
+$$\text{MgCl}_2(s) \rightarrow \text{Mg}^{2+}(aq) + 2\text{Cl}^-(aq)$$
+<p>因此溶液中离子的总浓度并非 $0.10\ \text{mol/L}$，而是三倍，即 $0.30\ \text{mol/L}$（Mg²⁺ 为 $0.10\ \text{mol/L}$，Cl⁻ 为 $0.20\ \text{mol/L}$）。这一点在计算依数性质（如凝固点下降、渗透压）时至关重要，因为这些性质取决于溶液中<strong>溶质粒子的总数目</strong>，而不是化合物本身的摩尔数。</p>
+<p><strong>解决实际问题</strong></p>
+<p>假设要计算 $0.050\ \text{mol/L}$ 的 $\text{Al}_2(\text{SO}_4)_3$ 溶液的渗透压（假设完全解离，温度 $25^\circ\text{C} = 298\ \text{K}$）。</p>
+<p>第一步，写出解离方程式：</p>
+$$\text{Al}_2(\text{SO}_4)_3(s) \rightarrow 2\text{Al}^{3+}(aq) + 3\text{SO}_4^{2-}(aq)$$
+<p>每一个单位解离产生 5 个离子，因此范特霍夫因子 $i = 5$。</p>
+<p>第二步，代入渗透压公式：</p>
+$$\Pi = iMRT = 5 \times (0.050\ \text{mol/L}) \times (0.0821\ \text{L·atm/mol·K}) \times (298\ \text{K}) \approx 6.11\ \text{atm}$$
+<p>这个例子说明：判断一种物质的解离方式（解离出多少个离子）是解决溶液性质相关问题的第一步，也是连接"化合物结构"与"宏观可测性质"之间的关键桥梁。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch11: Solutions and Colloids (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

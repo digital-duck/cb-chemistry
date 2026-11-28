@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work | Chemistry Ch05</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="work">Work</h2>
+<p><strong>定义</strong></p>
+<p>在物理学中，"功"（work）描述的是力使物体沿位移方向发生移动时所转移的能量。当一个恒定的力 $F$ 作用在物体上，使其发生位移 $d$，且力与位移方向之间的夹角为 $\theta$ 时，功的定义为：</p>
+$$W = F d \cos\theta$$
+<p>功的国际单位是焦耳（J），$1\ \text{J} = 1\ \text{N}\cdot\text{m}$。需要特别注意的是：只有当力在位移方向上有分量时，才会做功。如果力垂直于位移方向（$\theta = 90^\circ$），则 $\cos\theta = 0$，此时该力不做功——即使物体确实在移动。例如，你手提着书包水平行走时，重力垂直向下，位移是水平的，因此重力对书包不做功。</p>
+<p>功可以是正的、负的，或为零。当力的方向与位移方向相同（$\theta = 0^\circ$）时，功为正，能量传递给物体；当力与位移方向相反（$\theta = 180^\circ$）时，功为负，物体的能量被力所吸收或耗散，例如摩擦力做负功。</p>
+<p><strong>例题</strong></p>
+<p>一名工人用与水平方向成 $30^\circ$ 角的力推动一个箱子，力的大小为 $50\ \text{N}$，箱子沿地面移动了 $4\ \text{m}$。求该力对箱子所做的功。</p>
+$$W = F d \cos\theta = (50\ \text{N})(4\ \text{m})\cos(30^\circ) = 200 \times 0.866 \approx 173\ \text{J}$$
+<p><strong>解题应用</strong></p>
+<p>功的概念是分析能量转化问题的基础工具。当有多个力同时作用在物体上时（例如推力、重力、法向力和摩擦力），我们需要分别计算每个力所做的功，再求代数和，得到总功——这正是"功—能定理"的基础：总功等于物体动能的变化量，$W_{\text{net}} = \Delta KE$。</p>
+<p>解题时的关键步骤：首先明确哪个力在做功分析的对象；其次找出该力与位移之间的夹角，正确使用 $\cos\theta$；最后判断功的正负号是否符合物理直觉（推动方向做正功，阻碍运动方向做负功，垂直方向不做功）。这种系统性方法在分析斜面问题、摩擦力问题以及后续学习的功率和机械能守恒问题时都至关重要。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch5: Thermochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

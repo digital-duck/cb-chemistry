@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matter | Chemistry Ch02</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="matter">Matter</h2>
+<p>Matter is anything that has mass and occupies space. Every object you can touch, weigh, or contain in a jar — air, water, rock, your own body — qualifies as matter. According to atomic theory, all matter is composed of atoms: discrete particles of roughly $10^{-10}$ m in diameter that combine to form molecules and, ultimately, every observable substance. Matter exists in distinct physical states — solid, liquid, gas, and plasma — depending on how tightly its particles are bound and how much energy they carry. In a solid, atoms vibrate in fixed positions; in a liquid, they move past one another while staying in contact; in a gas, they move independently and spread to fill available space.</p>
+<p>A useful way to apply this concept is through the idea of conservation of mass: in any physical or chemical process, matter is neither created nor destroyed, only rearranged. Consider dissolving 5 g of salt in 100 g of water. The resulting saltwater solution has a mass of exactly 105 g — the salt hasn't vanished, it has dispersed at the atomic level among the water molecules. This principle lets chemists predict the outcomes of reactions: if 12 g of carbon reacts completely with oxygen to form carbon dioxide, the mass of $\text{CO}_2$ produced must equal the combined mass of carbon and oxygen consumed, since no atoms are lost.</p>
+<p>This idea becomes a practical problem-solving tool in chemistry. Suppose 10 g of ice melts into liquid water and then evaporates into vapor. Although the substance changes state — appearance, volume, and density all shift dramatically — the mass remains 10 g throughout, because no atoms have been added or removed, only their arrangement and spacing have changed. Recognizing this distinction between a change in state (physical change, same substance) and a change in composition (chemical change, new substances formed) is essential for correctly tracking matter through any process, from a melting ice cube to a rusting nail.</p>
+<pre class="mermaid">graph TD
+    A[Matter] --> B[Solid: fixed positions]
+    A --> C[Liquid: particles slide past each other]
+    A --> D[Gas: particles move independently]
+    A --> E[Plasma: ionized particles]
+    B -->|melting| C
+    C -->|freezing| B
+    C -->|evaporation| D
+    D -->|condensation| C</pre>
+<p><em>The four common states of matter and the transitions between them, driven by changes in particle energy and arrangement.</em></p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch2: Atoms, Molecules, and Ions (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

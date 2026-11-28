@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boiling Point Estimation | Chemistry Ch16</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="boiling-point-estimation">Boiling Point Estimation</h2>
+<p>A liquid boils when its vapor pressure equals the surrounding atmospheric pressure. Boiling point estimation predicts the temperature at which this happens, using either measured vapor-pressure data or the molecular structure of a compound. The task matters throughout chemistry and engineering: it determines how a mixture is distilled, how a solvent is chosen for a reaction, and how safely a chemical can be stored and transported.</p>
+<p>The most common estimation tool is the Clausius–Clapeyron relation, which links vapor pressure $P$ to temperature $T$ through the enthalpy of vaporization $\Delta H_{vap}$:</p>
+$$\ln P = -\frac{\Delta H_{vap}}{R T} + C$$
+<p>Because this is a genuine physical law connecting two measurable quantities, the equation itself is unavoidable — but using it is simple arithmetic once you have two data points. If a liquid has vapor pressures $P_1$ at $T_1$ and $P_2$ at $T_2$, then</p>
+$$\ln\frac{P_2}{P_1} = -\frac{\Delta H_{vap}}{R}\left(\frac{1}{T_2} - \frac{1}{T_1}\right)$$
+<p>Worked example: ethanol has a vapor pressure of 100 mmHg at 34.9 °C (308.1 K) and its normal boiling point is defined as the temperature where $P = 760$ mmHg. Given $\Delta H_{vap} = 38.6$ kJ/mol for ethanol, solve for $T_2$:</p>
+$$\ln\frac{760}{100} = -\frac{38600}{8.314}\left(\frac{1}{T_2} - \frac{1}{308.1}\right)$$
+<p>Computing the left side gives $\ln 7.6 \approx 2.028$. Solving the right side for $\frac{1}{T_2}$ yields $T_2 \approx 351.6$ K, or about 78.5 °C — close to ethanol's known boiling point of 78.4 °C, confirming the estimate.</p>
+<p>When lab data isn't available, chemists instead use group-contribution methods (like Joback's method), which sum empirical contributions from each functional group in a molecule's structure to predict $T_b$ directly from a structural formula — useful for screening new compounds before synthesis.</p>
+<p>Problem-solving application: suppose a chemical engineer needs to choose a solvent that boils below 100 °C at a reduced pressure of 200 mmHg for a heat-sensitive reaction. By rearranging the Clausius–Clapeyron equation and inserting known $\Delta H_{vap}$ and one reference boiling point for each candidate solvent, the engineer can rank solvents by predicted boiling point at 200 mmHg and select the one that keeps the mixture safely below the decomposition threshold — turning a two-point vapor-pressure measurement into a practical process-design decision.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

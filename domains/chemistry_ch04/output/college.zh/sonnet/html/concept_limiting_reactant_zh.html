@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Limiting Reactant | Chemistry Ch04</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="limiting-reactant">Limiting Reactant</h2>
+<p><strong>定义</strong></p>
+<p>在化学反应中，反应物通常不会按照化学方程式规定的精确比例混合。当反应进行到某一反应物完全耗尽时，反应便会停止,即使其他反应物仍有剩余。这个首先被耗尽、从而决定生成物最大产量的反应物,称为<strong>限制反应物</strong>（limiting reactant）；剩余未反应完的物质则称为<strong>过量反应物</strong>（excess reactant）。判断限制反应物的关键不是比较反应物的质量或体积,而是比较它们的<strong>摩尔比</strong>是否符合化学方程式的系数比。</p>
+<p><strong>实例分析</strong></p>
+<p>以合成氨反应为例:</p>
+$$N_2 + 3H_2 \rightarrow 2NH_3$$
+<p>假设实验中投入 $2.0\ \text{mol}\ N_2$ 和 $3.0\ \text{mol}\ H_2$。按方程式,每消耗 $1\ \text{mol}\ N_2$ 需要 $3\ \text{mol}\ H_2$,因此 $2.0\ \text{mol}\ N_2$ 理论上需要 $6.0\ \text{mol}\ H_2$。但实际只有 $3.0\ \text{mol}\ H_2$,远远不足,所以 $H_2$ 会先被耗尽——它是限制反应物。反过来验证：$3.0\ \text{mol}\ H_2$ 只能消耗 $1.0\ \text{mol}\ N_2$,剩余 $1.0\ \text{mol}\ N_2$ 未反应,即为过量反应物。</p>
+<p><strong>解题应用</strong></p>
+<p>判断限制反应物的标准方法是:将每种反应物的摩尔数除以其在方程式中的系数,所得数值最小的那种物质即为限制反应物。以上例验证:</p>
+<li>$N_2$: $2.0 / 1 = 2.0$</li>
+<li>$H_2$: $3.0 / 3 = 1.0$</li>
+<p>$H_2$ 对应的比值更小,确认其为限制反应物。据此可计算生成物产量：$3.0\ \text{mol}\ H_2$ 按 $3:2$ 比例生成 $NH_3$,即 $3.0 \times \dfrac{2}{3} = 2.0\ \text{mol}\ NH_3$。</p>
+<p>这一分析框架在工业生产、药物合成和实验室定量实验中至关重要——它决定了原料采购比例、成本控制以及反应产率的理论上限。在实际实验报告中,还常需计算<strong>理论产率</strong>（由限制反应物推算）与<strong>实际产率</strong>之比,即<strong>产率百分比</strong>,用以评估反应效率和实验操作的准确性。掌握限制反应物的判断,是连接化学计量学与真实实验室、工厂生产场景的核心技能。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch4: Stoichiometry of Chemical Reactions (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

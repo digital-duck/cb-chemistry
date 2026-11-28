@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wave | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="wave">Wave</h2>
+<p>A wave is a disturbance that transports energy from one location to another without permanently transporting matter. When you drop a pebble into a pond, the ripples spread outward, but a leaf floating on the surface mostly bobs up and down — it doesn't ride the ripple to shore. That separation between energy transfer and matter transfer is the defining feature of wave phenomena, and it shows up whether you're studying sound, light, ocean swells, or the vibration of a guitar string.</p>
+<p>Every wave can be characterized by how far it travels, how often it oscillates, and how fast it moves. These three ideas — wavelength ($\lambda$, the distance between successive crests), frequency ($f$, the number of oscillations per second), and speed ($v$, how fast the disturbance itself travels) — are tied together by a single relationship, the wave equation:</p>
+$$v = f\lambda$$
+<p>This is the one new tool this section introduces, and it does most of the work in introductory wave problems: if you know any two of the three quantities, you can find the third.</p>
+<p><strong>Worked example.</strong> A sound wave travels through air at 340 m/s. If a tuning fork vibrates at 440 Hz (the musical note A), what is the wavelength of the sound it produces? Rearranging the wave equation gives $\lambda = v/f = 340 / 440 \approx 0.77$ m. So each full oscillation of the sound wave spans about 77 centimeters — roughly the length of a guitar.</p>
+<p><strong>Problem-solving application.</strong> The wave equation becomes powerful when a quantity is held fixed by the physical setup. In a fiber-optic cable, light travels at a fixed speed determined by the medium; engineers choose the frequency (or equivalently the wavelength) to encode data, and the wave equation tells them exactly how closely spaced the wave crests will be for a given data-carrying frequency. In musical instruments, the speed of a wave on a string is fixed by its tension and mass per unit length, so changing the string's effective length (pressing a fret) changes which wavelengths — and therefore which frequencies, or pitches — can resonate on it. In each case, the strategy is the same: identify which of $v$, $f$, and $\lambda$ is constrained by the physical system, and use the wave equation to solve for the one you need to control or predict.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

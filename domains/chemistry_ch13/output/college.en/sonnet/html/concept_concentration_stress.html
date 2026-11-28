@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Concentration Stress | Chemistry Ch13</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="concentration-stress">Concentration Stress</h2>
+<p>Concentration stress refers to the localized amplification of mechanical stress that occurs around a geometric discontinuity in a material — a hole, notch, groove, sharp corner, or sudden change in cross-section. Even when a component is loaded well within its overall safe stress range, the material immediately adjacent to such a feature can experience stress far exceeding the nominal (average) value. This matters because failure — cracking, yielding, or fatigue fracture — almost always initiates at these local hot spots rather than in the bulk of the material.</p>
+<p>The degree of amplification is captured by the stress concentration factor, $K_t$, defined as</p>
+$$K_t = \frac{\sigma_{\max}}{\sigma_{\text{nom}}}$$
+<p>where $\sigma_{\max}$ is the peak local stress at the discontinuity and $\sigma_{\text{nom}}$ is the stress calculated using simple formulas (force divided by cross-sectional area, for instance) as if the discontinuity were not there. $K_t$ is a dimensionless number greater than 1, determined experimentally or through finite-element analysis, and tabulated in engineering handbooks for standard geometries (circular holes, fillets, shoulders, threads).</p>
+<p><strong>Worked example.</strong> Consider a flat steel plate, 50 mm wide and 10 mm thick, with a 10 mm diameter hole drilled through its center, under an axial tensile load of 20 kN. The nominal stress, based on the net cross-section (width minus hole diameter, times thickness), is</p>
+$$\sigma_{\text{nom}} = \frac{20{,}000\ \text{N}}{(50-10)\ \text{mm} \times 10\ \text{mm}} = 50\ \text{MPa}$$
+<p>For a circular hole in a plate of this width-to-hole ratio, handbook charts give $K_t \approx 2.5$ (approaching the theoretical limit of $K_t = 3$ for a hole in an infinite plate). The actual peak stress at the edge of the hole is therefore</p>
+$$\sigma_{\max} = K_t \cdot \sigma_{\text{nom}} = 2.5 \times 50\ \text{MPa} = 125\ \text{MPa}$$
+<p><strong>Problem-solving application.</strong> In design practice, engineers use $K_t$ to check whether a locally elevated stress will exceed the material's yield or fatigue strength, even when the average stress looks acceptable. If the steel's yield strength is 200 MPa, the plate above still has a safety margin — but if the load increased to 32 kN, $\sigma_{\max}$ would reach 200 MPa and yielding would begin at the hole edge long before the rest of the plate is stressed. This is why designers favor smooth fillets over sharp corners, generous hole spacing, and gradual transitions in cross-section — each reduces $K_t$ and shifts the failure threshold higher, particularly for parts subject to repeated (fatigue) loading, where local stress concentrations are the dominant cause of crack initiation.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

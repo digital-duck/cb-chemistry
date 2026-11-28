@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Combustion Analysis | Chemistry Ch04</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="combustion-analysis-燃烧分析">Combustion Analysis(燃烧分析)</h2>
+<p><strong>定义</strong></p>
+<p>燃烧分析是一种通过完全燃烧有机化合物样品，并定量测定生成的 $CO_2$ 和 $H_2O$，从而确定化合物中碳、氢（有时还包括氧）质量分数的实验技术。样品在过量 $O_2$ 中燃烧，其中的碳全部转化为 $CO_2$，氢全部转化为 $H_2O$，这两种产物分别被吸收剂捕获并称重。由于反应中碳、氢原子守恒，产物中碳、氢的质量可以逆推回原始样品中碳、氢的质量。若样品仅含 C、H、O 三种元素，氧的质量可用总质量减去碳、氢质量间接求出（因为氧不能直接、独立地被测定）。这项技术是确定有机化合物<strong>实验式</strong>（最简整数比）的经典方法，实验式经分子量数据可进一步转化为<strong>分子式</strong>。</p>
+<p><strong>范例解析</strong></p>
+<p>设某未知有机化合物样品质量为 $0.1156\text{ g}$，完全燃烧后生成 $CO_2$ 质量 $0.3383\text{ g}$，$H_2O$ 质量 $0.1384\text{ g}$。</p>
+<p>第一步，求碳的质量。$CO_2$ 摩尔质量为 $44.01\text{ g/mol}$，其中碳占 $12.01\text{ g/mol}$：</p>
+$$m_C = 0.3383\text{ g} \times \frac{12.01}{44.01} = 0.0923\text{ g}$$
+<p>第二步，求氢的质量。$H_2O$ 摩尔质量为 $18.02\text{ g/mol}$，其中氢占 $2.016\text{ g/mol}$：</p>
+$$m_H = 0.1384\text{ g} \times \frac{2.016}{18.02} = 0.01548\text{ g}$$
+<p>第三步，求氧的质量（若样品仅含 C、H、O）：</p>
+$$m_O = 0.1156 - 0.0923 - 0.01548 = 0.00782\text{ g}$$
+<p>将各元素质量除以其原子量得摩尔数，再除以最小摩尔数取整数比，即可得到实验式（此例中最终比例约为 C：H：O $= 3:6:1$，对应实验式 $C_3H_6O$）。</p>
+<p><strong>问题解决应用</strong></p>
+<p>燃烧分析的实际难点常在于两处：一是氧元素不能直接测量，必须依赖总质量守恒间接推算，任何称量误差都会被放大到氧的结果上；二是实验式与分子式之间的换算，需要额外的分子量信息（如质谱数据）才能确定真实的整数倍数关系，例如实验式 $CH_2O$ 对应的分子式可能是葡萄糖 $C_6H_{12}O_6$（六倍关系）。在解题时，应始终从产物质量出发反推元素质量，再转换为摩尔比，最后结合独立的分子量数据锁定分子式，而不能仅凭实验式下结论。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch4: Stoichiometry of Chemical Reactions (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

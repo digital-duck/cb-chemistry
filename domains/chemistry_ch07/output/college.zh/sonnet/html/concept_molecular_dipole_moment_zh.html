@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Molecular Dipole Moment | Chemistry Ch07</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="molecular-dipole-moment">Molecular Dipole Moment</h2>
+<p><strong>定义</strong></p>
+<p>当一个分子中电荷分布不均匀时,分子会表现出一定的极性,用<strong>分子偶极矩</strong>(molecular dipole moment,符号 $\mu$)来定量描述这种极性的大小与方向。偶极矩本质上是一个矢量:大小等于电荷量 $q$ 与正负电荷中心间距离 $d$ 的乘积,即 $\mu = q \times d$,方向规定为从负电荷中心指向正电荷中心(化学中常用相反标注,即箭头指向负极)。单位常用德拜(Debye,D)表示,$1\text{ D} \approx 3.34\times10^{-30}\text{ C·m}$。</p>
+<p>分子偶极矩由两个层次决定:一是<strong>键的极性</strong>(由成键原子的电负性差异引起),二是<strong>分子的几何构型</strong>(决定各键偶极矩矢量如何相加或抵消)。因此,即使分子中含有极性键,只要分子结构对称,各键偶极矩矢量和可以为零,整个分子仍是非极性的。</p>
+<p><strong>实例分析</strong></p>
+<p>以二氧化碳($\mathrm{CO_2}$)和水($\mathrm{H_2O}$)为例。$\mathrm{CO_2}$ 中每个 C=O 键都是极性键(氧的电负性 3.44 大于碳的 2.55),但分子呈直线形($180°$),两个键偶极矩大小相等、方向相反,矢量和为零,故 $\mathrm{CO_2}$ 是非极性分子,$\mu = 0$。</p>
+<p>相比之下,$\mathrm{H_2O}$ 中 O–H 键也是极性键,但分子呈弯曲形(键角约 $104.5°$),两个键偶极矩不能相互抵消,矢量和指向氧原子一侧,使水分子具有较大的净偶极矩($\mu \approx 1.85$ D)。这正是水具有高沸点、强溶解能力和特殊氢键网络的根本原因。</p>
+<p><strong>解题应用</strong></p>
+<p>判断一个分子是否具有偶极矩,可按以下步骤操作:</p>
+<li>画出路易斯结构,确定中心原子的杂化方式与分子几何(如用价层电子对互斥理论,VSEPR);</li>
+<li>标出每个键的极性方向(电负性差越大,键偶极矩越大);</li>
+<li>利用分子的对称性判断各键偶极矩矢量和是否为零。</li>
+<p>例如,判断 $\mathrm{BF_3}$(平面三角形,$120°$)与 $\mathrm{NH_3}$(三角锥形)的极性:$\mathrm{BF_3}$ 因高度对称,三个 B–F 键偶极矩矢量和为零,为非极性分子;而 $\mathrm{NH_3}$ 因存在孤对电子导致的不对称锥形结构,净偶极矩不为零,是极性分子。掌握"先看键极性,再看分子对称性"这一思路,是预测分子物理性质(如溶解性、沸点、分子间作用力类型)的关键工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch7: Chemical Bonding and Molecular Geometry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

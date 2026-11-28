@@ -1,0 +1,254 @@
+domain: chemistry_2e_ch17
+primitives:
+  oxidation_number:
+    defines: A value assigned to each atom in a compound representing the charge it would have if the
+      compound were fully ionic, used to track electron distribution.
+    tier: 0
+  oxidation:
+    defines: The process by which an atom or species loses electrons, resulting in an increase in its
+      oxidation number.
+    tier: 0
+  reduction:
+    defines: The process by which an atom or species gains electrons, resulting in a decrease in its oxidation
+      number.
+    tier: 0
+  gibbs_free_energy:
+    defines: A thermodynamic quantity representing the maximum work a system can perform; a negative ΔG
+      indicates a spontaneous process.
+    tier: 0
+  equilibrium_constant:
+    defines: A ratio of product to reactant concentrations at equilibrium, indicating the extent to which
+      a reaction proceeds.
+    tier: 0
+  electric_charge:
+    defines: A fundamental property of matter measured in coulombs; charge transferred equals current
+      multiplied by time (Q = I × t).
+    tier: 0
+  electric_current:
+    defines: The rate of flow of charge, measured in amperes (one coulomb per second), used to quantify
+      electron flow in electrochemical cells.
+    tier: 0
+  reaction_quotient:
+    defines: A ratio of product to reactant concentrations at a given instant (not necessarily at equilibrium),
+      used to determine how far a reaction has proceeded and how conditions affect cell potential.
+    tier: 0
+concepts:
+  redox_reaction:
+    defines: A chemical reaction defined by changes in oxidation numbers of one or more elements, involving
+      the transfer of electrons from a reductant to an oxidant.
+    composed_of:
+    - oxidation
+    - reduction
+    - oxidation_number
+    tier: 1
+  faradays_constant:
+    defines: The total electric charge carried by one mole of electrons, equal to 96,485 coulombs per
+      mole, used to relate moles of electrons to charge transferred.
+    composed_of:
+    - electric_charge
+    tier: 1
+  half_reaction:
+    defines: An equation representing either the oxidation or the reduction component of a redox reaction,
+      showing electrons explicitly as reactants or products.
+    composed_of:
+    - redox_reaction
+    tier: 2
+  electrochemical_cell:
+    defines: A device that either converts chemical energy from a spontaneous redox reaction into electrical
+      energy (galvanic) or uses electrical energy to drive a nonspontaneous redox reaction (electrolytic).
+    composed_of:
+    - redox_reaction
+    - electric_charge
+    tier: 2
+  half_reaction_method:
+    defines: A systematic procedure for balancing aqueous redox equations by separately balancing the
+      oxidation and reduction half-reactions for atoms, oxygen, hydrogen, and charge before combining
+      them.
+    composed_of:
+    - half_reaction
+    tier: 3
+  half_cell:
+    defines: A component of an electrochemical cell containing the redox conjugate pair of a single reactant,
+      where either oxidation or reduction occurs.
+    composed_of:
+    - electrochemical_cell
+    - half_reaction
+    tier: 3
+  anode:
+    defines: The electrode in an electrochemical cell at which oxidation occurs; in a galvanic cell it
+      is the negative terminal.
+    composed_of:
+    - electrochemical_cell
+    - oxidation
+    tier: 3
+  cathode:
+    defines: The electrode in an electrochemical cell at which reduction occurs; in a galvanic cell it
+      is the positive terminal.
+    composed_of:
+    - electrochemical_cell
+    - reduction
+    tier: 3
+  galvanic_cell:
+    defines: An electrochemical cell in which a spontaneous redox reaction drives electron flow through
+      an external circuit, converting chemical energy into electrical energy.
+    composed_of:
+    - electrochemical_cell
+    tier: 3
+  active_electrode:
+    defines: An electrode that participates as a reactant or product in the cell's redox reaction, changing
+      in mass as the reaction proceeds.
+    composed_of:
+    - electrochemical_cell
+    tier: 3
+  inert_electrode:
+    defines: An electrode (e.g., platinum) that conducts electrons to and from redox species in solution
+      without itself being oxidized or reduced.
+    composed_of:
+    - electrochemical_cell
+    tier: 3
+  electrolytic_cell:
+    defines: An electrochemical cell in which an external power source forces a nonspontaneous redox reaction
+      to occur, reversing the direction of spontaneous electron flow.
+    composed_of:
+    - electrochemical_cell
+    tier: 3
+  salt_bridge:
+    defines: A tube filled with inert electrolyte solution that connects the two half-cells of a galvanic
+      cell, allowing ion flow to maintain electrical charge neutrality without mixing the half-cell solutions.
+    composed_of:
+    - galvanic_cell
+    - half_cell
+    tier: 4
+  cell_notation:
+    defines: A standardized symbolic representation of a galvanic cell listing components and phase interfaces
+      from anode to cathode using vertical lines as separators.
+    composed_of:
+    - galvanic_cell
+    - anode
+    - cathode
+    tier: 4
+  cell_potential:
+    defines: The difference in electric potential between the cathode and anode half-cells of an electrochemical
+      cell, measuring the driving force for the redox reaction in volts.
+    composed_of:
+    - anode
+    - cathode
+    tier: 4
+  standard_hydrogen_electrode:
+    defines: A reference half-cell based on the H⁺/H₂ half-reaction under standard conditions, assigned
+      a potential of exactly 0 V, used as the universal reference for measuring electrode potentials.
+    composed_of:
+    - half_cell
+    tier: 4
+  electrolysis:
+    defines: A process in which an external electrical power source applies a voltage to an electrolytic
+      cell to drive an otherwise nonspontaneous redox reaction.
+    composed_of:
+    - electrolytic_cell
+    tier: 4
+  electrode_potential:
+    defines: The cell potential measured when a given half-cell acts as the cathode connected to a standard
+      hydrogen electrode acting as the anode, reflecting the relative oxidizing strength of the half-cell's
+      reactant.
+    composed_of:
+    - cell_potential
+    - standard_hydrogen_electrode
+    tier: 5
+  electrolysis_stoichiometry:
+    defines: The quantitative relationship between current, time, Faraday's constant, and reaction stoichiometry
+      used to calculate the mass of substance produced or consumed during electrolysis.
+    composed_of:
+    - electrolysis
+    - faradays_constant
+    - electric_current
+    tier: 5
+  standard_electrode_potential:
+    defines: The electrode potential of a half-cell measured under standard-state conditions (1 M solutes,
+      1 bar gases, 298 K), tabulated as standard reduction potentials.
+    composed_of:
+    - electrode_potential
+    tier: 6
+  standard_cell_potential:
+    defines: The cell potential when all reactants and products are at standard-state conditions, calculated
+      as E°_cathode minus E°_anode; a positive value indicates a spontaneous reaction.
+    composed_of:
+    - standard_electrode_potential
+    tier: 7
+  free_energy_potential_relation:
+    defines: The quantitative link between standard free energy change and standard cell potential expressed
+      as ΔG° = −nFE°_cell, confirming that spontaneous reactions have positive potentials and negative
+      free energy changes.
+    composed_of:
+    - gibbs_free_energy
+    - standard_cell_potential
+    - faradays_constant
+    tier: 8
+  nernst_equation:
+    defines: An equation relating the cell potential under nonstandard conditions to the standard cell
+      potential, the number of electrons transferred, temperature, and the reaction quotient Q (E_cell
+      = E°_cell − (RT/nF)ln Q).
+    composed_of:
+    - free_energy_potential_relation
+    - reaction_quotient
+    tier: 9
+  equilibrium_potential_relation:
+    defines: The logarithmic relationship between the equilibrium constant K and the standard cell potential
+      E°_cell (derived via ΔG°), showing that larger positive potentials correspond to reactions that
+      proceed nearly to completion.
+    composed_of:
+    - free_energy_potential_relation
+    - equilibrium_constant
+    tier: 9
+  concentration_cell:
+    defines: A galvanic cell whose two half-cells use the same redox couple and electrodes but differ
+      only in the concentration of one species, so the cell potential arises solely from that concentration
+      difference.
+    composed_of:
+    - galvanic_cell
+    - nernst_equation
+    tier: 10
+applications:
+  battery:
+    defines: A galvanic cell or series of galvanic cells engineered to serve as a portable source of electrical
+      power, available as nonrechargeable primary cells or rechargeable secondary cells.
+    needs:
+    - galvanic_cell
+    tier: 4
+  fuel_cell:
+    defines: A galvanic device that continuously converts the chemical energy of a fuel (e.g., hydrogen)
+      and an oxidant into electricity through electrochemical reactions, typically with efficiency far
+      exceeding internal combustion engines.
+    needs:
+    - galvanic_cell
+    tier: 4
+  corrosion:
+    defines: The spontaneous electrochemical degradation of a metal through oxidation by environmental
+      agents such as oxygen and water, forming a galvanic cell at the metal surface.
+    needs:
+    - galvanic_cell
+    - oxidation
+    tier: 4
+  galvanization:
+    defines: A corrosion-prevention method in which iron or steel is coated with a layer of zinc that
+      oxidizes preferentially, protecting the underlying metal.
+    needs:
+    - corrosion
+    - oxidation
+    tier: 5
+  cathodic_protection:
+    defines: A corrosion-prevention strategy in which the metal to be protected is made the cathode of
+      a galvanic cell by connecting it to a more easily oxidized sacrificial anode (e.g., zinc or magnesium).
+    needs:
+    - corrosion
+    - galvanic_cell
+    - cathode
+    - anode
+    tier: 5
+  electroplating:
+    defines: An electrolytic process in which a thin metal coating is deposited onto a conducting surface
+      by reducing metal ions from solution at the cathode, used to improve corrosion resistance, appearance,
+      or surface properties.
+    needs:
+    - electrolysis
+    - cathode
+    tier: 5

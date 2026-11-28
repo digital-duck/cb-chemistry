@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mass Spectrometry | Chemistry Ch02</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="mass-spectrometry">Mass Spectrometry</h2>
+<p>Mass spectrometry is an analytical technique that identifies the atoms and molecules in a sample by measuring their mass-to-charge ratio ($m/z$). A mass spectrometer converts sample particles into gas-phase ions, accelerates them through an electric field, and deflects their paths using a magnetic field. Because lighter ions and more highly charged ions deflect more sharply, particles with different $m/z$ values separate and strike a detector at different positions. The output is a mass spectrum: a plot of relative abundance (intensity) versus $m/z$, in which each peak corresponds to a distinct ion.</p>
+<p>The process has three core stages. First, ionization strips or adds electrons to sample particles, most commonly by bombarding them with a high-energy electron beam, which knocks off an electron to form a positive ion. This ionization step often fragments the original molecule into smaller charged pieces, and the resulting fragmentation pattern is itself diagnostic — it acts like a molecular fingerprint. Second, acceleration and deflection sort ions by $m/z$ using electric and magnetic fields. Third, detection records the abundance of each ion arriving at a given $m/z$.</p>
+<p>Consider a sample of neon gas analyzed by mass spectrometry. The spectrum shows two peaks: one at $m/z = 20$ with high intensity and one at $m/z = 22$ with much lower intensity. These correspond to the isotopes neon-20 and neon-22. Because relative peak height reflects relative abundance, chemists calculate the element's average atomic mass from the spectrum. If neon-20 makes up 90.5% of atoms and neon-22 makes up 9.5%, the weighted average is:</p>
+$$
+(0.905)(20) + (0.095)(22) = 20.19 \text{ amu}
+$$
+<p>This calculation is precisely how the atomic masses listed on the periodic table are determined — they are weighted averages of naturally occurring isotopes, not the mass of any single atom.</p>
+<p>In problem-solving contexts, mass spectrometry data lets you back-calculate isotopic abundances, identify unknown compounds from their fragmentation patterns, or determine a molecule's molar mass from its highest-$m/z$ peak (the molecular ion peak, assuming a charge of +1). Given a spectrum with two isotope peaks and their relative intensities, you can set up a weighted-average equation, as above, and solve for either the abundances or the average atomic mass, whichever is unknown. This makes mass spectrometry a practical bridge between raw instrumental data and quantitative atomic theory.</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch2: Atoms, Molecules, and Ions (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

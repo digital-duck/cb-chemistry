@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boiling Point Estimation | Chemistry Ch16</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="boiling-point-estimation">Boiling Point Estimation</h2>
+<p><strong>定义</strong></p>
+<p>沸点是液体的蒸气压等于外界大气压时的温度。此时液体内部可以自由形成气泡并逸出，物质整体从液相转变为气相。沸点估算，则是根据分子结构和分子间作用力的强弱，定性甚至半定量地预测一种物质沸点高低的方法，而不必依赖实验测定。分子间作用力越强，分子越难挣脱彼此束缚进入气相，沸点就越高。影响沸点的主要因素包括：分子量（质量越大，色散力通常越强）、分子极性（极性分子间存在偶极-偶极作用）、以及是否存在氢键（—OH、—NH 基团之间的强烈吸引）。此外，分子形状也有影响：细长、表面积大的分子比紧凑的球形分子接触面积更大，色散力更强，沸点相对更高。</p>
+<p><strong>实例分析</strong></p>
+<p>比较三种分子量相近的物质：正丁烷（$C_4H_{10}$，分子量58）、丙酮（$C_3H_6O$，分子量58）和正丙醇（$C_3H_8O$，分子量60）。正丁烷是非极性分子，分子间只有微弱的色散力，沸点为 $-1\,^\circ\text{C}$。丙酮是极性分子，存在偶极-偶极作用，沸点升高到 $56\,^\circ\text{C}$。正丙醇含有 —OH 基团，分子间能形成氢键，沸点进一步升高到 $97\,^\circ\text{C}$。三者分子量几乎相同，但沸点差异巨大，说明分子间作用力的类型（色散力 < 偶极作用 < 氢键）比单纯的分子量更能决定沸点高低。</p>
+<p><strong>解题应用</strong></p>
+<p>面对一组同分异构体或结构相近的化合物，估算沸点排序可以按以下步骤进行：第一步，判断每个分子是否存在氢键供体（—OH、—NH、—COOH 等基团）；含氢键的分子沸点通常最高。第二步，若都不含氢键，比较分子极性，即是否存在净偶极矩；极性分子沸点高于非极性同分异构体。第三步，在同一作用力类型内，比较分子量和分子形状——支链越多的异构体，表面接触面积越小，色散力越弱，沸点越低（例如正戊烷沸点 $36\,^\circ\text{C}$ 高于新戊烷的 $9.5\,^\circ\text{C}$）。掌握这一判断顺序，学生便能在不查表的情况下，对未知化合物的沸点做出合理的相对排序，这也是有机化学与分析化学中鉴别未知物、设计分离方案（如蒸馏）时的重要基础技能。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch16: Thermodynamics (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

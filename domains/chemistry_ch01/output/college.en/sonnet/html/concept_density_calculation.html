@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Density Calculation | Chemistry Ch01</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="density-calculation">Density Calculation</h2>
+<p><strong>Definition.</strong> Given a physical object occupying a region $\Omega \subset \mathbb{R}^3$ with mass $m$ and volume $V = \int_\Omega dV$, the (average) density is defined as</p>
+$$
+\rho = \frac{m}{V}.
+$$
+<p>When mass is distributed non-uniformly, one defines a <em>local density function</em> $\rho(x,y,z)$ such that</p>
+$$
+m = \iiint_\Omega \rho(x,y,z)\, dV,
+$$
+<p>recovering the pointwise mass-per-unit-volume in the limit of a vanishing neighborhood around each point.</p>
+<p><strong>Worked example.</strong> Consider a metal rod of length $L = 2\,\text{m}$ whose linear density varies as $\rho(x) = 3 + x^2$ (in $\text{kg/m}$), for $x \in [0, 2]$. The total mass is</p>
+$$
+m = \int_0^2 (3 + x^2)\, dx = \left[3x + \frac{x^3}{3}\right]_0^2 = 6 + \frac{8}{3} = \frac{26}{3} \approx 8.67\,\text{kg}.
+$$
+<p>The <em>average</em> density over the rod is then $\bar\rho = m/L = \tfrac{26}{3}/2 = \tfrac{13}{3} \approx 4.33\,\text{kg/m}$, distinct from the pointwise density at any single location.</p>
+<p><strong>Key theorem (Mean Value Theorem for Integrals).</strong> If $\rho$ is continuous on $[a,b]$, there exists $c \in [a,b]$ such that</p>
+$$
+\bar\rho = \rho(c) = \frac{1}{b-a}\int_a^b \rho(x)\, dx.
+$$
+<p>This guarantees that the average density equals the actual local density at some point within the domain — a foundational link between integral (global) and pointwise (local) descriptions of mass distribution.</p>
+<p><strong>Lab cell (SymPy).</strong></p>
+<pre><code>import sympy as sp
+
+x = sp.symbols('x')
+rho = 3 + x**2
+L = 2
+
+mass = sp.integrate(rho, (x, 0, L))
+avg_density = mass / L
+
+print("Total mass:", mass)
+print("Average density:", sp.nsimplify(avg_density))</code></pre>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

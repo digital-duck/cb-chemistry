@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Complex Ion Enhanced Dissolution | Chemistry Ch15</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="complex-ion-enhanced-dissolution">Complex Ion Enhanced Dissolution</h2>
+<p>A sparingly soluble ionic compound can be made far more soluble if one of its ions can be pulled into a stable complex ion. Normally, solubility is limited by the low value of $K_{sp}$: once the solid dissolves enough to satisfy $Q = K_{sp}$, no more will dissolve. But if a ligand in solution can bind the dissolved metal cation and lock it into a complex, that cation is effectively removed from the equilibrium. By Le Chatelier's principle, the dissolution reaction shifts forward to replace the lost ion, and more solid dissolves than $K_{sp}$ alone would predict.</p>
+<p>Consider silver chloride, $\text{AgCl}(s) \rightleftharpoons \text{Ag}^+(aq) + \text{Cl}^-(aq)$, with $K_{sp} = 1.8 \times 10^{-10}$. In pure water, only a tiny amount dissolves. Add excess ammonia, however, and $\text{Ag}^+$ reacts: $\text{Ag}^+ + 2\text{NH}_3 \rightleftharpoons [\text{Ag(NH}_3)_2]^+$, with a large formation constant $K_f = 1.7 \times 10^7$. Adding the two equilibria gives the overall reaction $\text{AgCl}(s) + 2\text{NH}_3(aq) \rightleftharpoons [\text{Ag(NH}_3)_2]^+(aq) + \text{Cl}^-(aq)$, whose equilibrium constant is $K = K_{sp} \times K_f$. Because $K_f$ is enormous, $K$ is much larger than $K_{sp}$ alone — the combined process is far more favorable than dissolution without the ligand.</p>
+<p>To solve a quantitative problem: suppose you want to know how much AgCl dissolves in 1.0 M NH₃. Let $s$ be the molar solubility. Nearly all dissolved silver ends up as the complex, so $[\text{Ag(NH}_3)_2]^+] \approx s$ and $[\text{Cl}^-] \approx s$, while $[\text{NH}_3] \approx 1.0 - 2s$. Plugging into $K = K_{sp}K_f = \dfrac{[\text{Ag(NH}_3)_2^+][\text{Cl}^-]}{[\text{NH}_3]^2}$ gives $K = (1.8\times10^{-10})(1.7\times10^7) \approx 3.1\times10^{-3}$. Setting $\dfrac{s^2}{(1.0-2s)^2} = 3.1\times10^{-3}$ and solving yields $s \approx 0.053$ M — roughly a hundredfold increase in solubility compared to plain water.</p>
+<p>This principle underlies real applications: photographic film processing uses thiosulfate to dissolve unexposed AgBr; cyanide leaching extracts gold from ore via $[\text{Au(CN)}_2]^-$; and EDTA complexation is used to solubilize metal ions in water treatment and chelation therapy.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

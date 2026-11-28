@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expansion Work | Chemistry Ch05</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="expansion-work">Expansion Work</h2>
+<p><strong>定义</strong></p>
+<p>当气体在活塞或容器中因体积变化而对外界(或外界对气体)做的功，称为膨胀功(expansion work)，也叫体积功(volume work)或压强-体积功(pressure–volume work)。这是热力学中最基本的一种功的形式，因为化学反应、相变、加热冷却等过程常伴随气体体积的改变，而这种体积变化必然与外部压强相互作用产生功。</p>
+<p>若过程在外部压强 $P_{ext}$ 保持恒定的条件下进行（例如气体在开放容器中膨胀，外部为大气压），体系对外做的功为：</p>
+$$w = -P_{ext}\Delta V$$
+<p>其中 $\Delta V = V_{final} - V_{initial}$。负号的约定来自热力学第一定律 $\Delta U = q + w$：当气体膨胀（$\Delta V > 0$）时，体系对外界做功，体系内能因做功而减少，故 $w$ 为负值；当气体被压缩（$\Delta V < 0$），外界对体系做功，$w$ 为正值。</p>
+<p><strong>范例</strong></p>
+<p>设某气体在恒定外压 $P_{ext} = 1.00\ \text{atm}$ 下，体积从 $2.00\ \text{L}$ 膨胀到 $5.50\ \text{L}$。求该过程做的功（以焦耳为单位，$1\ \text{L·atm} = 101.3\ \text{J}$）。</p>
+$$\Delta V = 5.50 - 2.00 = 3.50\ \text{L}$$
+$$w = -P_{ext}\Delta V = -(1.00\ \text{atm})(3.50\ \text{L}) = -3.50\ \text{L·atm}$$
+$$w = -3.50\ \text{L·atm} \times 101.3\ \text{J/(L·atm)} = -355\ \text{J}$$
+<p>负号表明气体对外界做了 355 J 的功，体系因此损失相应内能（除非同时有热量输入补偿）。</p>
+<p><strong>解题应用</strong></p>
+<p>在解决涉及膨胀功的问题时，关键在于识别过程条件：</p>
+<li><strong>恒外压过程</strong>（最常见，如活塞对抗大气压）：直接用 $w = -P_{ext}\Delta V$。</li>
+<li><strong>真空膨胀（自由膨胀）</strong>：$P_{ext} = 0$，因此 $w = 0$，无论体积如何变化。</li>
+<li><strong>多步骤过程</strong>：分别计算每一步的功再求和，因为功不是状态函数，其数值依赖于具体路径。</li>
+<p>在综合题中，膨胀功常与热力学第一定律联用：先求 $w$，再结合已知的 $q$（热量）求出 $\Delta U$，或反之。务必注意单位换算（L·atm 与 J 之间的转换）以及正负号的物理意义——这决定了能量流动的方向。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch5: Thermochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

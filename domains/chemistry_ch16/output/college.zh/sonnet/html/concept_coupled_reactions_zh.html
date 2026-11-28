@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coupled Reactions | Chemistry Ch16</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="coupled-reactions">Coupled Reactions</h2>
+<p>细胞内许多必要的化学反应在能量上是不利的——它们无法自发进行，因为产物的自由能高于反应物。生物体解决这一难题的核心策略叫做<strong>偶联反应</strong>：把一个释放能量的放能反应与一个吸收能量的吸能反应连接起来，使两者共享同一个中间产物，让总反应的净自由能变化为负值，从而整体上能够自发进行。这正是新陈代谢得以运转的基本逻辑：细胞并非违反热力学定律,而是巧妙地利用了自由能可以加和的性质。</p>
+<p><strong>自由能变化的加和性</strong>是理解偶联反应的关键。若反应一的自由能变化为 $\Delta G_1$，反应二为 $\Delta G_2$，当两者偶联时，总反应的自由能变化为</p>
+$$\Delta G_{\text{总}} = \Delta G_1 + \Delta G_2$$
+<p>只要 $\Delta G_{\text{总}} < 0$，即使其中一步单独看是吸能的（$\Delta G > 0$），整个偶联过程仍可自发进行。</p>
+<p><strong>实例：ATP 水解驱动氨基酸活化。</strong> 蛋白质合成第一步需要将氨基酸与其转运 RNA（tRNA）连接，这一步本身是吸能反应，$\Delta G \approx +29\ \text{kJ/mol}$。细胞将其与 ATP 水解为 AMP 和两个磷酸基团偶联，后者释放约 $-32\ \text{kJ/mol}$ 的自由能。两步反应通过共享的中间体（氨基酸-AMP 复合物）连接起来，总变化约为</p>
+$$\Delta G_{\text{总}} \approx (+29) + (-32) = -3\ \text{kJ/mol}$$
+<p>净值为负，反应得以自发向前推进，氨基酸被成功"激活"用于蛋白质合成。</p>
+<p><strong>解题应用：</strong> 判断某代谢步骤能否通过偶联实现，关键在于比较两个反应的自由能大小，而不是孤立地看某一步是否吸能。例如，若某合成反应需要 $+20\ \text{kJ/mol}$，而细胞用 ATP 水解（约 $-30.5\ \text{kJ/mol}$）为其供能，学生应先写出两步反应及其各自的 $\Delta G$，再相加验证总反应是否为负值，同时检查两反应是否确实通过共同中间产物（如磷酸化的底物）在机制上真正连接，而不仅仅是发生在同一细胞中——这是偶联反应与"巧合同时发生的两个反应"的本质区别。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch16: Thermodynamics (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

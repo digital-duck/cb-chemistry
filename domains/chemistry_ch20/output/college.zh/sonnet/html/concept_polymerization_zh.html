@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Polymerization | Chemistry Ch20</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="聚合反应">聚合反应</h2>
+<p>聚合反应（polymerization）是指许多结构简单的小分子（单体，monomer）通过化学键连接，形成一个分子量很大的长链或网状分子（聚合物，polymer）的过程。生物体和材料世界中大量重要物质都是聚合物：淀粉与糖原由葡萄糖单体聚合而成，蛋白质由氨基酸聚合而成，DNA由核苷酸聚合而成，塑料聚乙烯则由乙烯分子聚合而成。聚合反应主要分两大类：<strong>加聚反应</strong>（addition polymerization），单体不失去任何原子直接加成连接，常见于合成塑料如聚乙烯；<strong>缩聚反应</strong>（condensation polymerization），单体连接时通常释放一个小分子（往往是水），这是生物大分子形成的主要方式，也称脱水合成（dehydration synthesis）。</p>
+<p>以葡萄糖聚合形成淀粉为例：两个葡萄糖分子相连时，一个葡萄糖的羟基（—OH）与另一个葡萄糖的氢原子结合，释放出一分子水（$\text{H}_2\text{O}$），同时在两个碳原子之间形成一个氧桥，即糖苷键（glycosidic bond）。这个反应可以概括为：</p>
+$$n(\text{单体}) \rightarrow (\text{单体})_n + (n-1)\,\text{H}_2\text{O}$$
+<p>其中 $n$ 是参与聚合的单体分子数，聚合物释放出的水分子数总比单体数少一个，因为每一次连接只发生在两个相邻单体之间。这个简单的计数关系在处理实际问题时非常有用：例如，若已知某段蛋白质由 150 个氨基酸组成，则合成过程中脱去的水分子数为 $150-1=149$ 个，这也解释了为何长链聚合物的分子量略小于各单体分子量之和。</p>
+<p>理解聚合反应的关键在于认识它的可逆性——其逆过程是水解反应（hydrolysis），即消耗一分子水打断一个键，将聚合物分解回单体。这一对互逆反应贯穿了几乎所有生物大分子的合成与分解：细胞利用聚合反应存储能量和构建结构（如将葡萄糖聚合为淀粉储能），又利用水解反应释放能量或获取原料（如消化时将淀粉水解为葡萄糖供细胞呼吸使用）。因此，在分析代谢或消化类问题时，第一步应判断反应方向：是单体连接（释放水、耗能）还是长链断裂（消耗水、释能）。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch20: Organic Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

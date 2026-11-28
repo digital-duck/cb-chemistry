@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radioactive Decay Kinetics | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="radioactive-decay-kinetics">Radioactive Decay Kinetics</h2>
+<p>Radioactive decay is a random process at the level of any single nucleus, but at the scale of a real sample — billions of atoms — it obeys a precise, predictable law. Each unstable nucleus has a fixed probability per unit time of decaying, called the decay constant $\lambda$, independent of the sample's age, temperature, or chemical environment. Because every atom decays independently with the same probability, the population as a whole shrinks in a way that mirrors continuous exponential decrease elsewhere in nature (drug elimination, capacitor discharge, cooling). The number of undecayed nuclei $N(t)$ satisfies the differential equation $\frac{dN}{dt} = -\lambda N$, whose solution is $N(t) = N_0 e^{-\lambda t}$. This is the one place in the section where a genuine mathematical law is unavoidable: the exponential form is not a modeling choice, it is the direct consequence of a constant per-nucleus decay probability.</p>
+<p><strong>Worked example.</strong> Iodine-131, used in thyroid treatment, has a half-life of 8.0 days. Half-life $t_{1/2}$ relates to $\lambda$ by $\lambda = \frac{\ln 2}{t_{1/2}}$, giving $\lambda \approx 0.0866\ \text{day}^{-1}$. Suppose a hospital receives a 100 mg dose. After 24 days (three half-lives), the remaining amount is $100 \times (1/2)^3 = 12.5$ mg — or equivalently, $100\,e^{-0.0866 \times 24} \approx 12.5$ mg. Both routes agree because half-life and $\lambda$ encode the same physical constant.</p>
+<p><strong>Problem-solving application.</strong> The practical skill is inverting the exponential to find elapsed time — the basis of radiometric dating and medical dosimetry. Solving $N(t) = N_0 e^{-\lambda t}$ for $t$ gives $t = \frac{1}{\lambda}\ln\left(\frac{N_0}{N}\right)$. Carbon-14 dating uses this directly: if a bone sample retains 30% of its original $^{14}\text{C}$ (half-life 5730 years), then $\lambda \approx 1.21\times10^{-4}\ \text{yr}^{-1}$, and $t = \frac{1}{1.21\times10^{-4}}\ln(1/0.30) \approx 9950$ years. The same equation, run forward, tells a hospital physicist how long to store radioactive waste before it drops below a safety threshold, or how much of a tracer isotope remains active at the moment of a scan. The recurring problem-solving move is always the same: identify $N_0$, $N$, and either $\lambda$ or $t_{1/2}$, then solve the exponential relationship for whichever quantity is unknown.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

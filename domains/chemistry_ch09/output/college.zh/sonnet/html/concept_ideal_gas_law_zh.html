@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ideal Gas Law | Chemistry Ch09</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="ideal-gas-law">Ideal Gas Law</h2>
+<p><strong>定义</strong></p>
+<p>理想气体状态方程描述了气体的压强、体积、温度和物质的量之间的定量关系。其表达式为：</p>
+$$PV = nRT$$
+<p>其中 $P$ 为压强（单位：Pa 或 atm），$V$ 为体积（单位：$\text{m}^3$ 或 L），$n$ 为气体的物质的量（单位：mol），$T$ 为绝对温度（单位：K），$R$ 为理想气体常数（$R = 8.314\ \text{J/(mol·K)}$，或 $R = 0.0821\ \text{L·atm/(mol·K)}$）。</p>
+<p>这一方程之所以成立，是因为在理想气体模型中，我们假设气体分子本身没有体积、分子间没有相互作用力，且碰撞是完全弹性的。真实气体在低压、高温条件下的行为与理想气体非常接近，因此该方程在多数常见条件下都足够精确。</p>
+<p><strong>例题</strong></p>
+<p>一个容积为 $10.0\ \text{L}$ 的钢瓶中装有 $2.00\ \text{mol}$ 的氧气，温度为 $27^\circ\text{C}$（即 $300\ \text{K}$）。求瓶内氧气的压强。</p>
+<p>将数据代入方程并求解 $P$：</p>
+$$P = \frac{nRT}{V} = \frac{(2.00\ \text{mol})(0.0821\ \text{L·atm/(mol·K)})(300\ \text{K})}{10.0\ \text{L}} \approx 4.93\ \text{atm}$$
+<p><strong>解决问题的应用</strong></p>
+<p>理想气体状态方程的真正价值在于它能连接四个变量中的任意三个，从而求解第四个，这在实验设计和工业过程中极为常见。例如，若已知某气体样品在标准状况（$0^\circ\text{C}$，$1\ \text{atm}$）下体积为 $22.4\ \text{L}$，恰好对应 $1\ \text{mol}$ 气体——这正是"摩尔体积"概念的来源，可用于快速换算气体质量与体积。</p>
+<p>在处理气体状态变化（如加热、压缩）时，若物质的量不变，可以将方程改写为比例关系：</p>
+$$\frac{P_1 V_1}{T_1} = \frac{P_2 V_2}{T_2}$$
+<p>这使我们无需知道 $R$ 或 $n$ 的具体数值，也能求解压强、体积或温度的变化，是化学实验中调节反应条件、计算气体产率时最常用的工具之一。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch9: Gases (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coupled Equilibria | Chemistry Ch13</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="coupled-equilibria">Coupled Equilibria</h2>
+<p>When two or more equilibrium systems share a common species, disturbing one system shifts the other, even though no reaction connects them directly except through that shared component. This is called coupled equilibria, and it explains phenomena ranging from why adding acid dissolves a precipitate to how hemoglobin releases oxygen in tissue but grabs it in the lungs.</p>
+<p>Consider silver chloride, a sparingly soluble salt:</p>
+$$\text{AgCl}(s) \rightleftharpoons \text{Ag}^+(aq) + \text{Cl}^-(aq), \quad K_{sp} = 1.8 \times 10^{-10}$$
+<p>Now suppose ammonia is added to the solution. Silver ions form a complex with ammonia:</p>
+$$\text{Ag}^+(aq) + 2\text{NH}_3(aq) \rightleftharpoons \text{Ag(NH}_3)_2^+(aq), \quad K_f = 1.7 \times 10^7$$
+<p>These two equilibria are coupled through $\text{Ag}^+$. As ammonia consumes free $\text{Ag}^+$, Le Chatelier's principle drives the dissolution reaction forward to replace it, pulling more AgCl into solution. The overall process is the sum of the two reactions, and its equilibrium constant is simply the product of the individual constants:</p>
+$$K_{overall} = K_{sp} \times K_f = (1.8\times10^{-10})(1.7\times10^7) \approx 3.1\times10^{-3}$$
+<p>This is far larger than $K_{sp}$ alone, confirming that AgCl is dramatically more soluble in ammonia than in pure water — a result used in practice, from photographic film processing to qualitative analysis schemes that separate metal ions by selective complexation.</p>
+<p>To apply this in problem-solving, treat coupled equilibria as a bookkeeping exercise: write each individual reaction with its known $K$, add the reactions so the shared intermediate cancels, and multiply the constants (never add them — $K$ values combine multiplicatively because they come from a product of concentration ratios, and adding reactions corresponds to multiplying their equilibrium expressions). If a problem gives you a target species concentration, you can then use the overall $K$ directly in a single equilibrium calculation instead of solving two equilibria simultaneously.</p>
+<p>This same coupling logic underlies buffer systems, where an acid-base equilibrium is linked to a solubility or complexation equilibrium, and biological systems, where binding equilibria are coupled across multiple sites (as in hemoglobin's cooperative oxygen binding). The key problem-solving skill is identifying the shared species and combining reactions systematically rather than treating each equilibrium in isolation.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

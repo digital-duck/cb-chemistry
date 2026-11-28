@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crystal Field Theory | Chemistry Ch19</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="crystal-field-theory-晶体场理论">Crystal Field Theory(晶体场理论)</h2>
+<p><strong>定义</strong></p>
+<p>晶体场理论解释了过渡金属配合物为何呈现丰富多彩的颜色,以及为何某些配合物是磁性的而另一些不是。当一个带正电的过渡金属离子(如 $Fe^{2+}$、$Cu^{2+}$)被若干配体(带负电或含孤对电子的分子/离子)包围时,金属离子原本能量相同的五个 $d$ 轨道($d_{xy}, d_{xz}, d_{yz}, d_{x^2-y^2}, d_{z^2}$)会因配体电子云的静电排斥而发生<strong>能级分裂</strong>。分裂的方式取决于配体的空间排列方式(几何构型)。</p>
+<p>在最常见的<strong>正八面体构型</strong>中,六个配体沿 $x, y, z$ 轴方向逼近金属离子。位于轴向的 $d_{x^2-y^2}$ 和 $d_{z^2}$ 轨道正对着配体,受到的排斥更强,能量升高,归为 $e_g$ 组;而 $d_{xy}, d_{xz}, d_{yz}$ 轨道则指向轴间空隙,受排斥较弱,能量降低,归为 $t_{2g}$ 组。两组之间的能量差称为<strong>晶体场分裂能</strong>,记作 $\Delta_o$。</p>
+<p><strong>实例分析</strong></p>
+<p>以 $[Ti(H_2O)_6]^{3+}$ 为例,$Ti^{3+}$ 只有一个 $d$ 电子。该电子占据能量较低的 $t_{2g}$ 轨道。当白光照射该配合物时,电子吸收一个能量恰好等于 $\Delta_o$ 的光子,从 $t_{2g}$ 跃迁到 $e_g$。此配合物吸收的是黄绿光(约 500 nm),因此我们看到的是其补色——紫色。这正是晶体场理论最直观的应用:通过测量配合物吸收光的波长,可反推 $\Delta_o$ 的大小,即 $\Delta_o = hc/\lambda$。</p>
+<p><strong>解决问题的应用</strong></p>
+<p>晶体场理论还能预测配合物的磁性。当 $\Delta_o$ 较小(弱场配体,如 $Cl^-$)时,电子倾向于分散占据五个轨道,遵循洪特规则,形成<strong>高自旋</strong>排布,未成对电子多,配合物具有较强磁性;当 $\Delta_o$ 较大(强场配体,如 $CN^-$)时,电子优先填满能量较低的 $t_{2g}$ 轨道后才进入 $e_g$,形成<strong>低自旋</strong>排布,未成对电子少甚至为零。判断依据是比较 $\Delta_o$ 与电子成对能 $P$ 的相对大小:若 $\Delta_o > P$,则低自旋更稳定;若 $\Delta_o < P$,则高自旋更稳定。这一规则被广泛用于预测配合物的顺磁性强弱、颜色深浅以及化学反应活性,是无机化学与生物无机化学(如血红蛋白中 $Fe^{2+}$ 的自旋状态)中的核心分析工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch19: Transition Metals and Coordination Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

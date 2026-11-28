@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bond Dipole Moment | Chemistry Ch07</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="bond-dipole-moment-键偶极矩">Bond Dipole Moment 键偶极矩</h2>
+<p><strong>定义</strong></p>
+<p>当两个成键原子的电负性不同时，共用电子对会偏向电负性较大的原子，使成键的一端带部分负电荷（$\delta^-$），另一端带部分正电荷（$\delta^+$），这种不对称的电荷分布称为极性共价键。用来定量描述这种极性大小的物理量就是键偶极矩，记作 $\mu$。它是一个矢量，方向由 $\delta^+$ 指向 $\delta^-$，大小定义为</p>
+$$
+\mu = q \cdot d
+$$
+<p>其中 $q$ 是发生分离的电荷量（单位：库仑，C），$d$ 是两个电荷中心之间的距离（单位：米，m）。偶极矩的常用单位是德拜（D），$1\ \text{D} = 3.34 \times 10^{-30}\ \text{C·m}$。电负性差越大、键长越长，键偶极矩通常越大。</p>
+<p><strong>举例说明</strong></p>
+<p>以 HCl 分子为例。氯的电负性（3.16）明显大于氢（2.20），电子对偏向氯，使氯端带 $\delta^-$，氢端带 $\delta^+$。实验测得 H–Cl 键的偶极矩约为 $1.08\ \text{D}$，键长约为 $127\ \text{pm}$。若把这一电荷分离近似看作一个完整电子电荷（$1.6 \times 10^{-19}\ \text{C}$）在两个中心之间转移了距离 $d$，可以反推出实际转移的有效电荷比例：</p>
+$$
+q = \frac{\mu}{d} = \frac{1.08 \times 3.34\times10^{-30}\ \text{C·m}}{1.27\times10^{-10}\ \text{m}} \approx 2.84\times10^{-20}\ \text{C}
+$$
+<p>将其除以一个电子电荷 $1.6\times10^{-19}\ \text{C}$，得到约 $18\%$——说明 H–Cl 键并非离子键，而是部分离子性的极性共价键，这与两元素电负性差（约 0.96）处于中等范围的判断一致。</p>
+<p><strong>解决问题的应用</strong></p>
+<p>键偶极矩不仅描述单个键，更是判断整个分子极性的基础：分子的总偶极矩是各键偶极矩的矢量和，还要考虑分子的几何构型。例如 CO$_2$ 中每个 C=O 键都有偶极矩，但分子呈线性对称排列，两个键偶极矩方向相反、大小相等，矢量和为零，因此 CO$_2$ 是非极性分子；而 H$_2$O 因分子呈角形（约 $104.5°$），两个 O–H 键偶极矩不能完全抵消，合成一个净偶极矩，使水成为极性分子。这一原理是预测分子间作用力类型（如氢键、偶极-偶极作用）、溶解性规律（"相似相溶"）以及沸点、熔点差异的重要工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch7: Chemical Bonding and Molecular Geometry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

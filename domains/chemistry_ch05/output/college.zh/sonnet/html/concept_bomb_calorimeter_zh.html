@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bomb Calorimeter | Chemistry Ch05</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="bomb-calorimeter">Bomb Calorimeter</h2>
+<p><strong>定义</strong></p>
+<p>弹式量热计（bomb calorimeter）是用于精确测量化学反应——尤其是燃烧反应——所释放热量的装置。其核心是一个密闭的耐高压不锈钢容器（"弹"），样品在其中于纯氧气氛下被点燃燃烧。由于容器体积固定，反应在恒容条件下进行，因此测得的热量对应于反应的<strong>内能变化</strong> $\Delta U$，而非恒压条件下的焓变 $\Delta H$。整套装置浸没在已知质量的水中，水温的升高通过精密温度计记录，并利用量热计的<strong>热容量</strong>（calorimeter constant，$C_{cal}$，单位 J/°C）将温度变化换算为热量：</p>
+$$q = C_{cal} \times \Delta T$$
+<p>由于系统与外界隔绝（绝热、恒容），反应放出的热量全部被水和量热计吸收，即 $q_{反应} = -q_{吸收}$。</p>
+<p><strong>工作实例</strong></p>
+<p>某实验中，0.500 g 葡萄糖样品在弹式量热计中完全燃烧，量热计（含水）的总热容量为 $9.20\ \text{kJ/°C}$，温度从 $25.00°C$ 升高到 $27.32°C$。</p>
+<p>首先计算释放的总热量：</p>
+$$q = C_{cal} \times \Delta T = 9.20\ \text{kJ/°C} \times 2.32°C = 21.3\ \text{kJ}$$
+<p>由于反应是放热的，样品燃烧释放的热量 $q_{反应} = -21.3\ \text{kJ}$。将其换算为每摩尔葡萄糖的燃烧能（摩尔质量 180 g/mol）：</p>
+$$\Delta U_{comb} = \frac{-21.3\ \text{kJ}}{0.500\ \text{g}} \times 180\ \text{g/mol} \approx -7670\ \text{kJ/mol}$$
+<p><strong>问题解决应用</strong></p>
+<p>弹式量热计广泛用于测定食品的热量值（卡路里含量）和燃料的燃烧热，是营养标签数据和能源效率评估的实验基础。使用时需注意两点：第一，量热计常数 $C_{cal}$ 必须先用已知燃烧热的标准物质（如苯甲酸）校准，才能用于未知样品；第二，测得的是恒容热 $\Delta U$，若需比较文献中常见的恒压燃烧焓 $\Delta H_{comb}$，需用关系式 $\Delta H = \Delta U + \Delta n_{gas}RT$ 进行校正，其中 $\Delta n_{gas}$ 是反应前后气体分子数的变化。在解题时，学生常见的错误是忽略量热计本身吸热（误把水的比热当作唯一吸热项），或忘记单位换算（g 与 mol 之间）。掌握这一装置的原理，有助于理解能量守恒定律在真实实验体系中的具体应用。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch5: Thermochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

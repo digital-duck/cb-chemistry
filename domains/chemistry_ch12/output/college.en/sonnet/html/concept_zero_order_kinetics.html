@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zero Order Kinetics | Chemistry Ch12</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="zero-order-kinetics">Zero Order Kinetics</h2>
+<p>In chemical kinetics, the <em>order</em> of a reaction describes how the rate depends on the concentration of a reactant. A reaction follows zero-order kinetics when its rate is constant — independent of the reactant's concentration. This happens whenever the rate-limiting step doesn't involve free reactant molecules colliding in solution but instead depends on a fixed, saturated resource: an enzyme active site fully occupied by substrate, a catalytic surface with no open binding spots, or a light source delivering a constant photon flux. Because the mechanism producing the reaction, not the amount of reactant present, sets the pace, doubling the concentration doesn't speed anything up.</p>
+<p>Mathematically, the rate law is</p>
+$$\text{rate} = -\frac{d[A]}{dt} = k$$
+<p>where $k$ is the rate constant (units of concentration/time). Integrating gives a linear decay:</p>
+$$[A]_t = [A]_0 - kt$$
+<p>This is the defining signature of zero order: a plot of concentration versus time is a straight line, in contrast to the exponential decay of first-order kinetics.</p>
+<p><strong>Worked example.</strong> An enzyme-catalyzed reaction is running at saturating substrate concentration, so $[A]_0 = 10\ \text{mM}$ and $k = 0.5\ \text{mM/min}$. After 8 minutes, $[A]_8 = 10 - (0.5)(8) = 6\ \text{mM}$. Notice the drop is the same 4 mM whether we look at the first 8 minutes or the next 8 minutes — the rate never slows down until the enzyme becomes unsaturated near depletion.</p>
+<p><strong>Problem-solving application.</strong> A clinical example: ethanol metabolism in the human body is zero order at typical drinking concentrations, because liver enzymes (alcohol dehydrogenase) are saturated. Suppose blood alcohol concentration (BAC) starts at 0.08% and clears at $k = 0.015\%/\text{hr}$. To find when BAC reaches the legal limit for driving after a stricter threshold, say 0.02%, solve the linear equation directly:</p>
+$$0.02 = 0.08 - 0.015t \implies t = \frac{0.08 - 0.02}{0.015} \approx 4\ \text{hours}$$
+<p>This linear, additive structure is the practical payoff of recognizing zero-order behavior: elapsed time to reach any target concentration is a simple subtraction-and-division calculation, with no logarithms required — unlike first-order decay, where the same question would require solving an exponential equation.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

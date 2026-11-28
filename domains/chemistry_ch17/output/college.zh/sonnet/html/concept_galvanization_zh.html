@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galvanization | Chemistry Ch17</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="galvanization-镀锌防腐">Galvanization（镀锌防腐）</h2>
+<p><strong>定义</strong></p>
+<p>镀锌是一种在钢铁表面覆盖一层锌的防腐蚀技术，目的是保护铁不被氧化生锈。其防护原理依赖于电化学中的"牺牲阳极"机制：锌的活泼性比铁强，在标准电极电势表中，锌的还原电位（$E^\circ_{\text{Zn}^{2+}/\text{Zn}} = -0.76\ \text{V}$）低于铁（$E^\circ_{\text{Fe}^{2+}/\text{Fe}} = -0.44\ \text{V}$）。当两种金属接触并暴露在潮湿含氧环境中，会形成一个微型原电池：锌作为阳极优先被氧化失去电子，铁则作为阴极被保护，即使镀层出现划痕，暴露的铁仍不会立刻生锈，因为电子会持续从锌流向铁。</p>
+<p>工业上常见两种镀锌方式：热浸镀锌（将钢材浸入熔融锌液，约450°C）形成较厚耐用的锌铁合金层，多用于护栏、桥梁钢构；电镀锌则利用电解沉积形成薄而光滑的锌层，常见于螺丝、汽车车身板材。</p>
+<p><strong>实例分析</strong></p>
+<p>以桥梁栏杆为例：若栏杆全部由未处理的普通钢制成，暴露于雨水和空气中的氧气会发生：</p>
+$$
+2\text{Fe} + O_2 + 2\text{H}_2\text{O} \rightarrow 2\text{Fe(OH)}_2 \rightarrow \text{进一步氧化为铁锈 Fe}_2\text{O}_3\cdot x\text{H}_2\text{O}
+$$
+<p>而镀锌后，锌层先被氧化生成致密的氧化锌/碳酸锌保护膜（$2\text{Zn} + O_2 \rightarrow 2\text{ZnO}$，随后与空气中$\text{CO}_2$反应生成$\text{ZnCO}_3$），这层膜阻隔了氧气和水分进一步接触内部锌层，大幅延缓腐蚀速率。</p>
+<p><strong>问题解决应用</strong></p>
+<p>工程师在选择防腐方案时需要权衡：镀层是否需要"自我修复"能力？若结构件容易被划伤（如护栏、船体），应选用锌等电位比铁更负的金属，因为即使镀层破损，牺牲阳极效应仍能持续保护铁；反之若用镍或锡镀层（电位比铁更正），一旦镀层破损，反而会加速铁的腐蚀，因为此时铁变成阳极被优先氧化。这类判断题在实际材料选型和环境工程评估中十分常见——先比较金属活动性顺序，再决定镀层组合是否具有保护性而非破坏性。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch17: Electrochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

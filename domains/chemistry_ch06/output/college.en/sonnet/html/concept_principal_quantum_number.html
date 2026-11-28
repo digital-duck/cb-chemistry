@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Principal Quantum Number | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="principal-quantum-number">Principal Quantum Number</h2>
+<p><strong>Definition.</strong> The principal quantum number, denoted $n$, is one of the four quantum numbers that describe the state of an electron in an atom. It is a positive integer ($n = 1, 2, 3, \dots$) that specifies the electron's energy level and, roughly, its average distance from the nucleus. Larger $n$ means the electron occupies a higher-energy shell farther from the nucleus. For the hydrogen atom, the allowed energies depend only on $n$, following the relation</p>
+$$E_n = -\frac{13.6\ \text{eV}}{n^2}$$
+<p>This formula tells you two things at once: energy increases (becomes less negative) as $n$ grows, and the energy levels get closer together at higher $n$, eventually converging to zero as the electron becomes unbound (ionized).</p>
+<p><strong>Worked example.</strong> Suppose you want to find the energy of an electron in the $n = 3$ shell of a hydrogen atom. Plugging into the formula:</p>
+$$E_3 = -\frac{13.6}{3^2} = -\frac{13.6}{9} \approx -1.51\ \text{eV}$$
+<p>Compare this to the ground state, $E_1 = -13.6$ eV. The difference, $E_3 - E_1 = 12.09$ eV, is the energy a photon must supply to excite an electron from $n=1$ to $n=3$ — this is exactly the kind of calculation used to predict which wavelengths of light an atom will absorb or emit.</p>
+<p><strong>Problem-solving application.</strong> The principal quantum number is the key to predicting spectral lines. When an electron drops from a higher level $n_i$ to a lower level $n_f$, it emits a photon with energy equal to the difference between the two levels:</p>
+$$\Delta E = 13.6\ \text{eV}\left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right)$$
+<p>For example, an electron falling from $n_i = 4$ to $n_f = 2$ releases $\Delta E = 13.6(1/4 - 1/16) = 2.55$ eV — a transition in the visible-light (Balmer) series that produces one of the characteristic blue-green lines in hydrogen's spectrum. This same reasoning lets chemists and astronomers identify elements in stars or lab samples purely from the pattern of light they emit, since each element's set of allowed $n$-transitions acts like a fingerprint.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

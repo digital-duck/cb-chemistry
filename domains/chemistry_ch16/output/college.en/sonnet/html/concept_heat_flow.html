@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heat Flow | Chemistry Ch16</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="heat-flow">Heat Flow</h2>
+<p>Heat flow describes how thermal energy moves from a region of higher temperature to one of lower temperature. This isn't just a physics abstraction — it governs why your coffee cools, why a house loses warmth in winter, and why a CPU needs a heat sink. The rate at which heat moves depends on the temperature difference driving it, the material it passes through, and the geometry of that material. This single relationship is captured by Fourier's Law of heat conduction — one of the few cases in this topic where the underlying idea is genuinely mathematical, since it describes how energy flux responds to a temperature gradient rather than something you can fully capture with words alone.</p>
+<p>Fourier's Law states that the heat flux $q$ (energy per unit area per unit time) through a material is proportional to the negative temperature gradient:</p>
+$$q = -k \frac{dT}{dx}$$
+<p>Here $k$ is the thermal conductivity of the material — a fixed property that tells you how easily it conducts heat — and $\frac{dT}{dx}$ is how temperature changes with position along the direction of flow. The negative sign matters conceptually: heat flows from hot to cold, opposite the direction in which temperature increases.</p>
+<p><strong>Worked example.</strong> Suppose a metal rod, 2 meters long with conductivity $k = 200\ \text{W/(m·K)}$, has one end held at $100°C$ and the other at $20°C$, with the temperature settling into a constant, unchanging pattern along the rod. The temperature gradient is then uniform:</p>
+$$\frac{dT}{dx} = \frac{20 - 100}{2} = -40\ \text{°C/m}$$
+<p>The heat flux is:</p>
+$$q = -200 \times (-40) = 8000\ \text{W/m}^2$$
+<p>So every square meter of cross-section carries 8000 watts of heat from the hot end to the cold end.</p>
+<p><strong>Problem-solving application.</strong> Fourier's Law alone lets you reason about design choices without any new machinery. If you double the rod's length while holding the temperature difference fixed, the gradient — and therefore the flux — is cut in half; this is why longer conduction paths reduce heat loss, a principle used in choosing wall thickness for insulated buildings. If instead you swap in a material with lower $k$, such as replacing copper ($k \approx 400$) with a polymer ($k \approx 0.2$), the flux drops by three orders of magnitude, which is precisely why polymers make good thermal insulators and copper makes a good heat sink. Every one of these design decisions — thicker walls, better insulation, choice of heat-sink metal — is just this same equation applied with different numbers.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ionic Radius | Chemistry Ch06</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="ionic-radius-离子半径">Ionic Radius（离子半径）</h2>
+<p><strong>定义</strong></p>
+<p>离子半径是指离子在晶体结构中所占据的有效大小，通常以皮米（pm）为单位表示。当原子失去或获得电子形成离子时，其半径会发生显著变化，这种变化的方向和幅度由核电荷与电子云之间的相互作用决定。</p>
+<p>阳离子（正离子）的半径总是小于其对应的中性原子。原因有二：其一，失去电子后，核内质子对剩余电子的有效吸引力相对增强，电子云被拉得更紧；其二，若失去的是最外层整个电子层（如 $\text{Na} \rightarrow \text{Na}^+$ 失去 $3s^1$ 电子后仅剩 $[\text{Ne}]$ 构型），电子层数减少，半径缩小更为明显。</p>
+<p>阴离子（负离子）的半径则大于对应的中性原子，因为获得电子增加了电子间的排斥力，电子云向外扩张，而核电荷保持不变，无法有效约束新增的电子密度。</p>
+<p>对于等电子系列（isoelectronic series，即电子数相同但核电荷不同的离子，如 $\text{O}^{2-}$、$\text{F}^-$、$\text{Na}^+$、$\text{Mg}^{2+}$），核电荷越大，对相同数目电子的吸引力越强，离子半径越小。</p>
+<p><strong>实例分析</strong></p>
+<p>比较 $\text{O}^{2-}$、$\text{F}^-$、$\text{Na}^+$、$\text{Mg}^{2+}$ 四种离子，它们均具有 10 个电子（与 Ne 原子电子构型相同），但核电荷分别为 8、9、11、12。核电荷依次增大意味着对同样的电子云施加更强的静电吸引，因此半径依次减小：</p>
+$$
+r(\text{O}^{2-}) > r(\text{F}^-) > r(\text{Na}^+) > r(\text{Mg}^{2+})
+$$
+<p>这与实验测得的数值趋势（约 140 pm、133 pm、102 pm、72 pm）完全吻合。</p>
+<p><strong>问题解决应用</strong></p>
+<p>离子半径的大小直接影响晶格能、溶解度和离子的迁移速率。例如，在判断 $\text{NaCl}$ 与 $\text{MgO}$ 何者晶格能更高时，除了考虑电荷（$\text{Mg}^{2+}$ 与 $\text{O}^{2-}$ 电荷数更高）外，还需注意 $\text{Mg}^{2+}$ 和 $\text{O}^{2-}$ 的半径均小于 $\text{Na}^+$ 和 $\text{Cl}^-$，离子间距更短，静电吸引更强，因此 $\text{MgO}$ 的晶格能远高于 $\text{NaCl}$。</p>
+<p>在实际解题中，判断离子半径大小的通用步骤是：先比较电子层数（层数多者通常更大），层数相同时再比较核电荷（核电荷大者更小），最后考虑电荷本身对同一元素离子的影响（正电荷越多半径越小，负电荷越多半径越大）。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch6: Electronic Structure and Periodic Properties of Elements (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

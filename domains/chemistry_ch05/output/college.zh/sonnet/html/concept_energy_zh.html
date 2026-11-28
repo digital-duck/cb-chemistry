@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Energy | Chemistry Ch05</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="energy">Energy</h2>
+<p><strong>定义</strong></p>
+<p>能量是物质做功或引起变化的能力，单位为焦耳（$\text{J}$）。在自然科学中，能量以多种形式存在——动能、势能、热能、化学能、电能、辐射能等——但它们本质上是同一物理量在不同载体中的表现。能量的核心规律是<strong>能量守恒定律</strong>：在一个孤立系统中，能量既不会凭空产生，也不会凭空消失，只能从一种形式转化为另一种形式。这一定律贯穿生物学（细胞呼吸、光合作用）、化学（反应热、活化能）与地球科学（气候系统、地质活动）。</p>
+<p>动能的计算公式为：</p>
+$$E_k = \frac{1}{2}mv^2$$
+<p>其中 $m$ 为质量（$\text{kg}$），$v$ 为速度（$\text{m/s}$）。重力势能则为：</p>
+$$E_p = mgh$$
+<p>其中 $g$ 为重力加速度（约 $9.8\ \text{m/s}^2$），$h$ 为高度。</p>
+<p><strong>案例分析</strong></p>
+<p>以细胞呼吸为例：葡萄糖分子中储存的化学能通过一系列氧化反应逐步释放，最终转化为 ATP 中的化学能，供细胞完成各种生命活动。反应式为：</p>
+$$\text{C}_6\text{H}_{12}\text{O}_6 + 6\text{O}_2 \rightarrow 6\text{CO}_2 + 6\text{H}_2\text{O} + \text{能量（约 } 2870\ \text{kJ/mol）}$$
+<p>这里能量并未消失，而是从葡萄糖的化学键中转移到了 ATP 分子和热量中——完全符合能量守恒定律。</p>
+<p><strong>解决问题的应用</strong></p>
+<p>假设某座过山车从高度 $20\ \text{m}$ 处由静止下滑，忽略摩擦阻力，求其在底部的速度。根据能量守恒，势能全部转化为动能：</p>
+$$mgh = \frac{1}{2}mv^2$$
+<p>质量 $m$ 可约去，解得：</p>
+$$v = \sqrt{2gh} = \sqrt{2 \times 9.8 \times 20} \approx 19.8\ \text{m/s}$$
+<p>这种"始末状态能量相等"的思路，同样适用于生态系统中的能量流动分析：例如计算食物链中从生产者到消费者的能量传递效率（通常约为 10%），或评估某反应的净能量变化是放能还是吸能。掌握能量守恒的应用方法，是理解从细胞代谢到宏观力学系统运行机制的关键工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch5: Thermochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Henrys Law | Chemistry Ch11</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="henrys-law">Henrys Law</h2>
+<p>At a fixed temperature, the amount of a gas that dissolves in a liquid is directly proportional to the partial pressure of that gas above the liquid. This relationship, discovered by William Henry in 1803, is written as</p>
+$$C = k_H \, P$$
+<p>where $C$ is the concentration of dissolved gas in the liquid, $P$ is the partial pressure of the gas in contact with the liquid, and $k_H$ is the Henry's law constant — a value specific to each gas-liquid pair and temperature. Henry's law is a proportionality relationship, not a derived theorem, so its content is fully captured by this simple equation; no further formalism is needed to use it correctly.</p>
+<p>Consider carbonated soda. Before the bottle is opened, the space above the liquid is pressurized with $\mathrm{CO_2}$ at several atmospheres, forcing a large amount of $\mathrm{CO_2}$ to dissolve into the liquid according to $C = k_H P$. When the cap is removed, the partial pressure of $\mathrm{CO_2}$ above the liquid drops abruptly to the low level found in ordinary air. Because $C$ must fall in proportion to $P$, the liquid becomes supersaturated relative to the new equilibrium, and the excess gas escapes as visible bubbles — the fizz.</p>
+<p>Henry's law becomes a genuine problem-solving tool once you treat $k_H$ as a known, tabulated constant and solve for whichever quantity is missing. Suppose a lake at $20\,^\circ\mathrm{C}$ is in equilibrium with atmospheric air, where the partial pressure of oxygen is about $0.21\,\mathrm{atm}$, and the Henry's law constant for $\mathrm{O_2}$ in water at that temperature is $k_H \approx 1.3 \times 10^{-3}\ \mathrm{mol/(L\cdot atm)}$. The dissolved oxygen concentration is then</p>
+$$C = k_H P = (1.3\times10^{-3})(0.21) \approx 2.7\times10^{-4}\ \mathrm{mol/L}.$$
+<p>This is the calculation underlying real environmental questions: as water warms, $k_H$ for oxygen decreases (gas solubility drops with rising temperature), so warmer lakes and rivers hold less dissolved oxygen — a key reason why thermal pollution from power plants can stress fish populations even without any change in atmospheric pressure. The same relationship governs why divers must ascend slowly (dissolved nitrogen must leave the blood gradually as ambient pressure drops, avoiding the bubble formation known as decompression sickness) and why deep-sea creatures are adapted to gas concentrations that would be lethal at the surface.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,203 @@
+domain: chemistry_2e_ch18
+sources:
+  periodic_table_groups:
+    label: Periodic Table Groups and Classification
+    sections:
+    - id: ch18_s18_1
+      title: 18.1 Periodicity
+  electron_configuration:
+    label: Electron Configuration
+    sections: []
+  electronegativity:
+    label: Electronegativity
+    sections: []
+  ionization_energy:
+    label: Ionization Energy
+    sections: []
+  oxidation_state:
+    label: Oxidation State
+    sections: []
+  ionic_bonding:
+    label: Ionic Bonding
+    sections: []
+  covalent_bonding:
+    label: Covalent Bonding
+    sections: []
+  lewis_acid_base:
+    label: Lewis Acid-Base Theory
+    sections: []
+  electrolysis:
+    label: Electrolysis
+    sections:
+    - id: ch18_s18_2
+      title: 18.2 Occurrence and Preparation of the Representative Metals
+  reduction_potential:
+    label: Reduction Potential
+    sections: []
+  metallic_character:
+    label: Metallic Character
+    sections:
+    - id: ch18_s18_1
+      title: 18.1 Periodicity
+  representative_elements:
+    label: Representative Elements
+    sections:
+    - id: ch18_s18_1
+      title: 18.1 Periodicity
+  alkali_metals:
+    label: Alkali Metals (Group 1)
+    sections:
+    - id: ch18_s18_1
+      title: 18.1 Periodicity
+  alkaline_earth_metals:
+    label: Alkaline Earth Metals (Group 2)
+    sections:
+    - id: ch18_s18_1
+      title: 18.1 Periodicity
+  passivation:
+    label: Passivation
+    sections:
+    - id: ch18_s18_1
+      title: 18.1 Periodicity
+    - id: ch18_s18_3
+      title: 18.3 Structure and General Properties of the Metalloids
+  inert_pair_effect:
+    label: Inert Pair Effect
+    sections:
+    - id: ch18_s18_1
+      title: 18.1 Periodicity
+  allotropes:
+    label: Allotropes
+    sections:
+    - id: ch18_s18_1
+      title: 18.1 Periodicity
+    - id: ch18_s18_4
+      title: 18.4 Structure and General Properties of the Nonmetals
+    - id: ch18_s18_10
+      title: 18.10 Occurrence, Preparation, and Properties of Sulfur
+  metalloids:
+    label: Metalloids (Semimetals)
+    sections:
+    - id: ch18_s18_1
+      title: 18.1 Periodicity
+    - id: ch18_s18_3
+      title: 18.3 Structure and General Properties of the Metalloids
+  semiconductor_behavior:
+    label: Semiconductor Behavior
+    sections:
+    - id: ch18_s18_3
+      title: 18.3 Structure and General Properties of the Metalloids
+  nonmetals:
+    label: Nonmetals
+    sections:
+    - id: ch18_s18_1
+      title: 18.1 Periodicity
+    - id: ch18_s18_4
+      title: 18.4 Structure and General Properties of the Nonmetals
+  acid_anhydride:
+    label: Acid Anhydride
+    sections:
+    - id: ch18_s18_4
+      title: 18.4 Structure and General Properties of the Nonmetals
+    - id: ch18_s18_9
+      title: 18.9 Occurrence, Preparation, and Compounds of Oxygen
+  oxyacids:
+    label: Oxyacids
+    sections:
+    - id: ch18_s18_4
+      title: 18.4 Structure and General Properties of the Nonmetals
+    - id: ch18_s18_9
+      title: 18.9 Occurrence, Preparation, and Compounds of Oxygen
+  disproportionation_reaction:
+    label: Disproportionation Reaction
+    sections:
+    - id: ch18_s18_4
+      title: 18.4 Structure and General Properties of the Nonmetals
+    - id: ch18_s18_11
+      title: 18.11 Occurrence, Preparation, and Properties of Halogens
+  halogens:
+    label: Halogens (Group 17)
+    sections:
+    - id: ch18_s18_11
+      title: 18.11 Occurrence, Preparation, and Properties of Halogens
+  interhalogens:
+    label: Interhalogens
+    sections:
+    - id: ch18_s18_11
+      title: 18.11 Occurrence, Preparation, and Properties of Halogens
+  noble_gases:
+    label: Noble Gases (Group 18)
+    sections:
+    - id: ch18_s18_12
+      title: 18.12 Occurrence, Preparation, and Properties of the Noble Gases
+  nitrogen_fixation:
+    label: Nitrogen Fixation
+    sections:
+    - id: ch18_s18_7
+      title: 18.7 Occurrence, Preparation, and Properties of Nitrogen
+  silicates:
+    label: Silicates
+    sections:
+    - id: ch18_s18_3
+      title: 18.3 Structure and General Properties of the Metalloids
+  ozone:
+    label: Ozone
+    sections:
+    - id: ch18_s18_9
+      title: 18.9 Occurrence, Preparation, and Compounds of Oxygen
+  chemical_reduction_metals:
+    label: Chemical Reduction of Metals
+    sections:
+    - id: ch18_s18_2
+      title: 18.2 Occurrence and Preparation of the Representative Metals
+  downs_cell:
+    label: Downs Cell (Sodium Production)
+    sections:
+    - id: ch18_s18_2
+      title: 18.2 Occurrence and Preparation of the Representative Metals
+  hall_heroult_cell:
+    label: Hall–Héroult Cell (Aluminum Production)
+    sections:
+    - id: ch18_s18_2
+      title: 18.2 Occurrence and Preparation of the Representative Metals
+  pidgeon_process:
+    label: Pidgeon Process (Magnesium Production)
+    sections:
+    - id: ch18_s18_2
+      title: 18.2 Occurrence and Preparation of the Representative Metals
+  haber_process:
+    label: Haber Process (Ammonia Synthesis)
+    sections:
+    - id: ch18_s18_5
+      title: 18.5 Occurrence, Preparation, and Compounds of Hydrogen
+    - id: ch18_s18_7
+      title: 18.7 Occurrence, Preparation, and Properties of Nitrogen
+  ostwald_process:
+    label: Ostwald Process (Nitric Acid Production)
+    sections:
+    - id: ch18_s18_9
+      title: 18.9 Occurrence, Preparation, and Compounds of Oxygen
+  frasch_process:
+    label: Frasch Process (Sulfur Mining)
+    sections:
+    - id: ch18_s18_10
+      title: 18.10 Occurrence, Preparation, and Properties of Sulfur
+  chlor_alkali_process:
+    label: Chlor-Alkali Process
+    sections:
+    - id: ch18_s18_9
+      title: 18.9 Occurrence, Preparation, and Compounds of Oxygen
+    - id: ch18_s18_11
+      title: 18.11 Occurrence, Preparation, and Properties of Halogens
+  sacrificial_anode:
+    label: Sacrificial Anode (Cathodic Protection)
+    sections:
+    - id: ch18_s18_1
+      title: 18.1 Periodicity
+  amphoteric_behavior:
+    label: Amphoteric Behavior
+    sections:
+    - id: ch18_s18_1
+      title: 18.1 Periodicity
+    - id: ch18_s18_6
+      title: 18.6 Occurrence, Preparation, and Properties of Carbonates

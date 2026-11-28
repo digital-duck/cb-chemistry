@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Energy Equilibrium Relationship | Chemistry Ch16</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="free-energy-equilibrium-relationship">Free Energy Equilibrium Relationship</h2>
+<p><strong>定义</strong></p>
+<p>反应的自由能变化 $\Delta G$ 描述的是体系在特定条件下偏离平衡的程度，而标准自由能变化 $\Delta G^\circ$ 描述的是在标准状态（所有物质浓度为 1 mol/L，气体分压为 1 atm）下的自由能变化。两者通过反应商 $Q$ 联系起来：</p>
+$$\Delta G = \Delta G^\circ + RT\ln Q$$
+<p>其中 $R$ 是气体常数，$T$ 是绝对温度。当体系达到平衡时，净反应驱动力消失，即 $\Delta G = 0$，同时反应商 $Q$ 等于平衡常数 $K$。代入上式并整理，得到自由能与平衡常数之间的核心关系：</p>
+$$\Delta G^\circ = -RT\ln K$$
+<p>这个公式说明：$\Delta G^\circ$ 越负，$K$ 越大，说明反应在标准状态下更倾向于生成产物；反之，$\Delta G^\circ$ 越正，$K$ 越小，反应更倾向于停留在反应物一侧。</p>
+<p><strong>实例演算</strong></p>
+<p>考虑某反应在 298 K 时的标准自由能变化为 $\Delta G^\circ = -5.71\ \text{kJ/mol}$。求平衡常数 $K$。</p>
+<p>将数值代入 $\Delta G^\circ = -RT\ln K$：</p>
+$$-5710\ \text{J/mol} = -(8.314\ \text{J/(mol·K)})(298\ \text{K})\ln K$$
+$$\ln K = \frac{5710}{8.314 \times 298} \approx 2.30$$
+$$K = e^{2.30} \approx 10$$
+<p>可见即使自由能变化的绝对值不大，平衡常数也可能与 1 有明显偏离，说明反应体系中产物略占优势。</p>
+<p><strong>问题解决应用</strong></p>
+<p>这一关系式在生物化学和工业化学中极为实用。例如在细胞代谢中，ATP 水解的 $\Delta G^\circ$ 约为 $-30.5\ \text{kJ/mol}$，据此可反推该反应在细胞内几乎完全趋向正向进行，从而理解为何 ATP 能作为“能量货币”驱动其他吸能反应耦合进行。</p>
+<p>在实际问题中，学生常需要在两个方向上运用此公式：已知 $K$（例如由实验测得的浓度数据计算得出）求 $\Delta G^\circ$，从而判断反应的自发性；或已知 $\Delta G^\circ$（由生成焓和熵变计算得出）预测在给定温度下反应能进行到何种程度。此外，还需注意温度对 $K$ 的影响——当温度升高，$RT$ 增大，对于放热反应（$\Delta G^\circ$ 更负）而言，$K$ 会随之减小，这与勒沙特列原理的定性预测完全一致，体现了热力学公式与直觉规律之间的统一。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch16: Thermodynamics (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nuclear Reactor | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="核反应堆">核反应堆</h2>
+<p><strong>定义</strong></p>
+<p>核反应堆是一种通过可控的核裂变链式反应释放能量，并将其转化为可用热能或电能的装置。其核心原理是：铀-235（$^{235}\text{U}$）等重核吸收一个中子后分裂成两个较轻的核，同时释放2到3个新中子和大量能量。这些新中子若继续引发其他铀核裂变，就形成链式反应。反应堆的关键任务是把这一链式反应控制在稳定水平，既不让它熄灭，也不让它失控加速。</p>
+<p>反应堆主要由四部分组成：<strong>燃料</strong>（通常是低浓缩铀，浓度约3%–5%的$^{235}\text{U}$）、<strong>慢化剂</strong>（如水或石墨，用于减慢中子速度，因为慢中子更容易被$^{235}\text{U}$吸收而引发裂变）、<strong>控制棒</strong>（含硼或镉等强吸收中子的材料，插入或抽出以调节反应速率）、以及<strong>冷却剂</strong>（带走裂变产生的热量，驱动涡轮发电机）。</p>
+<p><strong>运行原理与计算示例</strong></p>
+<p>反应堆是否稳定运行取决于<strong>有效增殖因子</strong> $k$：每一代裂变中子数与上一代中子数之比。</p>
+$$k = \frac{\text{本代中子数}}{\text{上一代中子数}}$$
+<li>$k = 1$：临界状态，反应稳定持续（正常发电状态）</li>
+<li>$k > 1$：超临界，反应增强（若失控则危险）</li>
+<li>$k < 1$：次临界，反应逐渐熄灭</li>
+<p>例如，若某一代产生了10,000个引发裂变的中子，下一代产生了10,020个，则</p>
+$$k = \frac{10020}{10000} = 1.002$$
+<p>这是轻微超临界，反应堆功率会缓慢上升，操作员需插入控制棒吸收多余中子，使$k$重新回到1。</p>
+<p><strong>解决实际问题的应用</strong></p>
+<p>核电厂运行中最重要的实践是<strong>反应性控制</strong>：操作员通过调节控制棒插入深度、冷却剂中硼酸浓度等手段，实时把$k$维持在1附近。一个常见的应用题是：反应堆功率与$k$的关系近似为指数增长/衰减，功率随时间变化可表示为</p>
+$$P(t) = P_0 \cdot e^{\frac{(k-1)}{\ell}t}$$
+<p>其中$\ell$为中子平均代时间（约$10^{-4}$秒量级，快中子反应堆）或考虑缓发中子后延长至约0.1秒（正是缓发中子的存在，才使人类得以用机械控制棒实现可控反应）。这解释了为什么反应堆设计必须依赖缓发中子提供的"反应窗口"，否则链式反应速度过快，人工控制将无法实现。这一原理也是福岛、切尔诺贝利等事故分析中评估失控风险的核心工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch21: Nuclear Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

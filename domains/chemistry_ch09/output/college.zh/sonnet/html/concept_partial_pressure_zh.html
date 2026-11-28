@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Partial Pressure | Chemistry Ch09</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="partial-pressure-分压">Partial Pressure（分压)</h2>
+<p><strong>定义</strong></p>
+<p>在由多种气体组成的混合气体中，每一种气体单独存在、占据整个容器体积、并保持与混合气体相同温度时所产生的压强，称为该气体的分压(partial pressure)。混合气体的总压等于各组分气体分压之和，这就是<strong>道尔顿分压定律</strong>(Dalton's Law of Partial Pressures)：</p>
+$$P_{\text{total}} = P_1 + P_2 + \cdots + P_n$$
+<p>某组分气体的分压还可以通过其摩尔分数(mole fraction, $x_i$)与总压的乘积求得：</p>
+$$P_i = x_i \cdot P_{\text{total}}, \qquad x_i = \dfrac{n_i}{n_{\text{total}}}$$
+<p>这一关系成立的前提是气体近似遵循理想气体行为——分子之间没有相互作用，因此每种气体的压强贡献相互独立、可以直接相加。</p>
+<p><strong>例题</strong></p>
+<p>一个容器中含有 $2.0\ \text{mol}\ \text{N}_2$、$1.0\ \text{mol}\ \text{O}_2$ 和 $1.0\ \text{mol}\ \text{CO}_2$，总压为 $4.0\ \text{atm}$。求 $\text{O}_2$ 的分压。</p>
+<p>总物质的量 $n_{\text{total}} = 2.0 + 1.0 + 1.0 = 4.0\ \text{mol}$。</p>
+<p>$\text{O}_2$ 的摩尔分数：$x_{\text{O}_2} = \dfrac{1.0}{4.0} = 0.25$。</p>
+<p>代入公式：$P_{\text{O}_2} = 0.25 \times 4.0\ \text{atm} = 1.0\ \text{atm}$。</p>
+<p><strong>解决实际问题</strong></p>
+<p>分压概念在生理学和潜水安全中至关重要。人体组织中气体交换的方向和速率取决于气体的分压差，而不是总压。例如，肺泡中氧气的分压约为 $100\ \text{mmHg}$，而静脉血中氧分压约为 $40\ \text{mmHg}$，正是这个分压梯度驱动氧气从肺泡扩散进入血液。</p>
+<p>在潜水中，随着下潜深度增加，环境总压升高，混合气体中每种气体的分压也随之升高。如果氮气分压过高，会导致"氮麻醉"；如果氧气分压超过约 $1.4\ \text{atm}$，则可能引发氧中毒。潜水员据此调整呼吸气体的组成比例，以保证每种气体的分压维持在安全范围内，而不仅仅关注总压是否合适。这说明理解分压不仅是化学计算问题，也是关乎生命安全的实际应用。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch9: Gases (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

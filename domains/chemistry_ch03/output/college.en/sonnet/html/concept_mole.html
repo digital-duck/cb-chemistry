@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mole | Chemistry Ch03</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="mole">Mole</h2>
+<p>A mole is a counting unit, just like a "dozen" means 12 of anything. One mole represents exactly $6.02214076 \times 10^{23}$ particles — a number called Avogadro's number ($N_A$). Chemists need a unit this large because atoms and molecules are extraordinarily small; a single drop of water contains trillions of molecules, so counting them individually is impossible. Instead, chemists count in "chemist dozens" — moles.</p>
+<p>The mole connects two things that are otherwise hard to relate: the <strong>number of particles</strong> (atoms, molecules, or ions) and the <strong>mass</strong> you can actually weigh on a balance. This link works because each element has a molar mass, numerically equal to its atomic mass in grams per mole. For example, one mole of carbon-12 atoms has a mass of 12 grams. For a compound, you add the molar masses of its constituent atoms. Water, $\text{H}_2\text{O}$, has a molar mass of $2(1.008) + 16.00 = 18.02\ \text{g/mol}$.</p>
+<p><strong>Worked example.</strong> Suppose you want to know how many molecules are in 36.04 grams of water. First, convert mass to moles using molar mass as a conversion factor:</p>
+$$
+36.04\ \text{g} \times \frac{1\ \text{mol}}{18.02\ \text{g}} = 2.000\ \text{mol}
+$$
+<p>Then convert moles to number of molecules using Avogadro's number:</p>
+$$
+2.000\ \text{mol} \times 6.022 \times 10^{23}\ \frac{\text{molecules}}{\text{mol}} = 1.204 \times 10^{24}\ \text{molecules}
+$$
+<p>Notice the pattern: mass and particle count are never directly interconverted — moles act as the required intermediate step.</p>
+<p><strong>Problem-solving application.</strong> Moles are essential for predicting how much product a chemical reaction will yield, a skill called stoichiometry. Suppose a reaction consumes 2 moles of hydrogen gas for every 1 mole of oxygen gas to produce water ($2\text{H}_2 + \text{O}_2 \rightarrow 2\text{H}_2\text{O}$). If a chemist has 4 moles of $\text{H}_2$, the mole ratio tells them exactly 2 moles of $\text{O}_2$ are needed and 4 moles of $\text{H}_2\text{O}$ will form — without ever weighing a single atom directly. This is why the mole is often called the "chemist's dozen": it turns invisible particle counts into measurable, predictable quantities on a lab bench.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

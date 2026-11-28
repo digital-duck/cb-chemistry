@@ -1,0 +1,168 @@
+domain: chemistry_2e_ch8
+sources:
+  atomic_orbitals:
+    label: Atomic Orbitals
+    sections: []
+  electron_configuration:
+    label: Electron Configuration
+    sections: []
+  lewis_structure:
+    label: Lewis Structure
+    sections: []
+  vsepr_theory:
+    label: VSEPR Theory
+    sections: []
+  wave_function:
+    label: Wave Function (ψ)
+    sections:
+    - id: ch08_s8_2
+      title: 8.2 Hybrid Atomic Orbitals
+    - id: ch08_s8_4
+      title: 8.4 Molecular Orbital Theory
+  covalent_bond:
+    label: Covalent Bond
+    sections: []
+  orbital_overlap:
+    label: Orbital Overlap
+    sections:
+    - id: ch08_s8_1
+      title: 8.1 Valence Bond Theory
+  valence_bond_theory:
+    label: Valence Bond Theory
+    sections:
+    - id: ch08_s8_1
+      title: 8.1 Valence Bond Theory
+  bond_distance:
+    label: Bond Distance (Bond Length)
+    sections:
+    - id: ch08_s8_1
+      title: 8.1 Valence Bond Theory
+  bond_energy:
+    label: Bond Energy
+    sections:
+    - id: ch08_s8_1
+      title: 8.1 Valence Bond Theory
+  sigma_bond:
+    label: Sigma Bond (σ Bond)
+    sections:
+    - id: ch08_s8_1
+      title: 8.1 Valence Bond Theory
+  pi_bond:
+    label: Pi Bond (π Bond)
+    sections:
+    - id: ch08_s8_1
+      title: 8.1 Valence Bond Theory
+  hybridization:
+    label: Hybridization
+    sections:
+    - id: ch08_s8_2
+      title: 8.2 Hybrid Atomic Orbitals
+  sp_hybridization:
+    label: sp Hybridization
+    sections:
+    - id: ch08_s8_2
+      title: 8.2 Hybrid Atomic Orbitals
+  sp2_hybridization:
+    label: sp² Hybridization
+    sections:
+    - id: ch08_s8_2
+      title: 8.2 Hybrid Atomic Orbitals
+  sp3_hybridization:
+    label: sp³ Hybridization
+    sections:
+    - id: ch08_s8_2
+      title: 8.2 Hybrid Atomic Orbitals
+  sp3d_hybridization:
+    label: sp³d Hybridization
+    sections:
+    - id: ch08_s8_2
+      title: 8.2 Hybrid Atomic Orbitals
+  sp3d2_hybridization:
+    label: sp³d² Hybridization
+    sections:
+    - id: ch08_s8_2
+      title: 8.2 Hybrid Atomic Orbitals
+  multiple_bonds:
+    label: Multiple Bonds
+    sections:
+    - id: ch08_s8_1
+      title: 8.1 Valence Bond Theory
+    - id: ch08_s8_3
+      title: 8.3 Multiple Bonds
+  restricted_rotation:
+    label: Restricted Rotation Around π Bonds
+    sections:
+    - id: ch08_s8_3
+      title: 8.3 Multiple Bonds
+  resonance:
+    label: Resonance
+    sections:
+    - id: ch08_s8_3
+      title: 8.3 Multiple Bonds
+  electron_delocalization:
+    label: Electron Delocalization
+    sections:
+    - id: ch08_s8_3
+      title: 8.3 Multiple Bonds
+    - id: ch08_s8_4
+      title: 8.4 Molecular Orbital Theory
+  lcao:
+    label: Linear Combination of Atomic Orbitals (LCAO)
+    sections:
+    - id: ch08_s8_4
+      title: 8.4 Molecular Orbital Theory
+  molecular_orbital:
+    label: Molecular Orbital
+    sections:
+    - id: ch08_s8_4
+      title: 8.4 Molecular Orbital Theory
+  bonding_molecular_orbital:
+    label: Bonding Molecular Orbital
+    sections:
+    - id: ch08_s8_4
+      title: 8.4 Molecular Orbital Theory
+  antibonding_molecular_orbital:
+    label: Antibonding Molecular Orbital
+    sections:
+    - id: ch08_s8_4
+      title: 8.4 Molecular Orbital Theory
+  molecular_orbital_theory:
+    label: Molecular Orbital Theory
+    sections:
+    - id: ch08_s8_4
+      title: 8.4 Molecular Orbital Theory
+  bond_order:
+    label: Bond Order
+    sections:
+    - id: ch08_s8_4
+      title: 8.4 Molecular Orbital Theory
+  paramagnetism:
+    label: Paramagnetism
+    sections:
+    - id: ch08_s8_4
+      title: 8.4 Molecular Orbital Theory
+  diamagnetism:
+    label: Diamagnetism
+    sections:
+    - id: ch08_s8_4
+      title: 8.4 Molecular Orbital Theory
+  sp_mixing:
+    label: s-p Mixing
+    sections:
+    - id: ch08_s8_4
+      title: 8.4 Molecular Orbital Theory
+  homonuclear_diatomic_mo_configurations:
+    label: MO Configurations of Homonuclear Diatomics
+    sections:
+    - id: ch08_s8_4
+      title: 8.4 Molecular Orbital Theory
+  band_theory:
+    label: Band Theory
+    sections:
+    - id: ch08_s8_4
+      title: 8.4 Molecular Orbital Theory
+  computational_chemistry_drug_design:
+    label: Computational Chemistry in Drug Design
+    sections:
+    - id: ch08_s8_4
+      title: 8.4 Molecular Orbital Theory

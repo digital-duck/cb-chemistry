@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coefficient | Chemistry Ch04</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="coefficient">Coefficient</h2>
+<p>A coefficient is the numerical (or symbolic) factor that multiplies a variable in a term. In the expression $7x$, the coefficient of $x$ is $7$; in $-3x^2y$, the coefficient of $x^2y$ is $-3$. A term with no visible coefficient, like $x$, has an implied coefficient of $1$, and $-x$ has coefficient $-1$. Coefficients can be integers, fractions, decimals, or even other variables (as in $ax + b$, where $a$ is the coefficient of $x$). What matters is that the coefficient scales the variable term — it tells you how much of that variable's "unit" you have.</p>
+<p><strong>Worked example.</strong> Consider the polynomial $4x^3 - 2x^2 + 9x - 5$. Reading term by term: the coefficient of $x^3$ is $4$, the coefficient of $x^2$ is $-2$, the coefficient of $x$ is $9$, and $-5$ is the constant term (not attached to any variable, so it isn't called a coefficient). Suppose you want to combine this with $x^3 + 5x^2 - 3x + 1$. Combining like terms means adding the coefficients of matching powers: $(4+1)x^3 + (-2+5)x^2 + (9-3)x + (-5+1) = 5x^3 + 3x^2 + 6x - 4$. The variable and its exponent never change — only the coefficients are added.</p>
+<p><strong>Problem-solving application.</strong> Coefficients become essential when you model real relationships. Suppose a rideshare fare is $F = 2.50 + 1.75m$, where $m$ is miles traveled. Here $1.75$ is the coefficient of $m$: it represents the marginal cost per mile, while $2.50$ is a fixed base fee (constant term, not a coefficient, since no variable multiplies it). If a new pricing policy doubles the per-mile rate, only the coefficient changes: $F = 2.50 + 3.50m$. This distinction — which number scales with the variable versus which is fixed — is exactly what lets you predict costs, compare pricing plans, or solve for break-even points. For instance, setting two fare formulas equal, $2.50 + 1.75m = 5.00 + 1.00m$, and solving gives $0.75m = 2.50$, so $m \approx 3.33$ miles — the distance at which the two plans cost the same. Recognizing coefficients correctly is the first step in reading, comparing, and manipulating any algebraic model of a real situation.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

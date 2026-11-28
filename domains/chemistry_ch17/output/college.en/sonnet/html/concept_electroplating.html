@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electroplating | Chemistry Ch17</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="electroplating">Electroplating</h2>
+<p>Electroplating is the process of depositing a thin layer of metal onto a conductive surface using an electric current. It relies on electrolysis: when current passes through an electrolyte solution containing dissolved metal ions, those ions gain electrons at the cathode (the object being plated) and deposit as solid metal atoms. The object to be coated is made the cathode, a bar of the plating metal is made the anode, and both are submerged in an electrolyte solution containing ions of that metal — for example, copper sulfate solution for copper plating. As current flows, the anode dissolves into solution while metal ions deposit onto the cathode, building up a uniform coating.</p>
+<p><strong>Worked example.</strong> Suppose you want to silver-plate a brass ring using a silver nitrate solution ($\text{AgNO}_3$). You connect the ring to the negative terminal (cathode) and a silver rod to the positive terminal (anode) of a DC power supply, then submerge both in the solution. At the cathode, silver ions gain an electron and deposit as solid silver: $\text{Ag}^+ + e^- \rightarrow \text{Ag(s)}$. At the anode, silver atoms lose an electron and dissolve into solution, replenishing the ion supply: $\text{Ag(s)} \rightarrow \text{Ag}^+ + e^-$. The net effect is that silver migrates from the anode, through the solution, onto the cathode — the brass ring emerges coated in silver, while the anode slowly shrinks.</p>
+<p><strong>Problem-solving application.</strong> Electroplating is quantitatively controllable: the mass of metal deposited depends directly on the total charge passed, following Faraday's laws of electrolysis, $m = \dfrac{Q \cdot M}{n \cdot F}$, where $Q$ is charge in coulombs, $M$ is molar mass, $n$ is the number of electrons transferred per ion, and $F$ is Faraday's constant ($96{,}485\ \text{C/mol}$). This lets an engineer calculate plating time for a target coating thickness — a real industrial concern, since electroplating is used to prevent corrosion (zinc-plated steel), improve conductivity (gold-plated connectors), and add decorative finishes (chrome-plated fixtures). Consider designing a plating bath: if you know the desired mass of copper to deposit and the current your power supply can safely deliver, you can solve for the required plating time, $t = Q/I$. This connects an abstract electrochemical principle to a concrete manufacturing decision — how long a part must sit in the bath to meet a specification.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

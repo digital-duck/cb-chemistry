@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lewis Acid | Chemistry Ch15</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="lewis-acid">Lewis Acid</h2>
+<p><strong>定义</strong></p>
+<p>路易斯酸（Lewis Acid）是指能够接受一对电子对的物质。这个定义由吉尔伯特·路易斯（Gilbert N. Lewis）提出，比布朗斯特-劳里（Brønsted-Lowry）"质子给体/受体"的酸碱定义更为宽泛——它不要求反应中一定有质子（$\text{H}^+$）的转移，只关注电子对的流动方向。凡是能提供一对电子对的物质，则称为路易斯碱（Lewis Base）。二者结合时，路易斯碱的孤对电子填入路易斯酸的空轨道，形成一个新的共价键，这种键称为配位键（coordinate covalent bond），产物称为加合物（adduct）。</p>
+<p>判断一个分子能否作为路易斯酸，关键看它是否存在可接受电子对的空间：常见情形包括中心原子价层电子未满八隅体（如 $\text{BF}_3$ 中的硼只有六个价电子）、含有可利用的空轨道的过渡金属离子（如 $\text{Fe}^{3+}$、$\text{Cu}^{2+}$），以及某些电正性较强、可以极化出正电中心的分子（如 $\text{CO}_2$ 中的碳原子）。</p>
+<p><strong>实例解析</strong></p>
+<p>以三氟化硼与氨气的反应为例：</p>
+$$\text{BF}_3 + :\text{NH}_3 \longrightarrow \text{F}_3\text{B}\!-\!\text{NH}_3$$
+<p>$\text{BF}_3$ 中硼原子采取 $sp^2$ 杂化，平面三角形结构，价层只有六个电子，存在一个空的 $p$ 轨道，因此是路易斯酸；$\text{NH}_3$ 中氮原子有一对孤对电子，是路易斯碱。反应中，氮的孤对电子填入硼的空轨道，硼由 $sp^2$ 转变为 $sp^3$ 杂化，几何结构从平面变为四面体。</p>
+<p><strong>解题应用</strong></p>
+<p>路易斯酸碱理论的实用价值在于它能解释布朗斯特理论无法涵盖的反应，例如金属离子在水溶液中与配体形成配合物（如 $\text{Cu}^{2+}$ 与 $4$ 个 $\text{NH}_3$ 形成 $[\text{Cu}(\text{NH}_3)_4]^{2+}$），以及有机化学中常见的亲电试剂（electrophile）行为，如 $\text{AlCl}_3$ 在傅-克反应（Friedel-Crafts reaction）中作为催化剂夺取卤素上的电子对。做题时的判断步骤是：先画出物质的路易斯结构，检查中心原子是否有空轨道或不完整的电子层（判定为酸），或是否存在未成键的孤对电子（判定为碱），再确定电子对转移的方向以及新生成的配位键位置。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch15: Equilibria of Other Reaction Classes (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

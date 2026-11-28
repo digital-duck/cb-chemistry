@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chemical Bond | Chemistry Ch02</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.cb-figure{margin:24px 0;text-align:center}
+.cb-figure img{max-width:100%;height:auto;border:1px solid #e0e0d8;border-radius:6px}
+figcaption{font-size:.82rem;color:#666;margin-top:8px;font-style:italic;text-align:center}
+pre.mermaid{background:none;border:none;padding:0;overflow:visible;margin:16px 0}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="chemical-bond">Chemical Bond</h2>
+<p>A chemical bond is the attractive force that holds two or more atoms together, arising when electrons rearrange to lower the overall potential energy of the system. Atoms bond because isolated atoms (except noble gases) are energetically unstable — their outer, or valence, electron shells are incomplete. By sharing or transferring electrons, atoms can each achieve a filled outer shell, typically eight electrons (the octet rule), producing a more stable, lower-energy arrangement than the separate atoms had on their own.</p>
+<p>There are two principal bond types, distinguished by how the electrons are handled. In a <strong>covalent bond</strong>, atoms share one or more pairs of electrons; this occurs between atoms with similar electronegativity (their pull on electrons is comparable), so neither atom fully "wins" the electrons. Covalent bonds dominate in molecules like water ($H_2O$), methane ($CH_4$), and glucose. In an <strong>ionic bond</strong>, one atom's electronegativity is much greater than the other's, so an electron transfers completely from the low-electronegativity atom to the high-electronegativity one. This creates two oppositely charged ions — a positively charged cation and a negatively charged anion — which then attract each other electrostatically, as in sodium chloride ($NaCl$).</p>
+<p><strong>Worked example:</strong> Consider table salt, $NaCl$. Sodium has one loosely held valence electron; chlorine needs just one more electron to complete its outer shell. Sodium transfers its electron to chlorine, producing $Na^+$ and $Cl^-$. These ions then pack into a crystal lattice held together by ionic attraction — explaining why salt is a hard, brittle solid with a high melting point (801 °C), unlike molecular covalent compounds such as water.</p>
+<p><strong>Problem-solving application:</strong> To predict bond type, compare electronegativity difference ($\Delta EN$) between two atoms. A large $\Delta EN$ (roughly $>1.7$, as in $Na$–$Cl$) favors ionic bonding; a small $\Delta EN$ favors covalent bonding, which itself ranges from nonpolar (electrons shared equally, e.g., $H_2$) to polar (shared unequally, e.g., $H_2O$). This distinction predicts real physical properties: ionic compounds conduct electricity when dissolved in water and have high melting points, while covalent compounds generally do not conduct and have lower melting points.</p>
+<pre class="mermaid">flowchart LR
+    A1[Atom A] -->|shares electron pair| Pair((shared electrons))
+    Pair --> A2[Atom B]
+    A1 -.covalent bond.-> A2
+
+    B1[Atom C] -->|transfers electron| B2[Atom D]
+    B1 --> Cplus[Cation +]
+    B2 --> Danion[Anion -]
+    Cplus -.ionic bond.-> Danion</pre>
+<p><em>Covalent bonding involves electron sharing between two atoms, while ionic bonding involves electron transfer, producing oppositely charged ions that attract each other.</em></p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch2: Atoms, Molecules, and Ions (Level: College &middot; Language: EN &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

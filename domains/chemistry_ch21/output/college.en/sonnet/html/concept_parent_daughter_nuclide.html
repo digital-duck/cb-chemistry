@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parent Daughter Nuclide | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="parent-daughter-nuclide">Parent Daughter Nuclide</h2>
+<p>When an unstable atomic nucleus undergoes radioactive decay, the original nucleus is called the <strong>parent nuclide</strong>, and the nucleus produced by the decay is called the <strong>daughter nuclide</strong>. Depending on the type of decay, the daughter differs from the parent in a predictable way: alpha decay reduces the mass number by 4 and the atomic number by 2; beta-minus decay leaves the mass number unchanged but increases the atomic number by 1 (a neutron converts to a proton); beta-plus decay and electron capture decrease the atomic number by 1.</p>
+<p><strong>Worked example.</strong> Uranium-238 decays by alpha emission:</p>
+$$
+{}^{238}_{92}\text{U} \rightarrow {}^{234}_{90}\text{Th} + {}^{4}_{2}\text{He}
+$$
+<p>Here U-238 is the parent, and Th-234 is the daughter. But Th-234 is itself unstable — it undergoes beta-minus decay:</p>
+$$
+{}^{234}_{90}\text{Th} \rightarrow {}^{234}_{91}\text{Pa} + {}^{0}_{-1}e
+$$
+<p>In this second step, Th-234 is the parent and Pa-234 is the daughter. This illustrates a key point: "parent" and "daughter" are relative labels tied to a specific decay step, not permanent identities. A nuclide can be a daughter in one reaction and a parent in the next. This sequence of transformations, continuing until a stable nuclide is reached, is called a decay chain — in this case it ends only at stable Pb-206.</p>
+<p><strong>Problem-solving application.</strong> Given a parent nuclide and the mode of decay, you should be able to identify the daughter by balancing mass number ($A$) and atomic number ($Z$) on both sides of the equation — this follows directly from conservation of nucleons and charge. For example, if Radon-222 undergoes alpha decay, the daughter must satisfy $A = 222-4 = 218$ and $Z = 86-2 = 84$, identifying it as Polonium-218. This bookkeeping skill is essential for predicting the products of any decay chain, calculating how activity shifts between parent and daughter over time (relevant in radiometric dating and nuclear medicine), and determining whether a given decay chain will pass through hazardous intermediate daughters, such as the radioactive gas radon in the uranium series.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

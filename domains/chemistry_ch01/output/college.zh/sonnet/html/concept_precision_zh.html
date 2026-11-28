@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Precision | Chemistry Ch01</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="precision">Precision</h2>
+<p><strong>精确度（precision）</strong>是指对同一物理量进行多次重复测量时，各次测量结果之间彼此接近的程度。它衡量的是测量的<strong>可重复性（reproducibility）</strong>，而不是测量结果与真实值之间的接近程度——后者被称为<strong>准确度（accuracy）</strong>。这两个概念常被混淆,但在科学实验中它们各自反映了不同类型的误差来源:精确度低通常来自<strong>随机误差（random error）</strong>,例如仪器读数的波动或操作者判断的微小差异;准确度低则往往来自<strong>系统误差（systematic error）</strong>,例如仪器未校准或方法本身存在偏差。一组测量数据可以精确但不准确(结果彼此非常接近,但都偏离真实值),也可以准确但不精确(平均值接近真实值,但单次测量分散很大),理想情况是既精确又准确。</p>
+<p><strong>举例说明</strong>:假设某实验室用同一台移液管重复量取"10.00 mL"溶液五次,得到的读数为 9.98、9.97、9.99、9.98、9.97 mL。这组数据彼此非常接近,说明该移液管的精确度很高;但如果该移液管未经校准,实际输出系统性偏小,那么即使数据高度一致，其<strong>准确度</strong>仍然不佳。科学家通常用<strong>标准偏差（standard deviation）</strong>这一统计量来量化精确度的高低:标准偏差越小,说明数据点越集中,精确度越高。</p>
+<p><strong>解决问题的应用</strong>:在实际实验设计中,提高精确度的常见做法包括:增加重复测量次数并取平均值以减小随机误差的影响；使用更高分辨率、稳定性更好的仪器；严格控制操作条件（如温度、试剂添加速度）保持一致。在报告实验数据时，科学家会同时给出测量的平均值及其分散程度（如标准偏差），以便读者判断该数据的可靠程度。当评价一项实验方法是否可信时，必须同时检验精确度与准确度：只有重复性好（精确）且与已知标准或独立方法结果一致（准确）的测量，才能被认为是可靠的科学证据。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch1: Essential Ideas (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

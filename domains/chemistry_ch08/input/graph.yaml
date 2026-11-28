@@ -1,0 +1,216 @@
+domain: chemistry_2e_ch8
+primitives:
+  atomic_orbitals:
+    defines: Regions of space around an isolated atom (s, p, d) where electrons are likely to be found,
+      characterized by shape and energy.
+    tier: 0
+  electron_configuration:
+    defines: The distribution of electrons among atomic orbitals governed by the Aufbau principle, Hund's
+      rule, and the Pauli exclusion principle.
+    tier: 0
+  lewis_structure:
+    defines: A diagram representing the bonding and lone-pair electrons in a molecule using dots and lines.
+    tier: 0
+  vsepr_theory:
+    defines: A model that predicts three-dimensional molecular geometry by minimizing repulsions among
+      regions of electron density around a central atom.
+    tier: 0
+  wave_function:
+    defines: A mathematical expression that describes the wavelike properties and probability distribution
+      of an electron in an atom or molecule.
+    tier: 0
+  covalent_bond:
+    defines: A chemical bond formed when two atoms share a pair of electrons, simultaneously attracted
+      by both nuclei.
+    tier: 0
+concepts:
+  orbital_overlap:
+    defines: The coexistence of orbitals from two different atoms sharing the same region of space, which
+      is the prerequisite for covalent bond formation in valence bond theory.
+    composed_of:
+    - atomic_orbitals
+    - covalent_bond
+    tier: 1
+  lcao:
+    defines: The mathematical technique of adding or subtracting atomic wave functions to generate molecular
+      orbitals that extend over the whole molecule.
+    composed_of:
+    - wave_function
+    - atomic_orbitals
+    tier: 1
+  valence_bond_theory:
+    defines: A model describing covalent bond formation as the overlap of half-filled atomic orbitals
+      on adjacent atoms, yielding a shared electron pair stabilized by both nuclei.
+    composed_of:
+    - orbital_overlap
+    - covalent_bond
+    tier: 2
+  bond_distance:
+    defines: The optimal internuclear separation at which the energy of a bonded system reaches its minimum,
+      balancing attractive and repulsive forces.
+    composed_of:
+    - orbital_overlap
+    tier: 2
+  bond_energy:
+    defines: The quantity of energy released when a bond forms (or required to break it), equal to the
+      difference between the system's minimum energy and the energy of the separated atoms.
+    composed_of:
+    - orbital_overlap
+    tier: 2
+  sigma_bond:
+    defines: A covalent bond in which electron density is concentrated along the internuclear axis, formed
+      by end-to-end overlap of s or p orbitals.
+    composed_of:
+    - orbital_overlap
+    - covalent_bond
+    tier: 2
+  pi_bond:
+    defines: A covalent bond formed by side-by-side overlap of two p orbitals, with electron density located
+      on opposite sides of the internuclear axis and a nodal plane along the axis.
+    composed_of:
+    - orbital_overlap
+    - covalent_bond
+    tier: 2
+  molecular_orbital:
+    defines: A region of space (described by a combined wave function) in which an electron in a molecule
+      has a high probability of being found, delocalized over two or more atoms.
+    composed_of:
+    - lcao
+    tier: 2
+  hybridization:
+    defines: The mathematical mixing of valence atomic orbitals on a central atom to produce a new set
+      of equivalent hybrid orbitals whose geometry matches the observed molecular structure.
+    composed_of:
+    - valence_bond_theory
+    - wave_function
+    tier: 3
+  multiple_bonds:
+    defines: Double or triple bonds between two atoms, each consisting of one sigma bond formed by hybridized
+      orbitals plus one or two pi bonds formed by unhybridized p orbitals.
+    composed_of:
+    - sigma_bond
+    - pi_bond
+    tier: 3
+  resonance:
+    defines: The existence of multiple valid pi-bond arrangements in a molecule when unhybridized p orbitals
+      can overlap in more than one way, indicating that no single Lewis structure fully describes the
+      bonding.
+    composed_of:
+    - pi_bond
+    - lewis_structure
+    tier: 3
+  bonding_molecular_orbital:
+    defines: A molecular orbital formed by in-phase (constructive) combination of atomic wave functions,
+      located primarily between the nuclei and lower in energy than the parent atomic orbitals.
+    composed_of:
+    - lcao
+    - molecular_orbital
+    tier: 3
+  antibonding_molecular_orbital:
+    defines: A molecular orbital formed by out-of-phase (destructive) combination of atomic wave functions,
+      containing a node between the nuclei and higher in energy than the parent atomic orbitals.
+    composed_of:
+    - lcao
+    - molecular_orbital
+    tier: 3
+  sp_hybridization:
+    defines: The mixing of one s and one p orbital to produce two equivalent sp hybrid orbitals oriented
+      180 degrees apart in a linear geometry.
+    composed_of:
+    - hybridization
+    tier: 4
+  sp2_hybridization:
+    defines: The mixing of one s and two p orbitals to produce three equivalent sp2 hybrid orbitals oriented
+      120 degrees apart in a trigonal planar geometry, leaving one unhybridized p orbital.
+    composed_of:
+    - hybridization
+    tier: 4
+  sp3_hybridization:
+    defines: The mixing of one s and all three p orbitals to produce four equivalent sp3 hybrid orbitals
+      directed toward the corners of a tetrahedron at 109.5 degrees.
+    composed_of:
+    - hybridization
+    tier: 4
+  sp3d_hybridization:
+    defines: The mixing of one s, three p, and one d orbital to produce five equivalent hybrid orbitals
+      arranged in a trigonal bipyramidal geometry.
+    composed_of:
+    - hybridization
+    tier: 4
+  sp3d2_hybridization:
+    defines: The mixing of one s, three p, and two d orbitals to produce six equivalent hybrid orbitals
+      arranged in an octahedral geometry.
+    composed_of:
+    - hybridization
+    tier: 4
+  restricted_rotation:
+    defines: The inability of atoms connected by a double or triple bond to rotate freely about the internuclear
+      axis, because rotation would break the side-by-side p-orbital overlap of the pi bond.
+    composed_of:
+    - pi_bond
+    - multiple_bonds
+    tier: 4
+  electron_delocalization:
+    defines: The spreading of pi electrons over more than two atoms when resonance structures exist, so
+      that these electrons are not confined to any single bond location.
+    composed_of:
+    - resonance
+    - pi_bond
+    tier: 4
+  molecular_orbital_theory:
+    defines: A bonding model in which atomic wave functions are combined via LCAO to yield molecular orbitals
+      delocalized over the entire molecule, filled according to the Aufbau principle and Hund's rule.
+    composed_of:
+    - bonding_molecular_orbital
+    - antibonding_molecular_orbital
+    - electron_configuration
+    tier: 4
+  bond_order:
+    defines: A measure of bond strength calculated as (number of bonding electrons minus number of antibonding
+      electrons) divided by two; a bond order of zero means no stable bond forms.
+    composed_of:
+    - molecular_orbital_theory
+    tier: 5
+  paramagnetism:
+    defines: The property of a substance with one or more unpaired electrons to be attracted to an external
+      magnetic field.
+    composed_of:
+    - molecular_orbital_theory
+    tier: 5
+  diamagnetism:
+    defines: The property of a substance with all electrons paired to be weakly repelled by an external
+      magnetic field.
+    composed_of:
+    - molecular_orbital_theory
+    tier: 5
+  sp_mixing:
+    defines: The interaction of sigma-s and sigma-p molecular orbitals of similar energy that raises the
+      sigma-p orbital above the pi-p orbitals in energy, observed in period-2 diatomics from Li through
+      N.
+    composed_of:
+    - molecular_orbital_theory
+    tier: 5
+applications:
+  homonuclear_diatomic_mo_configurations:
+    defines: The application of molecular orbital theory to period-2 diatomic molecules (H2 through Ne2)
+      to predict bond orders, stability, and magnetic properties from filled MO diagrams.
+    needs:
+    - molecular_orbital_theory
+    - bond_order
+    - sp_mixing
+    - paramagnetism
+    - diamagnetism
+    tier: 6
+  band_theory:
+    defines: The extension of molecular orbital concepts to macroscopic solids, where vast numbers of
+      MOs merge into continuous valence and conduction bands whose gap size determines whether a material
+      is a conductor, semiconductor, or insulator.
+    needs:
+    - molecular_orbital_theory
+    tier: 5
+  computational_chemistry_drug_design:
+    defines: The use of molecular orbital calculations and bonding models to predict how potential drug
+      molecules fit and bind to biological target sites, accelerating pharmaceutical discovery.
+    needs:
+    - molecular_orbital_theory
+    tier: 5

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enthalpy | Chemistry Ch05</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="enthalpy">Enthalpy</h2>
+<p><strong>定义</strong></p>
+<p>焓（enthalpy，符号 $H$）是热力学中用来描述系统能量状态的一个重要物理量，定义为：</p>
+$$H = U + pV$$
+<p>其中 $U$ 是系统的内能，$p$ 是压强，$V$ 是体积。在化学反应中，我们通常更关心的是焓的<strong>变化量</strong> $\Delta H$，而不是 $H$ 的绝对值本身。当反应在恒定压强下进行（例如敞口容器中的反应，压强等于大气压），系统与环境交换的热量恰好等于焓变：</p>
+$$\Delta H = q_p$$
+<p>这个关系之所以重要，是因为绝大多数实验室和工业反应都是在恒压条件下进行的，所以 $\Delta H$ 成为衡量反应吸热或放热最直接、最实用的指标。若 $\Delta H < 0$，反应放热（系统向环境释放能量）；若 $\Delta H > 0$，反应吸热（系统从环境吸收能量）。</p>
+<p><strong>实例解析</strong></p>
+<p>以甲烷燃烧为例：</p>
+$$\text{CH}_4(g) + 2\text{O}_2(g) \rightarrow \text{CO}_2(g) + 2\text{H}_2\text{O}(l), \quad \Delta H = -890 \text{ kJ/mol}$$
+<p>负号表明该反应释放890 kJ的能量（以每摩尔甲烷计），这正是天然气作为燃料被广泛使用的原因——燃烧过程释放的焓变可以转化为热能，用于取暖或发电。</p>
+<p><strong>应用与解题</strong></p>
+<p>在实际计算中，焓变通常通过<strong>赫斯定律</strong>（Hess's Law）求得：由于焓是状态函数，只取决于反应的始态和终态，与反应路径无关，因此多步反应的总焓变等于各步焓变之和。这使我们可以用已知的生成焓（standard enthalpy of formation，$\Delta H_f^\circ$）数据来计算未知反应的焓变：</p>
+$$\Delta H_{\text{反应}} = \sum \Delta H_f^\circ(\text{产物}) - \sum \Delta H_f^\circ(\text{反应物})$$
+<p>例如，若已知 $\text{CO}_2$、$\text{H}_2\text{O}(l)$ 和 $\text{CH}_4$ 的标准生成焓，就可以不做实验直接算出上述燃烧反应的 $\Delta H$。这种计算能力在工业设计（如评估某反应是否需要额外供热）和环境评估（如计算燃料的能量效率）中都极为实用。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch5: Thermochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

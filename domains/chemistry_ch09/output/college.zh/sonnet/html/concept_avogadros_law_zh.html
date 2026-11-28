@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avogadros Law | Chemistry Ch09</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="avogadros-law">Avogadros Law</h2>
+<p><strong>定义</strong></p>
+<p>阿伏加德罗定律（Avogadro's Law）指出：在相同温度和压强下，等体积的任何气体含有相同数目的分子（或摩尔数）。用数学式表达为：</p>
+$$\frac{V_1}{n_1} = \frac{V_2}{n_2}$$
+<p>其中 $V$ 表示气体体积，$n$ 表示气体的摩尔数，下标 $1$、$2$ 代表两种不同的状态（前提是温度 $T$ 和压强 $P$ 保持不变）。这一定律说明气体体积与其所含分子数目成正比，而与气体的种类无关——无论是氢气、氧气还是二氧化碳，只要摩尔数相同，在同温同压下所占的体积就相同。这是理想气体模型的重要基石，也是理想气体状态方程 $PV = nRT$ 中 $n$ 与 $V$ 呈线性关系的理论依据。</p>
+<p><strong>范例</strong></p>
+<p>在标准温度和压强（STP，即 $0^\circ\text{C}$、$1\text{ atm}$）下，1 摩尔任何理想气体的体积约为 $22.4\text{ L}$。假设我们有一个容器，装有 $2.0\text{ mol}$ 的氮气，体积为 $44.8\text{ L}$。如果将其中一半的氮气换成 $1.0\text{ mol}$ 的氦气，体积会变成多少？根据阿伏加德罗定律，体积只取决于摩尔数，而非气体种类，所以体积应为：</p>
+$$V_2 = V_1 \times \frac{n_2}{n_1} = 44.8\text{ L} \times \frac{1.0\text{ mol}}{2.0\text{ mol}} = 22.4\text{ L}$$
+<p><strong>应用与解题</strong></p>
+<p>阿伏加德罗定律在化学计量学中最直接的应用是<strong>气体反应的体积比等于化学计量比</strong>。例如在反应</p>
+$$N_2(g) + 3H_2(g) \rightarrow 2NH_3(g)$$
+<p>中，若在同温同压下用去 $10\text{ L}$ 的 $N_2$，则需要 $30\text{ L}$ 的 $H_2$，并生成 $20\text{ L}$ 的 $NH_3$——体积比直接对应系数比 $1:3:2$，无需先换算成摩尔数或质量。</p>
+<p>解题时的常见误区是忘记"同温同压"这一前提条件：若温度或压强不同，则体积比不再等于摩尔比，此时必须先用理想气体方程将各气体校正到同一条件下，才能应用阿伏加德罗定律进行体积—摩尔数换算。掌握这一点，能帮助学生在处理气体混合、气体密度比较及化学反应产率计算等问题时快速建立体积与摩尔数之间的桥梁。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch9: Gases (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grahams Law | Chemistry Ch09</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="grahams-law">Grahams Law</h2>
+<p><strong>定义</strong></p>
+<p>格拉罕姆扩散定律（Graham's Law of Diffusion）描述了气体分子的扩散速率与其摩尔质量之间的关系。在相同温度和压强下，气体分子的扩散速率（或泄漏速率）与其摩尔质量的平方根成反比：</p>
+$$\frac{r_1}{r_2} = \sqrt{\frac{M_2}{M_1}}$$
+<p>其中 $r_1$、$r_2$ 分别为两种气体的扩散速率，$M_1$、$M_2$ 为它们对应的摩尔质量。这一规律的物理基础在于：在给定温度下，所有气体分子具有相同的平均动能 $\left(\tfrac{1}{2}mv^2\right)$，因此质量较小的分子必须运动得更快，才能与质量较大的分子拥有相同的动能。质量越小，扩散或泄漏得越快。</p>
+<p><strong>范例分析</strong></p>
+<p>比较氢气（$M = 2\ \text{g/mol}$）与氧气（$M = 32\ \text{g/mol}$）的扩散速率之比：</p>
+$$\frac{r_{H_2}}{r_{O_2}} = \sqrt{\frac{32}{2}} = \sqrt{16} = 4$$
+<p>也就是说，在相同条件下，氢气的扩散速度是氧气的 4 倍。这与直觉相符：氢分子只有氧分子质量的十六分之一，因此运动得快得多，能更迅速地穿过小孔或与周围气体混合。</p>
+<p><strong>解题应用</strong></p>
+<p>格拉罕姆定律常用于通过已知气体推算未知气体的摩尔质量，是气体动理论中一类经典的定量推理题。</p>
+<p><em>例题</em>：某未知气体的扩散速率是甲烷（$CH_4$，$M = 16\ \text{g/mol}$）的 0.50 倍，求该气体的摩尔质量。</p>
+<p>设未知气体为气体 1，甲烷为气体 2：</p>
+$$\frac{r_1}{r_2} = \sqrt{\frac{M_2}{M_1}} \implies 0.50 = \sqrt{\frac{16}{M_1}}$$
+<p>两边平方：</p>
+$$0.25 = \frac{16}{M_1} \implies M_1 = \frac{16}{0.25} = 64\ \text{g/mol}$$
+<p>该未知气体的摩尔质量为 $64\ \text{g/mol}$，可能是二氧化硫（$SO_2$）等气体。</p>
+<p>这类解题过程的关键在于正确设定比例关系，并留意题目问的是"更快"还是"更慢"，以避免比值颠倒。格拉罕姆定律在实际中应用广泛，例如铀同位素分离（气体扩散法富集 $^{235}U$）以及呼吸气体交换分析等领域。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch9: Gases (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

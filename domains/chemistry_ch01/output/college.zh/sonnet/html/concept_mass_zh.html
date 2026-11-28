@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mass | Chemistry Ch01</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="mass">Mass</h2>
+<p><strong>定义</strong></p>
+<p>质量（mass）是物质所含物质多少的量度，反映物体抵抗运动状态改变的能力（惯性），也决定了物体在引力场中所受重力的大小。在国际单位制（SI）中，质量的基本单位是千克（kg）。需要特别区分质量与重量：质量是物质的固有属性，不随位置改变；重量是物体受到的重力，随所处星球或高度不同而变化。例如，一名航天员在地球上质量为 $70\ \text{kg}$，到了月球上质量仍是 $70\ \text{kg}$，但由于月球重力加速度约为地球的 $1/6$，其重量会相应减小。</p>
+<p>在化学与物理定量分析中，质量遵循<strong>质量守恒定律</strong>：在封闭系统的化学反应中，反应物总质量等于生成物总质量，即</p>
+$$
+m_{\text{反应物}} = m_{\text{生成物}}
+$$
+<p>这一定律是配平化学方程式、进行化学计量（stoichiometry）计算的基础。</p>
+<p><strong>实例解析</strong></p>
+<p>以镁在氧气中燃烧生成氧化镁为例：</p>
+$$
+2\text{Mg} + \text{O}_2 \rightarrow 2\text{MgO}
+$$
+<p>若取 $4.8\ \text{g}$ 镁（摩尔质量 $24\ \text{g/mol}$）完全燃烧，可求得消耗的氧气质量和生成的氧化镁质量。镁的物质的量为：</p>
+$$
+n(\text{Mg}) = \frac{4.8\ \text{g}}{24\ \text{g/mol}} = 0.2\ \text{mol}
+$$
+<p>由化学计量比 $2:1:2$，可得 $n(\text{O}_2) = 0.1\ \text{mol}$，$n(\text{MgO}) = 0.2\ \text{mol}$。氧化镁摩尔质量为 $40\ \text{g/mol}$，故生成 MgO 质量为 $0.2 \times 40 = 8.0\ \text{g}$。验证质量守恒：$4.8\ \text{g}\ (\text{Mg}) + 3.2\ \text{g}\ (\text{O}_2) = 8.0\ \text{g}\ (\text{MgO})$，两边质量相等。</p>
+<p><strong>解决问题的应用</strong></p>
+<p>在实验室定量分析中，测定物质质量是几乎所有实验的第一步：称量试剂、计算产率、确定溶液浓度都依赖精确的质量数据。当实验测得产率低于理论产率时，学生应首先检查是否存在质量测量误差、反应不完全或副反应导致部分产物损失，再结合质量守恒原理定位问题所在，而不是简单假设定律本身失效。这种"以守恒定律为标尺，倒推误差来源"的思维方式，是定量科学推理的核心技能。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch1: Essential Ideas (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

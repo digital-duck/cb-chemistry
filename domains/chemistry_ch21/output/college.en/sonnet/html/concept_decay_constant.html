@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Decay Constant | Chemistry Ch21</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="decay-constant">Decay Constant</h2>
+<p>Radioactive decay is inherently a probabilistic process at the level of individual atoms, but at the scale of a real sample — trillions of atoms — it produces remarkably predictable behavior. The decay constant, denoted $\lambda$, is the parameter that captures this: it is the probability that any single atom of a radioactive isotope will decay per unit time. Because $\lambda$ is a fixed property of the isotope (not of the sample size, temperature, or chemical environment), it governs the exponential decay law:</p>
+$$N(t) = N_0 e^{-\lambda t}$$
+<p>where $N_0$ is the initial number of undecayed atoms and $N(t)$ is the number remaining after time $t$. This equation is not an empirical curve-fit; it follows directly from the assumption that each atom decays independently with constant probability per unit time, which leads to the differential equation $\frac{dN}{dt} = -\lambda N$ — the defining relationship for the decay constant.</p>
+<p><strong>Worked example.</strong> Suppose a sample of a radioactive isotope has $\lambda = 0.0231 \text{ yr}^{-1}$. If we start with $N_0 = 1000$ atoms, after 30 years:</p>
+$$N(30) = 1000\, e^{-0.0231 \times 30} = 1000\, e^{-0.693} \approx 500$$
+<p>Notice that $0.693 \approx \ln 2$, and $\lambda \times 30 = \ln 2$ — this tells us the half-life $t_{1/2}$ of this isotope is exactly 30 years, since $t_{1/2} = \frac{\ln 2}{\lambda}$.</p>
+<p><strong>Problem-solving application.</strong> The decay constant lets you move fluidly between three related quantities: half-life, mean lifetime ($\tau = 1/\lambda$), and activity ($A = \lambda N$, the number of decays per second, measured in becquerels). This is essential in fields like radiocarbon dating, nuclear medicine dosing, and reactor engineering. For instance, if a medical isotope has a half-life of 6 hours and a hospital needs an activity of at least 50 mCi twelve hours after delivery, you can compute $\lambda = \ln 2 / 6 \approx 0.1155\ \text{hr}^{-1}$, then work backward from $A(12) = A_0 e^{-\lambda \cdot 12}$ to determine the minimum activity $A_0$ that must be shipped. Mastering $\lambda$ means being able to convert between any of these descriptions of decay rate on demand, rather than memorizing separate formulas for each.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

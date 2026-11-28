@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enthalpy | Chemistry Ch16</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="enthalpy">Enthalpy</h2>
+<p>Enthalpy, denoted $H$, is a thermodynamic quantity defined as</p>
+$$H = U + pV$$
+<p>where $U$ is the internal energy of a system, $p$ is pressure, and $V$ is volume. This definition is not arbitrary — it is constructed so that, for a process occurring at constant pressure (the condition under which most laboratory and industrial chemistry happens, since reactions are usually open to the atmosphere), the change in enthalpy exactly equals the heat exchanged with the surroundings:</p>
+$$\Delta H = q_p$$
+<p>This equivalence follows directly from the first law of thermodynamics, $\Delta U = q + w$, combined with the fact that at constant pressure the work done by expansion is $w = -p\Delta V$. Substituting and rearranging gives $q_p = \Delta U + p\Delta V = \Delta H$. The formal derivation matters here because it explains <em>why</em> chemists track enthalpy instead of internal energy directly: enthalpy isolates the heat term in the overwhelmingly common case of constant-pressure processes, sparing us from separately accounting for pressure–volume work every time.</p>
+<p><strong>Worked example.</strong> Consider the combustion of methane, $\text{CH}_4(g) + 2\text{O}_2(g) \rightarrow \text{CO}_2(g) + 2\text{H}_2\text{O}(l)$, with $\Delta H = -890.4\ \text{kJ/mol}$. The negative sign indicates an exothermic reaction: at constant pressure, the system releases 890.4 kJ of heat per mole of methane burned. Because enthalpy is a state function, this value is independent of the reaction pathway — a principle formalized as Hess's Law, which lets us add or reverse known reaction enthalpies to compute the enthalpy of a reaction that hasn't been measured directly.</p>
+<p><strong>Problem-solving application.</strong> Suppose you want the enthalpy of forming methane from its elements, $\text{C}(s) + 2\text{H}_2(g) \rightarrow \text{CH}_4(g)$, but only combustion enthalpies are tabulated. Using Hess's Law, combine the combustion enthalpies of carbon ($-393.5\ \text{kJ/mol}$), hydrogen ($-285.8\ \text{kJ/mol}$, doubled), and methane ($-890.4\ \text{kJ/mol}$, reversed) by summing them algebraically: $-393.5 + 2(-285.8) - (-890.4) = -74.7\ \text{kJ/mol}$. This additive strategy — treating enthalpies like signed quantities in a bookkeeping equation — is the practical skill underlying most real-world thermochemistry calculations, from engine efficiency to industrial reactor design.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

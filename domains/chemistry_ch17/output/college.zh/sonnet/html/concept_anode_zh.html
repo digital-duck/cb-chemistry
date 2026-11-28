@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anode | Chemistry Ch17</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="anode">Anode</h2>
+<p>阳极（anode）是电化学电池中发生氧化反应的电极——即失去电子的一极。这个定义看似简单，却常常让初学者混淆，因为阳极的电性（带正电还是负电）取决于电池的类型：在原电池（伽伐尼电池，能自发放电的电池，如干电池）中，阳极是负极；而在电解池（需要外部电源驱动的非自发反应装置）中，阳极是正极。记住这一点的关键不在于死记极性符号，而在于抓住本质：无论哪种电池，阳极永远是氧化反应发生的场所，规则可以用助记词"An Ox"（Anode Oxidation）来概括。</p>
+<p>以锌铜原电池为例：锌电极上锌原子失去两个电子变成 $\text{Zn}^{2+}$ 进入溶液，电子经外部导线流向铜电极，这里锌电极就是阳极：</p>
+$$\text{Zn}(s) \rightarrow \text{Zn}^{2+}(aq) + 2e^-$$
+<p>铜电极则是阴极，发生还原反应 $\text{Cu}^{2+}(aq) + 2e^- \rightarrow \text{Cu}(s)$。由于锌电极不断释放电子，使其相对带负电，这就是原电池中阳极为负极的原因。</p>
+<p>在实际问题中，判断阳极的策略是：先写出半反应，看哪一极失去电子（氧化数升高），那一极就是阳极。例如在电解熔融氯化钠的装置中，外接电源迫使 $\text{Cl}^-$ 在某一电极被氧化：</p>
+$$2\text{Cl}^-(l) \rightarrow \text{Cl}_2(g) + 2e^-$$
+<p>这一极连接电源正极，因此是阳极，且此时阳极带正电——与原电池情形正好相反。工程上，电镀、电解精炼铜、蓄电池充放电等应用都依赖于正确识别阳极：例如汽车铅酸电池放电时，铅（Pb）电极作阳极被氧化生成 $\text{PbSO}_4$；而充电时外部电源反转电流方向，原来的阳极变为阴极。掌握"阳极=氧化"这一不变的定义，而不是依赖极性符号，才能在不同电池类型间灵活迁移，正确分析实际电化学系统中的电子流向与产物生成。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch17: Electrochemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

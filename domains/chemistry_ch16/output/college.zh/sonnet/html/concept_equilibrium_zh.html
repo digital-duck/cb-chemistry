@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Equilibrium | Chemistry Ch16</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="equilibrium-平衡">Equilibrium（平衡）</h2>
+<p><strong>定义</strong></p>
+<p>化学平衡是指可逆反应中，正反应速率与逆反应速率相等，使得反应物与生成物的浓度不再随时间变化的状态。需要强调的是，平衡并非反应停止，而是一种动态过程——分子仍在不断地相互转化，只是宏观上净变化为零。对于任一可逆反应</p>
+$$aA + bB \rightleftharpoons cC + dD$$
+<p>其平衡状态可用平衡常数 $K_{eq}$ 描述：</p>
+$$K_{eq} = \frac{[C]^c[D]^d}{[A]^a[B]^b}$$
+<p>其中方括号表示物质在平衡时的摩尔浓度。$K_{eq}$ 的数值大小反映了平衡时生成物相对于反应物的比例：$K_{eq} \gg 1$ 说明平衡偏向生成物一侧，$K_{eq} \ll 1$ 则说明平衡偏向反应物一侧。</p>
+<p><strong>实例分析</strong></p>
+<p>以合成氨反应为例：</p>
+$$N_2(g) + 3H_2(g) \rightleftharpoons 2NH_3(g)$$
+<p>在某温度下测得平衡浓度为 $[N_2] = 0.50\ \text{mol/L}$，$[H_2] = 1.00\ \text{mol/L}$，$[NH_3] = 0.20\ \text{mol/L}$。代入表达式：</p>
+$$K_{eq} = \frac{(0.20)^2}{(0.50)(1.00)^3} = \frac{0.040}{0.50} = 0.080$$
+<p>$K_{eq}$ 较小，说明在此条件下平衡明显偏向反应物一侧，这也解释了工业上为何需要高压、催化剂和适当温度来提高氨的产率。</p>
+<p><strong>问题解决应用</strong></p>
+<p>当外部条件（浓度、压强、温度）发生变化时，体系会依据勒沙特列原理（Le Chatelier's Principle）做出响应，以部分抵消这种扰动，重新建立新的平衡。例如，若在上述反应体系中增大 $N_2$ 的浓度，平衡将向生成 $NH_3$ 的方向移动，直到重新满足 $K_{eq}$ 的比值关系。</p>
+<p>实际解题时，常用"ICE表"（Initial 初始、Change 变化、Equilibrium 平衡）系统地跟踪各物质浓度变化，从初始浓度出发，设未知变化量 $x$，代入平衡常数表达式求解。这种方法广泛应用于工业反应条件优化、药物代谢动力学分析，以及环境系统（如水体中溶解氧与污染物的分布）中，是连接化学理论与实际系统调控的重要工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch16: Thermodynamics (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

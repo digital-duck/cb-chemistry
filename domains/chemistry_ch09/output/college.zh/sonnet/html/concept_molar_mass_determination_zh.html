@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Molar Mass Determination | Chemistry Ch09</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="molar-mass-determination">Molar Mass Determination</h2>
+<p><strong>定义</strong></p>
+<p>摩尔质量（molar mass, $M$）是指1摩尔（mol）某物质所含粒子（原子、分子或离子）的质量，单位为 $\text{g/mol}$。摩尔质量在数值上等于该物质的相对原子质量或相对分子质量，但带有单位 $\text{g/mol}$。例如，碳的相对原子质量为12.01，故碳的摩尔质量为 $12.01\ \text{g/mol}$；水的相对分子质量为18.02，故水的摩尔质量为 $18.02\ \text{g/mol}$。</p>
+<p>摩尔质量是连接"质量"这一可称量的宏观量与"粒子数"这一微观量的桥梁，其核心关系式为：</p>
+$$
+n = \frac{m}{M}
+$$
+<p>其中 $n$ 为物质的量（mol），$m$ 为质量（g），$M$ 为摩尔质量（g/mol）。</p>
+<p><strong>实例演示</strong></p>
+<p>求 $\text{CO}_2$ 的摩尔质量：</p>
+$$
+M(\text{CO}_2) = 1 \times M(\text{C}) + 2 \times M(\text{O}) = 12.01 + 2(16.00) = 44.01\ \text{g/mol}
+$$
+<p>若某容器中含有 $88.02\ \text{g}$ 的 $\text{CO}_2$，则其物质的量为：</p>
+$$
+n = \frac{88.02\ \text{g}}{44.01\ \text{g/mol}} = 2.00\ \text{mol}
+$$
+<p><strong>解题应用</strong></p>
+<p>摩尔质量的测定并非总是从已知化学式反推，实验中常通过间接方法测得未知物质的摩尔质量，再据此推断其化学式或验证纯度。常见方法包括：</p>
+<li><strong>气体摩尔质量法</strong>：利用理想气体状态方程 $PV = nRT$，先测得气体的压强、体积、温度，求出 $n$，再结合已知质量 $m$，代入 $M = m/n$ 求出摩尔质量。</li>
+<li><strong>凝固点下降法（依数性法）</strong>：将已知质量的溶质溶于溶剂中，测量溶液凝固点下降值 $\Delta T_f$，利用 $\Delta T_f = K_f \cdot m_{\text{molal}}$（$K_f$ 为凝固点下降常数，$m_{\text{molal}}$ 为质量摩尔浓度）反推溶质的物质的量，进而求得其摩尔质量。</li>
+<li><strong>质谱法</strong>：直接测定分子离子的质量与电荷比，得到精确的分子质量，常用于复杂有机物或蛋白质的鉴定。</li>
+<p>例如，某未知气体在标准状况下，$0.500\ \text{g}$ 样品占据 $280\ \text{mL}$ 体积。先求 $n = PV/RT$，再用 $M = m/n$ 计算，即可确定该气体的摩尔质量，并据此推测其分子式（如判断是否为 $\text{N}_2$、$\text{CO}$ 或其他气体）。这类实验设计训练的核心能力，是把宏观可测量（质量、体积、温度、凝固点）转化为微观量（分子的数目与质量），是定量化学分析的基本功。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch9: Gases (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>

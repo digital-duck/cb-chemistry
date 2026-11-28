@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Precision | Chemistry Ch01</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="precision">Precision</h2>
+<p><strong>Definition.</strong> Precision refers to the degree of reproducibility or agreement among repeated measurements of the same quantity under unchanged conditions. Formally, if $x_1, x_2, \ldots, x_n$ are independent measurements of a fixed quantity, precision is inversely related to the dispersion of these values, commonly quantified by the sample standard deviation</p>
+$$
+s = \sqrt{\frac{1}{n-1} \sum_{i=1}^{n} (x_i - \bar{x})^2}, \qquad \bar{x} = \frac{1}{n}\sum_{i=1}^n x_i.
+$$
+<p>A small $s$ indicates high precision; a large $s$ indicates low precision. Precision concerns the <em>spread</em> of measurements around their own mean and is distinct from accuracy, which concerns the closeness of that mean to the true value $\mu$.</p>
+<p><strong>Worked example.</strong> Suppose a student measures the period of a pendulum five times, obtaining $T = 2.01, 2.03, 1.99, 2.02, 2.00$ seconds. The mean is $\bar{T} = 2.010$ s. Computing the sample standard deviation yields $s \approx 0.0158$ s. Since the values cluster tightly around $\bar{T}$, the measurements are precise, regardless of whether $\bar{T}$ equals the pendulum's true period.</p>
+<p><strong>Key theorem.</strong> <em>Bias–variance decomposition of mean squared error.</em> For an estimator $\hat{\theta}$ of a parameter $\theta$,</p>
+$$
+\mathbb{E}\big[(\hat{\theta} - \theta)^2\big] = \underbrace{\big(\mathbb{E}[\hat{\theta}] - \theta\big)^2}_{\text{bias}^2 \,(\text{accuracy})} + \underbrace{\operatorname{Var}(\hat{\theta})}_{\text{precision}}.
+$$
+<p>This identity formalizes the separation between accuracy (bias) and precision (variance): total measurement error decomposes exactly into these two independent contributions, and eliminating one does not guarantee eliminating the other.</p>
+<p><strong>Lab cell (SymPy).</strong></p>
+<pre><code>import sympy as sp
+
+data = [2.01, 2.03, 1.99, 2.02, 2.00]
+n = len(data)
+mean = sp.Rational(sum(data), n).evalf()
+
+variance = sum((sp.Rational(x) - mean)**2 for x in data) / (n - 1)
+std_dev = sp.sqrt(variance)
+
+print(f"Mean: {mean}")
+print(f"Sample standard deviation (precision measure): {std_dev.evalf()}")</code></pre>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

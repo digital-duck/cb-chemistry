@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Second Order Kinetics | Chemistry Ch12</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="second-order-kinetics">Second Order Kinetics</h2>
+<p>A reaction follows second-order kinetics when its rate depends on the concentration of a single reactant raised to the second power, or on the product of two different reactant concentrations each raised to the first power. In the simplest case, rate $= k[A]^2$, where $k$ is the rate constant with units of $\text{M}^{-1}\text{s}^{-1}$ — notice these units differ from first-order kinetics ($\text{s}^{-1}$), a quick diagnostic when identifying reaction order from data.</p>
+<p>Starting from the rate law $-\dfrac{d[A]}{dt} = k[A]^2$, separating variables and integrating gives the integrated rate law:</p>
+$$\frac{1}{[A]_t} = \frac{1}{[A]_0} + kt$$
+<p>This equation is the workhorse of second-order kinetics: it predicts concentration at any time $t$, and — because it's linear in $1/[A]_t$ versus $t$ — it gives experimentalists a direct way to confirm second-order behavior. If a plot of $1/[A]_t$ against $t$ produces a straight line, the reaction is second order, and $k$ is simply the slope.</p>
+<p><strong>Worked example.</strong> Consider the gas-phase decomposition $2\text{NO}_2 \rightarrow 2\text{NO} + \text{O}_2$, which is second order in $\text{NO}_2$ with $k = 0.543\ \text{M}^{-1}\text{s}^{-1}$ at a given temperature. If $[\text{NO}_2]_0 = 0.200\ \text{M}$, find the concentration after 60 seconds.</p>
+$$\frac{1}{[A]_t} = \frac{1}{0.200} + (0.543)(60) = 5.00 + 32.58 = 37.58\ \text{M}^{-1}$$
+$$[A]_t = \frac{1}{37.58} \approx 0.0266\ \text{M}$$
+<p><strong>Problem-solving application.</strong> A useful derived quantity is the half-life, $t_{1/2} = \dfrac{1}{k[A]_0}$. Unlike first-order half-life, this one depends on the starting concentration — a critical distinction when comparing reaction behaviors. This matters practically: a second-order reaction slows dramatically as reactant is consumed, since each successive half-life takes longer than the last (unlike first-order, where half-life is constant). When analyzing unknown kinetic data, chemists test both the first-order ($\ln[A]$ vs. $t$) and second-order ($1/[A]$ vs. $t$) linear forms; whichever plot is straighter reveals the true rate law. This diagnostic technique is standard practice in determining reaction mechanisms in both academic and industrial settings, such as characterizing degradation rates of pharmaceuticals or pollutants.</p>
+  </main>
+  <footer class="spl-credit">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></footer>
+</div>
+</body>
+</html>

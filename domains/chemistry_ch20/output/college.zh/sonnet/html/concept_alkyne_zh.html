@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alkyne | Chemistry Ch20</title>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fafaf8;color:#1a1a1a;line-height:1.7}
+h2{font-size:1.45rem;color:#1e3a5f;margin-bottom:12px}
+h3{font-size:1.1rem;color:#2e4a7f;margin:20px 0 8px}
+h4{font-size:1rem;color:#3a5a8f;margin:16px 0 6px}
+p{margin-bottom:16px;font-size:1rem}
+li{margin-bottom:6px;margin-left:24px;font-size:1rem}
+pre{background:#f4f4f0;border:1px solid #d8d8d0;border-radius:6px;
+    padding:16px 20px;overflow-x:auto;margin:16px 0}
+code{font-family:Menlo,Consolas,monospace;font-size:.87em}
+p code{background:#f0f0ea;padding:1px 4px;border-radius:3px}
+footer.spl-credit{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0d8;
+      font-family:system-ui,sans-serif;font-size:.78rem;color:#999;text-align:center}
+footer.spl-credit a{color:#2563eb;text-decoration:none}
+footer.spl-credit span{display:block}
+footer.spl-credit .spl-credit__meta{margin-bottom:4px}
+.page{max-width:780px;margin:0 auto;padding:40px 32px}
+section{margin-bottom:48px;border-top:1px solid #e0e0d8;padding-top:36px}
+section:first-of-type{border-top:none;padding-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+  <main>
+    <h2 id="alkyne">Alkyne</h2>
+<p><strong>炔烃</strong>是含有至少一个碳碳三键（$\ce{C#C}$）的碳氢化合物，通式为 $\ce{C_nH_{2n-2}}$。三键由一个 $\sigma$ 键和两个相互垂直的 $\pi$ 键构成，参与三键的两个碳原子采取 $sp$ 杂化，键角为 $180°$，因此炔烃分子在三键附近呈线性结构。这种高电子密度、高键能（约 $835\ \text{kJ/mol}$）的三键使炔烃比烷烃活泼得多，也比含双键的烯烃更容易发生加成反应，但由于三键更短、电子云更紧密地被两个原子核束缚，其加成反应速率通常略低于同类烯烃反应。</p>
+<p>最简单也是最重要的炔烃是<strong>乙炔</strong>（$\ce{C2H2}$，$\ce{HC#CH}$），工业上通过电石（碳化钙）与水反应制得：</p>
+$$\ce{CaC2 + 2H2O -> Ca(OH)2 + C2H2}$$
+<p>乙炔燃烧时火焰温度可达 $3000°\text{C}$ 以上，广泛用于氧炔焊接和金属切割。</p>
+<p><strong>加成反应</strong>是炔烃最典型的反应类型。以乙炔与溴的加成为例，反应分两步进行：</p>
+$$\ce{HC#CH + Br2 -> CHBr=CHBr}$$
+$$\ce{CHBr=CHBr + Br2 -> CHBr2-CHBr2}$$
+<p>第一步生成二溴乙烯（含一个双键），第二步继续加成生成四溴乙烷（无不饱和键）。这说明炔烃的三键可以分两阶段被"打开"，先变成双键，再变成单键——这一分步机制在合成设计中非常有用：通过控制试剂用量或反应条件（如使用林德拉催化剂控制氢化程度），化学家可以选择性地将炔烃只加成到烯烃阶段，而不进一步还原为烷烃。</p>
+<p><strong>问题解决应用</strong>：给定一个未知碳氢化合物，若其能使溴水褪色，且完全氢化后消耗 $2\ \text{mol}$ 的 $\ce{H2}$ 才转变为对应烷烃，可推断该分子含有一个三键（或两个双键）。结合分子式中氢原子数比同碳数烷烃少 $4$（$\ce{C_nH_{2n-2}}$ 而非 $\ce{C_nH_{2n+2}}$），即可确认其为炔烃。这种"不饱和度—耗氢量"的对应关系是有机化学中鉴定官能团、推断分子结构的常用工具。</p>
+  </main>
+  <footer class="spl-credit"><span class="spl-credit__meta">Chemistry 2e Ch20: Organic Chemistry (Level: College &middot; Language: ZH &middot; Model: sonnet)</span><span class="spl-credit__powered">Generated and Powered by <a href="https://github.com/digital-duck/SPL.py" target="_blank" rel="noopener">SPL</a></span></footer>
+</div>
+</body>
+</html>
