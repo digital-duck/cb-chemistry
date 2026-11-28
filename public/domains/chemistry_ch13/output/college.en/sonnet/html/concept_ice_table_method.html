@@ -38,7 +38,32 @@ section:first-of-type{border-top:none;padding-top:0}
 <p>The ICE table (Initial, Change, Equilibrium) is a bookkeeping tool for solving equilibrium problems in chemistry. Rather than a theorem, it is a structured way to organize the algebra behind the equilibrium constant expression, $K$, so that unknown concentrations can be solved for systematically instead of by guesswork.</p>
 <p><strong>Definition.</strong> For a reaction with known stoichiometry, an ICE table has one row for each stage: the <em>Initial</em> concentrations (before any reaction occurs), the <em>Change</em> each species undergoes as the reaction proceeds toward equilibrium (expressed as a multiple of an unknown extent of reaction, $x$, scaled by stoichiometric coefficients), and the resulting <em>Equilibrium</em> concentrations (Initial $+$ Change). These equilibrium expressions are then substituted into the mass-action expression for $K$, producing a single algebraic equation in $x$.</p>
 <p><strong>Worked example.</strong> Consider $\mathrm{N_2O_4(g) \rightleftharpoons 2\,NO_2(g)}$, with $K_c = 4.63 \times 10^{-3}$ at a given temperature, starting from $0.0500\ \text{M}$ $\mathrm{N_2O_4}$ and no $\mathrm{NO_2}$.</p>
-<p>| | $\mathrm{N_2O_4}$ | $\mathrm{NO_2}$ | |---|---|---| | I | $0.0500$ | $0$ | | C | $-x$ | $+2x$ | | E | $0.0500 - x$ | $2x$ |</p>
+<table style="border-collapse: collapse; border: 1px solid #333;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #333; padding: 6px 12px;"></th>
+      <th style="border: 1px solid #333; padding: 6px 12px;">$\mathrm{N_2O_4}$</th>
+      <th style="border: 1px solid #333; padding: 6px 12px;">$\mathrm{NO_2}$</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #333; padding: 6px 12px;">I</td>
+      <td style="border: 1px solid #333; padding: 6px 12px;">$0.0500$</td>
+      <td style="border: 1px solid #333; padding: 6px 12px;">$0$</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #333; padding: 6px 12px;">C</td>
+      <td style="border: 1px solid #333; padding: 6px 12px;">$-x$</td>
+      <td style="border: 1px solid #333; padding: 6px 12px;">$+2x$</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #333; padding: 6px 12px;">E</td>
+      <td style="border: 1px solid #333; padding: 6px 12px;">$0.0500 - x$</td>
+      <td style="border: 1px solid #333; padding: 6px 12px;">$2x$</td>
+    </tr>
+  </tbody>
+</table>
 <p>Substituting into $K_c = \dfrac{[\mathrm{NO_2}]^2}{[\mathrm{N_2O_4}]}$ gives</p>
 $$4.63\times 10^{-3} = \frac{(2x)^2}{0.0500 - x}.$$
 <p>Expanding yields a quadratic, $4x^2 + 4.63\times10^{-3}x - 2.315\times10^{-4} = 0$, solved by the quadratic formula to give $x \approx 0.00716\ \text{M}$. Equilibrium concentrations follow: $[\mathrm{N_2O_4}] \approx 0.0428\ \text{M}$, $[\mathrm{NO_2}] \approx 0.0143\ \text{M}$.</p>
